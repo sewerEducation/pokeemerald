@@ -258,7 +258,7 @@ static void PrintMonAbilityDescription(void);
 static void BufferMonTrainerMemo(void);
 static void PrintMonTrainerMemo(void);
 static void BufferNatureString(void);
-static void GetMetLevelString(u8 *);
+static void GetFriendshipString(u8 *);
 static bool8 DoesMonOTMatchOwner(void);
 static bool8 DidMonComeFromGBAGames(void);
 static bool8 IsInGamePartnerMon(void);
@@ -3093,9 +3093,9 @@ static void BufferMonTrainerMemo(void)
     }
     else
     {
-        u8 *metLevelString = Alloc(32);
+        u8 *FriendshipString = Alloc(32);
         u8 *metLocationString = Alloc(32);
-        GetMetLevelString(metLevelString);
+        GetFriendshipString(FriendshipString);
 
         if (sum->metLocation < MAPSEC_NONE)
         {
@@ -3105,26 +3105,21 @@ static void BufferMonTrainerMemo(void)
 
         if (DoesMonOTMatchOwner() == TRUE)
         {
-            if (sum->metLevel == 0)
-                text = (sum->metLocation >= MAPSEC_NONE) ? gText_XNatureHatchedSomewhereAt : gText_XNatureHatchedAtYZ;
+            if (sum->friendship < 255)
+                text  = gText_XNatureCinLevU255;
             else
-                text = (sum->metLocation >= MAPSEC_NONE) ? gText_XNatureMetSomewhereAt : gText_XNatureMetAtYZ;
-        }
-        else if (sum->metLocation == METLOC_FATEFUL_ENCOUNTER)
-        {
-            text = gText_XNatureFatefulEncounter;
-        }
-        else if (sum->metLocation != METLOC_IN_GAME_TRADE && DidMonComeFromGBAGames())
-        {
-            text = (sum->metLocation >= MAPSEC_NONE) ? gText_XNatureObtainedInTrade : gText_XNatureProbablyMetAt;
+                text = gText_XNatureCinLevMax;
         }
         else
         {
-            text = gText_XNatureObtainedInTrade;
+            if (sum->friendship < 255)
+                text = gText_XNatureTradeU255;
+            else
+                text = gText_XNatureTradeMax;
         }
 
         DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, text);
-        Free(metLevelString);
+        Free(FriendshipString);
         Free(metLocationString);
     }
 }
@@ -3141,11 +3136,9 @@ static void BufferNatureString(void)
     DynamicPlaceholderTextUtil_SetPlaceholderPtr(5, gText_EmptyString5);
 }
 
-static void GetMetLevelString(u8 *output)
+static void GetFriendshipString(u8 *output)
 {
-    u8 level = sMonSummaryScreen->summary.metLevel;
-    if (level == 0)
-        level = EGG_HATCH_LEVEL;
+    u8 level = (sMonSummaryScreen->summary.friendship * 100) / 255;
     ConvertIntToDecimalStringN(output, level, STR_CONV_MODE_LEFT_ALIGN, 3);
     DynamicPlaceholderTextUtil_SetPlaceholderPtr(3, output);
 }
@@ -3879,7 +3872,7 @@ static u8 LoadMonGfxAndSprite(struct Pokemon *mon, s16 *state)
                                                           summary->species2,
                                                           summary->pid);
             else
-                HandleLoadSpecialPokePic_2(&gMonFrontPicTable[summary->species2], 
+                HandleLoadSpecialPokePic_2(&gMonFrontPicTable[summary->species2],
                                            gMonSpritesGfxPtr->sprites.ptr[B_POSITION_OPPONENT_LEFT],
                                            summary->species2,
                                            summary->pid);
@@ -3891,7 +3884,7 @@ static u8 LoadMonGfxAndSprite(struct Pokemon *mon, s16 *state)
                 if (sMonSummaryScreen->monList.mons == gPlayerParty || sMonSummaryScreen->mode == SUMMARY_MODE_BOX || sMonSummaryScreen->unk40EF == TRUE)
                     HandleLoadSpecialPokePic_2(&gMonFrontPicTable[summary->species2],
                                                gMonSpritesGfxPtr->sprites.ptr[B_POSITION_OPPONENT_LEFT],
-                                               summary->species2, 
+                                               summary->species2,
                                                summary->pid);
                 else
                     HandleLoadSpecialPokePic_DontHandleDeoxys(&gMonFrontPicTable[summary->species2],
