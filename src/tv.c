@@ -910,7 +910,7 @@ u8 GetNextActiveShowIfMassOutbreak(void)
     return gSpecialVar_0x8004;
 }
 
-// IN SEARCH OF TRAINERS
+// IN SEARCH OF PRODUCERS
 
 void ResetGabbyAndTy(void)
 {
@@ -1092,10 +1092,10 @@ void InterviewAfter(void)
     case TVSHOW_DUMMY:
         InterviewAfter_Dummy();
         break;
-    case TVSHOW_BRAVO_TRAINER_POKEMON_PROFILE:
+    case TVSHOW_BRAVO_PRODUCER_POKEMON_PROFILE:
         InterviewAfter_BravoTrainerPokemonProfile();
         break;
-    case TVSHOW_BRAVO_TRAINER_BATTLE_TOWER_PROFILE:
+    case TVSHOW_BRAVO_PRODUCER_BATTLE_TOWER_PROFILE:
         InterviewAfter_BravoTrainerBattleTowerProfile();
         break;
     case TVSHOW_CONTEST_LIVE_UPDATES:
@@ -1426,10 +1426,10 @@ static void InterviewAfter_BravoTrainerPokemonProfile(void)
     TVShow *show2;
 
     show = &gSaveBlock1Ptr->tvShows[LAST_TVSHOW_IDX];
-    if (show->bravoTrainer.kind == TVSHOW_BRAVO_TRAINER_POKEMON_PROFILE)
+    if (show->bravoTrainer.kind == TVSHOW_BRAVO_PRODUCER_POKEMON_PROFILE)
     {
         show2 = &gSaveBlock1Ptr->tvShows[sCurTVShowSlot];
-        show2->bravoTrainer.kind = TVSHOW_BRAVO_TRAINER_POKEMON_PROFILE;
+        show2->bravoTrainer.kind = TVSHOW_BRAVO_PRODUCER_POKEMON_PROFILE;
         show2->bravoTrainer.active = TRUE;
         show2->bravoTrainer.species = show->bravoTrainer.species;
         StringCopy(show2->bravoTrainer.playerName, gSaveBlock2Ptr->playerName);
@@ -1458,7 +1458,7 @@ void BravoTrainerPokemonProfile_BeforeInterview1(u16 move)
     {
         DeleteTVShowInArrayByIdx(gSaveBlock1Ptr->tvShows, LAST_TVSHOW_IDX);
         show->bravoTrainer.move = move;
-        show->bravoTrainer.kind = TVSHOW_BRAVO_TRAINER_POKEMON_PROFILE;
+        show->bravoTrainer.kind = TVSHOW_BRAVO_PRODUCER_POKEMON_PROFILE;
     }
 }
 
@@ -1481,7 +1481,7 @@ void BravoTrainerPokemonProfile_BeforeInterview2(u8 contestStandingPlace)
 static void InterviewAfter_BravoTrainerBattleTowerProfile(void)
 {
     TVShow *show = &gSaveBlock1Ptr->tvShows[sCurTVShowSlot];
-    show->bravoTrainerTower.kind = TVSHOW_BRAVO_TRAINER_BATTLE_TOWER_PROFILE;
+    show->bravoTrainerTower.kind = TVSHOW_BRAVO_PRODUCER_BATTLE_TOWER_PROFILE;
     show->bravoTrainerTower.active = TRUE;
     StringCopy(show->bravoTrainerTower.trainerName, gSaveBlock2Ptr->playerName);
     StringCopy(show->bravoTrainerTower.pokemonName, gSaveBlock2Ptr->frontier.towerInterview.opponentName);
@@ -1507,7 +1507,7 @@ void TryPutSmartShopperOnAir(void)
     TVShow *show;
     u8 i;
 
-    if (!(gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(TRAINER_HILL_ENTRANCE) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(TRAINER_HILL_ENTRANCE))
+    if (!(gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(PRODUCER_HILL_ENTRANCE) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(PRODUCER_HILL_ENTRANCE))
      && !(gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(BATTLE_FRONTIER_MART) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(BATTLE_FRONTIER_MART))
      && !rbernoulli(1, 3))
     {
@@ -1841,12 +1841,12 @@ void TryPutTodaysRivalTrainerOnAir(void)
     u32 i;
     u8 nBadges;
 
-    IsRecordMixShowAlreadySpawned(TVSHOW_TODAYS_RIVAL_TRAINER, TRUE); // Delete old version of show
+    IsRecordMixShowAlreadySpawned(TVSHOW_TODAYS_RIVAL_PRODUCER, TRUE); // Delete old version of show
     sCurTVShowSlot = FindFirstEmptyRecordMixTVShowSlot(gSaveBlock1Ptr->tvShows);
     if (sCurTVShowSlot != -1)
     {
         show = &gSaveBlock1Ptr->tvShows[sCurTVShowSlot];
-        show->rivalTrainer.kind = TVSHOW_TODAYS_RIVAL_TRAINER;
+        show->rivalTrainer.kind = TVSHOW_TODAYS_RIVAL_PRODUCER;
         show->rivalTrainer.active = FALSE; // NOTE: Show is not active until passed via Record Mix.
         for (i = FLAG_BADGE01_GET, nBadges = 0; i < FLAG_BADGE01_GET + NUM_BADGES; i++)
         {
@@ -2328,10 +2328,10 @@ void TryPutTrainerFanClubOnAir(void)
     TVShow *show;
 
     sCurTVShowSlot = FindFirstEmptyRecordMixTVShowSlot(gSaveBlock1Ptr->tvShows);
-    if (sCurTVShowSlot != -1 && IsRecordMixShowAlreadySpawned(TVSHOW_TRAINER_FAN_CLUB, FALSE) != TRUE)
+    if (sCurTVShowSlot != -1 && IsRecordMixShowAlreadySpawned(TVSHOW_PRODUCER_FAN_CLUB, FALSE) != TRUE)
     {
         show = &gSaveBlock1Ptr->tvShows[sCurTVShowSlot];
-        show->trainerFanClub.kind = TVSHOW_TRAINER_FAN_CLUB;
+        show->trainerFanClub.kind = TVSHOW_PRODUCER_FAN_CLUB;
         show->trainerFanClub.active = FALSE; // NOTE: Show is not active until passed via Record Mix.
         StringCopy(show->trainerFanClub.playerName, gSaveBlock2Ptr->playerName);
         show->trainerFanClub.words[0] = gSaveBlock1Ptr->easyChatProfile[0];
@@ -2913,10 +2913,10 @@ void InterviewBefore(void)
     case TVSHOW_NAME_RATER_SHOW:
         InterviewBefore_NameRater();
         break;
-    case TVSHOW_BRAVO_TRAINER_POKEMON_PROFILE:
+    case TVSHOW_BRAVO_PRODUCER_POKEMON_PROFILE:
         InterviewBefore_BravoTrainerPkmnProfile();
         break;
-    case TVSHOW_BRAVO_TRAINER_BATTLE_TOWER_PROFILE:
+    case TVSHOW_BRAVO_PRODUCER_BATTLE_TOWER_PROFILE:
         InterviewBefore_BravoTrainerBTProfile();
         break;
     case TVSHOW_CONTEST_LIVE_UPDATES:
@@ -2977,7 +2977,7 @@ static void InterviewBefore_NameRater(void)
 
 static void InterviewBefore_BravoTrainerPkmnProfile(void)
 {
-    TryReplaceOldTVShowOfKind(TVSHOW_BRAVO_TRAINER_POKEMON_PROFILE);
+    TryReplaceOldTVShowOfKind(TVSHOW_BRAVO_PRODUCER_POKEMON_PROFILE);
     if (!gSpecialVar_Result)
         InitializeEasyChatWordArray(gSaveBlock1Ptr->tvShows[sCurTVShowSlot].bravoTrainer.words,
                         ARRAY_COUNT(gSaveBlock1Ptr->tvShows[sCurTVShowSlot].bravoTrainer.words));
@@ -2995,7 +2995,7 @@ static void InterviewBefore_3CheersForPokeblocks(void)
 
 static void InterviewBefore_BravoTrainerBTProfile(void)
 {
-    TryReplaceOldTVShowOfKind(TVSHOW_BRAVO_TRAINER_BATTLE_TOWER_PROFILE);
+    TryReplaceOldTVShowOfKind(TVSHOW_BRAVO_PRODUCER_BATTLE_TOWER_PROFILE);
     if (!gSpecialVar_Result)
         InitializeEasyChatWordArray(gSaveBlock1Ptr->tvShows[sCurTVShowSlot].bravoTrainerTower.words,
                         ARRAY_COUNT(gSaveBlock1Ptr->tvShows[sCurTVShowSlot].bravoTrainerTower.words));
@@ -3438,7 +3438,7 @@ void GetMomOrDadStringForTVMessage(void)
 
 void HideBattleTowerReporter(void)
 {
-    VarSet(VAR_BRAVO_TRAINER_BATTLE_TOWER_ON, 0);
+    VarSet(VAR_BRAVO_PRODUCER_BATTLE_TOWER_ON, 0);
     RemoveObjectEventByLocalIdAndMap(LOCALID_BATTLE_TOWER_LOBBY_REPORTER, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup);
     FlagSet(FLAG_HIDE_BATTLE_TOWER_REPORTER);
 }
@@ -3672,11 +3672,11 @@ static void DeactivateShowsWithUnseenSpecies(void)
             species = (&gSaveBlock1Ptr->tvShows[i])->nameRaterShow.randomSpecies;
             DeactivateShowIfNotSeenSpecies(species, i);
             break;
-        case TVSHOW_BRAVO_TRAINER_POKEMON_PROFILE:
+        case TVSHOW_BRAVO_PRODUCER_POKEMON_PROFILE:
             species = (&gSaveBlock1Ptr->tvShows[i])->bravoTrainer.species;
             DeactivateShowIfNotSeenSpecies(species, i);
             break;
-        case TVSHOW_BRAVO_TRAINER_BATTLE_TOWER_PROFILE:
+        case TVSHOW_BRAVO_PRODUCER_BATTLE_TOWER_PROFILE:
             species = (&gSaveBlock1Ptr->tvShows[i])->bravoTrainerTower.species;
             DeactivateShowIfNotSeenSpecies(species, i);
             species = (&gSaveBlock1Ptr->tvShows[i])->bravoTrainerTower.defeatedSpecies;
@@ -3755,11 +3755,11 @@ static void DeactivateShowsWithUnseenSpecies(void)
         case TVSHOW_OFF_AIR:
         case TVSHOW_RECENT_HAPPENINGS:
         case TVSHOW_3_CHEERS_FOR_POKEBLOCKS:
-        case TVSHOW_TODAYS_RIVAL_TRAINER:
+        case TVSHOW_TODAYS_RIVAL_PRODUCER:
         case TVSHOW_TREND_WATCHER:
         case TVSHOW_TREASURE_INVESTIGATORS:
         case TVSHOW_FIND_THAT_GAMER:
-        case TVSHOW_TRAINER_FAN_CLUB:
+        case TVSHOW_PRODUCER_FAN_CLUB:
         case TVSHOW_CUTIES:
         case TVSHOW_SMART_SHOPPER:
         case TVSHOW_FAN_CLUB_SPECIAL:
@@ -3796,7 +3796,7 @@ static void DeactivateGameCompleteShowsIfNotUnlocked(void)
     {
         for (i = 0; i < LAST_TVSHOW_IDX; i++)
         {
-            if (gSaveBlock1Ptr->tvShows[i].common.kind == TVSHOW_BRAVO_TRAINER_BATTLE_TOWER_PROFILE)
+            if (gSaveBlock1Ptr->tvShows[i].common.kind == TVSHOW_BRAVO_PRODUCER_BATTLE_TOWER_PROFILE)
                 gSaveBlock1Ptr->tvShows[i].common.active = FALSE;
             else if (gSaveBlock1Ptr->tvShows[i].common.kind == TVSHOW_MASS_OUTBREAK)
                 gSaveBlock1Ptr->tvShows[i].common.active = FALSE;
@@ -3990,12 +3990,12 @@ static void TranslateShowNames(TVShow *show, u32 language)
             shows[7] = &show[i];
             SetStrLanguage(shows[7]->smartshopperShow.playerName, shows[7]->smartshopperShow.language, language);
             break;
-        case TVSHOW_BRAVO_TRAINER_BATTLE_TOWER_PROFILE:
+        case TVSHOW_BRAVO_PRODUCER_BATTLE_TOWER_PROFILE:
             shows[5] = &show[i];
             SetStrLanguage(shows[5]->bravoTrainerTower.trainerName, shows[5]->bravoTrainerTower.language, language);
             SetStrLanguage(shows[5]->bravoTrainerTower.pokemonName, shows[5]->bravoTrainerTower.pokemonNameLanguage, language);
             break;
-        case TVSHOW_BRAVO_TRAINER_POKEMON_PROFILE:
+        case TVSHOW_BRAVO_PRODUCER_POKEMON_PROFILE:
             shows[4] = &show[i];
             SetStrLanguage(shows[4]->bravoTrainer.playerName, shows[4]->bravoTrainer.language, language);
             SetStrLanguage(shows[4]->bravoTrainer.pokemonNickname, shows[4]->bravoTrainer.pokemonNameLanguage, language);
@@ -4033,7 +4033,7 @@ void SanitizeTVShowsForRuby(TVShow *shows)
     SanitizeTVShowLocationsForRuby(shows);
     for (curShow = shows; curShow < shows + LAST_TVSHOW_IDX; curShow++)
     {
-        if (curShow->bravoTrainerTower.kind == TVSHOW_BRAVO_TRAINER_BATTLE_TOWER_PROFILE)
+        if (curShow->bravoTrainerTower.kind == TVSHOW_BRAVO_PRODUCER_BATTLE_TOWER_PROFILE)
         {
             if ((curShow->bravoTrainerTower.language == LANGUAGE_JAPANESE && curShow->bravoTrainerTower.pokemonNameLanguage != LANGUAGE_JAPANESE)
              || (curShow->bravoTrainerTower.language != LANGUAGE_JAPANESE && curShow->bravoTrainerTower.pokemonNameLanguage == LANGUAGE_JAPANESE))
@@ -4048,7 +4048,7 @@ static void TranslateRubyShows(TVShow *shows)
 
     for (curShow = shows; curShow < shows + LAST_TVSHOW_IDX; curShow++)
     {
-        if (curShow->bravoTrainerTower.kind == TVSHOW_BRAVO_TRAINER_BATTLE_TOWER_PROFILE)
+        if (curShow->bravoTrainerTower.kind == TVSHOW_BRAVO_PRODUCER_BATTLE_TOWER_PROFILE)
         {
             if (IsStringJapanese(curShow->bravoTrainerTower.pokemonName))
                 curShow->bravoTrainerTower.pokemonNameLanguage = LANGUAGE_JAPANESE;
@@ -4088,11 +4088,11 @@ static void TranslateJapaneseEmeraldShows(TVShow *shows)
             curShow->nameRaterShow.language = GetStringLanguage(curShow->nameRaterShow.trainerName);
             curShow->nameRaterShow.pokemonNameLanguage = GetStringLanguage(curShow->nameRaterShow.pokemonName);
             break;
-        case TVSHOW_BRAVO_TRAINER_POKEMON_PROFILE:
+        case TVSHOW_BRAVO_PRODUCER_POKEMON_PROFILE:
             curShow->bravoTrainer.language = GetStringLanguage(curShow->bravoTrainer.playerName);
             curShow->bravoTrainer.pokemonNameLanguage = GetStringLanguage(curShow->bravoTrainer.pokemonNickname);
             break;
-        case TVSHOW_BRAVO_TRAINER_BATTLE_TOWER_PROFILE:
+        case TVSHOW_BRAVO_PRODUCER_BATTLE_TOWER_PROFILE:
             curShow->bravoTrainerTower.language = GetStringLanguage(curShow->bravoTrainerTower.trainerName);
             curShow->bravoTrainerTower.pokemonNameLanguage = GetStringLanguage(curShow->bravoTrainerTower.pokemonName);
             break;
@@ -4142,14 +4142,14 @@ static void TranslateJapaneseEmeraldShows(TVShow *shows)
             curShow->battleSeminar.language = GetStringLanguage(curShow->battleSeminar.playerName);
             break;
         case TVSHOW_FIND_THAT_GAMER:
-        case TVSHOW_TRAINER_FAN_CLUB:
+        case TVSHOW_PRODUCER_FAN_CLUB:
             curShow->trainerFanClub.language = GetStringLanguage(curShow->trainerFanClub.playerName);
             break;
         case TVSHOW_CUTIES:
             curShow->cuties.language = GetStringLanguage(curShow->cuties.playerName);
             curShow->cuties.pokemonNameLanguage = GetStringLanguage(curShow->cuties.nickname);
             break;
-        case TVSHOW_TODAYS_RIVAL_TRAINER:
+        case TVSHOW_TODAYS_RIVAL_PRODUCER:
         case TVSHOW_SECRET_BASE_VISIT:
         case TVSHOW_FRONTIER:
             curShow->rivalTrainer.language = GetStringLanguage(curShow->rivalTrainer.playerName);
@@ -4214,10 +4214,10 @@ void DoTVShow(void)
         case TVSHOW_MASS_OUTBREAK:
             DoTVShowPokemonNewsMassOutbreak();
             break;
-        case TVSHOW_BRAVO_TRAINER_POKEMON_PROFILE:
+        case TVSHOW_BRAVO_PRODUCER_POKEMON_PROFILE:
             DoTVShowBravoTrainerPokemonProfile();
             break;
-        case TVSHOW_BRAVO_TRAINER_BATTLE_TOWER_PROFILE:
+        case TVSHOW_BRAVO_PRODUCER_BATTLE_TOWER_PROFILE:
             DoTVShowBravoTrainerBattleTower();
             break;
         case TVSHOW_POKEMON_TODAY_CAUGHT:
@@ -4247,7 +4247,7 @@ void DoTVShow(void)
         case TVSHOW_WORLD_OF_MASTERS:
             DoTVShowTheWorldOfMasters();
             break;
-        case TVSHOW_TODAYS_RIVAL_TRAINER:
+        case TVSHOW_TODAYS_RIVAL_PRODUCER:
             DoTVShowTodaysRivalTrainer();
             break;
         case TVSHOW_TREND_WATCHER:
@@ -4274,7 +4274,7 @@ void DoTVShow(void)
         case TVSHOW_FAN_CLUB_SPECIAL:
             DoTVShowTrainerFanClubSpecial();
             break;
-        case TVSHOW_TRAINER_FAN_CLUB:
+        case TVSHOW_PRODUCER_FAN_CLUB:
             DoTVShowTrainerFanClub();
             break;
         case TVSHOW_CUTIES:

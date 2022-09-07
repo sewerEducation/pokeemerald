@@ -471,7 +471,7 @@ static const u8 sBideDescription[] = _(
 
 static const u8 sMetronomeDescription[] = _(
     "Waggles a finger to use any\n"
-    "POKéMON move at random.");
+    "IDOL move at random.");
 
 static const u8 sMirrorMoveDescription[] = _(
     "Counters the foe's attack\n"
@@ -778,7 +778,7 @@ static const u8 sDestinyBondDescription[] = _(
     "is also made to faint.");
 
 static const u8 sPerishSongDescription[] = _(
-    "Any POKéMON hearing this\n"
+    "Any IDOL hearing this\n"
     "song faints in 3 turns.");
 
 static const u8 sIcyWindDescription[] = _(
@@ -871,7 +871,7 @@ static const u8 sPresentDescription[] = _(
 
 static const u8 sFrustrationDescription[] = _(
     "An attack that is stronger\n"
-    "if the TRAINER is disliked.");
+    "if the PRODUCER is disliked.");
 
 static const u8 sSafeguardDescription[] = _(
     "A mystical force prevents\n"
@@ -1002,7 +1002,7 @@ static const u8 sWhirlpoolDescription[] = _(
     "a whirlpool for 2 to 5 turns.");
 
 static const u8 sBeatUpDescription[] = _(
-    "Summons party POKéMON to\n"
+    "Summons party IDOLS to\n"
     "join in the attack.");
 
 static const u8 sFakeOutDescription[] = _(
@@ -1170,7 +1170,7 @@ static const u8 sArmThrustDescription[] = _(
     "strike the foe 2 to 5 times.");
 
 static const u8 sCamouflageDescription[] = _(
-    "Alters the POKéMON's type\n"
+    "Alters the IDOL's type\n"
     "depending on the location.");
 
 static const u8 sTailGlowDescription[] = _(
@@ -1190,7 +1190,7 @@ static const u8 sFeatherDanceDescription[] = _(
     "to sharply reduce ATTACK.");
 
 static const u8 sTeeterDanceDescription[] = _(
-    "Confuses all POKéMON on\n"
+    "Confuses all IDOLS on\n"
     "the scene.");
 
 static const u8 sBlazeKickDescription[] = _(

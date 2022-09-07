@@ -12,7 +12,7 @@ BattleFrontier_OutsideWest_MapScripts::
 	.byte 0
 
 BattleFrontier_OutsideWest_OnTransition:
-	setvar VAR_BRAVO_TRAINER_BATTLE_TOWER_ON, 0
+	setvar VAR_BRAVO_PRODUCER_BATTLE_TOWER_ON, 0
 	setflag FLAG_HIDE_BATTLE_TOWER_REPORTER
 	end
 
@@ -313,7 +313,7 @@ BattleFrontier_OutsideWest_Text_BattleDomeSign:
 
 BattleFrontier_OutsideWest_Text_BattleFactorySign:
 	.string "This is the BATTLE FACTORY!\n"
-	.string "Seek out the toughest POKéMON!$"
+	.string "Seek out the toughest IDOLS!$"
 
 BattleFrontier_OutsideWest_Text_BattlePikeSign:
 	.string "This is the BATTLE PIKE!\n"
@@ -321,8 +321,8 @@ BattleFrontier_OutsideWest_Text_BattlePikeSign:
 
 BattleFrontier_OutsideWest_Text_ThisIsBattleTower:
 	.string "This is the BATTLE TOWER.\p"
-	.string "TRAINERS bring their best-raised\n"
-	.string "POKéMON for elimination-style matches.$"
+	.string "PRODUCERS bring their best-raised\n"
+	.string "IDOLS for elimination-style matches.$"
 
 BattleFrontier_OutsideWest_Text_MayISeeYourTicket:
 	.string "Hello, are you here for the ferry?\n"
@@ -375,28 +375,28 @@ BattleFrontier_OutsideWest_Text_GotSeasickOnWayHere:
 BattleFrontier_OutsideWest_Text_OnlyToughTrainersBroughtHere:
 	.string "It's not as if just anyone can come\n"
 	.string "here, you know?\p"
-	.string "Only those TRAINERS who've been\n"
+	.string "Only those PRODUCERS who've been\n"
 	.string "recognized as tough are brought here.\p"
-	.string "That's why many TRAINERS don't even\n"
+	.string "That's why many PRODUCERS don't even\n"
 	.string "know about the BATTLE FRONTIER.$"
 
 BattleFrontier_OutsideWest_Text_SureWeCanChallengeWithNoMons:
 	.string "Hey, bro…\p"
 	.string "Are you sure we can make challenges\n"
-	.string "even if we don't have any POKéMON?$"
+	.string "even if we don't have any IDOLS?$"
 
 BattleFrontier_OutsideWest_Text_BigGuySaidIllLendYouMons:
 	.string "Uh…\n"
 	.string "I'm sure it'll be okay.\p"
 	.string "I think…\p"
 	.string "But remember that big scary guy?\n"
-	.string "He said, “I'll lend you POKéMON!”$"
+	.string "He said, “I'll lend you IDOLS!”$"
 
 BattleFrontier_OutsideWest_Text_WhosRaisingThoseRentalMons:
 	.string "That's the BATTLE FACTORY.\n"
-	.string "You can rent strong POKéMON there.\p"
+	.string "You can rent strong IDOLS there.\p"
 	.string "But it makes me wonder.\n"
-	.string "Who's raising those rental POKéMON?$"
+	.string "Who's producing those rental IDOLS?$"
 
 BattleFrontier_OutsideWest_Text_ScaredOfPikeBecauseSeviper:
 	.string "I'm scared of going into the BATTLE\n"
@@ -505,22 +505,21 @@ BattleFrontier_OutsideWest_Text_DomeAceIsMine:
 BattleFrontier_OutsideWest_Text_FansOverThereUsedToBeTrainers:
 	.string "Those people squabbling over there…\p"
 	.string "It's hard to believe, but they once\n"
-	.string "were TRAINERS, and good ones, too.\p"
+	.string "were PRODUCERS, and good ones, too.\p"
 	.string "They used to be incredibly tough,\n"
 	.string "and they were famous, too.\p"
 	.string "But they were obliterated by this\n"
-	.string "certain TRAINER at a tournament.\p"
+	.string "certain PRODUCER at a tournament.\p"
 	.string "They were so thoroughly whipped,\n"
-	.string "they became smitten by the TRAINER.\p"
-	.string "Now they're just fans of the TRAINER.\n"
+	.string "they became smitten by the PRODUCER.\p"
+	.string "Now they're just fans of the PRODUCER.\n"
 	.string "They go cheer for their idol at the\l"
 	.string "BATTLE DOME every day now.$"
 
 BattleFrontier_OutsideWest_Text_MonWithLongTailInFrontier:
 	.string "I heard a rumor that someone saw\n"
-	.string "a POKéMON with an unusually long tail\l"
+	.string "an IDOL with an unusually long tail\l"
 	.string "somewhere in the BATTLE FRONTIER.\p"
 	.string "It must be adorable. I'm sure of it…\p"
 	.string "Oh, challenges can wait. I feel driven\n"
 	.string "to find the delightful creature!$"
-

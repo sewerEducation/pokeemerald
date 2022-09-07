@@ -1,8 +1,8 @@
-#ifndef GUARD_TRAINER_CARD_H
-#define GUARD_TRAINER_CARD_H
+#ifndef GUARD_PRODUCER_CARD_H
+#define GUARD_PRODUCER_CARD_H
 
-#define TRAINER_CARD_PROFILE_LENGTH  4
-#define TRAINER_CARD_STICKER_TYPES   3
+#define PRODUCER_CARD_PROFILE_LENGTH  4
+#define PRODUCER_CARD_STICKER_TYPES   3
 
 enum
 {
@@ -41,7 +41,7 @@ struct TrainerCard
     /*0x1E*/ u16 pokeblocksWithFriends;
     /*0x20*/ u16 pokemonTrades;
     /*0x24*/ u32 money;
-    /*0x28*/ u16 easyChatProfile[TRAINER_CARD_PROFILE_LENGTH];
+    /*0x28*/ u16 easyChatProfile[PRODUCER_CARD_PROFILE_LENGTH];
     /*0x30*/ u8 playerName[PLAYER_NAME_LENGTH + 1];
     /*0x38*/ u8 version;
     /*0x3A*/ bool16 linkHasAllFrontierSymbols;
@@ -55,7 +55,7 @@ struct TrainerCard
     /*0x4D*/ u8 unused;
     /*0x4E*/ u8 monIconTint; // FRLG only
     /*0x4F*/ u8 facilityClass;
-    /*0x50*/ u8 stickers[TRAINER_CARD_STICKER_TYPES]; // FRLG only
+    /*0x50*/ u8 stickers[PRODUCER_CARD_STICKER_TYPES]; // FRLG only
     /*0x54*/ u16 monSpecies[PARTY_SIZE]; // FRLG only
              // Note: Link players use linkHasAllFrontierSymbols, not the field below,
              // which they use for a Wonder Card flag id instead (see CreateTrainerCardInBuffer)
@@ -72,4 +72,4 @@ void ShowPlayerTrainerCard(void (*callback)(void));
 void ShowTrainerCardInLink(u8 cardId, void (*callback)(void));
 void TrainerCard_GenerateCardForLinkPlayer(struct TrainerCard *);
 
-#endif // GUARD_TRAINER_CARD_H
+#endif // GUARD_PRODUCER_CARD_H

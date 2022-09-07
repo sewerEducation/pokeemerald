@@ -40,16 +40,16 @@ RS_MysteryEventsHouse_EventScript_Door::
 
 RS_MysteryEventsHouse_Text_OldManGreeting:
 	.string "When I was young, I traveled the world\n"
-	.string "as a POKéMON TRAINER.\p"
+	.string "as an IDOL PRODUCER.\p"
 	.string "Now that I've become an old buzzard,\n"
 	.string "my only amusement is watching young\l"
-	.string "TRAINERS battle.$"
+	.string "PRODUCERS battle.$"
 
 RS_MysteryEventsHouse_Text_DoorIsLocked:
 	.string "The door appears to be locked.$"
 
 RS_MysteryEventsHouse_Text_ChallengeVisitingTrainer:
-	.string "A TRAINER named {STR_VAR_1} is\n"
+	.string "A PRODUCER named {STR_VAR_1} is\n"
 	.string "visiting my home.\p"
 	.string "Would you like to challenge\n"
 	.string "{STR_VAR_1}?$"

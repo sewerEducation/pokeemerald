@@ -58,7 +58,7 @@
 
 	@ Set the facility trainers to gBattleFrontierTrainers
 	.macro pyramid_settrainers
-	setvar VAR_0x8004, BATTLE_PYRAMID_FUNC_SET_TRAINERS
+	setvar VAR_0x8004, BATTLE_PYRAMID_FUNC_SET_PRODUCERS
 	special CallBattlePyramidFunction
 	.endm
 

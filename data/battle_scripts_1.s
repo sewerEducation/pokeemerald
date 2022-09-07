@@ -1926,7 +1926,7 @@ BattleScript_EffectTeleport::
 	attackcanceler
 	attackstring
 	ppreduce
-	jumpifbattletype BATTLE_TYPE_TRAINER, BattleScript_ButItFailed
+	jumpifbattletype BATTLE_TYPE_PRODUCER, BattleScript_ButItFailed
 	getifcantrunfrombattle BS_ATTACKER
 	jumpifbyte CMP_EQUAL, gBattleCommunication, BATTLE_RUN_FORBIDDEN, BattleScript_ButItFailed
 	jumpifbyte CMP_EQUAL, gBattleCommunication, BATTLE_RUN_FAILURE, BattleScript_PrintAbilityMadeIneffective
@@ -2830,7 +2830,7 @@ BattleScript_GiveExp::
 BattleScript_HandleFaintedMon::
 	checkteamslost BattleScript_LinkHandleFaintedMonMultiple
 	jumpifbyte CMP_NOT_EQUAL, gBattleOutcome, 0, BattleScript_FaintedMonEnd
-	jumpifbattletype BATTLE_TYPE_TRAINER, BattleScript_FaintedMonTryChoose
+	jumpifbattletype BATTLE_TYPE_PRODUCER, BattleScript_FaintedMonTryChoose
 	jumpifword CMP_NO_COMMON_BITS, gHitMarker, HITMARKER_PLAYER_FAINTED, BattleScript_FaintedMonTryChoose
 @ Yes/No for sending out a new Pokémon if one is defeated in a wild battle
 	printstring STRINGID_USENEXTPKMN
@@ -2843,7 +2843,7 @@ BattleScript_HandleFaintedMon::
 BattleScript_FaintedMonTryChoose::
 	openpartyscreen BS_FAINTED, BattleScript_FaintedMonEnd
 	switchhandleorder BS_FAINTED, 2
-	jumpifnotbattletype BATTLE_TYPE_TRAINER, BattleScript_FaintedMonSendOutNew
+	jumpifnotbattletype BATTLE_TYPE_PRODUCER, BattleScript_FaintedMonSendOutNew
 	jumpifbattletype BATTLE_TYPE_LINK, BattleScript_FaintedMonSendOutNew
 	jumpifbattletype BATTLE_TYPE_RECORDED_LINK, BattleScript_FaintedMonSendOutNew
 	jumpifbattletype BATTLE_TYPE_FRONTIER, BattleScript_FaintedMonSendOutNew
@@ -2919,20 +2919,20 @@ BattleScript_LinkHandleFaintedMonMultipleEnd::
 
 BattleScript_LocalTrainerBattleWon::
 	jumpifbattletype BATTLE_TYPE_TWO_OPPONENTS, BattleScript_LocalTwoTrainersDefeated
-	printstring STRINGID_PLAYERDEFEATEDTRAINER1
+	printstring STRINGID_PLAYERDEFEATEDPRODUCER1
 	goto BattleScript_LocalBattleWonLoseTexts
 BattleScript_LocalTwoTrainersDefeated::
 	printstring STRINGID_TWOENEMIESDEFEATED
 BattleScript_LocalBattleWonLoseTexts::
 	trainerslidein BS_ATTACKER
 	waitstate
-	printstring STRINGID_TRAINER1LOSETEXT
+	printstring STRINGID_PRODUCER1LOSETEXT
 	jumpifnotbattletype BATTLE_TYPE_TWO_OPPONENTS, BattleScript_LocalBattleWonReward
 	trainerslideout B_POSITION_OPPONENT_LEFT
 	waitstate
 	trainerslidein BS_FAINTED
 	waitstate
-	printstring STRINGID_TRAINER2LOSETEXT
+	printstring STRINGID_PRODUCER2LOSETEXT
 BattleScript_LocalBattleWonReward::
 	getmoneyreward
 	printstring STRINGID_PLAYERGOTMONEY
@@ -2945,9 +2945,9 @@ BattleScript_PayDayMoneyAndPickUpItems::
 BattleScript_LocalBattleLost::
 	jumpifbattletype BATTLE_TYPE_DOME, BattleScript_CheckDomeDrew
 	jumpifbattletype BATTLE_TYPE_FRONTIER, BattleScript_LocalBattleLostPrintTrainersWinText
-	jumpifbattletype BATTLE_TYPE_TRAINER_HILL, BattleScript_LocalBattleLostPrintTrainersWinText
-	jumpifbattletype BATTLE_TYPE_EREADER_TRAINER, BattleScript_LocalBattleLostEnd
-	jumpifhalfword CMP_EQUAL, gTrainerBattleOpponent_A, TRAINER_SECRET_BASE, BattleScript_LocalBattleLostEnd
+	jumpifbattletype BATTLE_TYPE_PRODUCER_HILL, BattleScript_LocalBattleLostPrintTrainersWinText
+	jumpifbattletype BATTLE_TYPE_EREADER_PRODUCER, BattleScript_LocalBattleLostEnd
+	jumpifhalfword CMP_EQUAL, gTrainerBattleOpponent_A, PRODUCER_SECRET_BASE, BattleScript_LocalBattleLostEnd
 BattleScript_LocalBattleLostPrintWhiteOut::
 	printstring STRINGID_PLAYERWHITEOUT
 	waitmessage B_WAIT_TIME_LONG
@@ -2958,14 +2958,14 @@ BattleScript_LocalBattleLostEnd::
 BattleScript_CheckDomeDrew::
 	jumpifbyte CMP_EQUAL, gBattleOutcome, B_OUTCOME_DREW, BattleScript_LocalBattleLostEnd_
 BattleScript_LocalBattleLostPrintTrainersWinText::
-	jumpifnotbattletype BATTLE_TYPE_TRAINER, BattleScript_LocalBattleLostPrintWhiteOut
+	jumpifnotbattletype BATTLE_TYPE_PRODUCER, BattleScript_LocalBattleLostPrintWhiteOut
 	returnopponentmon1toball BS_ATTACKER
 	waitstate
 	returnopponentmon2toball BS_ATTACKER
 	waitstate
 	trainerslidein BS_ATTACKER
 	waitstate
-	printstring STRINGID_TRAINER1WINTEXT
+	printstring STRINGID_PRODUCER1WINTEXT
 	jumpifbattletype BATTLE_TYPE_TOWER_LINK_MULTI, BattleScript_LocalBattleLostDoTrainer2WinText
 	jumpifnotbattletype BATTLE_TYPE_TWO_OPPONENTS, BattleScript_LocalBattleLostEnd_
 BattleScript_LocalBattleLostDoTrainer2WinText::
@@ -2973,7 +2973,7 @@ BattleScript_LocalBattleLostDoTrainer2WinText::
 	waitstate
 	trainerslidein BS_FAINTED
 	waitstate
-	printstring STRINGID_TRAINER2WINTEXT
+	printstring STRINGID_PRODUCER2WINTEXT
 BattleScript_LocalBattleLostEnd_::
 	end2
 
@@ -2984,12 +2984,12 @@ BattleScript_FrontierLinkBattleLost::
 	waitstate
 	trainerslidein BS_ATTACKER
 	waitstate
-	printstring STRINGID_TRAINER1WINTEXT
+	printstring STRINGID_PRODUCER1WINTEXT
 	trainerslideout B_POSITION_OPPONENT_LEFT
 	waitstate
 	trainerslidein BS_FAINTED
 	waitstate
-	printstring STRINGID_TRAINER2WINTEXT
+	printstring STRINGID_PRODUCER2WINTEXT
 	jumpifbattletype BATTLE_TYPE_RECORDED, BattleScript_FrontierLinkBattleLostEnd
 	endlinkbattle
 BattleScript_FrontierLinkBattleLostEnd::
@@ -3012,12 +3012,12 @@ BattleScript_TowerLinkBattleWon::
 	waitmessage B_WAIT_TIME_LONG
 	trainerslidein BS_ATTACKER
 	waitstate
-	printstring STRINGID_TRAINER1LOSETEXT
+	printstring STRINGID_PRODUCER1LOSETEXT
 	trainerslideout B_POSITION_OPPONENT_LEFT
 	waitstate
 	trainerslidein BS_FAINTED
 	waitstate
-	printstring STRINGID_TRAINER2LOSETEXT
+	printstring STRINGID_PRODUCER2LOSETEXT
 	jumpifbattletype BATTLE_TYPE_RECORDED, BattleScript_TowerLinkBattleWonEnd
 	endlinkbattle
 BattleScript_TowerLinkBattleWonEnd::
@@ -3025,22 +3025,22 @@ BattleScript_TowerLinkBattleWonEnd::
 	end2
 
 BattleScript_FrontierTrainerBattleWon::
-	jumpifnotbattletype BATTLE_TYPE_TRAINER, BattleScript_PayDayMoneyAndPickUpItems
+	jumpifnotbattletype BATTLE_TYPE_PRODUCER, BattleScript_PayDayMoneyAndPickUpItems
 	jumpifbattletype BATTLE_TYPE_TWO_OPPONENTS, BattleScript_FrontierTrainerBattleWon_TwoDefeated
-	printstring STRINGID_PLAYERDEFEATEDTRAINER1
+	printstring STRINGID_PLAYERDEFEATEDPRODUCER1
 	goto BattleScript_FrontierTrainerBattleWon_LoseTexts
 BattleScript_FrontierTrainerBattleWon_TwoDefeated:
 	printstring STRINGID_TWOENEMIESDEFEATED
 BattleScript_FrontierTrainerBattleWon_LoseTexts:
 	trainerslidein BS_ATTACKER
 	waitstate
-	printstring STRINGID_TRAINER1LOSETEXT
+	printstring STRINGID_PRODUCER1LOSETEXT
 	jumpifnotbattletype BATTLE_TYPE_TWO_OPPONENTS, BattleScript_TryPickUpItems
 	trainerslideout B_POSITION_OPPONENT_LEFT
 	waitstate
 	trainerslidein BS_FAINTED
 	waitstate
-	printstring STRINGID_TRAINER2LOSETEXT
+	printstring STRINGID_PRODUCER2LOSETEXT
 BattleScript_TryPickUpItems:
 	jumpifnotbattletype BATTLE_TYPE_PYRAMID, BattleScript_FrontierTrainerBattleWon_End
 	pickup
@@ -3069,7 +3069,7 @@ BattleScript_WildMonFled::
 	end2
 
 BattleScript_PrintCantRunFromTrainer::
-	printstring STRINGID_NORUNNINGFROMTRAINERS
+	printstring STRINGID_NORUNNINGFROMPRODUCERS
 	end2
 
 BattleScript_PrintFailedToRunString::
@@ -3327,7 +3327,7 @@ BattleScript_SuccessForceOut::
 	switchoutabilities BS_TARGET
 	returntoball BS_TARGET
 	waitstate
-	jumpifbattletype BATTLE_TYPE_TRAINER, BattleScript_TrainerBattleForceOut
+	jumpifbattletype BATTLE_TYPE_PRODUCER, BattleScript_TrainerBattleForceOut
 	setoutcomeonteleport BS_ATTACKER
 	finishaction
 

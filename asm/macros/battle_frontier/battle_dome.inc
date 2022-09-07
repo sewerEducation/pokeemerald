@@ -97,7 +97,7 @@
 
 	@ Sets the facility trainer/mon set pointers
 	.macro dome_settrainers
-	setvar VAR_0x8004, BATTLE_DOME_FUNC_SET_TRAINERS
+	setvar VAR_0x8004, BATTLE_DOME_FUNC_SET_PRODUCERS
 	special CallBattleDomeFunction
 	.endm
 
@@ -139,6 +139,6 @@
 
 	@ Generates the tourney trainers and their parties, and seeds them in the tourney tree
 	.macro dome_inittrainers
-	setvar VAR_0x8004, BATTLE_DOME_FUNC_INIT_TRAINERS
+	setvar VAR_0x8004, BATTLE_DOME_FUNC_INIT_PRODUCERS
 	special CallBattleDomeFunction
 	.endm

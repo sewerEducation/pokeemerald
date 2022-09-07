@@ -1,10 +1,10 @@
 const struct Trainer gTrainers[] = {
-    [TRAINER_NONE] =
+    [PRODUCER_NONE] =
     {
         .partyFlags = 0,
-        .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerClass = PRODUCER_CLASS_PKMN_PRODUCER_1,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_HIKER,
         .trainerName = _(""),
         .items = {},
         .doubleBattle = FALSE,
@@ -13,11 +13,11 @@ const struct Trainer gTrainers[] = {
         .party = {.NoItemDefaultMoves = NULL},
     },
 
-    [TRAINER_SAWYER_1] =
+    [PRODUCER_SAWYER_1] =
     {
-        .trainerClass = TRAINER_CLASS_HIKER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerClass = PRODUCER_CLASS_HIKER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_HIKER,
         .trainerName = _("SAWYER"),
         .items = {},
         .doubleBattle = FALSE,
@@ -25,11 +25,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Sawyer1),
     },
 
-    [TRAINER_GRUNT_AQUA_HIDEOUT_1] =
+    [PRODUCER_GRUNT_AQUA_HIDEOUT_1] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_AQUA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = PRODUCER_PIC_AQUA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -37,11 +37,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntAquaHideout1),
     },
 
-    [TRAINER_GRUNT_AQUA_HIDEOUT_2] =
+    [PRODUCER_GRUNT_AQUA_HIDEOUT_2] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_AQUA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = PRODUCER_PIC_AQUA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -49,11 +49,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntAquaHideout2),
     },
 
-    [TRAINER_GRUNT_AQUA_HIDEOUT_3] =
+    [PRODUCER_GRUNT_AQUA_HIDEOUT_3] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_AQUA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = PRODUCER_PIC_AQUA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -61,11 +61,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntAquaHideout3),
     },
 
-    [TRAINER_GRUNT_AQUA_HIDEOUT_4] =
+    [PRODUCER_GRUNT_AQUA_HIDEOUT_4] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_AQUA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = PRODUCER_PIC_AQUA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -73,11 +73,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntAquaHideout4),
     },
 
-    [TRAINER_GRUNT_SEAFLOOR_CAVERN_1] =
+    [PRODUCER_GRUNT_SEAFLOOR_CAVERN_1] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_AQUA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = PRODUCER_PIC_AQUA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -85,11 +85,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntSeafloorCavern1),
     },
 
-    [TRAINER_GRUNT_SEAFLOOR_CAVERN_2] =
+    [PRODUCER_GRUNT_SEAFLOOR_CAVERN_2] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_AQUA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = PRODUCER_PIC_AQUA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -97,11 +97,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntSeafloorCavern2),
     },
 
-    [TRAINER_GRUNT_SEAFLOOR_CAVERN_3] =
+    [PRODUCER_GRUNT_SEAFLOOR_CAVERN_3] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_AQUA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = PRODUCER_PIC_AQUA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -109,11 +109,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntSeafloorCavern3),
     },
 
-    [TRAINER_GABRIELLE_1] =
+    [PRODUCER_GABRIELLE_1] =
     {
-        .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
+        .trainerClass = PRODUCER_CLASS_PKMN_BREEDER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_POKEMON_BREEDER_F,
         .trainerName = _("GABRIELLE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -121,11 +121,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Gabrielle1),
     },
 
-    [TRAINER_GRUNT_PETALBURG_WOODS] =
+    [PRODUCER_GRUNT_PETALBURG_WOODS] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_AQUA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = PRODUCER_PIC_AQUA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -133,11 +133,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntPetalburgWoods),
     },
 
-    [TRAINER_MARCEL] =
+    [PRODUCER_MARCEL] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_M,
         .trainerName = _("MARCEL"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -145,11 +145,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Marcel),
     },
 
-    [TRAINER_ALBERTO] =
+    [PRODUCER_ALBERTO] =
     {
-        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
+        .trainerClass = PRODUCER_CLASS_BIRD_KEEPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_BIRD_KEEPER,
         .trainerName = _("ALBERTO"),
         .items = {},
         .doubleBattle = FALSE,
@@ -157,11 +157,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Alberto),
     },
 
-    [TRAINER_ED] =
+    [PRODUCER_ED] =
     {
-        .trainerClass = TRAINER_CLASS_COLLECTOR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_COLLECTOR,
+        .trainerClass = PRODUCER_CLASS_COLLECTOR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_COLLECTOR,
         .trainerName = _("ED"),
         .items = {},
         .doubleBattle = FALSE,
@@ -169,11 +169,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Ed),
     },
 
-    [TRAINER_GRUNT_SEAFLOOR_CAVERN_4] =
+    [PRODUCER_GRUNT_SEAFLOOR_CAVERN_4] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
+        .trainerClass = PRODUCER_CLASS_TEAM_AQUA,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = PRODUCER_PIC_AQUA_GRUNT_F,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -181,11 +181,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntSeafloorCavern4),
     },
 
-    [TRAINER_DECLAN] =
+    [PRODUCER_DECLAN] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_M,
         .trainerName = _("DECLAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -193,11 +193,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Declan),
     },
 
-    [TRAINER_GRUNT_RUSTURF_TUNNEL] =
+    [PRODUCER_GRUNT_RUSTURF_TUNNEL] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_AQUA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = PRODUCER_PIC_AQUA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -205,11 +205,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntRusturfTunnel),
     },
 
-    [TRAINER_GRUNT_WEATHER_INST_1] =
+    [PRODUCER_GRUNT_WEATHER_INST_1] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_AQUA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = PRODUCER_PIC_AQUA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -217,11 +217,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntWeatherInst1),
     },
 
-    [TRAINER_GRUNT_WEATHER_INST_2] =
+    [PRODUCER_GRUNT_WEATHER_INST_2] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_AQUA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = PRODUCER_PIC_AQUA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -229,11 +229,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntWeatherInst2),
     },
 
-    [TRAINER_GRUNT_WEATHER_INST_3] =
+    [PRODUCER_GRUNT_WEATHER_INST_3] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_AQUA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = PRODUCER_PIC_AQUA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -241,11 +241,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntWeatherInst3),
     },
 
-    [TRAINER_GRUNT_MUSEUM_1] =
+    [PRODUCER_GRUNT_MUSEUM_1] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_AQUA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = PRODUCER_PIC_AQUA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -253,11 +253,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntMuseum1),
     },
 
-    [TRAINER_GRUNT_MUSEUM_2] =
+    [PRODUCER_GRUNT_MUSEUM_2] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_AQUA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = PRODUCER_PIC_AQUA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -265,11 +265,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntMuseum2),
     },
 
-    [TRAINER_GRUNT_SPACE_CENTER_1] =
+    [PRODUCER_GRUNT_SPACE_CENTER_1] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_MAGMA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MAGMA,
+        .trainerPic = PRODUCER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -277,11 +277,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntSpaceCenter1),
     },
 
-    [TRAINER_GRUNT_MT_PYRE_1] =
+    [PRODUCER_GRUNT_MT_PYRE_1] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_AQUA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = PRODUCER_PIC_AQUA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -289,11 +289,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntMtPyre1),
     },
 
-    [TRAINER_GRUNT_MT_PYRE_2] =
+    [PRODUCER_GRUNT_MT_PYRE_2] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_AQUA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = PRODUCER_PIC_AQUA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -301,11 +301,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntMtPyre2),
     },
 
-    [TRAINER_GRUNT_MT_PYRE_3] =
+    [PRODUCER_GRUNT_MT_PYRE_3] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_AQUA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = PRODUCER_PIC_AQUA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -313,11 +313,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntMtPyre3),
     },
 
-    [TRAINER_GRUNT_WEATHER_INST_4] =
+    [PRODUCER_GRUNT_WEATHER_INST_4] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
+        .trainerClass = PRODUCER_CLASS_TEAM_AQUA,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = PRODUCER_PIC_AQUA_GRUNT_F,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -325,11 +325,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntWeatherInst4),
     },
 
-    [TRAINER_GRUNT_AQUA_HIDEOUT_5] =
+    [PRODUCER_GRUNT_AQUA_HIDEOUT_5] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
+        .trainerClass = PRODUCER_CLASS_TEAM_AQUA,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = PRODUCER_PIC_AQUA_GRUNT_F,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -337,11 +337,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntAquaHideout5),
     },
 
-    [TRAINER_GRUNT_AQUA_HIDEOUT_6] =
+    [PRODUCER_GRUNT_AQUA_HIDEOUT_6] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
+        .trainerClass = PRODUCER_CLASS_TEAM_AQUA,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = PRODUCER_PIC_AQUA_GRUNT_F,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -349,11 +349,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntAquaHideout6),
     },
 
-    [TRAINER_FREDRICK] =
+    [PRODUCER_FREDRICK] =
     {
-        .trainerClass = TRAINER_CLASS_EXPERT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_EXPERT_M,
+        .trainerClass = PRODUCER_CLASS_EXPERT,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_EXPERT_M,
         .trainerName = _("FREDRICK"),
         .items = {},
         .doubleBattle = FALSE,
@@ -361,11 +361,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Fredrick),
     },
 
-    [TRAINER_MATT] =
+    [PRODUCER_MATT] =
     {
-        .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_ADMIN_M,
+        .trainerClass = PRODUCER_CLASS_AQUA_ADMIN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = PRODUCER_PIC_AQUA_ADMIN_M,
         .trainerName = _("MATT"),
         .items = {ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -373,11 +373,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Matt),
     },
 
-    [TRAINER_ZANDER] =
+    [PRODUCER_ZANDER] =
     {
-        .trainerClass = TRAINER_CLASS_BLACK_BELT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BLACK_BELT,
+        .trainerClass = PRODUCER_CLASS_BLACK_BELT,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BLACK_BELT,
         .trainerName = _("ZANDER"),
         .items = {},
         .doubleBattle = FALSE,
@@ -385,11 +385,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Zander),
     },
 
-    [TRAINER_SHELLY_WEATHER_INSTITUTE] =
+    [PRODUCER_SHELLY_WEATHER_INSTITUTE] =
     {
-        .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_ADMIN_F,
+        .trainerClass = PRODUCER_CLASS_AQUA_ADMIN,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = PRODUCER_PIC_AQUA_ADMIN_F,
         .trainerName = _("SHELLY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -397,11 +397,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_ShellyWeatherInstitute),
     },
 
-    [TRAINER_SHELLY_SEAFLOOR_CAVERN] =
+    [PRODUCER_SHELLY_SEAFLOOR_CAVERN] =
     {
-        .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_ADMIN_F,
+        .trainerClass = PRODUCER_CLASS_AQUA_ADMIN,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = PRODUCER_PIC_AQUA_ADMIN_F,
         .trainerName = _("SHELLY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -409,11 +409,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_ShellySeafloorCavern),
     },
 
-    [TRAINER_ARCHIE] =
+    [PRODUCER_ARCHIE] =
     {
-        .trainerClass = TRAINER_CLASS_AQUA_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_LEADER_ARCHIE,
+        .trainerClass = PRODUCER_CLASS_AQUA_LEADER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = PRODUCER_PIC_AQUA_LEADER_ARCHIE,
         .trainerName = _("ARCHIE"),
         .items = {ITEM_SUPER_POTION, ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -421,11 +421,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Archie),
     },
 
-    [TRAINER_LEAH] =
+    [PRODUCER_LEAH] =
     {
-        .trainerClass = TRAINER_CLASS_HEX_MANIAC,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_HEX_MANIAC,
+        .trainerClass = PRODUCER_CLASS_HEX_MANIAC,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_HEX_MANIAC,
         .trainerName = _("LEAH"),
         .items = {},
         .doubleBattle = FALSE,
@@ -433,11 +433,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Leah),
     },
 
-    [TRAINER_DAISY] =
+    [PRODUCER_DAISY] =
     {
-        .trainerClass = TRAINER_CLASS_AROMA_LADY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_AROMA_LADY,
+        .trainerClass = PRODUCER_CLASS_AROMA_LADY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_AROMA_LADY,
         .trainerName = _("DAISY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -445,11 +445,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Daisy),
     },
 
-    [TRAINER_ROSE_1] =
+    [PRODUCER_ROSE_1] =
     {
-        .trainerClass = TRAINER_CLASS_AROMA_LADY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_AROMA_LADY,
+        .trainerClass = PRODUCER_CLASS_AROMA_LADY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_AROMA_LADY,
         .trainerName = _("ROSE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -457,11 +457,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Rose1),
     },
 
-    [TRAINER_FELIX] =
+    [PRODUCER_FELIX] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_M,
         .trainerName = _("FELIX"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -469,11 +469,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Felix),
     },
 
-    [TRAINER_VIOLET] =
+    [PRODUCER_VIOLET] =
     {
-        .trainerClass = TRAINER_CLASS_AROMA_LADY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_AROMA_LADY,
+        .trainerClass = PRODUCER_CLASS_AROMA_LADY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_AROMA_LADY,
         .trainerName = _("VIOLET"),
         .items = {},
         .doubleBattle = FALSE,
@@ -481,11 +481,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Violet),
     },
 
-    [TRAINER_ROSE_2] =
+    [PRODUCER_ROSE_2] =
     {
-        .trainerClass = TRAINER_CLASS_AROMA_LADY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_AROMA_LADY,
+        .trainerClass = PRODUCER_CLASS_AROMA_LADY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_AROMA_LADY,
         .trainerName = _("ROSE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -493,11 +493,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Rose2),
     },
 
-    [TRAINER_ROSE_3] =
+    [PRODUCER_ROSE_3] =
     {
-        .trainerClass = TRAINER_CLASS_AROMA_LADY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_AROMA_LADY,
+        .trainerClass = PRODUCER_CLASS_AROMA_LADY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_AROMA_LADY,
         .trainerName = _("ROSE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -505,11 +505,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Rose3),
     },
 
-    [TRAINER_ROSE_4] =
+    [PRODUCER_ROSE_4] =
     {
-        .trainerClass = TRAINER_CLASS_AROMA_LADY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_AROMA_LADY,
+        .trainerClass = PRODUCER_CLASS_AROMA_LADY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_AROMA_LADY,
         .trainerName = _("ROSE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -517,11 +517,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Rose4),
     },
 
-    [TRAINER_ROSE_5] =
+    [PRODUCER_ROSE_5] =
     {
-        .trainerClass = TRAINER_CLASS_AROMA_LADY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_AROMA_LADY,
+        .trainerClass = PRODUCER_CLASS_AROMA_LADY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_AROMA_LADY,
         .trainerName = _("ROSE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -529,11 +529,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Rose5),
     },
 
-    [TRAINER_DUSTY_1] =
+    [PRODUCER_DUSTY_1] =
     {
-        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
+        .trainerClass = PRODUCER_CLASS_RUIN_MANIAC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_RUIN_MANIAC,
         .trainerName = _("DUSTY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -541,11 +541,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Dusty1),
     },
 
-    [TRAINER_CHIP] =
+    [PRODUCER_CHIP] =
     {
-        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
+        .trainerClass = PRODUCER_CLASS_RUIN_MANIAC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_RUIN_MANIAC,
         .trainerName = _("CHIP"),
         .items = {},
         .doubleBattle = FALSE,
@@ -553,11 +553,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Chip),
     },
 
-    [TRAINER_FOSTER] =
+    [PRODUCER_FOSTER] =
     {
-        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
+        .trainerClass = PRODUCER_CLASS_RUIN_MANIAC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_RUIN_MANIAC,
         .trainerName = _("FOSTER"),
         .items = {},
         .doubleBattle = FALSE,
@@ -565,11 +565,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Foster),
     },
 
-    [TRAINER_DUSTY_2] =
+    [PRODUCER_DUSTY_2] =
     {
-        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
+        .trainerClass = PRODUCER_CLASS_RUIN_MANIAC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_RUIN_MANIAC,
         .trainerName = _("DUSTY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -577,11 +577,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Dusty2),
     },
 
-    [TRAINER_DUSTY_3] =
+    [PRODUCER_DUSTY_3] =
     {
-        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
+        .trainerClass = PRODUCER_CLASS_RUIN_MANIAC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_RUIN_MANIAC,
         .trainerName = _("DUSTY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -589,11 +589,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Dusty3),
     },
 
-    [TRAINER_DUSTY_4] =
+    [PRODUCER_DUSTY_4] =
     {
-        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
+        .trainerClass = PRODUCER_CLASS_RUIN_MANIAC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_RUIN_MANIAC,
         .trainerName = _("DUSTY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -601,11 +601,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Dusty4),
     },
 
-    [TRAINER_DUSTY_5] =
+    [PRODUCER_DUSTY_5] =
     {
-        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
+        .trainerClass = PRODUCER_CLASS_RUIN_MANIAC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_RUIN_MANIAC,
         .trainerName = _("DUSTY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -613,11 +613,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Dusty5),
     },
 
-    [TRAINER_GABBY_AND_TY_1] =
+    [PRODUCER_GABBY_AND_TY_1] =
     {
-        .trainerClass = TRAINER_CLASS_INTERVIEWER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
-        .trainerPic = TRAINER_PIC_INTERVIEWER,
+        .trainerClass = PRODUCER_CLASS_INTERVIEWER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTERVIEWER,
+        .trainerPic = PRODUCER_PIC_INTERVIEWER,
         .trainerName = _("GABBY & TY"),
         .items = {},
         .doubleBattle = TRUE,
@@ -625,11 +625,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GabbyAndTy1),
     },
 
-    [TRAINER_GABBY_AND_TY_2] =
+    [PRODUCER_GABBY_AND_TY_2] =
     {
-        .trainerClass = TRAINER_CLASS_INTERVIEWER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
-        .trainerPic = TRAINER_PIC_INTERVIEWER,
+        .trainerClass = PRODUCER_CLASS_INTERVIEWER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTERVIEWER,
+        .trainerPic = PRODUCER_PIC_INTERVIEWER,
         .trainerName = _("GABBY & TY"),
         .items = {},
         .doubleBattle = TRUE,
@@ -637,11 +637,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GabbyAndTy2),
     },
 
-    [TRAINER_GABBY_AND_TY_3] =
+    [PRODUCER_GABBY_AND_TY_3] =
     {
-        .trainerClass = TRAINER_CLASS_INTERVIEWER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
-        .trainerPic = TRAINER_PIC_INTERVIEWER,
+        .trainerClass = PRODUCER_CLASS_INTERVIEWER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTERVIEWER,
+        .trainerPic = PRODUCER_PIC_INTERVIEWER,
         .trainerName = _("GABBY & TY"),
         .items = {},
         .doubleBattle = TRUE,
@@ -649,11 +649,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GabbyAndTy3),
     },
 
-    [TRAINER_GABBY_AND_TY_4] =
+    [PRODUCER_GABBY_AND_TY_4] =
     {
-        .trainerClass = TRAINER_CLASS_INTERVIEWER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
-        .trainerPic = TRAINER_PIC_INTERVIEWER,
+        .trainerClass = PRODUCER_CLASS_INTERVIEWER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTERVIEWER,
+        .trainerPic = PRODUCER_PIC_INTERVIEWER,
         .trainerName = _("GABBY & TY"),
         .items = {},
         .doubleBattle = TRUE,
@@ -661,11 +661,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GabbyAndTy4),
     },
 
-    [TRAINER_GABBY_AND_TY_5] =
+    [PRODUCER_GABBY_AND_TY_5] =
     {
-        .trainerClass = TRAINER_CLASS_INTERVIEWER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
-        .trainerPic = TRAINER_PIC_INTERVIEWER,
+        .trainerClass = PRODUCER_CLASS_INTERVIEWER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTERVIEWER,
+        .trainerPic = PRODUCER_PIC_INTERVIEWER,
         .trainerName = _("GABBY & TY"),
         .items = {},
         .doubleBattle = TRUE,
@@ -673,11 +673,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GabbyAndTy5),
     },
 
-    [TRAINER_GABBY_AND_TY_6] =
+    [PRODUCER_GABBY_AND_TY_6] =
     {
-        .trainerClass = TRAINER_CLASS_INTERVIEWER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTERVIEWER,
-        .trainerPic = TRAINER_PIC_INTERVIEWER,
+        .trainerClass = PRODUCER_CLASS_INTERVIEWER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTERVIEWER,
+        .trainerPic = PRODUCER_PIC_INTERVIEWER,
         .trainerName = _("GABBY & TY"),
         .items = {},
         .doubleBattle = TRUE,
@@ -685,11 +685,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_GabbyAndTy6),
     },
 
-    [TRAINER_LOLA_1] =
+    [PRODUCER_LOLA_1] =
     {
-        .trainerClass = TRAINER_CLASS_TUBER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_TUBER_F,
+        .trainerClass = PRODUCER_CLASS_TUBER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_TUBER_F,
         .trainerName = _("LOLA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -697,11 +697,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Lola1),
     },
 
-    [TRAINER_AUSTINA] =
+    [PRODUCER_AUSTINA] =
     {
-        .trainerClass = TRAINER_CLASS_TUBER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_TUBER_F,
+        .trainerClass = PRODUCER_CLASS_TUBER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_TUBER_F,
         .trainerName = _("AUSTINA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -709,11 +709,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Austina),
     },
 
-    [TRAINER_GWEN] =
+    [PRODUCER_GWEN] =
     {
-        .trainerClass = TRAINER_CLASS_TUBER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_TUBER_F,
+        .trainerClass = PRODUCER_CLASS_TUBER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_TUBER_F,
         .trainerName = _("GWEN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -721,11 +721,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Gwen),
     },
 
-    [TRAINER_LOLA_2] =
+    [PRODUCER_LOLA_2] =
     {
-        .trainerClass = TRAINER_CLASS_TUBER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_TUBER_F,
+        .trainerClass = PRODUCER_CLASS_TUBER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_TUBER_F,
         .trainerName = _("LOLA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -733,11 +733,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Lola2),
     },
 
-    [TRAINER_LOLA_3] =
+    [PRODUCER_LOLA_3] =
     {
-        .trainerClass = TRAINER_CLASS_TUBER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_TUBER_F,
+        .trainerClass = PRODUCER_CLASS_TUBER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_TUBER_F,
         .trainerName = _("LOLA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -745,11 +745,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Lola3),
     },
 
-    [TRAINER_LOLA_4] =
+    [PRODUCER_LOLA_4] =
     {
-        .trainerClass = TRAINER_CLASS_TUBER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_TUBER_F,
+        .trainerClass = PRODUCER_CLASS_TUBER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_TUBER_F,
         .trainerName = _("LOLA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -757,11 +757,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Lola4),
     },
 
-    [TRAINER_LOLA_5] =
+    [PRODUCER_LOLA_5] =
     {
-        .trainerClass = TRAINER_CLASS_TUBER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_TUBER_F,
+        .trainerClass = PRODUCER_CLASS_TUBER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_TUBER_F,
         .trainerName = _("LOLA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -769,11 +769,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Lola5),
     },
 
-    [TRAINER_RICKY_1] =
+    [PRODUCER_RICKY_1] =
     {
-        .trainerClass = TRAINER_CLASS_TUBER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_TUBER_M,
+        .trainerClass = PRODUCER_CLASS_TUBER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_TUBER_M,
         .trainerName = _("RICKY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -781,11 +781,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Ricky1),
     },
 
-    [TRAINER_SIMON] =
+    [PRODUCER_SIMON] =
     {
-        .trainerClass = TRAINER_CLASS_TUBER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_TUBER_M,
+        .trainerClass = PRODUCER_CLASS_TUBER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_TUBER_M,
         .trainerName = _("SIMON"),
         .items = {},
         .doubleBattle = FALSE,
@@ -793,11 +793,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Simon),
     },
 
-    [TRAINER_CHARLIE] =
+    [PRODUCER_CHARLIE] =
     {
-        .trainerClass = TRAINER_CLASS_TUBER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_TUBER_M,
+        .trainerClass = PRODUCER_CLASS_TUBER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_TUBER_M,
         .trainerName = _("CHARLIE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -805,11 +805,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Charlie),
     },
 
-    [TRAINER_RICKY_2] =
+    [PRODUCER_RICKY_2] =
     {
-        .trainerClass = TRAINER_CLASS_TUBER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_TUBER_M,
+        .trainerClass = PRODUCER_CLASS_TUBER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_TUBER_M,
         .trainerName = _("RICKY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -817,11 +817,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Ricky2),
     },
 
-    [TRAINER_RICKY_3] =
+    [PRODUCER_RICKY_3] =
     {
-        .trainerClass = TRAINER_CLASS_TUBER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_TUBER_M,
+        .trainerClass = PRODUCER_CLASS_TUBER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_TUBER_M,
         .trainerName = _("RICKY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -829,11 +829,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Ricky3),
     },
 
-    [TRAINER_RICKY_4] =
+    [PRODUCER_RICKY_4] =
     {
-        .trainerClass = TRAINER_CLASS_TUBER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_TUBER_M,
+        .trainerClass = PRODUCER_CLASS_TUBER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_TUBER_M,
         .trainerName = _("RICKY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -841,11 +841,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Ricky4),
     },
 
-    [TRAINER_RICKY_5] =
+    [PRODUCER_RICKY_5] =
     {
-        .trainerClass = TRAINER_CLASS_TUBER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_TUBER_M,
+        .trainerClass = PRODUCER_CLASS_TUBER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_TUBER_M,
         .trainerName = _("RICKY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -853,11 +853,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Ricky5),
     },
 
-    [TRAINER_RANDALL] =
+    [PRODUCER_RANDALL] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_M,
         .trainerName = _("RANDALL"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -865,11 +865,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Randall),
     },
 
-    [TRAINER_PARKER] =
+    [PRODUCER_PARKER] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_M,
         .trainerName = _("PARKER"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -877,11 +877,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Parker),
     },
 
-    [TRAINER_GEORGE] =
+    [PRODUCER_GEORGE] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_M,
         .trainerName = _("GEORGE"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -889,11 +889,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_George),
     },
 
-    [TRAINER_BERKE] =
+    [PRODUCER_BERKE] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_M,
         .trainerName = _("BERKE"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -901,11 +901,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Berke),
     },
 
-    [TRAINER_BRAXTON] =
+    [PRODUCER_BRAXTON] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_M,
         .trainerName = _("BRAXTON"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -913,11 +913,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Braxton),
     },
 
-    [TRAINER_VINCENT] =
+    [PRODUCER_VINCENT] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_M,
         .trainerName = _("VINCENT"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -925,11 +925,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Vincent),
     },
 
-    [TRAINER_LEROY] =
+    [PRODUCER_LEROY] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_M,
         .trainerName = _("LEROY"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -937,11 +937,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Leroy),
     },
 
-    [TRAINER_WILTON_1] =
+    [PRODUCER_WILTON_1] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_M,
         .trainerName = _("WILTON"),
         .items = {ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -949,11 +949,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Wilton1),
     },
 
-    [TRAINER_EDGAR] =
+    [PRODUCER_EDGAR] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_M,
         .trainerName = _("EDGAR"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -961,11 +961,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Edgar),
     },
 
-    [TRAINER_ALBERT] =
+    [PRODUCER_ALBERT] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_M,
         .trainerName = _("ALBERT"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -973,11 +973,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Albert),
     },
 
-    [TRAINER_SAMUEL] =
+    [PRODUCER_SAMUEL] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_M,
         .trainerName = _("SAMUEL"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -985,11 +985,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Samuel),
     },
 
-    [TRAINER_VITO] =
+    [PRODUCER_VITO] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_M,
         .trainerName = _("VITO"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -997,11 +997,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Vito),
     },
 
-    [TRAINER_OWEN] =
+    [PRODUCER_OWEN] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_M,
         .trainerName = _("OWEN"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1009,11 +1009,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Owen),
     },
 
-    [TRAINER_WILTON_2] =
+    [PRODUCER_WILTON_2] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_M,
         .trainerName = _("WILTON"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1021,11 +1021,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Wilton2),
     },
 
-    [TRAINER_WILTON_3] =
+    [PRODUCER_WILTON_3] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_M,
         .trainerName = _("WILTON"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1033,11 +1033,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Wilton3),
     },
 
-    [TRAINER_WILTON_4] =
+    [PRODUCER_WILTON_4] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_M,
         .trainerName = _("WILTON"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1045,11 +1045,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Wilton4),
     },
 
-    [TRAINER_WILTON_5] =
+    [PRODUCER_WILTON_5] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_M,
         .trainerName = _("WILTON"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1057,11 +1057,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Wilton5),
     },
 
-    [TRAINER_WARREN] =
+    [PRODUCER_WARREN] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_M,
         .trainerName = _("WARREN"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1069,11 +1069,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Warren),
     },
 
-    [TRAINER_MARY] =
+    [PRODUCER_MARY] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_F,
         .trainerName = _("MARY"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1081,11 +1081,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Mary),
     },
 
-    [TRAINER_ALEXIA] =
+    [PRODUCER_ALEXIA] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_F,
         .trainerName = _("ALEXIA"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1093,11 +1093,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Alexia),
     },
 
-    [TRAINER_JODY] =
+    [PRODUCER_JODY] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_F,
         .trainerName = _("JODY"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1105,11 +1105,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Jody),
     },
 
-    [TRAINER_WENDY] =
+    [PRODUCER_WENDY] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_F,
         .trainerName = _("WENDY"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1117,11 +1117,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Wendy),
     },
 
-    [TRAINER_KEIRA] =
+    [PRODUCER_KEIRA] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_F,
         .trainerName = _("KEIRA"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1129,11 +1129,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Keira),
     },
 
-    [TRAINER_BROOKE_1] =
+    [PRODUCER_BROOKE_1] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_F,
         .trainerName = _("BROOKE"),
         .items = {ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1141,11 +1141,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Brooke1),
     },
 
-    [TRAINER_JENNIFER] =
+    [PRODUCER_JENNIFER] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_F,
         .trainerName = _("JENNIFER"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1153,11 +1153,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jennifer),
     },
 
-    [TRAINER_HOPE] =
+    [PRODUCER_HOPE] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_F,
         .trainerName = _("HOPE"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1165,11 +1165,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Hope),
     },
 
-    [TRAINER_SHANNON] =
+    [PRODUCER_SHANNON] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_F,
         .trainerName = _("SHANNON"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1177,11 +1177,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Shannon),
     },
 
-    [TRAINER_MICHELLE] =
+    [PRODUCER_MICHELLE] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_F,
         .trainerName = _("MICHELLE"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1189,11 +1189,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Michelle),
     },
 
-    [TRAINER_CAROLINE] =
+    [PRODUCER_CAROLINE] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_F,
         .trainerName = _("CAROLINE"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1201,11 +1201,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Caroline),
     },
 
-    [TRAINER_JULIE] =
+    [PRODUCER_JULIE] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_F,
         .trainerName = _("JULIE"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1213,11 +1213,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Julie),
     },
 
-    [TRAINER_BROOKE_2] =
+    [PRODUCER_BROOKE_2] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_F,
         .trainerName = _("BROOKE"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1225,11 +1225,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Brooke2),
     },
 
-    [TRAINER_BROOKE_3] =
+    [PRODUCER_BROOKE_3] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_F,
         .trainerName = _("BROOKE"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1237,11 +1237,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Brooke3),
     },
 
-    [TRAINER_BROOKE_4] =
+    [PRODUCER_BROOKE_4] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_F,
         .trainerName = _("BROOKE"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1249,11 +1249,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Brooke4),
     },
 
-    [TRAINER_BROOKE_5] =
+    [PRODUCER_BROOKE_5] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_F,
         .trainerName = _("BROOKE"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1261,11 +1261,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Brooke5),
     },
 
-    [TRAINER_PATRICIA] =
+    [PRODUCER_PATRICIA] =
     {
-        .trainerClass = TRAINER_CLASS_HEX_MANIAC,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_HEX_MANIAC,
+        .trainerClass = PRODUCER_CLASS_HEX_MANIAC,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_HEX_MANIAC,
         .trainerName = _("PATRICIA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1273,11 +1273,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Patricia),
     },
 
-    [TRAINER_KINDRA] =
+    [PRODUCER_KINDRA] =
     {
-        .trainerClass = TRAINER_CLASS_HEX_MANIAC,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_HEX_MANIAC,
+        .trainerClass = PRODUCER_CLASS_HEX_MANIAC,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_HEX_MANIAC,
         .trainerName = _("KINDRA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1285,11 +1285,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Kindra),
     },
 
-    [TRAINER_TAMMY] =
+    [PRODUCER_TAMMY] =
     {
-        .trainerClass = TRAINER_CLASS_HEX_MANIAC,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_HEX_MANIAC,
+        .trainerClass = PRODUCER_CLASS_HEX_MANIAC,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_HEX_MANIAC,
         .trainerName = _("TAMMY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1297,11 +1297,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Tammy),
     },
 
-    [TRAINER_VALERIE_1] =
+    [PRODUCER_VALERIE_1] =
     {
-        .trainerClass = TRAINER_CLASS_HEX_MANIAC,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_HEX_MANIAC,
+        .trainerClass = PRODUCER_CLASS_HEX_MANIAC,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_HEX_MANIAC,
         .trainerName = _("VALERIE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1309,11 +1309,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Valerie1),
     },
 
-    [TRAINER_TASHA] =
+    [PRODUCER_TASHA] =
     {
-        .trainerClass = TRAINER_CLASS_HEX_MANIAC,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_HEX_MANIAC,
+        .trainerClass = PRODUCER_CLASS_HEX_MANIAC,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_HEX_MANIAC,
         .trainerName = _("TASHA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1321,11 +1321,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Tasha),
     },
 
-    [TRAINER_VALERIE_2] =
+    [PRODUCER_VALERIE_2] =
     {
-        .trainerClass = TRAINER_CLASS_HEX_MANIAC,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_HEX_MANIAC,
+        .trainerClass = PRODUCER_CLASS_HEX_MANIAC,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_HEX_MANIAC,
         .trainerName = _("VALERIE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1333,11 +1333,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Valerie2),
     },
 
-    [TRAINER_VALERIE_3] =
+    [PRODUCER_VALERIE_3] =
     {
-        .trainerClass = TRAINER_CLASS_HEX_MANIAC,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_HEX_MANIAC,
+        .trainerClass = PRODUCER_CLASS_HEX_MANIAC,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_HEX_MANIAC,
         .trainerName = _("VALERIE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1345,11 +1345,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Valerie3),
     },
 
-    [TRAINER_VALERIE_4] =
+    [PRODUCER_VALERIE_4] =
     {
-        .trainerClass = TRAINER_CLASS_HEX_MANIAC,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_HEX_MANIAC,
+        .trainerClass = PRODUCER_CLASS_HEX_MANIAC,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_HEX_MANIAC,
         .trainerName = _("VALERIE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1357,11 +1357,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Valerie4),
     },
 
-    [TRAINER_VALERIE_5] =
+    [PRODUCER_VALERIE_5] =
     {
-        .trainerClass = TRAINER_CLASS_HEX_MANIAC,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_HEX_MANIAC,
+        .trainerClass = PRODUCER_CLASS_HEX_MANIAC,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_HEX_MANIAC,
         .trainerName = _("VALERIE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1369,11 +1369,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Valerie5),
     },
 
-    [TRAINER_CINDY_1] =
+    [PRODUCER_CINDY_1] =
     {
-        .trainerClass = TRAINER_CLASS_LADY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LADY,
+        .trainerClass = PRODUCER_CLASS_LADY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LADY,
         .trainerName = _("CINDY"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1381,11 +1381,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_DEFAULT_MOVES(sParty_Cindy1),
     },
 
-    [TRAINER_DAPHNE] =
+    [PRODUCER_DAPHNE] =
     {
-        .trainerClass = TRAINER_CLASS_LADY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LADY,
+        .trainerClass = PRODUCER_CLASS_LADY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LADY,
         .trainerName = _("DAPHNE"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1393,11 +1393,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Daphne),
     },
 
-    [TRAINER_GRUNT_SPACE_CENTER_2] =
+    [PRODUCER_GRUNT_SPACE_CENTER_2] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_MAGMA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MAGMA,
+        .trainerPic = PRODUCER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1405,11 +1405,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntSpaceCenter2),
     },
 
-    [TRAINER_CINDY_2] =
+    [PRODUCER_CINDY_2] =
     {
-        .trainerClass = TRAINER_CLASS_LADY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LADY,
+        .trainerClass = PRODUCER_CLASS_LADY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LADY,
         .trainerName = _("CINDY"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1417,11 +1417,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Cindy2),
     },
 
-    [TRAINER_BRIANNA] =
+    [PRODUCER_BRIANNA] =
     {
-        .trainerClass = TRAINER_CLASS_LADY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LADY,
+        .trainerClass = PRODUCER_CLASS_LADY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LADY,
         .trainerName = _("BRIANNA"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1429,11 +1429,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_DEFAULT_MOVES(sParty_Brianna),
     },
 
-    [TRAINER_NAOMI] =
+    [PRODUCER_NAOMI] =
     {
-        .trainerClass = TRAINER_CLASS_LADY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LADY,
+        .trainerClass = PRODUCER_CLASS_LADY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LADY,
         .trainerName = _("NAOMI"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1441,11 +1441,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_DEFAULT_MOVES(sParty_Naomi),
     },
 
-    [TRAINER_CINDY_3] =
+    [PRODUCER_CINDY_3] =
     {
-        .trainerClass = TRAINER_CLASS_LADY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LADY,
+        .trainerClass = PRODUCER_CLASS_LADY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LADY,
         .trainerName = _("CINDY"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1453,11 +1453,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_DEFAULT_MOVES(sParty_Cindy3),
     },
 
-    [TRAINER_CINDY_4] =
+    [PRODUCER_CINDY_4] =
     {
-        .trainerClass = TRAINER_CLASS_LADY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LADY,
+        .trainerClass = PRODUCER_CLASS_LADY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LADY,
         .trainerName = _("CINDY"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1465,11 +1465,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_DEFAULT_MOVES(sParty_Cindy4),
     },
 
-    [TRAINER_CINDY_5] =
+    [PRODUCER_CINDY_5] =
     {
-        .trainerClass = TRAINER_CLASS_LADY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LADY,
+        .trainerClass = PRODUCER_CLASS_LADY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LADY,
         .trainerName = _("CINDY"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1477,11 +1477,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_DEFAULT_MOVES(sParty_Cindy5),
     },
 
-    [TRAINER_CINDY_6] =
+    [PRODUCER_CINDY_6] =
     {
-        .trainerClass = TRAINER_CLASS_LADY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LADY,
+        .trainerClass = PRODUCER_CLASS_LADY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LADY,
         .trainerName = _("CINDY"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1489,11 +1489,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Cindy6),
     },
 
-    [TRAINER_MELISSA] =
+    [PRODUCER_MELISSA] =
     {
-        .trainerClass = TRAINER_CLASS_BEAUTY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_BEAUTY,
+        .trainerClass = PRODUCER_CLASS_BEAUTY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_BEAUTY,
         .trainerName = _("MELISSA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1501,11 +1501,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Melissa),
     },
 
-    [TRAINER_SHEILA] =
+    [PRODUCER_SHEILA] =
     {
-        .trainerClass = TRAINER_CLASS_BEAUTY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_BEAUTY,
+        .trainerClass = PRODUCER_CLASS_BEAUTY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_BEAUTY,
         .trainerName = _("SHEILA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1513,11 +1513,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Sheila),
     },
 
-    [TRAINER_SHIRLEY] =
+    [PRODUCER_SHIRLEY] =
     {
-        .trainerClass = TRAINER_CLASS_BEAUTY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_BEAUTY,
+        .trainerClass = PRODUCER_CLASS_BEAUTY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_BEAUTY,
         .trainerName = _("SHIRLEY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1525,11 +1525,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Shirley),
     },
 
-    [TRAINER_JESSICA_1] =
+    [PRODUCER_JESSICA_1] =
     {
-        .trainerClass = TRAINER_CLASS_BEAUTY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_BEAUTY,
+        .trainerClass = PRODUCER_CLASS_BEAUTY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_BEAUTY,
         .trainerName = _("JESSICA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1537,11 +1537,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Jessica1),
     },
 
-    [TRAINER_CONNIE] =
+    [PRODUCER_CONNIE] =
     {
-        .trainerClass = TRAINER_CLASS_BEAUTY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_BEAUTY,
+        .trainerClass = PRODUCER_CLASS_BEAUTY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_BEAUTY,
         .trainerName = _("CONNIE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1549,11 +1549,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Connie),
     },
 
-    [TRAINER_BRIDGET] =
+    [PRODUCER_BRIDGET] =
     {
-        .trainerClass = TRAINER_CLASS_BEAUTY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_BEAUTY,
+        .trainerClass = PRODUCER_CLASS_BEAUTY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_BEAUTY,
         .trainerName = _("BRIDGET"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1561,11 +1561,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Bridget),
     },
 
-    [TRAINER_OLIVIA] =
+    [PRODUCER_OLIVIA] =
     {
-        .trainerClass = TRAINER_CLASS_BEAUTY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_BEAUTY,
+        .trainerClass = PRODUCER_CLASS_BEAUTY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_BEAUTY,
         .trainerName = _("OLIVIA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1573,11 +1573,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Olivia),
     },
 
-    [TRAINER_TIFFANY] =
+    [PRODUCER_TIFFANY] =
     {
-        .trainerClass = TRAINER_CLASS_BEAUTY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_BEAUTY,
+        .trainerClass = PRODUCER_CLASS_BEAUTY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_BEAUTY,
         .trainerName = _("TIFFANY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1585,11 +1585,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Tiffany),
     },
 
-    [TRAINER_JESSICA_2] =
+    [PRODUCER_JESSICA_2] =
     {
-        .trainerClass = TRAINER_CLASS_BEAUTY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_BEAUTY,
+        .trainerClass = PRODUCER_CLASS_BEAUTY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_BEAUTY,
         .trainerName = _("JESSICA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1597,11 +1597,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Jessica2),
     },
 
-    [TRAINER_JESSICA_3] =
+    [PRODUCER_JESSICA_3] =
     {
-        .trainerClass = TRAINER_CLASS_BEAUTY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_BEAUTY,
+        .trainerClass = PRODUCER_CLASS_BEAUTY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_BEAUTY,
         .trainerName = _("JESSICA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1609,11 +1609,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Jessica3),
     },
 
-    [TRAINER_JESSICA_4] =
+    [PRODUCER_JESSICA_4] =
     {
-        .trainerClass = TRAINER_CLASS_BEAUTY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_BEAUTY,
+        .trainerClass = PRODUCER_CLASS_BEAUTY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_BEAUTY,
         .trainerName = _("JESSICA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1621,11 +1621,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Jessica4),
     },
 
-    [TRAINER_JESSICA_5] =
+    [PRODUCER_JESSICA_5] =
     {
-        .trainerClass = TRAINER_CLASS_BEAUTY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_BEAUTY,
+        .trainerClass = PRODUCER_CLASS_BEAUTY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_BEAUTY,
         .trainerName = _("JESSICA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1633,11 +1633,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Jessica5),
     },
 
-    [TRAINER_WINSTON_1] =
+    [PRODUCER_WINSTON_1] =
     {
-        .trainerClass = TRAINER_CLASS_RICH_BOY,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_RICH,
-        .trainerPic = TRAINER_PIC_RICH_BOY,
+        .trainerClass = PRODUCER_CLASS_RICH_BOY,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_RICH,
+        .trainerPic = PRODUCER_PIC_RICH_BOY,
         .trainerName = _("WINSTON"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1645,11 +1645,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_DEFAULT_MOVES(sParty_Winston1),
     },
 
-    [TRAINER_MOLLIE] =
+    [PRODUCER_MOLLIE] =
     {
-        .trainerClass = TRAINER_CLASS_EXPERT,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_EXPERT_F,
+        .trainerClass = PRODUCER_CLASS_EXPERT,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_EXPERT_F,
         .trainerName = _("MOLLIE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1657,11 +1657,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Mollie),
     },
 
-    [TRAINER_GARRET] =
+    [PRODUCER_GARRET] =
     {
-        .trainerClass = TRAINER_CLASS_RICH_BOY,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_RICH,
-        .trainerPic = TRAINER_PIC_RICH_BOY,
+        .trainerClass = PRODUCER_CLASS_RICH_BOY,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_RICH,
+        .trainerPic = PRODUCER_PIC_RICH_BOY,
         .trainerName = _("GARRET"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1669,11 +1669,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_DEFAULT_MOVES(sParty_Garret),
     },
 
-    [TRAINER_WINSTON_2] =
+    [PRODUCER_WINSTON_2] =
     {
-        .trainerClass = TRAINER_CLASS_RICH_BOY,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_RICH,
-        .trainerPic = TRAINER_PIC_RICH_BOY,
+        .trainerClass = PRODUCER_CLASS_RICH_BOY,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_RICH,
+        .trainerPic = PRODUCER_PIC_RICH_BOY,
         .trainerName = _("WINSTON"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1681,11 +1681,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_DEFAULT_MOVES(sParty_Winston2),
     },
 
-    [TRAINER_WINSTON_3] =
+    [PRODUCER_WINSTON_3] =
     {
-        .trainerClass = TRAINER_CLASS_RICH_BOY,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_RICH,
-        .trainerPic = TRAINER_PIC_RICH_BOY,
+        .trainerClass = PRODUCER_CLASS_RICH_BOY,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_RICH,
+        .trainerPic = PRODUCER_PIC_RICH_BOY,
         .trainerName = _("WINSTON"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1693,11 +1693,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_DEFAULT_MOVES(sParty_Winston3),
     },
 
-    [TRAINER_WINSTON_4] =
+    [PRODUCER_WINSTON_4] =
     {
-        .trainerClass = TRAINER_CLASS_RICH_BOY,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_RICH,
-        .trainerPic = TRAINER_PIC_RICH_BOY,
+        .trainerClass = PRODUCER_CLASS_RICH_BOY,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_RICH,
+        .trainerPic = PRODUCER_PIC_RICH_BOY,
         .trainerName = _("WINSTON"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1705,11 +1705,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_DEFAULT_MOVES(sParty_Winston4),
     },
 
-    [TRAINER_WINSTON_5] =
+    [PRODUCER_WINSTON_5] =
     {
-        .trainerClass = TRAINER_CLASS_RICH_BOY,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_RICH,
-        .trainerPic = TRAINER_PIC_RICH_BOY,
+        .trainerClass = PRODUCER_CLASS_RICH_BOY,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_RICH,
+        .trainerPic = PRODUCER_PIC_RICH_BOY,
         .trainerName = _("WINSTON"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -1717,11 +1717,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Winston5),
     },
 
-    [TRAINER_STEVE_1] =
+    [PRODUCER_STEVE_1] =
     {
-        .trainerClass = TRAINER_CLASS_POKEMANIAC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_POKEMANIAC,
+        .trainerClass = PRODUCER_CLASS_POKEMANIAC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_POKEMANIAC,
         .trainerName = _("STEVE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1729,11 +1729,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Steve1),
     },
 
-    [TRAINER_THALIA_1] =
+    [PRODUCER_THALIA_1] =
     {
-        .trainerClass = TRAINER_CLASS_BEAUTY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_BEAUTY,
+        .trainerClass = PRODUCER_CLASS_BEAUTY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_BEAUTY,
         .trainerName = _("THALIA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1741,11 +1741,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Thalia1),
     },
 
-    [TRAINER_MARK] =
+    [PRODUCER_MARK] =
     {
-        .trainerClass = TRAINER_CLASS_POKEMANIAC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_POKEMANIAC,
+        .trainerClass = PRODUCER_CLASS_POKEMANIAC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_POKEMANIAC,
         .trainerName = _("MARK"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1753,11 +1753,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Mark),
     },
 
-    [TRAINER_GRUNT_MT_CHIMNEY_1] =
+    [PRODUCER_GRUNT_MT_CHIMNEY_1] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
+        .trainerClass = PRODUCER_CLASS_TEAM_MAGMA,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_MAGMA,
+        .trainerPic = PRODUCER_PIC_MAGMA_GRUNT_F,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1765,11 +1765,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntMtChimney1),
     },
 
-    [TRAINER_STEVE_2] =
+    [PRODUCER_STEVE_2] =
     {
-        .trainerClass = TRAINER_CLASS_POKEMANIAC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_POKEMANIAC,
+        .trainerClass = PRODUCER_CLASS_POKEMANIAC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_POKEMANIAC,
         .trainerName = _("STEVE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1777,11 +1777,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Steve2),
     },
 
-    [TRAINER_STEVE_3] =
+    [PRODUCER_STEVE_3] =
     {
-        .trainerClass = TRAINER_CLASS_POKEMANIAC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_POKEMANIAC,
+        .trainerClass = PRODUCER_CLASS_POKEMANIAC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_POKEMANIAC,
         .trainerName = _("STEVE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1789,11 +1789,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Steve3),
     },
 
-    [TRAINER_STEVE_4] =
+    [PRODUCER_STEVE_4] =
     {
-        .trainerClass = TRAINER_CLASS_POKEMANIAC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_POKEMANIAC,
+        .trainerClass = PRODUCER_CLASS_POKEMANIAC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_POKEMANIAC,
         .trainerName = _("STEVE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1801,11 +1801,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Steve4),
     },
 
-    [TRAINER_STEVE_5] =
+    [PRODUCER_STEVE_5] =
     {
-        .trainerClass = TRAINER_CLASS_POKEMANIAC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_POKEMANIAC,
+        .trainerClass = PRODUCER_CLASS_POKEMANIAC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_POKEMANIAC,
         .trainerName = _("STEVE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1813,11 +1813,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Steve5),
     },
 
-    [TRAINER_LUIS] =
+    [PRODUCER_LUIS] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_M,
         .trainerName = _("LUIS"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1825,11 +1825,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Luis),
     },
 
-    [TRAINER_DOMINIK] =
+    [PRODUCER_DOMINIK] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_M,
         .trainerName = _("DOMINIK"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1837,11 +1837,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Dominik),
     },
 
-    [TRAINER_DOUGLAS] =
+    [PRODUCER_DOUGLAS] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_M,
         .trainerName = _("DOUGLAS"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1849,11 +1849,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Douglas),
     },
 
-    [TRAINER_DARRIN] =
+    [PRODUCER_DARRIN] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_M,
         .trainerName = _("DARRIN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1861,11 +1861,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Darrin),
     },
 
-    [TRAINER_TONY_1] =
+    [PRODUCER_TONY_1] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_M,
         .trainerName = _("TONY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1873,11 +1873,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Tony1),
     },
 
-    [TRAINER_JEROME] =
+    [PRODUCER_JEROME] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_M,
         .trainerName = _("JEROME"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1885,11 +1885,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jerome),
     },
 
-    [TRAINER_MATTHEW] =
+    [PRODUCER_MATTHEW] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_M,
         .trainerName = _("MATTHEW"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1897,11 +1897,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Matthew),
     },
 
-    [TRAINER_DAVID] =
+    [PRODUCER_DAVID] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_M,
         .trainerName = _("DAVID"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1909,11 +1909,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_David),
     },
 
-    [TRAINER_SPENCER] =
+    [PRODUCER_SPENCER] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_M,
         .trainerName = _("SPENCER"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1921,11 +1921,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Spencer),
     },
 
-    [TRAINER_ROLAND] =
+    [PRODUCER_ROLAND] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_M,
         .trainerName = _("ROLAND"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1933,11 +1933,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Roland),
     },
 
-    [TRAINER_NOLEN] =
+    [PRODUCER_NOLEN] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_M,
         .trainerName = _("NOLEN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1945,11 +1945,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Nolen),
     },
 
-    [TRAINER_STAN] =
+    [PRODUCER_STAN] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_M,
         .trainerName = _("STAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1957,11 +1957,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Stan),
     },
 
-    [TRAINER_BARRY] =
+    [PRODUCER_BARRY] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_M,
         .trainerName = _("BARRY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1969,11 +1969,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Barry),
     },
 
-    [TRAINER_DEAN] =
+    [PRODUCER_DEAN] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_M,
         .trainerName = _("DEAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1981,11 +1981,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Dean),
     },
 
-    [TRAINER_RODNEY] =
+    [PRODUCER_RODNEY] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_M,
         .trainerName = _("RODNEY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -1993,11 +1993,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Rodney),
     },
 
-    [TRAINER_RICHARD] =
+    [PRODUCER_RICHARD] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_M,
         .trainerName = _("RICHARD"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2005,11 +2005,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Richard),
     },
 
-    [TRAINER_HERMAN] =
+    [PRODUCER_HERMAN] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_M,
         .trainerName = _("HERMAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2017,11 +2017,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Herman),
     },
 
-    [TRAINER_SANTIAGO] =
+    [PRODUCER_SANTIAGO] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_M,
         .trainerName = _("SANTIAGO"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2029,11 +2029,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Santiago),
     },
 
-    [TRAINER_GILBERT] =
+    [PRODUCER_GILBERT] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_M,
         .trainerName = _("GILBERT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2041,11 +2041,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Gilbert),
     },
 
-    [TRAINER_FRANKLIN] =
+    [PRODUCER_FRANKLIN] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_M,
         .trainerName = _("FRANKLIN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2053,11 +2053,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Franklin),
     },
 
-    [TRAINER_KEVIN] =
+    [PRODUCER_KEVIN] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_M,
         .trainerName = _("KEVIN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2065,11 +2065,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Kevin),
     },
 
-    [TRAINER_JACK] =
+    [PRODUCER_JACK] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_M,
         .trainerName = _("JACK"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2077,11 +2077,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jack),
     },
 
-    [TRAINER_DUDLEY] =
+    [PRODUCER_DUDLEY] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_M,
         .trainerName = _("DUDLEY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2089,11 +2089,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Dudley),
     },
 
-    [TRAINER_CHAD] =
+    [PRODUCER_CHAD] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_M,
         .trainerName = _("CHAD"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2101,11 +2101,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Chad),
     },
 
-    [TRAINER_TONY_2] =
+    [PRODUCER_TONY_2] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_M,
         .trainerName = _("TONY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2113,11 +2113,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Tony2),
     },
 
-    [TRAINER_TONY_3] =
+    [PRODUCER_TONY_3] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_M,
         .trainerName = _("TONY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2125,11 +2125,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Tony3),
     },
 
-    [TRAINER_TONY_4] =
+    [PRODUCER_TONY_4] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_M,
         .trainerName = _("TONY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2137,11 +2137,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Tony4),
     },
 
-    [TRAINER_TONY_5] =
+    [PRODUCER_TONY_5] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_M,
         .trainerName = _("TONY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2149,11 +2149,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Tony5),
     },
 
-    [TRAINER_TAKAO] =
+    [PRODUCER_TAKAO] =
     {
-        .trainerClass = TRAINER_CLASS_BLACK_BELT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BLACK_BELT,
+        .trainerClass = PRODUCER_CLASS_BLACK_BELT,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BLACK_BELT,
         .trainerName = _("TAKAO"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2161,11 +2161,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Takao),
     },
 
-    [TRAINER_HITOSHI] =
+    [PRODUCER_HITOSHI] =
     {
-        .trainerClass = TRAINER_CLASS_BLACK_BELT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BLACK_BELT,
+        .trainerClass = PRODUCER_CLASS_BLACK_BELT,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BLACK_BELT,
         .trainerName = _("HITOSHI"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2173,11 +2173,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Hitoshi),
     },
 
-    [TRAINER_KIYO] =
+    [PRODUCER_KIYO] =
     {
-        .trainerClass = TRAINER_CLASS_BLACK_BELT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BLACK_BELT,
+        .trainerClass = PRODUCER_CLASS_BLACK_BELT,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BLACK_BELT,
         .trainerName = _("KIYO"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2185,11 +2185,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Kiyo),
     },
 
-    [TRAINER_KOICHI] =
+    [PRODUCER_KOICHI] =
     {
-        .trainerClass = TRAINER_CLASS_BLACK_BELT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BLACK_BELT,
+        .trainerClass = PRODUCER_CLASS_BLACK_BELT,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BLACK_BELT,
         .trainerName = _("KOICHI"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2197,11 +2197,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Koichi),
     },
 
-    [TRAINER_NOB_1] =
+    [PRODUCER_NOB_1] =
     {
-        .trainerClass = TRAINER_CLASS_BLACK_BELT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BLACK_BELT,
+        .trainerClass = PRODUCER_CLASS_BLACK_BELT,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BLACK_BELT,
         .trainerName = _("NOB"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2209,11 +2209,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Nob1),
     },
 
-    [TRAINER_NOB_2] =
+    [PRODUCER_NOB_2] =
     {
-        .trainerClass = TRAINER_CLASS_BLACK_BELT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BLACK_BELT,
+        .trainerClass = PRODUCER_CLASS_BLACK_BELT,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BLACK_BELT,
         .trainerName = _("NOB"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2221,11 +2221,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Nob2),
     },
 
-    [TRAINER_NOB_3] =
+    [PRODUCER_NOB_3] =
     {
-        .trainerClass = TRAINER_CLASS_BLACK_BELT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BLACK_BELT,
+        .trainerClass = PRODUCER_CLASS_BLACK_BELT,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BLACK_BELT,
         .trainerName = _("NOB"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2233,11 +2233,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Nob3),
     },
 
-    [TRAINER_NOB_4] =
+    [PRODUCER_NOB_4] =
     {
-        .trainerClass = TRAINER_CLASS_BLACK_BELT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BLACK_BELT,
+        .trainerClass = PRODUCER_CLASS_BLACK_BELT,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BLACK_BELT,
         .trainerName = _("NOB"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2245,11 +2245,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Nob4),
     },
 
-    [TRAINER_NOB_5] =
+    [PRODUCER_NOB_5] =
     {
-        .trainerClass = TRAINER_CLASS_BLACK_BELT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BLACK_BELT,
+        .trainerClass = PRODUCER_CLASS_BLACK_BELT,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BLACK_BELT,
         .trainerName = _("NOB"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2257,11 +2257,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_DEFAULT_MOVES(sParty_Nob5),
     },
 
-    [TRAINER_YUJI] =
+    [PRODUCER_YUJI] =
     {
-        .trainerClass = TRAINER_CLASS_BLACK_BELT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BLACK_BELT,
+        .trainerClass = PRODUCER_CLASS_BLACK_BELT,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BLACK_BELT,
         .trainerName = _("YUJI"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2269,11 +2269,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Yuji),
     },
 
-    [TRAINER_DAISUKE] =
+    [PRODUCER_DAISUKE] =
     {
-        .trainerClass = TRAINER_CLASS_BLACK_BELT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BLACK_BELT,
+        .trainerClass = PRODUCER_CLASS_BLACK_BELT,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BLACK_BELT,
         .trainerName = _("DAISUKE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2281,11 +2281,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Daisuke),
     },
 
-    [TRAINER_ATSUSHI] =
+    [PRODUCER_ATSUSHI] =
     {
-        .trainerClass = TRAINER_CLASS_BLACK_BELT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BLACK_BELT,
+        .trainerClass = PRODUCER_CLASS_BLACK_BELT,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BLACK_BELT,
         .trainerName = _("ATSUSHI"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2293,11 +2293,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Atsushi),
     },
 
-    [TRAINER_KIRK] =
+    [PRODUCER_KIRK] =
     {
-        .trainerClass = TRAINER_CLASS_GUITARIST,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_GUITARIST,
+        .trainerClass = PRODUCER_CLASS_GUITARIST,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_GUITARIST,
         .trainerName = _("KIRK"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2305,11 +2305,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Kirk),
     },
 
-    [TRAINER_GRUNT_AQUA_HIDEOUT_7] =
+    [PRODUCER_GRUNT_AQUA_HIDEOUT_7] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
+        .trainerClass = PRODUCER_CLASS_TEAM_AQUA,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = PRODUCER_PIC_AQUA_GRUNT_F,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2317,11 +2317,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntAquaHideout7),
     },
 
-    [TRAINER_GRUNT_AQUA_HIDEOUT_8] =
+    [PRODUCER_GRUNT_AQUA_HIDEOUT_8] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_AQUA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = PRODUCER_PIC_AQUA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2329,11 +2329,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntAquaHideout8),
     },
 
-    [TRAINER_SHAWN] =
+    [PRODUCER_SHAWN] =
     {
-        .trainerClass = TRAINER_CLASS_GUITARIST,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_GUITARIST,
+        .trainerClass = PRODUCER_CLASS_GUITARIST,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_GUITARIST,
         .trainerName = _("SHAWN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2341,11 +2341,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Shawn),
     },
 
-    [TRAINER_FERNANDO_1] =
+    [PRODUCER_FERNANDO_1] =
     {
-        .trainerClass = TRAINER_CLASS_GUITARIST,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_GUITARIST,
+        .trainerClass = PRODUCER_CLASS_GUITARIST,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_GUITARIST,
         .trainerName = _("FERNANDO"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2353,11 +2353,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Fernando1),
     },
 
-    [TRAINER_DALTON_1] =
+    [PRODUCER_DALTON_1] =
     {
-        .trainerClass = TRAINER_CLASS_GUITARIST,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_GUITARIST,
+        .trainerClass = PRODUCER_CLASS_GUITARIST,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_GUITARIST,
         .trainerName = _("DALTON"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2365,11 +2365,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Dalton1),
     },
 
-    [TRAINER_DALTON_2] =
+    [PRODUCER_DALTON_2] =
     {
-        .trainerClass = TRAINER_CLASS_GUITARIST,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_GUITARIST,
+        .trainerClass = PRODUCER_CLASS_GUITARIST,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_GUITARIST,
         .trainerName = _("DALTON"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2377,11 +2377,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Dalton2),
     },
 
-    [TRAINER_DALTON_3] =
+    [PRODUCER_DALTON_3] =
     {
-        .trainerClass = TRAINER_CLASS_GUITARIST,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_GUITARIST,
+        .trainerClass = PRODUCER_CLASS_GUITARIST,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_GUITARIST,
         .trainerName = _("DALTON"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2389,11 +2389,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Dalton3),
     },
 
-    [TRAINER_DALTON_4] =
+    [PRODUCER_DALTON_4] =
     {
-        .trainerClass = TRAINER_CLASS_GUITARIST,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_GUITARIST,
+        .trainerClass = PRODUCER_CLASS_GUITARIST,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_GUITARIST,
         .trainerName = _("DALTON"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2401,11 +2401,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Dalton4),
     },
 
-    [TRAINER_DALTON_5] =
+    [PRODUCER_DALTON_5] =
     {
-        .trainerClass = TRAINER_CLASS_GUITARIST,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_GUITARIST,
+        .trainerClass = PRODUCER_CLASS_GUITARIST,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_GUITARIST,
         .trainerName = _("DALTON"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2413,11 +2413,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Dalton5),
     },
 
-    [TRAINER_COLE] =
+    [PRODUCER_COLE] =
     {
-        .trainerClass = TRAINER_CLASS_KINDLER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_KINDLER,
+        .trainerClass = PRODUCER_CLASS_KINDLER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_KINDLER,
         .trainerName = _("COLE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2425,11 +2425,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Cole),
     },
 
-    [TRAINER_JEFF] =
+    [PRODUCER_JEFF] =
     {
-        .trainerClass = TRAINER_CLASS_KINDLER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_KINDLER,
+        .trainerClass = PRODUCER_CLASS_KINDLER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_KINDLER,
         .trainerName = _("JEFF"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2437,11 +2437,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jeff),
     },
 
-    [TRAINER_AXLE] =
+    [PRODUCER_AXLE] =
     {
-        .trainerClass = TRAINER_CLASS_KINDLER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_KINDLER,
+        .trainerClass = PRODUCER_CLASS_KINDLER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_KINDLER,
         .trainerName = _("AXLE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2449,11 +2449,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Axle),
     },
 
-    [TRAINER_JACE] =
+    [PRODUCER_JACE] =
     {
-        .trainerClass = TRAINER_CLASS_KINDLER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_KINDLER,
+        .trainerClass = PRODUCER_CLASS_KINDLER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_KINDLER,
         .trainerName = _("JACE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2461,11 +2461,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jace),
     },
 
-    [TRAINER_KEEGAN] =
+    [PRODUCER_KEEGAN] =
     {
-        .trainerClass = TRAINER_CLASS_KINDLER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_KINDLER,
+        .trainerClass = PRODUCER_CLASS_KINDLER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_KINDLER,
         .trainerName = _("KEEGAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2473,11 +2473,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Keegan),
     },
 
-    [TRAINER_BERNIE_1] =
+    [PRODUCER_BERNIE_1] =
     {
-        .trainerClass = TRAINER_CLASS_KINDLER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_KINDLER,
+        .trainerClass = PRODUCER_CLASS_KINDLER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_KINDLER,
         .trainerName = _("BERNIE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2485,11 +2485,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Bernie1),
     },
 
-    [TRAINER_BERNIE_2] =
+    [PRODUCER_BERNIE_2] =
     {
-        .trainerClass = TRAINER_CLASS_KINDLER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_KINDLER,
+        .trainerClass = PRODUCER_CLASS_KINDLER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_KINDLER,
         .trainerName = _("BERNIE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2497,11 +2497,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Bernie2),
     },
 
-    [TRAINER_BERNIE_3] =
+    [PRODUCER_BERNIE_3] =
     {
-        .trainerClass = TRAINER_CLASS_KINDLER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_KINDLER,
+        .trainerClass = PRODUCER_CLASS_KINDLER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_KINDLER,
         .trainerName = _("BERNIE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2509,11 +2509,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Bernie3),
     },
 
-    [TRAINER_BERNIE_4] =
+    [PRODUCER_BERNIE_4] =
     {
-        .trainerClass = TRAINER_CLASS_KINDLER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_KINDLER,
+        .trainerClass = PRODUCER_CLASS_KINDLER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_KINDLER,
         .trainerName = _("BERNIE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2521,11 +2521,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Bernie4),
     },
 
-    [TRAINER_BERNIE_5] =
+    [PRODUCER_BERNIE_5] =
     {
-        .trainerClass = TRAINER_CLASS_KINDLER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_KINDLER,
+        .trainerClass = PRODUCER_CLASS_KINDLER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_KINDLER,
         .trainerName = _("BERNIE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2533,11 +2533,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Bernie5),
     },
 
-    [TRAINER_DREW] =
+    [PRODUCER_DREW] =
     {
-        .trainerClass = TRAINER_CLASS_CAMPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_CAMPER,
+        .trainerClass = PRODUCER_CLASS_CAMPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_CAMPER,
         .trainerName = _("DREW"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2545,11 +2545,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Drew),
     },
 
-    [TRAINER_BEAU] =
+    [PRODUCER_BEAU] =
     {
-        .trainerClass = TRAINER_CLASS_CAMPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_CAMPER,
+        .trainerClass = PRODUCER_CLASS_CAMPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_CAMPER,
         .trainerName = _("BEAU"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2557,11 +2557,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Beau),
     },
 
-    [TRAINER_LARRY] =
+    [PRODUCER_LARRY] =
     {
-        .trainerClass = TRAINER_CLASS_CAMPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_CAMPER,
+        .trainerClass = PRODUCER_CLASS_CAMPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_CAMPER,
         .trainerName = _("LARRY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2569,11 +2569,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Larry),
     },
 
-    [TRAINER_SHANE] =
+    [PRODUCER_SHANE] =
     {
-        .trainerClass = TRAINER_CLASS_CAMPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_CAMPER,
+        .trainerClass = PRODUCER_CLASS_CAMPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_CAMPER,
         .trainerName = _("SHANE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2581,11 +2581,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Shane),
     },
 
-    [TRAINER_JUSTIN] =
+    [PRODUCER_JUSTIN] =
     {
-        .trainerClass = TRAINER_CLASS_CAMPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_CAMPER,
+        .trainerClass = PRODUCER_CLASS_CAMPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_CAMPER,
         .trainerName = _("JUSTIN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2593,11 +2593,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Justin),
     },
 
-    [TRAINER_ETHAN_1] =
+    [PRODUCER_ETHAN_1] =
     {
-        .trainerClass = TRAINER_CLASS_CAMPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_CAMPER,
+        .trainerClass = PRODUCER_CLASS_CAMPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_CAMPER,
         .trainerName = _("ETHAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2605,11 +2605,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Ethan1),
     },
 
-    [TRAINER_AUTUMN] =
+    [PRODUCER_AUTUMN] =
     {
-        .trainerClass = TRAINER_CLASS_PICNICKER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_PICNICKER,
+        .trainerClass = PRODUCER_CLASS_PICNICKER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_PICNICKER,
         .trainerName = _("AUTUMN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2617,11 +2617,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Autumn),
     },
 
-    [TRAINER_TRAVIS] =
+    [PRODUCER_TRAVIS] =
     {
-        .trainerClass = TRAINER_CLASS_CAMPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_CAMPER,
+        .trainerClass = PRODUCER_CLASS_CAMPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_CAMPER,
         .trainerName = _("TRAVIS"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2629,11 +2629,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Travis),
     },
 
-    [TRAINER_ETHAN_2] =
+    [PRODUCER_ETHAN_2] =
     {
-        .trainerClass = TRAINER_CLASS_CAMPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_CAMPER,
+        .trainerClass = PRODUCER_CLASS_CAMPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_CAMPER,
         .trainerName = _("ETHAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2641,11 +2641,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Ethan2),
     },
 
-    [TRAINER_ETHAN_3] =
+    [PRODUCER_ETHAN_3] =
     {
-        .trainerClass = TRAINER_CLASS_CAMPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_CAMPER,
+        .trainerClass = PRODUCER_CLASS_CAMPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_CAMPER,
         .trainerName = _("ETHAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2653,11 +2653,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Ethan3),
     },
 
-    [TRAINER_ETHAN_4] =
+    [PRODUCER_ETHAN_4] =
     {
-        .trainerClass = TRAINER_CLASS_CAMPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_CAMPER,
+        .trainerClass = PRODUCER_CLASS_CAMPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_CAMPER,
         .trainerName = _("ETHAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2665,11 +2665,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Ethan4),
     },
 
-    [TRAINER_ETHAN_5] =
+    [PRODUCER_ETHAN_5] =
     {
-        .trainerClass = TRAINER_CLASS_CAMPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_CAMPER,
+        .trainerClass = PRODUCER_CLASS_CAMPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_CAMPER,
         .trainerName = _("ETHAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2677,11 +2677,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Ethan5),
     },
 
-    [TRAINER_BRENT] =
+    [PRODUCER_BRENT] =
     {
-        .trainerClass = TRAINER_CLASS_BUG_MANIAC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_BUG_MANIAC,
+        .trainerClass = PRODUCER_CLASS_BUG_MANIAC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_BUG_MANIAC,
         .trainerName = _("BRENT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2689,11 +2689,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Brent),
     },
 
-    [TRAINER_DONALD] =
+    [PRODUCER_DONALD] =
     {
-        .trainerClass = TRAINER_CLASS_BUG_MANIAC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_BUG_MANIAC,
+        .trainerClass = PRODUCER_CLASS_BUG_MANIAC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_BUG_MANIAC,
         .trainerName = _("DONALD"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2701,11 +2701,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Donald),
     },
 
-    [TRAINER_TAYLOR] =
+    [PRODUCER_TAYLOR] =
     {
-        .trainerClass = TRAINER_CLASS_BUG_MANIAC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_BUG_MANIAC,
+        .trainerClass = PRODUCER_CLASS_BUG_MANIAC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_BUG_MANIAC,
         .trainerName = _("TAYLOR"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2713,11 +2713,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Taylor),
     },
 
-    [TRAINER_JEFFREY_1] =
+    [PRODUCER_JEFFREY_1] =
     {
-        .trainerClass = TRAINER_CLASS_BUG_MANIAC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_BUG_MANIAC,
+        .trainerClass = PRODUCER_CLASS_BUG_MANIAC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_BUG_MANIAC,
         .trainerName = _("JEFFREY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2725,11 +2725,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jeffrey1),
     },
 
-    [TRAINER_DEREK] =
+    [PRODUCER_DEREK] =
     {
-        .trainerClass = TRAINER_CLASS_BUG_MANIAC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_BUG_MANIAC,
+        .trainerClass = PRODUCER_CLASS_BUG_MANIAC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_BUG_MANIAC,
         .trainerName = _("DEREK"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2737,11 +2737,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Derek),
     },
 
-    [TRAINER_JEFFREY_2] =
+    [PRODUCER_JEFFREY_2] =
     {
-        .trainerClass = TRAINER_CLASS_BUG_MANIAC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_BUG_MANIAC,
+        .trainerClass = PRODUCER_CLASS_BUG_MANIAC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_BUG_MANIAC,
         .trainerName = _("JEFFREY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2749,11 +2749,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jeffrey2),
     },
 
-    [TRAINER_JEFFREY_3] =
+    [PRODUCER_JEFFREY_3] =
     {
-        .trainerClass = TRAINER_CLASS_BUG_MANIAC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_BUG_MANIAC,
+        .trainerClass = PRODUCER_CLASS_BUG_MANIAC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_BUG_MANIAC,
         .trainerName = _("JEFFREY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2761,11 +2761,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jeffrey3),
     },
 
-    [TRAINER_JEFFREY_4] =
+    [PRODUCER_JEFFREY_4] =
     {
-        .trainerClass = TRAINER_CLASS_BUG_MANIAC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_BUG_MANIAC,
+        .trainerClass = PRODUCER_CLASS_BUG_MANIAC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_BUG_MANIAC,
         .trainerName = _("JEFFREY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2773,11 +2773,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jeffrey4),
     },
 
-    [TRAINER_JEFFREY_5] =
+    [PRODUCER_JEFFREY_5] =
     {
-        .trainerClass = TRAINER_CLASS_BUG_MANIAC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_BUG_MANIAC,
+        .trainerClass = PRODUCER_CLASS_BUG_MANIAC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_BUG_MANIAC,
         .trainerName = _("JEFFREY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2785,11 +2785,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_DEFAULT_MOVES(sParty_Jeffrey5),
     },
 
-    [TRAINER_EDWARD] =
+    [PRODUCER_EDWARD] =
     {
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_PSYCHIC_M,
+        .trainerClass = PRODUCER_CLASS_PSYCHIC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_PSYCHIC_M,
         .trainerName = _("EDWARD"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2797,11 +2797,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Edward),
     },
 
-    [TRAINER_PRESTON] =
+    [PRODUCER_PRESTON] =
     {
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_PSYCHIC_M,
+        .trainerClass = PRODUCER_CLASS_PSYCHIC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_PSYCHIC_M,
         .trainerName = _("PRESTON"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2809,11 +2809,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Preston),
     },
 
-    [TRAINER_VIRGIL] =
+    [PRODUCER_VIRGIL] =
     {
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_PSYCHIC_M,
+        .trainerClass = PRODUCER_CLASS_PSYCHIC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_PSYCHIC_M,
         .trainerName = _("VIRGIL"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2821,11 +2821,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Virgil),
     },
 
-    [TRAINER_BLAKE] =
+    [PRODUCER_BLAKE] =
     {
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_PSYCHIC_M,
+        .trainerClass = PRODUCER_CLASS_PSYCHIC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_PSYCHIC_M,
         .trainerName = _("BLAKE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2833,11 +2833,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Blake),
     },
 
-    [TRAINER_WILLIAM] =
+    [PRODUCER_WILLIAM] =
     {
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_PSYCHIC_M,
+        .trainerClass = PRODUCER_CLASS_PSYCHIC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_PSYCHIC_M,
         .trainerName = _("WILLIAM"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2845,11 +2845,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_William),
     },
 
-    [TRAINER_JOSHUA] =
+    [PRODUCER_JOSHUA] =
     {
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_PSYCHIC_M,
+        .trainerClass = PRODUCER_CLASS_PSYCHIC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_PSYCHIC_M,
         .trainerName = _("JOSHUA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2857,11 +2857,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Joshua),
     },
 
-    [TRAINER_CAMERON_1] =
+    [PRODUCER_CAMERON_1] =
     {
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_PSYCHIC_M,
+        .trainerClass = PRODUCER_CLASS_PSYCHIC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_PSYCHIC_M,
         .trainerName = _("CAMERON"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2869,11 +2869,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Cameron1),
     },
 
-    [TRAINER_CAMERON_2] =
+    [PRODUCER_CAMERON_2] =
     {
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_PSYCHIC_M,
+        .trainerClass = PRODUCER_CLASS_PSYCHIC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_PSYCHIC_M,
         .trainerName = _("CAMERON"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2881,11 +2881,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Cameron2),
     },
 
-    [TRAINER_CAMERON_3] =
+    [PRODUCER_CAMERON_3] =
     {
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_PSYCHIC_M,
+        .trainerClass = PRODUCER_CLASS_PSYCHIC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_PSYCHIC_M,
         .trainerName = _("CAMERON"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2893,11 +2893,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Cameron3),
     },
 
-    [TRAINER_CAMERON_4] =
+    [PRODUCER_CAMERON_4] =
     {
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_PSYCHIC_M,
+        .trainerClass = PRODUCER_CLASS_PSYCHIC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_PSYCHIC_M,
         .trainerName = _("CAMERON"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2905,11 +2905,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Cameron4),
     },
 
-    [TRAINER_CAMERON_5] =
+    [PRODUCER_CAMERON_5] =
     {
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_PSYCHIC_M,
+        .trainerClass = PRODUCER_CLASS_PSYCHIC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_PSYCHIC_M,
         .trainerName = _("CAMERON"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2917,11 +2917,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Cameron5),
     },
 
-    [TRAINER_JACLYN] =
+    [PRODUCER_JACLYN] =
     {
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_PSYCHIC_F,
+        .trainerClass = PRODUCER_CLASS_PSYCHIC,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_PSYCHIC_F,
         .trainerName = _("JACLYN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2929,11 +2929,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Jaclyn),
     },
 
-    [TRAINER_HANNAH] =
+    [PRODUCER_HANNAH] =
     {
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_PSYCHIC_F,
+        .trainerClass = PRODUCER_CLASS_PSYCHIC,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_PSYCHIC_F,
         .trainerName = _("HANNAH"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2941,11 +2941,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Hannah),
     },
 
-    [TRAINER_SAMANTHA] =
+    [PRODUCER_SAMANTHA] =
     {
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_PSYCHIC_F,
+        .trainerClass = PRODUCER_CLASS_PSYCHIC,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_PSYCHIC_F,
         .trainerName = _("SAMANTHA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2953,11 +2953,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Samantha),
     },
 
-    [TRAINER_MAURA] =
+    [PRODUCER_MAURA] =
     {
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_PSYCHIC_F,
+        .trainerClass = PRODUCER_CLASS_PSYCHIC,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_PSYCHIC_F,
         .trainerName = _("MAURA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2965,11 +2965,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Maura),
     },
 
-    [TRAINER_KAYLA] =
+    [PRODUCER_KAYLA] =
     {
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_PSYCHIC_F,
+        .trainerClass = PRODUCER_CLASS_PSYCHIC,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_PSYCHIC_F,
         .trainerName = _("KAYLA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2977,11 +2977,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Kayla),
     },
 
-    [TRAINER_ALEXIS] =
+    [PRODUCER_ALEXIS] =
     {
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_PSYCHIC_F,
+        .trainerClass = PRODUCER_CLASS_PSYCHIC,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_PSYCHIC_F,
         .trainerName = _("ALEXIS"),
         .items = {},
         .doubleBattle = FALSE,
@@ -2989,11 +2989,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Alexis),
     },
 
-    [TRAINER_JACKI_1] =
+    [PRODUCER_JACKI_1] =
     {
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_PSYCHIC_F,
+        .trainerClass = PRODUCER_CLASS_PSYCHIC,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_PSYCHIC_F,
         .trainerName = _("JACKI"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3001,11 +3001,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jacki1),
     },
 
-    [TRAINER_JACKI_2] =
+    [PRODUCER_JACKI_2] =
     {
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_PSYCHIC_F,
+        .trainerClass = PRODUCER_CLASS_PSYCHIC,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_PSYCHIC_F,
         .trainerName = _("JACKI"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3013,11 +3013,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jacki2),
     },
 
-    [TRAINER_JACKI_3] =
+    [PRODUCER_JACKI_3] =
     {
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_PSYCHIC_F,
+        .trainerClass = PRODUCER_CLASS_PSYCHIC,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_PSYCHIC_F,
         .trainerName = _("JACKI"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3025,11 +3025,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jacki3),
     },
 
-    [TRAINER_JACKI_4] =
+    [PRODUCER_JACKI_4] =
     {
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_PSYCHIC_F,
+        .trainerClass = PRODUCER_CLASS_PSYCHIC,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_PSYCHIC_F,
         .trainerName = _("JACKI"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3037,11 +3037,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jacki4),
     },
 
-    [TRAINER_JACKI_5] =
+    [PRODUCER_JACKI_5] =
     {
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_PSYCHIC_F,
+        .trainerClass = PRODUCER_CLASS_PSYCHIC,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_PSYCHIC_F,
         .trainerName = _("JACKI"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3049,11 +3049,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jacki5),
     },
 
-    [TRAINER_WALTER_1] =
+    [PRODUCER_WALTER_1] =
     {
-        .trainerClass = TRAINER_CLASS_GENTLEMAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_RICH,
-        .trainerPic = TRAINER_PIC_GENTLEMAN,
+        .trainerClass = PRODUCER_CLASS_GENTLEMAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_RICH,
+        .trainerPic = PRODUCER_PIC_GENTLEMAN,
         .trainerName = _("WALTER"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3061,11 +3061,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Walter1),
     },
 
-    [TRAINER_MICAH] =
+    [PRODUCER_MICAH] =
     {
-        .trainerClass = TRAINER_CLASS_GENTLEMAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_RICH,
-        .trainerPic = TRAINER_PIC_GENTLEMAN,
+        .trainerClass = PRODUCER_CLASS_GENTLEMAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_RICH,
+        .trainerPic = PRODUCER_PIC_GENTLEMAN,
         .trainerName = _("MICAH"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3073,11 +3073,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Micah),
     },
 
-    [TRAINER_THOMAS] =
+    [PRODUCER_THOMAS] =
     {
-        .trainerClass = TRAINER_CLASS_GENTLEMAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_RICH,
-        .trainerPic = TRAINER_PIC_GENTLEMAN,
+        .trainerClass = PRODUCER_CLASS_GENTLEMAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_RICH,
+        .trainerPic = PRODUCER_PIC_GENTLEMAN,
         .trainerName = _("THOMAS"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3085,11 +3085,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Thomas),
     },
 
-    [TRAINER_WALTER_2] =
+    [PRODUCER_WALTER_2] =
     {
-        .trainerClass = TRAINER_CLASS_GENTLEMAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_RICH,
-        .trainerPic = TRAINER_PIC_GENTLEMAN,
+        .trainerClass = PRODUCER_CLASS_GENTLEMAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_RICH,
+        .trainerPic = PRODUCER_PIC_GENTLEMAN,
         .trainerName = _("WALTER"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3097,11 +3097,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Walter2),
     },
 
-    [TRAINER_WALTER_3] =
+    [PRODUCER_WALTER_3] =
     {
-        .trainerClass = TRAINER_CLASS_GENTLEMAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_RICH,
-        .trainerPic = TRAINER_PIC_GENTLEMAN,
+        .trainerClass = PRODUCER_CLASS_GENTLEMAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_RICH,
+        .trainerPic = PRODUCER_PIC_GENTLEMAN,
         .trainerName = _("WALTER"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3109,11 +3109,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Walter3),
     },
 
-    [TRAINER_WALTER_4] =
+    [PRODUCER_WALTER_4] =
     {
-        .trainerClass = TRAINER_CLASS_GENTLEMAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_RICH,
-        .trainerPic = TRAINER_PIC_GENTLEMAN,
+        .trainerClass = PRODUCER_CLASS_GENTLEMAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_RICH,
+        .trainerPic = PRODUCER_PIC_GENTLEMAN,
         .trainerName = _("WALTER"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3121,11 +3121,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Walter4),
     },
 
-    [TRAINER_WALTER_5] =
+    [PRODUCER_WALTER_5] =
     {
-        .trainerClass = TRAINER_CLASS_GENTLEMAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_RICH,
-        .trainerPic = TRAINER_PIC_GENTLEMAN,
+        .trainerClass = PRODUCER_CLASS_GENTLEMAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_RICH,
+        .trainerPic = PRODUCER_PIC_GENTLEMAN,
         .trainerName = _("WALTER"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3133,11 +3133,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Walter5),
     },
 
-    [TRAINER_SIDNEY] =
+    [PRODUCER_SIDNEY] =
     {
-        .trainerClass = TRAINER_CLASS_ELITE_FOUR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-        .trainerPic = TRAINER_PIC_ELITE_FOUR_SIDNEY,
+        .trainerClass = PRODUCER_CLASS_ELITE_FOUR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_ELITE_FOUR,
+        .trainerPic = PRODUCER_PIC_ELITE_FOUR_SIDNEY,
         .trainerName = _("SIDNEY"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -3145,11 +3145,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Sidney),
     },
 
-    [TRAINER_PHOEBE] =
+    [PRODUCER_PHOEBE] =
     {
-        .trainerClass = TRAINER_CLASS_ELITE_FOUR,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-        .trainerPic = TRAINER_PIC_ELITE_FOUR_PHOEBE,
+        .trainerClass = PRODUCER_CLASS_ELITE_FOUR,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_ELITE_FOUR,
+        .trainerPic = PRODUCER_PIC_ELITE_FOUR_PHOEBE,
         .trainerName = _("PHOEBE"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -3157,11 +3157,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Phoebe),
     },
 
-    [TRAINER_GLACIA] =
+    [PRODUCER_GLACIA] =
     {
-        .trainerClass = TRAINER_CLASS_ELITE_FOUR,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-        .trainerPic = TRAINER_PIC_ELITE_FOUR_GLACIA,
+        .trainerClass = PRODUCER_CLASS_ELITE_FOUR,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_ELITE_FOUR,
+        .trainerPic = PRODUCER_PIC_ELITE_FOUR_GLACIA,
         .trainerName = _("GLACIA"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -3169,11 +3169,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Glacia),
     },
 
-    [TRAINER_DRAKE] =
+    [PRODUCER_DRAKE] =
     {
-        .trainerClass = TRAINER_CLASS_ELITE_FOUR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-        .trainerPic = TRAINER_PIC_ELITE_FOUR_DRAKE,
+        .trainerClass = PRODUCER_CLASS_ELITE_FOUR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_ELITE_FOUR,
+        .trainerPic = PRODUCER_PIC_ELITE_FOUR_DRAKE,
         .trainerName = _("DRAKE"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -3181,11 +3181,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Drake),
     },
 
-    [TRAINER_ROXANNE_1] =
+    [PRODUCER_ROXANNE_1] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LEADER_ROXANNE,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LEADER_ROXANNE,
         .trainerName = _("ROXANNE"),
         .items = {ITEM_POTION, ITEM_POTION, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -3193,11 +3193,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Roxanne1),
     },
 
-    [TRAINER_BRAWLY_1] =
+    [PRODUCER_BRAWLY_1] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_LEADER_BRAWLY,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_LEADER_BRAWLY,
         .trainerName = _("BRAWLY"),
         .items = {ITEM_SUPER_POTION, ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -3205,11 +3205,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Brawly1),
     },
 
-    [TRAINER_WATTSON_1] =
+    [PRODUCER_WATTSON_1] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_LEADER_WATTSON,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_LEADER_WATTSON,
         .trainerName = _("WATTSON"),
         .items = {ITEM_SUPER_POTION, ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -3217,11 +3217,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Wattson1),
     },
 
-    [TRAINER_FLANNERY_1] =
+    [PRODUCER_FLANNERY_1] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LEADER_FLANNERY,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LEADER_FLANNERY,
         .trainerName = _("FLANNERY"),
         .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -3229,11 +3229,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Flannery1),
     },
 
-    [TRAINER_NORMAN_1] =
+    [PRODUCER_NORMAN_1] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_LEADER_NORMAN,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_LEADER_NORMAN,
         .trainerName = _("NORMAN"),
         .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -3241,11 +3241,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Norman1),
     },
 
-    [TRAINER_WINONA_1] =
+    [PRODUCER_WINONA_1] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LEADER_WINONA,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LEADER_WINONA,
         .trainerName = _("WINONA"),
         .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -3253,11 +3253,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Winona1),
     },
 
-    [TRAINER_TATE_AND_LIZA_1] =
+    [PRODUCER_TATE_AND_LIZA_1] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LEADER_TATE_AND_LIZA,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LEADER_TATE_AND_LIZA,
         .trainerName = _("TATE&LIZA"),
         .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_HYPER_POTION},
         .doubleBattle = TRUE,
@@ -3265,11 +3265,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_TateAndLiza1),
     },
 
-    [TRAINER_JUAN_1] =
+    [PRODUCER_JUAN_1] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_LEADER_JUAN,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_LEADER_JUAN,
         .trainerName = _("JUAN"),
         .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -3277,11 +3277,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Juan1),
     },
 
-    [TRAINER_JERRY_1] =
+    [PRODUCER_JERRY_1] =
     {
-        .trainerClass = TRAINER_CLASS_SCHOOL_KID,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
+        .trainerClass = PRODUCER_CLASS_SCHOOL_KID,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_SCHOOL_KID_M,
         .trainerName = _("JERRY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3289,11 +3289,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jerry1),
     },
 
-    [TRAINER_TED] =
+    [PRODUCER_TED] =
     {
-        .trainerClass = TRAINER_CLASS_SCHOOL_KID,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
+        .trainerClass = PRODUCER_CLASS_SCHOOL_KID,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_SCHOOL_KID_M,
         .trainerName = _("TED"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3301,11 +3301,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Ted),
     },
 
-    [TRAINER_PAUL] =
+    [PRODUCER_PAUL] =
     {
-        .trainerClass = TRAINER_CLASS_SCHOOL_KID,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
+        .trainerClass = PRODUCER_CLASS_SCHOOL_KID,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_SCHOOL_KID_M,
         .trainerName = _("PAUL"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3313,11 +3313,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Paul),
     },
 
-    [TRAINER_JERRY_2] =
+    [PRODUCER_JERRY_2] =
     {
-        .trainerClass = TRAINER_CLASS_SCHOOL_KID,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
+        .trainerClass = PRODUCER_CLASS_SCHOOL_KID,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_SCHOOL_KID_M,
         .trainerName = _("JERRY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3325,11 +3325,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jerry2),
     },
 
-    [TRAINER_JERRY_3] =
+    [PRODUCER_JERRY_3] =
     {
-        .trainerClass = TRAINER_CLASS_SCHOOL_KID,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
+        .trainerClass = PRODUCER_CLASS_SCHOOL_KID,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_SCHOOL_KID_M,
         .trainerName = _("JERRY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3337,11 +3337,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jerry3),
     },
 
-    [TRAINER_JERRY_4] =
+    [PRODUCER_JERRY_4] =
     {
-        .trainerClass = TRAINER_CLASS_SCHOOL_KID,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
+        .trainerClass = PRODUCER_CLASS_SCHOOL_KID,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_SCHOOL_KID_M,
         .trainerName = _("JERRY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3349,11 +3349,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jerry4),
     },
 
-    [TRAINER_JERRY_5] =
+    [PRODUCER_JERRY_5] =
     {
-        .trainerClass = TRAINER_CLASS_SCHOOL_KID,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
+        .trainerClass = PRODUCER_CLASS_SCHOOL_KID,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_SCHOOL_KID_M,
         .trainerName = _("JERRY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3361,11 +3361,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jerry5),
     },
 
-    [TRAINER_KAREN_1] =
+    [PRODUCER_KAREN_1] =
     {
-        .trainerClass = TRAINER_CLASS_SCHOOL_KID,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_SCHOOL_KID_F,
+        .trainerClass = PRODUCER_CLASS_SCHOOL_KID,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_SCHOOL_KID_F,
         .trainerName = _("KAREN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3373,11 +3373,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Karen1),
     },
 
-    [TRAINER_GEORGIA] =
+    [PRODUCER_GEORGIA] =
     {
-        .trainerClass = TRAINER_CLASS_SCHOOL_KID,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_SCHOOL_KID_F,
+        .trainerClass = PRODUCER_CLASS_SCHOOL_KID,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_SCHOOL_KID_F,
         .trainerName = _("GEORGIA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3385,11 +3385,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Georgia),
     },
 
-    [TRAINER_KAREN_2] =
+    [PRODUCER_KAREN_2] =
     {
-        .trainerClass = TRAINER_CLASS_SCHOOL_KID,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_SCHOOL_KID_F,
+        .trainerClass = PRODUCER_CLASS_SCHOOL_KID,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_SCHOOL_KID_F,
         .trainerName = _("KAREN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3397,11 +3397,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Karen2),
     },
 
-    [TRAINER_KAREN_3] =
+    [PRODUCER_KAREN_3] =
     {
-        .trainerClass = TRAINER_CLASS_SCHOOL_KID,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_SCHOOL_KID_F,
+        .trainerClass = PRODUCER_CLASS_SCHOOL_KID,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_SCHOOL_KID_F,
         .trainerName = _("KAREN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3409,11 +3409,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Karen3),
     },
 
-    [TRAINER_KAREN_4] =
+    [PRODUCER_KAREN_4] =
     {
-        .trainerClass = TRAINER_CLASS_SCHOOL_KID,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_SCHOOL_KID_F,
+        .trainerClass = PRODUCER_CLASS_SCHOOL_KID,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_SCHOOL_KID_F,
         .trainerName = _("KAREN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3421,11 +3421,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Karen4),
     },
 
-    [TRAINER_KAREN_5] =
+    [PRODUCER_KAREN_5] =
     {
-        .trainerClass = TRAINER_CLASS_SCHOOL_KID,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_SCHOOL_KID_F,
+        .trainerClass = PRODUCER_CLASS_SCHOOL_KID,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_SCHOOL_KID_F,
         .trainerName = _("KAREN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3433,11 +3433,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Karen5),
     },
 
-    [TRAINER_KATE_AND_JOY] =
+    [PRODUCER_KATE_AND_JOY] =
     {
-        .trainerClass = TRAINER_CLASS_SR_AND_JR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_SR_AND_JR,
+        .trainerClass = PRODUCER_CLASS_SR_AND_JR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = PRODUCER_PIC_SR_AND_JR,
         .trainerName = _("KATE & JOY"),
         .items = {},
         .doubleBattle = TRUE,
@@ -3445,11 +3445,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_KateAndJoy),
     },
 
-    [TRAINER_ANNA_AND_MEG_1] =
+    [PRODUCER_ANNA_AND_MEG_1] =
     {
-        .trainerClass = TRAINER_CLASS_SR_AND_JR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_SR_AND_JR,
+        .trainerClass = PRODUCER_CLASS_SR_AND_JR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = PRODUCER_PIC_SR_AND_JR,
         .trainerName = _("ANNA & MEG"),
         .items = {},
         .doubleBattle = TRUE,
@@ -3457,11 +3457,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_AnnaAndMeg1),
     },
 
-    [TRAINER_ANNA_AND_MEG_2] =
+    [PRODUCER_ANNA_AND_MEG_2] =
     {
-        .trainerClass = TRAINER_CLASS_SR_AND_JR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_SR_AND_JR,
+        .trainerClass = PRODUCER_CLASS_SR_AND_JR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = PRODUCER_PIC_SR_AND_JR,
         .trainerName = _("ANNA & MEG"),
         .items = {},
         .doubleBattle = TRUE,
@@ -3469,11 +3469,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_AnnaAndMeg2),
     },
 
-    [TRAINER_ANNA_AND_MEG_3] =
+    [PRODUCER_ANNA_AND_MEG_3] =
     {
-        .trainerClass = TRAINER_CLASS_SR_AND_JR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_SR_AND_JR,
+        .trainerClass = PRODUCER_CLASS_SR_AND_JR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = PRODUCER_PIC_SR_AND_JR,
         .trainerName = _("ANNA & MEG"),
         .items = {},
         .doubleBattle = TRUE,
@@ -3481,11 +3481,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_AnnaAndMeg3),
     },
 
-    [TRAINER_ANNA_AND_MEG_4] =
+    [PRODUCER_ANNA_AND_MEG_4] =
     {
-        .trainerClass = TRAINER_CLASS_SR_AND_JR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_SR_AND_JR,
+        .trainerClass = PRODUCER_CLASS_SR_AND_JR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = PRODUCER_PIC_SR_AND_JR,
         .trainerName = _("ANNA & MEG"),
         .items = {},
         .doubleBattle = TRUE,
@@ -3493,11 +3493,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_AnnaAndMeg4),
     },
 
-    [TRAINER_ANNA_AND_MEG_5] =
+    [PRODUCER_ANNA_AND_MEG_5] =
     {
-        .trainerClass = TRAINER_CLASS_SR_AND_JR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_SR_AND_JR,
+        .trainerClass = PRODUCER_CLASS_SR_AND_JR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = PRODUCER_PIC_SR_AND_JR,
         .trainerName = _("ANNA & MEG"),
         .items = {},
         .doubleBattle = TRUE,
@@ -3505,11 +3505,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_AnnaAndMeg5),
     },
 
-    [TRAINER_VICTOR] =
+    [PRODUCER_VICTOR] =
     {
-        .trainerClass = TRAINER_CLASS_WINSTRATE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_POKEFAN_M,
+        .trainerClass = PRODUCER_CLASS_WINSTRATE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = PRODUCER_PIC_POKEFAN_M,
         .trainerName = _("VICTOR"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3517,11 +3517,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_DEFAULT_MOVES(sParty_Victor),
     },
 
-    [TRAINER_MIGUEL_1] =
+    [PRODUCER_MIGUEL_1] =
     {
-        .trainerClass = TRAINER_CLASS_POKEFAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_POKEFAN_M,
+        .trainerClass = PRODUCER_CLASS_POKEFAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = PRODUCER_PIC_POKEFAN_M,
         .trainerName = _("MIGUEL"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3529,11 +3529,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_DEFAULT_MOVES(sParty_Miguel1),
     },
 
-    [TRAINER_COLTON] =
+    [PRODUCER_COLTON] =
     {
-        .trainerClass = TRAINER_CLASS_POKEFAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_POKEFAN_M,
+        .trainerClass = PRODUCER_CLASS_POKEFAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = PRODUCER_PIC_POKEFAN_M,
         .trainerName = _("COLTON"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3541,11 +3541,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Colton),
     },
 
-    [TRAINER_MIGUEL_2] =
+    [PRODUCER_MIGUEL_2] =
     {
-        .trainerClass = TRAINER_CLASS_POKEFAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_POKEFAN_M,
+        .trainerClass = PRODUCER_CLASS_POKEFAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = PRODUCER_PIC_POKEFAN_M,
         .trainerName = _("MIGUEL"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3553,11 +3553,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_DEFAULT_MOVES(sParty_Miguel2),
     },
 
-    [TRAINER_MIGUEL_3] =
+    [PRODUCER_MIGUEL_3] =
     {
-        .trainerClass = TRAINER_CLASS_POKEFAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_POKEFAN_M,
+        .trainerClass = PRODUCER_CLASS_POKEFAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = PRODUCER_PIC_POKEFAN_M,
         .trainerName = _("MIGUEL"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3565,11 +3565,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_DEFAULT_MOVES(sParty_Miguel3),
     },
 
-    [TRAINER_MIGUEL_4] =
+    [PRODUCER_MIGUEL_4] =
     {
-        .trainerClass = TRAINER_CLASS_POKEFAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_POKEFAN_M,
+        .trainerClass = PRODUCER_CLASS_POKEFAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = PRODUCER_PIC_POKEFAN_M,
         .trainerName = _("MIGUEL"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3577,11 +3577,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_DEFAULT_MOVES(sParty_Miguel4),
     },
 
-    [TRAINER_MIGUEL_5] =
+    [PRODUCER_MIGUEL_5] =
     {
-        .trainerClass = TRAINER_CLASS_POKEFAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_POKEFAN_M,
+        .trainerClass = PRODUCER_CLASS_POKEFAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = PRODUCER_PIC_POKEFAN_M,
         .trainerName = _("MIGUEL"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3589,11 +3589,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_DEFAULT_MOVES(sParty_Miguel5),
     },
 
-    [TRAINER_VICTORIA] =
+    [PRODUCER_VICTORIA] =
     {
-        .trainerClass = TRAINER_CLASS_WINSTRATE,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_POKEFAN_F,
+        .trainerClass = PRODUCER_CLASS_WINSTRATE,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = PRODUCER_PIC_POKEFAN_F,
         .trainerName = _("VICTORIA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3601,11 +3601,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_DEFAULT_MOVES(sParty_Victoria),
     },
 
-    [TRAINER_VANESSA] =
+    [PRODUCER_VANESSA] =
     {
-        .trainerClass = TRAINER_CLASS_POKEFAN,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_POKEFAN_F,
+        .trainerClass = PRODUCER_CLASS_POKEFAN,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = PRODUCER_PIC_POKEFAN_F,
         .trainerName = _("VANESSA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3613,11 +3613,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_DEFAULT_MOVES(sParty_Vanessa),
     },
 
-    [TRAINER_BETHANY] =
+    [PRODUCER_BETHANY] =
     {
-        .trainerClass = TRAINER_CLASS_POKEFAN,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_POKEFAN_F,
+        .trainerClass = PRODUCER_CLASS_POKEFAN,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = PRODUCER_PIC_POKEFAN_F,
         .trainerName = _("BETHANY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3625,11 +3625,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_DEFAULT_MOVES(sParty_Bethany),
     },
 
-    [TRAINER_ISABEL_1] =
+    [PRODUCER_ISABEL_1] =
     {
-        .trainerClass = TRAINER_CLASS_POKEFAN,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_POKEFAN_F,
+        .trainerClass = PRODUCER_CLASS_POKEFAN,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = PRODUCER_PIC_POKEFAN_F,
         .trainerName = _("ISABEL"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3637,11 +3637,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_DEFAULT_MOVES(sParty_Isabel1),
     },
 
-    [TRAINER_ISABEL_2] =
+    [PRODUCER_ISABEL_2] =
     {
-        .trainerClass = TRAINER_CLASS_POKEFAN,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_POKEFAN_F,
+        .trainerClass = PRODUCER_CLASS_POKEFAN,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = PRODUCER_PIC_POKEFAN_F,
         .trainerName = _("ISABEL"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3649,11 +3649,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_DEFAULT_MOVES(sParty_Isabel2),
     },
 
-    [TRAINER_ISABEL_3] =
+    [PRODUCER_ISABEL_3] =
     {
-        .trainerClass = TRAINER_CLASS_POKEFAN,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_POKEFAN_F,
+        .trainerClass = PRODUCER_CLASS_POKEFAN,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = PRODUCER_PIC_POKEFAN_F,
         .trainerName = _("ISABEL"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3661,11 +3661,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_DEFAULT_MOVES(sParty_Isabel3),
     },
 
-    [TRAINER_ISABEL_4] =
+    [PRODUCER_ISABEL_4] =
     {
-        .trainerClass = TRAINER_CLASS_POKEFAN,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_POKEFAN_F,
+        .trainerClass = PRODUCER_CLASS_POKEFAN,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = PRODUCER_PIC_POKEFAN_F,
         .trainerName = _("ISABEL"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3673,11 +3673,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_DEFAULT_MOVES(sParty_Isabel4),
     },
 
-    [TRAINER_ISABEL_5] =
+    [PRODUCER_ISABEL_5] =
     {
-        .trainerClass = TRAINER_CLASS_POKEFAN,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_POKEFAN_F,
+        .trainerClass = PRODUCER_CLASS_POKEFAN,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = PRODUCER_PIC_POKEFAN_F,
         .trainerName = _("ISABEL"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3685,11 +3685,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_DEFAULT_MOVES(sParty_Isabel5),
     },
 
-    [TRAINER_TIMOTHY_1] =
+    [PRODUCER_TIMOTHY_1] =
     {
-        .trainerClass = TRAINER_CLASS_EXPERT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_EXPERT_M,
+        .trainerClass = PRODUCER_CLASS_EXPERT,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_EXPERT_M,
         .trainerName = _("TIMOTHY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3697,11 +3697,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Timothy1),
     },
 
-    [TRAINER_TIMOTHY_2] =
+    [PRODUCER_TIMOTHY_2] =
     {
-        .trainerClass = TRAINER_CLASS_EXPERT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_EXPERT_M,
+        .trainerClass = PRODUCER_CLASS_EXPERT,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_EXPERT_M,
         .trainerName = _("TIMOTHY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3709,11 +3709,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Timothy2),
     },
 
-    [TRAINER_TIMOTHY_3] =
+    [PRODUCER_TIMOTHY_3] =
     {
-        .trainerClass = TRAINER_CLASS_EXPERT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_EXPERT_M,
+        .trainerClass = PRODUCER_CLASS_EXPERT,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_EXPERT_M,
         .trainerName = _("TIMOTHY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3721,11 +3721,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Timothy3),
     },
 
-    [TRAINER_TIMOTHY_4] =
+    [PRODUCER_TIMOTHY_4] =
     {
-        .trainerClass = TRAINER_CLASS_EXPERT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_EXPERT_M,
+        .trainerClass = PRODUCER_CLASS_EXPERT,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_EXPERT_M,
         .trainerName = _("TIMOTHY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3733,11 +3733,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Timothy4),
     },
 
-    [TRAINER_TIMOTHY_5] =
+    [PRODUCER_TIMOTHY_5] =
     {
-        .trainerClass = TRAINER_CLASS_EXPERT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_EXPERT_M,
+        .trainerClass = PRODUCER_CLASS_EXPERT,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_EXPERT_M,
         .trainerName = _("TIMOTHY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3745,11 +3745,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Timothy5),
     },
 
-    [TRAINER_VICKY] =
+    [PRODUCER_VICKY] =
     {
-        .trainerClass = TRAINER_CLASS_WINSTRATE,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_EXPERT_F,
+        .trainerClass = PRODUCER_CLASS_WINSTRATE,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_EXPERT_F,
         .trainerName = _("VICKY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3757,11 +3757,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Vicky),
     },
 
-    [TRAINER_SHELBY_1] =
+    [PRODUCER_SHELBY_1] =
     {
-        .trainerClass = TRAINER_CLASS_EXPERT,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_EXPERT_F,
+        .trainerClass = PRODUCER_CLASS_EXPERT,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_EXPERT_F,
         .trainerName = _("SHELBY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3769,11 +3769,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Shelby1),
     },
 
-    [TRAINER_SHELBY_2] =
+    [PRODUCER_SHELBY_2] =
     {
-        .trainerClass = TRAINER_CLASS_EXPERT,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_EXPERT_F,
+        .trainerClass = PRODUCER_CLASS_EXPERT,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_EXPERT_F,
         .trainerName = _("SHELBY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3781,11 +3781,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Shelby2),
     },
 
-    [TRAINER_SHELBY_3] =
+    [PRODUCER_SHELBY_3] =
     {
-        .trainerClass = TRAINER_CLASS_EXPERT,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_EXPERT_F,
+        .trainerClass = PRODUCER_CLASS_EXPERT,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_EXPERT_F,
         .trainerName = _("SHELBY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3793,11 +3793,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Shelby3),
     },
 
-    [TRAINER_SHELBY_4] =
+    [PRODUCER_SHELBY_4] =
     {
-        .trainerClass = TRAINER_CLASS_EXPERT,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_EXPERT_F,
+        .trainerClass = PRODUCER_CLASS_EXPERT,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_EXPERT_F,
         .trainerName = _("SHELBY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3805,11 +3805,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Shelby4),
     },
 
-    [TRAINER_SHELBY_5] =
+    [PRODUCER_SHELBY_5] =
     {
-        .trainerClass = TRAINER_CLASS_EXPERT,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_EXPERT_F,
+        .trainerClass = PRODUCER_CLASS_EXPERT,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_EXPERT_F,
         .trainerName = _("SHELBY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3817,11 +3817,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Shelby5),
     },
 
-    [TRAINER_CALVIN_1] =
+    [PRODUCER_CALVIN_1] =
     {
-        .trainerClass = TRAINER_CLASS_YOUNGSTER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_YOUNGSTER,
+        .trainerClass = PRODUCER_CLASS_YOUNGSTER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_YOUNGSTER,
         .trainerName = _("CALVIN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3829,11 +3829,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Calvin1),
     },
 
-    [TRAINER_BILLY] =
+    [PRODUCER_BILLY] =
     {
-        .trainerClass = TRAINER_CLASS_YOUNGSTER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_YOUNGSTER,
+        .trainerClass = PRODUCER_CLASS_YOUNGSTER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_YOUNGSTER,
         .trainerName = _("BILLY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3841,11 +3841,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Billy),
     },
 
-    [TRAINER_JOSH] =
+    [PRODUCER_JOSH] =
     {
-        .trainerClass = TRAINER_CLASS_YOUNGSTER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_YOUNGSTER,
+        .trainerClass = PRODUCER_CLASS_YOUNGSTER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_YOUNGSTER,
         .trainerName = _("JOSH"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3853,11 +3853,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Josh),
     },
 
-    [TRAINER_TOMMY] =
+    [PRODUCER_TOMMY] =
     {
-        .trainerClass = TRAINER_CLASS_YOUNGSTER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_YOUNGSTER,
+        .trainerClass = PRODUCER_CLASS_YOUNGSTER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_YOUNGSTER,
         .trainerName = _("TOMMY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3865,11 +3865,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Tommy),
     },
 
-    [TRAINER_JOEY] =
+    [PRODUCER_JOEY] =
     {
-        .trainerClass = TRAINER_CLASS_YOUNGSTER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_YOUNGSTER,
+        .trainerClass = PRODUCER_CLASS_YOUNGSTER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_YOUNGSTER,
         .trainerName = _("JOEY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3877,11 +3877,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Joey),
     },
 
-    [TRAINER_BEN] =
+    [PRODUCER_BEN] =
     {
-        .trainerClass = TRAINER_CLASS_YOUNGSTER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_YOUNGSTER,
+        .trainerClass = PRODUCER_CLASS_YOUNGSTER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_YOUNGSTER,
         .trainerName = _("BEN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3889,11 +3889,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Ben),
     },
 
-    [TRAINER_QUINCY] =
+    [PRODUCER_QUINCY] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_M,
         .trainerName = _("QUINCY"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -3901,11 +3901,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Quincy),
     },
 
-    [TRAINER_KATELYNN] =
+    [PRODUCER_KATELYNN] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_F,
         .trainerName = _("KATELYNN"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -3913,11 +3913,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Katelynn),
     },
 
-    [TRAINER_JAYLEN] =
+    [PRODUCER_JAYLEN] =
     {
-        .trainerClass = TRAINER_CLASS_YOUNGSTER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_YOUNGSTER,
+        .trainerClass = PRODUCER_CLASS_YOUNGSTER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_YOUNGSTER,
         .trainerName = _("JAYLEN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3925,11 +3925,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jaylen),
     },
 
-    [TRAINER_DILLON] =
+    [PRODUCER_DILLON] =
     {
-        .trainerClass = TRAINER_CLASS_YOUNGSTER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_YOUNGSTER,
+        .trainerClass = PRODUCER_CLASS_YOUNGSTER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_YOUNGSTER,
         .trainerName = _("DILLON"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3937,11 +3937,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Dillon),
     },
 
-    [TRAINER_CALVIN_2] =
+    [PRODUCER_CALVIN_2] =
     {
-        .trainerClass = TRAINER_CLASS_YOUNGSTER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_YOUNGSTER,
+        .trainerClass = PRODUCER_CLASS_YOUNGSTER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_YOUNGSTER,
         .trainerName = _("CALVIN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3949,11 +3949,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Calvin2),
     },
 
-    [TRAINER_CALVIN_3] =
+    [PRODUCER_CALVIN_3] =
     {
-        .trainerClass = TRAINER_CLASS_YOUNGSTER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_YOUNGSTER,
+        .trainerClass = PRODUCER_CLASS_YOUNGSTER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_YOUNGSTER,
         .trainerName = _("CALVIN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3961,11 +3961,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Calvin3),
     },
 
-    [TRAINER_CALVIN_4] =
+    [PRODUCER_CALVIN_4] =
     {
-        .trainerClass = TRAINER_CLASS_YOUNGSTER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_YOUNGSTER,
+        .trainerClass = PRODUCER_CLASS_YOUNGSTER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_YOUNGSTER,
         .trainerName = _("CALVIN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3973,11 +3973,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Calvin4),
     },
 
-    [TRAINER_CALVIN_5] =
+    [PRODUCER_CALVIN_5] =
     {
-        .trainerClass = TRAINER_CLASS_YOUNGSTER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_YOUNGSTER,
+        .trainerClass = PRODUCER_CLASS_YOUNGSTER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_YOUNGSTER,
         .trainerName = _("CALVIN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3985,11 +3985,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Calvin5),
     },
 
-    [TRAINER_EDDIE] =
+    [PRODUCER_EDDIE] =
     {
-        .trainerClass = TRAINER_CLASS_YOUNGSTER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_YOUNGSTER,
+        .trainerClass = PRODUCER_CLASS_YOUNGSTER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_YOUNGSTER,
         .trainerName = _("EDDIE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3997,11 +3997,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Eddie),
     },
 
-    [TRAINER_ALLEN] =
+    [PRODUCER_ALLEN] =
     {
-        .trainerClass = TRAINER_CLASS_YOUNGSTER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_YOUNGSTER,
+        .trainerClass = PRODUCER_CLASS_YOUNGSTER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_YOUNGSTER,
         .trainerName = _("ALLEN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4009,11 +4009,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Allen),
     },
 
-    [TRAINER_TIMMY] =
+    [PRODUCER_TIMMY] =
     {
-        .trainerClass = TRAINER_CLASS_YOUNGSTER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_YOUNGSTER,
+        .trainerClass = PRODUCER_CLASS_YOUNGSTER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_YOUNGSTER,
         .trainerName = _("TIMMY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4021,11 +4021,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Timmy),
     },
 
-    [TRAINER_WALLACE] =
+    [PRODUCER_WALLACE] =
     {
-        .trainerClass = TRAINER_CLASS_CHAMPION,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_CHAMPION_WALLACE,
+        .trainerClass = PRODUCER_CLASS_CHAMPION,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_CHAMPION_WALLACE,
         .trainerName = _("WALLACE"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
         .doubleBattle = FALSE,
@@ -4033,11 +4033,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Wallace),
     },
 
-    [TRAINER_ANDREW] =
+    [PRODUCER_ANDREW] =
     {
-        .trainerClass = TRAINER_CLASS_FISHERMAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FISHERMAN,
+        .trainerClass = PRODUCER_CLASS_FISHERMAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_FISHERMAN,
         .trainerName = _("ANDREW"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4045,11 +4045,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Andrew),
     },
 
-    [TRAINER_IVAN] =
+    [PRODUCER_IVAN] =
     {
-        .trainerClass = TRAINER_CLASS_FISHERMAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FISHERMAN,
+        .trainerClass = PRODUCER_CLASS_FISHERMAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_FISHERMAN,
         .trainerName = _("IVAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4057,11 +4057,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Ivan),
     },
 
-    [TRAINER_CLAUDE] =
+    [PRODUCER_CLAUDE] =
     {
-        .trainerClass = TRAINER_CLASS_FISHERMAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FISHERMAN,
+        .trainerClass = PRODUCER_CLASS_FISHERMAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_FISHERMAN,
         .trainerName = _("CLAUDE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4069,11 +4069,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Claude),
     },
 
-    [TRAINER_ELLIOT_1] =
+    [PRODUCER_ELLIOT_1] =
     {
-        .trainerClass = TRAINER_CLASS_FISHERMAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FISHERMAN,
+        .trainerClass = PRODUCER_CLASS_FISHERMAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_FISHERMAN,
         .trainerName = _("ELLIOT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4081,11 +4081,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Elliot1),
     },
 
-    [TRAINER_NED] =
+    [PRODUCER_NED] =
     {
-        .trainerClass = TRAINER_CLASS_FISHERMAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FISHERMAN,
+        .trainerClass = PRODUCER_CLASS_FISHERMAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_FISHERMAN,
         .trainerName = _("NED"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4093,11 +4093,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Ned),
     },
 
-    [TRAINER_DALE] =
+    [PRODUCER_DALE] =
     {
-        .trainerClass = TRAINER_CLASS_FISHERMAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FISHERMAN,
+        .trainerClass = PRODUCER_CLASS_FISHERMAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_FISHERMAN,
         .trainerName = _("DALE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4105,11 +4105,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Dale),
     },
 
-    [TRAINER_NOLAN] =
+    [PRODUCER_NOLAN] =
     {
-        .trainerClass = TRAINER_CLASS_FISHERMAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FISHERMAN,
+        .trainerClass = PRODUCER_CLASS_FISHERMAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_FISHERMAN,
         .trainerName = _("NOLAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4117,11 +4117,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Nolan),
     },
 
-    [TRAINER_BARNY] =
+    [PRODUCER_BARNY] =
     {
-        .trainerClass = TRAINER_CLASS_FISHERMAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FISHERMAN,
+        .trainerClass = PRODUCER_CLASS_FISHERMAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_FISHERMAN,
         .trainerName = _("BARNY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4129,11 +4129,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Barny),
     },
 
-    [TRAINER_WADE] =
+    [PRODUCER_WADE] =
     {
-        .trainerClass = TRAINER_CLASS_FISHERMAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FISHERMAN,
+        .trainerClass = PRODUCER_CLASS_FISHERMAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_FISHERMAN,
         .trainerName = _("WADE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4141,11 +4141,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Wade),
     },
 
-    [TRAINER_CARTER] =
+    [PRODUCER_CARTER] =
     {
-        .trainerClass = TRAINER_CLASS_FISHERMAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FISHERMAN,
+        .trainerClass = PRODUCER_CLASS_FISHERMAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_FISHERMAN,
         .trainerName = _("CARTER"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4153,11 +4153,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Carter),
     },
 
-    [TRAINER_ELLIOT_2] =
+    [PRODUCER_ELLIOT_2] =
     {
-        .trainerClass = TRAINER_CLASS_FISHERMAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FISHERMAN,
+        .trainerClass = PRODUCER_CLASS_FISHERMAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_FISHERMAN,
         .trainerName = _("ELLIOT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4165,11 +4165,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Elliot2),
     },
 
-    [TRAINER_ELLIOT_3] =
+    [PRODUCER_ELLIOT_3] =
     {
-        .trainerClass = TRAINER_CLASS_FISHERMAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FISHERMAN,
+        .trainerClass = PRODUCER_CLASS_FISHERMAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_FISHERMAN,
         .trainerName = _("ELLIOT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4177,11 +4177,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Elliot3),
     },
 
-    [TRAINER_ELLIOT_4] =
+    [PRODUCER_ELLIOT_4] =
     {
-        .trainerClass = TRAINER_CLASS_FISHERMAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FISHERMAN,
+        .trainerClass = PRODUCER_CLASS_FISHERMAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_FISHERMAN,
         .trainerName = _("ELLIOT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4189,11 +4189,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Elliot4),
     },
 
-    [TRAINER_ELLIOT_5] =
+    [PRODUCER_ELLIOT_5] =
     {
-        .trainerClass = TRAINER_CLASS_FISHERMAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FISHERMAN,
+        .trainerClass = PRODUCER_CLASS_FISHERMAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_FISHERMAN,
         .trainerName = _("ELLIOT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4201,11 +4201,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Elliot5),
     },
 
-    [TRAINER_RONALD] =
+    [PRODUCER_RONALD] =
     {
-        .trainerClass = TRAINER_CLASS_FISHERMAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FISHERMAN,
+        .trainerClass = PRODUCER_CLASS_FISHERMAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_FISHERMAN,
         .trainerName = _("RONALD"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4213,11 +4213,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Ronald),
     },
 
-    [TRAINER_JACOB] =
+    [PRODUCER_JACOB] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_M,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_CYCLING_TRIATHLETE_M,
         .trainerName = _("JACOB"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4225,11 +4225,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jacob),
     },
 
-    [TRAINER_ANTHONY] =
+    [PRODUCER_ANTHONY] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_M,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_CYCLING_TRIATHLETE_M,
         .trainerName = _("ANTHONY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4237,11 +4237,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Anthony),
     },
 
-    [TRAINER_BENJAMIN_1] =
+    [PRODUCER_BENJAMIN_1] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_M,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_CYCLING_TRIATHLETE_M,
         .trainerName = _("BENJAMIN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4249,11 +4249,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Benjamin1),
     },
 
-    [TRAINER_BENJAMIN_2] =
+    [PRODUCER_BENJAMIN_2] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_M,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_CYCLING_TRIATHLETE_M,
         .trainerName = _("BENJAMIN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4261,11 +4261,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Benjamin2),
     },
 
-    [TRAINER_BENJAMIN_3] =
+    [PRODUCER_BENJAMIN_3] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_M,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_CYCLING_TRIATHLETE_M,
         .trainerName = _("BENJAMIN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4273,11 +4273,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Benjamin3),
     },
 
-    [TRAINER_BENJAMIN_4] =
+    [PRODUCER_BENJAMIN_4] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_M,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_CYCLING_TRIATHLETE_M,
         .trainerName = _("BENJAMIN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4285,11 +4285,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Benjamin4),
     },
 
-    [TRAINER_BENJAMIN_5] =
+    [PRODUCER_BENJAMIN_5] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_M,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_CYCLING_TRIATHLETE_M,
         .trainerName = _("BENJAMIN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4297,11 +4297,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Benjamin5),
     },
 
-    [TRAINER_ABIGAIL_1] =
+    [PRODUCER_ABIGAIL_1] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_F,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_CYCLING_TRIATHLETE_F,
         .trainerName = _("ABIGAIL"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4309,11 +4309,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Abigail1),
     },
 
-    [TRAINER_JASMINE] =
+    [PRODUCER_JASMINE] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_F,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_CYCLING_TRIATHLETE_F,
         .trainerName = _("JASMINE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4321,11 +4321,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jasmine),
     },
 
-    [TRAINER_ABIGAIL_2] =
+    [PRODUCER_ABIGAIL_2] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_F,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_CYCLING_TRIATHLETE_F,
         .trainerName = _("ABIGAIL"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4333,11 +4333,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Abigail2),
     },
 
-    [TRAINER_ABIGAIL_3] =
+    [PRODUCER_ABIGAIL_3] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_F,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_CYCLING_TRIATHLETE_F,
         .trainerName = _("ABIGAIL"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4345,11 +4345,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Abigail3),
     },
 
-    [TRAINER_ABIGAIL_4] =
+    [PRODUCER_ABIGAIL_4] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_F,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_CYCLING_TRIATHLETE_F,
         .trainerName = _("ABIGAIL"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4357,11 +4357,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Abigail4),
     },
 
-    [TRAINER_ABIGAIL_5] =
+    [PRODUCER_ABIGAIL_5] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_F,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_CYCLING_TRIATHLETE_F,
         .trainerName = _("ABIGAIL"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4369,11 +4369,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Abigail5),
     },
 
-    [TRAINER_DYLAN_1] =
+    [PRODUCER_DYLAN_1] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_M,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_RUNNING_TRIATHLETE_M,
         .trainerName = _("DYLAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4381,11 +4381,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Dylan1),
     },
 
-    [TRAINER_DYLAN_2] =
+    [PRODUCER_DYLAN_2] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_M,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_RUNNING_TRIATHLETE_M,
         .trainerName = _("DYLAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4393,11 +4393,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Dylan2),
     },
 
-    [TRAINER_DYLAN_3] =
+    [PRODUCER_DYLAN_3] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_M,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_RUNNING_TRIATHLETE_M,
         .trainerName = _("DYLAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4405,11 +4405,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Dylan3),
     },
 
-    [TRAINER_DYLAN_4] =
+    [PRODUCER_DYLAN_4] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_M,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_RUNNING_TRIATHLETE_M,
         .trainerName = _("DYLAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4417,11 +4417,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Dylan4),
     },
 
-    [TRAINER_DYLAN_5] =
+    [PRODUCER_DYLAN_5] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_M,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_RUNNING_TRIATHLETE_M,
         .trainerName = _("DYLAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4429,11 +4429,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Dylan5),
     },
 
-    [TRAINER_MARIA_1] =
+    [PRODUCER_MARIA_1] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_F,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_RUNNING_TRIATHLETE_F,
         .trainerName = _("MARIA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4441,11 +4441,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Maria1),
     },
 
-    [TRAINER_MARIA_2] =
+    [PRODUCER_MARIA_2] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_F,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_RUNNING_TRIATHLETE_F,
         .trainerName = _("MARIA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4453,11 +4453,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Maria2),
     },
 
-    [TRAINER_MARIA_3] =
+    [PRODUCER_MARIA_3] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_F,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_RUNNING_TRIATHLETE_F,
         .trainerName = _("MARIA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4465,11 +4465,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Maria3),
     },
 
-    [TRAINER_MARIA_4] =
+    [PRODUCER_MARIA_4] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_F,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_RUNNING_TRIATHLETE_F,
         .trainerName = _("MARIA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4477,11 +4477,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Maria4),
     },
 
-    [TRAINER_MARIA_5] =
+    [PRODUCER_MARIA_5] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_F,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_RUNNING_TRIATHLETE_F,
         .trainerName = _("MARIA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4489,11 +4489,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Maria5),
     },
 
-    [TRAINER_CAMDEN] =
+    [PRODUCER_CAMDEN] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMING_TRIATHLETE_M,
         .trainerName = _("CAMDEN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4501,11 +4501,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Camden),
     },
 
-    [TRAINER_DEMETRIUS] =
+    [PRODUCER_DEMETRIUS] =
     {
-        .trainerClass = TRAINER_CLASS_YOUNGSTER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_YOUNGSTER,
+        .trainerClass = PRODUCER_CLASS_YOUNGSTER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_YOUNGSTER,
         .trainerName = _("DEMETRIUS"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4513,11 +4513,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Demetrius),
     },
 
-    [TRAINER_ISAIAH_1] =
+    [PRODUCER_ISAIAH_1] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMING_TRIATHLETE_M,
         .trainerName = _("ISAIAH"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4525,11 +4525,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Isaiah1),
     },
 
-    [TRAINER_PABLO_1] =
+    [PRODUCER_PABLO_1] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMING_TRIATHLETE_M,
         .trainerName = _("PABLO"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4537,11 +4537,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Pablo1),
     },
 
-    [TRAINER_CHASE] =
+    [PRODUCER_CHASE] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMING_TRIATHLETE_M,
         .trainerName = _("CHASE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4549,11 +4549,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Chase),
     },
 
-    [TRAINER_ISAIAH_2] =
+    [PRODUCER_ISAIAH_2] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMING_TRIATHLETE_M,
         .trainerName = _("ISAIAH"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4561,11 +4561,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Isaiah2),
     },
 
-    [TRAINER_ISAIAH_3] =
+    [PRODUCER_ISAIAH_3] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMING_TRIATHLETE_M,
         .trainerName = _("ISAIAH"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4573,11 +4573,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Isaiah3),
     },
 
-    [TRAINER_ISAIAH_4] =
+    [PRODUCER_ISAIAH_4] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMING_TRIATHLETE_M,
         .trainerName = _("ISAIAH"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4585,11 +4585,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Isaiah4),
     },
 
-    [TRAINER_ISAIAH_5] =
+    [PRODUCER_ISAIAH_5] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMING_TRIATHLETE_M,
         .trainerName = _("ISAIAH"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4597,11 +4597,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Isaiah5),
     },
 
-    [TRAINER_ISOBEL] =
+    [PRODUCER_ISOBEL] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMING_TRIATHLETE_F,
         .trainerName = _("ISOBEL"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4609,11 +4609,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Isobel),
     },
 
-    [TRAINER_DONNY] =
+    [PRODUCER_DONNY] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMING_TRIATHLETE_F,
         .trainerName = _("DONNY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4621,11 +4621,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Donny),
     },
 
-    [TRAINER_TALIA] =
+    [PRODUCER_TALIA] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMING_TRIATHLETE_F,
         .trainerName = _("TALIA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4633,11 +4633,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Talia),
     },
 
-    [TRAINER_KATELYN_1] =
+    [PRODUCER_KATELYN_1] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMING_TRIATHLETE_F,
         .trainerName = _("KATELYN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4645,11 +4645,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Katelyn1),
     },
 
-    [TRAINER_ALLISON] =
+    [PRODUCER_ALLISON] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMING_TRIATHLETE_F,
         .trainerName = _("ALLISON"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4657,11 +4657,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Allison),
     },
 
-    [TRAINER_KATELYN_2] =
+    [PRODUCER_KATELYN_2] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMING_TRIATHLETE_F,
         .trainerName = _("KATELYN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4669,11 +4669,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Katelyn2),
     },
 
-    [TRAINER_KATELYN_3] =
+    [PRODUCER_KATELYN_3] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMING_TRIATHLETE_F,
         .trainerName = _("KATELYN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4681,11 +4681,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Katelyn3),
     },
 
-    [TRAINER_KATELYN_4] =
+    [PRODUCER_KATELYN_4] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMING_TRIATHLETE_F,
         .trainerName = _("KATELYN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4693,11 +4693,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Katelyn4),
     },
 
-    [TRAINER_KATELYN_5] =
+    [PRODUCER_KATELYN_5] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMING_TRIATHLETE_F,
         .trainerName = _("KATELYN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4705,11 +4705,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Katelyn5),
     },
 
-    [TRAINER_NICOLAS_1] =
+    [PRODUCER_NICOLAS_1] =
     {
-        .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_DRAGON_TAMER,
+        .trainerClass = PRODUCER_CLASS_DRAGON_TAMER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_DRAGON_TAMER,
         .trainerName = _("NICOLAS"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4717,11 +4717,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Nicolas1),
     },
 
-    [TRAINER_NICOLAS_2] =
+    [PRODUCER_NICOLAS_2] =
     {
-        .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_DRAGON_TAMER,
+        .trainerClass = PRODUCER_CLASS_DRAGON_TAMER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_DRAGON_TAMER,
         .trainerName = _("NICOLAS"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4729,11 +4729,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Nicolas2),
     },
 
-    [TRAINER_NICOLAS_3] =
+    [PRODUCER_NICOLAS_3] =
     {
-        .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_DRAGON_TAMER,
+        .trainerClass = PRODUCER_CLASS_DRAGON_TAMER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_DRAGON_TAMER,
         .trainerName = _("NICOLAS"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4741,11 +4741,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Nicolas3),
     },
 
-    [TRAINER_NICOLAS_4] =
+    [PRODUCER_NICOLAS_4] =
     {
-        .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_DRAGON_TAMER,
+        .trainerClass = PRODUCER_CLASS_DRAGON_TAMER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_DRAGON_TAMER,
         .trainerName = _("NICOLAS"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4753,11 +4753,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Nicolas4),
     },
 
-    [TRAINER_NICOLAS_5] =
+    [PRODUCER_NICOLAS_5] =
     {
-        .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_DRAGON_TAMER,
+        .trainerClass = PRODUCER_CLASS_DRAGON_TAMER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_DRAGON_TAMER,
         .trainerName = _("NICOLAS"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4765,11 +4765,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_DEFAULT_MOVES(sParty_Nicolas5),
     },
 
-    [TRAINER_AARON] =
+    [PRODUCER_AARON] =
     {
-        .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_DRAGON_TAMER,
+        .trainerClass = PRODUCER_CLASS_DRAGON_TAMER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_DRAGON_TAMER,
         .trainerName = _("AARON"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4777,11 +4777,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Aaron),
     },
 
-    [TRAINER_PERRY] =
+    [PRODUCER_PERRY] =
     {
-        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
+        .trainerClass = PRODUCER_CLASS_BIRD_KEEPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_BIRD_KEEPER,
         .trainerName = _("PERRY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4789,11 +4789,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Perry),
     },
 
-    [TRAINER_HUGH] =
+    [PRODUCER_HUGH] =
     {
-        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
+        .trainerClass = PRODUCER_CLASS_BIRD_KEEPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_BIRD_KEEPER,
         .trainerName = _("HUGH"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4801,11 +4801,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Hugh),
     },
 
-    [TRAINER_PHIL] =
+    [PRODUCER_PHIL] =
     {
-        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
+        .trainerClass = PRODUCER_CLASS_BIRD_KEEPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_BIRD_KEEPER,
         .trainerName = _("PHIL"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4813,11 +4813,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Phil),
     },
 
-    [TRAINER_JARED] =
+    [PRODUCER_JARED] =
     {
-        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
+        .trainerClass = PRODUCER_CLASS_BIRD_KEEPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_BIRD_KEEPER,
         .trainerName = _("JARED"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4825,11 +4825,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jared),
     },
 
-    [TRAINER_HUMBERTO] =
+    [PRODUCER_HUMBERTO] =
     {
-        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
+        .trainerClass = PRODUCER_CLASS_BIRD_KEEPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_BIRD_KEEPER,
         .trainerName = _("HUMBERTO"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4837,11 +4837,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Humberto),
     },
 
-    [TRAINER_PRESLEY] =
+    [PRODUCER_PRESLEY] =
     {
-        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
+        .trainerClass = PRODUCER_CLASS_BIRD_KEEPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_BIRD_KEEPER,
         .trainerName = _("PRESLEY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4849,11 +4849,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Presley),
     },
 
-    [TRAINER_EDWARDO] =
+    [PRODUCER_EDWARDO] =
     {
-        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
+        .trainerClass = PRODUCER_CLASS_BIRD_KEEPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_BIRD_KEEPER,
         .trainerName = _("EDWARDO"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4861,11 +4861,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Edwardo),
     },
 
-    [TRAINER_COLIN] =
+    [PRODUCER_COLIN] =
     {
-        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
+        .trainerClass = PRODUCER_CLASS_BIRD_KEEPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_BIRD_KEEPER,
         .trainerName = _("COLIN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4873,11 +4873,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Colin),
     },
 
-    [TRAINER_ROBERT_1] =
+    [PRODUCER_ROBERT_1] =
     {
-        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
+        .trainerClass = PRODUCER_CLASS_BIRD_KEEPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_BIRD_KEEPER,
         .trainerName = _("ROBERT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4885,11 +4885,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Robert1),
     },
 
-    [TRAINER_BENNY] =
+    [PRODUCER_BENNY] =
     {
-        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
+        .trainerClass = PRODUCER_CLASS_BIRD_KEEPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_BIRD_KEEPER,
         .trainerName = _("BENNY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4897,11 +4897,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Benny),
     },
 
-    [TRAINER_CHESTER] =
+    [PRODUCER_CHESTER] =
     {
-        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
+        .trainerClass = PRODUCER_CLASS_BIRD_KEEPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_BIRD_KEEPER,
         .trainerName = _("CHESTER"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4909,11 +4909,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Chester),
     },
 
-    [TRAINER_ROBERT_2] =
+    [PRODUCER_ROBERT_2] =
     {
-        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
+        .trainerClass = PRODUCER_CLASS_BIRD_KEEPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_BIRD_KEEPER,
         .trainerName = _("ROBERT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4921,11 +4921,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Robert2),
     },
 
-    [TRAINER_ROBERT_3] =
+    [PRODUCER_ROBERT_3] =
     {
-        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
+        .trainerClass = PRODUCER_CLASS_BIRD_KEEPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_BIRD_KEEPER,
         .trainerName = _("ROBERT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4933,11 +4933,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Robert3),
     },
 
-    [TRAINER_ROBERT_4] =
+    [PRODUCER_ROBERT_4] =
     {
-        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
+        .trainerClass = PRODUCER_CLASS_BIRD_KEEPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_BIRD_KEEPER,
         .trainerName = _("ROBERT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4945,11 +4945,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Robert4),
     },
 
-    [TRAINER_ROBERT_5] =
+    [PRODUCER_ROBERT_5] =
     {
-        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
+        .trainerClass = PRODUCER_CLASS_BIRD_KEEPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_BIRD_KEEPER,
         .trainerName = _("ROBERT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4957,11 +4957,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Robert5),
     },
 
-    [TRAINER_ALEX] =
+    [PRODUCER_ALEX] =
     {
-        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
+        .trainerClass = PRODUCER_CLASS_BIRD_KEEPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_BIRD_KEEPER,
         .trainerName = _("ALEX"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4969,11 +4969,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Alex),
     },
 
-    [TRAINER_BECK] =
+    [PRODUCER_BECK] =
     {
-        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
+        .trainerClass = PRODUCER_CLASS_BIRD_KEEPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_BIRD_KEEPER,
         .trainerName = _("BECK"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4981,11 +4981,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Beck),
     },
 
-    [TRAINER_YASU] =
+    [PRODUCER_YASU] =
     {
-        .trainerClass = TRAINER_CLASS_NINJA_BOY,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_NINJA_BOY,
+        .trainerClass = PRODUCER_CLASS_NINJA_BOY,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_NINJA_BOY,
         .trainerName = _("YASU"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4993,11 +4993,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Yasu),
     },
 
-    [TRAINER_TAKASHI] =
+    [PRODUCER_TAKASHI] =
     {
-        .trainerClass = TRAINER_CLASS_NINJA_BOY,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_NINJA_BOY,
+        .trainerClass = PRODUCER_CLASS_NINJA_BOY,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_NINJA_BOY,
         .trainerName = _("TAKASHI"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5005,11 +5005,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Takashi),
     },
 
-    [TRAINER_DIANNE] =
+    [PRODUCER_DIANNE] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_F,
         .trainerName = _("DIANNE"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -5017,11 +5017,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Dianne),
     },
 
-    [TRAINER_JANI] =
+    [PRODUCER_JANI] =
     {
-        .trainerClass = TRAINER_CLASS_TUBER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_TUBER_F,
+        .trainerClass = PRODUCER_CLASS_TUBER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_TUBER_F,
         .trainerName = _("JANI"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5029,11 +5029,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jani),
     },
 
-    [TRAINER_LAO_1] =
+    [PRODUCER_LAO_1] =
     {
-        .trainerClass = TRAINER_CLASS_NINJA_BOY,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_NINJA_BOY,
+        .trainerClass = PRODUCER_CLASS_NINJA_BOY,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_NINJA_BOY,
         .trainerName = _("LAO"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5041,11 +5041,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Lao1),
     },
 
-    [TRAINER_LUNG] =
+    [PRODUCER_LUNG] =
     {
-        .trainerClass = TRAINER_CLASS_NINJA_BOY,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_NINJA_BOY,
+        .trainerClass = PRODUCER_CLASS_NINJA_BOY,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_NINJA_BOY,
         .trainerName = _("LUNG"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5053,11 +5053,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Lung),
     },
 
-    [TRAINER_LAO_2] =
+    [PRODUCER_LAO_2] =
     {
-        .trainerClass = TRAINER_CLASS_NINJA_BOY,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_NINJA_BOY,
+        .trainerClass = PRODUCER_CLASS_NINJA_BOY,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_NINJA_BOY,
         .trainerName = _("LAO"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5065,11 +5065,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Lao2),
     },
 
-    [TRAINER_LAO_3] =
+    [PRODUCER_LAO_3] =
     {
-        .trainerClass = TRAINER_CLASS_NINJA_BOY,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_NINJA_BOY,
+        .trainerClass = PRODUCER_CLASS_NINJA_BOY,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_NINJA_BOY,
         .trainerName = _("LAO"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5077,11 +5077,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Lao3),
     },
 
-    [TRAINER_LAO_4] =
+    [PRODUCER_LAO_4] =
     {
-        .trainerClass = TRAINER_CLASS_NINJA_BOY,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_NINJA_BOY,
+        .trainerClass = PRODUCER_CLASS_NINJA_BOY,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_NINJA_BOY,
         .trainerName = _("LAO"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5089,11 +5089,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Lao4),
     },
 
-    [TRAINER_LAO_5] =
+    [PRODUCER_LAO_5] =
     {
-        .trainerClass = TRAINER_CLASS_NINJA_BOY,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_NINJA_BOY,
+        .trainerClass = PRODUCER_CLASS_NINJA_BOY,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_NINJA_BOY,
         .trainerName = _("LAO"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5101,11 +5101,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Lao5),
     },
 
-    [TRAINER_JOCELYN] =
+    [PRODUCER_JOCELYN] =
     {
-        .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
+        .trainerClass = PRODUCER_CLASS_BATTLE_GIRL,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BATTLE_GIRL,
         .trainerName = _("JOCELYN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5113,11 +5113,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jocelyn),
     },
 
-    [TRAINER_LAURA] =
+    [PRODUCER_LAURA] =
     {
-        .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
+        .trainerClass = PRODUCER_CLASS_BATTLE_GIRL,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BATTLE_GIRL,
         .trainerName = _("LAURA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5125,11 +5125,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Laura),
     },
 
-    [TRAINER_CYNDY_1] =
+    [PRODUCER_CYNDY_1] =
     {
-        .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
+        .trainerClass = PRODUCER_CLASS_BATTLE_GIRL,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BATTLE_GIRL,
         .trainerName = _("CYNDY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5137,11 +5137,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Cyndy1),
     },
 
-    [TRAINER_CORA] =
+    [PRODUCER_CORA] =
     {
-        .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
+        .trainerClass = PRODUCER_CLASS_BATTLE_GIRL,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BATTLE_GIRL,
         .trainerName = _("CORA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5149,11 +5149,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Cora),
     },
 
-    [TRAINER_PAULA] =
+    [PRODUCER_PAULA] =
     {
-        .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
+        .trainerClass = PRODUCER_CLASS_BATTLE_GIRL,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BATTLE_GIRL,
         .trainerName = _("PAULA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5161,11 +5161,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Paula),
     },
 
-    [TRAINER_CYNDY_2] =
+    [PRODUCER_CYNDY_2] =
     {
-        .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
+        .trainerClass = PRODUCER_CLASS_BATTLE_GIRL,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BATTLE_GIRL,
         .trainerName = _("CYNDY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5173,11 +5173,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Cyndy2),
     },
 
-    [TRAINER_CYNDY_3] =
+    [PRODUCER_CYNDY_3] =
     {
-        .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
+        .trainerClass = PRODUCER_CLASS_BATTLE_GIRL,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BATTLE_GIRL,
         .trainerName = _("CYNDY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5185,11 +5185,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Cyndy3),
     },
 
-    [TRAINER_CYNDY_4] =
+    [PRODUCER_CYNDY_4] =
     {
-        .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
+        .trainerClass = PRODUCER_CLASS_BATTLE_GIRL,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BATTLE_GIRL,
         .trainerName = _("CYNDY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5197,11 +5197,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Cyndy4),
     },
 
-    [TRAINER_CYNDY_5] =
+    [PRODUCER_CYNDY_5] =
     {
-        .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
+        .trainerClass = PRODUCER_CLASS_BATTLE_GIRL,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BATTLE_GIRL,
         .trainerName = _("CYNDY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5209,11 +5209,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Cyndy5),
     },
 
-    [TRAINER_MADELINE_1] =
+    [PRODUCER_MADELINE_1] =
     {
-        .trainerClass = TRAINER_CLASS_PARASOL_LADY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_PARASOL_LADY,
+        .trainerClass = PRODUCER_CLASS_PARASOL_LADY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_PARASOL_LADY,
         .trainerName = _("MADELINE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5221,11 +5221,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Madeline1),
     },
 
-    [TRAINER_CLARISSA] =
+    [PRODUCER_CLARISSA] =
     {
-        .trainerClass = TRAINER_CLASS_PARASOL_LADY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_PARASOL_LADY,
+        .trainerClass = PRODUCER_CLASS_PARASOL_LADY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_PARASOL_LADY,
         .trainerName = _("CLARISSA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5233,11 +5233,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Clarissa),
     },
 
-    [TRAINER_ANGELICA] =
+    [PRODUCER_ANGELICA] =
     {
-        .trainerClass = TRAINER_CLASS_PARASOL_LADY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_PARASOL_LADY,
+        .trainerClass = PRODUCER_CLASS_PARASOL_LADY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_PARASOL_LADY,
         .trainerName = _("ANGELICA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5245,11 +5245,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Angelica),
     },
 
-    [TRAINER_MADELINE_2] =
+    [PRODUCER_MADELINE_2] =
     {
-        .trainerClass = TRAINER_CLASS_PARASOL_LADY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_PARASOL_LADY,
+        .trainerClass = PRODUCER_CLASS_PARASOL_LADY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_PARASOL_LADY,
         .trainerName = _("MADELINE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5257,11 +5257,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Madeline2),
     },
 
-    [TRAINER_MADELINE_3] =
+    [PRODUCER_MADELINE_3] =
     {
-        .trainerClass = TRAINER_CLASS_PARASOL_LADY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_PARASOL_LADY,
+        .trainerClass = PRODUCER_CLASS_PARASOL_LADY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_PARASOL_LADY,
         .trainerName = _("MADELINE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5269,11 +5269,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Madeline3),
     },
 
-    [TRAINER_MADELINE_4] =
+    [PRODUCER_MADELINE_4] =
     {
-        .trainerClass = TRAINER_CLASS_PARASOL_LADY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_PARASOL_LADY,
+        .trainerClass = PRODUCER_CLASS_PARASOL_LADY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_PARASOL_LADY,
         .trainerName = _("MADELINE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5281,11 +5281,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Madeline4),
     },
 
-    [TRAINER_MADELINE_5] =
+    [PRODUCER_MADELINE_5] =
     {
-        .trainerClass = TRAINER_CLASS_PARASOL_LADY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_PARASOL_LADY,
+        .trainerClass = PRODUCER_CLASS_PARASOL_LADY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_PARASOL_LADY,
         .trainerName = _("MADELINE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5293,11 +5293,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Madeline5),
     },
 
-    [TRAINER_BEVERLY] =
+    [PRODUCER_BEVERLY] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_F,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_F,
         .trainerName = _("BEVERLY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5305,11 +5305,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Beverly),
     },
 
-    [TRAINER_IMANI] =
+    [PRODUCER_IMANI] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_F,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_F,
         .trainerName = _("IMANI"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5317,11 +5317,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Imani),
     },
 
-    [TRAINER_KYLA] =
+    [PRODUCER_KYLA] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_F,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_F,
         .trainerName = _("KYLA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5329,11 +5329,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Kyla),
     },
 
-    [TRAINER_DENISE] =
+    [PRODUCER_DENISE] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_F,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_F,
         .trainerName = _("DENISE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5341,11 +5341,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Denise),
     },
 
-    [TRAINER_BETH] =
+    [PRODUCER_BETH] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_F,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_F,
         .trainerName = _("BETH"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5353,11 +5353,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Beth),
     },
 
-    [TRAINER_TARA] =
+    [PRODUCER_TARA] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_F,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_F,
         .trainerName = _("TARA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5365,11 +5365,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Tara),
     },
 
-    [TRAINER_MISSY] =
+    [PRODUCER_MISSY] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_F,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_F,
         .trainerName = _("MISSY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5377,11 +5377,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Missy),
     },
 
-    [TRAINER_ALICE] =
+    [PRODUCER_ALICE] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_F,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_F,
         .trainerName = _("ALICE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5389,11 +5389,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Alice),
     },
 
-    [TRAINER_JENNY_1] =
+    [PRODUCER_JENNY_1] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_F,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_F,
         .trainerName = _("JENNY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5401,11 +5401,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jenny1),
     },
 
-    [TRAINER_GRACE] =
+    [PRODUCER_GRACE] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_F,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_F,
         .trainerName = _("GRACE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5413,11 +5413,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Grace),
     },
 
-    [TRAINER_TANYA] =
+    [PRODUCER_TANYA] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_F,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_F,
         .trainerName = _("TANYA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5425,11 +5425,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Tanya),
     },
 
-    [TRAINER_SHARON] =
+    [PRODUCER_SHARON] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_F,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_F,
         .trainerName = _("SHARON"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5437,11 +5437,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Sharon),
     },
 
-    [TRAINER_NIKKI] =
+    [PRODUCER_NIKKI] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_F,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_F,
         .trainerName = _("NIKKI"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5449,11 +5449,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Nikki),
     },
 
-    [TRAINER_BRENDA] =
+    [PRODUCER_BRENDA] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_F,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_F,
         .trainerName = _("BRENDA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5461,11 +5461,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Brenda),
     },
 
-    [TRAINER_KATIE] =
+    [PRODUCER_KATIE] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_F,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_F,
         .trainerName = _("KATIE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5473,11 +5473,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Katie),
     },
 
-    [TRAINER_SUSIE] =
+    [PRODUCER_SUSIE] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_F,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_F,
         .trainerName = _("SUSIE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5485,11 +5485,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Susie),
     },
 
-    [TRAINER_KARA] =
+    [PRODUCER_KARA] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_F,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_F,
         .trainerName = _("KARA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5497,11 +5497,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Kara),
     },
 
-    [TRAINER_DANA] =
+    [PRODUCER_DANA] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_F,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_F,
         .trainerName = _("DANA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5509,11 +5509,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Dana),
     },
 
-    [TRAINER_SIENNA] =
+    [PRODUCER_SIENNA] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_F,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_F,
         .trainerName = _("SIENNA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5521,11 +5521,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Sienna),
     },
 
-    [TRAINER_DEBRA] =
+    [PRODUCER_DEBRA] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_F,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_F,
         .trainerName = _("DEBRA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5533,11 +5533,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Debra),
     },
 
-    [TRAINER_LINDA] =
+    [PRODUCER_LINDA] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_F,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_F,
         .trainerName = _("LINDA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5545,11 +5545,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Linda),
     },
 
-    [TRAINER_KAYLEE] =
+    [PRODUCER_KAYLEE] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_F,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_F,
         .trainerName = _("KAYLEE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5557,11 +5557,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Kaylee),
     },
 
-    [TRAINER_LAUREL] =
+    [PRODUCER_LAUREL] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_F,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_F,
         .trainerName = _("LAUREL"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5569,11 +5569,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Laurel),
     },
 
-    [TRAINER_CARLEE] =
+    [PRODUCER_CARLEE] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_F,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_F,
         .trainerName = _("CARLEE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5581,11 +5581,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Carlee),
     },
 
-    [TRAINER_JENNY_2] =
+    [PRODUCER_JENNY_2] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_F,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_F,
         .trainerName = _("JENNY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5593,11 +5593,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jenny2),
     },
 
-    [TRAINER_JENNY_3] =
+    [PRODUCER_JENNY_3] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_F,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_F,
         .trainerName = _("JENNY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5605,11 +5605,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jenny3),
     },
 
-    [TRAINER_JENNY_4] =
+    [PRODUCER_JENNY_4] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_F,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_F,
         .trainerName = _("JENNY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5617,11 +5617,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jenny4),
     },
 
-    [TRAINER_JENNY_5] =
+    [PRODUCER_JENNY_5] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_F,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_F,
         .trainerName = _("JENNY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5629,11 +5629,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jenny5),
     },
 
-    [TRAINER_HEIDI] =
+    [PRODUCER_HEIDI] =
     {
-        .trainerClass = TRAINER_CLASS_PICNICKER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_PICNICKER,
+        .trainerClass = PRODUCER_CLASS_PICNICKER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_PICNICKER,
         .trainerName = _("HEIDI"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5641,11 +5641,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Heidi),
     },
 
-    [TRAINER_BECKY] =
+    [PRODUCER_BECKY] =
     {
-        .trainerClass = TRAINER_CLASS_PICNICKER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_PICNICKER,
+        .trainerClass = PRODUCER_CLASS_PICNICKER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_PICNICKER,
         .trainerName = _("BECKY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5653,11 +5653,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Becky),
     },
 
-    [TRAINER_CAROL] =
+    [PRODUCER_CAROL] =
     {
-        .trainerClass = TRAINER_CLASS_PICNICKER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_PICNICKER,
+        .trainerClass = PRODUCER_CLASS_PICNICKER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_PICNICKER,
         .trainerName = _("CAROL"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5665,11 +5665,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Carol),
     },
 
-    [TRAINER_NANCY] =
+    [PRODUCER_NANCY] =
     {
-        .trainerClass = TRAINER_CLASS_PICNICKER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_PICNICKER,
+        .trainerClass = PRODUCER_CLASS_PICNICKER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_PICNICKER,
         .trainerName = _("NANCY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5677,11 +5677,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Nancy),
     },
 
-    [TRAINER_MARTHA] =
+    [PRODUCER_MARTHA] =
     {
-        .trainerClass = TRAINER_CLASS_PICNICKER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_PICNICKER,
+        .trainerClass = PRODUCER_CLASS_PICNICKER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_PICNICKER,
         .trainerName = _("MARTHA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5689,11 +5689,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Martha),
     },
 
-    [TRAINER_DIANA_1] =
+    [PRODUCER_DIANA_1] =
     {
-        .trainerClass = TRAINER_CLASS_PICNICKER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_PICNICKER,
+        .trainerClass = PRODUCER_CLASS_PICNICKER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_PICNICKER,
         .trainerName = _("DIANA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5701,11 +5701,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Diana1),
     },
 
-    [TRAINER_CEDRIC] =
+    [PRODUCER_CEDRIC] =
     {
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_PSYCHIC_M,
+        .trainerClass = PRODUCER_CLASS_PSYCHIC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_PSYCHIC_M,
         .trainerName = _("CEDRIC"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5713,11 +5713,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Cedric),
     },
 
-    [TRAINER_IRENE] =
+    [PRODUCER_IRENE] =
     {
-        .trainerClass = TRAINER_CLASS_PICNICKER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_PICNICKER,
+        .trainerClass = PRODUCER_CLASS_PICNICKER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_PICNICKER,
         .trainerName = _("IRENE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5725,11 +5725,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Irene),
     },
 
-    [TRAINER_DIANA_2] =
+    [PRODUCER_DIANA_2] =
     {
-        .trainerClass = TRAINER_CLASS_PICNICKER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_PICNICKER,
+        .trainerClass = PRODUCER_CLASS_PICNICKER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_PICNICKER,
         .trainerName = _("DIANA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5737,11 +5737,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Diana2),
     },
 
-    [TRAINER_DIANA_3] =
+    [PRODUCER_DIANA_3] =
     {
-        .trainerClass = TRAINER_CLASS_PICNICKER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_PICNICKER,
+        .trainerClass = PRODUCER_CLASS_PICNICKER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_PICNICKER,
         .trainerName = _("DIANA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5749,11 +5749,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Diana3),
     },
 
-    [TRAINER_DIANA_4] =
+    [PRODUCER_DIANA_4] =
     {
-        .trainerClass = TRAINER_CLASS_PICNICKER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_PICNICKER,
+        .trainerClass = PRODUCER_CLASS_PICNICKER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_PICNICKER,
         .trainerName = _("DIANA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5761,11 +5761,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Diana4),
     },
 
-    [TRAINER_DIANA_5] =
+    [PRODUCER_DIANA_5] =
     {
-        .trainerClass = TRAINER_CLASS_PICNICKER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_PICNICKER,
+        .trainerClass = PRODUCER_CLASS_PICNICKER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_PICNICKER,
         .trainerName = _("DIANA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5773,11 +5773,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Diana5),
     },
 
-    [TRAINER_AMY_AND_LIV_1] =
+    [PRODUCER_AMY_AND_LIV_1] =
     {
-        .trainerClass = TRAINER_CLASS_TWINS,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_TWINS,
+        .trainerClass = PRODUCER_CLASS_TWINS,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = PRODUCER_PIC_TWINS,
         .trainerName = _("AMY & LIV"),
         .items = {},
         .doubleBattle = TRUE,
@@ -5785,11 +5785,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_AmyAndLiv1),
     },
 
-    [TRAINER_AMY_AND_LIV_2] =
+    [PRODUCER_AMY_AND_LIV_2] =
     {
-        .trainerClass = TRAINER_CLASS_TWINS,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_TWINS,
+        .trainerClass = PRODUCER_CLASS_TWINS,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = PRODUCER_PIC_TWINS,
         .trainerName = _("AMY & LIV"),
         .items = {},
         .doubleBattle = TRUE,
@@ -5797,11 +5797,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_AmyAndLiv2),
     },
 
-    [TRAINER_GINA_AND_MIA_1] =
+    [PRODUCER_GINA_AND_MIA_1] =
     {
-        .trainerClass = TRAINER_CLASS_TWINS,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_TWINS,
+        .trainerClass = PRODUCER_CLASS_TWINS,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = PRODUCER_PIC_TWINS,
         .trainerName = _("GINA & MIA"),
         .items = {},
         .doubleBattle = TRUE,
@@ -5809,11 +5809,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GinaAndMia1),
     },
 
-    [TRAINER_MIU_AND_YUKI] =
+    [PRODUCER_MIU_AND_YUKI] =
     {
-        .trainerClass = TRAINER_CLASS_TWINS,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_TWINS,
+        .trainerClass = PRODUCER_CLASS_TWINS,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = PRODUCER_PIC_TWINS,
         .trainerName = _("MIU & YUKI"),
         .items = {},
         .doubleBattle = TRUE,
@@ -5821,11 +5821,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_MiuAndYuki),
     },
 
-    [TRAINER_AMY_AND_LIV_3] =
+    [PRODUCER_AMY_AND_LIV_3] =
     {
-        .trainerClass = TRAINER_CLASS_TWINS,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_TWINS,
+        .trainerClass = PRODUCER_CLASS_TWINS,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = PRODUCER_PIC_TWINS,
         .trainerName = _("AMY & LIV"),
         .items = {},
         .doubleBattle = TRUE,
@@ -5833,11 +5833,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_AmyAndLiv3),
     },
 
-    [TRAINER_GINA_AND_MIA_2] =
+    [PRODUCER_GINA_AND_MIA_2] =
     {
-        .trainerClass = TRAINER_CLASS_TWINS,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_TWINS,
+        .trainerClass = PRODUCER_CLASS_TWINS,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = PRODUCER_PIC_TWINS,
         .trainerName = _("GINA & MIA"),
         .items = {},
         .doubleBattle = TRUE,
@@ -5845,11 +5845,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_GinaAndMia2),
     },
 
-    [TRAINER_AMY_AND_LIV_4] =
+    [PRODUCER_AMY_AND_LIV_4] =
     {
-        .trainerClass = TRAINER_CLASS_TWINS,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_TWINS,
+        .trainerClass = PRODUCER_CLASS_TWINS,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = PRODUCER_PIC_TWINS,
         .trainerName = _("AMY & LIV"),
         .items = {},
         .doubleBattle = TRUE,
@@ -5857,11 +5857,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_AmyAndLiv4),
     },
 
-    [TRAINER_AMY_AND_LIV_5] =
+    [PRODUCER_AMY_AND_LIV_5] =
     {
-        .trainerClass = TRAINER_CLASS_TWINS,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_TWINS,
+        .trainerClass = PRODUCER_CLASS_TWINS,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = PRODUCER_PIC_TWINS,
         .trainerName = _("AMY & LIV"),
         .items = {},
         .doubleBattle = TRUE,
@@ -5869,11 +5869,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_AmyAndLiv5),
     },
 
-    [TRAINER_AMY_AND_LIV_6] =
+    [PRODUCER_AMY_AND_LIV_6] =
     {
-        .trainerClass = TRAINER_CLASS_TWINS,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_TWINS,
+        .trainerClass = PRODUCER_CLASS_TWINS,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = PRODUCER_PIC_TWINS,
         .trainerName = _("AMY & LIV"),
         .items = {},
         .doubleBattle = TRUE,
@@ -5881,11 +5881,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_AmyAndLiv6),
     },
 
-    [TRAINER_HUEY] =
+    [PRODUCER_HUEY] =
     {
-        .trainerClass = TRAINER_CLASS_SAILOR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_SAILOR,
+        .trainerClass = PRODUCER_CLASS_SAILOR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_SAILOR,
         .trainerName = _("HUEY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5893,11 +5893,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Huey),
     },
 
-    [TRAINER_EDMOND] =
+    [PRODUCER_EDMOND] =
     {
-        .trainerClass = TRAINER_CLASS_SAILOR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_SAILOR,
+        .trainerClass = PRODUCER_CLASS_SAILOR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_SAILOR,
         .trainerName = _("EDMOND"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5905,11 +5905,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Edmond),
     },
 
-    [TRAINER_ERNEST_1] =
+    [PRODUCER_ERNEST_1] =
     {
-        .trainerClass = TRAINER_CLASS_SAILOR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_SAILOR,
+        .trainerClass = PRODUCER_CLASS_SAILOR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_SAILOR,
         .trainerName = _("ERNEST"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5917,11 +5917,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Ernest1),
     },
 
-    [TRAINER_DWAYNE] =
+    [PRODUCER_DWAYNE] =
     {
-        .trainerClass = TRAINER_CLASS_SAILOR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_SAILOR,
+        .trainerClass = PRODUCER_CLASS_SAILOR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_SAILOR,
         .trainerName = _("DWAYNE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5929,11 +5929,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Dwayne),
     },
 
-    [TRAINER_PHILLIP] =
+    [PRODUCER_PHILLIP] =
     {
-        .trainerClass = TRAINER_CLASS_SAILOR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_SAILOR,
+        .trainerClass = PRODUCER_CLASS_SAILOR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_SAILOR,
         .trainerName = _("PHILLIP"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5941,11 +5941,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Phillip),
     },
 
-    [TRAINER_LEONARD] =
+    [PRODUCER_LEONARD] =
     {
-        .trainerClass = TRAINER_CLASS_SAILOR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_SAILOR,
+        .trainerClass = PRODUCER_CLASS_SAILOR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_SAILOR,
         .trainerName = _("LEONARD"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5953,11 +5953,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Leonard),
     },
 
-    [TRAINER_DUNCAN] =
+    [PRODUCER_DUNCAN] =
     {
-        .trainerClass = TRAINER_CLASS_SAILOR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_SAILOR,
+        .trainerClass = PRODUCER_CLASS_SAILOR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_SAILOR,
         .trainerName = _("DUNCAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5965,11 +5965,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Duncan),
     },
 
-    [TRAINER_ERNEST_2] =
+    [PRODUCER_ERNEST_2] =
     {
-        .trainerClass = TRAINER_CLASS_SAILOR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_SAILOR,
+        .trainerClass = PRODUCER_CLASS_SAILOR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_SAILOR,
         .trainerName = _("ERNEST"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5977,11 +5977,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Ernest2),
     },
 
-    [TRAINER_ERNEST_3] =
+    [PRODUCER_ERNEST_3] =
     {
-        .trainerClass = TRAINER_CLASS_SAILOR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_SAILOR,
+        .trainerClass = PRODUCER_CLASS_SAILOR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_SAILOR,
         .trainerName = _("ERNEST"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5989,11 +5989,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Ernest3),
     },
 
-    [TRAINER_ERNEST_4] =
+    [PRODUCER_ERNEST_4] =
     {
-        .trainerClass = TRAINER_CLASS_SAILOR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_SAILOR,
+        .trainerClass = PRODUCER_CLASS_SAILOR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_SAILOR,
         .trainerName = _("ERNEST"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6001,11 +6001,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Ernest4),
     },
 
-    [TRAINER_ERNEST_5] =
+    [PRODUCER_ERNEST_5] =
     {
-        .trainerClass = TRAINER_CLASS_SAILOR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_SAILOR,
+        .trainerClass = PRODUCER_CLASS_SAILOR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_SAILOR,
         .trainerName = _("ERNEST"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6013,11 +6013,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Ernest5),
     },
 
-    [TRAINER_ELI] =
+    [PRODUCER_ELI] =
     {
-        .trainerClass = TRAINER_CLASS_HIKER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerClass = PRODUCER_CLASS_HIKER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_HIKER,
         .trainerName = _("ELI"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6025,11 +6025,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Eli),
     },
 
-    [TRAINER_ANNIKA] =
+    [PRODUCER_ANNIKA] =
     {
-        .trainerClass = TRAINER_CLASS_POKEFAN,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_POKEFAN_F,
+        .trainerClass = PRODUCER_CLASS_POKEFAN,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = PRODUCER_PIC_POKEFAN_F,
         .trainerName = _("ANNIKA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6037,11 +6037,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Annika),
     },
 
-    [TRAINER_JAZMYN] =
+    [PRODUCER_JAZMYN] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER_2,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER_2,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_F,
         .trainerName = _("JAZMYN"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -6049,11 +6049,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jazmyn),
     },
 
-    [TRAINER_JONAS] =
+    [PRODUCER_JONAS] =
     {
-        .trainerClass = TRAINER_CLASS_NINJA_BOY,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_NINJA_BOY,
+        .trainerClass = PRODUCER_CLASS_NINJA_BOY,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_NINJA_BOY,
         .trainerName = _("JONAS"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6061,11 +6061,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Jonas),
     },
 
-    [TRAINER_KAYLEY] =
+    [PRODUCER_KAYLEY] =
     {
-        .trainerClass = TRAINER_CLASS_PARASOL_LADY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_PARASOL_LADY,
+        .trainerClass = PRODUCER_CLASS_PARASOL_LADY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_PARASOL_LADY,
         .trainerName = _("KAYLEY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6073,11 +6073,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Kayley),
     },
 
-    [TRAINER_AURON] =
+    [PRODUCER_AURON] =
     {
-        .trainerClass = TRAINER_CLASS_EXPERT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_EXPERT_M,
+        .trainerClass = PRODUCER_CLASS_EXPERT,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_EXPERT_M,
         .trainerName = _("AURON"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6085,11 +6085,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Auron),
     },
 
-    [TRAINER_KELVIN] =
+    [PRODUCER_KELVIN] =
     {
-        .trainerClass = TRAINER_CLASS_SAILOR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_SAILOR,
+        .trainerClass = PRODUCER_CLASS_SAILOR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_SAILOR,
         .trainerName = _("KELVIN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6097,11 +6097,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Kelvin),
     },
 
-    [TRAINER_MARLEY] =
+    [PRODUCER_MARLEY] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_F,
         .trainerName = _("MARLEY"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -6109,11 +6109,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Marley),
     },
 
-    [TRAINER_REYNA] =
+    [PRODUCER_REYNA] =
     {
-        .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
+        .trainerClass = PRODUCER_CLASS_BATTLE_GIRL,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BATTLE_GIRL,
         .trainerName = _("REYNA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6121,11 +6121,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Reyna),
     },
 
-    [TRAINER_HUDSON] =
+    [PRODUCER_HUDSON] =
     {
-        .trainerClass = TRAINER_CLASS_SAILOR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_SAILOR,
+        .trainerClass = PRODUCER_CLASS_SAILOR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_SAILOR,
         .trainerName = _("HUDSON"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6133,11 +6133,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Hudson),
     },
 
-    [TRAINER_CONOR] =
+    [PRODUCER_CONOR] =
     {
-        .trainerClass = TRAINER_CLASS_EXPERT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_EXPERT_M,
+        .trainerClass = PRODUCER_CLASS_EXPERT,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_EXPERT_M,
         .trainerName = _("CONOR"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6145,11 +6145,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Conor),
     },
 
-    [TRAINER_EDWIN_1] =
+    [PRODUCER_EDWIN_1] =
     {
-        .trainerClass = TRAINER_CLASS_COLLECTOR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_COLLECTOR,
+        .trainerClass = PRODUCER_CLASS_COLLECTOR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_COLLECTOR,
         .trainerName = _("EDWIN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6157,11 +6157,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Edwin1),
     },
 
-    [TRAINER_HECTOR] =
+    [PRODUCER_HECTOR] =
     {
-        .trainerClass = TRAINER_CLASS_COLLECTOR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_COLLECTOR,
+        .trainerClass = PRODUCER_CLASS_COLLECTOR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_COLLECTOR,
         .trainerName = _("HECTOR"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6169,11 +6169,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Hector),
     },
 
-    [TRAINER_TABITHA_MOSSDEEP] =
+    [PRODUCER_TABITHA_MOSSDEEP] =
     {
-        .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_ADMIN,
+        .trainerClass = PRODUCER_CLASS_MAGMA_ADMIN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MAGMA,
+        .trainerPic = PRODUCER_PIC_MAGMA_ADMIN,
         .trainerName = _("TABITHA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6181,11 +6181,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_TabithaMossdeep),
     },
 
-    [TRAINER_EDWIN_2] =
+    [PRODUCER_EDWIN_2] =
     {
-        .trainerClass = TRAINER_CLASS_COLLECTOR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_COLLECTOR,
+        .trainerClass = PRODUCER_CLASS_COLLECTOR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_COLLECTOR,
         .trainerName = _("EDWIN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6193,11 +6193,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Edwin2),
     },
 
-    [TRAINER_EDWIN_3] =
+    [PRODUCER_EDWIN_3] =
     {
-        .trainerClass = TRAINER_CLASS_COLLECTOR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_COLLECTOR,
+        .trainerClass = PRODUCER_CLASS_COLLECTOR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_COLLECTOR,
         .trainerName = _("EDWIN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6205,11 +6205,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Edwin3),
     },
 
-    [TRAINER_EDWIN_4] =
+    [PRODUCER_EDWIN_4] =
     {
-        .trainerClass = TRAINER_CLASS_COLLECTOR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_COLLECTOR,
+        .trainerClass = PRODUCER_CLASS_COLLECTOR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_COLLECTOR,
         .trainerName = _("EDWIN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6217,11 +6217,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Edwin4),
     },
 
-    [TRAINER_EDWIN_5] =
+    [PRODUCER_EDWIN_5] =
     {
-        .trainerClass = TRAINER_CLASS_COLLECTOR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_COLLECTOR,
+        .trainerClass = PRODUCER_CLASS_COLLECTOR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_COLLECTOR,
         .trainerName = _("EDWIN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6229,11 +6229,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Edwin5),
     },
 
-    [TRAINER_WALLY_VR_1] =
+    [PRODUCER_WALLY_VR_1] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_WALLY,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_WALLY,
         .trainerName = _("WALLY"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -6241,11 +6241,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_WallyVR1),
     },
 
-    [TRAINER_BRENDAN_ROUTE_103_MUDKIP] =
+    [PRODUCER_BRENDAN_ROUTE_103_MUDKIP] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BRENDAN,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_BRENDAN,
         .trainerName = _("BRENDAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6253,11 +6253,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_BrendanRoute103Mudkip),
     },
 
-    [TRAINER_BRENDAN_ROUTE_110_MUDKIP] =
+    [PRODUCER_BRENDAN_ROUTE_110_MUDKIP] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BRENDAN,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_BRENDAN,
         .trainerName = _("BRENDAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6265,11 +6265,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_BrendanRoute110Mudkip),
     },
 
-    [TRAINER_BRENDAN_ROUTE_119_MUDKIP] =
+    [PRODUCER_BRENDAN_ROUTE_119_MUDKIP] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BRENDAN,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_BRENDAN,
         .trainerName = _("BRENDAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6277,11 +6277,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_BrendanRoute119Mudkip),
     },
 
-    [TRAINER_BRENDAN_ROUTE_103_TREECKO] =
+    [PRODUCER_BRENDAN_ROUTE_103_TREECKO] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BRENDAN,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_BRENDAN,
         .trainerName = _("BRENDAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6289,11 +6289,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_BrendanRoute103Treecko),
     },
 
-    [TRAINER_BRENDAN_ROUTE_110_TREECKO] =
+    [PRODUCER_BRENDAN_ROUTE_110_TREECKO] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BRENDAN,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_BRENDAN,
         .trainerName = _("BRENDAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6301,11 +6301,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_BrendanRoute110Treecko),
     },
 
-    [TRAINER_BRENDAN_ROUTE_119_TREECKO] =
+    [PRODUCER_BRENDAN_ROUTE_119_TREECKO] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BRENDAN,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_BRENDAN,
         .trainerName = _("BRENDAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6313,11 +6313,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_BrendanRoute119Treecko),
     },
 
-    [TRAINER_BRENDAN_ROUTE_103_TORCHIC] =
+    [PRODUCER_BRENDAN_ROUTE_103_TORCHIC] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BRENDAN,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_BRENDAN,
         .trainerName = _("BRENDAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6325,11 +6325,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_BrendanRoute103Torchic),
     },
 
-    [TRAINER_BRENDAN_ROUTE_110_TORCHIC] =
+    [PRODUCER_BRENDAN_ROUTE_110_TORCHIC] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BRENDAN,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_BRENDAN,
         .trainerName = _("BRENDAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6337,11 +6337,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_BrendanRoute110Torchic),
     },
 
-    [TRAINER_BRENDAN_ROUTE_119_TORCHIC] =
+    [PRODUCER_BRENDAN_ROUTE_119_TORCHIC] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BRENDAN,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_BRENDAN,
         .trainerName = _("BRENDAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6349,11 +6349,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_BrendanRoute119Torchic),
     },
 
-    [TRAINER_MAY_ROUTE_103_MUDKIP] =
+    [PRODUCER_MAY_ROUTE_103_MUDKIP] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_MAY,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_MAY,
         .trainerName = _("MAY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6361,11 +6361,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_MayRoute103Mudkip),
     },
 
-    [TRAINER_MAY_ROUTE_110_MUDKIP] =
+    [PRODUCER_MAY_ROUTE_110_MUDKIP] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_MAY,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_MAY,
         .trainerName = _("MAY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6373,11 +6373,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_MayRoute110Mudkip),
     },
 
-    [TRAINER_MAY_ROUTE_119_MUDKIP] =
+    [PRODUCER_MAY_ROUTE_119_MUDKIP] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_MAY,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_MAY,
         .trainerName = _("MAY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6385,11 +6385,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_MayRoute119Mudkip),
     },
 
-    [TRAINER_MAY_ROUTE_103_TREECKO] =
+    [PRODUCER_MAY_ROUTE_103_TREECKO] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_MAY,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_MAY,
         .trainerName = _("MAY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6397,11 +6397,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_MayRoute103Treecko),
     },
 
-    [TRAINER_MAY_ROUTE_110_TREECKO] =
+    [PRODUCER_MAY_ROUTE_110_TREECKO] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_MAY,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_MAY,
         .trainerName = _("MAY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6409,11 +6409,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_MayRoute110Treecko),
     },
 
-    [TRAINER_MAY_ROUTE_119_TREECKO] =
+    [PRODUCER_MAY_ROUTE_119_TREECKO] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_MAY,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_MAY,
         .trainerName = _("MAY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6421,11 +6421,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_MayRoute119Treecko),
     },
 
-    [TRAINER_MAY_ROUTE_103_TORCHIC] =
+    [PRODUCER_MAY_ROUTE_103_TORCHIC] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_MAY,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_MAY,
         .trainerName = _("MAY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6433,11 +6433,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_MayRoute103Torchic),
     },
 
-    [TRAINER_MAY_ROUTE_110_TORCHIC] =
+    [PRODUCER_MAY_ROUTE_110_TORCHIC] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_MAY,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_MAY,
         .trainerName = _("MAY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6445,11 +6445,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_MayRoute110Torchic),
     },
 
-    [TRAINER_MAY_ROUTE_119_TORCHIC] =
+    [PRODUCER_MAY_ROUTE_119_TORCHIC] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_MAY,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_MAY,
         .trainerName = _("MAY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6457,11 +6457,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_MayRoute119Torchic),
     },
 
-    [TRAINER_ISAAC_1] =
+    [PRODUCER_ISAAC_1] =
     {
-        .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_M,
+        .trainerClass = PRODUCER_CLASS_PKMN_BREEDER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_POKEMON_BREEDER_M,
         .trainerName = _("ISAAC"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6469,11 +6469,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Isaac1),
     },
 
-    [TRAINER_DAVIS] =
+    [PRODUCER_DAVIS] =
     {
-        .trainerClass = TRAINER_CLASS_BUG_CATCHER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BUG_CATCHER,
+        .trainerClass = PRODUCER_CLASS_BUG_CATCHER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_BUG_CATCHER,
         .trainerName = _("DAVIS"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6481,11 +6481,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Davis),
     },
 
-    [TRAINER_MITCHELL] =
+    [PRODUCER_MITCHELL] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_M,
         .trainerName = _("MITCHELL"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6493,11 +6493,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Mitchell),
     },
 
-    [TRAINER_ISAAC_2] =
+    [PRODUCER_ISAAC_2] =
     {
-        .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_M,
+        .trainerClass = PRODUCER_CLASS_PKMN_BREEDER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_POKEMON_BREEDER_M,
         .trainerName = _("ISAAC"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6505,11 +6505,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Isaac2),
     },
 
-    [TRAINER_ISAAC_3] =
+    [PRODUCER_ISAAC_3] =
     {
-        .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_M,
+        .trainerClass = PRODUCER_CLASS_PKMN_BREEDER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_POKEMON_BREEDER_M,
         .trainerName = _("ISAAC"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6517,11 +6517,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Isaac3),
     },
 
-    [TRAINER_ISAAC_4] =
+    [PRODUCER_ISAAC_4] =
     {
-        .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_M,
+        .trainerClass = PRODUCER_CLASS_PKMN_BREEDER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_POKEMON_BREEDER_M,
         .trainerName = _("ISAAC"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6529,11 +6529,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Isaac4),
     },
 
-    [TRAINER_ISAAC_5] =
+    [PRODUCER_ISAAC_5] =
     {
-        .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_M,
+        .trainerClass = PRODUCER_CLASS_PKMN_BREEDER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_POKEMON_BREEDER_M,
         .trainerName = _("ISAAC"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6541,11 +6541,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Isaac5),
     },
 
-    [TRAINER_LYDIA_1] =
+    [PRODUCER_LYDIA_1] =
     {
-        .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
+        .trainerClass = PRODUCER_CLASS_PKMN_BREEDER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_POKEMON_BREEDER_F,
         .trainerName = _("LYDIA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6553,11 +6553,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Lydia1),
     },
 
-    [TRAINER_HALLE] =
+    [PRODUCER_HALLE] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_F,
         .trainerName = _("HALLE"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -6565,11 +6565,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Halle),
     },
 
-    [TRAINER_GARRISON] =
+    [PRODUCER_GARRISON] =
     {
-        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
+        .trainerClass = PRODUCER_CLASS_RUIN_MANIAC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_RUIN_MANIAC,
         .trainerName = _("GARRISON"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6577,11 +6577,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Garrison),
     },
 
-    [TRAINER_LYDIA_2] =
+    [PRODUCER_LYDIA_2] =
     {
-        .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
+        .trainerClass = PRODUCER_CLASS_PKMN_BREEDER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_POKEMON_BREEDER_F,
         .trainerName = _("LYDIA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6589,11 +6589,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Lydia2),
     },
 
-    [TRAINER_LYDIA_3] =
+    [PRODUCER_LYDIA_3] =
     {
-        .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
+        .trainerClass = PRODUCER_CLASS_PKMN_BREEDER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_POKEMON_BREEDER_F,
         .trainerName = _("LYDIA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6601,11 +6601,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Lydia3),
     },
 
-    [TRAINER_LYDIA_4] =
+    [PRODUCER_LYDIA_4] =
     {
-        .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
+        .trainerClass = PRODUCER_CLASS_PKMN_BREEDER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_POKEMON_BREEDER_F,
         .trainerName = _("LYDIA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6613,11 +6613,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Lydia4),
     },
 
-    [TRAINER_LYDIA_5] =
+    [PRODUCER_LYDIA_5] =
     {
-        .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
+        .trainerClass = PRODUCER_CLASS_PKMN_BREEDER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_POKEMON_BREEDER_F,
         .trainerName = _("LYDIA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6625,11 +6625,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Lydia5),
     },
 
-    [TRAINER_JACKSON_1] =
+    [PRODUCER_JACKSON_1] =
     {
-        .trainerClass = TRAINER_CLASS_PKMN_RANGER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
+        .trainerClass = PRODUCER_CLASS_PKMN_RANGER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_POKEMON_RANGER_M,
         .trainerName = _("JACKSON"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -6637,11 +6637,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jackson1),
     },
 
-    [TRAINER_LORENZO] =
+    [PRODUCER_LORENZO] =
     {
-        .trainerClass = TRAINER_CLASS_PKMN_RANGER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
+        .trainerClass = PRODUCER_CLASS_PKMN_RANGER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_POKEMON_RANGER_M,
         .trainerName = _("LORENZO"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -6649,11 +6649,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Lorenzo),
     },
 
-    [TRAINER_SEBASTIAN] =
+    [PRODUCER_SEBASTIAN] =
     {
-        .trainerClass = TRAINER_CLASS_PKMN_RANGER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
+        .trainerClass = PRODUCER_CLASS_PKMN_RANGER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_POKEMON_RANGER_M,
         .trainerName = _("SEBASTIAN"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -6661,11 +6661,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Sebastian),
     },
 
-    [TRAINER_JACKSON_2] =
+    [PRODUCER_JACKSON_2] =
     {
-        .trainerClass = TRAINER_CLASS_PKMN_RANGER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
+        .trainerClass = PRODUCER_CLASS_PKMN_RANGER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_POKEMON_RANGER_M,
         .trainerName = _("JACKSON"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -6673,11 +6673,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jackson2),
     },
 
-    [TRAINER_JACKSON_3] =
+    [PRODUCER_JACKSON_3] =
     {
-        .trainerClass = TRAINER_CLASS_PKMN_RANGER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
+        .trainerClass = PRODUCER_CLASS_PKMN_RANGER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_POKEMON_RANGER_M,
         .trainerName = _("JACKSON"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -6685,11 +6685,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jackson3),
     },
 
-    [TRAINER_JACKSON_4] =
+    [PRODUCER_JACKSON_4] =
     {
-        .trainerClass = TRAINER_CLASS_PKMN_RANGER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
+        .trainerClass = PRODUCER_CLASS_PKMN_RANGER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_POKEMON_RANGER_M,
         .trainerName = _("JACKSON"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -6697,11 +6697,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jackson4),
     },
 
-    [TRAINER_JACKSON_5] =
+    [PRODUCER_JACKSON_5] =
     {
-        .trainerClass = TRAINER_CLASS_PKMN_RANGER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
+        .trainerClass = PRODUCER_CLASS_PKMN_RANGER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_POKEMON_RANGER_M,
         .trainerName = _("JACKSON"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -6709,11 +6709,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jackson5),
     },
 
-    [TRAINER_CATHERINE_1] =
+    [PRODUCER_CATHERINE_1] =
     {
-        .trainerClass = TRAINER_CLASS_PKMN_RANGER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,
+        .trainerClass = PRODUCER_CLASS_PKMN_RANGER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_POKEMON_RANGER_F,
         .trainerName = _("CATHERINE"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -6721,11 +6721,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Catherine1),
     },
 
-    [TRAINER_JENNA] =
+    [PRODUCER_JENNA] =
     {
-        .trainerClass = TRAINER_CLASS_PKMN_RANGER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,
+        .trainerClass = PRODUCER_CLASS_PKMN_RANGER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_POKEMON_RANGER_F,
         .trainerName = _("JENNA"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -6733,11 +6733,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jenna),
     },
 
-    [TRAINER_SOPHIA] =
+    [PRODUCER_SOPHIA] =
     {
-        .trainerClass = TRAINER_CLASS_PKMN_RANGER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,
+        .trainerClass = PRODUCER_CLASS_PKMN_RANGER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_POKEMON_RANGER_F,
         .trainerName = _("SOPHIA"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -6745,11 +6745,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Sophia),
     },
 
-    [TRAINER_CATHERINE_2] =
+    [PRODUCER_CATHERINE_2] =
     {
-        .trainerClass = TRAINER_CLASS_PKMN_RANGER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,
+        .trainerClass = PRODUCER_CLASS_PKMN_RANGER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_POKEMON_RANGER_F,
         .trainerName = _("CATHERINE"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -6757,11 +6757,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Catherine2),
     },
 
-    [TRAINER_CATHERINE_3] =
+    [PRODUCER_CATHERINE_3] =
     {
-        .trainerClass = TRAINER_CLASS_PKMN_RANGER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,
+        .trainerClass = PRODUCER_CLASS_PKMN_RANGER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_POKEMON_RANGER_F,
         .trainerName = _("CATHERINE"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -6769,11 +6769,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Catherine3),
     },
 
-    [TRAINER_CATHERINE_4] =
+    [PRODUCER_CATHERINE_4] =
     {
-        .trainerClass = TRAINER_CLASS_PKMN_RANGER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,
+        .trainerClass = PRODUCER_CLASS_PKMN_RANGER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_POKEMON_RANGER_F,
         .trainerName = _("CATHERINE"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -6781,11 +6781,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Catherine4),
     },
 
-    [TRAINER_CATHERINE_5] =
+    [PRODUCER_CATHERINE_5] =
     {
-        .trainerClass = TRAINER_CLASS_PKMN_RANGER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,
+        .trainerClass = PRODUCER_CLASS_PKMN_RANGER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_POKEMON_RANGER_F,
         .trainerName = _("CATHERINE"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -6793,11 +6793,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Catherine5),
     },
 
-    [TRAINER_JULIO] =
+    [PRODUCER_JULIO] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_M,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_CYCLING_TRIATHLETE_M,
         .trainerName = _("JULIO"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6805,11 +6805,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Julio),
     },
 
-    [TRAINER_GRUNT_SEAFLOOR_CAVERN_5] =
+    [PRODUCER_GRUNT_SEAFLOOR_CAVERN_5] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_AQUA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = PRODUCER_PIC_AQUA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6817,11 +6817,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntSeafloorCavern5),
     },
 
-    [TRAINER_GRUNT_UNUSED] =
+    [PRODUCER_GRUNT_UNUSED] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
+        .trainerClass = PRODUCER_CLASS_TEAM_MAGMA,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = PRODUCER_PIC_AQUA_GRUNT_F,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6829,11 +6829,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntUnused),
     },
 
-    [TRAINER_GRUNT_MT_PYRE_4] =
+    [PRODUCER_GRUNT_MT_PYRE_4] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
+        .trainerClass = PRODUCER_CLASS_TEAM_AQUA,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = PRODUCER_PIC_AQUA_GRUNT_F,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6841,11 +6841,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntMtPyre4),
     },
 
-    [TRAINER_GRUNT_JAGGED_PASS] =
+    [PRODUCER_GRUNT_JAGGED_PASS] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_MAGMA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MAGMA,
+        .trainerPic = PRODUCER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6853,11 +6853,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntJaggedPass),
     },
 
-    [TRAINER_MARC] =
+    [PRODUCER_MARC] =
     {
-        .trainerClass = TRAINER_CLASS_HIKER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerClass = PRODUCER_CLASS_HIKER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_HIKER,
         .trainerName = _("MARC"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6865,11 +6865,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Marc),
     },
 
-    [TRAINER_BRENDEN] =
+    [PRODUCER_BRENDEN] =
     {
-        .trainerClass = TRAINER_CLASS_SAILOR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_SAILOR,
+        .trainerClass = PRODUCER_CLASS_SAILOR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_SAILOR,
         .trainerName = _("BRENDEN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6877,11 +6877,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Brenden),
     },
 
-    [TRAINER_LILITH] =
+    [PRODUCER_LILITH] =
     {
-        .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
+        .trainerClass = PRODUCER_CLASS_BATTLE_GIRL,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BATTLE_GIRL,
         .trainerName = _("LILITH"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6889,11 +6889,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Lilith),
     },
 
-    [TRAINER_CRISTIAN] =
+    [PRODUCER_CRISTIAN] =
     {
-        .trainerClass = TRAINER_CLASS_BLACK_BELT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BLACK_BELT,
+        .trainerClass = PRODUCER_CLASS_BLACK_BELT,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BLACK_BELT,
         .trainerName = _("CRISTIAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6901,11 +6901,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Cristian),
     },
 
-    [TRAINER_SYLVIA] =
+    [PRODUCER_SYLVIA] =
     {
-        .trainerClass = TRAINER_CLASS_HEX_MANIAC,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_HEX_MANIAC,
+        .trainerClass = PRODUCER_CLASS_HEX_MANIAC,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_HEX_MANIAC,
         .trainerName = _("SYLVIA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6913,11 +6913,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Sylvia),
     },
 
-    [TRAINER_LEONARDO] =
+    [PRODUCER_LEONARDO] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_M,
         .trainerName = _("LEONARDO"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6925,11 +6925,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Leonardo),
     },
 
-    [TRAINER_ATHENA] =
+    [PRODUCER_ATHENA] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_F,
         .trainerName = _("ATHENA"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -6937,11 +6937,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Athena),
     },
 
-    [TRAINER_HARRISON] =
+    [PRODUCER_HARRISON] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_M,
         .trainerName = _("HARRISON"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6949,11 +6949,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Harrison),
     },
 
-    [TRAINER_GRUNT_MT_CHIMNEY_2] =
+    [PRODUCER_GRUNT_MT_CHIMNEY_2] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_MAGMA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MAGMA,
+        .trainerPic = PRODUCER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6961,11 +6961,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntMtChimney2),
     },
 
-    [TRAINER_CLARENCE] =
+    [PRODUCER_CLARENCE] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_M,
         .trainerName = _("CLARENCE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6973,11 +6973,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Clarence),
     },
 
-    [TRAINER_TERRY] =
+    [PRODUCER_TERRY] =
     {
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_PSYCHIC_F,
+        .trainerClass = PRODUCER_CLASS_PSYCHIC,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_PSYCHIC_F,
         .trainerName = _("TERRY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6985,11 +6985,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Terry),
     },
 
-    [TRAINER_NATE] =
+    [PRODUCER_NATE] =
     {
-        .trainerClass = TRAINER_CLASS_GENTLEMAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_RICH,
-        .trainerPic = TRAINER_PIC_GENTLEMAN,
+        .trainerClass = PRODUCER_CLASS_GENTLEMAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_RICH,
+        .trainerPic = PRODUCER_PIC_GENTLEMAN,
         .trainerName = _("NATE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6997,11 +6997,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Nate),
     },
 
-    [TRAINER_KATHLEEN] =
+    [PRODUCER_KATHLEEN] =
     {
-        .trainerClass = TRAINER_CLASS_HEX_MANIAC,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_HEX_MANIAC,
+        .trainerClass = PRODUCER_CLASS_HEX_MANIAC,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_HEX_MANIAC,
         .trainerName = _("KATHLEEN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7009,11 +7009,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Kathleen),
     },
 
-    [TRAINER_CLIFFORD] =
+    [PRODUCER_CLIFFORD] =
     {
-        .trainerClass = TRAINER_CLASS_GENTLEMAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_RICH,
-        .trainerPic = TRAINER_PIC_GENTLEMAN,
+        .trainerClass = PRODUCER_CLASS_GENTLEMAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_RICH,
+        .trainerPic = PRODUCER_PIC_GENTLEMAN,
         .trainerName = _("CLIFFORD"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7021,11 +7021,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Clifford),
     },
 
-    [TRAINER_NICHOLAS] =
+    [PRODUCER_NICHOLAS] =
     {
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_PSYCHIC_M,
+        .trainerClass = PRODUCER_CLASS_PSYCHIC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_PSYCHIC_M,
         .trainerName = _("NICHOLAS"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7033,11 +7033,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Nicholas),
     },
 
-    [TRAINER_GRUNT_SPACE_CENTER_3] =
+    [PRODUCER_GRUNT_SPACE_CENTER_3] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
+        .trainerClass = PRODUCER_CLASS_TEAM_MAGMA,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_MAGMA,
+        .trainerPic = PRODUCER_PIC_MAGMA_GRUNT_F,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7045,11 +7045,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntSpaceCenter3),
     },
 
-    [TRAINER_GRUNT_SPACE_CENTER_4] =
+    [PRODUCER_GRUNT_SPACE_CENTER_4] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_MAGMA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MAGMA,
+        .trainerPic = PRODUCER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7057,11 +7057,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntSpaceCenter4),
     },
 
-    [TRAINER_GRUNT_SPACE_CENTER_5] =
+    [PRODUCER_GRUNT_SPACE_CENTER_5] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_MAGMA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MAGMA,
+        .trainerPic = PRODUCER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7069,11 +7069,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntSpaceCenter5),
     },
 
-    [TRAINER_GRUNT_SPACE_CENTER_6] =
+    [PRODUCER_GRUNT_SPACE_CENTER_6] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_MAGMA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MAGMA,
+        .trainerPic = PRODUCER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7081,11 +7081,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntSpaceCenter6),
     },
 
-    [TRAINER_GRUNT_SPACE_CENTER_7] =
+    [PRODUCER_GRUNT_SPACE_CENTER_7] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_MAGMA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MAGMA,
+        .trainerPic = PRODUCER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7093,11 +7093,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntSpaceCenter7),
     },
 
-    [TRAINER_MACEY] =
+    [PRODUCER_MACEY] =
     {
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_PSYCHIC_F,
+        .trainerClass = PRODUCER_CLASS_PSYCHIC,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_PSYCHIC_F,
         .trainerName = _("MACEY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7105,11 +7105,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Macey),
     },
 
-    [TRAINER_BRENDAN_RUSTBORO_TREECKO] =
+    [PRODUCER_BRENDAN_RUSTBORO_TREECKO] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BRENDAN,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_BRENDAN,
         .trainerName = _("BRENDAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7117,11 +7117,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_BrendanRustboroTreecko),
     },
 
-    [TRAINER_BRENDAN_RUSTBORO_MUDKIP] =
+    [PRODUCER_BRENDAN_RUSTBORO_MUDKIP] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BRENDAN,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_BRENDAN,
         .trainerName = _("BRENDAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7129,11 +7129,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_BrendanRustboroMudkip),
     },
 
-    [TRAINER_PAXTON] =
+    [PRODUCER_PAXTON] =
     {
-        .trainerClass = TRAINER_CLASS_EXPERT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_EXPERT_M,
+        .trainerClass = PRODUCER_CLASS_EXPERT,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_EXPERT_M,
         .trainerName = _("PAXTON"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7141,11 +7141,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Paxton),
     },
 
-    [TRAINER_ISABELLA] =
+    [PRODUCER_ISABELLA] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_F,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMING_TRIATHLETE_F,
         .trainerName = _("ISABELLA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7153,11 +7153,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Isabella),
     },
 
-    [TRAINER_GRUNT_WEATHER_INST_5] =
+    [PRODUCER_GRUNT_WEATHER_INST_5] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_AQUA,
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
+        .trainerClass = PRODUCER_CLASS_TEAM_AQUA,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_AQUA,
+        .trainerPic = PRODUCER_PIC_AQUA_GRUNT_F,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7165,11 +7165,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntWeatherInst5),
     },
 
-    [TRAINER_TABITHA_MT_CHIMNEY] =
+    [PRODUCER_TABITHA_MT_CHIMNEY] =
     {
-        .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_ADMIN,
+        .trainerClass = PRODUCER_CLASS_MAGMA_ADMIN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MAGMA,
+        .trainerPic = PRODUCER_PIC_MAGMA_ADMIN,
         .trainerName = _("TABITHA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7177,11 +7177,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_TabithaMtChimney),
     },
 
-    [TRAINER_JONATHAN] =
+    [PRODUCER_JONATHAN] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_M,
         .trainerName = _("JONATHAN"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -7189,11 +7189,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jonathan),
     },
 
-    [TRAINER_BRENDAN_RUSTBORO_TORCHIC] =
+    [PRODUCER_BRENDAN_RUSTBORO_TORCHIC] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BRENDAN,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_BRENDAN,
         .trainerName = _("BRENDAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7201,11 +7201,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_BrendanRustboroTorchic),
     },
 
-    [TRAINER_MAY_RUSTBORO_MUDKIP] =
+    [PRODUCER_MAY_RUSTBORO_MUDKIP] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_MAY,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_MAY,
         .trainerName = _("MAY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7213,11 +7213,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_MayRustboroMudkip),
     },
 
-    [TRAINER_MAXIE_MAGMA_HIDEOUT] =
+    [PRODUCER_MAXIE_MAGMA_HIDEOUT] =
     {
-        .trainerClass = TRAINER_CLASS_MAGMA_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_LEADER_MAXIE,
+        .trainerClass = PRODUCER_CLASS_MAGMA_LEADER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MAGMA,
+        .trainerPic = PRODUCER_PIC_MAGMA_LEADER_MAXIE,
         .trainerName = _("MAXIE"),
         .items = {ITEM_SUPER_POTION, ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -7225,11 +7225,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_MaxieMagmaHideout),
     },
 
-    [TRAINER_MAXIE_MT_CHIMNEY] =
+    [PRODUCER_MAXIE_MT_CHIMNEY] =
     {
-        .trainerClass = TRAINER_CLASS_MAGMA_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_LEADER_MAXIE,
+        .trainerClass = PRODUCER_CLASS_MAGMA_LEADER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MAGMA,
+        .trainerPic = PRODUCER_PIC_MAGMA_LEADER_MAXIE,
         .trainerName = _("MAXIE"),
         .items = {ITEM_SUPER_POTION, ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -7237,11 +7237,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_MaxieMtChimney),
     },
 
-    [TRAINER_TIANA] =
+    [PRODUCER_TIANA] =
     {
-        .trainerClass = TRAINER_CLASS_LASS,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LASS,
+        .trainerClass = PRODUCER_CLASS_LASS,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LASS,
         .trainerName = _("TIANA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7249,11 +7249,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Tiana),
     },
 
-    [TRAINER_HALEY_1] =
+    [PRODUCER_HALEY_1] =
     {
-        .trainerClass = TRAINER_CLASS_LASS,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LASS,
+        .trainerClass = PRODUCER_CLASS_LASS,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LASS,
         .trainerName = _("HALEY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7261,11 +7261,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Haley1),
     },
 
-    [TRAINER_JANICE] =
+    [PRODUCER_JANICE] =
     {
-        .trainerClass = TRAINER_CLASS_LASS,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LASS,
+        .trainerClass = PRODUCER_CLASS_LASS,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LASS,
         .trainerName = _("JANICE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7273,11 +7273,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Janice),
     },
 
-    [TRAINER_VIVI] =
+    [PRODUCER_VIVI] =
     {
-        .trainerClass = TRAINER_CLASS_WINSTRATE,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LASS,
+        .trainerClass = PRODUCER_CLASS_WINSTRATE,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LASS,
         .trainerName = _("VIVI"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7285,11 +7285,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Vivi),
     },
 
-    [TRAINER_HALEY_2] =
+    [PRODUCER_HALEY_2] =
     {
-        .trainerClass = TRAINER_CLASS_LASS,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LASS,
+        .trainerClass = PRODUCER_CLASS_LASS,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LASS,
         .trainerName = _("HALEY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7297,11 +7297,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Haley2),
     },
 
-    [TRAINER_HALEY_3] =
+    [PRODUCER_HALEY_3] =
     {
-        .trainerClass = TRAINER_CLASS_LASS,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LASS,
+        .trainerClass = PRODUCER_CLASS_LASS,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LASS,
         .trainerName = _("HALEY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7309,11 +7309,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Haley3),
     },
 
-    [TRAINER_HALEY_4] =
+    [PRODUCER_HALEY_4] =
     {
-        .trainerClass = TRAINER_CLASS_LASS,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LASS,
+        .trainerClass = PRODUCER_CLASS_LASS,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LASS,
         .trainerName = _("HALEY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7321,11 +7321,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Haley4),
     },
 
-    [TRAINER_HALEY_5] =
+    [PRODUCER_HALEY_5] =
     {
-        .trainerClass = TRAINER_CLASS_LASS,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LASS,
+        .trainerClass = PRODUCER_CLASS_LASS,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LASS,
         .trainerName = _("HALEY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7333,11 +7333,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Haley5),
     },
 
-    [TRAINER_SALLY] =
+    [PRODUCER_SALLY] =
     {
-        .trainerClass = TRAINER_CLASS_LASS,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LASS,
+        .trainerClass = PRODUCER_CLASS_LASS,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LASS,
         .trainerName = _("SALLY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7345,11 +7345,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Sally),
     },
 
-    [TRAINER_ROBIN] =
+    [PRODUCER_ROBIN] =
     {
-        .trainerClass = TRAINER_CLASS_LASS,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LASS,
+        .trainerClass = PRODUCER_CLASS_LASS,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LASS,
         .trainerName = _("ROBIN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7357,11 +7357,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Robin),
     },
 
-    [TRAINER_ANDREA] =
+    [PRODUCER_ANDREA] =
     {
-        .trainerClass = TRAINER_CLASS_LASS,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LASS,
+        .trainerClass = PRODUCER_CLASS_LASS,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LASS,
         .trainerName = _("ANDREA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7369,11 +7369,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Andrea),
     },
 
-    [TRAINER_CRISSY] =
+    [PRODUCER_CRISSY] =
     {
-        .trainerClass = TRAINER_CLASS_LASS,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LASS,
+        .trainerClass = PRODUCER_CLASS_LASS,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LASS,
         .trainerName = _("CRISSY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7381,11 +7381,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Crissy),
     },
 
-    [TRAINER_RICK] =
+    [PRODUCER_RICK] =
     {
-        .trainerClass = TRAINER_CLASS_BUG_CATCHER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BUG_CATCHER,
+        .trainerClass = PRODUCER_CLASS_BUG_CATCHER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_BUG_CATCHER,
         .trainerName = _("RICK"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7393,11 +7393,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Rick),
     },
 
-    [TRAINER_LYLE] =
+    [PRODUCER_LYLE] =
     {
-        .trainerClass = TRAINER_CLASS_BUG_CATCHER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BUG_CATCHER,
+        .trainerClass = PRODUCER_CLASS_BUG_CATCHER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_BUG_CATCHER,
         .trainerName = _("LYLE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7405,11 +7405,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Lyle),
     },
 
-    [TRAINER_JOSE] =
+    [PRODUCER_JOSE] =
     {
-        .trainerClass = TRAINER_CLASS_BUG_CATCHER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BUG_CATCHER,
+        .trainerClass = PRODUCER_CLASS_BUG_CATCHER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_BUG_CATCHER,
         .trainerName = _("JOSE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7417,11 +7417,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jose),
     },
 
-    [TRAINER_DOUG] =
+    [PRODUCER_DOUG] =
     {
-        .trainerClass = TRAINER_CLASS_BUG_CATCHER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BUG_CATCHER,
+        .trainerClass = PRODUCER_CLASS_BUG_CATCHER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_BUG_CATCHER,
         .trainerName = _("DOUG"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7429,11 +7429,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Doug),
     },
 
-    [TRAINER_GREG] =
+    [PRODUCER_GREG] =
     {
-        .trainerClass = TRAINER_CLASS_BUG_CATCHER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BUG_CATCHER,
+        .trainerClass = PRODUCER_CLASS_BUG_CATCHER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_BUG_CATCHER,
         .trainerName = _("GREG"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7441,11 +7441,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Greg),
     },
 
-    [TRAINER_KENT] =
+    [PRODUCER_KENT] =
     {
-        .trainerClass = TRAINER_CLASS_BUG_CATCHER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BUG_CATCHER,
+        .trainerClass = PRODUCER_CLASS_BUG_CATCHER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_BUG_CATCHER,
         .trainerName = _("KENT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7453,11 +7453,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Kent),
     },
 
-    [TRAINER_JAMES_1] =
+    [PRODUCER_JAMES_1] =
     {
-        .trainerClass = TRAINER_CLASS_BUG_CATCHER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BUG_CATCHER,
+        .trainerClass = PRODUCER_CLASS_BUG_CATCHER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_BUG_CATCHER,
         .trainerName = _("JAMES"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7465,11 +7465,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_James1),
     },
 
-    [TRAINER_JAMES_2] =
+    [PRODUCER_JAMES_2] =
     {
-        .trainerClass = TRAINER_CLASS_BUG_CATCHER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BUG_CATCHER,
+        .trainerClass = PRODUCER_CLASS_BUG_CATCHER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_BUG_CATCHER,
         .trainerName = _("JAMES"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7477,11 +7477,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_James2),
     },
 
-    [TRAINER_JAMES_3] =
+    [PRODUCER_JAMES_3] =
     {
-        .trainerClass = TRAINER_CLASS_BUG_CATCHER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BUG_CATCHER,
+        .trainerClass = PRODUCER_CLASS_BUG_CATCHER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_BUG_CATCHER,
         .trainerName = _("JAMES"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7489,11 +7489,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_James3),
     },
 
-    [TRAINER_JAMES_4] =
+    [PRODUCER_JAMES_4] =
     {
-        .trainerClass = TRAINER_CLASS_BUG_CATCHER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BUG_CATCHER,
+        .trainerClass = PRODUCER_CLASS_BUG_CATCHER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_BUG_CATCHER,
         .trainerName = _("JAMES"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7501,11 +7501,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_James4),
     },
 
-    [TRAINER_JAMES_5] =
+    [PRODUCER_JAMES_5] =
     {
-        .trainerClass = TRAINER_CLASS_BUG_CATCHER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BUG_CATCHER,
+        .trainerClass = PRODUCER_CLASS_BUG_CATCHER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_BUG_CATCHER,
         .trainerName = _("JAMES"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7513,11 +7513,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_James5),
     },
 
-    [TRAINER_BRICE] =
+    [PRODUCER_BRICE] =
     {
-        .trainerClass = TRAINER_CLASS_HIKER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerClass = PRODUCER_CLASS_HIKER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_HIKER,
         .trainerName = _("BRICE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7525,11 +7525,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Brice),
     },
 
-    [TRAINER_TRENT_1] =
+    [PRODUCER_TRENT_1] =
     {
-        .trainerClass = TRAINER_CLASS_HIKER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerClass = PRODUCER_CLASS_HIKER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_HIKER,
         .trainerName = _("TRENT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7537,11 +7537,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Trent1),
     },
 
-    [TRAINER_LENNY] =
+    [PRODUCER_LENNY] =
     {
-        .trainerClass = TRAINER_CLASS_HIKER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerClass = PRODUCER_CLASS_HIKER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_HIKER,
         .trainerName = _("LENNY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7549,11 +7549,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Lenny),
     },
 
-    [TRAINER_LUCAS_1] =
+    [PRODUCER_LUCAS_1] =
     {
-        .trainerClass = TRAINER_CLASS_HIKER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerClass = PRODUCER_CLASS_HIKER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_HIKER,
         .trainerName = _("LUCAS"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7561,11 +7561,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Lucas1),
     },
 
-    [TRAINER_ALAN] =
+    [PRODUCER_ALAN] =
     {
-        .trainerClass = TRAINER_CLASS_HIKER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerClass = PRODUCER_CLASS_HIKER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_HIKER,
         .trainerName = _("ALAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7573,11 +7573,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Alan),
     },
 
-    [TRAINER_CLARK] =
+    [PRODUCER_CLARK] =
     {
-        .trainerClass = TRAINER_CLASS_HIKER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerClass = PRODUCER_CLASS_HIKER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_HIKER,
         .trainerName = _("CLARK"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7585,11 +7585,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Clark),
     },
 
-    [TRAINER_ERIC] =
+    [PRODUCER_ERIC] =
     {
-        .trainerClass = TRAINER_CLASS_HIKER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerClass = PRODUCER_CLASS_HIKER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_HIKER,
         .trainerName = _("ERIC"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7597,11 +7597,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Eric),
     },
 
-    [TRAINER_LUCAS_2] =
+    [PRODUCER_LUCAS_2] =
     {
-        .trainerClass = TRAINER_CLASS_HIKER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerClass = PRODUCER_CLASS_HIKER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_HIKER,
         .trainerName = _("LUCAS"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7609,11 +7609,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Lucas2),
     },
 
-    [TRAINER_MIKE_1] =
+    [PRODUCER_MIKE_1] =
     {
-        .trainerClass = TRAINER_CLASS_HIKER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerClass = PRODUCER_CLASS_HIKER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_HIKER,
         .trainerName = _("MIKE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7621,11 +7621,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Mike1),
     },
 
-    [TRAINER_MIKE_2] =
+    [PRODUCER_MIKE_2] =
     {
-        .trainerClass = TRAINER_CLASS_HIKER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerClass = PRODUCER_CLASS_HIKER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_HIKER,
         .trainerName = _("MIKE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7633,11 +7633,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Mike2),
     },
 
-    [TRAINER_TRENT_2] =
+    [PRODUCER_TRENT_2] =
     {
-        .trainerClass = TRAINER_CLASS_HIKER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerClass = PRODUCER_CLASS_HIKER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_HIKER,
         .trainerName = _("TRENT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7645,11 +7645,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Trent2),
     },
 
-    [TRAINER_TRENT_3] =
+    [PRODUCER_TRENT_3] =
     {
-        .trainerClass = TRAINER_CLASS_HIKER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerClass = PRODUCER_CLASS_HIKER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_HIKER,
         .trainerName = _("TRENT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7657,11 +7657,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Trent3),
     },
 
-    [TRAINER_TRENT_4] =
+    [PRODUCER_TRENT_4] =
     {
-        .trainerClass = TRAINER_CLASS_HIKER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerClass = PRODUCER_CLASS_HIKER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_HIKER,
         .trainerName = _("TRENT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7669,11 +7669,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Trent4),
     },
 
-    [TRAINER_TRENT_5] =
+    [PRODUCER_TRENT_5] =
     {
-        .trainerClass = TRAINER_CLASS_HIKER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerClass = PRODUCER_CLASS_HIKER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_HIKER,
         .trainerName = _("TRENT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7681,11 +7681,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Trent5),
     },
 
-    [TRAINER_DEZ_AND_LUKE] =
+    [PRODUCER_DEZ_AND_LUKE] =
     {
-        .trainerClass = TRAINER_CLASS_YOUNG_COUPLE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_YOUNG_COUPLE,
+        .trainerClass = PRODUCER_CLASS_YOUNG_COUPLE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_YOUNG_COUPLE,
         .trainerName = _("DEZ & LUKE"),
         .items = {},
         .doubleBattle = TRUE,
@@ -7693,11 +7693,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_DezAndLuke),
     },
 
-    [TRAINER_LEA_AND_JED] =
+    [PRODUCER_LEA_AND_JED] =
     {
-        .trainerClass = TRAINER_CLASS_YOUNG_COUPLE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_YOUNG_COUPLE,
+        .trainerClass = PRODUCER_CLASS_YOUNG_COUPLE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_YOUNG_COUPLE,
         .trainerName = _("LEA & JED"),
         .items = {},
         .doubleBattle = TRUE,
@@ -7705,11 +7705,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_LeaAndJed),
     },
 
-    [TRAINER_KIRA_AND_DAN_1] =
+    [PRODUCER_KIRA_AND_DAN_1] =
     {
-        .trainerClass = TRAINER_CLASS_YOUNG_COUPLE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_YOUNG_COUPLE,
+        .trainerClass = PRODUCER_CLASS_YOUNG_COUPLE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_YOUNG_COUPLE,
         .trainerName = _("KIRA & DAN"),
         .items = {},
         .doubleBattle = TRUE,
@@ -7717,11 +7717,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_KiraAndDan1),
     },
 
-    [TRAINER_KIRA_AND_DAN_2] =
+    [PRODUCER_KIRA_AND_DAN_2] =
     {
-        .trainerClass = TRAINER_CLASS_YOUNG_COUPLE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_YOUNG_COUPLE,
+        .trainerClass = PRODUCER_CLASS_YOUNG_COUPLE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_YOUNG_COUPLE,
         .trainerName = _("KIRA & DAN"),
         .items = {},
         .doubleBattle = TRUE,
@@ -7729,11 +7729,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_KiraAndDan2),
     },
 
-    [TRAINER_KIRA_AND_DAN_3] =
+    [PRODUCER_KIRA_AND_DAN_3] =
     {
-        .trainerClass = TRAINER_CLASS_YOUNG_COUPLE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_YOUNG_COUPLE,
+        .trainerClass = PRODUCER_CLASS_YOUNG_COUPLE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_YOUNG_COUPLE,
         .trainerName = _("KIRA & DAN"),
         .items = {},
         .doubleBattle = TRUE,
@@ -7741,11 +7741,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_KiraAndDan3),
     },
 
-    [TRAINER_KIRA_AND_DAN_4] =
+    [PRODUCER_KIRA_AND_DAN_4] =
     {
-        .trainerClass = TRAINER_CLASS_YOUNG_COUPLE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_YOUNG_COUPLE,
+        .trainerClass = PRODUCER_CLASS_YOUNG_COUPLE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_YOUNG_COUPLE,
         .trainerName = _("KIRA & DAN"),
         .items = {},
         .doubleBattle = TRUE,
@@ -7753,11 +7753,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_KiraAndDan4),
     },
 
-    [TRAINER_KIRA_AND_DAN_5] =
+    [PRODUCER_KIRA_AND_DAN_5] =
     {
-        .trainerClass = TRAINER_CLASS_YOUNG_COUPLE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_YOUNG_COUPLE,
+        .trainerClass = PRODUCER_CLASS_YOUNG_COUPLE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_YOUNG_COUPLE,
         .trainerName = _("KIRA & DAN"),
         .items = {},
         .doubleBattle = TRUE,
@@ -7765,11 +7765,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_KiraAndDan5),
     },
 
-    [TRAINER_JOHANNA] =
+    [PRODUCER_JOHANNA] =
     {
-        .trainerClass = TRAINER_CLASS_BEAUTY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_BEAUTY,
+        .trainerClass = PRODUCER_CLASS_BEAUTY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_BEAUTY,
         .trainerName = _("JOHANNA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7777,11 +7777,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Johanna),
     },
 
-    [TRAINER_GERALD] =
+    [PRODUCER_GERALD] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_M,
         .trainerName = _("GERALD"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -7789,11 +7789,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Gerald),
     },
 
-    [TRAINER_VIVIAN] =
+    [PRODUCER_VIVIAN] =
     {
-        .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
+        .trainerClass = PRODUCER_CLASS_BATTLE_GIRL,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BATTLE_GIRL,
         .trainerName = _("VIVIAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7801,11 +7801,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Vivian),
     },
 
-    [TRAINER_DANIELLE] =
+    [PRODUCER_DANIELLE] =
     {
-        .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
+        .trainerClass = PRODUCER_CLASS_BATTLE_GIRL,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BATTLE_GIRL,
         .trainerName = _("DANIELLE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7813,11 +7813,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Danielle),
     },
 
-    [TRAINER_HIDEO] =
+    [PRODUCER_HIDEO] =
     {
-        .trainerClass = TRAINER_CLASS_NINJA_BOY,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_NINJA_BOY,
+        .trainerClass = PRODUCER_CLASS_NINJA_BOY,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_NINJA_BOY,
         .trainerName = _("HIDEO"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7825,11 +7825,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Hideo),
     },
 
-    [TRAINER_KEIGO] =
+    [PRODUCER_KEIGO] =
     {
-        .trainerClass = TRAINER_CLASS_NINJA_BOY,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_NINJA_BOY,
+        .trainerClass = PRODUCER_CLASS_NINJA_BOY,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_NINJA_BOY,
         .trainerName = _("KEIGO"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7837,11 +7837,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Keigo),
     },
 
-    [TRAINER_RILEY] =
+    [PRODUCER_RILEY] =
     {
-        .trainerClass = TRAINER_CLASS_NINJA_BOY,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_NINJA_BOY,
+        .trainerClass = PRODUCER_CLASS_NINJA_BOY,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_NINJA_BOY,
         .trainerName = _("RILEY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7849,11 +7849,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Riley),
     },
 
-    [TRAINER_FLINT] =
+    [PRODUCER_FLINT] =
     {
-        .trainerClass = TRAINER_CLASS_CAMPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_CAMPER,
+        .trainerClass = PRODUCER_CLASS_CAMPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_CAMPER,
         .trainerName = _("FLINT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7861,11 +7861,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Flint),
     },
 
-    [TRAINER_ASHLEY] =
+    [PRODUCER_ASHLEY] =
     {
-        .trainerClass = TRAINER_CLASS_PICNICKER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_PICNICKER,
+        .trainerClass = PRODUCER_CLASS_PICNICKER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_PICNICKER,
         .trainerName = _("ASHLEY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7873,11 +7873,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Ashley),
     },
 
-    [TRAINER_WALLY_MAUVILLE] =
+    [PRODUCER_WALLY_MAUVILLE] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_WALLY,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_WALLY,
         .trainerName = _("WALLY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7885,11 +7885,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_WallyMauville),
     },
 
-    [TRAINER_WALLY_VR_2] =
+    [PRODUCER_WALLY_VR_2] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_WALLY,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_WALLY,
         .trainerName = _("WALLY"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -7897,11 +7897,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_WallyVR2),
     },
 
-    [TRAINER_WALLY_VR_3] =
+    [PRODUCER_WALLY_VR_3] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_WALLY,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_WALLY,
         .trainerName = _("WALLY"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -7909,11 +7909,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_WallyVR3),
     },
 
-    [TRAINER_WALLY_VR_4] =
+    [PRODUCER_WALLY_VR_4] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_WALLY,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_WALLY,
         .trainerName = _("WALLY"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -7921,11 +7921,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_WallyVR4),
     },
 
-    [TRAINER_WALLY_VR_5] =
+    [PRODUCER_WALLY_VR_5] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_WALLY,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_WALLY,
         .trainerName = _("WALLY"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -7933,11 +7933,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_WallyVR5),
     },
 
-    [TRAINER_BRENDAN_LILYCOVE_MUDKIP] =
+    [PRODUCER_BRENDAN_LILYCOVE_MUDKIP] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BRENDAN,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_BRENDAN,
         .trainerName = _("BRENDAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7945,11 +7945,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_BrendanLilycoveMudkip),
     },
 
-    [TRAINER_BRENDAN_LILYCOVE_TREECKO] =
+    [PRODUCER_BRENDAN_LILYCOVE_TREECKO] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BRENDAN,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_BRENDAN,
         .trainerName = _("BRENDAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7957,11 +7957,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_BrendanLilycoveTreecko),
     },
 
-    [TRAINER_BRENDAN_LILYCOVE_TORCHIC] =
+    [PRODUCER_BRENDAN_LILYCOVE_TORCHIC] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_BRENDAN,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_BRENDAN,
         .trainerName = _("BRENDAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7969,11 +7969,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_BrendanLilycoveTorchic),
     },
 
-    [TRAINER_MAY_LILYCOVE_MUDKIP] =
+    [PRODUCER_MAY_LILYCOVE_MUDKIP] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_MAY,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_MAY,
         .trainerName = _("MAY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7981,11 +7981,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_MayLilycoveMudkip),
     },
 
-    [TRAINER_MAY_LILYCOVE_TREECKO] =
+    [PRODUCER_MAY_LILYCOVE_TREECKO] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_MAY,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_MAY,
         .trainerName = _("MAY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -7993,11 +7993,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_MayLilycoveTreecko),
     },
 
-    [TRAINER_MAY_LILYCOVE_TORCHIC] =
+    [PRODUCER_MAY_LILYCOVE_TORCHIC] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_MAY,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_MAY,
         .trainerName = _("MAY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8005,11 +8005,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_MayLilycoveTorchic),
     },
 
-    [TRAINER_JONAH] =
+    [PRODUCER_JONAH] =
     {
-        .trainerClass = TRAINER_CLASS_FISHERMAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FISHERMAN,
+        .trainerClass = PRODUCER_CLASS_FISHERMAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_FISHERMAN,
         .trainerName = _("JONAH"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8017,11 +8017,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jonah),
     },
 
-    [TRAINER_HENRY] =
+    [PRODUCER_HENRY] =
     {
-        .trainerClass = TRAINER_CLASS_FISHERMAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FISHERMAN,
+        .trainerClass = PRODUCER_CLASS_FISHERMAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_FISHERMAN,
         .trainerName = _("HENRY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8029,11 +8029,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Henry),
     },
 
-    [TRAINER_ROGER] =
+    [PRODUCER_ROGER] =
     {
-        .trainerClass = TRAINER_CLASS_FISHERMAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FISHERMAN,
+        .trainerClass = PRODUCER_CLASS_FISHERMAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_FISHERMAN,
         .trainerName = _("ROGER"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8041,11 +8041,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Roger),
     },
 
-    [TRAINER_ALEXA] =
+    [PRODUCER_ALEXA] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_F,
         .trainerName = _("ALEXA"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -8053,11 +8053,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Alexa),
     },
 
-    [TRAINER_RUBEN] =
+    [PRODUCER_RUBEN] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_M,
         .trainerName = _("RUBEN"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -8065,11 +8065,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Ruben),
     },
 
-    [TRAINER_KOJI_1] =
+    [PRODUCER_KOJI_1] =
     {
-        .trainerClass = TRAINER_CLASS_BLACK_BELT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BLACK_BELT,
+        .trainerClass = PRODUCER_CLASS_BLACK_BELT,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BLACK_BELT,
         .trainerName = _("KOJI"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8077,11 +8077,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Koji1),
     },
 
-    [TRAINER_WAYNE] =
+    [PRODUCER_WAYNE] =
     {
-        .trainerClass = TRAINER_CLASS_FISHERMAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FISHERMAN,
+        .trainerClass = PRODUCER_CLASS_FISHERMAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_FISHERMAN,
         .trainerName = _("WAYNE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8089,11 +8089,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Wayne),
     },
 
-    [TRAINER_AIDAN] =
+    [PRODUCER_AIDAN] =
     {
-        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
+        .trainerClass = PRODUCER_CLASS_BIRD_KEEPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_BIRD_KEEPER,
         .trainerName = _("AIDAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8101,11 +8101,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Aidan),
     },
 
-    [TRAINER_REED] =
+    [PRODUCER_REED] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_M,
         .trainerName = _("REED"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8113,11 +8113,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Reed),
     },
 
-    [TRAINER_TISHA] =
+    [PRODUCER_TISHA] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_F,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_F,
         .trainerName = _("TISHA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8125,11 +8125,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Tisha),
     },
 
-    [TRAINER_TORI_AND_TIA] =
+    [PRODUCER_TORI_AND_TIA] =
     {
-        .trainerClass = TRAINER_CLASS_TWINS,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_TWINS,
+        .trainerClass = PRODUCER_CLASS_TWINS,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = PRODUCER_PIC_TWINS,
         .trainerName = _("TORI & TIA"),
         .items = {},
         .doubleBattle = TRUE,
@@ -8137,11 +8137,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_ToriAndTia),
     },
 
-    [TRAINER_KIM_AND_IRIS] =
+    [PRODUCER_KIM_AND_IRIS] =
     {
-        .trainerClass = TRAINER_CLASS_SR_AND_JR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_SR_AND_JR,
+        .trainerClass = PRODUCER_CLASS_SR_AND_JR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = PRODUCER_PIC_SR_AND_JR,
         .trainerName = _("KIM & IRIS"),
         .items = {},
         .doubleBattle = TRUE,
@@ -8149,11 +8149,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_KimAndIris),
     },
 
-    [TRAINER_TYRA_AND_IVY] =
+    [PRODUCER_TYRA_AND_IVY] =
     {
-        .trainerClass = TRAINER_CLASS_SR_AND_JR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_SR_AND_JR,
+        .trainerClass = PRODUCER_CLASS_SR_AND_JR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = PRODUCER_PIC_SR_AND_JR,
         .trainerName = _("TYRA & IVY"),
         .items = {},
         .doubleBattle = TRUE,
@@ -8161,11 +8161,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_TyraAndIvy),
     },
 
-    [TRAINER_MEL_AND_PAUL] =
+    [PRODUCER_MEL_AND_PAUL] =
     {
-        .trainerClass = TRAINER_CLASS_YOUNG_COUPLE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_YOUNG_COUPLE,
+        .trainerClass = PRODUCER_CLASS_YOUNG_COUPLE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_YOUNG_COUPLE,
         .trainerName = _("MEL & PAUL"),
         .items = {},
         .doubleBattle = TRUE,
@@ -8173,11 +8173,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_MelAndPaul),
     },
 
-    [TRAINER_JOHN_AND_JAY_1] =
+    [PRODUCER_JOHN_AND_JAY_1] =
     {
-        .trainerClass = TRAINER_CLASS_OLD_COUPLE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_OLD_COUPLE,
+        .trainerClass = PRODUCER_CLASS_OLD_COUPLE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_OLD_COUPLE,
         .trainerName = _("JOHN & JAY"),
         .items = {},
         .doubleBattle = TRUE,
@@ -8185,11 +8185,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_JohnAndJay1),
     },
 
-    [TRAINER_JOHN_AND_JAY_2] =
+    [PRODUCER_JOHN_AND_JAY_2] =
     {
-        .trainerClass = TRAINER_CLASS_OLD_COUPLE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_OLD_COUPLE,
+        .trainerClass = PRODUCER_CLASS_OLD_COUPLE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_OLD_COUPLE,
         .trainerName = _("JOHN & JAY"),
         .items = {},
         .doubleBattle = TRUE,
@@ -8197,11 +8197,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_JohnAndJay2),
     },
 
-    [TRAINER_JOHN_AND_JAY_3] =
+    [PRODUCER_JOHN_AND_JAY_3] =
     {
-        .trainerClass = TRAINER_CLASS_OLD_COUPLE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_OLD_COUPLE,
+        .trainerClass = PRODUCER_CLASS_OLD_COUPLE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_OLD_COUPLE,
         .trainerName = _("JOHN & JAY"),
         .items = {},
         .doubleBattle = TRUE,
@@ -8209,11 +8209,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_JohnAndJay3),
     },
 
-    [TRAINER_JOHN_AND_JAY_4] =
+    [PRODUCER_JOHN_AND_JAY_4] =
     {
-        .trainerClass = TRAINER_CLASS_OLD_COUPLE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_OLD_COUPLE,
+        .trainerClass = PRODUCER_CLASS_OLD_COUPLE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_OLD_COUPLE,
         .trainerName = _("JOHN & JAY"),
         .items = {},
         .doubleBattle = TRUE,
@@ -8221,11 +8221,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_JohnAndJay4),
     },
 
-    [TRAINER_JOHN_AND_JAY_5] =
+    [PRODUCER_JOHN_AND_JAY_5] =
     {
-        .trainerClass = TRAINER_CLASS_OLD_COUPLE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_OLD_COUPLE,
+        .trainerClass = PRODUCER_CLASS_OLD_COUPLE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_OLD_COUPLE,
         .trainerName = _("JOHN & JAY"),
         .items = {},
         .doubleBattle = TRUE,
@@ -8233,11 +8233,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_JohnAndJay5),
     },
 
-    [TRAINER_RELI_AND_IAN] =
+    [PRODUCER_RELI_AND_IAN] =
     {
-        .trainerClass = TRAINER_CLASS_SIS_AND_BRO,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SIS_AND_BRO,
+        .trainerClass = PRODUCER_CLASS_SIS_AND_BRO,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SIS_AND_BRO,
         .trainerName = _("RELI & IAN"),
         .items = {},
         .doubleBattle = TRUE,
@@ -8245,11 +8245,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_ReliAndIan),
     },
 
-    [TRAINER_LILA_AND_ROY_1] =
+    [PRODUCER_LILA_AND_ROY_1] =
     {
-        .trainerClass = TRAINER_CLASS_SIS_AND_BRO,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SIS_AND_BRO,
+        .trainerClass = PRODUCER_CLASS_SIS_AND_BRO,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SIS_AND_BRO,
         .trainerName = _("LILA & ROY"),
         .items = {},
         .doubleBattle = TRUE,
@@ -8257,11 +8257,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_LilaAndRoy1),
     },
 
-    [TRAINER_LILA_AND_ROY_2] =
+    [PRODUCER_LILA_AND_ROY_2] =
     {
-        .trainerClass = TRAINER_CLASS_SIS_AND_BRO,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SIS_AND_BRO,
+        .trainerClass = PRODUCER_CLASS_SIS_AND_BRO,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SIS_AND_BRO,
         .trainerName = _("LILA & ROY"),
         .items = {},
         .doubleBattle = TRUE,
@@ -8269,11 +8269,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_LilaAndRoy2),
     },
 
-    [TRAINER_LILA_AND_ROY_3] =
+    [PRODUCER_LILA_AND_ROY_3] =
     {
-        .trainerClass = TRAINER_CLASS_SIS_AND_BRO,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SIS_AND_BRO,
+        .trainerClass = PRODUCER_CLASS_SIS_AND_BRO,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SIS_AND_BRO,
         .trainerName = _("LILA & ROY"),
         .items = {},
         .doubleBattle = TRUE,
@@ -8281,11 +8281,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_LilaAndRoy3),
     },
 
-    [TRAINER_LILA_AND_ROY_4] =
+    [PRODUCER_LILA_AND_ROY_4] =
     {
-        .trainerClass = TRAINER_CLASS_SIS_AND_BRO,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SIS_AND_BRO,
+        .trainerClass = PRODUCER_CLASS_SIS_AND_BRO,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SIS_AND_BRO,
         .trainerName = _("LILA & ROY"),
         .items = {},
         .doubleBattle = TRUE,
@@ -8293,11 +8293,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_LilaAndRoy4),
     },
 
-    [TRAINER_LILA_AND_ROY_5] =
+    [PRODUCER_LILA_AND_ROY_5] =
     {
-        .trainerClass = TRAINER_CLASS_SIS_AND_BRO,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SIS_AND_BRO,
+        .trainerClass = PRODUCER_CLASS_SIS_AND_BRO,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SIS_AND_BRO,
         .trainerName = _("LILA & ROY"),
         .items = {},
         .doubleBattle = TRUE,
@@ -8305,11 +8305,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_LilaAndRoy5),
     },
 
-    [TRAINER_LISA_AND_RAY] =
+    [PRODUCER_LISA_AND_RAY] =
     {
-        .trainerClass = TRAINER_CLASS_SIS_AND_BRO,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SIS_AND_BRO,
+        .trainerClass = PRODUCER_CLASS_SIS_AND_BRO,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SIS_AND_BRO,
         .trainerName = _("LISA & RAY"),
         .items = {},
         .doubleBattle = TRUE,
@@ -8317,11 +8317,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_LisaAndRay),
     },
 
-    [TRAINER_CHRIS] =
+    [PRODUCER_CHRIS] =
     {
-        .trainerClass = TRAINER_CLASS_FISHERMAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FISHERMAN,
+        .trainerClass = PRODUCER_CLASS_FISHERMAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_FISHERMAN,
         .trainerName = _("CHRIS"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8329,11 +8329,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Chris),
     },
 
-    [TRAINER_DAWSON] =
+    [PRODUCER_DAWSON] =
     {
-        .trainerClass = TRAINER_CLASS_RICH_BOY,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_RICH,
-        .trainerPic = TRAINER_PIC_RICH_BOY,
+        .trainerClass = PRODUCER_CLASS_RICH_BOY,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_RICH,
+        .trainerPic = PRODUCER_PIC_RICH_BOY,
         .trainerName = _("DAWSON"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8341,11 +8341,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_DEFAULT_MOVES(sParty_Dawson),
     },
 
-    [TRAINER_SARAH] =
+    [PRODUCER_SARAH] =
     {
-        .trainerClass = TRAINER_CLASS_LADY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LADY,
+        .trainerClass = PRODUCER_CLASS_LADY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LADY,
         .trainerName = _("SARAH"),
         .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -8353,11 +8353,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_DEFAULT_MOVES(sParty_Sarah),
     },
 
-    [TRAINER_DARIAN] =
+    [PRODUCER_DARIAN] =
     {
-        .trainerClass = TRAINER_CLASS_FISHERMAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FISHERMAN,
+        .trainerClass = PRODUCER_CLASS_FISHERMAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_FISHERMAN,
         .trainerName = _("DARIAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8365,11 +8365,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Darian),
     },
 
-    [TRAINER_HAILEY] =
+    [PRODUCER_HAILEY] =
     {
-        .trainerClass = TRAINER_CLASS_TUBER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_TUBER_F,
+        .trainerClass = PRODUCER_CLASS_TUBER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_TUBER_F,
         .trainerName = _("HAILEY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8377,11 +8377,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Hailey),
     },
 
-    [TRAINER_CHANDLER] =
+    [PRODUCER_CHANDLER] =
     {
-        .trainerClass = TRAINER_CLASS_TUBER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_TUBER_M,
+        .trainerClass = PRODUCER_CLASS_TUBER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_TUBER_M,
         .trainerName = _("CHANDLER"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8389,11 +8389,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Chandler),
     },
 
-    [TRAINER_KALEB] =
+    [PRODUCER_KALEB] =
     {
-        .trainerClass = TRAINER_CLASS_POKEFAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_TWINS,
-        .trainerPic = TRAINER_PIC_POKEFAN_M,
+        .trainerClass = PRODUCER_CLASS_POKEFAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_TWINS,
+        .trainerPic = PRODUCER_PIC_POKEFAN_M,
         .trainerName = _("KALEB"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8401,11 +8401,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_DEFAULT_MOVES(sParty_Kaleb),
     },
 
-    [TRAINER_JOSEPH] =
+    [PRODUCER_JOSEPH] =
     {
-        .trainerClass = TRAINER_CLASS_GUITARIST,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_GUITARIST,
+        .trainerClass = PRODUCER_CLASS_GUITARIST,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_GUITARIST,
         .trainerName = _("JOSEPH"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8413,11 +8413,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Joseph),
     },
 
-    [TRAINER_ALYSSA] =
+    [PRODUCER_ALYSSA] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_CYCLING_TRIATHLETE_F,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_CYCLING_TRIATHLETE_F,
         .trainerName = _("ALYSSA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8425,11 +8425,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Alyssa),
     },
 
-    [TRAINER_MARCOS] =
+    [PRODUCER_MARCOS] =
     {
-        .trainerClass = TRAINER_CLASS_GUITARIST,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_GUITARIST,
+        .trainerClass = PRODUCER_CLASS_GUITARIST,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_GUITARIST,
         .trainerName = _("MARCOS"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8437,11 +8437,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Marcos),
     },
 
-    [TRAINER_RHETT] =
+    [PRODUCER_RHETT] =
     {
-        .trainerClass = TRAINER_CLASS_BLACK_BELT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BLACK_BELT,
+        .trainerClass = PRODUCER_CLASS_BLACK_BELT,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BLACK_BELT,
         .trainerName = _("RHETT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8449,11 +8449,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Rhett),
     },
 
-    [TRAINER_TYRON] =
+    [PRODUCER_TYRON] =
     {
-        .trainerClass = TRAINER_CLASS_CAMPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_CAMPER,
+        .trainerClass = PRODUCER_CLASS_CAMPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_CAMPER,
         .trainerName = _("TYRON"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8461,11 +8461,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Tyron),
     },
 
-    [TRAINER_CELINA] =
+    [PRODUCER_CELINA] =
     {
-        .trainerClass = TRAINER_CLASS_AROMA_LADY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_AROMA_LADY,
+        .trainerClass = PRODUCER_CLASS_AROMA_LADY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_AROMA_LADY,
         .trainerName = _("CELINA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8473,11 +8473,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Celina),
     },
 
-    [TRAINER_BIANCA] =
+    [PRODUCER_BIANCA] =
     {
-        .trainerClass = TRAINER_CLASS_PICNICKER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_PICNICKER,
+        .trainerClass = PRODUCER_CLASS_PICNICKER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_PICNICKER,
         .trainerName = _("BIANCA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8485,11 +8485,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Bianca),
     },
 
-    [TRAINER_HAYDEN] =
+    [PRODUCER_HAYDEN] =
     {
-        .trainerClass = TRAINER_CLASS_KINDLER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_KINDLER,
+        .trainerClass = PRODUCER_CLASS_KINDLER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_KINDLER,
         .trainerName = _("HAYDEN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8497,11 +8497,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Hayden),
     },
 
-    [TRAINER_SOPHIE] =
+    [PRODUCER_SOPHIE] =
     {
-        .trainerClass = TRAINER_CLASS_PICNICKER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_PICNICKER,
+        .trainerClass = PRODUCER_CLASS_PICNICKER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_PICNICKER,
         .trainerName = _("SOPHIE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8509,11 +8509,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Sophie),
     },
 
-    [TRAINER_COBY] =
+    [PRODUCER_COBY] =
     {
-        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
+        .trainerClass = PRODUCER_CLASS_BIRD_KEEPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_BIRD_KEEPER,
         .trainerName = _("COBY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8521,11 +8521,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Coby),
     },
 
-    [TRAINER_LAWRENCE] =
+    [PRODUCER_LAWRENCE] =
     {
-        .trainerClass = TRAINER_CLASS_CAMPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_CAMPER,
+        .trainerClass = PRODUCER_CLASS_CAMPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_CAMPER,
         .trainerName = _("LAWRENCE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8533,11 +8533,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Lawrence),
     },
 
-    [TRAINER_WYATT] =
+    [PRODUCER_WYATT] =
     {
-        .trainerClass = TRAINER_CLASS_POKEMANIAC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_POKEMANIAC,
+        .trainerClass = PRODUCER_CLASS_POKEMANIAC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_POKEMANIAC,
         .trainerName = _("WYATT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8545,11 +8545,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Wyatt),
     },
 
-    [TRAINER_ANGELINA] =
+    [PRODUCER_ANGELINA] =
     {
-        .trainerClass = TRAINER_CLASS_PICNICKER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_PICNICKER,
+        .trainerClass = PRODUCER_CLASS_PICNICKER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_PICNICKER,
         .trainerName = _("ANGELINA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8557,11 +8557,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Angelina),
     },
 
-    [TRAINER_KAI] =
+    [PRODUCER_KAI] =
     {
-        .trainerClass = TRAINER_CLASS_FISHERMAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_FISHERMAN,
+        .trainerClass = PRODUCER_CLASS_FISHERMAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_FISHERMAN,
         .trainerName = _("KAI"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8569,11 +8569,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Kai),
     },
 
-    [TRAINER_CHARLOTTE] =
+    [PRODUCER_CHARLOTTE] =
     {
-        .trainerClass = TRAINER_CLASS_PICNICKER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_PICNICKER,
+        .trainerClass = PRODUCER_CLASS_PICNICKER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_PICNICKER,
         .trainerName = _("CHARLOTTE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8581,11 +8581,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Charlotte),
     },
 
-    [TRAINER_DEANDRE] =
+    [PRODUCER_DEANDRE] =
     {
-        .trainerClass = TRAINER_CLASS_YOUNGSTER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_YOUNGSTER,
+        .trainerClass = PRODUCER_CLASS_YOUNGSTER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_YOUNGSTER,
         .trainerName = _("DEANDRE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8593,11 +8593,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Deandre),
     },
 
-    [TRAINER_GRUNT_MAGMA_HIDEOUT_1] =
+    [PRODUCER_GRUNT_MAGMA_HIDEOUT_1] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_MAGMA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MAGMA,
+        .trainerPic = PRODUCER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8605,11 +8605,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntMagmaHideout1),
     },
 
-    [TRAINER_GRUNT_MAGMA_HIDEOUT_2] =
+    [PRODUCER_GRUNT_MAGMA_HIDEOUT_2] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_MAGMA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MAGMA,
+        .trainerPic = PRODUCER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8617,11 +8617,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntMagmaHideout2),
     },
 
-    [TRAINER_GRUNT_MAGMA_HIDEOUT_3] =
+    [PRODUCER_GRUNT_MAGMA_HIDEOUT_3] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_MAGMA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MAGMA,
+        .trainerPic = PRODUCER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8629,11 +8629,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntMagmaHideout3),
     },
 
-    [TRAINER_GRUNT_MAGMA_HIDEOUT_4] =
+    [PRODUCER_GRUNT_MAGMA_HIDEOUT_4] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_MAGMA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MAGMA,
+        .trainerPic = PRODUCER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8641,11 +8641,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntMagmaHideout4),
     },
 
-    [TRAINER_GRUNT_MAGMA_HIDEOUT_5] =
+    [PRODUCER_GRUNT_MAGMA_HIDEOUT_5] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_MAGMA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MAGMA,
+        .trainerPic = PRODUCER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8653,11 +8653,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntMagmaHideout5),
     },
 
-    [TRAINER_GRUNT_MAGMA_HIDEOUT_6] =
+    [PRODUCER_GRUNT_MAGMA_HIDEOUT_6] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_MAGMA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MAGMA,
+        .trainerPic = PRODUCER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8665,11 +8665,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntMagmaHideout6),
     },
 
-    [TRAINER_GRUNT_MAGMA_HIDEOUT_7] =
+    [PRODUCER_GRUNT_MAGMA_HIDEOUT_7] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_MAGMA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MAGMA,
+        .trainerPic = PRODUCER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8677,11 +8677,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntMagmaHideout7),
     },
 
-    [TRAINER_GRUNT_MAGMA_HIDEOUT_8] =
+    [PRODUCER_GRUNT_MAGMA_HIDEOUT_8] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_MAGMA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MAGMA,
+        .trainerPic = PRODUCER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8689,11 +8689,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntMagmaHideout8),
     },
 
-    [TRAINER_GRUNT_MAGMA_HIDEOUT_9] =
+    [PRODUCER_GRUNT_MAGMA_HIDEOUT_9] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_MAGMA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MAGMA,
+        .trainerPic = PRODUCER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8701,11 +8701,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntMagmaHideout9),
     },
 
-    [TRAINER_GRUNT_MAGMA_HIDEOUT_10] =
+    [PRODUCER_GRUNT_MAGMA_HIDEOUT_10] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_MAGMA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MAGMA,
+        .trainerPic = PRODUCER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8713,11 +8713,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntMagmaHideout10),
     },
 
-    [TRAINER_GRUNT_MAGMA_HIDEOUT_11] =
+    [PRODUCER_GRUNT_MAGMA_HIDEOUT_11] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_MAGMA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MAGMA,
+        .trainerPic = PRODUCER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8725,11 +8725,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntMagmaHideout11),
     },
 
-    [TRAINER_GRUNT_MAGMA_HIDEOUT_12] =
+    [PRODUCER_GRUNT_MAGMA_HIDEOUT_12] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_MAGMA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MAGMA,
+        .trainerPic = PRODUCER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8737,11 +8737,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntMagmaHideout12),
     },
 
-    [TRAINER_GRUNT_MAGMA_HIDEOUT_13] =
+    [PRODUCER_GRUNT_MAGMA_HIDEOUT_13] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+        .trainerClass = PRODUCER_CLASS_TEAM_MAGMA,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MAGMA,
+        .trainerPic = PRODUCER_PIC_MAGMA_GRUNT_M,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8749,11 +8749,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntMagmaHideout13),
     },
 
-    [TRAINER_GRUNT_MAGMA_HIDEOUT_14] =
+    [PRODUCER_GRUNT_MAGMA_HIDEOUT_14] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
+        .trainerClass = PRODUCER_CLASS_TEAM_MAGMA,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_MAGMA,
+        .trainerPic = PRODUCER_PIC_MAGMA_GRUNT_F,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8761,11 +8761,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntMagmaHideout14),
     },
 
-    [TRAINER_GRUNT_MAGMA_HIDEOUT_15] =
+    [PRODUCER_GRUNT_MAGMA_HIDEOUT_15] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
+        .trainerClass = PRODUCER_CLASS_TEAM_MAGMA,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_MAGMA,
+        .trainerPic = PRODUCER_PIC_MAGMA_GRUNT_F,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8773,11 +8773,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntMagmaHideout15),
     },
 
-    [TRAINER_GRUNT_MAGMA_HIDEOUT_16] =
+    [PRODUCER_GRUNT_MAGMA_HIDEOUT_16] =
     {
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
+        .trainerClass = PRODUCER_CLASS_TEAM_MAGMA,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_MAGMA,
+        .trainerPic = PRODUCER_PIC_MAGMA_GRUNT_F,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8785,11 +8785,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_GruntMagmaHideout16),
     },
 
-    [TRAINER_TABITHA_MAGMA_HIDEOUT] =
+    [PRODUCER_TABITHA_MAGMA_HIDEOUT] =
     {
-        .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_ADMIN,
+        .trainerClass = PRODUCER_CLASS_MAGMA_ADMIN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MAGMA,
+        .trainerPic = PRODUCER_PIC_MAGMA_ADMIN,
         .trainerName = _("TABITHA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8797,11 +8797,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_TabithaMagmaHideout),
     },
 
-    [TRAINER_DARCY] =
+    [PRODUCER_DARCY] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_F,
         .trainerName = _("DARCY"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -8809,11 +8809,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Darcy),
     },
 
-    [TRAINER_MAXIE_MOSSDEEP] =
+    [PRODUCER_MAXIE_MOSSDEEP] =
     {
-        .trainerClass = TRAINER_CLASS_MAGMA_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_LEADER_MAXIE,
+        .trainerClass = PRODUCER_CLASS_MAGMA_LEADER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MAGMA,
+        .trainerPic = PRODUCER_PIC_MAGMA_LEADER_MAXIE,
         .trainerName = _("MAXIE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8821,11 +8821,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_MaxieMossdeep),
     },
 
-    [TRAINER_PETE] =
+    [PRODUCER_PETE] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_M,
         .trainerName = _("PETE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8833,11 +8833,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Pete),
     },
 
-    [TRAINER_ISABELLE] =
+    [PRODUCER_ISABELLE] =
     {
-        .trainerClass = TRAINER_CLASS_SWIMMER_F,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMER_F,
+        .trainerClass = PRODUCER_CLASS_SWIMMER_F,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMER_F,
         .trainerName = _("ISABELLE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8845,11 +8845,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Isabelle),
     },
 
-    [TRAINER_ANDRES_1] =
+    [PRODUCER_ANDRES_1] =
     {
-        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
+        .trainerClass = PRODUCER_CLASS_RUIN_MANIAC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_RUIN_MANIAC,
         .trainerName = _("ANDRES"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8857,11 +8857,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Andres1),
     },
 
-    [TRAINER_JOSUE] =
+    [PRODUCER_JOSUE] =
     {
-        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
+        .trainerClass = PRODUCER_CLASS_BIRD_KEEPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_BIRD_KEEPER,
         .trainerName = _("JOSUE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8869,11 +8869,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Josue),
     },
 
-    [TRAINER_CAMRON] =
+    [PRODUCER_CAMRON] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMING_TRIATHLETE_M,
         .trainerName = _("CAMRON"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8881,11 +8881,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Camron),
     },
 
-    [TRAINER_CORY_1] =
+    [PRODUCER_CORY_1] =
     {
-        .trainerClass = TRAINER_CLASS_SAILOR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_SAILOR,
+        .trainerClass = PRODUCER_CLASS_SAILOR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_SAILOR,
         .trainerName = _("CORY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8893,11 +8893,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Cory1),
     },
 
-    [TRAINER_CAROLINA] =
+    [PRODUCER_CAROLINA] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_F,
         .trainerName = _("CAROLINA"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -8905,11 +8905,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Carolina),
     },
 
-    [TRAINER_ELIJAH] =
+    [PRODUCER_ELIJAH] =
     {
-        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
+        .trainerClass = PRODUCER_CLASS_BIRD_KEEPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_BIRD_KEEPER,
         .trainerName = _("ELIJAH"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8917,11 +8917,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Elijah),
     },
 
-    [TRAINER_CELIA] =
+    [PRODUCER_CELIA] =
     {
-        .trainerClass = TRAINER_CLASS_PICNICKER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_GIRL,
-        .trainerPic = TRAINER_PIC_PICNICKER,
+        .trainerClass = PRODUCER_CLASS_PICNICKER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_GIRL,
+        .trainerPic = PRODUCER_PIC_PICNICKER,
         .trainerName = _("CELIA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8929,11 +8929,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Celia),
     },
 
-    [TRAINER_BRYAN] =
+    [PRODUCER_BRYAN] =
     {
-        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
+        .trainerClass = PRODUCER_CLASS_RUIN_MANIAC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_RUIN_MANIAC,
         .trainerName = _("BRYAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8941,11 +8941,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Bryan),
     },
 
-    [TRAINER_BRANDEN] =
+    [PRODUCER_BRANDEN] =
     {
-        .trainerClass = TRAINER_CLASS_CAMPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_CAMPER,
+        .trainerClass = PRODUCER_CLASS_CAMPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_CAMPER,
         .trainerName = _("BRANDEN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8953,11 +8953,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Branden),
     },
 
-    [TRAINER_BRYANT] =
+    [PRODUCER_BRYANT] =
     {
-        .trainerClass = TRAINER_CLASS_KINDLER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_KINDLER,
+        .trainerClass = PRODUCER_CLASS_KINDLER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_KINDLER,
         .trainerName = _("BRYANT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8965,11 +8965,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Bryant),
     },
 
-    [TRAINER_SHAYLA] =
+    [PRODUCER_SHAYLA] =
     {
-        .trainerClass = TRAINER_CLASS_AROMA_LADY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_AROMA_LADY,
+        .trainerClass = PRODUCER_CLASS_AROMA_LADY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_AROMA_LADY,
         .trainerName = _("SHAYLA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8977,11 +8977,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Shayla),
     },
 
-    [TRAINER_KYRA] =
+    [PRODUCER_KYRA] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_F,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_RUNNING_TRIATHLETE_F,
         .trainerName = _("KYRA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -8989,11 +8989,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Kyra),
     },
 
-    [TRAINER_JAIDEN] =
+    [PRODUCER_JAIDEN] =
     {
-        .trainerClass = TRAINER_CLASS_NINJA_BOY,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_NINJA_BOY,
+        .trainerClass = PRODUCER_CLASS_NINJA_BOY,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_NINJA_BOY,
         .trainerName = _("JAIDEN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9001,11 +9001,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Jaiden),
     },
 
-    [TRAINER_ALIX] =
+    [PRODUCER_ALIX] =
     {
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_PSYCHIC_F,
+        .trainerClass = PRODUCER_CLASS_PSYCHIC,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_PSYCHIC_F,
         .trainerName = _("ALIX"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9013,11 +9013,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Alix),
     },
 
-    [TRAINER_HELENE] =
+    [PRODUCER_HELENE] =
     {
-        .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
+        .trainerClass = PRODUCER_CLASS_BATTLE_GIRL,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BATTLE_GIRL,
         .trainerName = _("HELENE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9025,11 +9025,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Helene),
     },
 
-    [TRAINER_MARLENE] =
+    [PRODUCER_MARLENE] =
     {
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_PSYCHIC_F,
+        .trainerClass = PRODUCER_CLASS_PSYCHIC,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_PSYCHIC_F,
         .trainerName = _("MARLENE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9037,11 +9037,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Marlene),
     },
 
-    [TRAINER_DEVAN] =
+    [PRODUCER_DEVAN] =
     {
-        .trainerClass = TRAINER_CLASS_HIKER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerClass = PRODUCER_CLASS_HIKER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_HIKER,
         .trainerName = _("DEVAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9049,11 +9049,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Devan),
     },
 
-    [TRAINER_JOHNSON] =
+    [PRODUCER_JOHNSON] =
     {
-        .trainerClass = TRAINER_CLASS_YOUNGSTER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_YOUNGSTER,
+        .trainerClass = PRODUCER_CLASS_YOUNGSTER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_YOUNGSTER,
         .trainerName = _("JOHNSON"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9061,11 +9061,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Johnson),
     },
 
-    [TRAINER_MELINA] =
+    [PRODUCER_MELINA] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_F,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_RUNNING_TRIATHLETE_F,
         .trainerName = _("MELINA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9073,11 +9073,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Melina),
     },
 
-    [TRAINER_BRANDI] =
+    [PRODUCER_BRANDI] =
     {
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_PSYCHIC_F,
+        .trainerClass = PRODUCER_CLASS_PSYCHIC,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_PSYCHIC_F,
         .trainerName = _("BRANDI"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9085,11 +9085,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Brandi),
     },
 
-    [TRAINER_AISHA] =
+    [PRODUCER_AISHA] =
     {
-        .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
+        .trainerClass = PRODUCER_CLASS_BATTLE_GIRL,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BATTLE_GIRL,
         .trainerName = _("AISHA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9097,11 +9097,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Aisha),
     },
 
-    [TRAINER_MAKAYLA] =
+    [PRODUCER_MAKAYLA] =
     {
-        .trainerClass = TRAINER_CLASS_EXPERT,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_EXPERT_F,
+        .trainerClass = PRODUCER_CLASS_EXPERT,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_EXPERT_F,
         .trainerName = _("MAKAYLA"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -9109,11 +9109,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Makayla),
     },
 
-    [TRAINER_FABIAN] =
+    [PRODUCER_FABIAN] =
     {
-        .trainerClass = TRAINER_CLASS_GUITARIST,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_GUITARIST,
+        .trainerClass = PRODUCER_CLASS_GUITARIST,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_GUITARIST,
         .trainerName = _("FABIAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9121,11 +9121,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Fabian),
     },
 
-    [TRAINER_DAYTON] =
+    [PRODUCER_DAYTON] =
     {
-        .trainerClass = TRAINER_CLASS_KINDLER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_KINDLER,
+        .trainerClass = PRODUCER_CLASS_KINDLER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_KINDLER,
         .trainerName = _("DAYTON"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9133,11 +9133,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Dayton),
     },
 
-    [TRAINER_RACHEL] =
+    [PRODUCER_RACHEL] =
     {
-        .trainerClass = TRAINER_CLASS_PARASOL_LADY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_PARASOL_LADY,
+        .trainerClass = PRODUCER_CLASS_PARASOL_LADY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_PARASOL_LADY,
         .trainerName = _("RACHEL"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9145,11 +9145,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Rachel),
     },
 
-    [TRAINER_LEONEL] =
+    [PRODUCER_LEONEL] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_M,
         .trainerName = _("LEONEL"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -9157,11 +9157,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Leonel),
     },
 
-    [TRAINER_CALLIE] =
+    [PRODUCER_CALLIE] =
     {
-        .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
+        .trainerClass = PRODUCER_CLASS_BATTLE_GIRL,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BATTLE_GIRL,
         .trainerName = _("CALLIE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9169,11 +9169,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Callie),
     },
 
-    [TRAINER_CALE] =
+    [PRODUCER_CALE] =
     {
-        .trainerClass = TRAINER_CLASS_BUG_MANIAC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_BUG_MANIAC,
+        .trainerClass = PRODUCER_CLASS_BUG_MANIAC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_BUG_MANIAC,
         .trainerName = _("CALE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9181,11 +9181,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Cale),
     },
 
-    [TRAINER_MYLES] =
+    [PRODUCER_MYLES] =
     {
-        .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_M,
+        .trainerClass = PRODUCER_CLASS_PKMN_BREEDER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_POKEMON_BREEDER_M,
         .trainerName = _("MYLES"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9193,11 +9193,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Myles),
     },
 
-    [TRAINER_PAT] =
+    [PRODUCER_PAT] =
     {
-        .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
+        .trainerClass = PRODUCER_CLASS_PKMN_BREEDER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_POKEMON_BREEDER_F,
         .trainerName = _("PAT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9205,11 +9205,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Pat),
     },
 
-    [TRAINER_CRISTIN_1] =
+    [PRODUCER_CRISTIN_1] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_F,
         .trainerName = _("CRISTIN"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -9217,11 +9217,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Cristin1),
     },
 
-    [TRAINER_MAY_RUSTBORO_TREECKO] =
+    [PRODUCER_MAY_RUSTBORO_TREECKO] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_MAY,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_MAY,
         .trainerName = _("MAY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9229,11 +9229,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_MayRustboroTreecko),
     },
 
-    [TRAINER_MAY_RUSTBORO_TORCHIC] =
+    [PRODUCER_MAY_RUSTBORO_TORCHIC] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_MAY,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_MAY,
         .trainerName = _("MAY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9241,11 +9241,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_MayRustboroTorchic),
     },
 
-    [TRAINER_ROXANNE_2] =
+    [PRODUCER_ROXANNE_2] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LEADER_ROXANNE,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LEADER_ROXANNE,
         .trainerName = _("ROXANNE"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .doubleBattle = TRUE,
@@ -9253,11 +9253,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Roxanne2),
     },
 
-    [TRAINER_ROXANNE_3] =
+    [PRODUCER_ROXANNE_3] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LEADER_ROXANNE,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LEADER_ROXANNE,
         .trainerName = _("ROXANNE"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .doubleBattle = TRUE,
@@ -9265,11 +9265,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Roxanne3),
     },
 
-    [TRAINER_ROXANNE_4] =
+    [PRODUCER_ROXANNE_4] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LEADER_ROXANNE,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LEADER_ROXANNE,
         .trainerName = _("ROXANNE"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .doubleBattle = TRUE,
@@ -9277,11 +9277,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Roxanne4),
     },
 
-    [TRAINER_ROXANNE_5] =
+    [PRODUCER_ROXANNE_5] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LEADER_ROXANNE,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LEADER_ROXANNE,
         .trainerName = _("ROXANNE"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .doubleBattle = TRUE,
@@ -9289,11 +9289,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Roxanne5),
     },
 
-    [TRAINER_BRAWLY_2] =
+    [PRODUCER_BRAWLY_2] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_LEADER_BRAWLY,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_LEADER_BRAWLY,
         .trainerName = _("BRAWLY"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .doubleBattle = TRUE,
@@ -9301,11 +9301,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Brawly2),
     },
 
-    [TRAINER_BRAWLY_3] =
+    [PRODUCER_BRAWLY_3] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_LEADER_BRAWLY,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_LEADER_BRAWLY,
         .trainerName = _("BRAWLY"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .doubleBattle = TRUE,
@@ -9313,11 +9313,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Brawly3),
     },
 
-    [TRAINER_BRAWLY_4] =
+    [PRODUCER_BRAWLY_4] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_LEADER_BRAWLY,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_LEADER_BRAWLY,
         .trainerName = _("BRAWLY"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .doubleBattle = TRUE,
@@ -9325,11 +9325,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Brawly4),
     },
 
-    [TRAINER_BRAWLY_5] =
+    [PRODUCER_BRAWLY_5] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_LEADER_BRAWLY,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_LEADER_BRAWLY,
         .trainerName = _("BRAWLY"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .doubleBattle = TRUE,
@@ -9337,11 +9337,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Brawly5),
     },
 
-    [TRAINER_WATTSON_2] =
+    [PRODUCER_WATTSON_2] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_LEADER_WATTSON,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_LEADER_WATTSON,
         .trainerName = _("WATTSON"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .doubleBattle = TRUE,
@@ -9349,11 +9349,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Wattson2),
     },
 
-    [TRAINER_WATTSON_3] =
+    [PRODUCER_WATTSON_3] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_LEADER_WATTSON,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_LEADER_WATTSON,
         .trainerName = _("WATTSON"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .doubleBattle = TRUE,
@@ -9361,11 +9361,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Wattson3),
     },
 
-    [TRAINER_WATTSON_4] =
+    [PRODUCER_WATTSON_4] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_LEADER_WATTSON,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_LEADER_WATTSON,
         .trainerName = _("WATTSON"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .doubleBattle = TRUE,
@@ -9373,11 +9373,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Wattson4),
     },
 
-    [TRAINER_WATTSON_5] =
+    [PRODUCER_WATTSON_5] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_LEADER_WATTSON,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_LEADER_WATTSON,
         .trainerName = _("WATTSON"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .doubleBattle = TRUE,
@@ -9385,11 +9385,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Wattson5),
     },
 
-    [TRAINER_FLANNERY_2] =
+    [PRODUCER_FLANNERY_2] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LEADER_FLANNERY,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LEADER_FLANNERY,
         .trainerName = _("FLANNERY"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .doubleBattle = TRUE,
@@ -9397,11 +9397,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Flannery2),
     },
 
-    [TRAINER_FLANNERY_3] =
+    [PRODUCER_FLANNERY_3] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LEADER_FLANNERY,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LEADER_FLANNERY,
         .trainerName = _("FLANNERY"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .doubleBattle = TRUE,
@@ -9409,11 +9409,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Flannery3),
     },
 
-    [TRAINER_FLANNERY_4] =
+    [PRODUCER_FLANNERY_4] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LEADER_FLANNERY,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LEADER_FLANNERY,
         .trainerName = _("FLANNERY"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .doubleBattle = TRUE,
@@ -9421,11 +9421,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Flannery4),
     },
 
-    [TRAINER_FLANNERY_5] =
+    [PRODUCER_FLANNERY_5] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LEADER_FLANNERY,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LEADER_FLANNERY,
         .trainerName = _("FLANNERY"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .doubleBattle = TRUE,
@@ -9433,11 +9433,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Flannery5),
     },
 
-    [TRAINER_NORMAN_2] =
+    [PRODUCER_NORMAN_2] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_LEADER_NORMAN,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_LEADER_NORMAN,
         .trainerName = _("NORMAN"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .doubleBattle = TRUE,
@@ -9445,11 +9445,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Norman2),
     },
 
-    [TRAINER_NORMAN_3] =
+    [PRODUCER_NORMAN_3] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_LEADER_NORMAN,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_LEADER_NORMAN,
         .trainerName = _("NORMAN"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .doubleBattle = TRUE,
@@ -9457,11 +9457,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Norman3),
     },
 
-    [TRAINER_NORMAN_4] =
+    [PRODUCER_NORMAN_4] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_LEADER_NORMAN,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_LEADER_NORMAN,
         .trainerName = _("NORMAN"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .doubleBattle = TRUE,
@@ -9469,11 +9469,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Norman4),
     },
 
-    [TRAINER_NORMAN_5] =
+    [PRODUCER_NORMAN_5] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_LEADER_NORMAN,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_LEADER_NORMAN,
         .trainerName = _("NORMAN"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .doubleBattle = TRUE,
@@ -9481,11 +9481,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Norman5),
     },
 
-    [TRAINER_WINONA_2] =
+    [PRODUCER_WINONA_2] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LEADER_WINONA,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LEADER_WINONA,
         .trainerName = _("WINONA"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .doubleBattle = TRUE,
@@ -9493,11 +9493,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Winona2),
     },
 
-    [TRAINER_WINONA_3] =
+    [PRODUCER_WINONA_3] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LEADER_WINONA,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LEADER_WINONA,
         .trainerName = _("WINONA"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .doubleBattle = TRUE,
@@ -9505,11 +9505,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Winona3),
     },
 
-    [TRAINER_WINONA_4] =
+    [PRODUCER_WINONA_4] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LEADER_WINONA,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LEADER_WINONA,
         .trainerName = _("WINONA"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .doubleBattle = TRUE,
@@ -9517,11 +9517,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Winona4),
     },
 
-    [TRAINER_WINONA_5] =
+    [PRODUCER_WINONA_5] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LEADER_WINONA,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LEADER_WINONA,
         .trainerName = _("WINONA"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .doubleBattle = TRUE,
@@ -9529,11 +9529,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Winona5),
     },
 
-    [TRAINER_TATE_AND_LIZA_2] =
+    [PRODUCER_TATE_AND_LIZA_2] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LEADER_TATE_AND_LIZA,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LEADER_TATE_AND_LIZA,
         .trainerName = _("TATE&LIZA"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .doubleBattle = TRUE,
@@ -9541,11 +9541,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_TateAndLiza2),
     },
 
-    [TRAINER_TATE_AND_LIZA_3] =
+    [PRODUCER_TATE_AND_LIZA_3] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LEADER_TATE_AND_LIZA,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LEADER_TATE_AND_LIZA,
         .trainerName = _("TATE&LIZA"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .doubleBattle = TRUE,
@@ -9553,11 +9553,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_TateAndLiza3),
     },
 
-    [TRAINER_TATE_AND_LIZA_4] =
+    [PRODUCER_TATE_AND_LIZA_4] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LEADER_TATE_AND_LIZA,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LEADER_TATE_AND_LIZA,
         .trainerName = _("TATE&LIZA"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .doubleBattle = TRUE,
@@ -9565,11 +9565,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_TateAndLiza4),
     },
 
-    [TRAINER_TATE_AND_LIZA_5] =
+    [PRODUCER_TATE_AND_LIZA_5] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_LEADER_TATE_AND_LIZA,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_LEADER_TATE_AND_LIZA,
         .trainerName = _("TATE&LIZA"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .doubleBattle = TRUE,
@@ -9577,11 +9577,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_TateAndLiza5),
     },
 
-    [TRAINER_JUAN_2] =
+    [PRODUCER_JUAN_2] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_LEADER_JUAN,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_LEADER_JUAN,
         .trainerName = _("JUAN"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .doubleBattle = TRUE,
@@ -9589,11 +9589,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Juan2),
     },
 
-    [TRAINER_JUAN_3] =
+    [PRODUCER_JUAN_3] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_LEADER_JUAN,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_LEADER_JUAN,
         .trainerName = _("JUAN"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .doubleBattle = TRUE,
@@ -9601,11 +9601,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Juan3),
     },
 
-    [TRAINER_JUAN_4] =
+    [PRODUCER_JUAN_4] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_LEADER_JUAN,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_LEADER_JUAN,
         .trainerName = _("JUAN"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .doubleBattle = TRUE,
@@ -9613,11 +9613,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Juan4),
     },
 
-    [TRAINER_JUAN_5] =
+    [PRODUCER_JUAN_5] =
     {
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_LEADER_JUAN,
+        .trainerClass = PRODUCER_CLASS_LEADER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_LEADER_JUAN,
         .trainerName = _("JUAN"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_NONE},
         .doubleBattle = TRUE,
@@ -9625,11 +9625,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Juan5),
     },
 
-    [TRAINER_ANGELO] =
+    [PRODUCER_ANGELO] =
     {
-        .trainerClass = TRAINER_CLASS_BUG_MANIAC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-        .trainerPic = TRAINER_PIC_BUG_MANIAC,
+        .trainerClass = PRODUCER_CLASS_BUG_MANIAC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .trainerPic = PRODUCER_PIC_BUG_MANIAC,
         .trainerName = _("ANGELO"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9637,11 +9637,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Angelo),
     },
 
-    [TRAINER_DARIUS] =
+    [PRODUCER_DARIUS] =
     {
-        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
+        .trainerClass = PRODUCER_CLASS_BIRD_KEEPER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_BIRD_KEEPER,
         .trainerName = _("DARIUS"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9649,11 +9649,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Darius),
     },
 
-    [TRAINER_STEVEN] =
+    [PRODUCER_STEVEN] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_STEVEN,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_STEVEN,
         .trainerName = _("STEVEN"),
         .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
         .doubleBattle = FALSE,
@@ -9661,11 +9661,11 @@ const struct Trainer gTrainers[] = {
         .party = ITEM_CUSTOM_MOVES(sParty_Steven),
     },
 
-    [TRAINER_ANABEL] =
+    [PRODUCER_ANABEL] =
     {
-        .trainerClass = TRAINER_CLASS_SALON_MAIDEN,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_SALON_MAIDEN_ANABEL,
+        .trainerClass = PRODUCER_CLASS_SALON_MAIDEN,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_SALON_MAIDEN_ANABEL,
         .trainerName = _("ANABEL"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9673,11 +9673,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Anabel),
     },
 
-    [TRAINER_TUCKER] =
+    [PRODUCER_TUCKER] =
     {
-        .trainerClass = TRAINER_CLASS_DOME_ACE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_DOME_ACE_TUCKER,
+        .trainerClass = PRODUCER_CLASS_DOME_ACE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_DOME_ACE_TUCKER,
         .trainerName = _("TUCKER"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9685,11 +9685,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Tucker),
     },
 
-    [TRAINER_SPENSER] =
+    [PRODUCER_SPENSER] =
     {
-        .trainerClass = TRAINER_CLASS_PALACE_MAVEN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_PALACE_MAVEN_SPENSER,
+        .trainerClass = PRODUCER_CLASS_PALACE_MAVEN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_PALACE_MAVEN_SPENSER,
         .trainerName = _("SPENSER"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9697,11 +9697,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Spenser),
     },
 
-    [TRAINER_GRETA] =
+    [PRODUCER_GRETA] =
     {
-        .trainerClass = TRAINER_CLASS_ARENA_TYCOON,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_ARENA_TYCOON_GRETA,
+        .trainerClass = PRODUCER_CLASS_ARENA_TYCOON,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_ARENA_TYCOON_GRETA,
         .trainerName = _("GRETA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9709,11 +9709,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Greta),
     },
 
-    [TRAINER_NOLAND] =
+    [PRODUCER_NOLAND] =
     {
-        .trainerClass = TRAINER_CLASS_FACTORY_HEAD,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_FACTORY_HEAD_NOLAND,
+        .trainerClass = PRODUCER_CLASS_FACTORY_HEAD,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_FACTORY_HEAD_NOLAND,
         .trainerName = _("NOLAND"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9721,11 +9721,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Noland),
     },
 
-    [TRAINER_LUCY] =
+    [PRODUCER_LUCY] =
     {
-        .trainerClass = TRAINER_CLASS_PIKE_QUEEN,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_PIKE_QUEEN_LUCY,
+        .trainerClass = PRODUCER_CLASS_PIKE_QUEEN,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_PIKE_QUEEN_LUCY,
         .trainerName = _("LUCY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9733,11 +9733,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Lucy),
     },
 
-    [TRAINER_BRANDON] =
+    [PRODUCER_BRANDON] =
     {
-        .trainerClass = TRAINER_CLASS_PYRAMID_KING,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_PYRAMID_KING_BRANDON,
+        .trainerClass = PRODUCER_CLASS_PYRAMID_KING,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_PYRAMID_KING_BRANDON,
         .trainerName = _("BRANDON"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9745,11 +9745,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Brandon),
     },
 
-    [TRAINER_ANDRES_2] =
+    [PRODUCER_ANDRES_2] =
     {
-        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
+        .trainerClass = PRODUCER_CLASS_RUIN_MANIAC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_RUIN_MANIAC,
         .trainerName = _("ANDRES"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9757,11 +9757,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Andres2),
     },
 
-    [TRAINER_ANDRES_3] =
+    [PRODUCER_ANDRES_3] =
     {
-        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
+        .trainerClass = PRODUCER_CLASS_RUIN_MANIAC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_RUIN_MANIAC,
         .trainerName = _("ANDRES"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9769,11 +9769,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Andres3),
     },
 
-    [TRAINER_ANDRES_4] =
+    [PRODUCER_ANDRES_4] =
     {
-        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
+        .trainerClass = PRODUCER_CLASS_RUIN_MANIAC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_RUIN_MANIAC,
         .trainerName = _("ANDRES"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9781,11 +9781,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Andres4),
     },
 
-    [TRAINER_ANDRES_5] =
+    [PRODUCER_ANDRES_5] =
     {
-        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
+        .trainerClass = PRODUCER_CLASS_RUIN_MANIAC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_RUIN_MANIAC,
         .trainerName = _("ANDRES"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9793,11 +9793,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Andres5),
     },
 
-    [TRAINER_CORY_2] =
+    [PRODUCER_CORY_2] =
     {
-        .trainerClass = TRAINER_CLASS_SAILOR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_SAILOR,
+        .trainerClass = PRODUCER_CLASS_SAILOR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_SAILOR,
         .trainerName = _("CORY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9805,11 +9805,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Cory2),
     },
 
-    [TRAINER_CORY_3] =
+    [PRODUCER_CORY_3] =
     {
-        .trainerClass = TRAINER_CLASS_SAILOR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_SAILOR,
+        .trainerClass = PRODUCER_CLASS_SAILOR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_SAILOR,
         .trainerName = _("CORY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9817,11 +9817,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Cory3),
     },
 
-    [TRAINER_CORY_4] =
+    [PRODUCER_CORY_4] =
     {
-        .trainerClass = TRAINER_CLASS_SAILOR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_SAILOR,
+        .trainerClass = PRODUCER_CLASS_SAILOR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_SAILOR,
         .trainerName = _("CORY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9829,11 +9829,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Cory4),
     },
 
-    [TRAINER_CORY_5] =
+    [PRODUCER_CORY_5] =
     {
-        .trainerClass = TRAINER_CLASS_SAILOR,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_SAILOR,
+        .trainerClass = PRODUCER_CLASS_SAILOR,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_SAILOR,
         .trainerName = _("CORY"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9841,11 +9841,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Cory5),
     },
 
-    [TRAINER_PABLO_2] =
+    [PRODUCER_PABLO_2] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMING_TRIATHLETE_M,
         .trainerName = _("PABLO"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9853,11 +9853,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Pablo2),
     },
 
-    [TRAINER_PABLO_3] =
+    [PRODUCER_PABLO_3] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMING_TRIATHLETE_M,
         .trainerName = _("PABLO"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9865,11 +9865,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Pablo3),
     },
 
-    [TRAINER_PABLO_4] =
+    [PRODUCER_PABLO_4] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMING_TRIATHLETE_M,
         .trainerName = _("PABLO"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9877,11 +9877,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Pablo4),
     },
 
-    [TRAINER_PABLO_5] =
+    [PRODUCER_PABLO_5] =
     {
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
+        .trainerClass = PRODUCER_CLASS_TRIATHLETE,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_SWIMMER,
+        .trainerPic = PRODUCER_PIC_SWIMMING_TRIATHLETE_M,
         .trainerName = _("PABLO"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9889,11 +9889,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Pablo5),
     },
 
-    [TRAINER_KOJI_2] =
+    [PRODUCER_KOJI_2] =
     {
-        .trainerClass = TRAINER_CLASS_BLACK_BELT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BLACK_BELT,
+        .trainerClass = PRODUCER_CLASS_BLACK_BELT,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BLACK_BELT,
         .trainerName = _("KOJI"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9901,11 +9901,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Koji2),
     },
 
-    [TRAINER_KOJI_3] =
+    [PRODUCER_KOJI_3] =
     {
-        .trainerClass = TRAINER_CLASS_BLACK_BELT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BLACK_BELT,
+        .trainerClass = PRODUCER_CLASS_BLACK_BELT,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BLACK_BELT,
         .trainerName = _("KOJI"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9913,11 +9913,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Koji3),
     },
 
-    [TRAINER_KOJI_4] =
+    [PRODUCER_KOJI_4] =
     {
-        .trainerClass = TRAINER_CLASS_BLACK_BELT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BLACK_BELT,
+        .trainerClass = PRODUCER_CLASS_BLACK_BELT,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BLACK_BELT,
         .trainerName = _("KOJI"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9925,11 +9925,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Koji4),
     },
 
-    [TRAINER_KOJI_5] =
+    [PRODUCER_KOJI_5] =
     {
-        .trainerClass = TRAINER_CLASS_BLACK_BELT,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_BLACK_BELT,
+        .trainerClass = PRODUCER_CLASS_BLACK_BELT,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_BLACK_BELT,
         .trainerName = _("KOJI"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9937,11 +9937,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Koji5),
     },
 
-    [TRAINER_CRISTIN_2] =
+    [PRODUCER_CRISTIN_2] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_F,
         .trainerName = _("CRISTIN"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -9949,11 +9949,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Cristin2),
     },
 
-    [TRAINER_CRISTIN_3] =
+    [PRODUCER_CRISTIN_3] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_F,
         .trainerName = _("CRISTIN"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -9961,11 +9961,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Cristin3),
     },
 
-    [TRAINER_CRISTIN_4] =
+    [PRODUCER_CRISTIN_4] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_F,
         .trainerName = _("CRISTIN"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -9973,11 +9973,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Cristin4),
     },
 
-    [TRAINER_CRISTIN_5] =
+    [PRODUCER_CRISTIN_5] =
     {
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_COOL,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+        .trainerClass = PRODUCER_CLASS_COOLPRODUCER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_COOL,
+        .trainerPic = PRODUCER_PIC_COOLPRODUCER_F,
         .trainerName = _("CRISTIN"),
         .items = {ITEM_HYPER_POTION, ITEM_NONE, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
@@ -9985,11 +9985,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Cristin5),
     },
 
-    [TRAINER_FERNANDO_2] =
+    [PRODUCER_FERNANDO_2] =
     {
-        .trainerClass = TRAINER_CLASS_GUITARIST,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_GUITARIST,
+        .trainerClass = PRODUCER_CLASS_GUITARIST,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_GUITARIST,
         .trainerName = _("FERNANDO"),
         .items = {},
         .doubleBattle = FALSE,
@@ -9997,11 +9997,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Fernando2),
     },
 
-    [TRAINER_FERNANDO_3] =
+    [PRODUCER_FERNANDO_3] =
     {
-        .trainerClass = TRAINER_CLASS_GUITARIST,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_GUITARIST,
+        .trainerClass = PRODUCER_CLASS_GUITARIST,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_GUITARIST,
         .trainerName = _("FERNANDO"),
         .items = {},
         .doubleBattle = FALSE,
@@ -10009,11 +10009,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Fernando3),
     },
 
-    [TRAINER_FERNANDO_4] =
+    [PRODUCER_FERNANDO_4] =
     {
-        .trainerClass = TRAINER_CLASS_GUITARIST,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_GUITARIST,
+        .trainerClass = PRODUCER_CLASS_GUITARIST,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_GUITARIST,
         .trainerName = _("FERNANDO"),
         .items = {},
         .doubleBattle = FALSE,
@@ -10021,11 +10021,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Fernando4),
     },
 
-    [TRAINER_FERNANDO_5] =
+    [PRODUCER_FERNANDO_5] =
     {
-        .trainerClass = TRAINER_CLASS_GUITARIST,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_GUITARIST,
+        .trainerClass = PRODUCER_CLASS_GUITARIST,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_GUITARIST,
         .trainerName = _("FERNANDO"),
         .items = {},
         .doubleBattle = FALSE,
@@ -10033,11 +10033,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Fernando5),
     },
 
-    [TRAINER_SAWYER_2] =
+    [PRODUCER_SAWYER_2] =
     {
-        .trainerClass = TRAINER_CLASS_HIKER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerClass = PRODUCER_CLASS_HIKER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_HIKER,
         .trainerName = _("SAWYER"),
         .items = {},
         .doubleBattle = FALSE,
@@ -10045,11 +10045,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Sawyer2),
     },
 
-    [TRAINER_SAWYER_3] =
+    [PRODUCER_SAWYER_3] =
     {
-        .trainerClass = TRAINER_CLASS_HIKER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerClass = PRODUCER_CLASS_HIKER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_HIKER,
         .trainerName = _("SAWYER"),
         .items = {},
         .doubleBattle = FALSE,
@@ -10057,11 +10057,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Sawyer3),
     },
 
-    [TRAINER_SAWYER_4] =
+    [PRODUCER_SAWYER_4] =
     {
-        .trainerClass = TRAINER_CLASS_HIKER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerClass = PRODUCER_CLASS_HIKER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_HIKER,
         .trainerName = _("SAWYER"),
         .items = {},
         .doubleBattle = FALSE,
@@ -10069,11 +10069,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Sawyer4),
     },
 
-    [TRAINER_SAWYER_5] =
+    [PRODUCER_SAWYER_5] =
     {
-        .trainerClass = TRAINER_CLASS_HIKER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
-        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerClass = PRODUCER_CLASS_HIKER,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = PRODUCER_PIC_HIKER,
         .trainerName = _("SAWYER"),
         .items = {},
         .doubleBattle = FALSE,
@@ -10081,11 +10081,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Sawyer5),
     },
 
-    [TRAINER_GABRIELLE_2] =
+    [PRODUCER_GABRIELLE_2] =
     {
-        .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
+        .trainerClass = PRODUCER_CLASS_PKMN_BREEDER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_POKEMON_BREEDER_F,
         .trainerName = _("GABRIELLE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -10093,11 +10093,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Gabrielle2),
     },
 
-    [TRAINER_GABRIELLE_3] =
+    [PRODUCER_GABRIELLE_3] =
     {
-        .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
+        .trainerClass = PRODUCER_CLASS_PKMN_BREEDER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_POKEMON_BREEDER_F,
         .trainerName = _("GABRIELLE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -10105,11 +10105,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Gabrielle3),
     },
 
-    [TRAINER_GABRIELLE_4] =
+    [PRODUCER_GABRIELLE_4] =
     {
-        .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
+        .trainerClass = PRODUCER_CLASS_PKMN_BREEDER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_POKEMON_BREEDER_F,
         .trainerName = _("GABRIELLE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -10117,11 +10117,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Gabrielle4),
     },
 
-    [TRAINER_GABRIELLE_5] =
+    [PRODUCER_GABRIELLE_5] =
     {
-        .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
+        .trainerClass = PRODUCER_CLASS_PKMN_BREEDER,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_POKEMON_BREEDER_F,
         .trainerName = _("GABRIELLE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -10129,11 +10129,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Gabrielle5),
     },
 
-    [TRAINER_THALIA_2] =
+    [PRODUCER_THALIA_2] =
     {
-        .trainerClass = TRAINER_CLASS_BEAUTY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_BEAUTY,
+        .trainerClass = PRODUCER_CLASS_BEAUTY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_BEAUTY,
         .trainerName = _("THALIA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -10141,11 +10141,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Thalia2),
     },
 
-    [TRAINER_THALIA_3] =
+    [PRODUCER_THALIA_3] =
     {
-        .trainerClass = TRAINER_CLASS_BEAUTY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_BEAUTY,
+        .trainerClass = PRODUCER_CLASS_BEAUTY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_BEAUTY,
         .trainerName = _("THALIA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -10153,11 +10153,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Thalia3),
     },
 
-    [TRAINER_THALIA_4] =
+    [PRODUCER_THALIA_4] =
     {
-        .trainerClass = TRAINER_CLASS_BEAUTY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_BEAUTY,
+        .trainerClass = PRODUCER_CLASS_BEAUTY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_BEAUTY,
         .trainerName = _("THALIA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -10165,11 +10165,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Thalia4),
     },
 
-    [TRAINER_THALIA_5] =
+    [PRODUCER_THALIA_5] =
     {
-        .trainerClass = TRAINER_CLASS_BEAUTY,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .trainerPic = TRAINER_PIC_BEAUTY,
+        .trainerClass = PRODUCER_CLASS_BEAUTY,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerPic = PRODUCER_PIC_BEAUTY,
         .trainerName = _("THALIA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -10177,11 +10177,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Thalia5),
     },
 
-    [TRAINER_MARIELA] =
+    [PRODUCER_MARIELA] =
     {
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_PSYCHIC_F,
+        .trainerClass = PRODUCER_CLASS_PSYCHIC,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_PSYCHIC_F,
         .trainerName = _("MARIELA"),
         .items = {},
         .doubleBattle = FALSE,
@@ -10189,11 +10189,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Mariela),
     },
 
-    [TRAINER_ALVARO] =
+    [PRODUCER_ALVARO] =
     {
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .trainerPic = TRAINER_PIC_PSYCHIC_M,
+        .trainerClass = PRODUCER_CLASS_PSYCHIC,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = PRODUCER_PIC_PSYCHIC_M,
         .trainerName = _("ALVARO"),
         .items = {},
         .doubleBattle = FALSE,
@@ -10201,11 +10201,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Alvaro),
     },
 
-    [TRAINER_EVERETT] =
+    [PRODUCER_EVERETT] =
     {
-        .trainerClass = TRAINER_CLASS_GENTLEMAN,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_RICH,
-        .trainerPic = TRAINER_PIC_GENTLEMAN,
+        .trainerClass = PRODUCER_CLASS_GENTLEMAN,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_RICH,
+        .trainerPic = PRODUCER_PIC_GENTLEMAN,
         .trainerName = _("EVERETT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -10213,11 +10213,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Everett),
     },
 
-    [TRAINER_RED] =
+    [PRODUCER_RED] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_RED,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_RED,
         .trainerName = _("RED"),
         .items = {},
         .doubleBattle = FALSE,
@@ -10225,11 +10225,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Red),
     },
 
-    [TRAINER_LEAF] =
+    [PRODUCER_LEAF] =
     {
-        .trainerClass = TRAINER_CLASS_RIVAL,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_LEAF,
+        .trainerClass = PRODUCER_CLASS_RIVAL,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_LEAF,
         .trainerName = _("LEAF"),
         .items = {},
         .doubleBattle = FALSE,
@@ -10237,11 +10237,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Leaf),
     },
 
-    [TRAINER_BRENDAN_PLACEHOLDER] =
+    [PRODUCER_BRENDAN_PLACEHOLDER] =
     {
-        .trainerClass = TRAINER_CLASS_RS_PROTAG,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_RS_BRENDAN,
+        .trainerClass = PRODUCER_CLASS_RS_PROTAG,
+        .encounterMusic_gender = PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_RS_BRENDAN,
         .trainerName = _("BRENDAN"),
         .items = {},
         .doubleBattle = FALSE,
@@ -10249,11 +10249,11 @@ const struct Trainer gTrainers[] = {
         .party = NO_ITEM_DEFAULT_MOVES(sParty_BrendanLinkPlaceholder),
     },
 
-    [TRAINER_MAY_PLACEHOLDER] =
+    [PRODUCER_MAY_PLACEHOLDER] =
     {
-        .trainerClass = TRAINER_CLASS_RS_PROTAG,
-        .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_MALE,
-        .trainerPic = TRAINER_PIC_RS_MAY,
+        .trainerClass = PRODUCER_CLASS_RS_PROTAG,
+        .encounterMusic_gender = F_PRODUCER_FEMALE | PRODUCER_ENCOUNTER_MUSIC_MALE,
+        .trainerPic = PRODUCER_PIC_RS_MAY,
         .trainerName = _("MAY"),
         .items = {},
         .doubleBattle = FALSE,

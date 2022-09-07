@@ -1359,7 +1359,7 @@
 	.endm
 	
 	.macro playtrainerdefeatbgm battler:req
-	various \battler, VARIOUS_PLAY_TRAINER_DEFEATED_MUSIC
+	various \battler, VARIOUS_PLAY_PRODUCER_DEFEATED_MUSIC
 	.endm
 	
 @ helpful macros

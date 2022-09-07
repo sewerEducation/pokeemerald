@@ -1,5 +1,5 @@
-#ifndef GUARD_DATA_BARD_MUSIC_TRAINER_H
-#define GUARD_DATA_BARD_MUSIC_TRAINER_H
+#ifndef GUARD_DATA_BARD_MUSIC_PRODUCER_H
+#define GUARD_DATA_BARD_MUSIC_PRODUCER_H
 const struct BardSound gBardSounds_Trainer[][6] = {
     {
         { 0x12, 0x0, 0x0, 0x0, 0x0 },
@@ -219,4 +219,4 @@ const struct BardSound gBardSounds_Trainer[][6] = {
     }
 };
 
-#endif // GUARD_DATA_BARD_MUSIC_TRAINER_H
+#endif // GUARD_DATA_BARD_MUSIC_PRODUCER_H

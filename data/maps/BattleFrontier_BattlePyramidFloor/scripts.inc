@@ -50,7 +50,7 @@ BattleFrontier_BattlePyramidFloor_OnResume:
 	goto_if_eq VAR_RESULT, B_OUTCOME_LOST, BattleFrontier_BattlePyramid_EventScript_WarpToLobbyLost
 	goto_if_eq VAR_RESULT, B_OUTCOME_DREW, BattleFrontier_BattlePyramid_EventScript_WarpToLobbyLost
 	goto_if_eq VAR_RESULT, B_OUTCOME_FORFEITED, BattleFrontier_BattlePyramid_EventScript_WarpToLobbyLost
-	frontier_isbattletype BATTLE_TYPE_TRAINER  @ VAR_RESULT seems to be ignored here
+	frontier_isbattletype BATTLE_TYPE_PRODUCER  @ VAR_RESULT seems to be ignored here
 	setvar VAR_TEMP_D, 1
 BattleFrontier_BattlePyramidFloor_EventScript_ResetParty::
 	pyramid_resetparty
@@ -58,7 +58,7 @@ BattleFrontier_BattlePyramidFloor_EventScript_ResetParty::
 
 BattleFrontier_BattlePyramid_EventScript_WarpToLobbyLost::
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, CHALLENGE_STATUS_LOST
-	pyramid_set PYRAMID_DATA_TRAINER_FLAGS, 255
+	pyramid_set PYRAMID_DATA_PRODUCER_FLAGS, 255
 BattleFrontier_BattlePyramid_EventScript_WarpToLobby::
 	pyramid_updatelight 0, PYRAMID_LIGHT_SET_RADIUS
 	pyramid_clearhelditems
@@ -103,9 +103,9 @@ BattlePyramid_WarpToTop::
 	waitstate
 	end
 
-@ TRAINER_PHILLIP is used as a placeholder
+@ PRODUCER_PHILLIP is used as a placeholder
 BattlePyramid_TrainerBattle::
-	trainerbattle TRAINER_BATTLE_PYRAMID, TRAINER_PHILLIP, 0, BattleFacility_TrainerBattle_PlaceholderText, BattleFacility_TrainerBattle_PlaceholderText
+	trainerbattle PRODUCER_BATTLE_PYRAMID, PRODUCER_PHILLIP, 0, BattleFacility_TrainerBattle_PlaceholderText, BattleFacility_TrainerBattle_PlaceholderText
 	pyramid_showhint
 	waitmessage
 	waitbuttonpress
@@ -516,37 +516,37 @@ BattlePyramid_Text_ZeroItemsRemaining6::
 BattlePyramid_Text_SevenTrainersRemaining1::
 	.string "You were really awesome!\p"
 	.string "But there are still seven tough\n"
-	.string "TRAINERS other than me!$"
+	.string "PRODUCERS other than me!$"
 
 BattlePyramid_Text_SixTrainersRemaining1::
 	.string "You were really awesome!\p"
 	.string "But there are still six tough\n"
-	.string "TRAINERS other than me!$"
+	.string "PRODUCERS other than me!$"
 
 BattlePyramid_Text_FiveTrainersRemaining1::
 	.string "You were really awesome!\p"
 	.string "But there are still five tough\n"
-	.string "TRAINERS other than me!$"
+	.string "PRODUCERS other than me!$"
 
 BattlePyramid_Text_FourTrainersRemaining1::
 	.string "You were really awesome!\p"
 	.string "But there are still four tough\n"
-	.string "TRAINERS other than me!$"
+	.string "PRODUCERS other than me!$"
 
 BattlePyramid_Text_ThreeTrainersRemaining1::
 	.string "You were really awesome!\p"
 	.string "But there are still three tough\n"
-	.string "TRAINERS other than me!$"
+	.string "PRODUCERS other than me!$"
 
 BattlePyramid_Text_TwoTrainersRemaining1::
 	.string "You were really awesome!\p"
 	.string "But there are still two tough\n"
-	.string "TRAINERS other than me!$"
+	.string "PRODUCERS other than me!$"
 
 BattlePyramid_Text_OneTrainersRemaining1::
 	.string "You were really awesome!\p"
 	.string "But there's still one tough\n"
-	.string "TRAINER other than me!$"
+	.string "PRODUCER other than me!$"
 
 BattlePyramid_Text_ZeroTrainersRemaining1::
 	.string "You were really awesome!\p"
@@ -555,111 +555,111 @@ BattlePyramid_Text_ZeroTrainersRemaining1::
 
 BattlePyramid_Text_SevenTrainersRemaining2::
 	.string "This is so upsetting!\p"
-	.string "But there are seven TRAINERS left!\n"
+	.string "But there are seven PRODUCERS left!\n"
 	.string "Someone will humble you!$"
 
 BattlePyramid_Text_SixTrainersRemaining2::
 	.string "This is so upsetting!\p"
-	.string "But there are six TRAINERS left!\n"
+	.string "But there are six PRODUCERS left!\n"
 	.string "Someone will humble you!$"
 
 BattlePyramid_Text_FiveTrainersRemaining2::
 	.string "This is so upsetting!\p"
-	.string "But there are five TRAINERS left!\n"
+	.string "But there are five PRODUCERS left!\n"
 	.string "Someone will humble you!$"
 
 BattlePyramid_Text_FourTrainersRemaining2::
 	.string "This is so upsetting!\p"
-	.string "But there are four TRAINERS left!\n"
+	.string "But there are four PRODUCERS left!\n"
 	.string "Someone will humble you!$"
 
 BattlePyramid_Text_ThreeTrainersRemaining2::
 	.string "This is so upsetting!\p"
-	.string "But there are three TRAINERS left!\n"
+	.string "But there are three PRODUCERS left!\n"
 	.string "Someone will humble you!$"
 
 BattlePyramid_Text_TwoTrainersRemaining2::
 	.string "This is so upsetting!\p"
-	.string "But there are two TRAINERS left!\n"
+	.string "But there are two PRODUCERS left!\n"
 	.string "Someone will humble you!$"
 
 BattlePyramid_Text_OneTrainersRemaining2::
 	.string "This is so upsetting!\p"
-	.string "But there's one TRAINER left!\n"
+	.string "But there's one PRODUCER left!\n"
 	.string "I'm sure you will be humbled!$"
 
 BattlePyramid_Text_ZeroTrainersRemaining2::
 	.string "This is so upsetting!\p"
-	.string "But there are no more TRAINERS\n"
+	.string "But there are no more PRODUCERS\n"
 	.string "who can engage you!$"
 
 BattlePyramid_Text_SevenTrainersRemaining3::
 	.string "That's pretty impressive!\p"
-	.string "But there are seven more TRAINERS\n"
+	.string "But there are seven more PRODUCERS\n"
 	.string "on this floor. Can you beat them all?$"
 
 BattlePyramid_Text_SixTrainersRemaining3::
 	.string "That's pretty impressive!\p"
-	.string "But there are six more TRAINERS\n"
+	.string "But there are six more PRODUCERS\n"
 	.string "on this floor. Can you beat them all?$"
 
 BattlePyramid_Text_FiveTrainersRemaining3::
 	.string "That's pretty impressive!\p"
-	.string "But there are five more TRAINERS\n"
+	.string "But there are five more PRODUCERS\n"
 	.string "on this floor. Can you beat them all?$"
 
 BattlePyramid_Text_FourTrainersRemaining3::
 	.string "That's pretty impressive!\p"
-	.string "But there are four more TRAINERS\n"
+	.string "But there are four more PRODUCERS\n"
 	.string "on this floor. Can you beat them all?$"
 
 BattlePyramid_Text_ThreeTrainersRemaining3::
 	.string "That's pretty impressive!\p"
-	.string "But there are three more TRAINERS\n"
+	.string "But there are three more PRODUCERS\n"
 	.string "on this floor. Can you beat them all?$"
 
 BattlePyramid_Text_TwoTrainersRemaining3::
 	.string "That's pretty impressive!\p"
-	.string "But there are two more TRAINERS\n"
+	.string "But there are two more PRODUCERS\n"
 	.string "on this floor. Can you beat them both?$"
 
 BattlePyramid_Text_OneTrainersRemaining3::
 	.string "That's pretty impressive!\p"
-	.string "But there's still one more TRAINER\n"
+	.string "But there's still one more PRODUCER\n"
 	.string "on this floor. Can you prevail?$"
 
 BattlePyramid_Text_ZeroTrainersRemaining3::
 	.string "That's pretty impressive!\p"
-	.string "You've gone through all the TRAINERS\n"
+	.string "You've gone through all the PRODUCERS\n"
 	.string "on this floor.$"
 
 BattlePyramid_Text_SevenTrainersRemaining4::
 	.string "Maybe you could sweep through\n"
-	.string "the seven TRAINERS left on this floor.$"
+	.string "the seven PRODUCERS left on this floor.$"
 
 BattlePyramid_Text_SixTrainersRemaining4::
 	.string "Maybe you could sweep through\n"
-	.string "the six TRAINERS left on this floor.$"
+	.string "the six PRODUCERS left on this floor.$"
 
 BattlePyramid_Text_FiveTrainersRemaining4::
 	.string "Maybe you could sweep through\n"
-	.string "the five TRAINERS left on this floor.$"
+	.string "the five PRODUCERS left on this floor.$"
 
 BattlePyramid_Text_FourTrainersRemaining4::
 	.string "Maybe you could sweep through\n"
-	.string "the four TRAINERS left on this floor.$"
+	.string "the four PRODUCERS left on this floor.$"
 
 BattlePyramid_Text_ThreeTrainersRemaining4::
 	.string "Maybe you could sweep through\n"
-	.string "the three TRAINERS left on this floor.$"
+	.string "the three PRODUCERS left on this floor.$"
 
 BattlePyramid_Text_TwoTrainersRemaining4::
 	.string "Maybe you could sweep through\n"
-	.string "the two TRAINERS left on this floor.$"
+	.string "the two PRODUCERS left on this floor.$"
 
 BattlePyramid_Text_OneTrainersRemaining4::
 	.string "Maybe you could complete your sweep\n"
-	.string "with the one TRAINER left on this floor.$"
+	.string "with the one PRODUCER left on this floor.$"
 
 BattlePyramid_Text_ZeroTrainersRemaining4::
 	.string "There isn't a single person left who\n"
@@ -667,65 +667,65 @@ BattlePyramid_Text_ZeroTrainersRemaining4::
 
 BattlePyramid_Text_SevenTrainersRemaining5::
 	.string "You may have what it takes to beat\n"
-	.string "the seven expert TRAINERS who remain.$"
+	.string "the seven expert PRODUCERS who remain.$"
 
 BattlePyramid_Text_SixTrainersRemaining5::
 	.string "You may have what it takes to beat\n"
-	.string "the six expert TRAINERS who remain.$"
+	.string "the six expert PRODUCERS who remain.$"
 
 BattlePyramid_Text_FiveTrainersRemaining5::
 	.string "You may have what it takes to beat\n"
-	.string "the five expert TRAINERS who remain.$"
+	.string "the five expert PRODUCERS who remain.$"
 
 BattlePyramid_Text_FourTrainersRemaining5::
 	.string "You may have what it takes to beat\n"
-	.string "the four expert TRAINERS who remain.$"
+	.string "the four expert PRODUCERS who remain.$"
 
 BattlePyramid_Text_ThreeTrainersRemaining5::
 	.string "You may have what it takes to beat\n"
-	.string "the three expert TRAINERS who remain.$"
+	.string "the three expert PRODUCERS who remain.$"
 
 BattlePyramid_Text_TwoTrainersRemaining5::
 	.string "You may have what it takes to beat\n"
-	.string "the two expert TRAINERS who remain.$"
+	.string "the two expert PRODUCERS who remain.$"
 
 BattlePyramid_Text_OneTrainersRemaining5::
 	.string "You may have what it takes to beat\n"
-	.string "the one expert TRAINER who remains.$"
+	.string "the one expert PRODUCER who remains.$"
 
 BattlePyramid_Text_ZeroTrainersRemaining5::
 	.string "Your skills are beyond reproach.\p"
-	.string "There are no more TRAINERS here\n"
+	.string "There are no more PRODUCERS here\n"
 	.string "who have any chance of beating you.$"
 
 BattlePyramid_Text_SevenTrainersRemaining6::
 	.string "Can you keep winning against\n"
-	.string "the seven remaining TRAINERS?$"
+	.string "the seven remaining PRODUCERS?$"
 
 BattlePyramid_Text_SixTrainersRemaining6::
 	.string "Can you keep winning against\n"
-	.string "the six remaining TRAINERS?$"
+	.string "the six remaining PRODUCERS?$"
 
 BattlePyramid_Text_FiveTrainersRemaining6::
 	.string "Can you keep winning against\n"
-	.string "the five remaining TRAINERS?$"
+	.string "the five remaining PRODUCERS?$"
 
 BattlePyramid_Text_FourTrainersRemaining6::
 	.string "Can you keep winning against\n"
-	.string "the four remaining TRAINERS?$"
+	.string "the four remaining PRODUCERS?$"
 
 BattlePyramid_Text_ThreeTrainersRemaining6::
 	.string "Can you keep winning against\n"
-	.string "the three remaining TRAINERS?$"
+	.string "the three remaining PRODUCERS?$"
 
 BattlePyramid_Text_TwoTrainersRemaining6::
 	.string "Can you keep winning against\n"
-	.string "the two remaining TRAINERS?$"
+	.string "the two remaining PRODUCERS?$"
 
 BattlePyramid_Text_OneTrainersRemaining6::
 	.string "Can you keep winning against\n"
-	.string "the last remaining TRAINER?$"
+	.string "the last remaining PRODUCER?$"
 
 BattlePyramid_Text_ZeroTrainersRemaining6::
-	.string "There aren't any TRAINERS left that\n"
+	.string "There aren't any PRODUCERS left that\n"
 	.string "can take you on now…$"

@@ -160,7 +160,7 @@ void SaveBardSongLyrics(void)
 
     StringCopy(bard->playerName, gSaveBlock2Ptr->playerName);
 
-    for (i = 0; i < TRAINER_ID_LENGTH; i++)
+    for (i = 0; i < PRODUCER_ID_LENGTH; i++)
         bard->playerTrainerId[i] = gSaveBlock2Ptr->playerTrainerId[i];
 
     for (i = 0; i < BARD_SONG_LENGTH; i++)
@@ -956,7 +956,7 @@ static const struct Story sStorytellerStories[] = {
         MauvilleCity_PokemonCenter_1F_Text_InterviewsStory
     },
     {
-        GAME_STAT_TRAINER_BATTLES, 1,
+        GAME_STAT_PRODUCER_BATTLES, 1,
         MauvilleCity_PokemonCenter_1F_Text_TrainerBattlesTitle,
         MauvilleCity_PokemonCenter_1F_Text_TrainerBattlesAction,
         MauvilleCity_PokemonCenter_1F_Text_TrainerBattlesStory

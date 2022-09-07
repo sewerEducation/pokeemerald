@@ -40,7 +40,7 @@
 
 	@ Loads gBattleFrontierTrainers into gFacilityTrainers
 	.macro frontier_settrainers
-	setvar VAR_0x8004, FRONTIER_UTIL_FUNC_SET_TRAINERS
+	setvar VAR_0x8004, FRONTIER_UTIL_FUNC_SET_PRODUCERS
 	special CallFrontierUtilFunc
 	.endm
 
@@ -111,7 +111,7 @@
 
 	@ Validates the visiting E-Reader trainer. 0 if valid, 1 if not
 	.macro frontier_checkvisittrainer
-	setvar VAR_0x8004, FRONTIER_UTIL_FUNC_CHECK_VISIT_TRAINER
+	setvar VAR_0x8004, FRONTIER_UTIL_FUNC_CHECK_VISIT_PRODUCER
 	special CallFrontierUtilFunc
 	.endm
 
@@ -135,7 +135,7 @@
 
 	@ Buffer the name of gTrainerBattleOpponent_A in STR_VAR_1 (0) or STR_VAR_2 (1)
 	.macro frontier_gettrainername stringVar:req
-	setvar VAR_0x8004, FRONTIER_UTIL_FUNC_BUFFER_TRAINER_NAME
+	setvar VAR_0x8004, FRONTIER_UTIL_FUNC_BUFFER_PRODUCER_NAME
 	.if \stringVar == STR_VAR_1
 		setvar VAR_0x8005, 0
 	.elseif \stringVar == STR_VAR_2

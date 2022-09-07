@@ -1487,7 +1487,7 @@ u8 SpawnSpecialObjectEventParameterized(u8 graphicsId, u8 movementBehavior, u8 l
     objectEventTemplate.movementType = movementBehavior;
     objectEventTemplate.movementRangeX = 0;
     objectEventTemplate.movementRangeY = 0;
-    objectEventTemplate.trainerType = TRAINER_TYPE_NONE;
+    objectEventTemplate.trainerType = PRODUCER_TYPE_NONE;
     objectEventTemplate.trainerRange_berryTreeId = 0;
     return SpawnSpecialObjectEvent(&objectEventTemplate);
 }
@@ -2613,7 +2613,7 @@ bool8 ObjectEventIsTrainerAndCloseToPlayer(struct ObjectEvent *objectEvent)
     if (!TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_DASH))
         return FALSE;
 
-    if (objectEvent->trainerType != TRAINER_TYPE_NORMAL && objectEvent->trainerType != TRAINER_TYPE_BURIED)
+    if (objectEvent->trainerType != PRODUCER_TYPE_NORMAL && objectEvent->trainerType != PRODUCER_TYPE_BURIED)
         return FALSE;
 
     PlayerGetDestCoords(&playerX, &playerY);

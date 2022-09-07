@@ -41,7 +41,7 @@ AquaHideout_1F_EventScript_SlateportHint2::
 	end
 
 AquaHideout_1F_EventScript_Grunt1::
-	trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_1, AquaHideout_1F_Text_Grunt1Intro, AquaHideout_1F_Text_Grunt1Defeat, AquaHideout_1F_EventScript_Grunt1Defeated
+	trainerbattle_single PRODUCER_GRUNT_AQUA_HIDEOUT_1, AquaHideout_1F_Text_Grunt1Intro, AquaHideout_1F_Text_Grunt1Defeat, AquaHideout_1F_EventScript_Grunt1Defeated
 	msgbox AquaHideout_1F_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -64,7 +64,7 @@ AquaHideout_1F_Text_WhereMightMagmaHideoutBe:
 	.string "What? What?\n"
 	.string "Are you a TEAM MAGMA grunt?\p"
 	.string "I hear that TEAM MAGMA is trying to\n"
-	.string "awaken an awesome POKéMON at their\l"
+	.string "awaken an awesome IDOL at their\l"
 	.string "HIDEOUT.\p"
 	.string "But where might their HIDEOUT be?$"
 
@@ -92,8 +92,8 @@ AquaHideout_1F_Text_TeamMagmaAtMtChimney:
 	.string "What? What?\n"
 	.string "Are you a TEAM MAGMA grunt?\p"
 	.string "I hear that TEAM MAGMA is after\n"
-	.string "an awesome POKéMON at MT. CHIMNEY.\p"
-	.string "But what is that POKéMON like?$"
+	.string "an awesome IDOL at MT. CHIMNEY.\p"
+	.string "But what is that IDOL like?$"
 
 AquaHideout_1F_Text_BossIsInSlateportCity:
 	.string "What? What? What do you want with\n"
@@ -116,4 +116,3 @@ AquaHideout_1F_Text_Grunt1Defeat:
 AquaHideout_1F_Text_Grunt1PostBattle:
 	.string "I took the loss for the TEAM,\n"
 	.string "but I did my job…$"
-

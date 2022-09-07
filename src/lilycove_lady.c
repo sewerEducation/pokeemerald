@@ -325,7 +325,7 @@ static void InitLilycoveQuizLady(void)
     sQuizLadyPtr->correctAnswer = EC_EMPTY_WORD;
     sQuizLadyPtr->playerAnswer = EC_EMPTY_WORD;
 
-    for (i = 0; i < TRAINER_ID_LENGTH; i ++)
+    for (i = 0; i < PRODUCER_ID_LENGTH; i ++)
         sQuizLadyPtr->playerTrainerId[i] = 0;
 
     sQuizLadyPtr->prize = ITEM_NONE;
@@ -429,7 +429,7 @@ static bool8 IsQuizTrainerIdNotPlayer(void)
 
     sQuizLadyPtr = &gSaveBlock1Ptr->lilycoveLady.quiz;
     notPlayer = FALSE;
-    for (i = 0; i < TRAINER_ID_LENGTH; i++)
+    for (i = 0; i < PRODUCER_ID_LENGTH; i++)
     {
         if (sQuizLadyPtr->playerTrainerId[i] != gSaveBlock2Ptr->playerTrainerId[i])
         {
@@ -550,7 +550,7 @@ void QuizLadyRecordCustomQuizData(void)
 
     sQuizLadyPtr = &gSaveBlock1Ptr->lilycoveLady.quiz;
     sQuizLadyPtr->prize = gSpecialVar_ItemId;
-    for (i = 0; i < TRAINER_ID_LENGTH; i++)
+    for (i = 0; i < PRODUCER_ID_LENGTH; i++)
         sQuizLadyPtr->playerTrainerId[i] = gSaveBlock2Ptr->playerTrainerId[i];
     StringCopy_PlayerName(sQuizLadyPtr->playerName, gSaveBlock2Ptr->playerName);
     sQuizLadyPtr->language = gGameLanguage;

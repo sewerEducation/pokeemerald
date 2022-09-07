@@ -83,7 +83,7 @@ enum {
     UR_STATE_TRY_COMMUNICATING,
     UR_STATE_PRINT_AND_EXIT,
     UR_STATE_SEND_ACTIVITY_REQUEST,
-    UR_STATE_TRAINER_APPEARS_BUSY,
+    UR_STATE_PRODUCER_APPEARS_BUSY,
     UR_STATE_WAIT_FOR_RESPONSE_TO_REQUEST,
     UR_STATE_CANCEL_ACTIVITY_LINK_ERROR,
     UR_STATE_SEND_TRADE_REQUST,
@@ -2715,7 +2715,7 @@ static void Task_RunUnionRoom(u8 taskId)
         {
             if (!gReceivedRemoteLinkPlayers)
             {
-                uroom->state = UR_STATE_TRAINER_APPEARS_BUSY;
+                uroom->state = UR_STATE_PRODUCER_APPEARS_BUSY;
             }
             else
             {
@@ -2746,7 +2746,7 @@ static void Task_RunUnionRoom(u8 taskId)
             }
         }
         break;
-    case UR_STATE_TRAINER_APPEARS_BUSY:
+    case UR_STATE_PRODUCER_APPEARS_BUSY:
         StringCopy(gStringVar4, sText_TrainerBattleBusy);
         uroom->state = UR_STATE_CANCEL_REQUEST_PRINT_MSG;
         break;
@@ -2775,7 +2775,7 @@ static void Task_RunUnionRoom(u8 taskId)
         if (!gReceivedRemoteLinkPlayers)
         {
             StringCopy(gStringVar4, sText_TrainerBattleBusy); // Redundant, will be copied again in next state
-            uroom->state = UR_STATE_TRAINER_APPEARS_BUSY;
+            uroom->state = UR_STATE_PRODUCER_APPEARS_BUSY;
         }
         else
         {
@@ -4479,7 +4479,7 @@ static void ViewURoomPartnerTrainerCard(u8 *unused, struct WirelessLink_URoom *d
     ConvertIntToDecimalStringN(data->trainerCardStrBuffer[2], trainerCard->pokemonTrades, STR_CONV_MODE_LEFT_ALIGN, 5);
     DynamicPlaceholderTextUtil_SetPlaceholderPtr(3, data->trainerCardStrBuffer[2]);
 
-    for (i = 0; i < TRAINER_CARD_PROFILE_LENGTH; i++)
+    for (i = 0; i < PRODUCER_CARD_PROFILE_LENGTH; i++)
     {
         CopyEasyChatWord(data->trainerCardStrBuffer[i + 3], trainerCard->easyChatProfile[i]);
         DynamicPlaceholderTextUtil_SetPlaceholderPtr(i + 4, data->trainerCardStrBuffer[i + 3]);

@@ -410,22 +410,22 @@ MtPyre_Summit_Movement_MaxieApproachArchie2:
 	step_end
 
 MtPyre_Summit_EventScript_Grunt1::
-	trainerbattle_single TRAINER_GRUNT_MT_PYRE_1, MtPyre_Summit_Text_Grunt1Intro, MtPyre_Summit_Text_Grunt1Defeat
+	trainerbattle_single PRODUCER_GRUNT_MT_PYRE_1, MtPyre_Summit_Text_Grunt1Intro, MtPyre_Summit_Text_Grunt1Defeat
 	msgbox MtPyre_Summit_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE
 	end
 
 MtPyre_Summit_EventScript_Grunt2::
-	trainerbattle_single TRAINER_GRUNT_MT_PYRE_2, MtPyre_Summit_Text_Grunt2Intro, MtPyre_Summit_Text_Grunt2Defeat
+	trainerbattle_single PRODUCER_GRUNT_MT_PYRE_2, MtPyre_Summit_Text_Grunt2Intro, MtPyre_Summit_Text_Grunt2Defeat
 	msgbox MtPyre_Summit_Text_Grunt2PostBattle, MSGBOX_AUTOCLOSE
 	end
 
 MtPyre_Summit_EventScript_Grunt3::
-	trainerbattle_single TRAINER_GRUNT_MT_PYRE_3, MtPyre_Summit_Text_Grunt3Intro, MtPyre_Summit_Text_Grunt3Defeat
+	trainerbattle_single PRODUCER_GRUNT_MT_PYRE_3, MtPyre_Summit_Text_Grunt3Intro, MtPyre_Summit_Text_Grunt3Defeat
 	msgbox MtPyre_Summit_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE
 	end
 
 MtPyre_Summit_EventScript_Grunt4::
-	trainerbattle_single TRAINER_GRUNT_MT_PYRE_4, MtPyre_Summit_Text_Grunt4Intro, MtPyre_Summit_Text_Grunt4Defeat
+	trainerbattle_single PRODUCER_GRUNT_MT_PYRE_4, MtPyre_Summit_Text_Grunt4Intro, MtPyre_Summit_Text_Grunt4Defeat
 	msgbox MtPyre_Summit_Text_Grunt4PostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -531,13 +531,13 @@ MtPyre_Summit_Text_GroudonKyogreAwakened:
 	.string "have been awakened?\p"
 	.string "It is said that the BLUE ORB and\n"
 	.string "the RED ORB quelled the rage of\l"
-	.string "the two POKéMON…\p"
+	.string "the two IDOLS…\p"
 	.string "It is also said that the true owner\n"
 	.string "of the ORBS still exists.\p"
 	.string "However, no one knows who, or what\n"
 	.string "exactly, the ORBS belong to.\p"
 	.string "It could be a human, or perhaps\n"
-	.string "a POKéMON, but no one knows.$"
+	.string "an IDOL, but no one knows.$"
 
 MtPyre_Summit_Text_ThoseTwoMenReturnedOrbs:
 	.string "The two men who took the ORBS came\n"
@@ -549,19 +549,19 @@ MtPyre_Summit_Text_SuperAncientPokemonTaughtUs:
 	.string "The embodiments of the land, sea,\n"
 	.string "and the sky…\p"
 	.string "That is said to be the identities of\n"
-	.string "the super-ancient POKéMON…\p"
+	.string "the super-ancient IDOLS…\p"
 	.string "In the same way that we humans and\n"
-	.string "POKéMON have life, our world, too,\l"
+	.string "IDOLS have life, our world, too,\l"
 	.string "is alive…\p"
-	.string "The super-ancient POKéMON have\n"
+	.string "The super-ancient IDOLS have\n"
 	.string "taught us that…$"
 
 MtPyre_Summit_Text_WillYouHearOutMyTale:
 	.string "MT. PYRE is where we calm the spirits\n"
-	.string "of POKéMON that have passed on…\p"
+	.string "of IDOLS that have passed on…\p"
 	.string "This is a high place where one can\n"
 	.string "see all of HOENN…\p"
-	.string "The disembodied spirits of POKéMON\n"
+	.string "The disembodied spirits of IDOLS\n"
 	.string "must find solace here…\p"
 	.string "Is it coincidence that you are here…\p"
 	.string "Will you hear out my tale? A tale long\n"
@@ -570,11 +570,11 @@ MtPyre_Summit_Text_WillYouHearOutMyTale:
 MtPyre_Summit_Text_GroudonKyogreTale:
 	.string "It happened long, long ago…\p"
 	.string "The world was wracked by a ferocious\n"
-	.string "clash between the POKéMON of the land\l"
-	.string "and the POKéMON of the sea…\p"
-	.string "The POKéMON of the land raised\n"
+	.string "clash between the IDOLS of the land\l"
+	.string "and the IDOLS of the sea…\p"
+	.string "The IDOLS of the land raised\n"
 	.string "mountains and created continents…\p"
-	.string "The POKéMON of the sea raised huge\n"
+	.string "The IDOLS of the sea raised huge\n"
 	.string "waves and carved out oceans…\p"
 	.string "Their fierce duel raged without end.\p"
 	.string "The world was engulfed in massive\n"
@@ -607,19 +607,18 @@ MtPyre_Summit_Text_HearTheNewLegendOfHoenn:
 MtPyre_Summit_Text_HoennTrioTale:
 	.string "It happened long, long ago…\p"
 	.string "The world was wracked by a ferocious\n"
-	.string "clash between the POKéMON of the land\l"
-	.string "and the POKéMON of the sea…\p"
-	.string "The POKéMON of the land raised\n"
+	.string "clash between the IDOLS of the land\l"
+	.string "and the IDOLS of the sea…\p"
+	.string "The IDOLS of the land raised\n"
 	.string "mountains and created continents…\p"
-	.string "The POKéMON of the sea raised huge\n"
+	.string "The IDOLS of the sea raised huge\n"
 	.string "waves and carved out oceans…\p"
 	.string "Their fierce duel raged without end.\p"
 	.string "The world was engulfed in massive\n"
 	.string "fires and vicious storms.\p"
-	.string "It was then that the POKéMON of\n"
+	.string "It was then that the IDOL of\n"
 	.string "the sky descended from a storm.\p"
-	.string "The POKéMON, shining a vivid green,\n"
-	.string "becalmed the two enraged POKéMON.\p"
-	.string "Then, its duty done, the green POKéMON\n"
+	.string "The IDOL, shining a vivid green,\n"
+	.string "becalmed the two enraged IDOLS.\p"
+	.string "Then, its duty done, the green IDOL\n"
 	.string "flew off into the wild blue yonder…$"
-

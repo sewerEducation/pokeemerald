@@ -11,82 +11,82 @@ Common_EventScript_SetGymTrainers::
 	end
 
 RustboroCity_Gym_SetGymTrainers::
-	settrainerflag TRAINER_JOSH
-	settrainerflag TRAINER_TOMMY
-	settrainerflag TRAINER_MARC
+	settrainerflag PRODUCER_JOSH
+	settrainerflag PRODUCER_TOMMY
+	settrainerflag PRODUCER_MARC
 	return
 
 DewfordTown_Gym_SetGymTrainers::
-	settrainerflag TRAINER_TAKAO
-	settrainerflag TRAINER_JOCELYN
-	settrainerflag TRAINER_LAURA
-	settrainerflag TRAINER_BRENDEN
-	settrainerflag TRAINER_CRISTIAN
-	settrainerflag TRAINER_LILITH
+	settrainerflag PRODUCER_TAKAO
+	settrainerflag PRODUCER_JOCELYN
+	settrainerflag PRODUCER_LAURA
+	settrainerflag PRODUCER_BRENDEN
+	settrainerflag PRODUCER_CRISTIAN
+	settrainerflag PRODUCER_LILITH
 	return
 
 MauvilleCity_Gym_SetGymTrainers::
-	settrainerflag TRAINER_KIRK
-	settrainerflag TRAINER_SHAWN
-	settrainerflag TRAINER_BEN
-	settrainerflag TRAINER_VIVIAN
-	settrainerflag TRAINER_ANGELO
+	settrainerflag PRODUCER_KIRK
+	settrainerflag PRODUCER_SHAWN
+	settrainerflag PRODUCER_BEN
+	settrainerflag PRODUCER_VIVIAN
+	settrainerflag PRODUCER_ANGELO
 	return
 
 LavaridgeTown_Gym_SetGymTrainers::
-	settrainerflag TRAINER_COLE
-	settrainerflag TRAINER_AXLE
-	settrainerflag TRAINER_KEEGAN
-	settrainerflag TRAINER_GERALD
-	settrainerflag TRAINER_DANIELLE
-	settrainerflag TRAINER_JACE
-	settrainerflag TRAINER_JEFF
-	settrainerflag TRAINER_ELI
+	settrainerflag PRODUCER_COLE
+	settrainerflag PRODUCER_AXLE
+	settrainerflag PRODUCER_KEEGAN
+	settrainerflag PRODUCER_GERALD
+	settrainerflag PRODUCER_DANIELLE
+	settrainerflag PRODUCER_JACE
+	settrainerflag PRODUCER_JEFF
+	settrainerflag PRODUCER_ELI
 	return
 
 PetalburgCity_Gym_SetGymTrainers::
-	settrainerflag TRAINER_RANDALL
-	settrainerflag TRAINER_PARKER
-	settrainerflag TRAINER_GEORGE
-	settrainerflag TRAINER_BERKE
-	settrainerflag TRAINER_MARY
-	settrainerflag TRAINER_ALEXIA
-	settrainerflag TRAINER_JODY
+	settrainerflag PRODUCER_RANDALL
+	settrainerflag PRODUCER_PARKER
+	settrainerflag PRODUCER_GEORGE
+	settrainerflag PRODUCER_BERKE
+	settrainerflag PRODUCER_MARY
+	settrainerflag PRODUCER_ALEXIA
+	settrainerflag PRODUCER_JODY
 	return
 
 FortreeCity_Gym_SetGymTrainers::
-	settrainerflag TRAINER_JARED
-	settrainerflag TRAINER_FLINT
-	settrainerflag TRAINER_ASHLEY
-	settrainerflag TRAINER_EDWARDO
-	settrainerflag TRAINER_HUMBERTO
-	settrainerflag TRAINER_DARIUS
+	settrainerflag PRODUCER_JARED
+	settrainerflag PRODUCER_FLINT
+	settrainerflag PRODUCER_ASHLEY
+	settrainerflag PRODUCER_EDWARDO
+	settrainerflag PRODUCER_HUMBERTO
+	settrainerflag PRODUCER_DARIUS
 	return
 
 MossdeepCity_Gym_SetGymTrainers::
-	settrainerflag TRAINER_PRESTON
-	settrainerflag TRAINER_VIRGIL
-	settrainerflag TRAINER_BLAKE
-	settrainerflag TRAINER_HANNAH
-	settrainerflag TRAINER_SAMANTHA
-	settrainerflag TRAINER_MAURA
-	settrainerflag TRAINER_SYLVIA
-	settrainerflag TRAINER_NATE
-	settrainerflag TRAINER_KATHLEEN
-	settrainerflag TRAINER_CLIFFORD
-	settrainerflag TRAINER_MACEY
-	settrainerflag TRAINER_NICHOLAS
+	settrainerflag PRODUCER_PRESTON
+	settrainerflag PRODUCER_VIRGIL
+	settrainerflag PRODUCER_BLAKE
+	settrainerflag PRODUCER_HANNAH
+	settrainerflag PRODUCER_SAMANTHA
+	settrainerflag PRODUCER_MAURA
+	settrainerflag PRODUCER_SYLVIA
+	settrainerflag PRODUCER_NATE
+	settrainerflag PRODUCER_KATHLEEN
+	settrainerflag PRODUCER_CLIFFORD
+	settrainerflag PRODUCER_MACEY
+	settrainerflag PRODUCER_NICHOLAS
 	return
 
 SootopolisCity_Gym_SetGymTrainers::
-	settrainerflag TRAINER_ANDREA
-	settrainerflag TRAINER_CRISSY
-	settrainerflag TRAINER_BRIANNA
-	settrainerflag TRAINER_CONNIE
-	settrainerflag TRAINER_BRIDGET
-	settrainerflag TRAINER_OLIVIA
-	settrainerflag TRAINER_TIFFANY
-	settrainerflag TRAINER_BETHANY
-	settrainerflag TRAINER_ANNIKA
-	settrainerflag TRAINER_DAPHNE
+	settrainerflag PRODUCER_ANDREA
+	settrainerflag PRODUCER_CRISSY
+	settrainerflag PRODUCER_BRIANNA
+	settrainerflag PRODUCER_CONNIE
+	settrainerflag PRODUCER_BRIDGET
+	settrainerflag PRODUCER_OLIVIA
+	settrainerflag PRODUCER_TIFFANY
+	settrainerflag PRODUCER_BETHANY
+	settrainerflag PRODUCER_ANNIKA
+	settrainerflag PRODUCER_DAPHNE
 	return

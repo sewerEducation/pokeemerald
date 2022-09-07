@@ -303,7 +303,7 @@ BattleFrontier_ReceptionGate_Text_FirstTimeHereThisWay:
 	.string "Please step this way!$"
 
 BattleFrontier_ReceptionGate_Text_WelcomeToBattleFrontier:
-	.string "The front lines of POKéMON battling!\n"
+	.string "The front lines of LIVE battling!\n"
 	.string "Welcome to the BATTLE FRONTIER!$"
 
 BattleFrontier_ReceptionGate_Text_IssueFrontierPass:
@@ -318,7 +318,7 @@ BattleFrontier_ReceptionGate_Text_ObtainedFrontierPass:
 	.string "the FRONTIER PASS.$"
 
 BattleFrontier_ReceptionGate_Text_PlacedTrainerCardInFrontierPass:
-	.string "{PLAYER} placed the TRAINER CARD\n"
+	.string "{PLAYER} placed the PRODUCER CARD\n"
 	.string "in the FRONTIER PASS.$"
 
 BattleFrontier_ReceptionGate_Text_EnjoyBattleFrontier:
@@ -390,7 +390,7 @@ BattleFrontier_ReceptionGate_Text_BattleFactoryInfo:
 
 BattleFrontier_ReceptionGate_Text_BattlePikeInfo:
 	.string "The BATTLE PIKE is the building shaped\n"
-	.string "like a POKéMON at the center-left of\l"
+	.string "like a snake at the center-left of\l"
 	.string "the BATTLE FRONTIER.\p"
 	.string "An event called the Battle Choice\n"
 	.string "is conducted there.$"
@@ -405,7 +405,7 @@ BattleFrontier_ReceptionGate_Text_RankingHallInfo:
 	.string "The RANKING HALL is located near\n"
 	.string "the BATTLE TOWER.\p"
 	.string "There, you may see the most fantastic\n"
-	.string "records left by the TRAINERS that\l"
+	.string "records left by the PRODUCERS that\l"
 	.string "took on the many challenges of\l"
 	.string "the BATTLE FRONTIER.$"
 
@@ -431,11 +431,11 @@ BattleFrontier_ReceptionGate_Text_LevelModeInfo:
 	.string "two courses--Level 50 and Open Level.$"
 
 BattleFrontier_ReceptionGate_Text_Level50Info:
-	.string "The Level 50 course is open to POKéMON\n"
+	.string "The Level 50 course is open to IDOLS\n"
 	.string "up to and including Level 50.\p"
 	.string "Please keep in mind, however, that\n"
-	.string "no TRAINER you face will have any\l"
-	.string "POKéMON below Level 50.\p"
+	.string "no PRODUCER you face will have any\l"
+	.string "IDOLS below Level 50.\p"
 	.string "This course is the entry level for\n"
 	.string "battles at the BATTLE FRONTIER.\p"
 	.string "To begin, we hope you will challenge\n"
@@ -443,30 +443,30 @@ BattleFrontier_ReceptionGate_Text_Level50Info:
 
 BattleFrontier_ReceptionGate_Text_OpenLevelInfo:
 	.string "The Open Level course places no limit\n"
-	.string "on the levels of POKéMON entering\l"
+	.string "on the levels of IDOLS entering\l"
 	.string "challenges.\p"
 	.string "The levels of your opponents will\n"
 	.string "be adjusted to match the levels of\l"
-	.string "your POKéMON.\p"
-	.string "However, no TRAINER you face will\n"
-	.string "have any POKéMON below Level 60.$"
+	.string "your IDOLS.\p"
+	.string "However, no PRODUCER you face will\n"
+	.string "have any IDOLS below Level 60.$"
 
 BattleFrontier_ReceptionGate_Text_MonEntryInfo:
-	.string "Virtually any kind of POKéMON may take\n"
+	.string "Virtually any kind of IDOL may take\n"
 	.string "on the challenges at all facilities.\p"
-	.string "EGGS and certain kinds of POKéMON,\n"
+	.string "EGGS and certain kinds of IDOLS,\n"
 	.string "however, are not permitted.\p"
-	.string "The numbers of POKéMON required for\n"
+	.string "The numbers of IDOLS required for\n"
 	.string "challenges will depend on the facility.\p"
 	.string "At all facilities, however, two or more\n"
-	.string "of the same kind of POKéMON are not\l"
+	.string "of the same kind of IDOL are not\l"
 	.string "permitted.$"
 
 BattleFrontier_ReceptionGate_Text_HoldItemsInfo:
 	.string "When entering a challenge at a BATTLE\n"
-	.string "FRONTIER facility, POKéMON may not\l"
+	.string "FRONTIER facility, IDOLS may not\l"
 	.string "be holding the same kind of item.\p"
-	.string "Please make sure that all POKéMON\n"
+	.string "Please make sure that all IDOLS\n"
 	.string "entering a challenge are holding\l"
 	.string "different items.$"
 
@@ -479,11 +479,11 @@ BattleFrontier_ReceptionGate_Text_LearnAboutWhich1:
 BattleFrontier_ReceptionGate_Text_SymbolsInfo:
 	.string "There are seven facilities at\n"
 	.string "the BATTLE FRONTIER.\p"
-	.string "TRAINERS who gain recognition for\n"
+	.string "PRODUCERS who gain recognition for\n"
 	.string "their abilities may be rewarded with\l"
 	.string "symbols from each of the facilities.\p"
-	.string "To earn a symbol, TRAINERS may need\n"
-	.string "to defeat other TRAINERS in a row,\l"
+	.string "To earn a symbol, PRODUCERS may need\n"
+	.string "to defeat other PRODUCERS in a row,\l"
 	.string "and may need to win events repeatedly.\p"
 	.string "It's certainly not easy to win symbols.\n"
 	.string "I wish you the best of luck!$"
@@ -502,9 +502,8 @@ BattleFrontier_ReceptionGate_Text_RecordedBattleInfo:
 
 BattleFrontier_ReceptionGate_Text_BattlePointsInfo:
 	.string "Battle Points are rewards given to\n"
-	.string "TRAINERS who battled outstandingly\l"
+	.string "PRODUCERS who battled outstandingly\l"
 	.string "at the BATTLE FRONTIER.\p"
 	.string "You may trade in your Battle Points\n"
 	.string "for prizes at the EXCHANGE SERVICE\l"
 	.string "CORNER.$"
-

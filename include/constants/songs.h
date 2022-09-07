@@ -340,7 +340,7 @@
 #define MUS_ROUTE111                409 // MUS_ASHROAD
 #define MUS_HELP                    410 // MUS_EVENT0
 #define MUS_UNDERWATER              411 // MUS_DEEPDEEP
-#define MUS_VICTORY_TRAINER         412 // MUS_KACHI1
+#define MUS_VICTORY_PRODUCER         412 // MUS_KACHI1
 #define MUS_TITLE                   413 // MUS_TITLE3
 #define MUS_INTRO                   414 // MUS_DEMO1
 #define MUS_ENCOUNTER_MAY           415 // MUS_GIRL_SUP
@@ -404,7 +404,7 @@
 #define MUS_B_DOME_LOBBY            473 // MUS_B_DOME1
 #define MUS_VS_WILD                 474 // MUS_BATTLE27
 #define MUS_VS_AQUA_MAGMA           475 // MUS_BATTLE31
-#define MUS_VS_TRAINER              476 // MUS_BATTLE20
+#define MUS_VS_PRODUCER              476 // MUS_BATTLE20
 #define MUS_VS_GYM_LEADER           477 // MUS_BATTLE32
 #define MUS_VS_CHAMPION             478 // MUS_BATTLE33
 #define MUS_VS_REGI                 479 // MUS_BATTLE36
@@ -438,7 +438,7 @@
 #define MUS_RG_ROUTE11              506 // MUS_RG_LOAD03
 #define MUS_RG_VICTORY_ROAD         507 // MUS_RG_CHAMP_R
 #define MUS_RG_VS_GYM_LEADER        508 // MUS_RG_VS_GYM
-#define MUS_RG_VS_TRAINER           509 // MUS_RG_VS_TORE
+#define MUS_RG_VS_PRODUCER           509 // MUS_RG_VS_TORE
 #define MUS_RG_VS_WILD              510 // MUS_RG_VS_YASEI
 #define MUS_RG_VS_CHAMPION          511 // MUS_RG_VS_LAST
 #define MUS_RG_PALLET               512 // MUS_RG_MASARA
@@ -451,7 +451,7 @@
 #define MUS_RG_SILPH                519 // MUS_RG_SHIRUHU
 #define MUS_RG_FUCHSIA              520 // MUS_RG_HANADA
 #define MUS_RG_CELADON              521 // MUS_RG_TAMAMUSI
-#define MUS_RG_VICTORY_TRAINER      522 // MUS_RG_WIN_TRE (Identical to MUS_VICTORY_TRAINER)
+#define MUS_RG_VICTORY_PRODUCER      522 // MUS_RG_WIN_TRE (Identical to MUS_VICTORY_PRODUCER)
 #define MUS_RG_VICTORY_WILD         523 // MUS_RG_WIN_YASEI (Identical to MUS_VICTORY_WILD)
 #define MUS_RG_VICTORY_GYM_LEADER   524 // MUS_RG_WIN_GYM (Identical to MUS_VICTORY_GYM_LEADER)
 #define MUS_RG_VERMILLION           525 // MUS_RG_KUCHIBA
@@ -485,7 +485,7 @@
 #define MUS_RG_VS_LEGEND            553 // MUS_RG_VS_DEN
 #define MUS_RG_ENCOUNTER_GYM_LEADER 554 // MUS_RG_EXEYE
 #define MUS_RG_ENCOUNTER_DEOXYS     555 // MUS_RG_DEOEYE
-#define MUS_RG_TRAINER_TOWER        556 // MUS_RG_T_TOWER
+#define MUS_RG_PRODUCER_TOWER        556 // MUS_RG_T_TOWER
 #define MUS_RG_SLOW_PALLET          557 // MUS_RG_SLOWMASARA
 #define MUS_RG_TEACHY_TV_MENU       558 // MUS_RG_TVNOIZE
 

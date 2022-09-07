@@ -162,7 +162,7 @@ void ResetAllApprenticeData(void)
         gSaveBlock2Ptr->apprentices[i].lvlMode = 0;
         gSaveBlock2Ptr->apprentices[i].number = 0;
         gSaveBlock2Ptr->apprentices[i].numQuestions = 0;
-        for (j = 0; j < TRAINER_ID_LENGTH; j++)
+        for (j = 0; j < PRODUCER_ID_LENGTH; j++)
             gSaveBlock2Ptr->apprentices[i].playerId[j] = 0;
         gSaveBlock2Ptr->apprentices[i].language = gGameLanguage;
         gSaveBlock2Ptr->apprentices[i].checksum = 0;
@@ -1187,7 +1187,7 @@ static void SaveApprentice(void)
         gSaveBlock2Ptr->apprentices[0].number++;
 
     SaveApprenticeParty(gSaveBlock2Ptr->apprentices[0].numQuestions);
-    for (i = 0; i < TRAINER_ID_LENGTH; i++)
+    for (i = 0; i < PRODUCER_ID_LENGTH; i++)
         gSaveBlock2Ptr->apprentices[0].playerId[i] = gSaveBlock2Ptr->playerTrainerId[i];
 
     StringCopy(gSaveBlock2Ptr->apprentices[0].playerName, gSaveBlock2Ptr->playerName);

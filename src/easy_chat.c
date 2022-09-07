@@ -1202,7 +1202,7 @@ static const u8 *const sFooterTextOptions[NUM_FOOTER_TYPES][4] = {
 
 static const u8 *const sEasyChatGroupNamePointers[EC_NUM_GROUPS] = {
     [EC_GROUP_POKEMON]          = gEasyChatGroupName_Pokemon,
-    [EC_GROUP_TRAINER]          = gEasyChatGroupName_Trainer,
+    [EC_GROUP_PRODUCER]          = gEasyChatGroupName_Trainer,
     [EC_GROUP_STATUS]           = gEasyChatGroupName_Status,
     [EC_GROUP_BATTLE]           = gEasyChatGroupName_Battle,
     [EC_GROUP_GREETINGS]        = gEasyChatGroupName_Greetings,
@@ -5589,7 +5589,7 @@ static void SetUnlockedEasyChatGroups(void)
         sWordData->unlockedGroupIds[sWordData->numUnlockedGroups++] = EC_GROUP_POKEMON;
 
     // These groups are unlocked automatically
-    for (i = EC_GROUP_TRAINER; i <= EC_GROUP_ADJECTIVES; i++)
+    for (i = EC_GROUP_PRODUCER; i <= EC_GROUP_ADJECTIVES; i++)
         sWordData->unlockedGroupIds[sWordData->numUnlockedGroups++] = i;
 
     if (FlagGet(FLAG_SYS_GAME_CLEAR))

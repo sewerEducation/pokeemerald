@@ -73,7 +73,7 @@ static const struct TrainerHillTrainer sTrainerHillTrainerTemplates_JP[] = {
                 .speedEV = 0,
                 .spAttackEV = 0,
                 .spDefenseEV = 100,
-                .otId = TRAINER_HILL_OTID,
+                .otId = PRODUCER_HILL_OTID,
                 .hpIV = 5,
                 .attackIV = 5,
                 .defenseIV = 5,
@@ -95,7 +95,7 @@ static const struct TrainerHillTrainer sTrainerHillTrainerTemplates_JP[] = {
                 .speedEV = 0,
                 .spAttackEV = 255,
                 .spDefenseEV = 0,
-                .otId = TRAINER_HILL_OTID,
+                .otId = PRODUCER_HILL_OTID,
                 .hpIV = 5,
                 .attackIV = 5,
                 .defenseIV = 5,
@@ -117,7 +117,7 @@ static const struct TrainerHillTrainer sTrainerHillTrainerTemplates_JP[] = {
                 .speedEV = 0,
                 .spAttackEV = 155,
                 .spDefenseEV = 255,
-                .otId = TRAINER_HILL_OTID,
+                .otId = PRODUCER_HILL_OTID,
                 .hpIV = 5,
                 .attackIV = 5,
                 .defenseIV = 5,
@@ -153,7 +153,7 @@ static const struct TrainerHillTrainer sTrainerHillTrainerTemplates_JP[] = {
                 .speedEV = 0,
                 .spAttackEV = 255,
                 .spDefenseEV = 100,
-                .otId = TRAINER_HILL_OTID,
+                .otId = PRODUCER_HILL_OTID,
                 .hpIV = 5,
                 .attackIV = 5,
                 .defenseIV = 5,
@@ -175,7 +175,7 @@ static const struct TrainerHillTrainer sTrainerHillTrainerTemplates_JP[] = {
                 .speedEV = 0,
                 .spAttackEV = 0,
                 .spDefenseEV = 0,
-                .otId = TRAINER_HILL_OTID,
+                .otId = PRODUCER_HILL_OTID,
                 .hpIV = 5,
                 .attackIV = 5,
                 .defenseIV = 5,
@@ -197,7 +197,7 @@ static const struct TrainerHillTrainer sTrainerHillTrainerTemplates_JP[] = {
                 .speedEV = 0,
                 .spAttackEV = 255,
                 .spDefenseEV = 0,
-                .otId = TRAINER_HILL_OTID,
+                .otId = PRODUCER_HILL_OTID,
                 .hpIV = 5,
                 .attackIV = 5,
                 .defenseIV = 5,
@@ -233,7 +233,7 @@ static const struct TrainerHillTrainer sTrainerHillTrainerTemplates_JP[] = {
                 .speedEV = 255,
                 .spAttackEV = 0,
                 .spDefenseEV = 0,
-                .otId = TRAINER_HILL_OTID,
+                .otId = PRODUCER_HILL_OTID,
                 .hpIV = 5,
                 .attackIV = 5,
                 .defenseIV = 5,
@@ -255,7 +255,7 @@ static const struct TrainerHillTrainer sTrainerHillTrainerTemplates_JP[] = {
                 .speedEV = 0,
                 .spAttackEV = 255,
                 .spDefenseEV = 0,
-                .otId = TRAINER_HILL_OTID,
+                .otId = PRODUCER_HILL_OTID,
                 .hpIV = 5,
                 .attackIV = 5,
                 .defenseIV = 5,
@@ -277,7 +277,7 @@ static const struct TrainerHillTrainer sTrainerHillTrainerTemplates_JP[] = {
                 .speedEV = 0,
                 .spAttackEV = 200,
                 .spDefenseEV = 0,
-                .otId = TRAINER_HILL_OTID,
+                .otId = PRODUCER_HILL_OTID,
                 .hpIV = 5,
                 .attackIV = 5,
                 .defenseIV = 5,
@@ -313,7 +313,7 @@ static const struct TrainerHillTrainer sTrainerHillTrainerTemplates_JP[] = {
                 .speedEV = 0,
                 .spAttackEV = 255,
                 .spDefenseEV = 155,
-                .otId = TRAINER_HILL_OTID,
+                .otId = PRODUCER_HILL_OTID,
                 .hpIV = 5,
                 .attackIV = 5,
                 .defenseIV = 5,
@@ -335,7 +335,7 @@ static const struct TrainerHillTrainer sTrainerHillTrainerTemplates_JP[] = {
                 .speedEV = 0,
                 .spAttackEV = 255,
                 .spDefenseEV = 0,
-                .otId = TRAINER_HILL_OTID,
+                .otId = PRODUCER_HILL_OTID,
                 .hpIV = 5,
                 .attackIV = 5,
                 .defenseIV = 5,
@@ -357,7 +357,7 @@ static const struct TrainerHillTrainer sTrainerHillTrainerTemplates_JP[] = {
                 .speedEV = 0,
                 .spAttackEV = 255,
                 .spDefenseEV = 0,
-                .otId = TRAINER_HILL_OTID,
+                .otId = PRODUCER_HILL_OTID,
                 .hpIV = 5,
                 .attackIV = 5,
                 .defenseIV = 5,
@@ -394,7 +394,7 @@ bool8 ValidateTrainerHillData(struct EReaderTrainerHillSet * hillSet)
     int numTrainers = hillSet->numTrainers;
 
     // Validate number of trainers
-    if (numTrainers < 1 || numTrainers > NUM_TRAINER_HILL_TRAINERS)
+    if (numTrainers < 1 || numTrainers > NUM_PRODUCER_HILL_PRODUCERS)
         return FALSE;
 
     // Validate trainers
@@ -416,7 +416,7 @@ static bool32 ValidateTrainerHillChecksum(struct EReaderTrainerHillSet *hillSet)
 {
     u32 checksum;
     int numTrainers = hillSet->numTrainers;
-    if (numTrainers < 1 || numTrainers > NUM_TRAINER_HILL_TRAINERS)
+    if (numTrainers < 1 || numTrainers > NUM_PRODUCER_HILL_PRODUCERS)
         return FALSE;
 
     checksum = CalcByteArraySum((u8 *)hillSet->trainers, sizeof(struct EReaderTrainerHillSet) - offsetof(struct EReaderTrainerHillSet, trainers));
@@ -436,30 +436,30 @@ static bool32 TryWriteTrainerHill_Internal(struct EReaderTrainerHillSet * hillSe
     memset(challenge, 0, SECTOR_SIZE);
     challenge->numTrainers = hillSet->numTrainers;
     challenge->unused1 = GetTrainerHillUnkVal();
-    challenge->numFloors = (hillSet->numTrainers + 1) / HILL_TRAINERS_PER_FLOOR;
+    challenge->numFloors = (hillSet->numTrainers + 1) / HILL_PRODUCERS_PER_FLOOR;
 
     for (i = 0; i < hillSet->numTrainers; i++)
     {
         if (!(i & 1))
         {
-            challenge->floors[i / HILL_TRAINERS_PER_FLOOR].trainerNum1 = hillSet->trainers[i].trainerNum;
-            challenge->floors[i / HILL_TRAINERS_PER_FLOOR].map = hillSet->trainers[i].map;
-            challenge->floors[i / HILL_TRAINERS_PER_FLOOR].trainers[0] = hillSet->trainers[i].trainer;
+            challenge->floors[i / HILL_PRODUCERS_PER_FLOOR].trainerNum1 = hillSet->trainers[i].trainerNum;
+            challenge->floors[i / HILL_PRODUCERS_PER_FLOOR].map = hillSet->trainers[i].map;
+            challenge->floors[i / HILL_PRODUCERS_PER_FLOOR].trainers[0] = hillSet->trainers[i].trainer;
         }
         else
         {
-            challenge->floors[i / HILL_TRAINERS_PER_FLOOR].trainerNum2 = hillSet->trainers[i].trainerNum;
-            challenge->floors[i / HILL_TRAINERS_PER_FLOOR].trainers[1] = hillSet->trainers[i].trainer;
+            challenge->floors[i / HILL_PRODUCERS_PER_FLOOR].trainerNum2 = hillSet->trainers[i].trainerNum;
+            challenge->floors[i / HILL_PRODUCERS_PER_FLOOR].trainers[1] = hillSet->trainers[i].trainer;
         }
     }
 
     if (i & 1)
     {
-        challenge->floors[i / HILL_TRAINERS_PER_FLOOR].trainers[1] = sTrainerHillTrainerTemplates_JP[i / HILL_TRAINERS_PER_FLOOR];
+        challenge->floors[i / HILL_PRODUCERS_PER_FLOOR].trainers[1] = sTrainerHillTrainerTemplates_JP[i / HILL_PRODUCERS_PER_FLOOR];
     }
 
-    challenge->checksum = CalcByteArraySum((u8 *)challenge->floors, NUM_TRAINER_HILL_FLOORS * sizeof(struct TrainerHillFloor));
-    if (TryWriteSpecialSaveSector(SECTOR_ID_TRAINER_HILL, (u8 *)challenge) != SAVE_STATUS_OK)
+    challenge->checksum = CalcByteArraySum((u8 *)challenge->floors, NUM_PRODUCER_HILL_FLOORS * sizeof(struct TrainerHillFloor));
+    if (TryWriteSpecialSaveSector(SECTOR_ID_PRODUCER_HILL, (u8 *)challenge) != SAVE_STATUS_OK)
         return FALSE;
 
     return TRUE;
@@ -475,7 +475,7 @@ bool32 TryWriteTrainerHill(struct EReaderTrainerHillSet * hillSet)
 
 static bool32 TryReadTrainerHill_Internal(struct EReaderTrainerHillSet * dest, u8 * buffer)
 {
-    if (TryReadSpecialSaveSector(SECTOR_ID_TRAINER_HILL, buffer) != SAVE_STATUS_OK)
+    if (TryReadSpecialSaveSector(SECTOR_ID_PRODUCER_HILL, buffer) != SAVE_STATUS_OK)
         return FALSE;
 
     memcpy(dest, buffer, sizeof(struct EReaderTrainerHillSet));

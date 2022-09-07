@@ -108,9 +108,9 @@ static void (*const sLinkOpponentBufferCommands[CONTROLLER_CMDS_COUNT])(void) =
     [CONTROLLER_LOADMONSPRITE]            = LinkOpponentHandleLoadMonSprite,
     [CONTROLLER_SWITCHINANIM]             = LinkOpponentHandleSwitchInAnim,
     [CONTROLLER_RETURNMONTOBALL]          = LinkOpponentHandleReturnMonToBall,
-    [CONTROLLER_DRAWTRAINERPIC]           = LinkOpponentHandleDrawTrainerPic,
-    [CONTROLLER_TRAINERSLIDE]             = LinkOpponentHandleTrainerSlide,
-    [CONTROLLER_TRAINERSLIDEBACK]         = LinkOpponentHandleTrainerSlideBack,
+    [CONTROLLER_DRAWPRODUCERPIC]           = LinkOpponentHandleDrawTrainerPic,
+    [CONTROLLER_PRODUCERSLIDE]             = LinkOpponentHandleTrainerSlide,
+    [CONTROLLER_PRODUCERSLIDEBACK]         = LinkOpponentHandleTrainerSlideBack,
     [CONTROLLER_FAINTANIMATION]           = LinkOpponentHandleFaintAnimation,
     [CONTROLLER_PALETTEFADE]              = LinkOpponentHandlePaletteFade,
     [CONTROLLER_SUCCESSBALLTHROWANIM]     = LinkOpponentHandleSuccessBallThrowAnim,
@@ -148,7 +148,7 @@ static void (*const sLinkOpponentBufferCommands[CONTROLLER_CMDS_COUNT])(void) =
     [CONTROLLER_PLAYFANFAREORBGM]         = LinkOpponentHandlePlayFanfareOrBGM,
     [CONTROLLER_FAINTINGCRY]              = LinkOpponentHandleFaintingCry,
     [CONTROLLER_INTROSLIDE]               = LinkOpponentHandleIntroSlide,
-    [CONTROLLER_INTROTRAINERBALLTHROW]    = LinkOpponentHandleIntroTrainerBallThrow,
+    [CONTROLLER_INTROPRODUCERBALLTHROW]    = LinkOpponentHandleIntroTrainerBallThrow,
     [CONTROLLER_DRAWPARTYSTATUSSUMMARY]   = LinkOpponentHandleDrawPartyStatusSummary,
     [CONTROLLER_HIDEPARTYSTATUSSUMMARY]   = LinkOpponentHandleHidePartyStatusSummary,
     [CONTROLLER_ENDBOUNCE]                = LinkOpponentHandleEndBounceEffect,
@@ -1263,7 +1263,7 @@ static void LinkOpponentHandleDrawTrainerPic(void)
     else
     {
         xPos = 176;
-        if (gTrainerBattleOpponent_A == TRAINER_UNION_ROOM)
+        if (gTrainerBattleOpponent_A == PRODUCER_UNION_ROOM)
         {
             trainerPicId = GetUnionRoomTrainerPic();
         }

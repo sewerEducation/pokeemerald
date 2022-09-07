@@ -611,7 +611,7 @@ static void (* const sFrontierUtilFuncs[])(void) =
     [FRONTIER_UTIL_FUNC_SET_DATA]              = SetFrontierData,
     [FRONTIER_UTIL_FUNC_SET_PARTY_ORDER]       = SetSelectedPartyOrder,
     [FRONTIER_UTIL_FUNC_SOFT_RESET]            = DoSoftReset_,
-    [FRONTIER_UTIL_FUNC_SET_TRAINERS]          = SetFrontierTrainers,
+    [FRONTIER_UTIL_FUNC_SET_PRODUCERS]          = SetFrontierTrainers,
     [FRONTIER_UTIL_FUNC_SAVE_PARTY]            = SaveSelectedParty,
     [FRONTIER_UTIL_FUNC_RESULTS_WINDOW]        = ShowFacilityResultsWindow,
     [FRONTIER_UTIL_FUNC_CHECK_AIR_TV_SHOW]     = CheckPutFrontierTVShowOnAir,
@@ -622,11 +622,11 @@ static void (* const sFrontierUtilFuncs[])(void) =
     [FRONTIER_UTIL_FUNC_GIVE_FACILITY_SYMBOL]  = GiveFacilitySymbol,
     [FRONTIER_UTIL_FUNC_CHECK_BATTLE_TYPE]     = CheckBattleTypeFlag,
     [FRONTIER_UTIL_FUNC_CHECK_INELIGIBLE]      = CheckPartyIneligibility,
-    [FRONTIER_UTIL_FUNC_CHECK_VISIT_TRAINER]   = ValidateVisitingTrainer,
+    [FRONTIER_UTIL_FUNC_CHECK_VISIT_PRODUCER]   = ValidateVisitingTrainer,
     [FRONTIER_UTIL_FUNC_INCREMENT_STREAK]      = IncrementWinStreak,
     [FRONTIER_UTIL_FUNC_RESTORE_HELD_ITEMS]    = RestoreHeldItems,
     [FRONTIER_UTIL_FUNC_SAVE_BATTLE]           = SaveRecordBattle,
-    [FRONTIER_UTIL_FUNC_BUFFER_TRAINER_NAME]   = BufferFrontierTrainerName,
+    [FRONTIER_UTIL_FUNC_BUFFER_PRODUCER_NAME]   = BufferFrontierTrainerName,
     [FRONTIER_UTIL_FUNC_RESET_SKETCH_MOVES]    = ResetSketchedMoves,
     [FRONTIER_UTIL_FUNC_SET_BRAIN_OBJECT]      = SetFacilityBrainObjectEvent,
 };
@@ -718,13 +718,13 @@ static const u8 *const sHallFacilityToRecordsText[] =
 
 static const u16 sFrontierBrainTrainerIds[NUM_FRONTIER_FACILITIES] =
 {
-    [FRONTIER_FACILITY_TOWER]   = TRAINER_ANABEL,
-    [FRONTIER_FACILITY_DOME]    = TRAINER_TUCKER,
-    [FRONTIER_FACILITY_PALACE]  = TRAINER_SPENSER,
-    [FRONTIER_FACILITY_ARENA]   = TRAINER_GRETA,
-    [FRONTIER_FACILITY_FACTORY] = TRAINER_NOLAND,
-    [FRONTIER_FACILITY_PIKE]    = TRAINER_LUCY,
-    [FRONTIER_FACILITY_PYRAMID] = TRAINER_BRANDON,
+    [FRONTIER_FACILITY_TOWER]   = PRODUCER_ANABEL,
+    [FRONTIER_FACILITY_DOME]    = PRODUCER_TUCKER,
+    [FRONTIER_FACILITY_PALACE]  = PRODUCER_SPENSER,
+    [FRONTIER_FACILITY_ARENA]   = PRODUCER_GRETA,
+    [FRONTIER_FACILITY_FACTORY] = PRODUCER_NOLAND,
+    [FRONTIER_FACILITY_PIKE]    = PRODUCER_LUCY,
+    [FRONTIER_FACILITY_PYRAMID] = PRODUCER_BRANDON,
 };
 
 static const u8 *const sFrontierBrainPlayerLostSilverTexts[NUM_FRONTIER_FACILITIES] =
@@ -1697,64 +1697,64 @@ void CopyFrontierTrainerText(u8 whichText, u16 trainerId)
     switch (whichText)
     {
     case FRONTIER_BEFORE_TEXT:
-        if (trainerId == TRAINER_EREADER)
+        if (trainerId == PRODUCER_EREADER)
             FrontierSpeechToString(gSaveBlock2Ptr->frontier.ereaderTrainer.greeting);
-        else if (trainerId == TRAINER_FRONTIER_BRAIN)
+        else if (trainerId == PRODUCER_FRONTIER_BRAIN)
             CopyFrontierBrainText(FALSE);
-        else if (trainerId < FRONTIER_TRAINERS_COUNT)
+        else if (trainerId < FRONTIER_PRODUCERS_COUNT)
             FrontierSpeechToString(gFacilityTrainers[trainerId].speechBefore);
-        else if (trainerId < TRAINER_RECORD_MIXING_APPRENTICE)
-            FrontierSpeechToString(gSaveBlock2Ptr->frontier.towerRecords[trainerId - TRAINER_RECORD_MIXING_FRIEND].greeting);
+        else if (trainerId < PRODUCER_RECORD_MIXING_APPRENTICE)
+            FrontierSpeechToString(gSaveBlock2Ptr->frontier.towerRecords[trainerId - PRODUCER_RECORD_MIXING_FRIEND].greeting);
         else
-            BufferApprenticeChallengeText(trainerId - TRAINER_RECORD_MIXING_APPRENTICE);
+            BufferApprenticeChallengeText(trainerId - PRODUCER_RECORD_MIXING_APPRENTICE);
         break;
     case FRONTIER_PLAYER_LOST_TEXT:
-        if (trainerId == TRAINER_EREADER)
+        if (trainerId == PRODUCER_EREADER)
         {
             FrontierSpeechToString(gSaveBlock2Ptr->frontier.ereaderTrainer.farewellPlayerLost);
         }
-        else if (trainerId == TRAINER_FRONTIER_BRAIN)
+        else if (trainerId == PRODUCER_FRONTIER_BRAIN)
         {
             CopyFrontierBrainText(FALSE);
         }
-        else if (trainerId < FRONTIER_TRAINERS_COUNT)
+        else if (trainerId < FRONTIER_PRODUCERS_COUNT)
         {
             FrontierSpeechToString(gFacilityTrainers[trainerId].speechWin);
         }
-        else if (trainerId < TRAINER_RECORD_MIXING_APPRENTICE)
+        else if (trainerId < PRODUCER_RECORD_MIXING_APPRENTICE)
         {
             if (gBattleTypeFlags & BATTLE_TYPE_RECORDED)
                 FrontierSpeechToString(GetRecordedBattleEasyChatSpeech());
             else
-                FrontierSpeechToString(gSaveBlock2Ptr->frontier.towerRecords[trainerId - TRAINER_RECORD_MIXING_FRIEND].speechWon);
+                FrontierSpeechToString(gSaveBlock2Ptr->frontier.towerRecords[trainerId - PRODUCER_RECORD_MIXING_FRIEND].speechWon);
         }
         else
         {
             if (gBattleTypeFlags & BATTLE_TYPE_RECORDED)
                 FrontierSpeechToString(GetRecordedBattleEasyChatSpeech());
             else
-                FrontierSpeechToString(gSaveBlock2Ptr->apprentices[trainerId - TRAINER_RECORD_MIXING_APPRENTICE].speechWon);
+                FrontierSpeechToString(gSaveBlock2Ptr->apprentices[trainerId - PRODUCER_RECORD_MIXING_APPRENTICE].speechWon);
         }
         break;
     case FRONTIER_PLAYER_WON_TEXT:
-        if (trainerId == TRAINER_EREADER)
+        if (trainerId == PRODUCER_EREADER)
         {
             FrontierSpeechToString(gSaveBlock2Ptr->frontier.ereaderTrainer.farewellPlayerWon);
         }
-        else if (trainerId == TRAINER_FRONTIER_BRAIN)
+        else if (trainerId == PRODUCER_FRONTIER_BRAIN)
         {
             CopyFrontierBrainText(TRUE);
         }
-        else if (trainerId < FRONTIER_TRAINERS_COUNT)
+        else if (trainerId < FRONTIER_PRODUCERS_COUNT)
         {
             FrontierSpeechToString(gFacilityTrainers[trainerId].speechLose);
         }
-        else if (trainerId < TRAINER_RECORD_MIXING_APPRENTICE)
+        else if (trainerId < PRODUCER_RECORD_MIXING_APPRENTICE)
         {
             if (gBattleTypeFlags & BATTLE_TYPE_RECORDED)
                 FrontierSpeechToString(GetRecordedBattleEasyChatSpeech());
             else
-                FrontierSpeechToString(gSaveBlock2Ptr->frontier.towerRecords[trainerId - TRAINER_RECORD_MIXING_FRIEND].speechLost);
+                FrontierSpeechToString(gSaveBlock2Ptr->frontier.towerRecords[trainerId - PRODUCER_RECORD_MIXING_FRIEND].speechLost);
         }
         else
         {
@@ -1765,7 +1765,7 @@ void CopyFrontierTrainerText(u8 whichText, u16 trainerId)
             }
             else
             {
-                trainerId = gSaveBlock2Ptr->apprentices[trainerId - TRAINER_RECORD_MIXING_APPRENTICE].id;
+                trainerId = gSaveBlock2Ptr->apprentices[trainerId - PRODUCER_RECORD_MIXING_APPRENTICE].id;
                 FrontierSpeechToString(gApprentices[trainerId].speechLost);
             }
         }
@@ -1838,7 +1838,7 @@ void ResetFrontierTrainerIds(void)
 
 static void IsTrainerFrontierBrain(void)
 {
-    if (gTrainerBattleOpponent_A == TRAINER_FRONTIER_BRAIN)
+    if (gTrainerBattleOpponent_A == PRODUCER_FRONTIER_BRAIN)
         gSpecialVar_Result = TRUE;
     else
         gSpecialVar_Result = FALSE;
@@ -1889,7 +1889,7 @@ static void GiveBattlePoints(void)
         challengeNum = ARRAY_COUNT(sBattlePointAwards) - 1;
 
     points = sBattlePointAwards[challengeNum][facility][battleMode];
-    if (gTrainerBattleOpponent_A == TRAINER_FRONTIER_BRAIN)
+    if (gTrainerBattleOpponent_A == PRODUCER_FRONTIER_BRAIN)
         points += 10;
     gSaveBlock2Ptr->frontier.battlePoints += points;
     ConvertIntToDecimalStringN(gStringVar1, points, STR_CONV_MODE_LEFT_ALIGN, 2);
@@ -1899,7 +1899,7 @@ static void GiveBattlePoints(void)
     points = gSaveBlock2Ptr->frontier.cardBattlePoints;
     points += sBattlePointAwards[challengeNum][facility][battleMode];
     IncrementDailyBattlePoints(sBattlePointAwards[challengeNum][facility][battleMode]);
-    if (gTrainerBattleOpponent_A == TRAINER_FRONTIER_BRAIN)
+    if (gTrainerBattleOpponent_A == PRODUCER_FRONTIER_BRAIN)
     {
         points += 10;
         IncrementDailyBattlePoints(10);
@@ -2386,7 +2386,7 @@ void ClearRankingHallRecords(void)
 
     // UB: Passing 0 as a pointer instead of a pointer holding a value of 0.
 #ifdef UBFIX
-    u8 emptyId[TRAINER_ID_LENGTH] = {0};
+    u8 emptyId[PRODUCER_ID_LENGTH] = {0};
     #define ZERO emptyId
 #else
     #define ZERO 0
@@ -2505,7 +2505,7 @@ void CreateFrontierBrainPokemon(void)
     s32 symbol = GetFronterBrainSymbol();
 
     if (facility == FRONTIER_FACILITY_DOME)
-        selectedMonBits = GetDomeTrainerSelectedMons(TrainerIdToDomeTournamentId(TRAINER_FRONTIER_BRAIN));
+        selectedMonBits = GetDomeTrainerSelectedMons(TrainerIdToDomeTournamentId(PRODUCER_FRONTIER_BRAIN));
     else
         selectedMonBits = (1 << FRONTIER_PARTY_SIZE) - 1; // all 3 mons selected
 
@@ -2556,7 +2556,7 @@ u16 GetFrontierBrainMonSpecies(u8 monId)
 
 void SetFrontierBrainObjEventGfx(u8 facility)
 {
-    gTrainerBattleOpponent_A = TRAINER_FRONTIER_BRAIN;
+    gTrainerBattleOpponent_A = PRODUCER_FRONTIER_BRAIN;
     VarSet(VAR_OBJ_GFX_ID_0, sFrontierBrainObjEventGfx[facility][0]);
 }
 

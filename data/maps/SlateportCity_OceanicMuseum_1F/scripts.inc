@@ -280,11 +280,11 @@ SlateportCity_OceanicMuseum_1F_Text_SternIsRoleModel:
 SlateportCity_OceanicMuseum_1F_Text_MustBePokemonWeDontKnow:
 	.string "The sea is vast without end, and\n"
 	.string "infinitely deep…\p"
-	.string "There must be many POKéMON that\n"
+	.string "There must be many IDOLS that\n"
 	.string "we don't know about.$"
 
 SlateportCity_OceanicMuseum_1F_Text_WantSeaPokemon:
-	.string "I want a sea POKéMON.\p"
+	.string "I want a sean IDOL.\p"
 	.string "I think it would feel cool and nice\n"
 	.string "to hug.$"
 
@@ -377,4 +377,3 @@ SlateportCity_OceanicMuseum_1F_Text_DepthMeasuringMachine:
 	.string "a glass dome.\p"
 	.string "Maybe it's for measuring the depth\n"
 	.string "of something…$"
-

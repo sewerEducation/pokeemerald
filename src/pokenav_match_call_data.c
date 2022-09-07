@@ -17,7 +17,7 @@
 enum
 {
     MC_TYPE_NPC,
-    MC_TYPE_TRAINER,
+    MC_TYPE_PRODUCER,
     MC_TYPE_WALLY,
     MC_TYPE_BIRCH,
     MC_TYPE_RIVAL,
@@ -47,7 +47,7 @@ struct MatchCallStructNPC {
     const match_call_text_data_t *textData;
 };
 
-// Shared by MC_TYPE_TRAINER and MC_TYPE_LEADER
+// Shared by MC_TYPE_PRODUCER and MC_TYPE_LEADER
 struct MatchCallStructTrainer {
     u8 type;
     u8 mapSec;
@@ -703,7 +703,7 @@ static u32 MatchCallGetFunctionIndex(match_call_t matchCall)
         default:
         case MC_TYPE_NPC:
             return 0;
-        case MC_TYPE_TRAINER:
+        case MC_TYPE_PRODUCER:
         case MC_TYPE_LEADER:
             return 1;
         case MC_TYPE_WALLY:
@@ -960,7 +960,7 @@ static void MatchCall_GetMessage_NPC(match_call_t matchCall, u8 *dest)
     MatchCall_BufferCallMessageText(matchCall.npc->textData, dest);
 }
 
-// This is the one functional difference between MC_TYPE_TRAINER and MC_TYPE_LEADER
+// This is the one functional difference between MC_TYPE_PRODUCER and MC_TYPE_LEADER
 static void MatchCall_GetMessage_Trainer(match_call_t matchCall, u8 *dest)
 {
     if (matchCall.common->type != MC_TYPE_LEADER)

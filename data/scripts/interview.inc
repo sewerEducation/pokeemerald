@@ -164,7 +164,7 @@ LilycoveCity_ContestLobby_EventScript_Reporter::
 	lock
 	faceplayer
 	goto_if_set FLAG_TEMP_2, LilycoveCity_ContestLobby_EventScript_AlreadyInterviewed
-	setvar VAR_0x8005, TVSHOW_BRAVO_TRAINER_POKEMON_PROFILE
+	setvar VAR_0x8005, TVSHOW_BRAVO_PRODUCER_POKEMON_PROFILE
 	special InterviewBefore
 	goto_if_eq VAR_RESULT, TRUE, LilycoveCity_ContestLobby_EventScript_AlreadyInterviewed
 	copyvar VAR_0x8009, VAR_0x8006
@@ -203,7 +203,7 @@ LilycoveCity_ContestLobby_EventScript_SubmitResponse::
 	goto_if_eq VAR_RESULT, 0, LilycoveCity_ContestLobby_EventScript_DeclineInterview
 	msgbox LilycoveCity_ContestLobby_Text_ThatsAllForInterview, MSGBOX_DEFAULT
 	setflag FLAG_TEMP_2
-	setvar VAR_0x8005, TVSHOW_BRAVO_TRAINER_POKEMON_PROFILE
+	setvar VAR_0x8005, TVSHOW_BRAVO_PRODUCER_POKEMON_PROFILE
 	goto Interview_EventScript_EndInterview
 	end
 
@@ -214,7 +214,7 @@ LilycoveCity_ContestLobby_EventScript_AlreadyInterviewed::
 
 LilycoveCity_ContestLobby_EventScript_TryShowContestReporter::
 	goto_if_ne VAR_CONTEST_HALL_STATE, 2, LilycoveCity_ContestLobby_EventScript_DontShowContestReporter
-	setvar VAR_0x8005, TVSHOW_BRAVO_TRAINER_POKEMON_PROFILE
+	setvar VAR_0x8005, TVSHOW_BRAVO_PRODUCER_POKEMON_PROFILE
 	special InterviewBefore
 	goto_if_eq VAR_RESULT, TRUE, LilycoveCity_ContestLobby_EventScript_DontShowContestReporter
 	switch VAR_CONTEST_TYPE
@@ -237,7 +237,7 @@ BattleFrontier_BattleTowerLobby_EventScript_Reporter::
 	lock
 	faceplayer
 	goto_if_set FLAG_TEMP_2, BattleFrontier_BattleTowerLobby_EventScript_AlreadyInterviewed
-	setvar VAR_0x8005, TVSHOW_BRAVO_TRAINER_BATTLE_TOWER_PROFILE
+	setvar VAR_0x8005, TVSHOW_BRAVO_PRODUCER_BATTLE_TOWER_PROFILE
 	special InterviewBefore
 	goto_if_eq VAR_RESULT, TRUE, BattleFrontier_BattleTowerLobby_EventScript_AlreadyInterviewed
 	copyvar VAR_0x8009, VAR_0x8006
@@ -281,7 +281,7 @@ BattleFrontier_BattleTowerLobby_EventScript_SubmitResponse::
 	msgbox BattleFrontier_BattleTowerLobby_Text_ThatsGreatLine, MSGBOX_DEFAULT
 	setflag FLAG_TEMP_2
 	copyvar VAR_0x8004, VAR_0x8008
-	setvar VAR_0x8005, TVSHOW_BRAVO_TRAINER_BATTLE_TOWER_PROFILE
+	setvar VAR_0x8005, TVSHOW_BRAVO_PRODUCER_BATTLE_TOWER_PROFILE
 	goto Interview_EventScript_EndInterview
 	end
 
@@ -296,8 +296,8 @@ BattleFrontier_BattleTowerLobby_EventScript_AlreadyInterviewed::
 	end
 
 BattleFrontier_BattleTowerLobby_EventScript_ShowOrHideReporter::
-	goto_if_eq VAR_BRAVO_TRAINER_BATTLE_TOWER_ON, 0, BattleFrontier_BattleTowerLobby_EventScript_HideReporter
-	setvar VAR_0x8005, TVSHOW_BRAVO_TRAINER_BATTLE_TOWER_PROFILE
+	goto_if_eq VAR_BRAVO_PRODUCER_BATTLE_TOWER_ON, 0, BattleFrontier_BattleTowerLobby_EventScript_HideReporter
+	setvar VAR_0x8005, TVSHOW_BRAVO_PRODUCER_BATTLE_TOWER_PROFILE
 	special InterviewBefore
 	goto_if_eq VAR_RESULT, TRUE, BattleFrontier_BattleTowerLobby_EventScript_HideReporter
 	clearflag FLAG_HIDE_BATTLE_TOWER_REPORTER

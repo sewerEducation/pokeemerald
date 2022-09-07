@@ -33,34 +33,34 @@ gText_UserLessLikelyStartled::
 
 gText_SlightlyStartleFrontMon::
 	.string "Slightly startles the\n"
-	.string "POKéMON in front.$"
+	.string "IDOL in front.$"
 
 gText_SlightlyStartleAppealed::
 	.string "Slightly startles those\n"
 	.string "that have made appeals.$"
 
 gText_StartleAppealedBeforeUser::
-	.string "Startles the POKéMON that\n"
+	.string "Startles the IDOL that\n"
 	.string "appealed before the user.$"
 
 gText_StartleAllAppealed::
-	.string "Startles all POKéMON that\n"
+	.string "Startles all IDOLS that\n"
 	.string "have done their appeals.$"
 
 gText_BadlyStartleFrontMon::
 	.string "Badly startles the\n"
-	.string "POKéMON in front.$"
+	.string "IDOL in front.$"
 
 gText_BadlyStartleAppealed::
 	.string "Badly startles those that\n"
 	.string "have made appeals.$"
 
 gText_StartleAppealedBeforeUser2::
-	.string "Startles the POKéMON that\n"
+	.string "Startles the IDOLS that\n"
 	.string "appealed before the user.$"
 
 gText_StartleAllAppealed2::
-	.string "Startles all POKéMON that\n"
+	.string "Startles all IDOLS that\n"
 	.string "have done their appeals.$"
 
 gText_ShiftJudgesAttentionFromOthers::
@@ -68,7 +68,7 @@ gText_ShiftJudgesAttentionFromOthers::
 	.string "attention from others.$"
 
 gText_StartleMonHasJudgesAttention::
-	.string "Startles the POKéMON that\n"
+	.string "Startles the IDOL that\n"
 	.string "has the JUDGE's attention.$"
 
 gText_JamOthersMissesTurn::
@@ -76,35 +76,35 @@ gText_JamOthersMissesTurn::
 	.string "one turn of appeals.$"
 
 gText_StartleMonsMadeSameTypeAppeal::
-	.string "Startles POKéMON that\n"
+	.string "Startles IDOL that\n"
 	.string "made a same-type appeal.$"
 
 gText_BadlyStartleCoolAppeals::
-	.string "Badly startles POKéMON\n"
+	.string "Badly startles IDOLS\n"
 	.string "that made COOL appeals.$"
 
 gText_BadlyStartleBeautyAppeals::
-	.string "Badly startles POKéMON\n"
+	.string "Badly startles IDOLS\n"
 	.string "that made BEAUTY appeals.$"
 
 gText_BadlyStartleCuteAppeals::
-	.string "Badly startles POKéMON\n"
+	.string "Badly startles IDOLS\n"
 	.string "that made CUTE appeals.$"
 
 gText_BadlyStartleSmartAppeals::
-	.string "Badly startles POKéMON\n"
+	.string "Badly startles IDOLS\n"
 	.string "that made SMART appeals.$"
 
 gText_BadlyStartleToughAppeals::
-	.string "Badly startles POKéMON\n"
+	.string "Badly startles IDOLS\n"
 	.string "that made TOUGH appeals.$"
 
 gText_MakeMonAfterUserNervous::
-	.string "Makes one POKéMON after\n"
+	.string "Makes one IDOL after\n"
 	.string "the user nervous.$"
 
 gText_MakeAllMonsAfterUserNervous::
-	.string "Makes all POKéMON after\n"
+	.string "Makes all IDOLS after\n"
 	.string "the user nervous.$"
 
 gText_WorsenConditionOfThoseMadeAppeals::
@@ -112,7 +112,7 @@ gText_WorsenConditionOfThoseMadeAppeals::
 	.string "those that made appeals.$"
 
 gText_BadlyStartleMonsGoodCondition::
-	.string "Badly startles POKéMON in\n"
+	.string "Badly startles IDOLS in\n"
 	.string "good condition.$"
 
 gText_AppealGreatIfPerformedFirst::
@@ -180,7 +180,7 @@ gText_AppealExcitesAudienceInAnyContest::
 	.string "audience in any CONTEST.$"
 
 gText_BadlyStartlesMonsGoodAppeals::
-	.string "Badly startles all POKéMON\n"
+	.string "Badly startles all IDOLS\n"
 	.string "that made good appeals.$"
 
 gText_AppealBestMoreCrowdExcited::
@@ -277,7 +277,7 @@ gText_ButAppealWasJammed::
 
 gText_FollowedAnotherMonsLead::
 	.string "It followed another\n"
-	.string "POKéMON's lead.$"
+	.string "IDOL's lead.$"
 
 gText_ButItMessedUp::
 	.string "But it messed up.$"
@@ -304,7 +304,7 @@ gText_WorkedFrighteninglyWell::
 
 gText_WorkedHardAsStandoutMon::
 	.string "It worked as hard as the\n"
-	.string "standout POKéMON.$"
+	.string "standout IDOL.$"
 
 gText_JudgedLookedOnExpectantly::
 	.string "The JUDGE looked on\n"
@@ -443,7 +443,7 @@ gText_EveryonesAppealsMadeSame::
 
 gText_BecameMoreConsciousOfOtherMons::
 	.string "It became more conscious\n"
-	.string "of the other POKéMON.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "of the other IDOLS.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonCantMakeAnAppealAfterThis::
 	.string "{STR_VAR_1} can't make an\n"
@@ -455,19 +455,19 @@ gText_SettledDownJustLittleBit::
 
 gText_BecameObliviousToOtherMons::
 	.string "It became oblivious to\n"
-	.string "the other POKéMON.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "the other IDOLS.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_BecameLessAwareOfOtherMons::
 	.string "It became less aware of\n"
-	.string "the other POKéMON.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "the other IDOLS.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_StoppedCaringAboutOtherMons::
 	.string "It stopped caring about\n"
-	.string "other POKéMON much.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "other IDOLS much.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_TriedToStartleOtherMons::
 	.string "It tried to startle the\n"
-	.string "other POKéMON.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "other IDOLS.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_TriedToDazzleOthers::
 	.string "It tried to dazzle the\n"
@@ -479,7 +479,7 @@ gText_JudgeLookedAwayFromMon::
 
 gText_TriedToUnnerveNextMon::
 	.string "It tried to unnerve the\n"
-	.string "next POKéMON.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "next IDOL.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonBecameNervous::
 	.string "{STR_VAR_1} became\n"
@@ -487,10 +487,10 @@ gText_MonBecameNervous::
 
 gText_AppealTriedToUnnerveWaitingMons::
 	.string "The appeal tried to\n"
-	.string "unnerve waiting POKéMON.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "unnerve waiting IDOLS.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_TauntedMonsDoingWell::
-	.string "It taunted POKéMON\n"
+	.string "It taunted IDOLS\n"
 	.string "doing well.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonRegainedItsForm::
@@ -498,7 +498,7 @@ gText_MonRegainedItsForm::
 	.string "form.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_TriedToJamMonDoingWell::
-	.string "It tried to jam POKéMON\n"
+	.string "It tried to jam IDOLS\n"
 	.string "doing well.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_StandoutMonHustledEvenMore::
@@ -511,7 +511,7 @@ gText_LargelyUnnoticedMonWorkedHard::
 
 gText_WorkedAsMuchAsMonBefore::
 	.string "It worked as much as\n"
-	.string "POKéMON before it.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "IDOLS before it.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonsAppealDidNotGoWell::
 	.string "{STR_VAR_1}'s appeal did\n"
@@ -519,7 +519,7 @@ gText_MonsAppealDidNotGoWell::
 
 gText_WorkedAsMuchAsPrecedingMon::
 	.string "It worked as much as the\n"
-	.string "preceding POKéMON.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "preceding IDOLS.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonsAppealDidNotGoWell2::
 	.string "{STR_VAR_1}'s appeal did\n"
@@ -567,7 +567,7 @@ gText_MonsAppealWentExcellently2::
 
 gText_SameTypeAsOneBeforeGood::
 	.string "It's the same type as the\n"
-	.string "POKéMON before--good!{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "IDOL before--good!{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_NotSameTypeAsOneBeforeGood::
 	.string "It's not the same type as\n"
@@ -575,11 +575,11 @@ gText_NotSameTypeAsOneBeforeGood::
 
 gText_StoodOutMuchMoreThanMonBefore::
 	.string "It stood out much more\n"
-	.string "than the POKéMON before.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "than the IDOL before.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_DidntDoAsWellAsMonBefore::
 	.string "It didn't do as well as the\n"
-	.string "POKéMON before.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
+	.string "IDOL before.{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}$"
 
 gText_MonsConditionRoseAboveUsual::
 	.string "{STR_VAR_1}'s condition\n"
@@ -635,7 +635,7 @@ gText_MonBecameALittleDistracted::
 
 gText_TriedToStartleOtherPokemon::
 	.string "It tried to startle the\n"
-	.string "other POKéMON.{PAUSE 0x0F}{PAUSE 0x0F}{PAUSE 0x0F}{PAUSE 0x0F}$"
+	.string "other IDOLS.{PAUSE 0x0F}{PAUSE 0x0F}{PAUSE 0x0F}{PAUSE 0x0F}$"
 
 gText_MonLookedDownOutOfDistraction::
 	.string "{STR_VAR_1} looked down\n"

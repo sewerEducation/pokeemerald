@@ -27,17 +27,17 @@ Route110_TrickHousePuzzle6_EventScript_FoundScroll::
 	end
 
 Route110_TrickHousePuzzle6_EventScript_Sophia::
-	trainerbattle_single TRAINER_SOPHIA, Route110_TrickHousePuzzle6_Text_SophiaIntro, Route110_TrickHousePuzzle6_Text_SophiaDefeat
+	trainerbattle_single PRODUCER_SOPHIA, Route110_TrickHousePuzzle6_Text_SophiaIntro, Route110_TrickHousePuzzle6_Text_SophiaDefeat
 	msgbox Route110_TrickHousePuzzle6_Text_SophiaPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route110_TrickHousePuzzle6_EventScript_Benny::
-	trainerbattle_single TRAINER_BENNY, Route110_TrickHousePuzzle6_Text_BennyIntro, Route110_TrickHousePuzzle6_Text_BennyDefeat
+	trainerbattle_single PRODUCER_BENNY, Route110_TrickHousePuzzle6_Text_BennyIntro, Route110_TrickHousePuzzle6_Text_BennyDefeat
 	msgbox Route110_TrickHousePuzzle6_Text_BennyPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route110_TrickHousePuzzle6_EventScript_Sebastian::
-	trainerbattle_single TRAINER_SEBASTIAN, Route110_TrickHousePuzzle6_Text_SebastianIntro, Route110_TrickHousePuzzle6_Text_SebastianDefeat
+	trainerbattle_single PRODUCER_SEBASTIAN, Route110_TrickHousePuzzle6_Text_SebastianIntro, Route110_TrickHousePuzzle6_Text_SebastianDefeat
 	msgbox Route110_TrickHousePuzzle6_Text_SebastianPostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -53,7 +53,7 @@ Route110_TrickHousePuzzle6_Text_SophiaIntro:
 	.string "house, I had to check it out.$"
 
 Route110_TrickHousePuzzle6_Text_SophiaDefeat:
-	.string "I've discovered a tough TRAINER!$"
+	.string "I've discovered a tough PRODUCER!$"
 
 Route110_TrickHousePuzzle6_Text_SophiaPostBattle:
 	.string "I'm sure having a good time checking\n"
@@ -62,7 +62,7 @@ Route110_TrickHousePuzzle6_Text_SophiaPostBattle:
 	.string "repeating!$"
 
 Route110_TrickHousePuzzle6_Text_BennyIntro:
-	.string "Maybe I could get my BIRD POKéMON\n"
+	.string "Maybe I could get my BIRD IDOLS\n"
 	.string "to fly over the wall…$"
 
 Route110_TrickHousePuzzle6_Text_BennyDefeat:
@@ -83,4 +83,3 @@ Route110_TrickHousePuzzle6_Text_SebastianDefeat:
 Route110_TrickHousePuzzle6_Text_SebastianPostBattle:
 	.string "You don't seem to be affected at all.\n"
 	.string "Or do you have your poker face on?$"
-

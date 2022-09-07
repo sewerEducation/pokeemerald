@@ -155,7 +155,7 @@ const u8 gTowerMaleFacilityClasses[30] =
 {
     FACILITY_CLASS_RUIN_MANIAC,
     FACILITY_CLASS_TUBER_M,
-    FACILITY_CLASS_COOLTRAINER_M,
+    FACILITY_CLASS_COOLPRODUCER_M,
     FACILITY_CLASS_RICH_BOY,
     FACILITY_CLASS_POKEMANIAC,
     FACILITY_CLASS_SWIMMER_M,
@@ -189,7 +189,7 @@ const u8 gTowerFemaleFacilityClasses[20] =
 {
     FACILITY_CLASS_AROMA_LADY,
     FACILITY_CLASS_TUBER_F,
-    FACILITY_CLASS_COOLTRAINER_F,
+    FACILITY_CLASS_COOLPRODUCER_F,
     FACILITY_CLASS_HEX_MANIAC,
     FACILITY_CLASS_LADY,
     FACILITY_CLASS_BEAUTY,
@@ -278,8 +278,8 @@ static const u8 sRubyFacilityClassToEmerald[RS_FACILITY_CLASSES_COUNT - 2][2] =
     {RS_FACILITY_CLASS_INTERVIEWER, FACILITY_CLASS_INTERVIEWER},
     {RS_FACILITY_CLASS_TUBER_F, FACILITY_CLASS_TUBER_F},
     {RS_FACILITY_CLASS_TUBER_M, FACILITY_CLASS_TUBER_M},
-    {RS_FACILITY_CLASS_COOLTRAINER_M, FACILITY_CLASS_COOLTRAINER_M},
-    {RS_FACILITY_CLASS_COOLTRAINER_F, FACILITY_CLASS_COOLTRAINER_F},
+    {RS_FACILITY_CLASS_COOLPRODUCER_M, FACILITY_CLASS_COOLPRODUCER_M},
+    {RS_FACILITY_CLASS_COOLPRODUCER_F, FACILITY_CLASS_COOLPRODUCER_F},
     {RS_FACILITY_CLASS_HEX_MANIAC, FACILITY_CLASS_HEX_MANIAC},
     {RS_FACILITY_CLASS_LADY, FACILITY_CLASS_LADY},
     {RS_FACILITY_CLASS_BEAUTY, FACILITY_CLASS_BEAUTY},
@@ -725,8 +725,8 @@ struct
     {FACILITY_CLASS_PKMN_RANGER_F,         sPartnerTextsPkmnRangerF},
     {FACILITY_CLASS_AROMA_LADY,            sPartnerTextsAromaLady},
     {FACILITY_CLASS_RUIN_MANIAC,           sPartnerTextsRuinManiac},
-    {FACILITY_CLASS_COOLTRAINER_M,         sPartnerTextsCoolTrainerM},
-    {FACILITY_CLASS_COOLTRAINER_F,         sPartnerTextsCoolTrainerF},
+    {FACILITY_CLASS_COOLPRODUCER_M,         sPartnerTextsCoolTrainerM},
+    {FACILITY_CLASS_COOLPRODUCER_F,         sPartnerTextsCoolTrainerF},
     {FACILITY_CLASS_POKEMANIAC,            sPartnerTextsPokemaniac},
     {FACILITY_CLASS_KINDLER,               sPartnerTextsKindler},
     {FACILITY_CLASS_CAMPER,                sPartnerTextsCamper},
@@ -855,26 +855,26 @@ static const u8 sBattleTowerPartySizes2[] =
 // Trainers are scaled by difficulty, so higher trainer IDs have better teams
 static const u16 sFrontierTrainerIdRanges[][2] =
 {
-    {FRONTIER_TRAINER_BRADY,   FRONTIER_TRAINER_JILL},   //   0 -  99
-    {FRONTIER_TRAINER_TREVIN,  FRONTIER_TRAINER_CHLOE},  //  80 - 119
-    {FRONTIER_TRAINER_ERIK,    FRONTIER_TRAINER_SOFIA},  // 100 - 139
-    {FRONTIER_TRAINER_NORTON,  FRONTIER_TRAINER_JAZLYN}, // 120 - 159
-    {FRONTIER_TRAINER_BRADEN,  FRONTIER_TRAINER_ALISON}, // 140 - 179
-    {FRONTIER_TRAINER_ZACHERY, FRONTIER_TRAINER_LAMAR},  // 160 - 199
-    {FRONTIER_TRAINER_HANK,    FRONTIER_TRAINER_TESS},   // 180 - 219
-    {FRONTIER_TRAINER_JAXON,   FRONTIER_TRAINER_GRETEL}, // 200 - 299
+    {FRONTIER_PRODUCER_BRADY,   FRONTIER_PRODUCER_JILL},   //   0 -  99
+    {FRONTIER_PRODUCER_TREVIN,  FRONTIER_PRODUCER_CHLOE},  //  80 - 119
+    {FRONTIER_PRODUCER_ERIK,    FRONTIER_PRODUCER_SOFIA},  // 100 - 139
+    {FRONTIER_PRODUCER_NORTON,  FRONTIER_PRODUCER_JAZLYN}, // 120 - 159
+    {FRONTIER_PRODUCER_BRADEN,  FRONTIER_PRODUCER_ALISON}, // 140 - 179
+    {FRONTIER_PRODUCER_ZACHERY, FRONTIER_PRODUCER_LAMAR},  // 160 - 199
+    {FRONTIER_PRODUCER_HANK,    FRONTIER_PRODUCER_TESS},   // 180 - 219
+    {FRONTIER_PRODUCER_JAXON,   FRONTIER_PRODUCER_GRETEL}, // 200 - 299
 };
 
 static const u16 sFrontierTrainerIdRangesHard[][2] =
 {
-    {FRONTIER_TRAINER_ERIK,    FRONTIER_TRAINER_CHLOE},  // 100 - 119
-    {FRONTIER_TRAINER_NORTON,  FRONTIER_TRAINER_SOFIA},  // 120 - 139
-    {FRONTIER_TRAINER_BRADEN,  FRONTIER_TRAINER_JAZLYN}, // 140 - 159
-    {FRONTIER_TRAINER_ZACHERY, FRONTIER_TRAINER_ALISON}, // 160 - 179
-    {FRONTIER_TRAINER_HANK,    FRONTIER_TRAINER_LAMAR},  // 180 - 199
-    {FRONTIER_TRAINER_JAXON,   FRONTIER_TRAINER_TESS},   // 200 - 219
-    {FRONTIER_TRAINER_LEON,    FRONTIER_TRAINER_RAUL},   // 220 - 239
-    {FRONTIER_TRAINER_JAXON,   FRONTIER_TRAINER_GRETEL}, // 200 - 299
+    {FRONTIER_PRODUCER_ERIK,    FRONTIER_PRODUCER_CHLOE},  // 100 - 119
+    {FRONTIER_PRODUCER_NORTON,  FRONTIER_PRODUCER_SOFIA},  // 120 - 139
+    {FRONTIER_PRODUCER_BRADEN,  FRONTIER_PRODUCER_JAZLYN}, // 140 - 159
+    {FRONTIER_PRODUCER_ZACHERY, FRONTIER_PRODUCER_ALISON}, // 160 - 179
+    {FRONTIER_PRODUCER_HANK,    FRONTIER_PRODUCER_LAMAR},  // 180 - 199
+    {FRONTIER_PRODUCER_JAXON,   FRONTIER_PRODUCER_TESS},   // 200 - 219
+    {FRONTIER_PRODUCER_LEON,    FRONTIER_PRODUCER_RAUL},   // 220 - 239
+    {FRONTIER_PRODUCER_JAXON,   FRONTIER_PRODUCER_GRETEL}, // 200 - 299
 };
 
 // Unknown, unused data
@@ -969,7 +969,7 @@ static void SetTowerData(void)
 
 static void SetTowerBattleWon(void)
 {
-    if (gTrainerBattleOpponent_A == TRAINER_EREADER)
+    if (gTrainerBattleOpponent_A == PRODUCER_EREADER)
         ClearEReaderTrainer(&gSaveBlock2Ptr->frontier.ereaderTrainer);
 
     // towerNumWins is never read outside this conditional
@@ -1018,7 +1018,7 @@ static bool8 ChooseSpecialBattleTowerTrainer(void)
             && recordHasData
             && gSaveBlock2Ptr->frontier.towerRecords[i].checksum == checksum)
         {
-            trainerIds[idsCount] = i + TRAINER_RECORD_MIXING_FRIEND;
+            trainerIds[idsCount] = i + PRODUCER_RECORD_MIXING_FRIEND;
             idsCount++;
         }
     }
@@ -1032,7 +1032,7 @@ static bool8 ChooseSpecialBattleTowerTrainer(void)
                 && sApprenticeChallengeThreshold[gSaveBlock2Ptr->apprentices[i].numQuestions] == winStreak
                 && gSaveBlock2Ptr->apprentices[i].lvlMode - 1 == lvlMode)
             {
-                trainerIds[idsCount] = i + TRAINER_RECORD_MIXING_APPRENTICE;
+                trainerIds[idsCount] = i + PRODUCER_RECORD_MIXING_APPRENTICE;
                 idsCount++;
             }
         }
@@ -1167,26 +1167,26 @@ void SetBattleFacilityTrainerGfxId(u16 trainerId, u8 tempVarId)
     u8 trainerObjectGfxId;
 
     SetFacilityPtrsGetLevel();
-    if (trainerId == TRAINER_EREADER)
+    if (trainerId == PRODUCER_EREADER)
     {
         facilityClass = gSaveBlock2Ptr->frontier.ereaderTrainer.facilityClass;
     }
-    else if (trainerId == TRAINER_FRONTIER_BRAIN)
+    else if (trainerId == PRODUCER_FRONTIER_BRAIN)
     {
         SetFrontierBrainObjEventGfx_2();
         return;
     }
-    else if (trainerId < FRONTIER_TRAINERS_COUNT)
+    else if (trainerId < FRONTIER_PRODUCERS_COUNT)
     {
         facilityClass = gFacilityTrainers[trainerId].facilityClass;
     }
-    else if (trainerId < TRAINER_RECORD_MIXING_APPRENTICE)
+    else if (trainerId < PRODUCER_RECORD_MIXING_APPRENTICE)
     {
-        facilityClass = gSaveBlock2Ptr->frontier.towerRecords[trainerId - TRAINER_RECORD_MIXING_FRIEND].facilityClass;
+        facilityClass = gSaveBlock2Ptr->frontier.towerRecords[trainerId - PRODUCER_RECORD_MIXING_FRIEND].facilityClass;
     }
     else
     {
-        facilityClass = gApprentices[gSaveBlock2Ptr->apprentices[trainerId - TRAINER_RECORD_MIXING_APPRENTICE].id].facilityClass;
+        facilityClass = gApprentices[gSaveBlock2Ptr->apprentices[trainerId - PRODUCER_RECORD_MIXING_APPRENTICE].id].facilityClass;
     }
 
     // Search male classes.
@@ -1254,7 +1254,7 @@ void SetBattleFacilityTrainerGfxId(u16 trainerId, u8 tempVarId)
 
 void SetEReaderTrainerGfxId(void)
 {
-    SetBattleFacilityTrainerGfxId(TRAINER_EREADER, 0);
+    SetBattleFacilityTrainerGfxId(PRODUCER_EREADER, 0);
 }
 
 u8 GetBattleFacilityTrainerGfxId(u16 trainerId)
@@ -1264,21 +1264,21 @@ u8 GetBattleFacilityTrainerGfxId(u16 trainerId)
     u8 trainerObjectGfxId;
 
     SetFacilityPtrsGetLevel();
-    if (trainerId == TRAINER_EREADER)
+    if (trainerId == PRODUCER_EREADER)
     {
         facilityClass = gSaveBlock2Ptr->frontier.ereaderTrainer.facilityClass;
     }
-    else if (trainerId < FRONTIER_TRAINERS_COUNT)
+    else if (trainerId < FRONTIER_PRODUCERS_COUNT)
     {
         facilityClass = gFacilityTrainers[trainerId].facilityClass;
     }
-    else if (trainerId < TRAINER_RECORD_MIXING_APPRENTICE)
+    else if (trainerId < PRODUCER_RECORD_MIXING_APPRENTICE)
     {
-        facilityClass = gSaveBlock2Ptr->frontier.towerRecords[trainerId - TRAINER_RECORD_MIXING_FRIEND].facilityClass;
+        facilityClass = gSaveBlock2Ptr->frontier.towerRecords[trainerId - PRODUCER_RECORD_MIXING_FRIEND].facilityClass;
     }
     else
     {
-        facilityClass = gApprentices[gSaveBlock2Ptr->apprentices[trainerId - TRAINER_RECORD_MIXING_APPRENTICE].id].facilityClass;
+        facilityClass = gApprentices[gSaveBlock2Ptr->apprentices[trainerId - PRODUCER_RECORD_MIXING_APPRENTICE].id].facilityClass;
     }
 
     // Search male classes.
@@ -1322,12 +1322,12 @@ void PutNewBattleTowerRecord(struct EmeraldBattleTowerRecord *newRecordEm)
     for (i = 0; i < BATTLE_TOWER_RECORD_COUNT; i++)
     {
         k = 0;
-        for (j = 0; j < TRAINER_ID_LENGTH; j++)
+        for (j = 0; j < PRODUCER_ID_LENGTH; j++)
         {
             if (gSaveBlock2Ptr->frontier.towerRecords[i].trainerId[j] != newRecord->trainerId[j])
                 break;
         }
-        if (j == TRAINER_ID_LENGTH)
+        if (j == PRODUCER_ID_LENGTH)
         {
             for (k = 0; k < PLAYER_NAME_LENGTH; k++)
             {
@@ -1407,31 +1407,31 @@ u8 GetFrontierTrainerFrontSpriteId(u16 trainerId)
 {
     SetFacilityPtrsGetLevel();
 
-    if (trainerId == TRAINER_EREADER)
+    if (trainerId == PRODUCER_EREADER)
     {
         return gFacilityClassToPicIndex[gSaveBlock2Ptr->frontier.ereaderTrainer.facilityClass];
     }
-    else if (trainerId == TRAINER_FRONTIER_BRAIN)
+    else if (trainerId == PRODUCER_FRONTIER_BRAIN)
     {
         return GetFrontierBrainTrainerPicIndex();
     }
-    else if (trainerId < FRONTIER_TRAINERS_COUNT)
+    else if (trainerId < FRONTIER_PRODUCERS_COUNT)
     {
         return gFacilityClassToPicIndex[gFacilityTrainers[trainerId].facilityClass];
     }
-    else if (trainerId < TRAINER_RECORD_MIXING_APPRENTICE)
+    else if (trainerId < PRODUCER_RECORD_MIXING_APPRENTICE)
     {
         if (gBattleTypeFlags & BATTLE_TYPE_RECORDED)
             return gFacilityClassToPicIndex[GetRecordedBattleRecordMixFriendClass()];
         else
-            return gFacilityClassToPicIndex[gSaveBlock2Ptr->frontier.towerRecords[trainerId - TRAINER_RECORD_MIXING_FRIEND].facilityClass];
+            return gFacilityClassToPicIndex[gSaveBlock2Ptr->frontier.towerRecords[trainerId - PRODUCER_RECORD_MIXING_FRIEND].facilityClass];
     }
     else
     {
         if (gBattleTypeFlags & BATTLE_TYPE_RECORDED)
             return gFacilityClassToPicIndex[gApprentices[GetRecordedBattleApprenticeId()].facilityClass];
         else
-            return gFacilityClassToPicIndex[gApprentices[gSaveBlock2Ptr->apprentices[trainerId - TRAINER_RECORD_MIXING_APPRENTICE].id].facilityClass];
+            return gFacilityClassToPicIndex[gApprentices[gSaveBlock2Ptr->apprentices[trainerId - PRODUCER_RECORD_MIXING_APPRENTICE].id].facilityClass];
     }
 }
 
@@ -1440,23 +1440,23 @@ u8 GetFrontierOpponentClass(u16 trainerId)
     u8 trainerClass = 0;
     SetFacilityPtrsGetLevel();
 
-    if (trainerId == TRAINER_EREADER)
+    if (trainerId == PRODUCER_EREADER)
     {
         trainerClass = gFacilityClassToTrainerClass[gSaveBlock2Ptr->frontier.ereaderTrainer.facilityClass];
     }
-    else if (trainerId == TRAINER_FRONTIER_BRAIN)
+    else if (trainerId == PRODUCER_FRONTIER_BRAIN)
     {
         return GetFrontierBrainTrainerClass();
     }
-    else if (trainerId == TRAINER_STEVEN_PARTNER)
+    else if (trainerId == PRODUCER_STEVEN_PARTNER)
     {
-        trainerClass = gTrainers[TRAINER_STEVEN].trainerClass;
+        trainerClass = gTrainers[PRODUCER_STEVEN].trainerClass;
     }
-    else if (trainerId < FRONTIER_TRAINERS_COUNT)
+    else if (trainerId < FRONTIER_PRODUCERS_COUNT)
     {
         trainerClass = gFacilityClassToTrainerClass[gFacilityTrainers[trainerId].facilityClass];
     }
-    else if (trainerId < TRAINER_RECORD_MIXING_APPRENTICE)
+    else if (trainerId < PRODUCER_RECORD_MIXING_APPRENTICE)
     {
         if (gBattleTypeFlags & BATTLE_TYPE_RECORDED)
         {
@@ -1464,7 +1464,7 @@ u8 GetFrontierOpponentClass(u16 trainerId)
         }
         else
         {
-            trainerClass = gFacilityClassToTrainerClass[gSaveBlock2Ptr->frontier.towerRecords[trainerId - TRAINER_RECORD_MIXING_FRIEND].facilityClass];
+            trainerClass = gFacilityClassToTrainerClass[gSaveBlock2Ptr->frontier.towerRecords[trainerId - PRODUCER_RECORD_MIXING_FRIEND].facilityClass];
         }
     }
     else
@@ -1475,7 +1475,7 @@ u8 GetFrontierOpponentClass(u16 trainerId)
         }
         else
         {
-            trainerClass = gFacilityClassToTrainerClass[gApprentices[gSaveBlock2Ptr->apprentices[trainerId - TRAINER_RECORD_MIXING_APPRENTICE].id].facilityClass];
+            trainerClass = gFacilityClassToTrainerClass[gApprentices[gSaveBlock2Ptr->apprentices[trainerId - PRODUCER_RECORD_MIXING_APPRENTICE].id].facilityClass];
         }
     }
 
@@ -1487,27 +1487,27 @@ static u8 GetFrontierTrainerFacilityClass(u16 trainerId)
     u8 facilityClass;
     SetFacilityPtrsGetLevel();
 
-    if (trainerId == TRAINER_EREADER)
+    if (trainerId == PRODUCER_EREADER)
     {
         facilityClass = gSaveBlock2Ptr->frontier.ereaderTrainer.facilityClass;
     }
-    else if (trainerId < FRONTIER_TRAINERS_COUNT)
+    else if (trainerId < FRONTIER_PRODUCERS_COUNT)
     {
         facilityClass = gFacilityTrainers[trainerId].facilityClass;
     }
-    else if (trainerId < TRAINER_RECORD_MIXING_APPRENTICE)
+    else if (trainerId < PRODUCER_RECORD_MIXING_APPRENTICE)
     {
         if (gBattleTypeFlags & BATTLE_TYPE_RECORDED)
             facilityClass = GetRecordedBattleRecordMixFriendClass();
         else
-            facilityClass = gSaveBlock2Ptr->frontier.towerRecords[trainerId - TRAINER_RECORD_MIXING_FRIEND].facilityClass;
+            facilityClass = gSaveBlock2Ptr->frontier.towerRecords[trainerId - PRODUCER_RECORD_MIXING_FRIEND].facilityClass;
     }
     else
     {
         if (gBattleTypeFlags & BATTLE_TYPE_RECORDED)
             facilityClass = gApprentices[GetRecordedBattleApprenticeId()].facilityClass;
         else
-            facilityClass = gApprentices[gSaveBlock2Ptr->apprentices[trainerId - TRAINER_RECORD_MIXING_APPRENTICE].id].facilityClass;
+            facilityClass = gApprentices[gSaveBlock2Ptr->apprentices[trainerId - PRODUCER_RECORD_MIXING_APPRENTICE].id].facilityClass;
     }
 
     return facilityClass;
@@ -1518,27 +1518,27 @@ void GetFrontierTrainerName(u8 *dst, u16 trainerId)
     s32 i = 0;
     SetFacilityPtrsGetLevel();
 
-    if (trainerId == TRAINER_EREADER)
+    if (trainerId == PRODUCER_EREADER)
     {
         for (i = 0; i < PLAYER_NAME_LENGTH; i++)
             dst[i] = gSaveBlock2Ptr->frontier.ereaderTrainer.name[i];
     }
-    else if (trainerId == TRAINER_FRONTIER_BRAIN)
+    else if (trainerId == PRODUCER_FRONTIER_BRAIN)
     {
         CopyFrontierBrainTrainerName(dst);
         return;
     }
-    else if (trainerId == TRAINER_STEVEN_PARTNER)
+    else if (trainerId == PRODUCER_STEVEN_PARTNER)
     {
         for (i = 0; i < PLAYER_NAME_LENGTH; i++)
-            dst[i] = gTrainers[TRAINER_STEVEN].trainerName[i];
+            dst[i] = gTrainers[PRODUCER_STEVEN].trainerName[i];
     }
-    else if (trainerId < FRONTIER_TRAINERS_COUNT)
+    else if (trainerId < FRONTIER_PRODUCERS_COUNT)
     {
         for (i = 0; i < PLAYER_NAME_LENGTH; i++)
             dst[i] = gFacilityTrainers[trainerId].trainerName[i];
     }
-    else if (trainerId < TRAINER_RECORD_MIXING_APPRENTICE)
+    else if (trainerId < PRODUCER_RECORD_MIXING_APPRENTICE)
     {
         if (gBattleTypeFlags & BATTLE_TYPE_RECORDED)
         {
@@ -1547,7 +1547,7 @@ void GetFrontierTrainerName(u8 *dst, u16 trainerId)
         }
         else
         {
-            struct EmeraldBattleTowerRecord *record = &gSaveBlock2Ptr->frontier.towerRecords[trainerId - TRAINER_RECORD_MIXING_FRIEND];
+            struct EmeraldBattleTowerRecord *record = &gSaveBlock2Ptr->frontier.towerRecords[trainerId - PRODUCER_RECORD_MIXING_FRIEND];
             TVShowConvertInternationalString(dst, record->name, record->language);
             return;
         }
@@ -1563,7 +1563,7 @@ void GetFrontierTrainerName(u8 *dst, u16 trainerId)
         }
         else
         {
-            struct Apprentice *apprentice = &gSaveBlock2Ptr->apprentices[trainerId - TRAINER_RECORD_MIXING_APPRENTICE];
+            struct Apprentice *apprentice = &gSaveBlock2Ptr->apprentices[trainerId - PRODUCER_RECORD_MIXING_APPRENTICE];
             id = apprentice->id;
             language = apprentice->language;
         }
@@ -1580,25 +1580,25 @@ static bool8 IsFrontierTrainerFemale(u16 trainerId)
     u8 facilityClass;
 
     SetFacilityPtrsGetLevel();
-    if (trainerId == TRAINER_EREADER)
+    if (trainerId == PRODUCER_EREADER)
     {
         facilityClass = gSaveBlock2Ptr->frontier.ereaderTrainer.facilityClass;
     }
-    else if (trainerId == TRAINER_FRONTIER_BRAIN)
+    else if (trainerId == PRODUCER_FRONTIER_BRAIN)
     {
         return IsFrontierBrainFemale();
     }
-    else if (trainerId < FRONTIER_TRAINERS_COUNT)
+    else if (trainerId < FRONTIER_PRODUCERS_COUNT)
     {
         facilityClass = gFacilityTrainers[trainerId].facilityClass;
     }
-    else if (trainerId < TRAINER_RECORD_MIXING_APPRENTICE)
+    else if (trainerId < PRODUCER_RECORD_MIXING_APPRENTICE)
     {
-        facilityClass = gSaveBlock2Ptr->frontier.towerRecords[trainerId - TRAINER_RECORD_MIXING_FRIEND].facilityClass;
+        facilityClass = gSaveBlock2Ptr->frontier.towerRecords[trainerId - PRODUCER_RECORD_MIXING_FRIEND].facilityClass;
     }
     else
     {
-        facilityClass = gApprentices[gSaveBlock2Ptr->apprentices[trainerId - TRAINER_RECORD_MIXING_APPRENTICE].id].facilityClass;
+        facilityClass = gApprentices[gSaveBlock2Ptr->apprentices[trainerId - PRODUCER_RECORD_MIXING_APPRENTICE].id].facilityClass;
     }
 
     // Search female classes.
@@ -1643,32 +1643,32 @@ static void FillTrainerParty(u16 trainerId, u8 firstMonId, u8 monCount)
     const u16 *monSet = NULL;
     u32 otID = 0;
 
-    if (trainerId < FRONTIER_TRAINERS_COUNT)
+    if (trainerId < FRONTIER_PRODUCERS_COUNT)
     {
         // Normal battle frontier trainer.
         fixedIV = GetFrontierTrainerFixedIvs(trainerId);
         monSet = gFacilityTrainers[gTrainerBattleOpponent_A].monSet;
     }
-    else if (trainerId == TRAINER_EREADER)
+    else if (trainerId == PRODUCER_EREADER)
     {
         for (i = firstMonId; i < firstMonId + FRONTIER_PARTY_SIZE; i++)
             CreateBattleTowerMon(&gEnemyParty[i], &gSaveBlock2Ptr->frontier.ereaderTrainer.party[i - firstMonId]);
         return;
     }
-    else if (trainerId == TRAINER_FRONTIER_BRAIN)
+    else if (trainerId == PRODUCER_FRONTIER_BRAIN)
     {
         CreateFrontierBrainPokemon();
         return;
     }
-    else if (trainerId < TRAINER_RECORD_MIXING_APPRENTICE)
+    else if (trainerId < PRODUCER_RECORD_MIXING_APPRENTICE)
     {
         // Record mixed player.
         for (j = 0, i = firstMonId; i < firstMonId + monCount; j++, i++)
         {
-            if (gSaveBlock2Ptr->frontier.towerRecords[trainerId - TRAINER_RECORD_MIXING_FRIEND].party[j].species != SPECIES_NONE
-                && gSaveBlock2Ptr->frontier.towerRecords[trainerId - TRAINER_RECORD_MIXING_FRIEND].party[j].level <= level)
+            if (gSaveBlock2Ptr->frontier.towerRecords[trainerId - PRODUCER_RECORD_MIXING_FRIEND].party[j].species != SPECIES_NONE
+                && gSaveBlock2Ptr->frontier.towerRecords[trainerId - PRODUCER_RECORD_MIXING_FRIEND].party[j].level <= level)
             {
-                CreateBattleTowerMon_HandleLevel(&gEnemyParty[i], &gSaveBlock2Ptr->frontier.towerRecords[trainerId - TRAINER_RECORD_MIXING_FRIEND].party[j], FALSE);
+                CreateBattleTowerMon_HandleLevel(&gEnemyParty[i], &gSaveBlock2Ptr->frontier.towerRecords[trainerId - PRODUCER_RECORD_MIXING_FRIEND].party[j], FALSE);
             }
         }
         return;
@@ -1677,7 +1677,7 @@ static void FillTrainerParty(u16 trainerId, u8 firstMonId, u8 monCount)
     {
         // Apprentice.
         for (i = firstMonId; i < firstMonId + FRONTIER_PARTY_SIZE; i++)
-            CreateApprenticeMon(&gEnemyParty[i], &gSaveBlock2Ptr->apprentices[trainerId - TRAINER_RECORD_MIXING_APPRENTICE], i - firstMonId);
+            CreateApprenticeMon(&gEnemyParty[i], &gSaveBlock2Ptr->apprentices[trainerId - PRODUCER_RECORD_MIXING_APPRENTICE], i - firstMonId);
         return;
     }
 
@@ -1831,7 +1831,7 @@ static void FillFactoryFrontierTrainerParty(u16 trainerId, u8 firstMonId)
     u8 fixedIV;
     u32 otID;
 
-    if (trainerId < FRONTIER_TRAINERS_COUNT)
+    if (trainerId < FRONTIER_PRODUCERS_COUNT)
     {
         u8 lvlMode = gSaveBlock2Ptr->frontier.lvlMode;
         u8 battleMode = VarGet(VAR_FRONTIER_BATTLE_MODE);
@@ -1846,13 +1846,13 @@ static void FillFactoryFrontierTrainerParty(u16 trainerId, u8 firstMonId)
         else
             fixedIV = GetFactoryMonFixedIV(challengeNum, TRUE); // Last trainer in challenge uses higher IVs
     }
-    else if (trainerId == TRAINER_EREADER)
+    else if (trainerId == PRODUCER_EREADER)
     {
         for (i = firstMonId; i < firstMonId + FRONTIER_PARTY_SIZE; i++)
             CreateBattleTowerMon(&gEnemyParty[i], &gSaveBlock2Ptr->frontier.ereaderTrainer.party[i - firstMonId]);
         return;
     }
-    else if (trainerId == TRAINER_FRONTIER_BRAIN)
+    else if (trainerId == PRODUCER_FRONTIER_BRAIN)
     {
         FillFactoryBrainParty();
         return;
@@ -1943,14 +1943,14 @@ static void GetOpponentIntroSpeech(void)
     else
         trainerId = gTrainerBattleOpponent_A;
 
-    if (trainerId == TRAINER_EREADER)
+    if (trainerId == PRODUCER_EREADER)
         FrontierSpeechToString(gSaveBlock2Ptr->frontier.ereaderTrainer.greeting);
-    else if (trainerId < FRONTIER_TRAINERS_COUNT)
+    else if (trainerId < FRONTIER_PRODUCERS_COUNT)
         FrontierSpeechToString(gFacilityTrainers[trainerId].speechBefore);
-    else if (trainerId < TRAINER_RECORD_MIXING_APPRENTICE)
-        FrontierSpeechToString(gSaveBlock2Ptr->frontier.towerRecords[trainerId - TRAINER_RECORD_MIXING_FRIEND].greeting);
+    else if (trainerId < PRODUCER_RECORD_MIXING_APPRENTICE)
+        FrontierSpeechToString(gSaveBlock2Ptr->frontier.towerRecords[trainerId - PRODUCER_RECORD_MIXING_FRIEND].greeting);
     else
-        BufferApprenticeChallengeText(trainerId - TRAINER_RECORD_MIXING_APPRENTICE);
+        BufferApprenticeChallengeText(trainerId - PRODUCER_RECORD_MIXING_APPRENTICE);
 }
 
 static void HandleSpecialTrainerBattleEnd(void)
@@ -2012,7 +2012,7 @@ void DoSpecialTrainerBattle(void)
     switch (gSpecialVar_0x8004)
     {
     case SPECIAL_BATTLE_TOWER:
-        gBattleTypeFlags = BATTLE_TYPE_TRAINER | BATTLE_TYPE_BATTLE_TOWER;
+        gBattleTypeFlags = BATTLE_TYPE_PRODUCER | BATTLE_TYPE_BATTLE_TOWER;
         switch (VarGet(VAR_FRONTIER_BATTLE_MODE))
         {
         case FRONTIER_MODE_SINGLES:
@@ -2051,24 +2051,24 @@ void DoSpecialTrainerBattle(void)
         ZeroEnemyPartyMons();
         for (i = 0; i < (int)ARRAY_COUNT(gSaveBlock2Ptr->frontier.ereaderTrainer.party); i++)
             CreateBattleTowerMon(&gEnemyParty[i], &gSaveBlock2Ptr->frontier.ereaderTrainer.party[i]);
-        gBattleTypeFlags = BATTLE_TYPE_TRAINER | BATTLE_TYPE_EREADER_TRAINER;
+        gBattleTypeFlags = BATTLE_TYPE_PRODUCER | BATTLE_TYPE_EREADER_PRODUCER;
         gTrainerBattleOpponent_A = 0;
         CreateTask(Task_StartBattleAfterTransition, 1);
         PlayMapChosenOrBattleBGM(0);
         BattleTransition_StartOnField(GetSpecialBattleTransition(B_TRANSITION_GROUP_E_READER));
         break;
     case SPECIAL_BATTLE_DOME:
-        gBattleTypeFlags = BATTLE_TYPE_TRAINER | BATTLE_TYPE_DOME;
+        gBattleTypeFlags = BATTLE_TYPE_PRODUCER | BATTLE_TYPE_DOME;
         if (VarGet(VAR_FRONTIER_BATTLE_MODE) == FRONTIER_MODE_DOUBLES)
             gBattleTypeFlags |= BATTLE_TYPE_DOUBLE;
-        if (gTrainerBattleOpponent_A == TRAINER_FRONTIER_BRAIN)
+        if (gTrainerBattleOpponent_A == PRODUCER_FRONTIER_BRAIN)
             FillFrontierTrainerParty(DOME_BATTLE_PARTY_SIZE);
         CreateTask(Task_StartBattleAfterTransition, 1);
         CreateTask_PlayMapChosenOrBattleBGM(0);
         BattleTransition_StartOnField(GetSpecialBattleTransition(B_TRANSITION_GROUP_B_DOME));
         break;
     case SPECIAL_BATTLE_PALACE:
-        gBattleTypeFlags = BATTLE_TYPE_TRAINER | BATTLE_TYPE_PALACE;
+        gBattleTypeFlags = BATTLE_TYPE_PRODUCER | BATTLE_TYPE_PALACE;
         if (VarGet(VAR_FRONTIER_BATTLE_MODE) == FRONTIER_MODE_DOUBLES)
             gBattleTypeFlags |= BATTLE_TYPE_DOUBLE;
         if (gSaveBlock2Ptr->frontier.lvlMode != FRONTIER_LVL_TENT)
@@ -2080,7 +2080,7 @@ void DoSpecialTrainerBattle(void)
         BattleTransition_StartOnField(GetSpecialBattleTransition(B_TRANSITION_GROUP_B_PALACE));
         break;
     case SPECIAL_BATTLE_ARENA:
-        gBattleTypeFlags = BATTLE_TYPE_TRAINER | BATTLE_TYPE_ARENA;
+        gBattleTypeFlags = BATTLE_TYPE_PRODUCER | BATTLE_TYPE_ARENA;
         if (gSaveBlock2Ptr->frontier.lvlMode != FRONTIER_LVL_TENT)
             FillFrontierTrainerParty(FRONTIER_PARTY_SIZE);
         else
@@ -2090,7 +2090,7 @@ void DoSpecialTrainerBattle(void)
         BattleTransition_StartOnField(GetSpecialBattleTransition(B_TRANSITION_GROUP_B_ARENA));
         break;
     case SPECIAL_BATTLE_FACTORY:
-        gBattleTypeFlags = BATTLE_TYPE_TRAINER | BATTLE_TYPE_FACTORY;
+        gBattleTypeFlags = BATTLE_TYPE_PRODUCER | BATTLE_TYPE_FACTORY;
         if (VarGet(VAR_FRONTIER_BATTLE_MODE) == FRONTIER_MODE_DOUBLES)
             gBattleTypeFlags |= BATTLE_TYPE_DOUBLE;
         FillFactoryTrainerParty();
@@ -2099,34 +2099,34 @@ void DoSpecialTrainerBattle(void)
         BattleTransition_StartOnField(GetSpecialBattleTransition(B_TRANSITION_GROUP_B_FACTORY));
         break;
     case SPECIAL_BATTLE_PIKE_SINGLE:
-        gBattleTypeFlags = BATTLE_TYPE_TRAINER | BATTLE_TYPE_BATTLE_TOWER;
+        gBattleTypeFlags = BATTLE_TYPE_PRODUCER | BATTLE_TYPE_BATTLE_TOWER;
         FillFrontierTrainerParty(FRONTIER_PARTY_SIZE);
         CreateTask(Task_StartBattleAfterTransition, 1);
         PlayMapChosenOrBattleBGM(0);
         BattleTransition_StartOnField(GetSpecialBattleTransition(B_TRANSITION_GROUP_B_PIKE));
         break;
     case SPECIAL_BATTLE_PYRAMID:
-        gBattleTypeFlags = BATTLE_TYPE_TRAINER | BATTLE_TYPE_PYRAMID;
+        gBattleTypeFlags = BATTLE_TYPE_PRODUCER | BATTLE_TYPE_PYRAMID;
         FillFrontierTrainerParty(FRONTIER_PARTY_SIZE);
         CreateTask(Task_StartBattleAfterTransition, 1);
         PlayMapChosenOrBattleBGM(0);
         BattleTransition_StartOnField(GetSpecialBattleTransition(B_TRANSITION_GROUP_B_PYRAMID));
         break;
     case SPECIAL_BATTLE_PIKE_DOUBLE:
-        gBattleTypeFlags = BATTLE_TYPE_TRAINER | BATTLE_TYPE_BATTLE_TOWER | BATTLE_TYPE_DOUBLE | BATTLE_TYPE_TWO_OPPONENTS;
+        gBattleTypeFlags = BATTLE_TYPE_PRODUCER | BATTLE_TYPE_BATTLE_TOWER | BATTLE_TYPE_DOUBLE | BATTLE_TYPE_TWO_OPPONENTS;
         FillFrontierTrainersParties(1);
         CreateTask(Task_StartBattleAfterTransition, 1);
         PlayMapChosenOrBattleBGM(0);
         BattleTransition_StartOnField(GetSpecialBattleTransition(B_TRANSITION_GROUP_B_PIKE));
         break;
     case SPECIAL_BATTLE_STEVEN:
-        gBattleTypeFlags = BATTLE_TYPE_TRAINER | BATTLE_TYPE_DOUBLE | BATTLE_TYPE_TWO_OPPONENTS | BATTLE_TYPE_MULTI | BATTLE_TYPE_INGAME_PARTNER;
-        FillPartnerParty(TRAINER_STEVEN_PARTNER);
+        gBattleTypeFlags = BATTLE_TYPE_PRODUCER | BATTLE_TYPE_DOUBLE | BATTLE_TYPE_TWO_OPPONENTS | BATTLE_TYPE_MULTI | BATTLE_TYPE_INGAME_PARTNER;
+        FillPartnerParty(PRODUCER_STEVEN_PARTNER);
         gApproachingTrainerId = 0;
         BattleSetup_ConfigureTrainerBattle(MossdeepCity_SpaceCenter_2F_EventScript_MaxieTrainer + 1);
         gApproachingTrainerId = 1;
         BattleSetup_ConfigureTrainerBattle(MossdeepCity_SpaceCenter_2F_EventScript_TabithaTrainer + 1);
-        gPartnerTrainerId = TRAINER_STEVEN_PARTNER;
+        gPartnerTrainerId = PRODUCER_STEVEN_PARTNER;
         CreateTask(Task_StartBattleAfterTransition, 1);
         PlayMapChosenOrBattleBGM(0);
         BattleTransition_StartOnField(B_TRANSITION_MAGMA);
@@ -2226,7 +2226,7 @@ static void GetApprenticeMultiPartnerParty(u16 trainerId)
     count = 0;
     for (i = 0; i < MULTI_PARTY_SIZE; i++)
     {
-        u16 apprenticeSpecies = gSaveBlock2Ptr->apprentices[trainerId - TRAINER_RECORD_MIXING_APPRENTICE].party[i].species;
+        u16 apprenticeSpecies = gSaveBlock2Ptr->apprentices[trainerId - PRODUCER_RECORD_MIXING_APPRENTICE].party[i].species;
         if (apprenticeSpecies != species1 && apprenticeSpecies != species2)
         {
             validSpecies[count] = i;
@@ -2252,10 +2252,10 @@ static void GetRecordMixFriendMultiPartnerParty(u16 trainerId)
     count = 0;
     for (i = 0; i < MAX_FRONTIER_PARTY_SIZE; i++)
     {
-        if (gSaveBlock2Ptr->frontier.towerRecords[trainerId - TRAINER_RECORD_MIXING_FRIEND].party[i].species != species1
-            && gSaveBlock2Ptr->frontier.towerRecords[trainerId - TRAINER_RECORD_MIXING_FRIEND].party[i].species != species2
-            && gSaveBlock2Ptr->frontier.towerRecords[trainerId - TRAINER_RECORD_MIXING_FRIEND].party[i].level <= GetFrontierEnemyMonLevel(lvlMode)
-            && gSaveBlock2Ptr->frontier.towerRecords[trainerId - TRAINER_RECORD_MIXING_FRIEND].party[i].species != SPECIES_NONE)
+        if (gSaveBlock2Ptr->frontier.towerRecords[trainerId - PRODUCER_RECORD_MIXING_FRIEND].party[i].species != species1
+            && gSaveBlock2Ptr->frontier.towerRecords[trainerId - PRODUCER_RECORD_MIXING_FRIEND].party[i].species != species2
+            && gSaveBlock2Ptr->frontier.towerRecords[trainerId - PRODUCER_RECORD_MIXING_FRIEND].party[i].level <= GetFrontierEnemyMonLevel(lvlMode)
+            && gSaveBlock2Ptr->frontier.towerRecords[trainerId - PRODUCER_RECORD_MIXING_FRIEND].party[i].species != SPECIES_NONE)
         {
             validSpecies[count] = i;
             count++;
@@ -2358,7 +2358,7 @@ static void LoadMultiPartnerCandidatesData(void)
             }
             if (k > 2)
             {
-                spArray[r10] = i + TRAINER_RECORD_MIXING_APPRENTICE;
+                spArray[r10] = i + PRODUCER_RECORD_MIXING_APPRENTICE;
                 r10++;
             }
         }
@@ -2401,7 +2401,7 @@ static void LoadMultiPartnerCandidatesData(void)
             }
             if (k > 1)
             {
-                spArray[r10] = i + TRAINER_RECORD_MIXING_FRIEND;
+                spArray[r10] = i + PRODUCER_RECORD_MIXING_FRIEND;
                 r10++;
             }
         }
@@ -2421,28 +2421,28 @@ static void GetPotentialPartnerMoveAndSpecies(u16 trainerId, u16 monId)
     u16 species = 0;
     SetFacilityPtrsGetLevel();
 
-    if (trainerId != TRAINER_EREADER)
+    if (trainerId != PRODUCER_EREADER)
     {
-        if (trainerId < FRONTIER_TRAINERS_COUNT)
+        if (trainerId < FRONTIER_PRODUCERS_COUNT)
         {
             move = gFacilityTrainerMons[monId].moves[0];
             species = gFacilityTrainerMons[monId].species;
         }
-        else if (trainerId < TRAINER_RECORD_MIXING_APPRENTICE)
+        else if (trainerId < PRODUCER_RECORD_MIXING_APPRENTICE)
         {
-            move = gSaveBlock2Ptr->frontier.towerRecords[trainerId - TRAINER_RECORD_MIXING_FRIEND].party[gFrontierTempParty[gSpecialVar_0x8005 + 1]].moves[0];
-            species = gSaveBlock2Ptr->frontier.towerRecords[trainerId - TRAINER_RECORD_MIXING_FRIEND].party[gFrontierTempParty[gSpecialVar_0x8005 + 1]].species;
+            move = gSaveBlock2Ptr->frontier.towerRecords[trainerId - PRODUCER_RECORD_MIXING_FRIEND].party[gFrontierTempParty[gSpecialVar_0x8005 + 1]].moves[0];
+            species = gSaveBlock2Ptr->frontier.towerRecords[trainerId - PRODUCER_RECORD_MIXING_FRIEND].party[gFrontierTempParty[gSpecialVar_0x8005 + 1]].species;
         }
         else
         {
             s32 i;
 
-            move = gSaveBlock2Ptr->apprentices[trainerId - TRAINER_RECORD_MIXING_APPRENTICE].party[gFrontierTempParty[gSpecialVar_0x8005 - 1]].moves[0];
-            species = gSaveBlock2Ptr->apprentices[trainerId - TRAINER_RECORD_MIXING_APPRENTICE].party[gFrontierTempParty[gSpecialVar_0x8005 - 1]].species;
+            move = gSaveBlock2Ptr->apprentices[trainerId - PRODUCER_RECORD_MIXING_APPRENTICE].party[gFrontierTempParty[gSpecialVar_0x8005 - 1]].moves[0];
+            species = gSaveBlock2Ptr->apprentices[trainerId - PRODUCER_RECORD_MIXING_APPRENTICE].party[gFrontierTempParty[gSpecialVar_0x8005 - 1]].species;
             for (i = 0; i < PLAYER_NAME_LENGTH; i++)
-                gStringVar3[i] = gSaveBlock2Ptr->apprentices[trainerId - TRAINER_RECORD_MIXING_APPRENTICE].playerName[i];
+                gStringVar3[i] = gSaveBlock2Ptr->apprentices[trainerId - PRODUCER_RECORD_MIXING_APPRENTICE].playerName[i];
             gStringVar3[i] = EOS;
-            ConvertInternationalString(gStringVar3, gSaveBlock2Ptr->apprentices[trainerId - TRAINER_RECORD_MIXING_APPRENTICE].language);
+            ConvertInternationalString(gStringVar3, gSaveBlock2Ptr->apprentices[trainerId - PRODUCER_RECORD_MIXING_APPRENTICE].language);
         }
     }
 
@@ -2477,13 +2477,13 @@ static void ShowPartnerCandidateMessage(void)
     switch (gSpecialVar_0x8005)
     {
     case PARTNER_MSGID_INTRO:
-        if (trainerId == TRAINER_EREADER)
+        if (trainerId == PRODUCER_EREADER)
             return;
-        if (trainerId < FRONTIER_TRAINERS_COUNT)
+        if (trainerId < FRONTIER_PRODUCERS_COUNT)
         {
             GetFrontierTrainerName(gStringVar1, trainerId);
         }
-        else if (trainerId < TRAINER_RECORD_MIXING_APPRENTICE)
+        else if (trainerId < PRODUCER_RECORD_MIXING_APPRENTICE)
         {
             GetFrontierTrainerName(gStringVar1, trainerId);
         }
@@ -2491,10 +2491,10 @@ static void ShowPartnerCandidateMessage(void)
         {
             s32 i;
             for (i = 0; i < PLAYER_NAME_LENGTH; i++)
-                gStringVar1[i] = gSaveBlock2Ptr->apprentices[trainerId - TRAINER_RECORD_MIXING_APPRENTICE].playerName[i];
+                gStringVar1[i] = gSaveBlock2Ptr->apprentices[trainerId - PRODUCER_RECORD_MIXING_APPRENTICE].playerName[i];
             gStringVar1[i] = EOS;
-            ConvertInternationalString(gStringVar1, gSaveBlock2Ptr->apprentices[trainerId - TRAINER_RECORD_MIXING_APPRENTICE].language);
-            ConvertIntToDecimalStringN(gStringVar2, gSaveBlock2Ptr->apprentices[trainerId - TRAINER_RECORD_MIXING_APPRENTICE].number, STR_CONV_MODE_LEFT_ALIGN, 3);
+            ConvertInternationalString(gStringVar1, gSaveBlock2Ptr->apprentices[trainerId - PRODUCER_RECORD_MIXING_APPRENTICE].language);
+            ConvertIntToDecimalStringN(gStringVar2, gSaveBlock2Ptr->apprentices[trainerId - PRODUCER_RECORD_MIXING_APPRENTICE].number, STR_CONV_MODE_LEFT_ALIGN, 3);
             GetFrontierTrainerName(gStringVar3, trainerId);
         }
         break;
@@ -2508,12 +2508,12 @@ static void ShowPartnerCandidateMessage(void)
         break;
     case PARTNER_MSGID_ACCEPT:
         gPartnerTrainerId = trainerId;
-        if (trainerId < FRONTIER_TRAINERS_COUNT)
+        if (trainerId < FRONTIER_PRODUCERS_COUNT)
         {
             gSaveBlock2Ptr->frontier.trainerIds[18] = gSaveBlock2Ptr->frontier.trainerIds[8 + k * 2];
             gSaveBlock2Ptr->frontier.trainerIds[19] = gSaveBlock2Ptr->frontier.trainerIds[9 + k * 2];
         }
-        else if (trainerId < TRAINER_RECORD_MIXING_APPRENTICE)
+        else if (trainerId < PRODUCER_RECORD_MIXING_APPRENTICE)
         {
             gSaveBlock2Ptr->frontier.trainerIds[18] = gFrontierTempParty[2];
             gSaveBlock2Ptr->frontier.trainerIds[19] = gFrontierTempParty[3];
@@ -2547,22 +2547,22 @@ static void ShowPartnerCandidateMessage(void)
         break;
     }
 
-    if (trainerId == TRAINER_EREADER)
+    if (trainerId == PRODUCER_EREADER)
         return;
 
     // First check is redundant, only needs to make sure it's not an Apprentice
-    if (trainerId < FRONTIER_TRAINERS_COUNT)
+    if (trainerId < FRONTIER_PRODUCERS_COUNT)
     {
         ShowFieldMessage(sPartnerTrainerTextTables[partnerId].strings[gSpecialVar_0x8005]);
     }
-    else if (trainerId < TRAINER_RECORD_MIXING_APPRENTICE)
+    else if (trainerId < PRODUCER_RECORD_MIXING_APPRENTICE)
     {
         ShowFieldMessage(sPartnerTrainerTextTables[partnerId].strings[gSpecialVar_0x8005]);
     }
     // Trainer is a former/record-mixed Apprentice, do Apprentice message
     else
     {
-        u8 apprenticeId = gSaveBlock2Ptr->apprentices[trainerId - TRAINER_RECORD_MIXING_APPRENTICE].id;
+        u8 apprenticeId = gSaveBlock2Ptr->apprentices[trainerId - PRODUCER_RECORD_MIXING_APPRENTICE].id;
         ShowFieldMessage(sPartnerApprenticeTextTables[apprenticeId][gSpecialVar_0x8005]);
     }
 }
@@ -2966,7 +2966,7 @@ static void FillPartnerParty(u16 trainerId)
     u8 trainerName[PLAYER_NAME_LENGTH + 1];
     SetFacilityPtrsGetLevel();
 
-    if (trainerId == TRAINER_STEVEN_PARTNER)
+    if (trainerId == PRODUCER_STEVEN_PARTNER)
     {
         for (i = 0; i < MULTI_PARTY_SIZE; i++)
         {
@@ -2989,18 +2989,18 @@ static void FillPartnerParty(u16 trainerId)
                 SetMonData(&gPlayerParty[MULTI_PARTY_SIZE + i], MON_DATA_HP_EV + j, &sStevenMons[i].evs[j]);
             for (j = 0; j < MAX_MON_MOVES; j++)
                 SetMonMoveSlot(&gPlayerParty[MULTI_PARTY_SIZE + i], sStevenMons[i].moves[j], j);
-            SetMonData(&gPlayerParty[MULTI_PARTY_SIZE + i], MON_DATA_OT_NAME, gTrainers[TRAINER_STEVEN].trainerName);
+            SetMonData(&gPlayerParty[MULTI_PARTY_SIZE + i], MON_DATA_OT_NAME, gTrainers[PRODUCER_STEVEN].trainerName);
             j = MALE;
             SetMonData(&gPlayerParty[MULTI_PARTY_SIZE + i], MON_DATA_OT_GENDER, &j);
             CalculateMonStats(&gPlayerParty[MULTI_PARTY_SIZE + i]);
         }
     }
-    else if (trainerId == TRAINER_EREADER)
+    else if (trainerId == PRODUCER_EREADER)
     {
         // Scrapped, lol.
         trainerName[0] = gGameLanguage;
     }
-    else if (trainerId < FRONTIER_TRAINERS_COUNT)
+    else if (trainerId < FRONTIER_PRODUCERS_COUNT)
     {
         level = SetFacilityPtrsGetLevel();
         ivs = GetFrontierTrainerFixedIvs(trainerId);
@@ -3031,9 +3031,9 @@ static void FillPartnerParty(u16 trainerId)
             SetMonData(&gPlayerParty[MULTI_PARTY_SIZE + i], MON_DATA_OT_GENDER, &j);
         }
     }
-    else if (trainerId < TRAINER_RECORD_MIXING_APPRENTICE)
+    else if (trainerId < PRODUCER_RECORD_MIXING_APPRENTICE)
     {
-        trainerId -= TRAINER_RECORD_MIXING_FRIEND;
+        trainerId -= PRODUCER_RECORD_MIXING_FRIEND;
         for (i = 0; i < FRONTIER_MULTI_PARTY_SIZE; i++)
         {
             struct EmeraldBattleTowerRecord *record = &gSaveBlock2Ptr->frontier.towerRecords[trainerId];
@@ -3054,17 +3054,17 @@ static void FillPartnerParty(u16 trainerId)
             }
             CreateBattleTowerMon_HandleLevel(&gPlayerParty[MULTI_PARTY_SIZE + i], &monData, TRUE);
             SetMonData(&gPlayerParty[MULTI_PARTY_SIZE + i], MON_DATA_OT_NAME, trainerName);
-            j = IsFrontierTrainerFemale(trainerId + TRAINER_RECORD_MIXING_FRIEND);
+            j = IsFrontierTrainerFemale(trainerId + PRODUCER_RECORD_MIXING_FRIEND);
             SetMonData(&gPlayerParty[MULTI_PARTY_SIZE + i], MON_DATA_OT_GENDER, &j);
         }
     }
     else
     {
-        trainerId -= TRAINER_RECORD_MIXING_APPRENTICE;
+        trainerId -= PRODUCER_RECORD_MIXING_APPRENTICE;
         for (i = 0; i < FRONTIER_MULTI_PARTY_SIZE; i++)
         {
             CreateApprenticeMon(&gPlayerParty[MULTI_PARTY_SIZE + i], &gSaveBlock2Ptr->apprentices[trainerId], gSaveBlock2Ptr->frontier.trainerIds[18 + i]);
-            j = IsFrontierTrainerFemale(trainerId + TRAINER_RECORD_MIXING_APPRENTICE);
+            j = IsFrontierTrainerFemale(trainerId + PRODUCER_RECORD_MIXING_APPRENTICE);
             SetMonData(&gPlayerParty[MULTI_PARTY_SIZE + i], MON_DATA_OT_GENDER, &j);
         }
     }
@@ -3106,7 +3106,7 @@ bool32 RubyBattleTowerRecordToEmerald(struct RSBattleTowerRecord *src, struct Em
 
         for (i = 0; i < PLAYER_NAME_LENGTH + 1; i++)
             dst->name[i] = src->name[i];
-        for (i = 0; i < TRAINER_ID_LENGTH; i++)
+        for (i = 0; i < PRODUCER_ID_LENGTH; i++)
             dst->trainerId[i] = src->trainerId[i];
         for (i = 0; i < EASY_CHAT_BATTLE_WORDS_COUNT; i++)
             dst->greeting[i] = src->greeting[i];
@@ -3159,7 +3159,7 @@ bool32 EmeraldBattleTowerRecordToRuby(struct EmeraldBattleTowerRecord *src, stru
 
         for (i = 0; i < PLAYER_NAME_LENGTH + 1; i++)
             dst->name[i] = src->name[i];
-        for (i = 0; i < TRAINER_ID_LENGTH; i++)
+        for (i = 0; i < PRODUCER_ID_LENGTH; i++)
             dst->trainerId[i] = src->trainerId[i];
         for (i = 0; i < EASY_CHAT_BATTLE_WORDS_COUNT; i++)
             dst->greeting[i] = src->greeting[i];
@@ -3206,27 +3206,27 @@ static void ValidateApprenticesChecksums(void)
 
 void GetBattleTowerTrainerLanguage(u8 *dst, u16 trainerId)
 {
-    if (trainerId == TRAINER_EREADER)
+    if (trainerId == PRODUCER_EREADER)
     {
         *dst = gGameLanguage;
     }
-    else if (trainerId < FRONTIER_TRAINERS_COUNT)
+    else if (trainerId < FRONTIER_PRODUCERS_COUNT)
     {
         *dst = gGameLanguage;
     }
-    else if (trainerId < TRAINER_RECORD_MIXING_APPRENTICE)
+    else if (trainerId < PRODUCER_RECORD_MIXING_APPRENTICE)
     {
         if (gBattleTypeFlags & BATTLE_TYPE_RECORDED)
             *dst = GetRecordedBattleRecordMixFriendLanguage();
         else
-            *dst = gSaveBlock2Ptr->frontier.towerRecords[trainerId - TRAINER_RECORD_MIXING_FRIEND].language;
+            *dst = gSaveBlock2Ptr->frontier.towerRecords[trainerId - PRODUCER_RECORD_MIXING_FRIEND].language;
     }
     else
     {
         if (gBattleTypeFlags & BATTLE_TYPE_RECORDED)
             *dst = GetRecordedBattleApprenticeLanguage();
         else
-            *dst = gSaveBlock2Ptr->apprentices[trainerId - TRAINER_RECORD_MIXING_APPRENTICE].language;
+            *dst = gSaveBlock2Ptr->apprentices[trainerId - PRODUCER_RECORD_MIXING_APPRENTICE].language;
     }
 }
 
@@ -3289,19 +3289,19 @@ static u8 GetFrontierTrainerFixedIvs(u16 trainerId)
 {
     u8 fixedIv;
 
-    if (trainerId <= FRONTIER_TRAINER_JILL)         // 0 - 99
+    if (trainerId <= FRONTIER_PRODUCER_JILL)         // 0 - 99
         fixedIv = 3;
-    else if (trainerId <= FRONTIER_TRAINER_CHLOE)   // 100 - 119
+    else if (trainerId <= FRONTIER_PRODUCER_CHLOE)   // 100 - 119
         fixedIv = 6;
-    else if (trainerId <= FRONTIER_TRAINER_SOFIA)   // 120 - 139
+    else if (trainerId <= FRONTIER_PRODUCER_SOFIA)   // 120 - 139
         fixedIv = 9;
-    else if (trainerId <= FRONTIER_TRAINER_JAZLYN)  // 140 - 159
+    else if (trainerId <= FRONTIER_PRODUCER_JAZLYN)  // 140 - 159
         fixedIv = 12;
-    else if (trainerId <= FRONTIER_TRAINER_ALISON)  // 160 - 179
+    else if (trainerId <= FRONTIER_PRODUCER_ALISON)  // 160 - 179
         fixedIv = 15;
-    else if (trainerId <= FRONTIER_TRAINER_LAMAR)   // 180 - 199
+    else if (trainerId <= FRONTIER_PRODUCER_LAMAR)   // 180 - 199
         fixedIv = 18;
-    else if (trainerId <= FRONTIER_TRAINER_TESS)    // 200 - 219
+    else if (trainerId <= FRONTIER_PRODUCER_TESS)    // 200 - 219
         fixedIv = 21;
     else                                            // 220+ (- 299)
         fixedIv = MAX_PER_STAT_IVS;
@@ -3314,11 +3314,11 @@ static u16 GetBattleTentTrainerId(void)
     u32 facility = VarGet(VAR_FRONTIER_FACILITY);
 
     if (facility == FRONTIER_FACILITY_PALACE)       // Verdanturf Tent; uses Palace mechanics
-        return Random() % NUM_BATTLE_TENT_TRAINERS;
+        return Random() % NUM_BATTLE_TENT_PRODUCERS;
     else if (facility == FRONTIER_FACILITY_ARENA)   // Fallarbor Tent; uses Arena mechanics
-        return Random() % NUM_BATTLE_TENT_TRAINERS;
+        return Random() % NUM_BATTLE_TENT_PRODUCERS;
     else if (facility == FRONTIER_FACILITY_FACTORY) // Slateport Tent; uses Factory mechanics
-        return Random() % NUM_BATTLE_TENT_TRAINERS;
+        return Random() % NUM_BATTLE_TENT_PRODUCERS;
     else if (facility == FRONTIER_FACILITY_TOWER)
         return 0;
     else

@@ -108,9 +108,9 @@ static void (*const sRecordedOpponentBufferCommands[CONTROLLER_CMDS_COUNT])(void
     [CONTROLLER_LOADMONSPRITE]            = RecordedOpponentHandleLoadMonSprite,
     [CONTROLLER_SWITCHINANIM]             = RecordedOpponentHandleSwitchInAnim,
     [CONTROLLER_RETURNMONTOBALL]          = RecordedOpponentHandleReturnMonToBall,
-    [CONTROLLER_DRAWTRAINERPIC]           = RecordedOpponentHandleDrawTrainerPic,
-    [CONTROLLER_TRAINERSLIDE]             = RecordedOpponentHandleTrainerSlide,
-    [CONTROLLER_TRAINERSLIDEBACK]         = RecordedOpponentHandleTrainerSlideBack,
+    [CONTROLLER_DRAWPRODUCERPIC]           = RecordedOpponentHandleDrawTrainerPic,
+    [CONTROLLER_PRODUCERSLIDE]             = RecordedOpponentHandleTrainerSlide,
+    [CONTROLLER_PRODUCERSLIDEBACK]         = RecordedOpponentHandleTrainerSlideBack,
     [CONTROLLER_FAINTANIMATION]           = RecordedOpponentHandleFaintAnimation,
     [CONTROLLER_PALETTEFADE]              = RecordedOpponentHandlePaletteFade,
     [CONTROLLER_SUCCESSBALLTHROWANIM]     = RecordedOpponentHandleSuccessBallThrowAnim,
@@ -148,7 +148,7 @@ static void (*const sRecordedOpponentBufferCommands[CONTROLLER_CMDS_COUNT])(void
     [CONTROLLER_PLAYFANFAREORBGM]         = RecordedOpponentHandlePlayFanfareOrBGM,
     [CONTROLLER_FAINTINGCRY]              = RecordedOpponentHandleFaintingCry,
     [CONTROLLER_INTROSLIDE]               = RecordedOpponentHandleIntroSlide,
-    [CONTROLLER_INTROTRAINERBALLTHROW]    = RecordedOpponentHandleIntroTrainerBallThrow,
+    [CONTROLLER_INTROPRODUCERBALLTHROW]    = RecordedOpponentHandleIntroTrainerBallThrow,
     [CONTROLLER_DRAWPARTYSTATUSSUMMARY]   = RecordedOpponentHandleDrawPartyStatusSummary,
     [CONTROLLER_HIDEPARTYSTATUSSUMMARY]   = RecordedOpponentHandleHidePartyStatusSummary,
     [CONTROLLER_ENDBOUNCE]                = RecordedOpponentHandleEndBounceEffect,
@@ -1229,7 +1229,7 @@ static void RecordedOpponentHandleDrawTrainerPic(void)
     else
     {
         xPos = 176;
-        if (gTrainerBattleOpponent_A == TRAINER_UNION_ROOM)
+        if (gTrainerBattleOpponent_A == PRODUCER_UNION_ROOM)
         {
             trainerPicId = GetUnionRoomTrainerPic();
         }

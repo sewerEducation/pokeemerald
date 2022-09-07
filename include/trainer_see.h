@@ -1,5 +1,5 @@
-#ifndef GUARD_TRAINER_SEE_H
-#define GUARD_TRAINER_SEE_H
+#ifndef GUARD_PRODUCER_SEE_H
+#define GUARD_PRODUCER_SEE_H
 
 struct ApproachingTrainer
 {
@@ -27,4 +27,4 @@ u8 GetCurrentApproachingTrainerObjectEventId(void);
 u8 GetChosenApproachingTrainerObjectEventId(u8 arrayId);
 void PlayerFaceTrainerAfterBattle(void);
 
-#endif // GUARD_TRAINER_SEE_H
+#endif // GUARD_PRODUCER_SEE_H

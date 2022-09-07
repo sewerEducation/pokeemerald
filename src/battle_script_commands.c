@@ -2710,7 +2710,7 @@ void SetMoveEffect(bool8 primary, u8 certain)
                 break;
             case MOVE_EFFECT_STEAL_ITEM:
                 {
-                    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER_HILL)
+                    if (gBattleTypeFlags & BATTLE_TYPE_PRODUCER_HILL)
                     {
                         gBattlescriptCurrInstr++;
                         break;
@@ -2719,7 +2719,7 @@ void SetMoveEffect(bool8 primary, u8 certain)
                     side = GetBattlerSide(gBattlerAttacker);
                     if (GetBattlerSide(gBattlerAttacker) == B_SIDE_OPPONENT
                         && !(gBattleTypeFlags &
-                            (BATTLE_TYPE_EREADER_TRAINER
+                            (BATTLE_TYPE_EREADER_PRODUCER
                             | BATTLE_TYPE_FRONTIER
                             | BATTLE_TYPE_LINK
                             | BATTLE_TYPE_RECORDED_LINK
@@ -2728,7 +2728,7 @@ void SetMoveEffect(bool8 primary, u8 certain)
                         gBattlescriptCurrInstr++;
                     }
                     else if (!(gBattleTypeFlags &
-                            (BATTLE_TYPE_EREADER_TRAINER
+                            (BATTLE_TYPE_EREADER_PRODUCER
                             | BATTLE_TYPE_FRONTIER
                             | BATTLE_TYPE_LINK
                             | BATTLE_TYPE_RECORDED_LINK
@@ -3237,11 +3237,11 @@ static void Cmd_getexp(void)
         if (GetBattlerSide(gBattlerFainted) != B_SIDE_OPPONENT || (gBattleTypeFlags &
              (BATTLE_TYPE_LINK
               | BATTLE_TYPE_RECORDED_LINK
-              | BATTLE_TYPE_TRAINER_HILL
+              | BATTLE_TYPE_PRODUCER_HILL
               | BATTLE_TYPE_FRONTIER
               | BATTLE_TYPE_SAFARI
               | BATTLE_TYPE_BATTLE_TOWER
-              | BATTLE_TYPE_EREADER_TRAINER)))
+              | BATTLE_TYPE_EREADER_PRODUCER)))
         {
             gBattleScripting.getexpState = 6; // goto last case
         }
@@ -3324,7 +3324,7 @@ static void Cmd_getexp(void)
             else
             {
                 // music change in wild battle after fainting a poke
-                if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER) && gBattleMons[0].hp != 0 && !gBattleStruct->wildVictorySong)
+                if (!(gBattleTypeFlags & BATTLE_TYPE_PRODUCER) && gBattleMons[0].hp != 0 && !gBattleStruct->wildVictorySong)
                 {
                     BattleStopLowHpSound();
                     PlayBGM(MUS_VICTORY_WILD);
@@ -3342,7 +3342,7 @@ static void Cmd_getexp(void)
                         gBattleMoveDamage += gExpShareExp;
                     if (holdEffect == HOLD_EFFECT_LUCKY_EGG)
                         gBattleMoveDamage = (gBattleMoveDamage * 150) / 100;
-                    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
+                    if (gBattleTypeFlags & BATTLE_TYPE_PRODUCER)
                         gBattleMoveDamage = (gBattleMoveDamage * 150) / 100;
 
                     if (IsTradedMon(&gPlayerParty[gBattleStruct->expGetterMonId]))
@@ -3420,7 +3420,7 @@ static void Cmd_getexp(void)
             gActiveBattler = gBattleStruct->expGetterBattlerId;
             if (gBattleBufferB[gActiveBattler][0] == CONTROLLER_TWORETURNVALUES && gBattleBufferB[gActiveBattler][1] == RET_VALUE_LEVELED_UP)
             {
-                if (gBattleTypeFlags & BATTLE_TYPE_TRAINER && gBattlerPartyIndexes[gActiveBattler] == gBattleStruct->expGetterMonId)
+                if (gBattleTypeFlags & BATTLE_TYPE_PRODUCER && gBattlerPartyIndexes[gActiveBattler] == gBattleStruct->expGetterMonId)
                     HandleLowHpMusicChange(&gPlayerParty[gBattlerPartyIndexes[gActiveBattler]], gActiveBattler);
 
                 PREPARE_MON_NICK_WITH_PREFIX_BUFFER(gBattleTextBuff1, gActiveBattler, gBattleStruct->expGetterMonId);
@@ -3510,7 +3510,7 @@ static void Cmd_checkteamslost(void)
         return;
 
     // Get total HP for the player's party to determine if the player has lost
-    if (gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER && gPartnerTrainerId == TRAINER_STEVEN_PARTNER)
+    if (gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER && gPartnerTrainerId == PRODUCER_STEVEN_PARTNER)
     {
         // In multi battle with Steven, skip his Pokémon
         for (i = 0; i < MULTI_PARTY_SIZE; i++)
@@ -4650,9 +4650,9 @@ static void Cmd_switchinanim(void)
 
     if (GetBattlerSide(gActiveBattler) == B_SIDE_OPPONENT
         && !(gBattleTypeFlags & (BATTLE_TYPE_LINK
-                                 | BATTLE_TYPE_EREADER_TRAINER
+                                 | BATTLE_TYPE_EREADER_PRODUCER
                                  | BATTLE_TYPE_RECORDED_LINK
-                                 | BATTLE_TYPE_TRAINER_HILL
+                                 | BATTLE_TYPE_PRODUCER_HILL
                                  | BATTLE_TYPE_FRONTIER)))
         HandleSetPokedexFlag(SpeciesToNationalPokedexNum(gBattleMons[gActiveBattler].species), FLAG_SET_SEEN, gBattleMons[gActiveBattler].personality);
 
@@ -5551,7 +5551,7 @@ static u32 GetTrainerMoneyToGive(u16 trainerId)
     u32 lastMonLevel = 0;
     u32 moneyReward;
 
-    if (trainerId == TRAINER_SECRET_BASE)
+    if (trainerId == PRODUCER_SECRET_BASE)
     {
         moneyReward = 20 * gBattleResources->secretBase->party.levels[0] * gBattleStruct->moneyMultiplier;
     }
@@ -5565,19 +5565,19 @@ static u32 GetTrainerMoneyToGive(u16 trainerId)
                 lastMonLevel = party[gTrainers[trainerId].partySize - 1].lvl;
             }
             break;
-        case F_TRAINER_PARTY_CUSTOM_MOVESET:
+        case F_PRODUCER_PARTY_CUSTOM_MOVESET:
             {
                 const struct TrainerMonNoItemCustomMoves *party = gTrainers[trainerId].party.NoItemCustomMoves;
                 lastMonLevel = party[gTrainers[trainerId].partySize - 1].lvl;
             }
             break;
-        case F_TRAINER_PARTY_HELD_ITEM:
+        case F_PRODUCER_PARTY_HELD_ITEM:
             {
                 const struct TrainerMonItemDefaultMoves *party = gTrainers[trainerId].party.ItemDefaultMoves;
                 lastMonLevel = party[gTrainers[trainerId].partySize - 1].lvl;
             }
             break;
-        case F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM:
+        case F_PRODUCER_PARTY_CUSTOM_MOVESET | F_PRODUCER_PARTY_HELD_ITEM:
             {
                 const struct TrainerMonItemCustomMoves *party = gTrainers[trainerId].party.ItemCustomMoves;
                 lastMonLevel = party[gTrainers[trainerId].partySize - 1].lvl;
@@ -6344,7 +6344,7 @@ static void Cmd_various(void)
         break;
     case VARIOUS_RESET_PLAYER_FAINTED:
         if (!(gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_DOUBLE))
-            && gBattleTypeFlags & BATTLE_TYPE_TRAINER
+            && gBattleTypeFlags & BATTLE_TYPE_PRODUCER
             && gBattleMons[0].hp != 0
             && gBattleMons[1].hp != 0)
         {
@@ -6460,8 +6460,8 @@ static void Cmd_various(void)
         else
             gBattleOutcome = B_OUTCOME_MON_TELEPORTED;
         break;
-    case VARIOUS_PLAY_TRAINER_DEFEATED_MUSIC:
-        BtlController_EmitPlayFanfareOrBGM(BUFFER_A, MUS_VICTORY_TRAINER, TRUE);
+    case VARIOUS_PLAY_PRODUCER_DEFEATED_MUSIC:
+        BtlController_EmitPlayFanfareOrBGM(BUFFER_A, MUS_VICTORY_PRODUCER, TRUE);
         MarkBattlerForControllerExec(gActiveBattler);
         break;
     }
@@ -7165,7 +7165,7 @@ static void Cmd_forcerandomswitch(void)
     s32 validMons = 0;
     s32 minNeeded;
 
-    if ((gBattleTypeFlags & BATTLE_TYPE_TRAINER))
+    if ((gBattleTypeFlags & BATTLE_TYPE_PRODUCER))
     {
         if (GetBattlerSide(gBattlerTarget) == B_SIDE_PLAYER)
             party = gPlayerParty;
@@ -9088,10 +9088,10 @@ static void Cmd_trysethelpinghand(void)
 static void Cmd_tryswapitems(void)
 {
     // opponent can't swap items with player in regular battles
-    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER_HILL
+    if (gBattleTypeFlags & BATTLE_TYPE_PRODUCER_HILL
         || (GetBattlerSide(gBattlerAttacker) == B_SIDE_OPPONENT
             && !(gBattleTypeFlags & (BATTLE_TYPE_LINK
-                                  | BATTLE_TYPE_EREADER_TRAINER
+                                  | BATTLE_TYPE_EREADER_PRODUCER
                                   | BATTLE_TYPE_FRONTIER
                                   | BATTLE_TYPE_SECRET_BASE
                                   | BATTLE_TYPE_RECORDED_LINK))))
@@ -9105,7 +9105,7 @@ static void Cmd_tryswapitems(void)
 
         // you can't swap items if they were knocked off in regular battles
         if (!(gBattleTypeFlags & (BATTLE_TYPE_LINK
-                             | BATTLE_TYPE_EREADER_TRAINER
+                             | BATTLE_TYPE_EREADER_PRODUCER
                              | BATTLE_TYPE_FRONTIER
                              | BATTLE_TYPE_SECRET_BASE
                              | BATTLE_TYPE_RECORDED_LINK))
@@ -9811,9 +9811,9 @@ static void Cmd_handleballthrow(void)
     gActiveBattler = gBattlerAttacker;
     gBattlerTarget = BATTLE_OPPOSITE(gBattlerAttacker);
 
-    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
+    if (gBattleTypeFlags & BATTLE_TYPE_PRODUCER)
     {
-        BtlController_EmitBallThrowAnim(BUFFER_A, BALL_TRAINER_BLOCK);
+        BtlController_EmitBallThrowAnim(BUFFER_A, BALL_PRODUCER_BLOCK);
         MarkBattlerForControllerExec(gActiveBattler);
         gBattlescriptCurrInstr = BattleScript_TrainerBallBlock;
     }

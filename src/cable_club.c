@@ -814,17 +814,17 @@ static void SetLinkBattleTypeFlags(int linkService)
     switch (linkService)
     {
     case USING_SINGLE_BATTLE:
-        gBattleTypeFlags = BATTLE_TYPE_LINK | BATTLE_TYPE_TRAINER;
+        gBattleTypeFlags = BATTLE_TYPE_LINK | BATTLE_TYPE_PRODUCER;
         break;
     case USING_DOUBLE_BATTLE:
-        gBattleTypeFlags = BATTLE_TYPE_DOUBLE | BATTLE_TYPE_LINK | BATTLE_TYPE_TRAINER;
+        gBattleTypeFlags = BATTLE_TYPE_DOUBLE | BATTLE_TYPE_LINK | BATTLE_TYPE_PRODUCER;
         break;
     case USING_MULTI_BATTLE:
         ReducePlayerPartyToSelectedMons();
-        gBattleTypeFlags = BATTLE_TYPE_DOUBLE | BATTLE_TYPE_LINK | BATTLE_TYPE_TRAINER | BATTLE_TYPE_MULTI;
+        gBattleTypeFlags = BATTLE_TYPE_DOUBLE | BATTLE_TYPE_LINK | BATTLE_TYPE_PRODUCER | BATTLE_TYPE_MULTI;
         break;
     case USING_BATTLE_TOWER:
-        gBattleTypeFlags = BATTLE_TYPE_BATTLE_TOWER | BATTLE_TYPE_DOUBLE | BATTLE_TYPE_LINK | BATTLE_TYPE_TRAINER | BATTLE_TYPE_MULTI;
+        gBattleTypeFlags = BATTLE_TYPE_BATTLE_TOWER | BATTLE_TYPE_DOUBLE | BATTLE_TYPE_LINK | BATTLE_TYPE_PRODUCER | BATTLE_TYPE_MULTI;
         break;
     }
 }
@@ -864,11 +864,11 @@ static void Task_StartWiredCableClubBattle(u8 taskId)
         if (gLinkPlayers[0].trainerId & 1)
             PlayMapChosenOrBattleBGM(MUS_VS_GYM_LEADER);
         else
-            PlayMapChosenOrBattleBGM(MUS_VS_TRAINER);
+            PlayMapChosenOrBattleBGM(MUS_VS_PRODUCER);
 
         SetLinkBattleTypeFlags(gSpecialVar_0x8004);
         CleanupOverworldWindowsAndTilemaps();
-        gTrainerBattleOpponent_A = TRAINER_LINK_OPPONENT;
+        gTrainerBattleOpponent_A = PRODUCER_LINK_OPPONENT;
         SetMainCallback2(CB2_InitBattle);
         gMain.savedCallback = CB2_ReturnFromCableClubBattle;
         DestroyTask(taskId);
@@ -929,12 +929,12 @@ static void Task_StartWirelessCableClubBattle(u8 taskId)
         if (gLinkPlayers[0].trainerId & 1)
             PlayMapChosenOrBattleBGM(MUS_VS_GYM_LEADER);
         else
-            PlayMapChosenOrBattleBGM(MUS_VS_TRAINER);
+            PlayMapChosenOrBattleBGM(MUS_VS_PRODUCER);
 
         gLinkPlayers[0].linkType = LINKTYPE_BATTLE;
         SetLinkBattleTypeFlags(gSpecialVar_0x8004);
         CleanupOverworldWindowsAndTilemaps();
-        gTrainerBattleOpponent_A = TRAINER_LINK_OPPONENT;
+        gTrainerBattleOpponent_A = PRODUCER_LINK_OPPONENT;
         SetMainCallback2(CB2_InitBattle);
         gMain.savedCallback = CB2_ReturnFromCableClubBattle;
         DestroyTask(taskId);

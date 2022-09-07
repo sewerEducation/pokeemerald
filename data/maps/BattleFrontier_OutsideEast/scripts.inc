@@ -16,7 +16,7 @@ BattleFrontier_OutsideEast_EventScript_TryRemoveSudowoodo::
 	return
 
 BattleFrontier_OutsideEast_OnTransition:
-	setvar VAR_BRAVO_TRAINER_BATTLE_TOWER_ON, 0
+	setvar VAR_BRAVO_PRODUCER_BATTLE_TOWER_ON, 0
 	setflag FLAG_HIDE_BATTLE_TOWER_REPORTER
 	call_if_unset FLAG_DEFEATED_SUDOWOODO, BattleFrontier_OutsideEast_EventScript_ShowSudowoodo
 	end
@@ -236,11 +236,11 @@ BattleFrontier_OutsideEast_EventScript_Camper::
 BattleFrontier_OutsideEast_Text_BattleTowerSign:
 	.string "This is the BATTLE TOWER!\n"
 	.string "Keep the win streak as the toughest\l"
-	.string "TRAINER!$"
+	.string "PRODUCER!$"
 
 BattleFrontier_OutsideEast_Text_BattlePalaceSign:
 	.string "This is the BATTLE PALACE!\n"
-	.string "Keep your eyes on POKéMON battles!$"
+	.string "Keep your eyes on LIVE battles!$"
 
 BattleFrontier_OutsideEast_Text_BattleArenaSign:
 	.string "This is the BATTLE ARENA!\n"
@@ -266,7 +266,7 @@ BattleFrontier_OutsideEast_Text_BattleTowerFeelsSpecial:
 
 BattleFrontier_OutsideEast_Text_ConquerLeagueAndFrontier:
 	.string "My grand ambition is to conquer both\n"
-	.string "the BATTLE FRONTIER and the POKéMON\l"
+	.string "the BATTLE FRONTIER and the IDOL\l"
 	.string "LEAGUE.\p"
 	.string "And if my dream comes true…\p"
 	.string "I… I'm going to ask MIMI next door\n"
@@ -295,7 +295,7 @@ BattleFrontier_OutsideEast_Text_DidScottBringYouHere:
 	.string "Did SCOTT bring you here, too?\n"
 	.string "What is it with that guy?\p"
 	.string "It sounds like he really does know\n"
-	.string "how to spot talented TRAINERS, but…\p"
+	.string "how to spot talented PRODUCERS, but…\p"
 	.string "I've never seen him battling in person\n"
 	.string "ever.$"
 
@@ -331,7 +331,7 @@ BattleFrontier_OutsideEast_Text_FastOnBikeAndBattles:
 
 BattleFrontier_OutsideEast_Text_BetterThanDaddyAtPokemon:
 	.string "I'm better than my daddy\n"
-	.string "at POKéMON.$"
+	.string "at IDOLS.$"
 
 BattleFrontier_OutsideEast_Text_GoRackUpSomeWinsForDaddy:
 	.string "Go on, my baby sweetie!\n"
@@ -351,13 +351,13 @@ BattleFrontier_OutsideEast_Text_HeardPrettyGirlAtBattleArena:
 BattleFrontier_OutsideEast_Text_SometimesImportantOldManInThere:
 	.string "I sometimes see this really important-\n"
 	.string "looking old man going in there.\p"
-	.string "He has these really awesome POKéMON.\n"
+	.string "He has these really awesome IDOLS.\n"
 	.string "He seems really nice, though.$"
 
 BattleFrontier_OutsideEast_Text_LegendOfBattlePyramid:
 	.string "Do you know it?\n"
 	.string "The legend of the BATTLE PYRAMID?\p"
-	.string "When there comes a confident TRAINER\n"
+	.string "When there comes a confident PRODUCER\n"
 	.string "reaching for the golden pinnacle,\l"
 	.string "there shall appear a man among men.\p"
 	.string "Don't know that legend?\n"
@@ -376,7 +376,7 @@ BattleFrontier_OutsideEast_Text_GotWipedOut:
 
 BattleFrontier_OutsideEast_Text_ToughTrainerInBattleTower:
 	.string "This guy ran into a horribly tough\n"
-	.string "TRAINER while he was on the BATTLE\l"
+	.string "PRODUCER while he was on the BATTLE\l"
 	.string "TOWER challenge.\p"
 	.string "Now look at him…\p"
 	.string "You need to be cautious if you ever\n"
@@ -411,7 +411,7 @@ BattleFrontier_OutsideEast_Text_PowerOfOurLoveWillOvercome:
 
 BattleFrontier_OutsideEast_Text_FrontierNotExclusivelyForToughTrainers:
 	.string "The BATTLE FRONTIER isn't exclusively\n"
-	.string "for tough TRAINERS.\p"
+	.string "for tough PRODUCERS.\p"
 	.string "Many people with special abilities\n"
 	.string "have been invited, it seems.\p"
 	.string "That man SCOTT…\p"
@@ -433,7 +433,7 @@ BattleFrontier_OutsideEast_Text_OnceAnOddTreePastHere:
 BattleFrontier_OutsideEast_Text_StickyMonWithLongTail:
 	.string "I…\n"
 	.string "I saw it!\p"
-	.string "There was a sticky sort of a POKéMON\n"
+	.string "There was a sticky sort of an IDOL\n"
 	.string "with a long tail up ahead!\p"
 	.string "It was hiding under a boulder, and\n"
 	.string "it kept staring at me!$"

@@ -12,7 +12,7 @@ TrainerHill_Entrance_MapScripts::
 	.byte 0
 
 TrainerHill_Entrance_OnTransition:
-	setflag FLAG_LANDMARK_TRAINER_HILL
+	setflag FLAG_LANDMARK_PRODUCER_HILL
 	getplayerxy VAR_TEMP_D, VAR_RESULT
 	end
 
@@ -76,9 +76,9 @@ TrainerHill_Entrance_EventScript_ExitChallenge::
 	setvar VAR_TEMP_0, 1
 	trainerhill_getstatus
 	switch VAR_RESULT
-	case TRAINER_HILL_PLAYER_STATUS_LOST, TrainerHill_Entrance_EventScript_ExitChallengeLost
-	case TRAINER_HILL_PLAYER_STATUS_ECARD_SCANNED, TrainerHill_Entrance_EventScript_ExitChallengeECard
-	case TRAINER_HILL_PLAYER_STATUS_NORMAL, TrainerHill_Entrance_EventScript_EndExitChallenge
+	case PRODUCER_HILL_PLAYER_STATUS_LOST, TrainerHill_Entrance_EventScript_ExitChallengeLost
+	case PRODUCER_HILL_PLAYER_STATUS_ECARD_SCANNED, TrainerHill_Entrance_EventScript_ExitChallengeECard
+	case PRODUCER_HILL_PLAYER_STATUS_NORMAL, TrainerHill_Entrance_EventScript_EndExitChallenge
 
 TrainerHill_Entrance_EventScript_ExitChallengeLost::
 	lockall
@@ -94,7 +94,7 @@ TrainerHill_Entrance_EventScript_PlayerExitChallenge::
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, TrainerHill_Entrance_Movement_PushPlayerBackFromCounter
 	waitmovement 0
-	setvar VAR_TRAINER_HILL_IS_ACTIVE, 0
+	setvar VAR_PRODUCER_HILL_IS_ACTIVE, 0
 	special HealPlayerParty
 	releaseall
 TrainerHill_Entrance_EventScript_EndExitChallenge::
@@ -158,7 +158,7 @@ TrainerHill_Entrance_EventScript_ChooseChallenge::
 	case 4, TrainerHill_Entrance_EventScript_CancelEntry
 	case MULTI_B_PRESSED, TrainerHill_Entrance_EventScript_CancelEntry
 	trainerhill_setmode VAR_RESULT
-	setvar VAR_TRAINER_HILL_IS_ACTIVE, 1
+	setvar VAR_PRODUCER_HILL_IS_ACTIVE, 1
 	setvar VAR_TEMP_5, 0
 	special HealPlayerParty
 	msgbox TrainerHill_Entrance_Text_TimeProgessGetSetGo, MSGBOX_DEFAULT
@@ -294,17 +294,17 @@ TrainerHill_Entrance_Pokemart_Expanded:
 	end
 
 TrainerHill_Entrance_Text_StillGettingReady:
-	.string "This is the TRAINER HILL where\n"
+	.string "This is the PRODUCER HILL where\n"
 	.string "you may enjoy tag battles with many\l"
-	.string "TRAINERS.\p"
+	.string "PRODUCERS.\p"
 	.string "Unfortunately, we're still getting\n"
 	.string "things ready. Please come back later!$"
 
 TrainerHill_Entrance_Text_WelcomeToTrainerHill:
 	.string "Welcome!\p"
-	.string "This is the TRAINER HILL where\n"
+	.string "This is the PRODUCER HILL where\n"
 	.string "you may enjoy tag battles with many\l"
-	.string "TRAINERS!$"
+	.string "PRODUCERS!$"
 
 TrainerHill_Entrance_Text_SaveGameBeforeEnter:
 	.string "Is this your first visit here?\p"
@@ -313,18 +313,18 @@ TrainerHill_Entrance_Text_SaveGameBeforeEnter:
 
 TrainerHill_Entrance_Text_TrainersUpToFloorX:
 	.string "Let's see…\n"
-	.string "The TRAINERS here now are…\p"
+	.string "The PRODUCERS here now are…\p"
 	.string "Up to floor no. {STR_VAR_1}.$"
 
 TrainerHill_Entrance_Text_TrainersInEveryRoom:
 	.string "Let's see…\n"
-	.string "The TRAINERS here now are…\p"
-	.string "There appear to be TRAINERS gathered\n"
+	.string "The PRODUCERS here now are…\p"
+	.string "There appear to be PRODUCERS gathered\n"
 	.string "in every room.$"
 
 TrainerHill_Entrance_Text_LikeToChallengeTrainers:
 	.string "Would you like to challenge the\n"
-	.string "waiting TRAINERS?$"
+	.string "waiting PRODUCERS?$"
 
 TrainerHill_Entrance_Text_TimeProgessGetSetGo:
 	.string "I will time your progress.\n"
@@ -346,7 +346,7 @@ TrainerHill_Entrance_Text_HopeYouGiveItYourBest:
 	.string "I hope you give it your best.$"
 
 TrainerHill_Entrance_Text_MovedReceptionHereForSwitch:
-	.string "When the TRAINERS switch places,\n"
+	.string "When the PRODUCERS switch places,\n"
 	.string "the movement can be hectic.\p"
 	.string "To avoid the stampede, we moved\n"
 	.string "the reception counter here.\p"
@@ -356,7 +356,7 @@ TrainerHill_Entrance_Text_ThankYouForPlaying:
 	.string "Thank you for playing!$"
 
 TrainerHill_Entrance_Text_ExplainTrainerHill:
-	.string "Here at the TRAINER HILL, we conduct\n"
+	.string "Here at the PRODUCER HILL, we conduct\n"
 	.string "an event called the Time Attack.\p"
 	.string "It is a race that measures how long\n"
 	.string "you take to reach our owner on\l"
@@ -364,15 +364,15 @@ TrainerHill_Entrance_Text_ExplainTrainerHill:
 	.string "The fastest times are posted on\n"
 	.string "the Time Board--try competing with\l"
 	.string "your friends.\p"
-	.string "In TRAINER battles along the way,\n"
+	.string "In PRODUCER battles along the way,\n"
 	.string "neither Exp. Points nor money will\l"
 	.string "be awarded.$"
 
 @ Unused
 TrainerHill_Entrance_Text_NeedAtLeastTwoPokemon:
 	.string "Oh, I'm sorry, but you appear to have\n"
-	.string "only one POKéMON with you.\p"
-	.string "You will need at least two POKéMON\n"
+	.string "only one IDOL with you.\p"
+	.string "You will need at least two IDOLS\n"
 	.string "to enter this event.$"
 
 TrainerHill_Roof_Text_YouFinallyCameBravo:
@@ -383,7 +383,7 @@ TrainerHill_Roof_Text_YouFinallyCameBravo:
 	.string "I know why you came all the way\l"
 	.string "here by yourself!\p"
 	.string "You wanted to see me, the owner\n"
-	.string "of the TRAINER HILL, because…\p"
+	.string "of the PRODUCER HILL, because…\p"
 	.string "You want to form a tag team with me!\n"
 	.string "Wa-hoo!\p"
 	.string "…Uh?\n"
@@ -420,7 +420,7 @@ TrainerHill_Roof_Text_ArriveZippierNextTime:
 
 @ Unused
 TrainerHill_Roof_Text_BuiltTrainerHillToFindPartner:
-	.string "I had the TRAINER HILL built for but\n"
+	.string "I had the PRODUCER HILL built for but\n"
 	.string "one reason and one only!\p"
 	.string "To find the most suitable partner\n"
 	.string "with whom I may form a tag team!$"
@@ -429,14 +429,14 @@ TrainerHill_Entrance_Text_ChallengeTime:
 	.string "{STR_VAR_1} min. {STR_VAR_2}.{STR_VAR_3} sec.$"
 
 TrainerHill_Entrance_Text_WhatSortOfTrainersAreAhead:
-	.string "Who knows what sort of TRAINERS\n"
-	.string "and POKéMON combos are ahead?\p"
+	.string "Who knows what sort of PRODUCERS\n"
+	.string "and IDOL combos are ahead?\p"
 	.string "All I know is that I'll knock aside\n"
 	.string "anyone that stands in my way!$"
 
 TrainerHill_Entrance_Text_CantWaitToTestTheWaters:
-	.string "I heard tough TRAINERS come to this\n"
-	.string "TRAINER HILL from all over.\p"
+	.string "I heard tough PRODUCERS come to this\n"
+	.string "PRODUCER HILL from all over.\p"
 	.string "I can't wait to test the waters!\p"
 	.string "I'll knock aside anyone that stands\n"
 	.string "in my way!$"

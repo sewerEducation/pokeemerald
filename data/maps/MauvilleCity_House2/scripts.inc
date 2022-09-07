@@ -44,7 +44,7 @@ MauvilleCity_House2_Text_BuyHarborMailAtSlateport:
 	.string "If I had a BIKE, it'd be easy to cycle to\n"
 	.string "SLATEPORT for some shopping.\p"
 	.string "I'd be able to buy HARBOR MAIL at the\n"
-	.string "POKéMON MART in SLATEPORT…$"
+	.string "IDOL MART in SLATEPORT…$"
 
 MauvilleCity_House2_Text_TradeHarborMailForCoinCase:
 	.string "Oh! You have HARBOR MAIL?\n"
@@ -62,4 +62,3 @@ MauvilleCity_House2_Text_ThatsDisappointing:
 	.string "Oh, that's disappointing.\p"
 	.string "A COIN CASE is needed for the\n"
 	.string "GAME CORNER.$"
-
