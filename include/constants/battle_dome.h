@@ -7,8 +7,8 @@
 #define DOME_FINAL         3
 #define DOME_ROUNDS_COUNT  4
 
-//#define DOME_TOURNAMENT_PRODUCERS_COUNT 16 -- defined in global
-#define DOME_TOURNAMENT_MATCHES_COUNT  DOME_TOURNAMENT_PRODUCERS_COUNT - 1
+//#define DOME_TOURNAMENT_TRAINERS_COUNT 16 -- defined in global
+#define DOME_TOURNAMENT_MATCHES_COUNT  DOME_TOURNAMENT_TRAINERS_COUNT - 1
 
 #define DOME_BATTLE_PARTY_SIZE  2
 
@@ -31,14 +31,14 @@
 #define BATTLE_DOME_FUNC_RESOLVE_WINNERS            12
 #define BATTLE_DOME_FUNC_SAVE                       13
 #define BATTLE_DOME_FUNC_INCREMENT_STREAK           14
-#define BATTLE_DOME_FUNC_SET_PRODUCERS               15
+#define BATTLE_DOME_FUNC_SET_TRAINERS               15
 #define BATTLE_DOME_FUNC_RESET_SKETCH               16
 #define BATTLE_DOME_FUNC_RESTORE_HELD_ITEMS         17
 #define BATTLE_DOME_FUNC_REDUCE_PARTY               18
 #define BATTLE_DOME_FUNC_COMPARE_SEEDS              19
 #define BATTLE_DOME_FUNC_GET_WINNER_NAME            20
 #define BATTLE_DOME_FUNC_INIT_RESULTS_TREE          21
-#define BATTLE_DOME_FUNC_INIT_PRODUCERS              22
+#define BATTLE_DOME_FUNC_INIT_TRAINERS              22
 
 #define DOME_DATA_WIN_STREAK              0
 #define DOME_DATA_WIN_STREAK_ACTIVE       1
@@ -57,12 +57,12 @@
 // Input IDs on the tourney tree
 #define TOURNEY_TREE_SELECTED_CLOSE   0
 #define TOURNEY_TREE_NO_SELECTION     1
-#define TOURNEY_TREE_SELECTED_PRODUCER 2
+#define TOURNEY_TREE_SELECTED_TRAINER 2
 #define TOURNEY_TREE_SELECTED_MATCH   3
 
 // Modes for showing the tourney tree info card
 #define INFOCARD_NEXT_OPPONENT  0
-#define INFOCARD_PRODUCER        1
+#define INFOCARD_TRAINER        1
 #define INFOCARD_MATCH          2
 
 // Input IDs for the info cards

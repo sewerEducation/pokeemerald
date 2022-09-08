@@ -717,7 +717,7 @@ void AnimTask_FreeBallGfx(u8 taskId)
 
 void AnimTask_IsBallBlockedByTrainer(u8 taskId)
 {
-    if (gBattleSpritesDataPtr->animationData->ballThrowCaseId == BALL_PRODUCER_BLOCK)
+    if (gBattleSpritesDataPtr->animationData->ballThrowCaseId == BALL_TRAINER_BLOCK)
         gBattleAnimArgs[ARG_RET_ID] = -1;
     else
         gBattleAnimArgs[ARG_RET_ID] = 0;
@@ -884,7 +884,7 @@ static void SpriteCB_Ball_Arc(struct Sprite *sprite)
 
     if (TranslateAnimHorizontalArc(sprite))
     {
-        if (gBattleSpritesDataPtr->animationData->ballThrowCaseId == BALL_PRODUCER_BLOCK)
+        if (gBattleSpritesDataPtr->animationData->ballThrowCaseId == BALL_TRAINER_BLOCK)
         {
             sprite->callback = SpriteCB_Ball_Block;
         }

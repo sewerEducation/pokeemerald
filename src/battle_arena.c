@@ -349,7 +349,7 @@ static void (* const sArenaFunctions[])(void) =
     [BATTLE_ARENA_FUNC_SAVE]             = SaveArenaChallenge,
     [BATTLE_ARENA_FUNC_SET_PRIZE]        = SetArenaPrize,
     [BATTLE_ARENA_FUNC_GIVE_PRIZE]       = GiveArenaPrize,
-    [BATTLE_ARENA_FUNC_GET_PRODUCER_NAME] = BufferArenaOpponentName,
+    [BATTLE_ARENA_FUNC_GET_TRAINER_NAME] = BufferArenaOpponentName,
 };
 
 static const u16 sShortStreakPrizeItems[] =

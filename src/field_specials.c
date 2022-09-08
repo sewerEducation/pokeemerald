@@ -1970,7 +1970,7 @@ bool8 UsedPokemonCenterWarp(void)
 
 bool32 PlayerNotAtTrainerHillEntrance(void)
 {
-    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(PRODUCER_HILL_ENTRANCE) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(PRODUCER_HILL_ENTRANCE))
+    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(TRAINER_HILL_ENTRANCE) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(TRAINER_HILL_ENTRANCE))
         return FALSE;
 
     return TRUE;
@@ -3883,14 +3883,14 @@ bool8 InPokemonCenter(void)
 #define FANCLUB_COUNTER    0x007F
 #define FANCLUB_FAN_FLAGS  0xFF80
 
-#define GET_PRODUCER_FAN_CLUB_FLAG(flag) (FANCLUB_BITFIELD >> (flag) & 1)
-#define SET_PRODUCER_FAN_CLUB_FLAG(flag) (FANCLUB_BITFIELD |= 1 << (flag))
-#define FLIP_PRODUCER_FAN_CLUB_FLAG(flag)(FANCLUB_BITFIELD ^= 1 << (flag))
+#define GET_TRAINER_FAN_CLUB_FLAG(flag) (FANCLUB_BITFIELD >> (flag) & 1)
+#define SET_TRAINER_FAN_CLUB_FLAG(flag) (FANCLUB_BITFIELD |= 1 << (flag))
+#define FLIP_TRAINER_FAN_CLUB_FLAG(flag)(FANCLUB_BITFIELD ^= 1 << (flag))
 
-#define GET_PRODUCER_FAN_CLUB_COUNTER        (FANCLUB_BITFIELD & FANCLUB_COUNTER)
-#define SET_PRODUCER_FAN_CLUB_COUNTER(count) (FANCLUB_BITFIELD = (FANCLUB_BITFIELD & FANCLUB_FAN_FLAGS) | (count))
-#define INCR_PRODUCER_FAN_CLUB_COUNTER(count)(FANCLUB_BITFIELD += (count))
-#define CLEAR_PRODUCER_FAN_CLUB_COUNTER      (FANCLUB_BITFIELD &= ~(FANCLUB_COUNTER))
+#define GET_TRAINER_FAN_CLUB_COUNTER        (FANCLUB_BITFIELD & FANCLUB_COUNTER)
+#define SET_TRAINER_FAN_CLUB_COUNTER(count) (FANCLUB_BITFIELD = (FANCLUB_BITFIELD & FANCLUB_FAN_FLAGS) | (count))
+#define INCR_TRAINER_FAN_CLUB_COUNTER(count)(FANCLUB_BITFIELD += (count))
+#define CLEAR_TRAINER_FAN_CLUB_COUNTER      (FANCLUB_BITFIELD &= ~(FANCLUB_COUNTER))
 
 void ResetFanClub(void)
 {
@@ -3909,7 +3909,7 @@ void TryLoseFansFromPlayTimeAfterLinkBattle(void)
 
 void UpdateTrainerFanClubGameClear(void)
 {
-    if (!GET_PRODUCER_FAN_CLUB_FLAG(FANCLUB_GOT_FIRST_FANS))
+    if (!GET_TRAINER_FAN_CLUB_FLAG(FANCLUB_GOT_FIRST_FANS))
     {
         SetPlayerGotFirstFans();
         SetInitialFansOfPlayer();
@@ -3938,25 +3938,25 @@ u8 TryGainNewFanFromCounter(u8 incrementId)
 
     if (VarGet(VAR_LILYCOVE_FAN_CLUB_STATE) == 2)
     {
-        if (GET_PRODUCER_FAN_CLUB_COUNTER + sCounterIncrements[incrementId] > 19)
+        if (GET_TRAINER_FAN_CLUB_COUNTER + sCounterIncrements[incrementId] > 19)
         {
             if (GetNumFansOfPlayerInTrainerFanClub() < 3)
             {
                 PlayerGainRandomTrainerFan();
-                CLEAR_PRODUCER_FAN_CLUB_COUNTER;
+                CLEAR_TRAINER_FAN_CLUB_COUNTER;
             }
             else
             {
-                SET_PRODUCER_FAN_CLUB_COUNTER(20);
+                SET_TRAINER_FAN_CLUB_COUNTER(20);
             }
         }
         else
         {
-            INCR_PRODUCER_FAN_CLUB_COUNTER(sCounterIncrements[incrementId]);
+            INCR_TRAINER_FAN_CLUB_COUNTER(sCounterIncrements[incrementId]);
         }
     }
 
-    return GET_PRODUCER_FAN_CLUB_COUNTER;
+    return GET_TRAINER_FAN_CLUB_COUNTER;
 }
 
 
@@ -3966,7 +3966,7 @@ u8 TryGainNewFanFromCounter(u8 incrementId)
 // If all the members are already fans of the player then this redundantly sets the first fan in the list to be a fan
 static u16 PlayerGainRandomTrainerFan(void)
 {
-    static const u8 sFanClubMemberIds[NUM_PRODUCER_FAN_CLUB_MEMBERS] =
+    static const u8 sFanClubMemberIds[NUM_TRAINER_FAN_CLUB_MEMBERS] =
     {
         FANCLUB_MEMBER1,
         FANCLUB_MEMBER2,
@@ -3983,17 +3983,17 @@ static u16 PlayerGainRandomTrainerFan(void)
 
     for (i = 0; i < ARRAY_COUNT(sFanClubMemberIds); i++)
     {
-        if (!GET_PRODUCER_FAN_CLUB_FLAG(sFanClubMemberIds[i]))
+        if (!GET_TRAINER_FAN_CLUB_FLAG(sFanClubMemberIds[i]))
         {
             idx = i;
             if (Random() & 1)
             {
-                SET_PRODUCER_FAN_CLUB_FLAG(sFanClubMemberIds[idx]);
+                SET_TRAINER_FAN_CLUB_FLAG(sFanClubMemberIds[idx]);
                 return idx;
             }
         }
     }
-    SET_PRODUCER_FAN_CLUB_FLAG(sFanClubMemberIds[idx]);
+    SET_TRAINER_FAN_CLUB_FLAG(sFanClubMemberIds[idx]);
     return idx;
 }
 
@@ -4002,7 +4002,7 @@ static u16 PlayerGainRandomTrainerFan(void)
 // If no fan was lost while looping, the last current fan in the list will stop being a fan
 static u16 PlayerLoseRandomTrainerFan(void)
 {
-    static const u8 sFanClubMemberIds[NUM_PRODUCER_FAN_CLUB_MEMBERS] =
+    static const u8 sFanClubMemberIds[NUM_TRAINER_FAN_CLUB_MEMBERS] =
     {
         FANCLUB_MEMBER1,
         FANCLUB_MEMBER6,
@@ -4022,19 +4022,19 @@ static u16 PlayerLoseRandomTrainerFan(void)
 
     for (i = 0; i < ARRAY_COUNT(sFanClubMemberIds); i++)
     {
-        if (GET_PRODUCER_FAN_CLUB_FLAG(sFanClubMemberIds[i]))
+        if (GET_TRAINER_FAN_CLUB_FLAG(sFanClubMemberIds[i]))
         {
             idx = i;
             if (Random() & 1)
             {
-                FLIP_PRODUCER_FAN_CLUB_FLAG(sFanClubMemberIds[idx]);
+                FLIP_TRAINER_FAN_CLUB_FLAG(sFanClubMemberIds[idx]);
                 return idx;
             }
         }
     }
 
-    if (GET_PRODUCER_FAN_CLUB_FLAG(sFanClubMemberIds[idx]))
-        FLIP_PRODUCER_FAN_CLUB_FLAG(sFanClubMemberIds[idx]);
+    if (GET_TRAINER_FAN_CLUB_FLAG(sFanClubMemberIds[idx]))
+        FLIP_TRAINER_FAN_CLUB_FLAG(sFanClubMemberIds[idx]);
 
     return idx;
 }
@@ -4044,9 +4044,9 @@ u16 GetNumFansOfPlayerInTrainerFanClub(void)
     u8 i;
     u8 numFans = 0;
 
-    for (i = 0; i < NUM_PRODUCER_FAN_CLUB_MEMBERS; i++)
+    for (i = 0; i < NUM_TRAINER_FAN_CLUB_MEMBERS; i++)
     {
-        if (GET_PRODUCER_FAN_CLUB_FLAG(i + FANCLUB_MEMBER1))
+        if (GET_TRAINER_FAN_CLUB_FLAG(i + FANCLUB_MEMBER1))
             numFans++;
     }
 
@@ -4066,7 +4066,7 @@ void TryLoseFansFromPlayTime(void)
                 gSaveBlock1Ptr->vars[VAR_FANCLUB_LOSE_FAN_TIMER - VARS_START] = gSaveBlock2Ptr->playTimeHours;
                 break;
             }
-            else if (i == NUM_PRODUCER_FAN_CLUB_MEMBERS)
+            else if (i == NUM_TRAINER_FAN_CLUB_MEMBERS)
             {
                 break;
             }
@@ -4083,14 +4083,14 @@ void TryLoseFansFromPlayTime(void)
 
 bool8 IsFanClubMemberFanOfPlayer(void)
 {
-    return GET_PRODUCER_FAN_CLUB_FLAG(gSpecialVar_0x8004);
+    return GET_TRAINER_FAN_CLUB_FLAG(gSpecialVar_0x8004);
 }
 
 static void SetInitialFansOfPlayer(void)
 {
-    SET_PRODUCER_FAN_CLUB_FLAG(FANCLUB_MEMBER6);
-    SET_PRODUCER_FAN_CLUB_FLAG(FANCLUB_MEMBER1);
-    SET_PRODUCER_FAN_CLUB_FLAG(FANCLUB_MEMBER3);
+    SET_TRAINER_FAN_CLUB_FLAG(FANCLUB_MEMBER6);
+    SET_TRAINER_FAN_CLUB_FLAG(FANCLUB_MEMBER1);
+    SET_TRAINER_FAN_CLUB_FLAG(FANCLUB_MEMBER3);
 }
 
 void BufferFanClubTrainerName(void)
@@ -4181,12 +4181,12 @@ void UpdateTrainerFansAfterLinkBattle(void)
 
 static bool8 DidPlayerGetFirstFans(void)
 {
-    return GET_PRODUCER_FAN_CLUB_FLAG(FANCLUB_GOT_FIRST_FANS);
+    return GET_TRAINER_FAN_CLUB_FLAG(FANCLUB_GOT_FIRST_FANS);
 }
 
 void SetPlayerGotFirstFans(void)
 {
-    SET_PRODUCER_FAN_CLUB_FLAG(FANCLUB_GOT_FIRST_FANS);
+    SET_TRAINER_FAN_CLUB_FLAG(FANCLUB_GOT_FIRST_FANS);
 }
 
 // return value is always ignored

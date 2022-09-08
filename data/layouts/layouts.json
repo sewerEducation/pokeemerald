@@ -1062,7 +1062,7 @@
       "blockdata_filepath": "data/layouts/LilycoveCity_ContestHall/map.bin"
     },
     {
-      "id": "LAYOUT_LILYCOVE_CITY_POKEMON_PRODUCER_FAN_CLUB",
+      "id": "LAYOUT_LILYCOVE_CITY_POKEMON_TRAINER_FAN_CLUB",
       "name": "LilycoveCity_PokemonTrainerFanClub_Layout",
       "width": 12,
       "height": 14,
@@ -4132,7 +4132,7 @@
       "blockdata_filepath": "data/layouts/MarineCave_End/map.bin"
     },
     {
-      "id": "LAYOUT_PRODUCER_HILL_ENTRANCE",
+      "id": "LAYOUT_TRAINER_HILL_ENTRANCE",
       "name": "TrainerHill_Entrance_Layout",
       "width": 19,
       "height": 17,
@@ -4142,7 +4142,7 @@
       "blockdata_filepath": "data/layouts/TrainerHill_Entrance/map.bin"
     },
     {
-      "id": "LAYOUT_PRODUCER_HILL_1F",
+      "id": "LAYOUT_TRAINER_HILL_1F",
       "name": "TrainerHill_1F_Layout",
       "width": 16,
       "height": 21,
@@ -4152,7 +4152,7 @@
       "blockdata_filepath": "data/layouts/TrainerHill_1F/map.bin"
     },
     {
-      "id": "LAYOUT_PRODUCER_HILL_2F",
+      "id": "LAYOUT_TRAINER_HILL_2F",
       "name": "TrainerHill_2F_Layout",
       "width": 16,
       "height": 21,
@@ -4162,7 +4162,7 @@
       "blockdata_filepath": "data/layouts/TrainerHill_2F/map.bin"
     },
     {
-      "id": "LAYOUT_PRODUCER_HILL_3F",
+      "id": "LAYOUT_TRAINER_HILL_3F",
       "name": "TrainerHill_3F_Layout",
       "width": 16,
       "height": 21,
@@ -4172,7 +4172,7 @@
       "blockdata_filepath": "data/layouts/TrainerHill_3F/map.bin"
     },
     {
-      "id": "LAYOUT_PRODUCER_HILL_4F",
+      "id": "LAYOUT_TRAINER_HILL_4F",
       "name": "TrainerHill_4F_Layout",
       "width": 16,
       "height": 21,
@@ -4182,7 +4182,7 @@
       "blockdata_filepath": "data/layouts/TrainerHill_4F/map.bin"
     },
     {
-      "id": "LAYOUT_PRODUCER_HILL_ROOF",
+      "id": "LAYOUT_TRAINER_HILL_ROOF",
       "name": "TrainerHill_Roof_Layout",
       "width": 25,
       "height": 16,

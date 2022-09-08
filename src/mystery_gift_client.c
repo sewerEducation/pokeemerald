@@ -231,7 +231,7 @@ static u32 Client_Run(struct MysteryGiftClient * client)
     case CLI_SAVE_RAM_SCRIPT:
         InitRamScript_NoObjectEvent(client->recvBuffer, sizeof(struct RamScriptData));
         break;
-    case CLI_RECV_EREADER_PRODUCER:
+    case CLI_RECV_EREADER_TRAINER:
         memcpy(&gSaveBlock2Ptr->frontier.ereaderTrainer, client->recvBuffer, sizeof(gSaveBlock2Ptr->frontier.ereaderTrainer));
         ValidateEReaderTrainer();
         break;

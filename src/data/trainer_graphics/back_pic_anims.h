@@ -118,12 +118,12 @@ static const union AnimCmd *const sBackAnims_Steven[] =
 
 const union AnimCmd *const *const gTrainerBackAnimsPtrTable[] =
 {
-    [PRODUCER_BACK_PIC_BRENDAN] = sBackAnims_Brendan,
-    [PRODUCER_BACK_PIC_MAY] = sBackAnims_May,
-    [PRODUCER_BACK_PIC_RED] = sBackAnims_Red,
-    [PRODUCER_BACK_PIC_LEAF] = sBackAnims_Leaf,
-    [PRODUCER_BACK_PIC_RUBY_SAPPHIRE_BRENDAN] = sBackAnims_RubySapphireBrendan,
-    [PRODUCER_BACK_PIC_RUBY_SAPPHIRE_MAY] = sBackAnims_RubySapphireMay,
-    [PRODUCER_BACK_PIC_WALLY] = sBackAnims_Wally,
-    [PRODUCER_BACK_PIC_STEVEN] = sBackAnims_Steven,
+    [TRAINER_BACK_PIC_BRENDAN] = sBackAnims_Brendan,
+    [TRAINER_BACK_PIC_MAY] = sBackAnims_May,
+    [TRAINER_BACK_PIC_RED] = sBackAnims_Red,
+    [TRAINER_BACK_PIC_LEAF] = sBackAnims_Leaf,
+    [TRAINER_BACK_PIC_RUBY_SAPPHIRE_BRENDAN] = sBackAnims_RubySapphireBrendan,
+    [TRAINER_BACK_PIC_RUBY_SAPPHIRE_MAY] = sBackAnims_RubySapphireMay,
+    [TRAINER_BACK_PIC_WALLY] = sBackAnims_Wally,
+    [TRAINER_BACK_PIC_STEVEN] = sBackAnims_Steven,
 };

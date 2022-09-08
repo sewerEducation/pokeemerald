@@ -15,7 +15,7 @@ TrainerHill_Elevator_EventScript_ExitToRoof::
 	applymovement OBJ_EVENT_ID_PLAYER, TrainerHill_Elevator_Movement_PlayerExitElevatorToRoof
 	waitmovement 0
 	releaseall
-	warp MAP_PRODUCER_HILL_ROOF, 15, 5
+	warp MAP_TRAINER_HILL_ROOF, 15, 5
 	waitstate
 	end
 
@@ -36,7 +36,7 @@ TrainerHill_Elevator_EventScript_EnterElevator::
 	delay 25
 	applymovement OBJ_EVENT_ID_PLAYER, TrainerHill_Elevator_Movement_PlayerExitElevator
 	waitmovement 0
-	warp MAP_PRODUCER_HILL_ENTRANCE, 17, 8
+	warp MAP_TRAINER_HILL_ENTRANCE, 17, 8
 	waitstate
 	end
 

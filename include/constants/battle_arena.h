@@ -7,7 +7,7 @@
 #define BATTLE_ARENA_FUNC_SAVE              3
 #define BATTLE_ARENA_FUNC_SET_PRIZE         4
 #define BATTLE_ARENA_FUNC_GIVE_PRIZE        5
-#define BATTLE_ARENA_FUNC_GET_PRODUCER_NAME  6
+#define BATTLE_ARENA_FUNC_GET_TRAINER_NAME  6
 
 #define ARENA_DATA_PRIZE              0
 #define ARENA_DATA_WIN_STREAK         1

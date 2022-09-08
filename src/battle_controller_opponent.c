@@ -114,8 +114,8 @@ static void (*const sOpponentBufferCommands[CONTROLLER_CMDS_COUNT])(void) =
     [CONTROLLER_SWITCHINANIM]             = OpponentHandleSwitchInAnim,
     [CONTROLLER_RETURNMONTOBALL]          = OpponentHandleReturnMonToBall,
     [CONTROLLER_DRAWPRODUCERPIC]           = OpponentHandleDrawTrainerPic,
-    [CONTROLLER_PRODUCERSLIDE]             = OpponentHandleTrainerSlide,
-    [CONTROLLER_PRODUCERSLIDEBACK]         = OpponentHandleTrainerSlideBack,
+    [CONTROLLER_TRAINERSLIDE]             = OpponentHandleTrainerSlide,
+    [CONTROLLER_TRAINERSLIDEBACK]         = OpponentHandleTrainerSlideBack,
     [CONTROLLER_FAINTANIMATION]           = OpponentHandleFaintAnimation,
     [CONTROLLER_PALETTEFADE]              = OpponentHandlePaletteFade,
     [CONTROLLER_SUCCESSBALLTHROWANIM]     = OpponentHandleSuccessBallThrowAnim,
@@ -1240,11 +1240,11 @@ static void OpponentHandleDrawTrainerPic(void)
     {
         trainerPicId = GetSecretBaseTrainerPicIndex();
     }
-    else if (gTrainerBattleOpponent_A == PRODUCER_FRONTIER_BRAIN)
+    else if (gTrainerBattleOpponent_A == TRAINER_FRONTIER_BRAIN)
     {
         trainerPicId = GetFrontierBrainTrainerPicIndex();
     }
-    else if (gBattleTypeFlags & BATTLE_TYPE_PRODUCER_HILL)
+    else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER_HILL)
     {
         if (gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS)
         {
@@ -1272,7 +1272,7 @@ static void OpponentHandleDrawTrainerPic(void)
             trainerPicId = GetFrontierTrainerFrontSpriteId(gTrainerBattleOpponent_A);
         }
     }
-    else if (gBattleTypeFlags & BATTLE_TYPE_EREADER_PRODUCER)
+    else if (gBattleTypeFlags & BATTLE_TYPE_EREADER_TRAINER)
     {
         trainerPicId = GetEreaderTrainerFrontSpriteId();
     }
@@ -1324,11 +1324,11 @@ static void OpponentHandleTrainerSlide(void)
     {
         trainerPicId = GetSecretBaseTrainerPicIndex();
     }
-    else if (gTrainerBattleOpponent_A == PRODUCER_FRONTIER_BRAIN)
+    else if (gTrainerBattleOpponent_A == TRAINER_FRONTIER_BRAIN)
     {
         trainerPicId = GetFrontierBrainTrainerPicIndex();
     }
-    else if (gBattleTypeFlags & BATTLE_TYPE_PRODUCER_HILL)
+    else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER_HILL)
     {
         if (gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS)
         {
@@ -1356,7 +1356,7 @@ static void OpponentHandleTrainerSlide(void)
             trainerPicId = GetFrontierTrainerFrontSpriteId(gTrainerBattleOpponent_A);
         }
     }
-    else if (gBattleTypeFlags & BATTLE_TYPE_EREADER_PRODUCER)
+    else if (gBattleTypeFlags & BATTLE_TYPE_EREADER_TRAINER)
     {
         trainerPicId = GetEreaderTrainerFrontSpriteId();
     }
@@ -1554,7 +1554,7 @@ static void OpponentHandleChooseMove(void)
         u8 chosenMoveId;
         struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct *)(&gBattleBufferA[gActiveBattler][4]);
 
-        if (gBattleTypeFlags & (BATTLE_TYPE_PRODUCER | BATTLE_TYPE_FIRST_BATTLE | BATTLE_TYPE_SAFARI | BATTLE_TYPE_ROAMER))
+        if (gBattleTypeFlags & (BATTLE_TYPE_TRAINER | BATTLE_TYPE_FIRST_BATTLE | BATTLE_TYPE_SAFARI | BATTLE_TYPE_ROAMER))
         {
 
             BattleAI_SetupAIData(0xF);

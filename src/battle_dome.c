@@ -42,14 +42,14 @@
 
 // Enough space to hold 2 match info cards worth of trainers and their parties
 #define NUM_INFOCARD_SPRITES ((FRONTIER_PARTY_SIZE + 1) * 4)
-#define NUM_INFOCARD_PRODUCERS 2
+#define NUM_INFOCARD_TRAINERS 2
 
 // An 'Info Card' is a trainer or match information page that can be viewed on the Tourney Tree
 struct TourneyTreeInfoCard
 {
     u8 spriteIds[NUM_INFOCARD_SPRITES];
     u8 pos;
-    u8 tournamentIds[NUM_INFOCARD_PRODUCERS];
+    u8 tournamentIds[NUM_INFOCARD_TRAINERS];
 };
 
 struct TourneyTreeLineSection
@@ -59,7 +59,7 @@ struct TourneyTreeLineSection
     u16 src;
 };
 
-#define DOME_PRODUCERS gSaveBlock2Ptr->frontier.domeTrainers
+#define DOME_TRAINERS gSaveBlock2Ptr->frontier.domeTrainers
 #define DOME_MONS     gSaveBlock2Ptr->frontier.domeMonIds
 
 #define tState              data[0]
@@ -552,7 +552,7 @@ static const u8 sUnusedArray[] =
 // 2nd array is for round count. For some reason this array contains an inaccessible Round 5 which is identical to Round 4
 // 3rd array is movement direction (see the MOVE_DIR_* constants in UpdateTourneyTreeCursor)
 // The values are sprite IDs for the cursor position to move to, with 0xFF being an invalid move
-static const u8 sTourneyTreeCursorMovementMap[DOME_TOURNAMENT_PRODUCERS_COUNT + DOME_TOURNAMENT_MATCHES_COUNT + 1][DOME_ROUNDS_COUNT + 1][4]=
+static const u8 sTourneyTreeCursorMovementMap[DOME_TOURNAMENT_TRAINERS_COUNT + DOME_TOURNAMENT_MATCHES_COUNT + 1][DOME_ROUNDS_COUNT + 1][4]=
 {
     [0]  = {{   7,    1,    8,   16}, {   7,    1,    8,   16}, {   7,    1,    8,   16}, {   7,    1,    8,   16}, {   7,    1,    8,   16}},
     [1]  = {{   0,    2,    9,   16}, {   0,    2,    9,   16}, {   0,    2,    9,   16}, {   0,    2,    9,   16}, {   0,    2,    9,   16}},
@@ -1104,7 +1104,7 @@ static const struct SpriteTemplate sVerticalScrollArrowSpriteTemplate =
 };
 
 // Organized by seed starting position, i.e. seed 0 battles seed 8 first
-static const u8 sTourneyTreeTrainerIds[DOME_TOURNAMENT_PRODUCERS_COUNT] = {0, 8, 12, 4, 7, 15, 11, 3, 2, 10, 14, 6, 5, 13, 9, 1};
+static const u8 sTourneyTreeTrainerIds[DOME_TOURNAMENT_TRAINERS_COUNT] = {0, 8, 12, 4, 7, 15, 11, 3, 2, 10, 14, 6, 5, 13, 9, 1};
 
 static void (* const sBattleDomeFunctions[])(void) =
 {
@@ -1123,14 +1123,14 @@ static void (* const sBattleDomeFunctions[])(void) =
     [BATTLE_DOME_FUNC_RESOLVE_WINNERS]          = ResolveDomeRoundWinners,
     [BATTLE_DOME_FUNC_SAVE]                     = SaveDomeChallenge,
     [BATTLE_DOME_FUNC_INCREMENT_STREAK]         = IncrementDomeStreaks,
-    [BATTLE_DOME_FUNC_SET_PRODUCERS]             = SetFacilityTrainerAndMonPtrs,
+    [BATTLE_DOME_FUNC_SET_TRAINERS]             = SetFacilityTrainerAndMonPtrs,
     [BATTLE_DOME_FUNC_RESET_SKETCH]             = ResetSketchedMoves,
     [BATTLE_DOME_FUNC_RESTORE_HELD_ITEMS]       = RestoreDomePlayerPartyHeldItems,
     [BATTLE_DOME_FUNC_REDUCE_PARTY]             = ReduceDomePlayerPartyToSelectedMons,
     [BATTLE_DOME_FUNC_COMPARE_SEEDS]            = GetPlayerSeededBeforeOpponent,
     [BATTLE_DOME_FUNC_GET_WINNER_NAME]          = BufferLastDomeWinnerName,
     [BATTLE_DOME_FUNC_INIT_RESULTS_TREE]        = InitRandomTourneyTreeResults,
-    [BATTLE_DOME_FUNC_INIT_PRODUCERS]            = InitDomeTrainers,
+    [BATTLE_DOME_FUNC_INIT_TRAINERS]            = InitDomeTrainers,
 };
 
 static const u32 sWinStreakFlags[][2] =
@@ -1146,7 +1146,7 @@ static const u32 sWinStreakMasks[][2] =
 };
 
 // TODO: The below two arrays probably need better names. The one below for example is only true of sIdToOpponentId[i][0]
-static const u8 sIdToOpponentId[DOME_TOURNAMENT_PRODUCERS_COUNT][DOME_ROUNDS_COUNT] =
+static const u8 sIdToOpponentId[DOME_TOURNAMENT_TRAINERS_COUNT][DOME_ROUNDS_COUNT] =
 {
     [0]  = { 8,  0,  4,  8},
     [1]  = { 9, 12,  8,  0},
@@ -1167,10 +1167,10 @@ static const u8 sIdToOpponentId[DOME_TOURNAMENT_PRODUCERS_COUNT][DOME_ROUNDS_COU
 };
 
 // sTourneyTreeTrainerIds with every other pair swapped
-static const u8 sTourneyTreeTrainerOpponentIds[DOME_TOURNAMENT_PRODUCERS_COUNT] = { 0, 8, 4, 12, 7, 15, 3, 11, 2, 10, 6, 14, 5, 13, 1, 9 };
+static const u8 sTourneyTreeTrainerOpponentIds[DOME_TOURNAMENT_TRAINERS_COUNT] = { 0, 8, 4, 12, 7, 15, 3, 11, 2, 10, 6, 14, 5, 13, 1, 9 };
 
 // The match number - 1 that a given tournament trainer will participate in for a given round
-static const u8 sIdToMatchNumber[DOME_TOURNAMENT_PRODUCERS_COUNT][DOME_ROUNDS_COUNT] =
+static const u8 sIdToMatchNumber[DOME_TOURNAMENT_TRAINERS_COUNT][DOME_ROUNDS_COUNT] =
 {
     { 0,  8, 12, 14},
     { 0,  8, 12, 14},
@@ -1198,7 +1198,7 @@ static const u8 sLastMatchCardNum[DOME_ROUNDS_COUNT] =
     [DOME_FINAL]     = 30
 };
 
-static const u8 sTrainerAndRoundToLastMatchCardNum[DOME_TOURNAMENT_PRODUCERS_COUNT / 2][DOME_ROUNDS_COUNT] =
+static const u8 sTrainerAndRoundToLastMatchCardNum[DOME_TOURNAMENT_TRAINERS_COUNT / 2][DOME_ROUNDS_COUNT] =
 {
     {16, 24, 28, 30},
     {17, 24, 28, 30},
@@ -1210,11 +1210,11 @@ static const u8 sTrainerAndRoundToLastMatchCardNum[DOME_TOURNAMENT_PRODUCERS_COU
     {23, 27, 29, 30},
 };
 
-static const u8 sTournamentIdToPairedTrainerIds[DOME_TOURNAMENT_PRODUCERS_COUNT] = {0, 15, 8, 7, 3, 12, 11, 4, 1, 14, 9, 6, 2, 13, 10, 5};
+static const u8 sTournamentIdToPairedTrainerIds[DOME_TOURNAMENT_TRAINERS_COUNT] = {0, 15, 8, 7, 3, 12, 11, 4, 1, 14, 9, 6, 2, 13, 10, 5};
 
 // The first line of text on a trainers info card. It describes their potential to win, based on their seed in the tournament tree.
 // Dome Ace Tucker has their own separate potential text.
-static const u8 *const sBattleDomePotentialTexts[DOME_TOURNAMENT_PRODUCERS_COUNT + 1] =
+static const u8 *const sBattleDomePotentialTexts[DOME_TOURNAMENT_TRAINERS_COUNT + 1] =
 {
     BattleDome_Text_Potential1, // Highest potential
     BattleDome_Text_Potential2,
@@ -1371,35 +1371,35 @@ static const u8 sRightTrainerMonX[FRONTIER_PARTY_SIZE] = {144, 144, 144};
 static const u8 sRightTrainerMonY[FRONTIER_PARTY_SIZE] = { 56,  80, 104};
 
 // Duplicate of sTourneyTreeTrainerIds
-static const u8 sTourneyTreeTrainerIds2[DOME_TOURNAMENT_PRODUCERS_COUNT] = {0, 8, 12, 4, 7, 15, 11, 3, 2, 10, 14, 6, 5, 13, 9, 1};
+static const u8 sTourneyTreeTrainerIds2[DOME_TOURNAMENT_TRAINERS_COUNT] = {0, 8, 12, 4, 7, 15, 11, 3, 2, 10, 14, 6, 5, 13, 9, 1};
 
 // The number of possible trainers that could be competing in a given match
-#define NUM_POSSIBLE_MATCH_PRODUCERS(round) (DOME_TOURNAMENT_PRODUCERS_COUNT / (1 << (DOME_ROUNDS_COUNT - round - 1)))
+#define NUM_POSSIBLE_MATCH_TRAINERS(round) (DOME_TOURNAMENT_TRAINERS_COUNT / (1 << (DOME_ROUNDS_COUNT - round - 1)))
 
 // The range of tournament trainers to check as possible participants in a given match
 // Given by the offset in sCompetitorRangeByMatch[][0], the number of trainers in sCompetitorRangeByMatch[][1], and the round
 static const u8 sCompetitorRangeByMatch[DOME_TOURNAMENT_MATCHES_COUNT][3] =
 {
-    { NUM_POSSIBLE_MATCH_PRODUCERS(DOME_ROUND1) * 0,    NUM_POSSIBLE_MATCH_PRODUCERS(DOME_ROUND1),    DOME_ROUND1},
-    { NUM_POSSIBLE_MATCH_PRODUCERS(DOME_ROUND1) * 1,    NUM_POSSIBLE_MATCH_PRODUCERS(DOME_ROUND1),    DOME_ROUND1},
-    { NUM_POSSIBLE_MATCH_PRODUCERS(DOME_ROUND1) * 2,    NUM_POSSIBLE_MATCH_PRODUCERS(DOME_ROUND1),    DOME_ROUND1},
-    { NUM_POSSIBLE_MATCH_PRODUCERS(DOME_ROUND1) * 3,    NUM_POSSIBLE_MATCH_PRODUCERS(DOME_ROUND1),    DOME_ROUND1},
-    { NUM_POSSIBLE_MATCH_PRODUCERS(DOME_ROUND1) * 4,    NUM_POSSIBLE_MATCH_PRODUCERS(DOME_ROUND1),    DOME_ROUND1},
-    { NUM_POSSIBLE_MATCH_PRODUCERS(DOME_ROUND1) * 5,    NUM_POSSIBLE_MATCH_PRODUCERS(DOME_ROUND1),    DOME_ROUND1},
-    { NUM_POSSIBLE_MATCH_PRODUCERS(DOME_ROUND1) * 6,    NUM_POSSIBLE_MATCH_PRODUCERS(DOME_ROUND1),    DOME_ROUND1},
-    { NUM_POSSIBLE_MATCH_PRODUCERS(DOME_ROUND1) * 7,    NUM_POSSIBLE_MATCH_PRODUCERS(DOME_ROUND1),    DOME_ROUND1},
-    { NUM_POSSIBLE_MATCH_PRODUCERS(DOME_ROUND2) * 0,    NUM_POSSIBLE_MATCH_PRODUCERS(DOME_ROUND2),    DOME_ROUND2},
-    { NUM_POSSIBLE_MATCH_PRODUCERS(DOME_ROUND2) * 1,    NUM_POSSIBLE_MATCH_PRODUCERS(DOME_ROUND2),    DOME_ROUND2},
-    { NUM_POSSIBLE_MATCH_PRODUCERS(DOME_ROUND2) * 2,    NUM_POSSIBLE_MATCH_PRODUCERS(DOME_ROUND2),    DOME_ROUND2},
-    { NUM_POSSIBLE_MATCH_PRODUCERS(DOME_ROUND2) * 3,    NUM_POSSIBLE_MATCH_PRODUCERS(DOME_ROUND2),    DOME_ROUND2},
-    { NUM_POSSIBLE_MATCH_PRODUCERS(DOME_SEMIFINAL) * 0, NUM_POSSIBLE_MATCH_PRODUCERS(DOME_SEMIFINAL), DOME_SEMIFINAL},
-    { NUM_POSSIBLE_MATCH_PRODUCERS(DOME_SEMIFINAL) * 1, NUM_POSSIBLE_MATCH_PRODUCERS(DOME_SEMIFINAL), DOME_SEMIFINAL},
-    { NUM_POSSIBLE_MATCH_PRODUCERS(DOME_FINAL) * 0,     NUM_POSSIBLE_MATCH_PRODUCERS(DOME_FINAL),     DOME_FINAL},
+    { NUM_POSSIBLE_MATCH_TRAINERS(DOME_ROUND1) * 0,    NUM_POSSIBLE_MATCH_TRAINERS(DOME_ROUND1),    DOME_ROUND1},
+    { NUM_POSSIBLE_MATCH_TRAINERS(DOME_ROUND1) * 1,    NUM_POSSIBLE_MATCH_TRAINERS(DOME_ROUND1),    DOME_ROUND1},
+    { NUM_POSSIBLE_MATCH_TRAINERS(DOME_ROUND1) * 2,    NUM_POSSIBLE_MATCH_TRAINERS(DOME_ROUND1),    DOME_ROUND1},
+    { NUM_POSSIBLE_MATCH_TRAINERS(DOME_ROUND1) * 3,    NUM_POSSIBLE_MATCH_TRAINERS(DOME_ROUND1),    DOME_ROUND1},
+    { NUM_POSSIBLE_MATCH_TRAINERS(DOME_ROUND1) * 4,    NUM_POSSIBLE_MATCH_TRAINERS(DOME_ROUND1),    DOME_ROUND1},
+    { NUM_POSSIBLE_MATCH_TRAINERS(DOME_ROUND1) * 5,    NUM_POSSIBLE_MATCH_TRAINERS(DOME_ROUND1),    DOME_ROUND1},
+    { NUM_POSSIBLE_MATCH_TRAINERS(DOME_ROUND1) * 6,    NUM_POSSIBLE_MATCH_TRAINERS(DOME_ROUND1),    DOME_ROUND1},
+    { NUM_POSSIBLE_MATCH_TRAINERS(DOME_ROUND1) * 7,    NUM_POSSIBLE_MATCH_TRAINERS(DOME_ROUND1),    DOME_ROUND1},
+    { NUM_POSSIBLE_MATCH_TRAINERS(DOME_ROUND2) * 0,    NUM_POSSIBLE_MATCH_TRAINERS(DOME_ROUND2),    DOME_ROUND2},
+    { NUM_POSSIBLE_MATCH_TRAINERS(DOME_ROUND2) * 1,    NUM_POSSIBLE_MATCH_TRAINERS(DOME_ROUND2),    DOME_ROUND2},
+    { NUM_POSSIBLE_MATCH_TRAINERS(DOME_ROUND2) * 2,    NUM_POSSIBLE_MATCH_TRAINERS(DOME_ROUND2),    DOME_ROUND2},
+    { NUM_POSSIBLE_MATCH_TRAINERS(DOME_ROUND2) * 3,    NUM_POSSIBLE_MATCH_TRAINERS(DOME_ROUND2),    DOME_ROUND2},
+    { NUM_POSSIBLE_MATCH_TRAINERS(DOME_SEMIFINAL) * 0, NUM_POSSIBLE_MATCH_TRAINERS(DOME_SEMIFINAL), DOME_SEMIFINAL},
+    { NUM_POSSIBLE_MATCH_TRAINERS(DOME_SEMIFINAL) * 1, NUM_POSSIBLE_MATCH_TRAINERS(DOME_SEMIFINAL), DOME_SEMIFINAL},
+    { NUM_POSSIBLE_MATCH_TRAINERS(DOME_FINAL) * 0,     NUM_POSSIBLE_MATCH_TRAINERS(DOME_FINAL),     DOME_FINAL},
 };
 
 // 1st value is the windowId (0 for left column, 1 for right column)
 // 2nd value is the y coord
-static const u8 sTrainerNamePositions[DOME_TOURNAMENT_PRODUCERS_COUNT][2] =
+static const u8 sTrainerNamePositions[DOME_TOURNAMENT_TRAINERS_COUNT][2] =
 {
     { 0,   0},
     { 1, 112},
@@ -1420,7 +1420,7 @@ static const u8 sTrainerNamePositions[DOME_TOURNAMENT_PRODUCERS_COUNT][2] =
 };
 
 // Coords for the pokeballs on the tourney tree that act as buttons to view trainer/match info
-static const u8 sTourneyTreePokeballCoords[DOME_TOURNAMENT_PRODUCERS_COUNT + DOME_TOURNAMENT_MATCHES_COUNT][2] =
+static const u8 sTourneyTreePokeballCoords[DOME_TOURNAMENT_TRAINERS_COUNT + DOME_TOURNAMENT_MATCHES_COUNT][2] =
 {
     { 68,  33}, // Left side trainers
     { 68,  49},
@@ -1457,97 +1457,97 @@ static const u8 sTourneyTreePokeballCoords[DOME_TOURNAMENT_PRODUCERS_COUNT + DOM
 
 // Each of these line sections define the position of the advancement line on the tourney tree for the victor of that round
 // The trainers here are numbered by tourney ID (rank/seed) and ordered according to where they start on the tourney tree
-#define LINESECTION_ROUND1_PRODUCER1(lastSrc) \
+#define LINESECTION_ROUND1_TRAINER1(lastSrc) \
     {.src = 0x6021,  .y = 0x04, .x = 0x09},  \
     {.src = 0x6023,  .y = 0x04, .x = 0x0a},  \
     {.src = 0x6047,  .y = 0x05, .x = 0x0a},  \
     {.src = lastSrc, .y = 0x05, .x = 0x0b},
 
-#define LINESECTION_ROUND1_PRODUCER9(lastSrc) \
+#define LINESECTION_ROUND1_TRAINER9(lastSrc) \
     {.src = 0x6021,  .y = 0x06, .x = 0x09},  \
     {.src = 0x6021,  .y = 0x06, .x = 0x0a},  \
     {.src = 0x6027,  .y = 0x05, .x = 0x0a},  \
     {.src = lastSrc, .y = 0x05, .x = 0x0b},
 
-#define LINESECTION_ROUND1_PRODUCER13(lastSrc) \
+#define LINESECTION_ROUND1_TRAINER13(lastSrc) \
     {.src = 0x6021,  .y = 0x08, .x = 0x09},   \
     {.src = 0x6023,  .y = 0x08, .x = 0x0a},   \
     {.src = 0x6047,  .y = 0x09, .x = 0x0a},   \
     {.src = lastSrc, .y = 0x09, .x = 0x0b},
 
-#define LINESECTION_ROUND1_PRODUCER5(lastSrc) \
+#define LINESECTION_ROUND1_TRAINER5(lastSrc) \
     {.src = 0x6021,  .y = 0x0a, .x = 0x09},  \
     {.src = 0x6021,  .y = 0x0a, .x = 0x0a},  \
     {.src = 0x6027,  .y = 0x09, .x = 0x0a},  \
     {.src = lastSrc, .y = 0x09, .x = 0x0b},
 
-#define LINESECTION_ROUND1_PRODUCER8(lastSrc) \
+#define LINESECTION_ROUND1_TRAINER8(lastSrc) \
     {.src = 0x6021,  .y = 0x0c, .x = 0x09},  \
     {.src = 0x6023,  .y = 0x0c, .x = 0x0a},  \
     {.src = 0x6047,  .y = 0x0d, .x = 0x0a},  \
     {.src = lastSrc, .y = 0x0d, .x = 0x0b},
 
-#define LINESECTION_ROUND1_PRODUCER16(lastSrc) \
+#define LINESECTION_ROUND1_TRAINER16(lastSrc) \
     {.src = 0x6021,  .y = 0x0e, .x = 0x09},   \
     {.src = 0x6021,  .y = 0x0e, .x = 0x0a},   \
     {.src = 0x6027,  .y = 0x0d, .x = 0x0a},   \
     {.src = lastSrc, .y = 0x0d, .x = 0x0b},
 
-#define LINESECTION_ROUND1_PRODUCER12(lastSrc) \
+#define LINESECTION_ROUND1_TRAINER12(lastSrc) \
     {.src = 0x6021,  .y = 0x10, .x = 0x09},   \
     {.src = 0x6023,  .y = 0x10, .x = 0x0a},   \
     {.src = 0x6047,  .y = 0x11, .x = 0x0a},   \
     {.src = lastSrc, .y = 0x11, .x = 0x0b},
 
-#define LINESECTION_ROUND1_PRODUCER4(lastSrc) \
+#define LINESECTION_ROUND1_TRAINER4(lastSrc) \
     {.src = 0x602b,  .y = 0x12, .x = 0x09},  \
     {.src = 0x602b,  .y = 0x12, .x = 0x0a},  \
     {.src = 0x6027,  .y = 0x11, .x = 0x0a},  \
     {.src = lastSrc, .y = 0x11, .x = 0x0b},
 
-#define LINESECTION_ROUND1_PRODUCER3(lastSrc) \
+#define LINESECTION_ROUND1_TRAINER3(lastSrc) \
     {.src = 0x6021,  .y = 0x04, .x = 0x14},  \
     {.src = 0x6025,  .y = 0x04, .x = 0x13},  \
     {.src = 0x6049,  .y = 0x05, .x = 0x13},  \
     {.src = lastSrc, .y = 0x05, .x = 0x12},
 
-#define LINESECTION_ROUND1_PRODUCER11(lastSrc) \
+#define LINESECTION_ROUND1_TRAINER11(lastSrc) \
     {.src = 0x6021,  .y = 0x06, .x = 0x14},   \
     {.src = 0x6021,  .y = 0x06, .x = 0x13},   \
     {.src = 0x6029,  .y = 0x05, .x = 0x13},   \
     {.src = lastSrc, .y = 0x05, .x = 0x12},
 
-#define LINESECTION_ROUND1_PRODUCER15(lastSrc) \
+#define LINESECTION_ROUND1_TRAINER15(lastSrc) \
     {.src = 0x6021,  .y = 0x08, .x = 0x14},   \
     {.src = 0x6025,  .y = 0x08, .x = 0x13},   \
     {.src = 0x6049,  .y = 0x09, .x = 0x13},   \
     {.src = lastSrc, .y = 0x09, .x = 0x12},
 
-#define LINESECTION_ROUND1_PRODUCER7(lastSrc) \
+#define LINESECTION_ROUND1_TRAINER7(lastSrc) \
     {.src = 0x6021,  .y = 0x0a, .x = 0x14},  \
     {.src = 0x6021,  .y = 0x0a, .x = 0x13},  \
     {.src = 0x6029,  .y = 0x09, .x = 0x13},  \
     {.src = lastSrc, .y = 0x09, .x = 0x12},
 
-#define LINESECTION_ROUND1_PRODUCER6(lastSrc) \
+#define LINESECTION_ROUND1_TRAINER6(lastSrc) \
     {.src = 0x6021,  .y = 0x0c, .x = 0x14},  \
     {.src = 0x6025,  .y = 0x0c, .x = 0x13},  \
     {.src = 0x6049,  .y = 0x0d, .x = 0x13},  \
     {.src = lastSrc, .y = 0x0d, .x = 0x12},
 
-#define LINESECTION_ROUND1_PRODUCER14(lastSrc) \
+#define LINESECTION_ROUND1_TRAINER14(lastSrc) \
     {.src = 0x6021,  .y = 0x0e, .x = 0x14},   \
     {.src = 0x6021,  .y = 0x0e, .x = 0x13},   \
     {.src = 0x6029,  .y = 0x0d, .x = 0x13},   \
     {.src = lastSrc, .y = 0x0d, .x = 0x12},
 
-#define LINESECTION_ROUND1_PRODUCER10(lastSrc) \
+#define LINESECTION_ROUND1_TRAINER10(lastSrc) \
     {.src = 0x6021,  .y = 0x10, .x = 0x14},   \
     {.src = 0x6025,  .y = 0x10, .x = 0x13},   \
     {.src = 0x6049,  .y = 0x11, .x = 0x13},   \
     {.src = lastSrc, .y = 0x11, .x = 0x12},
 
-#define LINESECTION_ROUND1_PRODUCER2(lastSrc) \
+#define LINESECTION_ROUND1_TRAINER2(lastSrc) \
     {.src = 0x602b,  .y = 0x12, .x = 0x14},  \
     {.src = 0x602b,  .y = 0x12, .x = 0x13},  \
     {.src = 0x6029,  .y = 0x11, .x = 0x13},  \
@@ -1628,25 +1628,25 @@ static const u8 sTourneyTreePokeballCoords[DOME_TOURNAMENT_PRODUCERS_COUNT + DOM
 
 static const struct TourneyTreeLineSection sLineSectionTrainer1Round1[] =
 {
-    LINESECTION_ROUND1_PRODUCER1(0x6043)
+    LINESECTION_ROUND1_TRAINER1(0x6043)
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer1Round2[] =
 {
-    LINESECTION_ROUND1_PRODUCER1(0x6023)
+    LINESECTION_ROUND1_TRAINER1(0x6023)
     LINESECTION_ROUND2_MATCH1(0x6043)
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer1Semifinal[] =
 {
-    LINESECTION_ROUND1_PRODUCER1(0x6023)
+    LINESECTION_ROUND1_TRAINER1(0x6023)
     LINESECTION_ROUND2_MATCH1(0x6023)
     LINESECTION_SEMIFINAL_TOP_LEFT
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer1Final[] =
 {
-    LINESECTION_ROUND1_PRODUCER1(0x6023)
+    LINESECTION_ROUND1_TRAINER1(0x6023)
     LINESECTION_ROUND2_MATCH1(0x6023)
     LINESECTION_SEMIFINAL_TOP_LEFT
     LINESECTION_FINAL_LEFT
@@ -1654,25 +1654,25 @@ static const struct TourneyTreeLineSection sLineSectionTrainer1Final[] =
 
 static const struct TourneyTreeLineSection sLineSectionTrainer9Round1[] =
 {
-    LINESECTION_ROUND1_PRODUCER9(0x6043)
+    LINESECTION_ROUND1_TRAINER9(0x6043)
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer9Round2[] =
 {
-    LINESECTION_ROUND1_PRODUCER9(0x6023)
+    LINESECTION_ROUND1_TRAINER9(0x6023)
     LINESECTION_ROUND2_MATCH1(0x6043)
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer9Semifinal[] =
 {
-    LINESECTION_ROUND1_PRODUCER9(0x6023)
+    LINESECTION_ROUND1_TRAINER9(0x6023)
     LINESECTION_ROUND2_MATCH1(0x6023)
     LINESECTION_SEMIFINAL_TOP_LEFT
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer9Final[] =
 {
-    LINESECTION_ROUND1_PRODUCER9(0x6023)
+    LINESECTION_ROUND1_TRAINER9(0x6023)
     LINESECTION_ROUND2_MATCH1(0x6023)
     LINESECTION_SEMIFINAL_TOP_LEFT
     LINESECTION_FINAL_LEFT
@@ -1680,25 +1680,25 @@ static const struct TourneyTreeLineSection sLineSectionTrainer9Final[] =
 
 static const struct TourneyTreeLineSection sLineSectionTrainer13Round1[] =
 {
-    LINESECTION_ROUND1_PRODUCER13(0x6021)
+    LINESECTION_ROUND1_TRAINER13(0x6021)
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer13Round2[] =
 {
-    LINESECTION_ROUND1_PRODUCER13(0x6021)
+    LINESECTION_ROUND1_TRAINER13(0x6021)
     LINESECTION_ROUND2_MATCH2(0x6043)
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer13Semifinal[] =
 {
-    LINESECTION_ROUND1_PRODUCER13(0x6021)
+    LINESECTION_ROUND1_TRAINER13(0x6021)
     LINESECTION_ROUND2_MATCH2(0x6023)
     LINESECTION_SEMIFINAL_TOP_LEFT
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer13Final[] =
 {
-    LINESECTION_ROUND1_PRODUCER13(0x6021)
+    LINESECTION_ROUND1_TRAINER13(0x6021)
     LINESECTION_ROUND2_MATCH2(0x6023)
     LINESECTION_SEMIFINAL_TOP_LEFT
     LINESECTION_FINAL_LEFT
@@ -1706,25 +1706,25 @@ static const struct TourneyTreeLineSection sLineSectionTrainer13Final[] =
 
 static const struct TourneyTreeLineSection sLineSectionTrainer5Round1[] =
 {
-    LINESECTION_ROUND1_PRODUCER5(0x6021)
+    LINESECTION_ROUND1_TRAINER5(0x6021)
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer5Round2[] =
 {
-    LINESECTION_ROUND1_PRODUCER5(0x6021)
+    LINESECTION_ROUND1_TRAINER5(0x6021)
     LINESECTION_ROUND2_MATCH2(0x6043)
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer5Semifinal[] =
 {
-    LINESECTION_ROUND1_PRODUCER5(0x6021)
+    LINESECTION_ROUND1_TRAINER5(0x6021)
     LINESECTION_ROUND2_MATCH2(0x6023)
     LINESECTION_SEMIFINAL_TOP_LEFT
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer5Final[] =
 {
-    LINESECTION_ROUND1_PRODUCER5(0x6021)
+    LINESECTION_ROUND1_TRAINER5(0x6021)
     LINESECTION_ROUND2_MATCH2(0x6023)
     LINESECTION_SEMIFINAL_TOP_LEFT
     LINESECTION_FINAL_LEFT
@@ -1732,25 +1732,25 @@ static const struct TourneyTreeLineSection sLineSectionTrainer5Final[] =
 
 static const struct TourneyTreeLineSection sLineSectionTrainer8Round1[] =
 {
-    LINESECTION_ROUND1_PRODUCER8(0x6043)
+    LINESECTION_ROUND1_TRAINER8(0x6043)
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer8Round2[] =
 {
-    LINESECTION_ROUND1_PRODUCER8(0x6023)
+    LINESECTION_ROUND1_TRAINER8(0x6023)
     LINESECTION_ROUND2_MATCH3(0x6021)
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer8Semifinal[] =
 {
-    LINESECTION_ROUND1_PRODUCER8(0x6023)
+    LINESECTION_ROUND1_TRAINER8(0x6023)
     LINESECTION_ROUND2_MATCH3(0x6021)
     LINESECTION_SEMIFINAL_BOTTOM_LEFT
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer8Final[] =
 {
-    LINESECTION_ROUND1_PRODUCER8(0x6023)
+    LINESECTION_ROUND1_TRAINER8(0x6023)
     LINESECTION_ROUND2_MATCH3(0x6021)
     LINESECTION_SEMIFINAL_BOTTOM_LEFT
     LINESECTION_FINAL_LEFT
@@ -1758,25 +1758,25 @@ static const struct TourneyTreeLineSection sLineSectionTrainer8Final[] =
 
 static const struct TourneyTreeLineSection sLineSectionTrainer16Round1[] =
 {
-    LINESECTION_ROUND1_PRODUCER16(0x6043)
+    LINESECTION_ROUND1_TRAINER16(0x6043)
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer16Round2[] =
 {
-    LINESECTION_ROUND1_PRODUCER16(0x6023)
+    LINESECTION_ROUND1_TRAINER16(0x6023)
     LINESECTION_ROUND2_MATCH3(0x6021)
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer16Semifinal[] =
 {
-    LINESECTION_ROUND1_PRODUCER16(0x6023)
+    LINESECTION_ROUND1_TRAINER16(0x6023)
     LINESECTION_ROUND2_MATCH3(0x6021)
     LINESECTION_SEMIFINAL_BOTTOM_LEFT
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer16Final[] =
 {
-    LINESECTION_ROUND1_PRODUCER16(0x6023)
+    LINESECTION_ROUND1_TRAINER16(0x6023)
     LINESECTION_ROUND2_MATCH3(0x6021)
     LINESECTION_SEMIFINAL_BOTTOM_LEFT
     LINESECTION_FINAL_LEFT
@@ -1784,25 +1784,25 @@ static const struct TourneyTreeLineSection sLineSectionTrainer16Final[] =
 
 static const struct TourneyTreeLineSection sLineSectionTrainer12Round1[] =
 {
-    LINESECTION_ROUND1_PRODUCER12(0x6021)
+    LINESECTION_ROUND1_TRAINER12(0x6021)
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer12Round2[] =
 {
-    LINESECTION_ROUND1_PRODUCER12(0x6021)
+    LINESECTION_ROUND1_TRAINER12(0x6021)
     LINESECTION_ROUND2_MATCH4(0x6021)
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer12Semifinal[] =
 {
-    LINESECTION_ROUND1_PRODUCER12(0x6021)
+    LINESECTION_ROUND1_TRAINER12(0x6021)
     LINESECTION_ROUND2_MATCH4(0x6021)
     LINESECTION_SEMIFINAL_BOTTOM_LEFT
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer12Final[] =
 {
-    LINESECTION_ROUND1_PRODUCER12(0x6021)
+    LINESECTION_ROUND1_TRAINER12(0x6021)
     LINESECTION_ROUND2_MATCH4(0x6021)
     LINESECTION_SEMIFINAL_BOTTOM_LEFT
     LINESECTION_FINAL_LEFT
@@ -1810,25 +1810,25 @@ static const struct TourneyTreeLineSection sLineSectionTrainer12Final[] =
 
 static const struct TourneyTreeLineSection sLineSectionTrainer4Round1[] =
 {
-    LINESECTION_ROUND1_PRODUCER4(0x6021)
+    LINESECTION_ROUND1_TRAINER4(0x6021)
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer4Round2[] =
 {
-    LINESECTION_ROUND1_PRODUCER4(0x6021)
+    LINESECTION_ROUND1_TRAINER4(0x6021)
     LINESECTION_ROUND2_MATCH4(0x6021)
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer4Semifinal[] =
 {
-    LINESECTION_ROUND1_PRODUCER4(0x6021)
+    LINESECTION_ROUND1_TRAINER4(0x6021)
     LINESECTION_ROUND2_MATCH4(0x6021)
     LINESECTION_SEMIFINAL_BOTTOM_LEFT
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer4Final[] =
 {
-    LINESECTION_ROUND1_PRODUCER4(0x6021)
+    LINESECTION_ROUND1_TRAINER4(0x6021)
     LINESECTION_ROUND2_MATCH4(0x6021)
     LINESECTION_SEMIFINAL_BOTTOM_LEFT
     LINESECTION_FINAL_LEFT
@@ -1836,25 +1836,25 @@ static const struct TourneyTreeLineSection sLineSectionTrainer4Final[] =
 
 static const struct TourneyTreeLineSection sLineSectionTrainer3Round1[] =
 {
-    LINESECTION_ROUND1_PRODUCER3(0x6045)
+    LINESECTION_ROUND1_TRAINER3(0x6045)
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer3Round2[] =
 {
-    LINESECTION_ROUND1_PRODUCER3(0x6025)
+    LINESECTION_ROUND1_TRAINER3(0x6025)
     LINESECTION_ROUND2_MATCH5(0x6045)
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer3Semifinal[] =
 {
-    LINESECTION_ROUND1_PRODUCER3(0x6025)
+    LINESECTION_ROUND1_TRAINER3(0x6025)
     LINESECTION_ROUND2_MATCH5(0x6025)
     LINESECTION_SEMIFINAL_TOP_RIGHT
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer3Final[] =
 {
-    LINESECTION_ROUND1_PRODUCER3(0x6025)
+    LINESECTION_ROUND1_TRAINER3(0x6025)
     LINESECTION_ROUND2_MATCH5(0x6025)
     LINESECTION_SEMIFINAL_TOP_RIGHT
     LINESECTION_FINAL_RIGHT
@@ -1862,25 +1862,25 @@ static const struct TourneyTreeLineSection sLineSectionTrainer3Final[] =
 
 static const struct TourneyTreeLineSection sLineSectionTrainer11Round1[] =
 {
-    LINESECTION_ROUND1_PRODUCER11(0x6045)
+    LINESECTION_ROUND1_TRAINER11(0x6045)
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer11Round2[] =
 {
-    LINESECTION_ROUND1_PRODUCER11(0x6025)
+    LINESECTION_ROUND1_TRAINER11(0x6025)
     LINESECTION_ROUND2_MATCH5(0x6045)
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer11Semifinal[] =
 {
-    LINESECTION_ROUND1_PRODUCER11(0x6025)
+    LINESECTION_ROUND1_TRAINER11(0x6025)
     LINESECTION_ROUND2_MATCH5(0x6025)
     LINESECTION_SEMIFINAL_TOP_RIGHT
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer11Final[] =
 {
-    LINESECTION_ROUND1_PRODUCER11(0x6025)
+    LINESECTION_ROUND1_TRAINER11(0x6025)
     LINESECTION_ROUND2_MATCH5(0x6025)
     LINESECTION_SEMIFINAL_TOP_RIGHT
     LINESECTION_FINAL_RIGHT
@@ -1888,25 +1888,25 @@ static const struct TourneyTreeLineSection sLineSectionTrainer11Final[] =
 
 static const struct TourneyTreeLineSection sLineSectionTrainer15Round1[] =
 {
-    LINESECTION_ROUND1_PRODUCER15(0x6021)
+    LINESECTION_ROUND1_TRAINER15(0x6021)
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer15Round2[] =
 {
-    LINESECTION_ROUND1_PRODUCER15(0x6021)
+    LINESECTION_ROUND1_TRAINER15(0x6021)
     LINESECTION_ROUND2_MATCH6(0x6045)
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer15Semifinal[] =
 {
-    LINESECTION_ROUND1_PRODUCER15(0x6021)
+    LINESECTION_ROUND1_TRAINER15(0x6021)
     LINESECTION_ROUND2_MATCH6(0x6025)
     LINESECTION_SEMIFINAL_TOP_RIGHT
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer15Final[] =
 {
-    LINESECTION_ROUND1_PRODUCER15(0x6021)
+    LINESECTION_ROUND1_TRAINER15(0x6021)
     LINESECTION_ROUND2_MATCH6(0x6025)
     LINESECTION_SEMIFINAL_TOP_RIGHT
     LINESECTION_FINAL_RIGHT
@@ -1914,25 +1914,25 @@ static const struct TourneyTreeLineSection sLineSectionTrainer15Final[] =
 
 static const struct TourneyTreeLineSection sLineSectionTrainer7Round1[] =
 {
-    LINESECTION_ROUND1_PRODUCER7(0x6021)
+    LINESECTION_ROUND1_TRAINER7(0x6021)
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer7Round2[] =
 {
-    LINESECTION_ROUND1_PRODUCER7(0x6021)
+    LINESECTION_ROUND1_TRAINER7(0x6021)
     LINESECTION_ROUND2_MATCH6(0x6045)
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer7Semifinal[] =
 {
-    LINESECTION_ROUND1_PRODUCER7(0x6021)
+    LINESECTION_ROUND1_TRAINER7(0x6021)
     LINESECTION_ROUND2_MATCH6(0x6025)
     LINESECTION_SEMIFINAL_TOP_RIGHT
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer7Final[] =
 {
-    LINESECTION_ROUND1_PRODUCER7(0x6021)
+    LINESECTION_ROUND1_TRAINER7(0x6021)
     LINESECTION_ROUND2_MATCH6(0x6025)
     LINESECTION_SEMIFINAL_TOP_RIGHT
     LINESECTION_FINAL_RIGHT
@@ -1940,25 +1940,25 @@ static const struct TourneyTreeLineSection sLineSectionTrainer7Final[] =
 
 static const struct TourneyTreeLineSection sLineSectionTrainer6Round1[] =
 {
-    LINESECTION_ROUND1_PRODUCER6(0x6045)
+    LINESECTION_ROUND1_TRAINER6(0x6045)
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer6Round2[] =
 {
-    LINESECTION_ROUND1_PRODUCER6(0x6025)
+    LINESECTION_ROUND1_TRAINER6(0x6025)
     LINESECTION_ROUND2_MATCH7(0x6021)
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer6Semifinal[] =
 {
-    LINESECTION_ROUND1_PRODUCER6(0x6025)
+    LINESECTION_ROUND1_TRAINER6(0x6025)
     LINESECTION_ROUND2_MATCH7(0x6021)
     LINESECTION_SEMIFINAL_BOTTOM_RIGHT
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer6Final[] =
 {
-    LINESECTION_ROUND1_PRODUCER6(0x6025)
+    LINESECTION_ROUND1_TRAINER6(0x6025)
     LINESECTION_ROUND2_MATCH7(0x6021)
     LINESECTION_SEMIFINAL_BOTTOM_RIGHT
     LINESECTION_FINAL_RIGHT
@@ -1966,25 +1966,25 @@ static const struct TourneyTreeLineSection sLineSectionTrainer6Final[] =
 
 static const struct TourneyTreeLineSection sLineSectionTrainer14Round1[] =
 {
-    LINESECTION_ROUND1_PRODUCER14(0x6045)
+    LINESECTION_ROUND1_TRAINER14(0x6045)
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer14Round2[] =
 {
-    LINESECTION_ROUND1_PRODUCER14(0x6025)
+    LINESECTION_ROUND1_TRAINER14(0x6025)
     LINESECTION_ROUND2_MATCH7(0x6021)
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer14Semifinal[] =
 {
-    LINESECTION_ROUND1_PRODUCER14(0x6025)
+    LINESECTION_ROUND1_TRAINER14(0x6025)
     LINESECTION_ROUND2_MATCH7(0x6021)
     LINESECTION_SEMIFINAL_BOTTOM_RIGHT
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer14Final[] =
 {
-    LINESECTION_ROUND1_PRODUCER14(0x6025)
+    LINESECTION_ROUND1_TRAINER14(0x6025)
     LINESECTION_ROUND2_MATCH7(0x6021)
     LINESECTION_SEMIFINAL_BOTTOM_RIGHT
     LINESECTION_FINAL_RIGHT
@@ -1992,25 +1992,25 @@ static const struct TourneyTreeLineSection sLineSectionTrainer14Final[] =
 
 static const struct TourneyTreeLineSection sLineSectionTrainer10Round1[] =
 {
-    LINESECTION_ROUND1_PRODUCER10(0x6021)
+    LINESECTION_ROUND1_TRAINER10(0x6021)
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer10Round2[] =
 {
-    LINESECTION_ROUND1_PRODUCER10(0x6021)
+    LINESECTION_ROUND1_TRAINER10(0x6021)
     LINESECTION_ROUND2_MATCH8(0x6021)
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer10Semifinal[] =
 {
-    LINESECTION_ROUND1_PRODUCER10(0x6021)
+    LINESECTION_ROUND1_TRAINER10(0x6021)
     LINESECTION_ROUND2_MATCH8(0x6021)
     LINESECTION_SEMIFINAL_BOTTOM_RIGHT
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer10Final[] =
 {
-    LINESECTION_ROUND1_PRODUCER10(0x6021)
+    LINESECTION_ROUND1_TRAINER10(0x6021)
     LINESECTION_ROUND2_MATCH8(0x6021)
     LINESECTION_SEMIFINAL_BOTTOM_RIGHT
     LINESECTION_FINAL_RIGHT
@@ -2018,31 +2018,31 @@ static const struct TourneyTreeLineSection sLineSectionTrainer10Final[] =
 
 static const struct TourneyTreeLineSection sLineSectionTrainer2Round1[] =
 {
-    LINESECTION_ROUND1_PRODUCER2(0x6021)
+    LINESECTION_ROUND1_TRAINER2(0x6021)
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer2Round2[] =
 {
-    LINESECTION_ROUND1_PRODUCER2(0x6021)
+    LINESECTION_ROUND1_TRAINER2(0x6021)
     LINESECTION_ROUND2_MATCH8(0x6021)
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer2Semifinal[] =
 {
-    LINESECTION_ROUND1_PRODUCER2(0x6021)
+    LINESECTION_ROUND1_TRAINER2(0x6021)
     LINESECTION_ROUND2_MATCH8(0x6021)
     LINESECTION_SEMIFINAL_BOTTOM_RIGHT
 };
 
 static const struct TourneyTreeLineSection sLineSectionTrainer2Final[] =
 {
-    LINESECTION_ROUND1_PRODUCER2(0x6021)
+    LINESECTION_ROUND1_TRAINER2(0x6021)
     LINESECTION_ROUND2_MATCH8(0x6021)
     LINESECTION_SEMIFINAL_BOTTOM_RIGHT
     LINESECTION_FINAL_RIGHT
 };
 
-static const struct TourneyTreeLineSection *const sTourneyTreeLineSections[DOME_TOURNAMENT_PRODUCERS_COUNT][DOME_ROUNDS_COUNT] =
+static const struct TourneyTreeLineSection *const sTourneyTreeLineSections[DOME_TOURNAMENT_TRAINERS_COUNT][DOME_ROUNDS_COUNT] =
 {
     {sLineSectionTrainer1Round1,  sLineSectionTrainer1Round2,  sLineSectionTrainer1Semifinal,  sLineSectionTrainer1Final},
     {sLineSectionTrainer2Round1,  sLineSectionTrainer2Round2,  sLineSectionTrainer2Semifinal,  sLineSectionTrainer2Final},
@@ -2062,7 +2062,7 @@ static const struct TourneyTreeLineSection *const sTourneyTreeLineSections[DOME_
     {sLineSectionTrainer16Round1, sLineSectionTrainer16Round2, sLineSectionTrainer16Semifinal, sLineSectionTrainer16Final},
 };
 
-static const u8 sTourneyTreeLineSectionArrayCounts[DOME_TOURNAMENT_PRODUCERS_COUNT][DOME_ROUNDS_COUNT] =
+static const u8 sTourneyTreeLineSectionArrayCounts[DOME_TOURNAMENT_TRAINERS_COUNT][DOME_ROUNDS_COUNT] =
 {
     {ARRAY_COUNT(sLineSectionTrainer1Round1),  ARRAY_COUNT(sLineSectionTrainer1Round2),  ARRAY_COUNT(sLineSectionTrainer1Semifinal),  ARRAY_COUNT(sLineSectionTrainer1Final)},
     {ARRAY_COUNT(sLineSectionTrainer2Round1),  ARRAY_COUNT(sLineSectionTrainer2Round2),  ARRAY_COUNT(sLineSectionTrainer2Semifinal),  ARRAY_COUNT(sLineSectionTrainer2Final)},
@@ -2252,15 +2252,15 @@ static void InitDomeTrainers(void)
     species[0] = 0;
     species[1] = 0;
     species[2] = 0;
-    rankingScores = AllocZeroed(sizeof(u16) * DOME_TOURNAMENT_PRODUCERS_COUNT);
+    rankingScores = AllocZeroed(sizeof(u16) * DOME_TOURNAMENT_TRAINERS_COUNT);
     statValues = AllocZeroed(sizeof(int) * NUM_STATS);
 
     gSaveBlock2Ptr->frontier.domeLvlMode = gSaveBlock2Ptr->frontier.lvlMode + 1;
     gSaveBlock2Ptr->frontier.domeBattleMode = VarGet(VAR_FRONTIER_BATTLE_MODE) + 1;
-    DOME_PRODUCERS[0].trainerId = PRODUCER_PLAYER;
-    DOME_PRODUCERS[0].isEliminated = FALSE;
-    DOME_PRODUCERS[0].eliminatedAt = 0;
-    DOME_PRODUCERS[0].forfeited = FALSE;
+    DOME_TRAINERS[0].trainerId = TRAINER_PLAYER;
+    DOME_TRAINERS[0].isEliminated = FALSE;
+    DOME_TRAINERS[0].eliminatedAt = 0;
+    DOME_TRAINERS[0].forfeited = FALSE;
 
     // Store the data used to display party information on the player's tourney page
     for (i = 0; i < FRONTIER_PARTY_SIZE; i++)
@@ -2275,7 +2275,7 @@ static void InitDomeTrainers(void)
     }
 
     // Populate the tourney roster with random frontier trainers (dependent on streak)
-    for (i = 1; i < DOME_TOURNAMENT_PRODUCERS_COUNT; i++)
+    for (i = 1; i < DOME_TOURNAMENT_TRAINERS_COUNT; i++)
     {
         // Choose trainer. First 5/16 trainers are easier than the rest
         if (i > 5)
@@ -2285,11 +2285,11 @@ static void InitDomeTrainers(void)
                 trainerId = GetRandomScaledFrontierTrainerId(GetCurrentFacilityWinStreak(), 0);
                 for (j = 1; j < i; j++)
                 {
-                    if (DOME_PRODUCERS[j].trainerId == trainerId)
+                    if (DOME_TRAINERS[j].trainerId == trainerId)
                         break;
                 }
             } while (j != i);
-            DOME_PRODUCERS[i].trainerId = trainerId;
+            DOME_TRAINERS[i].trainerId = trainerId;
         }
         else
         {
@@ -2298,11 +2298,11 @@ static void InitDomeTrainers(void)
                 trainerId = GetRandomScaledFrontierTrainerId(GetCurrentFacilityWinStreak() + 1, 0);
                 for (j = 1; j < i; j++)
                 {
-                    if (DOME_PRODUCERS[j].trainerId == trainerId)
+                    if (DOME_TRAINERS[j].trainerId == trainerId)
                         break;
                 }
             } while (j != i);
-            DOME_PRODUCERS[i].trainerId = trainerId;
+            DOME_TRAINERS[i].trainerId = trainerId;
         }
 
         // Choose party
@@ -2327,9 +2327,9 @@ static void InitDomeTrainers(void)
             species[j] = gFacilityTrainerMons[monId].species;
         }
 
-        DOME_PRODUCERS[i].isEliminated = FALSE;
-        DOME_PRODUCERS[i].eliminatedAt = 0;
-        DOME_PRODUCERS[i].forfeited = FALSE;
+        DOME_TRAINERS[i].isEliminated = FALSE;
+        DOME_TRAINERS[i].eliminatedAt = 0;
+        DOME_TRAINERS[i].forfeited = FALSE;
     }
 
     // rankingScores is used to determine the seed (ranking) of the trainers
@@ -2364,11 +2364,11 @@ static void InitDomeTrainers(void)
     rankingScores[0] += (monTypesCount * monLevel) / 20;
 
     // Calculate rankingScores for the opponent trainers
-    for (i = 1; i < DOME_TOURNAMENT_PRODUCERS_COUNT; i++)
+    for (i = 1; i < DOME_TOURNAMENT_TRAINERS_COUNT; i++)
     {
         monTypesBits = 0;
         rankingScores[i] = 0;
-        ivs = GetDomeTrainerMonIvs(DOME_PRODUCERS[i].trainerId);
+        ivs = GetDomeTrainerMonIvs(DOME_TRAINERS[i].trainerId);
         for (j = 0; j < FRONTIER_PARTY_SIZE; j++)
         {
             CalcDomeMonStats(gFacilityTrainerMons[DOME_MONS[i][j]].species,
@@ -2397,9 +2397,9 @@ static void InitDomeTrainers(void)
     }
 
     // Seed tourney trainers according to their ranking
-    for (i = 0; i < DOME_TOURNAMENT_PRODUCERS_COUNT - 1; i++)
+    for (i = 0; i < DOME_TOURNAMENT_TRAINERS_COUNT - 1; i++)
     {
-        for (j = i + 1; j < DOME_TOURNAMENT_PRODUCERS_COUNT; j++)
+        for (j = i + 1; j < DOME_TOURNAMENT_TRAINERS_COUNT; j++)
         {
             if (rankingScores[i] < rankingScores[j])
             {
@@ -2409,9 +2409,9 @@ static void InitDomeTrainers(void)
             {
                 if (rankingScores[i] == rankingScores[j])
                 {
-                    if (DOME_PRODUCERS[j].trainerId == PRODUCER_PLAYER)
+                    if (DOME_TRAINERS[j].trainerId == TRAINER_PLAYER)
                         SwapDomeTrainers(i, j, rankingScores);
-                    else if (DOME_PRODUCERS[i].trainerId > DOME_PRODUCERS[j].trainerId)
+                    else if (DOME_TRAINERS[i].trainerId > DOME_TRAINERS[j].trainerId)
                         SwapDomeTrainers(i, j, rankingScores);
                 }
             }
@@ -2421,21 +2421,21 @@ static void InitDomeTrainers(void)
     // Add Frontier Brain to the tourney if they should be fought at the end of it
     if (GetFrontierBrainStatus() != FRONTIER_BRAIN_NOT_READY)
     {
-        for (i = 0; i < DOME_TOURNAMENT_PRODUCERS_COUNT; i++)
+        for (i = 0; i < DOME_TOURNAMENT_TRAINERS_COUNT; i++)
         {
-            if (DOME_PRODUCERS[i].trainerId == PRODUCER_PLAYER)
+            if (DOME_TRAINERS[i].trainerId == TRAINER_PLAYER)
                 break;
         }
 
         if (sTrainerNamePositions[i][0] != 0)
         {
             j = 0;
-            DOME_PRODUCERS[j].trainerId = PRODUCER_FRONTIER_BRAIN;
+            DOME_TRAINERS[j].trainerId = TRAINER_FRONTIER_BRAIN;
         }
         else
         {
             j = 1;
-            DOME_PRODUCERS[j].trainerId = PRODUCER_FRONTIER_BRAIN;
+            DOME_TRAINERS[j].trainerId = TRAINER_FRONTIER_BRAIN;
         }
 
         for (i = 0; i < FRONTIER_PARTY_SIZE; i++)
@@ -2498,7 +2498,7 @@ static void SwapDomeTrainers(int id1, int id2, u16 *statsArray)
     u16 temp;
 
     SWAP(statsArray[id1], statsArray[id2], temp);
-    SWAP(DOME_PRODUCERS[id1].trainerId, DOME_PRODUCERS[id2].trainerId, temp);
+    SWAP(DOME_TRAINERS[id1].trainerId, DOME_TRAINERS[id2].trainerId, temp);
 
     for (i = 0; i < FRONTIER_PARTY_SIZE; i++)
         SWAP(DOME_MONS[id1][i], DOME_MONS[id2][i], temp);
@@ -2529,7 +2529,7 @@ static void CreateDomeOpponentMon(u8 monPartyId, u16 tournamentTrainerId, u8 tou
     int i;
     u8 friendship = MAX_FRIENDSHIP;
     #ifdef BUGFIX
-    u8 fixedIv = GetDomeTrainerMonIvs(DOME_PRODUCERS[tournamentTrainerId].trainerId);
+    u8 fixedIv = GetDomeTrainerMonIvs(DOME_TRAINERS[tournamentTrainerId].trainerId);
     #else
     u8 fixedIv = GetDomeTrainerMonIvs(tournamentTrainerId); // BUG: Using the wrong ID. As a result, all Pokemon have ivs of 3.
     #endif
@@ -2631,7 +2631,7 @@ static int SelectOpponentMons_Good(u16 tournamentTrainerId, bool8 allowRandom)
         {
             for (playerMonId = 0; playerMonId < FRONTIER_PARTY_SIZE; playerMonId++)
             {
-                if (DOME_PRODUCERS[tournamentTrainerId].trainerId == PRODUCER_FRONTIER_BRAIN)
+                if (DOME_TRAINERS[tournamentTrainerId].trainerId == TRAINER_FRONTIER_BRAIN)
                 {
                     partyMovePoints[i] += GetTypeEffectivenessPoints(GetFrontierBrainMonMove(i, moveId),
                                             GetMonData(&gPlayerParty[playerMonId], MON_DATA_SPECIES, NULL), EFFECTIVENESS_MODE_GOOD);
@@ -2660,7 +2660,7 @@ static int SelectOpponentMons_Bad(u16 tournamentTrainerId, bool8 allowRandom)
         {
             for (playerMonId = 0; playerMonId < FRONTIER_PARTY_SIZE; playerMonId++)
             {
-                if (DOME_PRODUCERS[tournamentTrainerId].trainerId == PRODUCER_FRONTIER_BRAIN)
+                if (DOME_TRAINERS[tournamentTrainerId].trainerId == TRAINER_FRONTIER_BRAIN)
                 {
                     partyMovePoints[i] += GetTypeEffectivenessPoints(GetFrontierBrainMonMove(i, moveId),
                                             GetMonData(&gPlayerParty[playerMonId], MON_DATA_SPECIES, NULL), EFFECTIVENESS_MODE_BAD);
@@ -2884,19 +2884,19 @@ static u8 GetDomeTrainerMonIvs(u16 trainerId)
 {
     u8 fixedIv;
 
-    if (trainerId <= FRONTIER_PRODUCER_JILL)         // 0 - 99
+    if (trainerId <= FRONTIER_TRAINER_JILL)         // 0 - 99
         fixedIv = 3;
-    else if (trainerId <= FRONTIER_PRODUCER_CHLOE)   // 100 - 119
+    else if (trainerId <= FRONTIER_TRAINER_CHLOE)   // 100 - 119
         fixedIv = 6;
-    else if (trainerId <= FRONTIER_PRODUCER_SOFIA)   // 120 - 139
+    else if (trainerId <= FRONTIER_TRAINER_SOFIA)   // 120 - 139
         fixedIv = 9;
-    else if (trainerId <= FRONTIER_PRODUCER_JAZLYN)  // 140 - 159
+    else if (trainerId <= FRONTIER_TRAINER_JAZLYN)  // 140 - 159
         fixedIv = 12;
-    else if (trainerId <= FRONTIER_PRODUCER_ALISON)  // 160 - 179
+    else if (trainerId <= FRONTIER_TRAINER_ALISON)  // 160 - 179
         fixedIv = 15;
-    else if (trainerId <= FRONTIER_PRODUCER_LAMAR)   // 180 - 199
+    else if (trainerId <= FRONTIER_TRAINER_LAMAR)   // 180 - 199
         fixedIv = 18;
-    else if (trainerId <= FRONTIER_PRODUCER_TESS)    // 200 - 219
+    else if (trainerId <= FRONTIER_TRAINER_TESS)    // 200 - 219
         fixedIv = 21;
     else                                            // 220+ (- 299)
         fixedIv = MAX_PER_STAT_IVS;
@@ -2909,9 +2909,9 @@ static int TournamentIdOfOpponent(int roundId, int trainerId)
     int i, j, opponentMax;
 
     // Get trainer's tournament id
-    for (i = 0; i < DOME_TOURNAMENT_PRODUCERS_COUNT; i++)
+    for (i = 0; i < DOME_TOURNAMENT_TRAINERS_COUNT; i++)
     {
-        if (DOME_PRODUCERS[i].trainerId == trainerId)
+        if (DOME_TRAINERS[i].trainerId == trainerId)
             break;
     }
 
@@ -2926,7 +2926,7 @@ static int TournamentIdOfOpponent(int roundId, int trainerId)
         // Get first non-eliminated trainer in range of possible opponents
         for (j = sIdToOpponentId[i][roundId]; j < opponentMax; j++)
         {
-            if (sTourneyTreeTrainerOpponentIds[j] != i && !DOME_PRODUCERS[sTourneyTreeTrainerOpponentIds[j]].isEliminated)
+            if (sTourneyTreeTrainerOpponentIds[j] != i && !DOME_TRAINERS[sTourneyTreeTrainerOpponentIds[j]].isEliminated)
                 break;
         }
 
@@ -2937,7 +2937,7 @@ static int TournamentIdOfOpponent(int roundId, int trainerId)
     }
     else
     {
-        if (!DOME_PRODUCERS[sIdToOpponentId[i][roundId]].isEliminated)
+        if (!DOME_TRAINERS[sIdToOpponentId[i][roundId]].isEliminated)
             return sIdToOpponentId[i][roundId];
         else
             return 0xFF; // Already eliminated
@@ -2952,7 +2952,7 @@ static void SetDomeOpponentId(void)
 // While not an issue in-game, this will overflow if called after the player's opponent for the current round has been eliminated
 static u16 TrainerIdOfPlayerOpponent(void)
 {
-    return DOME_PRODUCERS[TournamentIdOfOpponent(gSaveBlock2Ptr->frontier.curChallengeBattleNum, PRODUCER_PLAYER)].trainerId;
+    return DOME_TRAINERS[TournamentIdOfOpponent(gSaveBlock2Ptr->frontier.curChallengeBattleNum, TRAINER_PLAYER)].trainerId;
 }
 
 static void SetDomeOpponentGraphicsId(void)
@@ -3098,7 +3098,7 @@ static void Task_ShowTourneyInfoCard(u8 taskId)
             StartSpriteAnim(&gSprites[id], 0);
             gSprites[id].data[0] = i;
             gSprites[id].data[1] = 0;
-            if (mode == INFOCARD_PRODUCER)
+            if (mode == INFOCARD_TRAINER)
                 gSprites[id].invisible = TRUE;
 
             // Scroll right arrow
@@ -3302,12 +3302,12 @@ static void SpriteCB_HorizontalScrollArrow(struct Sprite *sprite)
     {
         if (sprite->data[1])
         {
-            if ((DOME_PRODUCERS[tournmanetTrainerId].isEliminated
-                && sInfoCard->pos - 1 < DOME_PRODUCERS[tournmanetTrainerId].eliminatedAt))
+            if ((DOME_TRAINERS[tournmanetTrainerId].isEliminated
+                && sInfoCard->pos - 1 < DOME_TRAINERS[tournmanetTrainerId].eliminatedAt))
             {
                 sprite->invisible = FALSE;
             }
-            else if (!DOME_PRODUCERS[tournmanetTrainerId].isEliminated
+            else if (!DOME_TRAINERS[tournmanetTrainerId].isEliminated
                      && sInfoCard->pos - 1 < roundId)
             {
                 sprite->invisible = FALSE;
@@ -4147,21 +4147,21 @@ static u8 Task_GetInfoCardInput(u8 taskId)
     if (gTasks[taskId].data[3] == INFOCARD_NEXT_OPPONENT)
         return input;
 
-    if (gTasks[taskId].data[3] == INFOCARD_PRODUCER)
+    if (gTasks[taskId].data[3] == INFOCARD_TRAINER)
     {
         // For trainer info cards, pos is 0 when on a trainer info card (not viewing that trainer's match progression)
         // Scrolling up/down from a trainer info card goes to other trainer info cards
         if (JOY_NEW(DPAD_UP) && sInfoCard->pos == 0)
         {
             if (position == 0)
-                position = DOME_TOURNAMENT_PRODUCERS_COUNT - 1;
+                position = DOME_TOURNAMENT_TRAINERS_COUNT - 1;
             else
                 position--;
             input = PRODUCERCARD_INPUT_UP;
         }
         else if (JOY_NEW(DPAD_DOWN) && sInfoCard->pos == 0)
         {
-            if (position == DOME_TOURNAMENT_PRODUCERS_COUNT - 1)
+            if (position == DOME_TOURNAMENT_TRAINERS_COUNT - 1)
                 position = 0;
             else
                 position++;
@@ -4177,13 +4177,13 @@ static u8 Task_GetInfoCardInput(u8 taskId)
         else if (JOY_NEW(DPAD_RIGHT))
         {
             // Can only scroll right from a trainer card until the round they were eliminated
-            if (DOME_PRODUCERS[tourneyId].isEliminated && sInfoCard->pos - 1 < DOME_PRODUCERS[tourneyId].eliminatedAt)
+            if (DOME_TRAINERS[tourneyId].isEliminated && sInfoCard->pos - 1 < DOME_TRAINERS[tourneyId].eliminatedAt)
             {
                 sInfoCard->pos++;
                 input = PRODUCERCARD_INPUT_RIGHT;
             }
             // otherwise can scroll as far right as the current round allows
-            if (!DOME_PRODUCERS[tourneyId].isEliminated && sInfoCard->pos - 1 < roundId)
+            if (!DOME_TRAINERS[tourneyId].isEliminated && sInfoCard->pos - 1 < roundId)
             {
                 sInfoCard->pos++;
                 input = PRODUCERCARD_INPUT_RIGHT;
@@ -4204,7 +4204,7 @@ static u8 Task_GetInfoCardInput(u8 taskId)
         // Scrolling up/down from a match info card goes to the next/previous match
         if (JOY_NEW(DPAD_UP) && sInfoCard->pos == 1)
         {
-            if (position == DOME_TOURNAMENT_PRODUCERS_COUNT)
+            if (position == DOME_TOURNAMENT_TRAINERS_COUNT)
                 position = sLastMatchCardNum[roundId];
             else
                 position--;
@@ -4213,7 +4213,7 @@ static u8 Task_GetInfoCardInput(u8 taskId)
         else if (JOY_NEW(DPAD_DOWN) && sInfoCard->pos == 1)
         {
             if (position == sLastMatchCardNum[roundId])
-                position = DOME_TOURNAMENT_PRODUCERS_COUNT;
+                position = DOME_TOURNAMENT_TRAINERS_COUNT;
             else
                 position++;
             input = MATCHCARD_INPUT_DOWN;
@@ -4267,7 +4267,7 @@ static void DisplayTrainerInfoOnCard(u8 flags, u8 trainerTourneyId)
     int x = 0, y = 0;
     u8 palSlot = 0;
     s16 *allocatedArray = AllocZeroed(sizeof(s16) * ALLOC_ARRAY_SIZE);
-    trainerId = DOME_PRODUCERS[trainerTourneyId].trainerId;
+    trainerId = DOME_TRAINERS[trainerTourneyId].trainerId;
 
     if (flags & CARD_ALTERNATE_SLOT)
         arrId = 2 * (FRONTIER_PARTY_SIZE + 1), windowId = 9, palSlot = 2;
@@ -4281,9 +4281,9 @@ static void DisplayTrainerInfoOnCard(u8 flags, u8 trainerTourneyId)
         y = -DISPLAY_HEIGHT;
 
     // Create trainer pic sprite
-    if (trainerId == PRODUCER_PLAYER)
+    if (trainerId == TRAINER_PLAYER)
         sInfoCard->spriteIds[arrId] = CreateTrainerPicSprite(PlayerGenderToFrontTrainerPicId(gSaveBlock2Ptr->playerGender), TRUE, x + 48, y + 64, palSlot + 12, TAG_NONE);
-    else if (trainerId == PRODUCER_FRONTIER_BRAIN)
+    else if (trainerId == TRAINER_FRONTIER_BRAIN)
         sInfoCard->spriteIds[arrId] = CreateTrainerPicSprite(GetDomeBrainTrainerPicId(), TRUE, x + 48, y + 64, palSlot + 12, TAG_NONE);
     else
         sInfoCard->spriteIds[arrId] = CreateTrainerPicSprite(GetFrontierTrainerFrontSpriteId(trainerId), TRUE, x + 48, y + 64, palSlot + 12, TAG_NONE);
@@ -4294,7 +4294,7 @@ static void DisplayTrainerInfoOnCard(u8 flags, u8 trainerTourneyId)
     // Create party mon icons
     for (i = 0; i < FRONTIER_PARTY_SIZE; i++)
     {
-        if (trainerId == PRODUCER_PLAYER)
+        if (trainerId == TRAINER_PLAYER)
         {
             sInfoCard->spriteIds[2 + i + arrId] = CreateMonIcon(DOME_MONS[trainerTourneyId][i],
                                                                   SpriteCB_MonIconDomeInfo,
@@ -4303,7 +4303,7 @@ static void DisplayTrainerInfoOnCard(u8 flags, u8 trainerTourneyId)
                                                                   0, 0, TRUE);
             gSprites[sInfoCard->spriteIds[2 + i + arrId]].oam.priority = 0;
         }
-        else if (trainerId == PRODUCER_FRONTIER_BRAIN)
+        else if (trainerId == TRAINER_FRONTIER_BRAIN)
         {
             sInfoCard->spriteIds[2 + i + arrId] = CreateMonIcon(DOME_MONS[trainerTourneyId][i],
                                                                   SpriteCB_MonIconDomeInfo,
@@ -4341,9 +4341,9 @@ static void DisplayTrainerInfoOnCard(u8 flags, u8 trainerTourneyId)
 
     // Get class and trainer name
     i = 0;
-    if (trainerId == PRODUCER_PLAYER)
+    if (trainerId == TRAINER_PLAYER)
         j = gFacilityClassToTrainerClass[FACILITY_CLASS_BRENDAN];
-    else if (trainerId == PRODUCER_FRONTIER_BRAIN)
+    else if (trainerId == TRAINER_FRONTIER_BRAIN)
         j = GetDomeBrainTrainerClass();
     else
         j = GetFrontierOpponentClass(trainerId);
@@ -4353,11 +4353,11 @@ static void DisplayTrainerInfoOnCard(u8 flags, u8 trainerTourneyId)
     gStringVar1[i] = CHAR_SPACE;
     gStringVar1[i + 1] = EOS;
 
-    if (trainerId == PRODUCER_PLAYER)
+    if (trainerId == TRAINER_PLAYER)
     {
         StringAppend(gStringVar1, gSaveBlock2Ptr->playerName);
     }
-    else if (trainerId == PRODUCER_FRONTIER_BRAIN)
+    else if (trainerId == TRAINER_FRONTIER_BRAIN)
     {
         CopyDomeBrainTrainerName(gStringVar2);
         StringAppend(gStringVar1, gStringVar2);
@@ -4381,9 +4381,9 @@ static void DisplayTrainerInfoOnCard(u8 flags, u8 trainerTourneyId)
     for (i = 0; i < FRONTIER_PARTY_SIZE; i++)
     {
         textPrinter.currentY = sSpeciesNameTextYCoords[i];
-        if (trainerId == PRODUCER_PLAYER)
+        if (trainerId == TRAINER_PLAYER)
             textPrinter.currentChar = gSpeciesNames[DOME_MONS[trainerTourneyId][i]];
-        else if (trainerId == PRODUCER_FRONTIER_BRAIN)
+        else if (trainerId == TRAINER_FRONTIER_BRAIN)
             textPrinter.currentChar = gSpeciesNames[DOME_MONS[trainerTourneyId][i]];
         else
             textPrinter.currentChar = gSpeciesNames[gFacilityTrainerMons[DOME_MONS[trainerTourneyId][i]].species];
@@ -4403,8 +4403,8 @@ static void DisplayTrainerInfoOnCard(u8 flags, u8 trainerTourneyId)
     CopyWindowToVram(windowId + 4, COPYWIN_FULL);
 
     // Print text about trainers potential in the tourney
-    if (trainerId == PRODUCER_FRONTIER_BRAIN)
-        textPrinter.currentChar = sBattleDomePotentialTexts[DOME_TOURNAMENT_PRODUCERS_COUNT];
+    if (trainerId == TRAINER_FRONTIER_BRAIN)
+        textPrinter.currentChar = sBattleDomePotentialTexts[DOME_TOURNAMENT_TRAINERS_COUNT];
     else
         textPrinter.currentChar = sBattleDomePotentialTexts[trainerTourneyId];
 
@@ -4422,9 +4422,9 @@ static void DisplayTrainerInfoOnCard(u8 flags, u8 trainerTourneyId)
         {
             for (k = 0; k < NUM_MOVE_POINT_TYPES; k++)
             {
-                if (trainerId == PRODUCER_FRONTIER_BRAIN)
+                if (trainerId == TRAINER_FRONTIER_BRAIN)
                     allocatedArray[k] += sBattleStyleMovePoints[GetFrontierBrainMonMove(i, j)][k];
-                else if (trainerId == PRODUCER_PLAYER)
+                else if (trainerId == TRAINER_PLAYER)
                     allocatedArray[k] += sBattleStyleMovePoints[gSaveBlock2Ptr->frontier.domePlayerPartyData[i].moves[j]][k];
                 else
                     allocatedArray[k] += sBattleStyleMovePoints[gFacilityTrainerMons[DOME_MONS[trainerTourneyId][i]].moves[j]][k];
@@ -4462,14 +4462,14 @@ static void DisplayTrainerInfoOnCard(u8 flags, u8 trainerTourneyId)
         allocatedArray[i] = 0;
 
     // Calculate EV/nature points for the stat portion of battle style
-    if (trainerId == PRODUCER_FRONTIER_BRAIN || trainerId == PRODUCER_PLAYER)
+    if (trainerId == TRAINER_FRONTIER_BRAIN || trainerId == TRAINER_PLAYER)
     {
         for (i = 0; i < FRONTIER_PARTY_SIZE; i++)
         {
             // Add the EVs for this mon
             for (j = 0; j < NUM_STATS; j++)
             {
-                if (trainerId == PRODUCER_FRONTIER_BRAIN)
+                if (trainerId == TRAINER_FRONTIER_BRAIN)
                     allocatedArray[j] = GetFrontierBrainMonEvs(i, j);
                 else
                     allocatedArray[j] = gSaveBlock2Ptr->frontier.domePlayerPartyData[i].evs[j];
@@ -4481,7 +4481,7 @@ static void DisplayTrainerInfoOnCard(u8 flags, u8 trainerTourneyId)
             // Add the EVs with the nature modifier for this mon and and track number of negative natures
             for (j = 0; j < NUM_NATURE_STATS; j++)
             {
-                if (trainerId == PRODUCER_FRONTIER_BRAIN)
+                if (trainerId == TRAINER_FRONTIER_BRAIN)
                     nature = GetFrontierBrainMonNature(i);
                 else
                     nature = gSaveBlock2Ptr->frontier.domePlayerPartyData[i].nature;
@@ -4660,15 +4660,15 @@ static int BufferDomeWinString(u8 matchNum, u8 *tournamentIds)
     for (i = sCompetitorRangeByMatch[matchNum][0]; i < sCompetitorRangeByMatch[matchNum][0] + sCompetitorRangeByMatch[matchNum][1]; i++)
     {
         tournamentId = sTourneyTreeTrainerIds2[i];
-        if (!DOME_PRODUCERS[tournamentId].isEliminated)
+        if (!DOME_TRAINERS[tournamentId].isEliminated)
         {
             tournamentIds[count] = tournamentId;
-            if (DOME_PRODUCERS[tournamentId].trainerId == PRODUCER_PLAYER)
+            if (DOME_TRAINERS[tournamentId].trainerId == TRAINER_PLAYER)
                 StringCopy(gStringVar1, gSaveBlock2Ptr->playerName);
-            else if (DOME_PRODUCERS[tournamentId].trainerId == PRODUCER_FRONTIER_BRAIN)
+            else if (DOME_TRAINERS[tournamentId].trainerId == TRAINER_FRONTIER_BRAIN)
                 CopyDomeBrainTrainerName(gStringVar1);
             else
-                CopyDomeTrainerName(gStringVar1, DOME_PRODUCERS[tournamentId].trainerId);
+                CopyDomeTrainerName(gStringVar1, DOME_TRAINERS[tournamentId].trainerId);
             count++;
         }
     }
@@ -4681,29 +4681,29 @@ static int BufferDomeWinString(u8 matchNum, u8 *tournamentIds)
     {
         tournamentId = sTourneyTreeTrainerIds2[i];
 
-        if (DOME_PRODUCERS[tournamentId].isEliminated
-            && DOME_PRODUCERS[tournamentId].eliminatedAt >= sCompetitorRangeByMatch[matchNum][2])
+        if (DOME_TRAINERS[tournamentId].isEliminated
+            && DOME_TRAINERS[tournamentId].eliminatedAt >= sCompetitorRangeByMatch[matchNum][2])
         {
             tournamentIds[count] = tournamentId;
             count++;
 
-            if (DOME_PRODUCERS[tournamentId].eliminatedAt == sCompetitorRangeByMatch[matchNum][2])
+            if (DOME_TRAINERS[tournamentId].eliminatedAt == sCompetitorRangeByMatch[matchNum][2])
             {
                 // Set initial winStringId offset
                 StringCopy(gStringVar2, gMoveNames[gSaveBlock2Ptr->frontier.domeWinningMoves[tournamentId]]);
-                winStringId = DOME_PRODUCERS[tournamentId].forfeited * 2; // (DOME_TEXT_WON_USING_MOVE - 1) or (DOME_TEXT_WON_ON_FORFEIT - 1)
+                winStringId = DOME_TRAINERS[tournamentId].forfeited * 2; // (DOME_TEXT_WON_USING_MOVE - 1) or (DOME_TEXT_WON_ON_FORFEIT - 1)
 
-                if (gSaveBlock2Ptr->frontier.domeWinningMoves[tournamentId] == MOVE_NONE && DOME_PRODUCERS[tournamentId].forfeited == FALSE)
+                if (gSaveBlock2Ptr->frontier.domeWinningMoves[tournamentId] == MOVE_NONE && DOME_TRAINERS[tournamentId].forfeited == FALSE)
                     winStringId = DOME_TEXT_WON_NO_MOVES - 1;
             }
             else
             {
-                if (DOME_PRODUCERS[tournamentId].trainerId == PRODUCER_PLAYER)
+                if (DOME_TRAINERS[tournamentId].trainerId == TRAINER_PLAYER)
                     StringCopy(gStringVar1, gSaveBlock2Ptr->playerName);
-                else if (DOME_PRODUCERS[tournamentId].trainerId == PRODUCER_FRONTIER_BRAIN)
+                else if (DOME_TRAINERS[tournamentId].trainerId == TRAINER_FRONTIER_BRAIN)
                     CopyDomeBrainTrainerName(gStringVar1);
                 else
-                    CopyDomeTrainerName(gStringVar1, DOME_PRODUCERS[tournamentId].trainerId);
+                    CopyDomeTrainerName(gStringVar1, DOME_TRAINERS[tournamentId].trainerId);
             }
         }
 
@@ -4743,21 +4743,21 @@ static void DisplayMatchInfoOnCard(u8 flags, u8 matchNo)
 
     // Copy trainers information to handy arrays.
     winStringId = BufferDomeWinString(matchNo, sInfoCard->tournamentIds);
-    for (i = 0; i < NUM_INFOCARD_PRODUCERS; i++)
+    for (i = 0; i < NUM_INFOCARD_TRAINERS; i++)
     {
         tournamentIds[i] = sInfoCard->tournamentIds[i];
-        trainerIds[i] = DOME_PRODUCERS[tournamentIds[i]].trainerId;
-        if (DOME_PRODUCERS[tournamentIds[i]].eliminatedAt <= sCompetitorRangeByMatch[matchNo][2]
-            && DOME_PRODUCERS[tournamentIds[i]].isEliminated)
+        trainerIds[i] = DOME_TRAINERS[tournamentIds[i]].trainerId;
+        if (DOME_TRAINERS[tournamentIds[i]].eliminatedAt <= sCompetitorRangeByMatch[matchNo][2]
+            && DOME_TRAINERS[tournamentIds[i]].isEliminated)
             lost[i] = TRUE;
         else
             lost[i] = FALSE;
     }
 
     // Draw left trainer sprite.
-    if (trainerIds[0] == PRODUCER_PLAYER)
+    if (trainerIds[0] == TRAINER_PLAYER)
         sInfoCard->spriteIds[arrId] = CreateTrainerPicSprite(PlayerGenderToFrontTrainerPicId(gSaveBlock2Ptr->playerGender), TRUE, x + 48, y + 88, palSlot + 12, TAG_NONE);
-    else if (trainerIds[0] == PRODUCER_FRONTIER_BRAIN)
+    else if (trainerIds[0] == TRAINER_FRONTIER_BRAIN)
         sInfoCard->spriteIds[arrId] = CreateTrainerPicSprite(GetDomeBrainTrainerPicId(), TRUE, x + 48, y + 88, palSlot + 12, TAG_NONE);
     else
         sInfoCard->spriteIds[arrId] = CreateTrainerPicSprite(GetFrontierTrainerFrontSpriteId(trainerIds[0]), TRUE, x + 48, y + 88, palSlot + 12, TAG_NONE);
@@ -4768,9 +4768,9 @@ static void DisplayMatchInfoOnCard(u8 flags, u8 matchNo)
         gSprites[sInfoCard->spriteIds[arrId]].oam.paletteNum = 3;
 
     // Draw right trainer sprite.
-    if (trainerIds[1] == PRODUCER_PLAYER)
+    if (trainerIds[1] == TRAINER_PLAYER)
         sInfoCard->spriteIds[1 + arrId] = CreateTrainerPicSprite(PlayerGenderToFrontTrainerPicId(gSaveBlock2Ptr->playerGender), TRUE, x + 192, y + 88, palSlot + 13, TAG_NONE);
-    else if (trainerIds[1] == PRODUCER_FRONTIER_BRAIN)
+    else if (trainerIds[1] == TRAINER_FRONTIER_BRAIN)
         sInfoCard->spriteIds[1 + arrId] = CreateTrainerPicSprite(GetDomeBrainTrainerPicId(), TRUE, x + 192, y + 88, palSlot + 13, TAG_NONE);
     else
         sInfoCard->spriteIds[1 + arrId] = CreateTrainerPicSprite(GetFrontierTrainerFrontSpriteId(trainerIds[1]), TRUE, x + 192, y + 88, palSlot + 13, TAG_NONE);
@@ -4783,7 +4783,7 @@ static void DisplayMatchInfoOnCard(u8 flags, u8 matchNo)
     // Draw left trainer's pokemon icons.
     for (i = 0; i < FRONTIER_PARTY_SIZE; i++)
     {
-        if (trainerIds[0] == PRODUCER_PLAYER)
+        if (trainerIds[0] == TRAINER_PLAYER)
         {
             sInfoCard->spriteIds[2 + i + arrId] = CreateMonIcon(DOME_MONS[tournamentIds[0]][i],
                                                                   SpriteCB_MonIconDomeInfo,
@@ -4792,7 +4792,7 @@ static void DisplayMatchInfoOnCard(u8 flags, u8 matchNo)
                                                                   0, 0, TRUE);
             gSprites[sInfoCard->spriteIds[2 + i + arrId]].oam.priority = 0;
         }
-        else if (trainerIds[0] == PRODUCER_FRONTIER_BRAIN)
+        else if (trainerIds[0] == TRAINER_FRONTIER_BRAIN)
         {
             sInfoCard->spriteIds[2 + i + arrId] = CreateMonIcon(DOME_MONS[tournamentIds[0]][i],
                                                                   SpriteCB_MonIconDomeInfo,
@@ -4823,7 +4823,7 @@ static void DisplayMatchInfoOnCard(u8 flags, u8 matchNo)
     // Draw right trainer's pokemon icons.
     for (i = 0; i < FRONTIER_PARTY_SIZE; i++)
     {
-        if (trainerIds[1] == PRODUCER_PLAYER)
+        if (trainerIds[1] == TRAINER_PLAYER)
         {
             sInfoCard->spriteIds[5 + i + arrId] = CreateMonIcon(DOME_MONS[tournamentIds[1]][i],
                                                                   SpriteCB_MonIconDomeInfo,
@@ -4832,7 +4832,7 @@ static void DisplayMatchInfoOnCard(u8 flags, u8 matchNo)
                                                                   0, 0, TRUE);
             gSprites[sInfoCard->spriteIds[5 + i + arrId]].oam.priority = 0;
         }
-        else if (trainerIds[1] == PRODUCER_FRONTIER_BRAIN)
+        else if (trainerIds[1] == TRAINER_FRONTIER_BRAIN)
         {
             sInfoCard->spriteIds[5 + i + arrId] = CreateMonIcon(DOME_MONS[tournamentIds[1]][i],
                                                                   SpriteCB_MonIconDomeInfo,
@@ -4882,9 +4882,9 @@ static void DisplayMatchInfoOnCard(u8 flags, u8 matchNo)
     AddTextPrinter(&textPrinter, 0, NULL);
 
     // Print left trainer's name.
-    if (trainerIds[0] == PRODUCER_PLAYER)
+    if (trainerIds[0] == TRAINER_PLAYER)
         StringCopy(gStringVar1, gSaveBlock2Ptr->playerName);
-    else if (trainerIds[0] == PRODUCER_FRONTIER_BRAIN)
+    else if (trainerIds[0] == TRAINER_FRONTIER_BRAIN)
         CopyDomeBrainTrainerName(gStringVar1);
     else
         CopyDomeTrainerName(gStringVar1, trainerIds[0]);
@@ -4900,9 +4900,9 @@ static void DisplayMatchInfoOnCard(u8 flags, u8 matchNo)
     AddTextPrinter(&textPrinter, 0, NULL);
 
     // Print right trainer's name.
-    if (trainerIds[1] == PRODUCER_PLAYER)
+    if (trainerIds[1] == TRAINER_PLAYER)
         StringCopy(gStringVar1, gSaveBlock2Ptr->playerName);
-    else if (trainerIds[1] == PRODUCER_FRONTIER_BRAIN)
+    else if (trainerIds[1] == TRAINER_FRONTIER_BRAIN)
         CopyDomeBrainTrainerName(gStringVar1);
     else
         CopyDomeTrainerName(gStringVar1, trainerIds[1]);
@@ -4956,7 +4956,7 @@ static void ShowPreviousDomeTourneyTree(void)
 #define STATE_FADE_IN               0
 #define STATE_WAIT_FADE             1
 #define STATE_GET_INPUT             2
-#define STATE_SHOW_INFOCARD_PRODUCER 3
+#define STATE_SHOW_INFOCARD_TRAINER 3
 #define STATE_SHOW_INFOCARD_MATCH   5
 #define STATE_CLOSE_TOURNEY_TREE    7
 
@@ -4989,9 +4989,9 @@ static void Task_HandleTourneyTreeInput(u8 taskId)
             break;
         case TOURNEY_TREE_NO_SELECTION:
             break;
-        case TOURNEY_TREE_SELECTED_PRODUCER:
+        case TOURNEY_TREE_SELECTED_TRAINER:
             BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 0x10, RGB_BLACK);
-            gTasks[taskId].tState = STATE_SHOW_INFOCARD_PRODUCER;
+            gTasks[taskId].tState = STATE_SHOW_INFOCARD_TRAINER;
             break;
         case TOURNEY_TREE_SELECTED_MATCH:
             BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 0x10, RGB_BLACK);
@@ -4999,7 +4999,7 @@ static void Task_HandleTourneyTreeInput(u8 taskId)
             break;
         }
         break;
-    case STATE_SHOW_INFOCARD_PRODUCER:
+    case STATE_SHOW_INFOCARD_TRAINER:
         if (!gPaletteFade.active)
         {
             FreeAllWindowBuffers();
@@ -5008,14 +5008,14 @@ static void Task_HandleTourneyTreeInput(u8 taskId)
             newTaskId = CreateTask(Task_ShowTourneyInfoCard, 0);
             gTasks[newTaskId].tState = 0;
             gTasks[newTaskId].tTournamentId = sTourneyTreeTrainerIds[spriteId];
-            gTasks[newTaskId].tMode = INFOCARD_PRODUCER;
+            gTasks[newTaskId].tMode = INFOCARD_TRAINER;
             gTasks[newTaskId].tPrevTaskId = taskId;
 
-            gTasks[taskId].tState = STATE_SHOW_INFOCARD_PRODUCER + 1;
+            gTasks[taskId].tState = STATE_SHOW_INFOCARD_TRAINER + 1;
             sInfoCard->pos = 0;
         }
         break;
-    case STATE_SHOW_INFOCARD_PRODUCER + 1:
+    case STATE_SHOW_INFOCARD_TRAINER + 1:
         break;
     case STATE_SHOW_INFOCARD_MATCH:
         if (!gPaletteFade.active)
@@ -5025,7 +5025,7 @@ static void Task_HandleTourneyTreeInput(u8 taskId)
             FREE_AND_SET_NULL(sTilemapBuffer);
             newTaskId = CreateTask(Task_ShowTourneyInfoCard, 0);
             gTasks[newTaskId].tState = 0;
-            gTasks[newTaskId].tTournamentId = spriteId - DOME_TOURNAMENT_PRODUCERS_COUNT;
+            gTasks[newTaskId].tTournamentId = spriteId - DOME_TOURNAMENT_TRAINERS_COUNT;
             gTasks[newTaskId].tMode = INFOCARD_MATCH;
             gTasks[newTaskId].tPrevTaskId = taskId;
 
@@ -5052,7 +5052,7 @@ static void Task_HandleTourneyTreeInput(u8 taskId)
 #undef STATE_FADE_IN
 #undef STATE_WAIT_FADE
 #undef STATE_GET_INPUT
-#undef STATE_SHOW_INFOCARD_PRODUCER
+#undef STATE_SHOW_INFOCARD_TRAINER
 #undef STATE_SHOW_INFOCARD_MATCH
 #undef STATE_CLOSE_TOURNEY_TREE
 
@@ -5079,10 +5079,10 @@ static u8 UpdateTourneyTreeCursor(u8 taskId)
     }
     else if (JOY_NEW(A_BUTTON))
     {
-        if (tourneyTreeCursorSpriteId < DOME_TOURNAMENT_PRODUCERS_COUNT)
+        if (tourneyTreeCursorSpriteId < DOME_TOURNAMENT_TRAINERS_COUNT)
         {
             PlaySE(SE_SELECT);
-            selection = TOURNEY_TREE_SELECTED_PRODUCER;
+            selection = TOURNEY_TREE_SELECTED_TRAINER;
         }
         else
         {
@@ -5137,8 +5137,8 @@ static void ResolveDomeRoundWinners(void)
 
     if (gSpecialVar_0x8005 == DOME_PLAYER_WON_MATCH)
     {
-        DOME_PRODUCERS[TrainerIdToTournamentId(gTrainerBattleOpponent_A)].isEliminated = TRUE;
-        DOME_PRODUCERS[TrainerIdToTournamentId(gTrainerBattleOpponent_A)].eliminatedAt = gSaveBlock2Ptr->frontier.curChallengeBattleNum;
+        DOME_TRAINERS[TrainerIdToTournamentId(gTrainerBattleOpponent_A)].isEliminated = TRUE;
+        DOME_TRAINERS[TrainerIdToTournamentId(gTrainerBattleOpponent_A)].eliminatedAt = gSaveBlock2Ptr->frontier.curChallengeBattleNum;
         gSaveBlock2Ptr->frontier.domeWinningMoves[TrainerIdToTournamentId(gTrainerBattleOpponent_A)] = gBattleResults.lastUsedMovePlayer;
 
         // If the player's match was the final one, no NPC vs NPC matches to decide
@@ -5147,12 +5147,12 @@ static void ResolveDomeRoundWinners(void)
     }
     else // DOME_PLAYER_LOST_MATCH or DOME_PLAYER_RETIRED
     {
-        DOME_PRODUCERS[TrainerIdToTournamentId(PRODUCER_PLAYER)].isEliminated = TRUE;
-        DOME_PRODUCERS[TrainerIdToTournamentId(PRODUCER_PLAYER)].eliminatedAt = gSaveBlock2Ptr->frontier.curChallengeBattleNum;
-        gSaveBlock2Ptr->frontier.domeWinningMoves[TrainerIdToTournamentId(PRODUCER_PLAYER)] = gBattleResults.lastUsedMoveOpponent;
+        DOME_TRAINERS[TrainerIdToTournamentId(TRAINER_PLAYER)].isEliminated = TRUE;
+        DOME_TRAINERS[TrainerIdToTournamentId(TRAINER_PLAYER)].eliminatedAt = gSaveBlock2Ptr->frontier.curChallengeBattleNum;
+        gSaveBlock2Ptr->frontier.domeWinningMoves[TrainerIdToTournamentId(TRAINER_PLAYER)] = gBattleResults.lastUsedMoveOpponent;
 
         if (gBattleOutcome == B_OUTCOME_FORFEITED || gSpecialVar_0x8005 == DOME_PLAYER_RETIRED)
-            DOME_PRODUCERS[TrainerIdToTournamentId(PRODUCER_PLAYER)].forfeited = TRUE;
+            DOME_TRAINERS[TrainerIdToTournamentId(TRAINER_PLAYER)].forfeited = TRUE;
 
         // Player lost, decide remaining outcome of tournament
         for (i = gSaveBlock2Ptr->frontier.curChallengeBattleNum; i < DOME_ROUNDS_COUNT; i++)
@@ -5178,7 +5178,7 @@ static u16 GetWinningMove(int winnerTournamentId, int loserTournamentId, u8 roun
         {
             // TODO: Clean this up, looks like a different data structure (2D array)
             moveScores[i * MAX_MON_MOVES + j] = 0;
-            if (DOME_PRODUCERS[winnerTournamentId].trainerId == PRODUCER_FRONTIER_BRAIN)
+            if (DOME_TRAINERS[winnerTournamentId].trainerId == TRAINER_FRONTIER_BRAIN)
                 moveIds[i * MAX_MON_MOVES + j] = GetFrontierBrainMonMove(i, j);
             else
                 moveIds[i * MAX_MON_MOVES + j] = gFacilityTrainerMons[DOME_MONS[winnerTournamentId][i]].moves[j];
@@ -5368,18 +5368,18 @@ static void Task_ShowTourneyTree(u8 taskId)
         textPrinter.bgColor = TEXT_COLOR_TRANSPARENT;
         textPrinter.shadowColor = TEXT_DYNAMIC_COLOR_4;
         AddTextPrinter(&textPrinter, 0, NULL);
-        for (i = 0; i < DOME_TOURNAMENT_PRODUCERS_COUNT; i++)
+        for (i = 0; i < DOME_TOURNAMENT_TRAINERS_COUNT; i++)
         {
             int roundId, var2;
 
-            CopyDomeTrainerName(gDisplayedStringBattle, DOME_PRODUCERS[i].trainerId);
+            CopyDomeTrainerName(gDisplayedStringBattle, DOME_TRAINERS[i].trainerId);
             if (notInteractive == TRUE)
             {
-                if (DOME_PRODUCERS[i].isEliminated)
+                if (DOME_TRAINERS[i].isEliminated)
                 {
-                    if (DOME_PRODUCERS[i].eliminatedAt != DOME_ROUND1)
+                    if (DOME_TRAINERS[i].eliminatedAt != DOME_ROUND1)
                     {
-                        var2 = DOME_PRODUCERS[i].eliminatedAt - 1;
+                        var2 = DOME_TRAINERS[i].eliminatedAt - 1;
                         DrawTourneyAdvancementLine(i, var2);
                     }
                 }
@@ -5390,11 +5390,11 @@ static void Task_ShowTourneyTree(u8 taskId)
             }
             else if (notInteractive == FALSE)
             {
-                if (DOME_PRODUCERS[i].isEliminated)
+                if (DOME_TRAINERS[i].isEliminated)
                 {
-                    if (DOME_PRODUCERS[i].eliminatedAt != DOME_ROUND1)
+                    if (DOME_TRAINERS[i].eliminatedAt != DOME_ROUND1)
                     {
-                        var2 = DOME_PRODUCERS[i].eliminatedAt - 1;
+                        var2 = DOME_TRAINERS[i].eliminatedAt - 1;
                         DrawTourneyAdvancementLine(i, var2);
                     }
                 }
@@ -5413,11 +5413,11 @@ static void Task_ShowTourneyTree(u8 taskId)
             else
                 roundId = gSaveBlock2Ptr->frontier.curChallengeBattleNum - 1;
 
-            if (    ((notInteractive == TRUE && DOME_PRODUCERS[i].eliminatedAt < gSaveBlock2Ptr->frontier.curChallengeBattleNum - 1)
-                  || (notInteractive == FALSE && DOME_PRODUCERS[i].eliminatedAt <= roundId))
-                && DOME_PRODUCERS[i].isEliminated)
+            if (    ((notInteractive == TRUE && DOME_TRAINERS[i].eliminatedAt < gSaveBlock2Ptr->frontier.curChallengeBattleNum - 1)
+                  || (notInteractive == FALSE && DOME_TRAINERS[i].eliminatedAt <= roundId))
+                && DOME_TRAINERS[i].isEliminated)
             {
-                if (DOME_PRODUCERS[i].trainerId == PRODUCER_PLAYER)
+                if (DOME_TRAINERS[i].trainerId == TRAINER_PLAYER)
                 {
                     textPrinter.fgColor = TEXT_COLOR_LIGHT_GRAY;
                     textPrinter.shadowColor = TEXT_COLOR_RED;
@@ -5430,7 +5430,7 @@ static void Task_ShowTourneyTree(u8 taskId)
             }
             else
             {
-                if (DOME_PRODUCERS[i].trainerId == PRODUCER_PLAYER)
+                if (DOME_TRAINERS[i].trainerId == TRAINER_PLAYER)
                 {
                     textPrinter.fgColor = TEXT_COLOR_LIGHT_GRAY;
                     textPrinter.shadowColor = TEXT_COLOR_RED;
@@ -5550,11 +5550,11 @@ static void Task_HandleStaticTourneyTreeInput(u8 taskId)
             textPrinter.shadowColor = TEXT_DYNAMIC_COLOR_4;
 
             // Update the advancement lines and gray out eliminated trainer names
-            for (i = 0; i < DOME_TOURNAMENT_PRODUCERS_COUNT; i++)
+            for (i = 0; i < DOME_TOURNAMENT_TRAINERS_COUNT; i++)
             {
-                CopyDomeTrainerName(gDisplayedStringBattle, DOME_PRODUCERS[i].trainerId);
-                if (DOME_PRODUCERS[i].eliminatedAt == gSaveBlock2Ptr->frontier.curChallengeBattleNum - 1
-                    && DOME_PRODUCERS[i].isEliminated)
+                CopyDomeTrainerName(gDisplayedStringBattle, DOME_TRAINERS[i].trainerId);
+                if (DOME_TRAINERS[i].eliminatedAt == gSaveBlock2Ptr->frontier.curChallengeBattleNum - 1
+                    && DOME_TRAINERS[i].isEliminated)
                 {
                     if (sTrainerNamePositions[i][0] == 0)
                         textPrinter.currentX = GetStringWidthDifference(textPrinter.fontId, gDisplayedStringBattle, 0x3D, textPrinter.letterSpacing);
@@ -5566,7 +5566,7 @@ static void Task_HandleStaticTourneyTreeInput(u8 taskId)
                     textPrinter.currentY = sTrainerNamePositions[i][1];
                     AddTextPrinter(&textPrinter, 0, NULL);
                 }
-                if (!DOME_PRODUCERS[i].isEliminated)
+                if (!DOME_TRAINERS[i].isEliminated)
                 {
                     int roundId = gSaveBlock2Ptr->frontier.curChallengeBattleNum - 1;
                     DrawTourneyAdvancementLine(i, roundId);
@@ -5768,7 +5768,7 @@ static void ReduceDomePlayerPartyToSelectedMons(void)
 static void GetPlayerSeededBeforeOpponent(void)
 {
     // A higher tournament ID is a worse seed
-    if (TrainerIdToTournamentId(gTrainerBattleOpponent_A) > TrainerIdToTournamentId(PRODUCER_PLAYER))
+    if (TrainerIdToTournamentId(gTrainerBattleOpponent_A) > TrainerIdToTournamentId(TRAINER_PLAYER))
         gSpecialVar_Result = 1;
     else
         gSpecialVar_Result = 2;
@@ -5779,12 +5779,12 @@ static void BufferLastDomeWinnerName(void)
     int i;
 
     SetFacilityTrainerAndMonPtrs();
-    for (i = 0; i < DOME_TOURNAMENT_PRODUCERS_COUNT; i++)
+    for (i = 0; i < DOME_TOURNAMENT_TRAINERS_COUNT; i++)
     {
-        if (!DOME_PRODUCERS[i].isEliminated)
+        if (!DOME_TRAINERS[i].isEliminated)
             break;
     }
-    CopyDomeTrainerName(gStringVar1, DOME_PRODUCERS[i].trainerId);
+    CopyDomeTrainerName(gStringVar1, DOME_TRAINERS[i].trainerId);
 }
 
 // For showing the previous tourney results before the player has entered a challenge
@@ -5809,7 +5809,7 @@ static void InitRandomTourneyTreeResults(void)
     if ((gSaveBlock2Ptr->frontier.domeLvlMode != -gSaveBlock2Ptr->frontier.domeBattleMode) && gSaveBlock2Ptr->frontier.challengeStatus != CHALLENGE_STATUS_SAVING)
         return;
 
-    statSums = AllocZeroed(sizeof(u16) * DOME_TOURNAMENT_PRODUCERS_COUNT);
+    statSums = AllocZeroed(sizeof(u16) * DOME_TOURNAMENT_TRAINERS_COUNT);
     statValues = AllocZeroed(sizeof(int) * NUM_STATS);
     lvlMode = gSaveBlock2Ptr->frontier.lvlMode;
     gSaveBlock2Ptr->frontier.lvlMode = FRONTIER_LVL_50;
@@ -5819,7 +5819,7 @@ static void InitRandomTourneyTreeResults(void)
     gSaveBlock2Ptr->frontier.domeLvlMode = zero1 + 1;
     gSaveBlock2Ptr->frontier.domeBattleMode = zero2 + 1;
 
-    for (i = 0; i < DOME_TOURNAMENT_PRODUCERS_COUNT; i++)
+    for (i = 0; i < DOME_TOURNAMENT_TRAINERS_COUNT; i++)
     {
         do
         {
@@ -5832,12 +5832,12 @@ static void InitRandomTourneyTreeResults(void)
 
             for (j = 0; j < i; j++)
             {
-                if (DOME_PRODUCERS[j].trainerId == trainerId)
+                if (DOME_TRAINERS[j].trainerId == trainerId)
                     break;
             }
         } while (j != i);
 
-        DOME_PRODUCERS[i].trainerId = trainerId;
+        DOME_TRAINERS[i].trainerId = trainerId;
         for (j = 0; j < FRONTIER_PARTY_SIZE; j++)
         {
             do
@@ -5858,17 +5858,17 @@ static void InitRandomTourneyTreeResults(void)
             DOME_MONS[i][j] = monId;
             species[j] = gFacilityTrainerMons[monId].species;
         }
-        DOME_PRODUCERS[i].isEliminated = FALSE;
-        DOME_PRODUCERS[i].eliminatedAt = 0;
-        DOME_PRODUCERS[i].forfeited = FALSE;
+        DOME_TRAINERS[i].isEliminated = FALSE;
+        DOME_TRAINERS[i].eliminatedAt = 0;
+        DOME_TRAINERS[i].forfeited = FALSE;
     }
 
     monLevel = FRONTIER_MAX_LEVEL_50;
-    for (i = 0; i < DOME_TOURNAMENT_PRODUCERS_COUNT; i++)
+    for (i = 0; i < DOME_TOURNAMENT_TRAINERS_COUNT; i++)
     {
         monTypesBits = 0;
         statSums[i] = 0;
-        ivs = GetDomeTrainerMonIvs(DOME_PRODUCERS[i].trainerId);
+        ivs = GetDomeTrainerMonIvs(DOME_TRAINERS[i].trainerId);
         for (j = 0; j < FRONTIER_PARTY_SIZE; j++)
         {
             CalcDomeMonStats(gFacilityTrainerMons[DOME_MONS[i][j]].species,
@@ -5897,9 +5897,9 @@ static void InitRandomTourneyTreeResults(void)
         statSums[i] += (trainerId * monLevel) / 20;
     }
 
-    for (i = 0; i < DOME_TOURNAMENT_PRODUCERS_COUNT - 1; i++)
+    for (i = 0; i < DOME_TOURNAMENT_TRAINERS_COUNT - 1; i++)
     {
-        for (j = i + 1; j < DOME_TOURNAMENT_PRODUCERS_COUNT; j++)
+        for (j = i + 1; j < DOME_TOURNAMENT_TRAINERS_COUNT; j++)
         {
             if (statSums[i] < statSums[j])
             {
@@ -5907,7 +5907,7 @@ static void InitRandomTourneyTreeResults(void)
             }
             else if (statSums[i] == statSums[j])
             {
-                if (DOME_PRODUCERS[i].trainerId > DOME_PRODUCERS[j].trainerId)
+                if (DOME_TRAINERS[i].trainerId > DOME_TRAINERS[j].trainerId)
                     SwapDomeTrainers(i, j, statSums);
             }
         }
@@ -5926,9 +5926,9 @@ static int TrainerIdToTournamentId(u16 trainerId)
 {
     int i;
 
-    for (i = 0; i < DOME_TOURNAMENT_PRODUCERS_COUNT; i++)
+    for (i = 0; i < DOME_TOURNAMENT_TRAINERS_COUNT; i++)
     {
-        if (DOME_PRODUCERS[i].trainerId == trainerId)
+        if (DOME_TRAINERS[i].trainerId == trainerId)
             break;
     }
 
@@ -5940,9 +5940,9 @@ int TrainerIdToDomeTournamentId(u16 trainerId)
 {
     int i;
 
-    for (i = 0; i < DOME_TOURNAMENT_PRODUCERS_COUNT; i++)
+    for (i = 0; i < DOME_TOURNAMENT_TRAINERS_COUNT; i++)
     {
-        if (DOME_PRODUCERS[i].trainerId == trainerId)
+        if (DOME_TRAINERS[i].trainerId == trainerId)
             break;
     }
 
@@ -5968,25 +5968,25 @@ static void DecideRoundWinners(u8 roundId)
     int species;
     int points1 = 0, points2 = 0;
 
-    for (i = 0; i < DOME_TOURNAMENT_PRODUCERS_COUNT; i++)
+    for (i = 0; i < DOME_TOURNAMENT_TRAINERS_COUNT; i++)
     {
-        if (DOME_PRODUCERS[i].isEliminated || DOME_PRODUCERS[i].trainerId == PRODUCER_PLAYER)
+        if (DOME_TRAINERS[i].isEliminated || DOME_TRAINERS[i].trainerId == TRAINER_PLAYER)
             continue;
 
         tournamentId1 = i;
-        tournamentId2 = TournamentIdOfOpponent(roundId, DOME_PRODUCERS[tournamentId1].trainerId);
+        tournamentId2 = TournamentIdOfOpponent(roundId, DOME_TRAINERS[tournamentId1].trainerId);
         // Frontier Brain always wins, check tournamentId1.
-        if (DOME_PRODUCERS[tournamentId1].trainerId == PRODUCER_FRONTIER_BRAIN && tournamentId2 != 0xFF)
+        if (DOME_TRAINERS[tournamentId1].trainerId == TRAINER_FRONTIER_BRAIN && tournamentId2 != 0xFF)
         {
-            DOME_PRODUCERS[tournamentId2].isEliminated = TRUE;
-            DOME_PRODUCERS[tournamentId2].eliminatedAt = roundId;
+            DOME_TRAINERS[tournamentId2].isEliminated = TRUE;
+            DOME_TRAINERS[tournamentId2].eliminatedAt = roundId;
             gSaveBlock2Ptr->frontier.domeWinningMoves[tournamentId2] = GetWinningMove(tournamentId1, tournamentId2, roundId);
         }
         // Frontier Brain always wins, check tournamentId2.
-        else if (DOME_PRODUCERS[tournamentId2].trainerId == PRODUCER_FRONTIER_BRAIN && tournamentId1 != 0xFF)
+        else if (DOME_TRAINERS[tournamentId2].trainerId == TRAINER_FRONTIER_BRAIN && tournamentId1 != 0xFF)
         {
-            DOME_PRODUCERS[tournamentId1].isEliminated = TRUE;
-            DOME_PRODUCERS[tournamentId1].eliminatedAt = roundId;
+            DOME_TRAINERS[tournamentId1].isEliminated = TRUE;
+            DOME_TRAINERS[tournamentId1].eliminatedAt = roundId;
             gSaveBlock2Ptr->frontier.domeWinningMoves[tournamentId1] = GetWinningMove(tournamentId2, tournamentId1, roundId);
         }
         // Decide which one of two trainers wins!
@@ -6047,27 +6047,27 @@ static void DecideRoundWinners(u8 roundId)
 
             if (points1 > points2)
             {
-                DOME_PRODUCERS[tournamentId2].isEliminated = TRUE;
-                DOME_PRODUCERS[tournamentId2].eliminatedAt = roundId;
+                DOME_TRAINERS[tournamentId2].isEliminated = TRUE;
+                DOME_TRAINERS[tournamentId2].eliminatedAt = roundId;
                 gSaveBlock2Ptr->frontier.domeWinningMoves[tournamentId2] = GetWinningMove(tournamentId1, tournamentId2, roundId);
             }
             else if (points1 < points2)
             {
-                DOME_PRODUCERS[tournamentId1].isEliminated = TRUE;
-                DOME_PRODUCERS[tournamentId1].eliminatedAt = roundId;
+                DOME_TRAINERS[tournamentId1].isEliminated = TRUE;
+                DOME_TRAINERS[tournamentId1].eliminatedAt = roundId;
                 gSaveBlock2Ptr->frontier.domeWinningMoves[tournamentId1] = GetWinningMove(tournamentId2, tournamentId1, roundId);
             }
             // Points are the same, so we favor the one with the higher id.
             else if (tournamentId1 > tournamentId2)
             {
-                DOME_PRODUCERS[tournamentId2].isEliminated = TRUE;
-                DOME_PRODUCERS[tournamentId2].eliminatedAt = roundId;
+                DOME_TRAINERS[tournamentId2].isEliminated = TRUE;
+                DOME_TRAINERS[tournamentId2].eliminatedAt = roundId;
                 gSaveBlock2Ptr->frontier.domeWinningMoves[tournamentId2] = GetWinningMove(tournamentId1, tournamentId2, roundId);
             }
             else
             {
-                DOME_PRODUCERS[tournamentId1].isEliminated = TRUE;
-                DOME_PRODUCERS[tournamentId1].eliminatedAt = roundId;
+                DOME_TRAINERS[tournamentId1].isEliminated = TRUE;
+                DOME_TRAINERS[tournamentId1].eliminatedAt = roundId;
                 gSaveBlock2Ptr->frontier.domeWinningMoves[tournamentId1] = GetWinningMove(tournamentId2, tournamentId1, roundId);
             }
         }
@@ -6079,18 +6079,18 @@ static void CopyDomeTrainerName(u8 *str, u16 trainerId)
     int i = 0;
     SetFacilityPtrsGetLevel();
 
-    if (trainerId == PRODUCER_FRONTIER_BRAIN)
+    if (trainerId == TRAINER_FRONTIER_BRAIN)
     {
         CopyDomeBrainTrainerName(str);
     }
     else
     {
-        if (trainerId == PRODUCER_PLAYER)
+        if (trainerId == TRAINER_PLAYER)
         {
             for (i = 0; i < PLAYER_NAME_LENGTH; i++)
                 str[i] = gSaveBlock2Ptr->playerName[i];
         }
-        else if (trainerId < FRONTIER_PRODUCERS_COUNT)
+        else if (trainerId < FRONTIER_TRAINERS_COUNT)
         {
             for (i = 0; i < PLAYER_NAME_LENGTH; i++)
                 str[i] = gFacilityTrainers[trainerId].trainerName[i];
@@ -6101,12 +6101,12 @@ static void CopyDomeTrainerName(u8 *str, u16 trainerId)
 
 static u8 GetDomeBrainTrainerPicId(void)
 {
-    return gTrainers[PRODUCER_TUCKER].trainerPic;
+    return gTrainers[TRAINER_TUCKER].trainerPic;
 }
 
 static u8 GetDomeBrainTrainerClass(void)
 {
-    return gTrainers[PRODUCER_TUCKER].trainerClass;
+    return gTrainers[TRAINER_TUCKER].trainerClass;
 }
 
 static void CopyDomeBrainTrainerName(u8 *str)
@@ -6114,6 +6114,6 @@ static void CopyDomeBrainTrainerName(u8 *str)
     int i;
 
     for (i = 0; i < PLAYER_NAME_LENGTH; i++)
-        str[i] = gTrainers[PRODUCER_TUCKER].trainerName[i];
+        str[i] = gTrainers[TRAINER_TUCKER].trainerName[i];
     str[i] = EOS;
 }

@@ -31,8 +31,8 @@
 #define TVSHOW_PKMN_FAN_CLUB_OPINIONS               3
 #define TVSHOW_DUMMY                                4
 #define TVSHOW_NAME_RATER_SHOW                      5
-#define TVSHOW_BRAVO_PRODUCER_POKEMON_PROFILE        6
-#define TVSHOW_BRAVO_PRODUCER_BATTLE_TOWER_PROFILE   7
+#define TVSHOW_BRAVO_TRAINER_POKEMON_PROFILE        6
+#define TVSHOW_BRAVO_TRAINER_BATTLE_TOWER_PROFILE   7
 #define TVSHOW_CONTEST_LIVE_UPDATES                 8
 #define TVSHOW_3_CHEERS_FOR_POKEBLOCKS              9
 #define TVSHOW_BATTLE_UPDATE                        10
@@ -48,7 +48,7 @@
 #define TVSHOW_POKEMON_TODAY_FAILED                 23
 #define TVSHOW_FISHING_ADVICE                       24
 #define TVSHOW_WORLD_OF_MASTERS                     25
-#define TVSHOW_TODAYS_RIVAL_PRODUCER                 26
+#define TVSHOW_TODAYS_RIVAL_TRAINER                 26
 #define TVSHOW_TREND_WATCHER                        27
 #define TVSHOW_TREASURE_INVESTIGATORS               28
 #define TVSHOW_FIND_THAT_GAMER                      29
@@ -56,7 +56,7 @@
 #define TVSHOW_SECRET_BASE_VISIT                    31
 #define TVSHOW_LOTTO_WINNER                         32
 #define TVSHOW_BATTLE_SEMINAR                       33
-#define TVSHOW_PRODUCER_FAN_CLUB                     34
+#define TVSHOW_TRAINER_FAN_CLUB                     34
 #define TVSHOW_CUTIES                               35
 #define TVSHOW_FRONTIER                             36
 #define TVSHOW_NUMBER_ONE                           37

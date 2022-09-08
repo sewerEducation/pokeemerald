@@ -1,9 +1,9 @@
 {
-  "id": "MAP_PRODUCER_HILL_1F",
+  "id": "MAP_TRAINER_HILL_1F",
   "name": "TrainerHill_1F",
-  "layout": "LAYOUT_PRODUCER_HILL_1F",
+  "layout": "LAYOUT_TRAINER_HILL_1F",
   "music": "MUS_B_TOWER_RS",
-  "region_map_section": "MAPSEC_PRODUCER_HILL",
+  "region_map_section": "MAPSEC_TRAINER_HILL",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",
@@ -19,14 +19,14 @@
       "x": 2,
       "y": 1,
       "elevation": 3,
-      "dest_map": "MAP_PRODUCER_HILL_ENTRANCE",
+      "dest_map": "MAP_TRAINER_HILL_ENTRANCE",
       "dest_warp_id": 2
     },
     {
       "x": 12,
       "y": 1,
       "elevation": 3,
-      "dest_map": "MAP_PRODUCER_HILL_2F",
+      "dest_map": "MAP_TRAINER_HILL_2F",
       "dest_warp_id": 0
     }
   ],

@@ -367,7 +367,7 @@ const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_GREEN_PATH]                 = { 0,  0, 1, 1, sMapName_GreenPath},
     [MAPSEC_WATER_PATH]                 = { 0,  0, 1, 1, sMapName_WaterPath},
     [MAPSEC_RUIN_VALLEY]                = { 0,  0, 1, 1, sMapName_RuinValley},
-    [MAPSEC_PRODUCER_TOWER]              = { 0,  0, 1, 1, sMapName_TrainerTower},
+    [MAPSEC_TRAINER_TOWER]              = { 0,  0, 1, 1, sMapName_TrainerTower},
     [MAPSEC_CANYON_ENTRANCE]            = { 0,  0, 1, 1, sMapName_CanyonEntrance},
     [MAPSEC_SEVAULT_CANYON]             = { 0,  0, 1, 1, sMapName_SevaultCanyon},
     [MAPSEC_TANOBY_RUINS]               = { 0,  0, 1, 1, sMapName_TanobyRuins},
@@ -379,7 +379,7 @@ const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_BERRY_FOREST]               = { 0,  0, 1, 1, sMapName_BerryForest},
     [MAPSEC_ICEFALL_CAVE]               = { 0,  0, 1, 1, sMapName_IcefallCave},
     [MAPSEC_ROCKET_WAREHOUSE]           = { 0,  0, 1, 1, sMapName_RocketWarehouse},
-    [MAPSEC_PRODUCER_TOWER_2]            = { 0,  0, 1, 1, sMapName_TrainerTower2},
+    [MAPSEC_TRAINER_TOWER_2]            = { 0,  0, 1, 1, sMapName_TrainerTower2},
     [MAPSEC_DOTTED_HOLE]                = { 0,  0, 1, 1, sMapName_DottedHole},
     [MAPSEC_LOST_CAVE]                  = { 0,  0, 1, 1, sMapName_LostCave},
     [MAPSEC_PATTERN_BUSH]               = { 0,  0, 1, 1, sMapName_PatternBush},
@@ -412,7 +412,7 @@ const struct RegionMapLocation gRegionMapEntries[] = {
     [MAPSEC_DESERT_UNDERPASS]           = { 2,  0, 1, 1, sMapName_DesertUnderpass},
     [MAPSEC_ALTERING_CAVE]              = { 6,  8, 1, 1, sMapName_AlteringCave},
     [MAPSEC_NAVEL_ROCK]                 = { 0,  0, 1, 1, sMapName_NavelRock},
-    [MAPSEC_PRODUCER_HILL]               = { 8,  4, 1, 1, sMapName_TrainerHill}
+    [MAPSEC_TRAINER_HILL]               = { 8,  4, 1, 1, sMapName_TrainerHill}
 };
 
 #endif //GUARD_DATA_REGION_MAP_REGION_MAP_ENTRIES_H

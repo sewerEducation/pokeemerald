@@ -173,7 +173,7 @@
 #define MOVEMENT_ACTION_EMOTE_EXCLAMATION_MARK          0x56
 #define MOVEMENT_ACTION_EMOTE_QUESTION_MARK             0x57
 #define MOVEMENT_ACTION_EMOTE_HEART                     0x58
-#define MOVEMENT_ACTION_REVEAL_PRODUCER                  0x59
+#define MOVEMENT_ACTION_REVEAL_TRAINER                  0x59
 #define MOVEMENT_ACTION_ROCK_SMASH_BREAK                0x5A
 #define MOVEMENT_ACTION_CUT_TREE                        0x5B
 #define MOVEMENT_ACTION_SET_FIXED_PRIORITY              0x5C

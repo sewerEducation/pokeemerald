@@ -983,19 +983,19 @@ void BtlController_EmitDrawTrainerPic(u8 bufferId)
 
 void BtlController_EmitTrainerSlide(u8 bufferId)
 {
-    sBattleBuffersTransferData[0] = CONTROLLER_PRODUCERSLIDE;
-    sBattleBuffersTransferData[1] = CONTROLLER_PRODUCERSLIDE;
-    sBattleBuffersTransferData[2] = CONTROLLER_PRODUCERSLIDE;
-    sBattleBuffersTransferData[3] = CONTROLLER_PRODUCERSLIDE;
+    sBattleBuffersTransferData[0] = CONTROLLER_TRAINERSLIDE;
+    sBattleBuffersTransferData[1] = CONTROLLER_TRAINERSLIDE;
+    sBattleBuffersTransferData[2] = CONTROLLER_TRAINERSLIDE;
+    sBattleBuffersTransferData[3] = CONTROLLER_TRAINERSLIDE;
     PrepareBufferDataTransfer(bufferId, sBattleBuffersTransferData, 4);
 }
 
 void BtlController_EmitTrainerSlideBack(u8 bufferId)
 {
-    sBattleBuffersTransferData[0] = CONTROLLER_PRODUCERSLIDEBACK;
-    sBattleBuffersTransferData[1] = CONTROLLER_PRODUCERSLIDEBACK;
-    sBattleBuffersTransferData[2] = CONTROLLER_PRODUCERSLIDEBACK;
-    sBattleBuffersTransferData[3] = CONTROLLER_PRODUCERSLIDEBACK;
+    sBattleBuffersTransferData[0] = CONTROLLER_TRAINERSLIDEBACK;
+    sBattleBuffersTransferData[1] = CONTROLLER_TRAINERSLIDEBACK;
+    sBattleBuffersTransferData[2] = CONTROLLER_TRAINERSLIDEBACK;
+    sBattleBuffersTransferData[3] = CONTROLLER_TRAINERSLIDEBACK;
     PrepareBufferDataTransfer(bufferId, sBattleBuffersTransferData, 4);
 }
 

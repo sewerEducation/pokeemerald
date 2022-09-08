@@ -231,7 +231,7 @@ static u32 HandleMainMenuInput(struct Pokenav_Menu *menu)
             menu->callback = HandleConditionMenuInput;
             return POKENAV_MENU_FUNC_OPEN_CONDITION;
         case POKENAV_MENUITEM_MATCH_CALL:
-            menu->helpBarIndex = HELPBAR_MC_PRODUCER_LIST;
+            menu->helpBarIndex = HELPBAR_MC_TRAINER_LIST;
             SetMenuIdAndCB(menu, POKENAV_MATCH_CALL);
             return POKENAV_MENU_FUNC_OPEN_FEATURE;
         case POKENAV_MENUITEM_RIBBONS:
@@ -267,7 +267,7 @@ static u32 HandleMainMenuInputTutorial(struct Pokenav_Menu *menu)
     {
         if (sMenuItems[menu->menuType][menu->cursorPos] == POKENAV_MENUITEM_MATCH_CALL)
         {
-            menu->helpBarIndex = HELPBAR_MC_PRODUCER_LIST;
+            menu->helpBarIndex = HELPBAR_MC_TRAINER_LIST;
             SetMenuIdAndCB(menu, POKENAV_MATCH_CALL);
             return POKENAV_MENU_FUNC_OPEN_FEATURE;
         }
@@ -303,7 +303,7 @@ static u32 HandleMainMenuInputEndTutorial(struct Pokenav_Menu *menu)
         }
         else if (menuItem == POKENAV_MENUITEM_MATCH_CALL)
         {
-            menu->helpBarIndex = HELPBAR_MC_PRODUCER_LIST;
+            menu->helpBarIndex = HELPBAR_MC_TRAINER_LIST;
             SetMenuIdAndCB(menu, POKENAV_MATCH_CALL);
             return POKENAV_MENU_FUNC_OPEN_FEATURE;
         }

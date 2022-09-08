@@ -16,7 +16,7 @@ void AllocateBattleResources(void)
 {
     gBattleResources = gBattleResources; // something dumb needed to match
 
-    if (gBattleTypeFlags & BATTLE_TYPE_PRODUCER_HILL)
+    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER_HILL)
         InitTrainerHillBattleStruct();
 
     gBattleStruct = AllocZeroed(sizeof(*gBattleStruct));
@@ -46,7 +46,7 @@ void AllocateBattleResources(void)
 
 void FreeBattleResources(void)
 {
-    if (gBattleTypeFlags & BATTLE_TYPE_PRODUCER_HILL)
+    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER_HILL)
         FreeTrainerHillBattleStruct();
 
     if (gBattleResources != NULL)

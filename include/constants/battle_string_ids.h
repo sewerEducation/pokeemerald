@@ -9,7 +9,7 @@
 #define STRINGID_BATTLEEND      5
 
 // todo: make some of those names less vague: attacker/target vs pkmn, etc.
-#define STRINGID_PRODUCER1LOSETEXT           12
+#define STRINGID_TRAINER1LOSETEXT           12
 #define STRINGID_PKMNGAINEDEXP              13
 #define STRINGID_PKMNGREWTOLV               14
 #define STRINGID_PKMNLEARNEDMOVE            15
@@ -256,7 +256,7 @@
 #define STRINGID_BUTNOPPLEFT                256
 #define STRINGID_PLAYERUSEDITEM             257
 #define STRINGID_WALLYUSEDITEM              258
-#define STRINGID_PRODUCERBLOCKEDBALL         259
+#define STRINGID_TRAINERBLOCKEDBALL         259
 #define STRINGID_DONTBEATHIEF               260
 #define STRINGID_ITDODGEDBALL               261
 #define STRINGID_YOUMISSEDPKMN              262
@@ -340,7 +340,7 @@
 #define STRINGID_PKMNWASDRAGGEDOUT          340
 #define STRINGID_PREVENTEDFROMWORKING       341
 #define STRINGID_PKMNSITEMNORMALIZEDSTATUS  342
-#define STRINGID_PRODUCER1USEDITEM           343
+#define STRINGID_TRAINER1USEDITEM           343
 #define STRINGID_BOXISFULL                  344
 #define STRINGID_PKMNAVOIDEDATTACK          345
 #define STRINGID_PKMNSXMADEITINEFFECTIVE    346
@@ -361,7 +361,7 @@
 #define STRINGID_BUTNOEFFECT                361
 #define STRINGID_PKMNSXHADNOEFFECTONY       362
 #define STRINGID_TWOENEMIESDEFEATED         363
-#define STRINGID_PRODUCER2LOSETEXT           364
+#define STRINGID_TRAINER2LOSETEXT           364
 #define STRINGID_PKMNINCAPABLEOFPOWER       365
 #define STRINGID_GLINTAPPEARSINEYE          366
 #define STRINGID_PKMNGETTINGINTOPOSITION    367
@@ -376,15 +376,15 @@
 #define STRINGID_PKMNTRANSFERREDLANETTESPC  376
 #define STRINGID_PKMNBOXSOMEONESPCFULL      377
 #define STRINGID_PKMNBOXLANETTESPCFULL      378
-#define STRINGID_PRODUCER1WINTEXT            379
-#define STRINGID_PRODUCER2WINTEXT            380
+#define STRINGID_TRAINER1WINTEXT            379
+#define STRINGID_TRAINER2WINTEXT            380
 
 #define BATTLESTRINGS_COUNT                 381
 
 // This is the string id that gBattleStringsTable starts with.
 // String ids before this (e.g. STRINGID_INTROMSG) are not in the table,
 // and are instead handled explicitly by BufferStringBattle.
-#define BATTLESTRINGS_TABLE_START  STRINGID_PRODUCER1LOSETEXT
+#define BATTLESTRINGS_TABLE_START  STRINGID_TRAINER1LOSETEXT
 
 // The below IDs are all indexes into battle message tables,
 // used to determine which of a set of messages to print.

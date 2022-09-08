@@ -90,7 +90,7 @@ typedef union // size = 0x24
         /*0x1F*/ u8 pokemonNameLanguage;
     } nameRaterShow;
 
-    // TVSHOW_BRAVO_PRODUCER_POKEMON_PROFILE (contest)
+    // TVSHOW_BRAVO_TRAINER_POKEMON_PROFILE (contest)
     struct {
         /*0x00*/ u8 kind;
         /*0x01*/ bool8 active;
@@ -106,7 +106,7 @@ typedef union // size = 0x24
         /*0x1F*/ u8 pokemonNameLanguage;
     } bravoTrainer;
 
-    // TVSHOW_BRAVO_PRODUCER_BATTLE_TOWER_PROFILE
+    // TVSHOW_BRAVO_TRAINER_BATTLE_TOWER_PROFILE
     struct {
         /*0x00*/ u8 kind;
         /*0x01*/ bool8 active;
@@ -261,7 +261,7 @@ typedef union // size = 0x24
         /*0x13*/ u8 playerName[PLAYER_NAME_LENGTH + 1];
     } worldOfMasters;
 
-    // TVSHOW_TODAYS_RIVAL_PRODUCER
+    // TVSHOW_TODAYS_RIVAL_TRAINER
     struct {
         /*0x00*/ u8 kind;
         /*0x01*/ bool8 active;
@@ -370,7 +370,7 @@ typedef union // size = 0x24
         /*0x13*/ u8 playerName[PLAYER_NAME_LENGTH + 1];
     } battleSeminar;
 
-    // TVSHOW_PRODUCER_FAN_CLUB
+    // TVSHOW_TRAINER_FAN_CLUB
     struct {
         /*0x00*/ u8 kind;
         /*0x01*/ bool8 active;

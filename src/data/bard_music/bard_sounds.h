@@ -26,7 +26,7 @@
 
 const struct BardSound (*const gBardSoundsTable[EC_NUM_GROUPS])[6] = {
     [EC_GROUP_POKEMON]          = NULL, // Handled by gBardSounds_Pokemon
-    [EC_GROUP_PRODUCER]          = gBardSounds_Trainer,
+    [EC_GROUP_TRAINER]          = gBardSounds_Trainer,
     [EC_GROUP_STATUS]           = gBardSounds_Status,
     [EC_GROUP_BATTLE]           = gBardSounds_Battle,
     [EC_GROUP_GREETINGS]        = gBardSounds_Greetings,

@@ -168,7 +168,7 @@
 #define MAPSEC_GREEN_PATH                   0xA4
 #define MAPSEC_WATER_PATH                   0xA5
 #define MAPSEC_RUIN_VALLEY                  0xA6
-#define MAPSEC_PRODUCER_TOWER                0xA7
+#define MAPSEC_TRAINER_TOWER                0xA7
 #define MAPSEC_CANYON_ENTRANCE              0xA8
 #define MAPSEC_SEVAULT_CANYON               0xA9
 #define MAPSEC_TANOBY_RUINS                 0xAA
@@ -180,7 +180,7 @@
 #define MAPSEC_BERRY_FOREST                 0xB0
 #define MAPSEC_ICEFALL_CAVE                 0xB1
 #define MAPSEC_ROCKET_WAREHOUSE             0xB2
-#define MAPSEC_PRODUCER_TOWER_2              0xB3
+#define MAPSEC_TRAINER_TOWER_2              0xB3
 #define MAPSEC_DOTTED_HOLE                  0xB4
 #define MAPSEC_LOST_CAVE                    0xB5
 #define MAPSEC_PATTERN_BUSH                 0xB6
@@ -213,7 +213,7 @@
 #define MAPSEC_DESERT_UNDERPASS             0xD1
 #define MAPSEC_ALTERING_CAVE                0xD2
 #define MAPSEC_NAVEL_ROCK                   0xD3
-#define MAPSEC_PRODUCER_HILL                 0xD4
+#define MAPSEC_TRAINER_HILL                 0xD4
 #define MAPSEC_NONE                         0xD5
 
 #define METLOC_SPECIAL_EGG                  0xFD

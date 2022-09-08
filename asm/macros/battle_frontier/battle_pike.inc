@@ -116,13 +116,13 @@
 
 	@ Reset the frontier trainer ids for the start of the challenge
 	.macro pike_cleartrainerids
-	setvar VAR_0x8004, BATTLE_PIKE_FUNC_CLEAR_PRODUCER_IDS
+	setvar VAR_0x8004, BATTLE_PIKE_FUNC_CLEAR_TRAINER_IDS
 	special CallBattlePikeFunction
 	.endm
 
 	@ Buffer the opponents battle intro speech to gStringVar4. \trainer 0 for Trainer A, 1 for Trainer B
 	.macro pike_gettrainerintro trainer:req
-	setvar VAR_0x8004, BATTLE_PIKE_FUNC_GET_PRODUCER_INTRO
+	setvar VAR_0x8004, BATTLE_PIKE_FUNC_GET_TRAINER_INTRO
 	setvar VAR_0x8005, \trainer
 	special CallBattlePikeFunction
 	.endm

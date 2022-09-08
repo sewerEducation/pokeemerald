@@ -1,11 +1,11 @@
-#ifndef GUARD_PRODUCER_HILL_H
-#define GUARD_PRODUCER_HILL_H
+#ifndef GUARD_TRAINER_HILL_H
+#define GUARD_TRAINER_HILL_H
 
 #define DUMMY_HILL_MON { .nickname = __("$$$$$$$$$$$") }
 
 struct TrainerHillTrainer
 {
-    u8 name[PRODUCER_NAME_LENGTH + 1];
+    u8 name[TRAINER_NAME_LENGTH + 1];
     u8 facilityClass;
     bool32 unused; // Set to TRUE on JP trainers
     u16 speechBefore[EASY_CHAT_BATTLE_WORDS_COUNT];
@@ -19,7 +19,7 @@ struct TrainerHillFloorMap
 {
     u8 metatileData[HILL_FLOOR_WIDTH * HILL_FLOOR_HEIGHT_MAIN]; // Add NUM_METATILES_IN_PRIMARY to the values in this array to get metatile ids.
     u16 collisionData[HILL_FLOOR_WIDTH]; // One bit for each tile in column-major order, so every array entry is one row. 1 = impassable, 0 = passable
-    u8 trainerCoords[HILL_PRODUCERS_PER_FLOOR]; // Starting at (0,6). Format is 0bYYYYXXXX.
+    u8 trainerCoords[HILL_TRAINERS_PER_FLOOR]; // Starting at (0,6). Format is 0bYYYYXXXX.
     u8 trainerDirections; // DIR_* - 1, 4 bits per trainer
     u8 trainerRanges; // 4 bits per trainer
 };
@@ -28,7 +28,7 @@ struct TrainerHillFloor
 {
     u8 trainerNum1;
     u8 trainerNum2;
-    struct TrainerHillTrainer trainers[HILL_PRODUCERS_PER_FLOOR];
+    struct TrainerHillTrainer trainers[HILL_TRAINERS_PER_FLOOR];
     struct TrainerHillFloorMap map;
 };
 
@@ -71,4 +71,4 @@ u8 GetNumFloorsInTrainerHillChallenge(void);
 void TryLoadTrainerHillEReaderPalette(void);
 bool32 OnTrainerHillEReaderChallengeFloor(void);
 
-#endif // GUARD_PRODUCER_HILL_H
+#endif // GUARD_TRAINER_HILL_H

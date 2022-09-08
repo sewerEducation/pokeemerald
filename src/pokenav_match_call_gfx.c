@@ -25,9 +25,9 @@
 #include "constants/songs.h"
 
 #define GFXTAG_CURSOR 7
-#define GFXTAG_PRODUCER_PIC 8
+#define GFXTAG_TRAINER_PIC 8
 #define PALTAG_CURSOR 12
-#define PALTAG_PRODUCER_PIC 13
+#define PALTAG_TRAINER_PIC 13
 
 struct Pokenav_MatchCallGfx
 {
@@ -269,8 +269,8 @@ static const struct OamData sTrainerPicOamData =
 
 static const struct SpriteTemplate sTrainerPicSpriteTemplate =
 {
-    .tileTag = GFXTAG_PRODUCER_PIC,
-    .paletteTag = PALTAG_PRODUCER_PIC,
+    .tileTag = GFXTAG_TRAINER_PIC,
+    .paletteTag = PALTAG_TRAINER_PIC,
     .oam = &sTrainerPicOamData,
     .anims = gDummySpriteAnimTable,
     .images = NULL,
@@ -580,7 +580,7 @@ static u32 CancelMatchCallSelection(s32 state)
     case 0:
         PlaySE(SE_SELECT);
         UpdateWindowsReturnToTrainerList(gfx);
-        PrintHelpBarText(HELPBAR_MC_PRODUCER_LIST);
+        PrintHelpBarText(HELPBAR_MC_TRAINER_LIST);
         return LT_INC_AND_PAUSE;
     case 1:
         if (IsDma3ManagerBusyWithBgCopy1(gfx))
@@ -676,7 +676,7 @@ static u32 CloseMatchCallMessage(s32 state)
         if (IsDma3ManagerBusyWithBgCopy1(gfx))
             result = LT_PAUSE;
 
-        PrintHelpBarText(HELPBAR_MC_PRODUCER_LIST);
+        PrintHelpBarText(HELPBAR_MC_TRAINER_LIST);
         break;
     case 5:
         if (WaitForHelpBar())
@@ -797,7 +797,7 @@ static u32 ExitCheckPage(s32 state)
         if (PokenavList_IsTaskActive() || WaitForTrainerPic(gfx))
             return LT_PAUSE;
 
-        PrintHelpBarText(HELPBAR_MC_PRODUCER_LIST);
+        PrintHelpBarText(HELPBAR_MC_TRAINER_LIST);
         UpdateMatchCallInfoBox(gfx);
         return LT_INC_AND_PAUSE;
     case 2:
@@ -996,7 +996,7 @@ static void PrintNumberOfBattlesLabel(u16 windowId)
 static void PrintNumberOfBattles(u16 windowId)
 {
     u8 str[5];
-    int numTrainerBattles = GetGameStat(GAME_STAT_PRODUCER_BATTLES);
+    int numTrainerBattles = GetGameStat(GAME_STAT_TRAINER_BATTLES);
     if (numTrainerBattles > 99999)
         numTrainerBattles = 99999;
 
@@ -1183,9 +1183,9 @@ static void AllocMatchCallSprites(void)
     // Load trainer pic gfx
     spriteSheet.data = gfx->trainerPicGfx;
     spriteSheet.size = sizeof(gfx->trainerPicGfx);
-    spriteSheet.tag = GFXTAG_PRODUCER_PIC;
+    spriteSheet.tag = GFXTAG_TRAINER_PIC;
     gfx->trainerPicGfxPtr = (u8 *)OBJ_VRAM0 + LoadSpriteSheet(&spriteSheet) * 0x20;
-    paletteNum = AllocSpritePalette(PALTAG_PRODUCER_PIC);
+    paletteNum = AllocSpritePalette(PALTAG_TRAINER_PIC);
     gfx->trainerPicPalOffset = 0x100 + paletteNum * 0x10;
     gfx->trainerPicSprite = CreateTrainerPicSprite();
     gfx->trainerPicSprite->invisible = TRUE;
@@ -1199,10 +1199,10 @@ static void FreeMatchCallSprites(void)
     if (gfx->trainerPicSprite)
         DestroySprite(gfx->trainerPicSprite);
 
-    FreeSpriteTilesByTag(GFXTAG_PRODUCER_PIC);
+    FreeSpriteTilesByTag(GFXTAG_TRAINER_PIC);
     FreeSpriteTilesByTag(GFXTAG_CURSOR);
     FreeSpritePaletteByTag(PALTAG_CURSOR);
-    FreeSpritePaletteByTag(PALTAG_PRODUCER_PIC);
+    FreeSpritePaletteByTag(PALTAG_TRAINER_PIC);
 }
 
 static void CreateOptionsCursorSprite(struct Pokenav_MatchCallGfx *gfx, int top)

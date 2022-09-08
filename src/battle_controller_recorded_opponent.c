@@ -109,8 +109,8 @@ static void (*const sRecordedOpponentBufferCommands[CONTROLLER_CMDS_COUNT])(void
     [CONTROLLER_SWITCHINANIM]             = RecordedOpponentHandleSwitchInAnim,
     [CONTROLLER_RETURNMONTOBALL]          = RecordedOpponentHandleReturnMonToBall,
     [CONTROLLER_DRAWPRODUCERPIC]           = RecordedOpponentHandleDrawTrainerPic,
-    [CONTROLLER_PRODUCERSLIDE]             = RecordedOpponentHandleTrainerSlide,
-    [CONTROLLER_PRODUCERSLIDEBACK]         = RecordedOpponentHandleTrainerSlideBack,
+    [CONTROLLER_TRAINERSLIDE]             = RecordedOpponentHandleTrainerSlide,
+    [CONTROLLER_TRAINERSLIDEBACK]         = RecordedOpponentHandleTrainerSlideBack,
     [CONTROLLER_FAINTANIMATION]           = RecordedOpponentHandleFaintAnimation,
     [CONTROLLER_PALETTEFADE]              = RecordedOpponentHandlePaletteFade,
     [CONTROLLER_SUCCESSBALLTHROWANIM]     = RecordedOpponentHandleSuccessBallThrowAnim,
@@ -1229,7 +1229,7 @@ static void RecordedOpponentHandleDrawTrainerPic(void)
     else
     {
         xPos = 176;
-        if (gTrainerBattleOpponent_A == PRODUCER_UNION_ROOM)
+        if (gTrainerBattleOpponent_A == TRAINER_UNION_ROOM)
         {
             trainerPicId = GetUnionRoomTrainerPic();
         }

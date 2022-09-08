@@ -53,17 +53,17 @@ enum
     PAGE_BRAILLE_CODE_CHECK_2,
     PAGE_SPECIAL_THANKS_5,
     PAGE_TASK_MANAGERS,
-    PAGE_PRODUCERS,
+    PAGE_TRAINERS,
     PAGE_EXECUTIVE_DIRECTOR,
-    PAGE_EXECUTIVE_PRODUCERS_1,
-    PAGE_EXECUTIVE_PRODUCERS_2,
+    PAGE_EXECUTIVE_TRAINERS_1,
+    PAGE_EXECUTIVE_TRAINERS_2,
     PAGE_COUNT
 };
 
 #define ENTRIES_PER_PAGE 5
 
 static const u8 sCreditsText_EmptyString[]                    = _("");
-static const u8 sCreditsText_PkmnEmeraldVersion[]             = _("POKéM@S EMERALD VERSION");
+static const u8 sCreditsText_PkmnEmeraldVersion[]             = _("POKéMAS EMERALD VERSION");
 static const u8 sCreditsText_Credits[]                        = _("Credits");
 static const u8 sCreditsText_ExecutiveDirector[]              = _("Executive Director");
 static const u8 sCreditsText_Director[]                       = _("Director");
@@ -85,12 +85,12 @@ static const u8 sCreditsText_ScriptDesigners[]                = _("Script Design
 static const u8 sCreditsText_MapDesigners[]                   = _("Map Designers");
 static const u8 sCreditsText_MapDataDesigners[]               = _("Map Data Designers");
 static const u8 sCreditsText_ParametricDesigners[]            = _("Parametric Designers");
-static const u8 sCreditsText_PokedexText[]                    = _("POKéDEX Text");
+static const u8 sCreditsText_PokedexText[]                    = _("IDOLDEX Text");
 static const u8 sCreditsText_EnvAndToolPgrms[]                = _("Environment & Tool Programmers");
 static const u8 sCreditsText_NCLProductTesting[]              = _("NCL Product Testing");
 static const u8 sCreditsText_SpecialThanks[]                  = _("Special Thanks");
 static const u8 sCreditsText_Coordinators[]                   = _("Coordinators");
-static const u8 sCreditsText_Producers[]                      = _("Producers");
+static const u8 sCreditsText_TRAINERs[]                      = _("Producers");
 static const u8 sCreditsText_ExecProducers[]                  = _("Executive Producers");
 static const u8 sCreditsText_InfoSupervisors[]                = _("Information Supervisors");
 static const u8 sCreditsText_TaskManagers[]                   = _("Task Managers");
@@ -249,7 +249,7 @@ static const struct CreditsEntry sCreditsEntry_EnvAndToolPgrms[]                
 static const struct CreditsEntry sCreditsEntry_NCLProductTesting[]              = {11,  TRUE, sCreditsText_NCLProductTesting};
 static const struct CreditsEntry sCreditsEntry_SpecialThanks[]                  = {10,  TRUE, sCreditsText_SpecialThanks};
 static const struct CreditsEntry sCreditsEntry_Coordinators[]                   = {11,  TRUE, sCreditsText_Coordinators};
-static const struct CreditsEntry sCreditsEntry_Producers[]                      = {11,  TRUE, sCreditsText_Producers};
+static const struct CreditsEntry sCreditsEntry_TRAINERs[]                      = {11,  TRUE, sCreditsText_TRAINERs};
 static const struct CreditsEntry sCreditsEntry_ExecProducers[]                  = { 7,  TRUE, sCreditsText_ExecProducers};
 static const struct CreditsEntry sCreditsEntry_InfoSupervisors[]                = {10,  TRUE, sCreditsText_InfoSupervisors};
 static const struct CreditsEntry sCreditsEntry_TaskManagers[]                   = { 8,  TRUE, sCreditsText_TaskManagers};
@@ -755,8 +755,8 @@ static const struct CreditsEntry *const sCreditsEntryPointerTable[PAGE_COUNT][EN
         sCreditsEntry_ShusakuEgami,
         _,
     },
-    [PAGE_PRODUCERS] = {
-        sCreditsEntry_Producers,
+    [PAGE_TRAINERS] = {
+        sCreditsEntry_TRAINERs,
         sCreditsEntry_HiroyukiJinnai,
         sCreditsEntry_HitoshiYamagami,
         sCreditsEntry_GakujiNomoto,
@@ -769,14 +769,14 @@ static const struct CreditsEntry *const sCreditsEntryPointerTable[PAGE_COUNT][EN
         _,
         _,
     },
-    [PAGE_EXECUTIVE_PRODUCERS_1] = {
+    [PAGE_EXECUTIVE_TRAINERS_1] = {
         _,
         sCreditsEntry_ExecProducers,
         sCreditsEntry_SatoruIwata,
         _,
         _,
     },
-    [PAGE_EXECUTIVE_PRODUCERS_2] = {
+    [PAGE_EXECUTIVE_TRAINERS_2] = {
         _,
         sCreditsEntry_ExecProducers,
         sCreditsEntry_TsunekazIshihara,

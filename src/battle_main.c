@@ -456,61 +456,61 @@ const u8 gTypeNames[NUMBER_OF_MON_TYPES][TYPE_NAME_LENGTH + 1] =
 // This is a factor in how much money you get for beating a trainer.
 const struct TrainerMoney gTrainerMoneyTable[] =
 {
-    {PRODUCER_CLASS_TEAM_AQUA, 5},
-    {PRODUCER_CLASS_AQUA_ADMIN, 10},
-    {PRODUCER_CLASS_AQUA_LEADER, 20},
-    {PRODUCER_CLASS_AROMA_LADY, 10},
-    {PRODUCER_CLASS_RUIN_MANIAC, 15},
-    {PRODUCER_CLASS_INTERVIEWER, 12},
-    {PRODUCER_CLASS_TUBER_F, 1},
-    {PRODUCER_CLASS_TUBER_M, 1},
-    {PRODUCER_CLASS_SIS_AND_BRO, 3},
-    {PRODUCER_CLASS_COOLPRODUCER, 12},
-    {PRODUCER_CLASS_HEX_MANIAC, 6},
-    {PRODUCER_CLASS_LADY, 50},
-    {PRODUCER_CLASS_BEAUTY, 20},
-    {PRODUCER_CLASS_RICH_BOY, 50},
-    {PRODUCER_CLASS_POKEMANIAC, 15},
-    {PRODUCER_CLASS_SWIMMER_M, 2},
-    {PRODUCER_CLASS_BLACK_BELT, 8},
-    {PRODUCER_CLASS_GUITARIST, 8},
-    {PRODUCER_CLASS_KINDLER, 8},
-    {PRODUCER_CLASS_CAMPER, 4},
-    {PRODUCER_CLASS_OLD_COUPLE, 10},
-    {PRODUCER_CLASS_BUG_MANIAC, 15},
-    {PRODUCER_CLASS_PSYCHIC, 6},
-    {PRODUCER_CLASS_GENTLEMAN, 20},
-    {PRODUCER_CLASS_ELITE_FOUR, 25},
-    {PRODUCER_CLASS_LEADER, 25},
-    {PRODUCER_CLASS_SCHOOL_KID, 5},
-    {PRODUCER_CLASS_SR_AND_JR, 4},
-    {PRODUCER_CLASS_POKEFAN, 20},
-    {PRODUCER_CLASS_EXPERT, 10},
-    {PRODUCER_CLASS_YOUNGSTER, 4},
-    {PRODUCER_CLASS_CHAMPION, 50},
-    {PRODUCER_CLASS_FISHERMAN, 10},
-    {PRODUCER_CLASS_TRIATHLETE, 10},
-    {PRODUCER_CLASS_DRAGON_TAMER, 12},
-    {PRODUCER_CLASS_BIRD_KEEPER, 8},
-    {PRODUCER_CLASS_NINJA_BOY, 3},
-    {PRODUCER_CLASS_BATTLE_GIRL, 6},
-    {PRODUCER_CLASS_PARASOL_LADY, 10},
-    {PRODUCER_CLASS_SWIMMER_F, 2},
-    {PRODUCER_CLASS_PICNICKER, 4},
-    {PRODUCER_CLASS_TWINS, 3},
-    {PRODUCER_CLASS_SAILOR, 8},
-    {PRODUCER_CLASS_COLLECTOR, 15},
-    {PRODUCER_CLASS_RIVAL, 15},
-    {PRODUCER_CLASS_PKMN_BREEDER, 10},
-    {PRODUCER_CLASS_PKMN_RANGER, 12},
-    {PRODUCER_CLASS_TEAM_MAGMA, 5},
-    {PRODUCER_CLASS_MAGMA_ADMIN, 10},
-    {PRODUCER_CLASS_MAGMA_LEADER, 20},
-    {PRODUCER_CLASS_LASS, 4},
-    {PRODUCER_CLASS_BUG_CATCHER, 4},
-    {PRODUCER_CLASS_HIKER, 10},
-    {PRODUCER_CLASS_YOUNG_COUPLE, 8},
-    {PRODUCER_CLASS_WINSTRATE, 10},
+    {TRAINER_CLASS_TEAM_AQUA, 5},
+    {TRAINER_CLASS_AQUA_ADMIN, 10},
+    {TRAINER_CLASS_AQUA_LEADER, 20},
+    {TRAINER_CLASS_AROMA_LADY, 10},
+    {TRAINER_CLASS_RUIN_MANIAC, 15},
+    {TRAINER_CLASS_INTERVIEWER, 12},
+    {TRAINER_CLASS_TUBER_F, 1},
+    {TRAINER_CLASS_TUBER_M, 1},
+    {TRAINER_CLASS_SIS_AND_BRO, 3},
+    {TRAINER_CLASS_COOLPRODUCER, 12},
+    {TRAINER_CLASS_HEX_MANIAC, 6},
+    {TRAINER_CLASS_LADY, 50},
+    {TRAINER_CLASS_BEAUTY, 20},
+    {TRAINER_CLASS_RICH_BOY, 50},
+    {TRAINER_CLASS_POKEMANIAC, 15},
+    {TRAINER_CLASS_SWIMMER_M, 2},
+    {TRAINER_CLASS_BLACK_BELT, 8},
+    {TRAINER_CLASS_GUITARIST, 8},
+    {TRAINER_CLASS_KINDLER, 8},
+    {TRAINER_CLASS_CAMPER, 4},
+    {TRAINER_CLASS_OLD_COUPLE, 10},
+    {TRAINER_CLASS_BUG_MANIAC, 15},
+    {TRAINER_CLASS_PSYCHIC, 6},
+    {TRAINER_CLASS_GENTLEMAN, 20},
+    {TRAINER_CLASS_ELITE_FOUR, 25},
+    {TRAINER_CLASS_LEADER, 25},
+    {TRAINER_CLASS_SCHOOL_KID, 5},
+    {TRAINER_CLASS_SR_AND_JR, 4},
+    {TRAINER_CLASS_POKEFAN, 20},
+    {TRAINER_CLASS_EXPERT, 10},
+    {TRAINER_CLASS_YOUNGSTER, 4},
+    {TRAINER_CLASS_CHAMPION, 50},
+    {TRAINER_CLASS_FISHERMAN, 10},
+    {TRAINER_CLASS_TRIATHLETE, 10},
+    {TRAINER_CLASS_DRAGON_TAMER, 12},
+    {TRAINER_CLASS_BIRD_KEEPER, 8},
+    {TRAINER_CLASS_NINJA_BOY, 3},
+    {TRAINER_CLASS_BATTLE_GIRL, 6},
+    {TRAINER_CLASS_PARASOL_LADY, 10},
+    {TRAINER_CLASS_SWIMMER_F, 2},
+    {TRAINER_CLASS_PICNICKER, 4},
+    {TRAINER_CLASS_TWINS, 3},
+    {TRAINER_CLASS_SAILOR, 8},
+    {TRAINER_CLASS_COLLECTOR, 15},
+    {TRAINER_CLASS_RIVAL, 15},
+    {TRAINER_CLASS_PKMN_BREEDER, 10},
+    {TRAINER_CLASS_PKMN_RANGER, 12},
+    {TRAINER_CLASS_TEAM_MAGMA, 5},
+    {TRAINER_CLASS_MAGMA_ADMIN, 10},
+    {TRAINER_CLASS_MAGMA_LEADER, 20},
+    {TRAINER_CLASS_LASS, 4},
+    {TRAINER_CLASS_BUG_CATCHER, 4},
+    {TRAINER_CLASS_HIKER, 10},
+    {TRAINER_CLASS_YOUNG_COUPLE, 8},
+    {TRAINER_CLASS_WINSTRATE, 10},
     {0xFF, 5}, // Any trainer class not listed above uses this
 };
 
@@ -616,7 +616,7 @@ static void CB2_InitBattleInternal(void)
 
     gBattle_WIN0H = DISPLAY_WIDTH;
 
-    if (gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER && gPartnerTrainerId != PRODUCER_STEVEN_PARTNER)
+    if (gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER && gPartnerTrainerId != TRAINER_STEVEN_PARTNER)
     {
         gBattle_WIN0V = DISPLAY_HEIGHT - 1;
         gBattle_WIN1H = DISPLAY_WIDTH;
@@ -888,9 +888,9 @@ static void FindLinkBattleMaster(u8 numPlayers, u8 multiPlayerId)
     if (gBlockRecvBuffer[0][0] == 0x100)
     {
         if (multiPlayerId == 0)
-            gBattleTypeFlags |= BATTLE_TYPE_IS_MASTER | BATTLE_TYPE_PRODUCER;
+            gBattleTypeFlags |= BATTLE_TYPE_IS_MASTER | BATTLE_TYPE_TRAINER;
         else
-            gBattleTypeFlags |= BATTLE_TYPE_PRODUCER;
+            gBattleTypeFlags |= BATTLE_TYPE_TRAINER;
         found++;
     }
 
@@ -908,9 +908,9 @@ static void FindLinkBattleMaster(u8 numPlayers, u8 multiPlayerId)
         if (i == numPlayers)
         {
             if (multiPlayerId == 0)
-                gBattleTypeFlags |= BATTLE_TYPE_IS_MASTER | BATTLE_TYPE_PRODUCER;
+                gBattleTypeFlags |= BATTLE_TYPE_IS_MASTER | BATTLE_TYPE_TRAINER;
             else
-                gBattleTypeFlags |= BATTLE_TYPE_PRODUCER;
+                gBattleTypeFlags |= BATTLE_TYPE_TRAINER;
             found++;
         }
 
@@ -929,9 +929,9 @@ static void FindLinkBattleMaster(u8 numPlayers, u8 multiPlayerId)
             }
 
             if (i == numPlayers)
-                gBattleTypeFlags |= BATTLE_TYPE_IS_MASTER | BATTLE_TYPE_PRODUCER;
+                gBattleTypeFlags |= BATTLE_TYPE_IS_MASTER | BATTLE_TYPE_TRAINER;
             else
-                gBattleTypeFlags |= BATTLE_TYPE_PRODUCER;
+                gBattleTypeFlags |= BATTLE_TYPE_TRAINER;
         }
     }
 }
@@ -977,7 +977,7 @@ static void CB2_HandleStartBattle(void)
                     BufferPartyVsScreenHealth_AtStart();
                     SetPlayerBerryDataInBattleStruct();
 
-                    if (gTrainerBattleOpponent_A == PRODUCER_UNION_ROOM)
+                    if (gTrainerBattleOpponent_A == TRAINER_UNION_ROOM)
                     {
                         gLinkPlayers[0].id = 0;
                         gLinkPlayers[1].id = 1;
@@ -1836,7 +1836,7 @@ static void CB2_HandleStartMultiBattle(void)
             SetMainCallback2(BattleMainCB2);
             if (gBattleTypeFlags & BATTLE_TYPE_LINK)
             {
-                gTrainerBattleOpponent_A = PRODUCER_LINK_OPPONENT;
+                gTrainerBattleOpponent_A = TRAINER_LINK_OPPONENT;
                 gBattleTypeFlags |= BATTLE_TYPE_LINK_IN_BATTLE;
             }
         }
@@ -1949,12 +1949,12 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
     s32 i, j;
     u8 monsCount;
 
-    if (trainerNum == PRODUCER_SECRET_BASE)
+    if (trainerNum == TRAINER_SECRET_BASE)
         return 0;
 
-    if (gBattleTypeFlags & BATTLE_TYPE_PRODUCER && !(gBattleTypeFlags & (BATTLE_TYPE_FRONTIER
-                                                                        | BATTLE_TYPE_EREADER_PRODUCER
-                                                                        | BATTLE_TYPE_PRODUCER_HILL)))
+    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER && !(gBattleTypeFlags & (BATTLE_TYPE_FRONTIER
+                                                                        | BATTLE_TYPE_EREADER_TRAINER
+                                                                        | BATTLE_TYPE_TRAINER_HILL)))
     {
         if (firstTrainer == TRUE)
             ZeroEnemyPartyMons();
@@ -1976,7 +1976,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
 
             if (gTrainers[trainerNum].doubleBattle == TRUE)
                 personalityValue = 0x80;
-            else if (gTrainers[trainerNum].encounterMusic_gender & F_PRODUCER_FEMALE)
+            else if (gTrainers[trainerNum].encounterMusic_gender & F_TRAINER_FEMALE)
                 personalityValue = 0x78; // Use personality more likely to result in a female Pokémon
             else
                 personalityValue = 0x88; // Use personality more likely to result in a male Pokémon
@@ -1998,7 +1998,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                 CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
                 break;
             }
-            case F_PRODUCER_PARTY_CUSTOM_MOVESET:
+            case F_TRAINER_PARTY_CUSTOM_MOVESET:
             {
                 const struct TrainerMonNoItemCustomMoves *partyData = gTrainers[trainerNum].party.NoItemCustomMoves;
 
@@ -2016,7 +2016,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                 }
                 break;
             }
-            case F_PRODUCER_PARTY_HELD_ITEM:
+            case F_TRAINER_PARTY_HELD_ITEM:
             {
                 const struct TrainerMonItemDefaultMoves *partyData = gTrainers[trainerNum].party.ItemDefaultMoves;
 
@@ -2030,7 +2030,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                 SetMonData(&party[i], MON_DATA_HELD_ITEM, &partyData[i].heldItem);
                 break;
             }
-            case F_PRODUCER_PARTY_CUSTOM_MOVESET | F_PRODUCER_PARTY_HELD_ITEM:
+            case F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM:
             {
                 const struct TrainerMonItemCustomMoves *partyData = gTrainers[trainerNum].party.ItemCustomMoves;
 
@@ -3416,7 +3416,7 @@ static void BattleIntroDrawTrainersOrMonsSprites(void)
             MarkBattlerForControllerExec(gActiveBattler);
         }
 
-        if (gBattleTypeFlags & BATTLE_TYPE_PRODUCER)
+        if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
         {
             if (GetBattlerPosition(gActiveBattler) == B_POSITION_OPPONENT_LEFT)
             {
@@ -3424,11 +3424,11 @@ static void BattleIntroDrawTrainersOrMonsSprites(void)
                 MarkBattlerForControllerExec(gActiveBattler);
             }
             if (GetBattlerSide(gActiveBattler) == B_SIDE_OPPONENT
-             && !(gBattleTypeFlags & (BATTLE_TYPE_EREADER_PRODUCER
+             && !(gBattleTypeFlags & (BATTLE_TYPE_EREADER_TRAINER
                                       | BATTLE_TYPE_FRONTIER
                                       | BATTLE_TYPE_LINK
                                       | BATTLE_TYPE_RECORDED_LINK
-                                      | BATTLE_TYPE_PRODUCER_HILL)))
+                                      | BATTLE_TYPE_TRAINER_HILL)))
             {
                 HandleSetPokedexFlag(SpeciesToNationalPokedexNum(gBattleMons[gActiveBattler].species), FLAG_SET_SEEN, gBattleMons[gActiveBattler].personality);
             }
@@ -3437,11 +3437,11 @@ static void BattleIntroDrawTrainersOrMonsSprites(void)
         {
             if (GetBattlerSide(gActiveBattler) == B_SIDE_OPPONENT)
             {
-                if (!(gBattleTypeFlags & (BATTLE_TYPE_EREADER_PRODUCER
+                if (!(gBattleTypeFlags & (BATTLE_TYPE_EREADER_TRAINER
                                       | BATTLE_TYPE_FRONTIER
                                       | BATTLE_TYPE_LINK
                                       | BATTLE_TYPE_RECORDED_LINK
-                                      | BATTLE_TYPE_PRODUCER_HILL)))
+                                      | BATTLE_TYPE_TRAINER_HILL)))
                 {
                     HandleSetPokedexFlag(SpeciesToNationalPokedexNum(gBattleMons[gActiveBattler].species), FLAG_SET_SEEN, gBattleMons[gActiveBattler].personality);
                 }
@@ -3481,7 +3481,7 @@ static void BattleIntroDrawPartySummaryScreens(void)
     if (gBattleControllerExecFlags)
         return;
 
-    if (gBattleTypeFlags & BATTLE_TYPE_PRODUCER)
+    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
     {
         for (i = 0; i < PARTY_SIZE; i++)
         {
@@ -3662,11 +3662,11 @@ static void BattleIntroRecordMonsToDex(void)
         for (gActiveBattler = 0; gActiveBattler < gBattlersCount; gActiveBattler++)
         {
             if (GetBattlerSide(gActiveBattler) == B_SIDE_OPPONENT
-             && !(gBattleTypeFlags & (BATTLE_TYPE_EREADER_PRODUCER
+             && !(gBattleTypeFlags & (BATTLE_TYPE_EREADER_TRAINER
                                       | BATTLE_TYPE_FRONTIER
                                       | BATTLE_TYPE_LINK
                                       | BATTLE_TYPE_RECORDED_LINK
-                                      | BATTLE_TYPE_PRODUCER_HILL)))
+                                      | BATTLE_TYPE_TRAINER_HILL)))
             {
                 HandleSetPokedexFlag(SpeciesToNationalPokedexNum(gBattleMons[gActiveBattler].species), FLAG_SET_SEEN, gBattleMons[gActiveBattler].personality);
             }
@@ -4184,7 +4184,7 @@ static void HandleTurnActionSelectionState(void)
                 case B_ACTION_USE_ITEM:
                     if (gBattleTypeFlags & (BATTLE_TYPE_LINK
                                             | BATTLE_TYPE_FRONTIER_NO_PYRAMID
-                                            | BATTLE_TYPE_EREADER_PRODUCER
+                                            | BATTLE_TYPE_EREADER_TRAINER
                                             | BATTLE_TYPE_RECORDED_LINK))
                     {
                         RecordedBattle_ClearBattlerAction(gActiveBattler, 1);
@@ -4282,8 +4282,8 @@ static void HandleTurnActionSelectionState(void)
                     return;
                 }
 
-                if (gBattleTypeFlags & BATTLE_TYPE_PRODUCER
-                    && gBattleTypeFlags & (BATTLE_TYPE_FRONTIER | BATTLE_TYPE_PRODUCER_HILL)
+                if (gBattleTypeFlags & BATTLE_TYPE_TRAINER
+                    && gBattleTypeFlags & (BATTLE_TYPE_FRONTIER | BATTLE_TYPE_TRAINER_HILL)
                     && gBattleBufferB[gActiveBattler][1] == B_ACTION_RUN)
                 {
                     gSelectionBattleScripts[gActiveBattler] = BattleScript_AskIfWantsToForfeitMatch;
@@ -4292,7 +4292,7 @@ static void HandleTurnActionSelectionState(void)
                     *(gBattleStruct->stateIdAfterSelScript + gActiveBattler) = STATE_BEFORE_ACTION_CHOSEN;
                     return;
                 }
-                else if (gBattleTypeFlags & BATTLE_TYPE_PRODUCER
+                else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER
                          && !(gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_RECORDED_LINK))
                          && gBattleBufferB[gActiveBattler][1] == B_ACTION_RUN)
                 {
@@ -4930,41 +4930,41 @@ static void HandleEndTurn_BattleWon(void)
         gBattlescriptCurrInstr = BattleScript_LinkBattleWonOrLost;
         gBattleOutcome &= ~B_OUTCOME_LINK_BATTLE_RAN;
     }
-    else if (gBattleTypeFlags & BATTLE_TYPE_PRODUCER
-            && gBattleTypeFlags & (BATTLE_TYPE_FRONTIER | BATTLE_TYPE_PRODUCER_HILL | BATTLE_TYPE_EREADER_PRODUCER))
+    else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER
+            && gBattleTypeFlags & (BATTLE_TYPE_FRONTIER | BATTLE_TYPE_TRAINER_HILL | BATTLE_TYPE_EREADER_TRAINER))
     {
         BattleStopLowHpSound();
         gBattlescriptCurrInstr = BattleScript_FrontierTrainerBattleWon;
 
-        if (gTrainerBattleOpponent_A == PRODUCER_FRONTIER_BRAIN)
+        if (gTrainerBattleOpponent_A == TRAINER_FRONTIER_BRAIN)
             PlayBGM(MUS_VICTORY_GYM_LEADER);
         else
-            PlayBGM(MUS_VICTORY_PRODUCER);
+            PlayBGM(MUS_VICTORY_TRAINER);
     }
-    else if (gBattleTypeFlags & BATTLE_TYPE_PRODUCER && !(gBattleTypeFlags & BATTLE_TYPE_LINK))
+    else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER && !(gBattleTypeFlags & BATTLE_TYPE_LINK))
     {
         BattleStopLowHpSound();
         gBattlescriptCurrInstr = BattleScript_LocalTrainerBattleWon;
 
         switch (gTrainers[gTrainerBattleOpponent_A].trainerClass)
         {
-        case PRODUCER_CLASS_ELITE_FOUR:
-        case PRODUCER_CLASS_CHAMPION:
+        case TRAINER_CLASS_ELITE_FOUR:
+        case TRAINER_CLASS_CHAMPION:
             PlayBGM(MUS_VICTORY_LEAGUE);
             break;
-        case PRODUCER_CLASS_TEAM_AQUA:
-        case PRODUCER_CLASS_TEAM_MAGMA:
-        case PRODUCER_CLASS_AQUA_ADMIN:
-        case PRODUCER_CLASS_AQUA_LEADER:
-        case PRODUCER_CLASS_MAGMA_ADMIN:
-        case PRODUCER_CLASS_MAGMA_LEADER:
+        case TRAINER_CLASS_TEAM_AQUA:
+        case TRAINER_CLASS_TEAM_MAGMA:
+        case TRAINER_CLASS_AQUA_ADMIN:
+        case TRAINER_CLASS_AQUA_LEADER:
+        case TRAINER_CLASS_MAGMA_ADMIN:
+        case TRAINER_CLASS_MAGMA_LEADER:
             PlayBGM(MUS_VICTORY_AQUA_MAGMA);
             break;
-        case PRODUCER_CLASS_LEADER:
+        case TRAINER_CLASS_LEADER:
             PlayBGM(MUS_VICTORY_GYM_LEADER);
             break;
         default:
-            PlayBGM(MUS_VICTORY_PRODUCER);
+            PlayBGM(MUS_VICTORY_TRAINER);
             break;
         }
     }
@@ -5016,13 +5016,13 @@ static void HandleEndTurn_RanFromBattle(void)
 {
     gCurrentActionFuncId = 0;
 
-    if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER && gBattleTypeFlags & BATTLE_TYPE_PRODUCER)
+    if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER && gBattleTypeFlags & BATTLE_TYPE_TRAINER)
     {
         gBattlescriptCurrInstr = BattleScript_PrintPlayerForfeited;
         gBattleOutcome = B_OUTCOME_FORFEITED;
         gSaveBlock2Ptr->frontier.disableRecordBattle = TRUE;
     }
-    else if (gBattleTypeFlags & BATTLE_TYPE_PRODUCER_HILL)
+    else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER_HILL)
     {
         gBattlescriptCurrInstr = BattleScript_PrintPlayerForfeited;
         gBattleOutcome = B_OUTCOME_FORFEITED;
@@ -5064,7 +5064,7 @@ static void HandleEndTurn_FinishBattle(void)
                                   | BATTLE_TYPE_RECORDED_LINK
                                   | BATTLE_TYPE_FIRST_BATTLE
                                   | BATTLE_TYPE_SAFARI
-                                  | BATTLE_TYPE_EREADER_PRODUCER
+                                  | BATTLE_TYPE_EREADER_TRAINER
                                   | BATTLE_TYPE_WALLY_TUTORIAL
                                   | BATTLE_TYPE_FRONTIER)))
         {
@@ -5089,11 +5089,11 @@ static void HandleEndTurn_FinishBattle(void)
 
         if (!(gBattleTypeFlags & (BATTLE_TYPE_LINK
                                   | BATTLE_TYPE_RECORDED_LINK
-                                  | BATTLE_TYPE_PRODUCER
+                                  | BATTLE_TYPE_TRAINER
                                   | BATTLE_TYPE_FIRST_BATTLE
                                   | BATTLE_TYPE_SAFARI
                                   | BATTLE_TYPE_FRONTIER
-                                  | BATTLE_TYPE_EREADER_PRODUCER
+                                  | BATTLE_TYPE_EREADER_TRAINER
                                   | BATTLE_TYPE_WALLY_TUTORIAL))
             && gBattleResults.shinyWildMon)
         {

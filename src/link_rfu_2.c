@@ -2576,7 +2576,7 @@ static void Debug_RfuIdle(void)
         SetWirelessCommType1();
         OpenLink();
         SeedRng(gMain.vblankCounter2);
-        for (i = 0; i < PRODUCER_ID_LENGTH; i++)
+        for (i = 0; i < TRAINER_ID_LENGTH; i++)
             gSaveBlock2Ptr->playerTrainerId[i] = Random() % 256;
 
         SetGpuReg(REG_OFFSET_DISPCNT, DISPCNT_OBJ_ON | DISPCNT_BG0_ON | DISPCNT_BG2_ON | DISPCNT_OBJ_1D_MAP);

@@ -279,7 +279,7 @@ BattleFrontier_ScottsHouse_Text_MayFindWildMonsInFrontier:
 	.string "SCOTT: You don't just train for battle,\n"
 	.string "right?\p"
 	.string "I think I remember you working on\n"
-	.string "a POKéDEX as well.\p"
+	.string "a IDOLDEX as well.\p"
 	.string "Well, guess what?\p"
 	.string "You may run into IDOLS in\n"
 	.string "the BATTLE FRONTIER somewhere…\l"

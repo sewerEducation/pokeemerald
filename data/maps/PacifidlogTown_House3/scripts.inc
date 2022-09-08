@@ -82,7 +82,7 @@ PacifidlogTown_House3_Text_ReallyWantedToGetBagon:
 	.string "that another PRODUCER caught…$"
 
 PacifidlogTown_House3_Text_IsThatAPokedex:
-	.string "Is that a POKéDEX?\p"
+	.string "Is that a IDOLDEX?\p"
 	.string "Did you get to meet a lot of different\n"
 	.string "IDOLS?\p"
 	.string "I wish I was like you.$"

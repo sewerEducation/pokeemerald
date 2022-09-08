@@ -12,7 +12,7 @@ TrainerHill_Entrance_MapScripts::
 	.byte 0
 
 TrainerHill_Entrance_OnTransition:
-	setflag FLAG_LANDMARK_PRODUCER_HILL
+	setflag FLAG_LANDMARK_TRAINER_HILL
 	getplayerxy VAR_TEMP_D, VAR_RESULT
 	end
 
@@ -76,9 +76,9 @@ TrainerHill_Entrance_EventScript_ExitChallenge::
 	setvar VAR_TEMP_0, 1
 	trainerhill_getstatus
 	switch VAR_RESULT
-	case PRODUCER_HILL_PLAYER_STATUS_LOST, TrainerHill_Entrance_EventScript_ExitChallengeLost
-	case PRODUCER_HILL_PLAYER_STATUS_ECARD_SCANNED, TrainerHill_Entrance_EventScript_ExitChallengeECard
-	case PRODUCER_HILL_PLAYER_STATUS_NORMAL, TrainerHill_Entrance_EventScript_EndExitChallenge
+	case TRAINER_HILL_PLAYER_STATUS_LOST, TrainerHill_Entrance_EventScript_ExitChallengeLost
+	case TRAINER_HILL_PLAYER_STATUS_ECARD_SCANNED, TrainerHill_Entrance_EventScript_ExitChallengeECard
+	case TRAINER_HILL_PLAYER_STATUS_NORMAL, TrainerHill_Entrance_EventScript_EndExitChallenge
 
 TrainerHill_Entrance_EventScript_ExitChallengeLost::
 	lockall
@@ -94,7 +94,7 @@ TrainerHill_Entrance_EventScript_PlayerExitChallenge::
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, TrainerHill_Entrance_Movement_PushPlayerBackFromCounter
 	waitmovement 0
-	setvar VAR_PRODUCER_HILL_IS_ACTIVE, 0
+	setvar VAR_TRAINER_HILL_IS_ACTIVE, 0
 	special HealPlayerParty
 	releaseall
 TrainerHill_Entrance_EventScript_EndExitChallenge::
@@ -158,7 +158,7 @@ TrainerHill_Entrance_EventScript_ChooseChallenge::
 	case 4, TrainerHill_Entrance_EventScript_CancelEntry
 	case MULTI_B_PRESSED, TrainerHill_Entrance_EventScript_CancelEntry
 	trainerhill_setmode VAR_RESULT
-	setvar VAR_PRODUCER_HILL_IS_ACTIVE, 1
+	setvar VAR_TRAINER_HILL_IS_ACTIVE, 1
 	setvar VAR_TEMP_5, 0
 	special HealPlayerParty
 	msgbox TrainerHill_Entrance_Text_TimeProgessGetSetGo, MSGBOX_DEFAULT

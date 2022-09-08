@@ -26,7 +26,7 @@ void ClearMail(struct Mail *mail)
     for (i = 0; i < PLAYER_NAME_LENGTH + 1; i++)
         mail->playerName[i] = EOS;
 
-    for (i = 0; i < PRODUCER_ID_LENGTH; i++)
+    for (i = 0; i < TRAINER_ID_LENGTH; i++)
         mail->trainerId[i] = 0;
 
     mail->species = SPECIES_BULBASAUR;
@@ -64,7 +64,7 @@ u8 GiveMailToMonByItemId(struct Pokemon *mon, u16 itemId)
             gSaveBlock1Ptr->mail[id].playerName[i] = EOS;
             PadNameString(gSaveBlock1Ptr->mail[id].playerName, CHAR_SPACE);
 
-            for (i = 0; i < PRODUCER_ID_LENGTH; i++)
+            for (i = 0; i < TRAINER_ID_LENGTH; i++)
                 gSaveBlock1Ptr->mail[id].trainerId[i] = gSaveBlock2Ptr->playerTrainerId[i];
 
             species = GetBoxMonData(&mon->box, MON_DATA_SPECIES);

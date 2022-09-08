@@ -133,7 +133,7 @@ static void SetVerdanturfTentTrainerGfx(void)
 
 static void BufferVerdanturfTentTrainerIntro(void)
 {
-    if (gTrainerBattleOpponent_A < FRONTIER_PRODUCERS_COUNT)
+    if (gTrainerBattleOpponent_A < FRONTIER_TRAINERS_COUNT)
         FrontierSpeechToString(gFacilityTrainers[gTrainerBattleOpponent_A].speechBefore);
 }
 
@@ -365,7 +365,7 @@ static void GenerateOpponentMons(void)
         do
         {
             // Choose a random trainer, ensuring no repeats in this challenge
-            trainerId = Random() % NUM_BATTLE_TENT_PRODUCERS;
+            trainerId = Random() % NUM_BATTLE_TENT_TRAINERS;
             for (i = 0; i < gSaveBlock2Ptr->frontier.curChallengeBattleNum; i++)
             {
                 if (gSaveBlock2Ptr->frontier.trainerIds[i] == trainerId)

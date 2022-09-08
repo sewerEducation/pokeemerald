@@ -50,7 +50,7 @@ BattleFrontier_BattlePyramidFloor_OnResume:
 	goto_if_eq VAR_RESULT, B_OUTCOME_LOST, BattleFrontier_BattlePyramid_EventScript_WarpToLobbyLost
 	goto_if_eq VAR_RESULT, B_OUTCOME_DREW, BattleFrontier_BattlePyramid_EventScript_WarpToLobbyLost
 	goto_if_eq VAR_RESULT, B_OUTCOME_FORFEITED, BattleFrontier_BattlePyramid_EventScript_WarpToLobbyLost
-	frontier_isbattletype BATTLE_TYPE_PRODUCER  @ VAR_RESULT seems to be ignored here
+	frontier_isbattletype BATTLE_TYPE_TRAINER  @ VAR_RESULT seems to be ignored here
 	setvar VAR_TEMP_D, 1
 BattleFrontier_BattlePyramidFloor_EventScript_ResetParty::
 	pyramid_resetparty
@@ -58,7 +58,7 @@ BattleFrontier_BattlePyramidFloor_EventScript_ResetParty::
 
 BattleFrontier_BattlePyramid_EventScript_WarpToLobbyLost::
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, CHALLENGE_STATUS_LOST
-	pyramid_set PYRAMID_DATA_PRODUCER_FLAGS, 255
+	pyramid_set PYRAMID_DATA_TRAINER_FLAGS, 255
 BattleFrontier_BattlePyramid_EventScript_WarpToLobby::
 	pyramid_updatelight 0, PYRAMID_LIGHT_SET_RADIUS
 	pyramid_clearhelditems
@@ -103,9 +103,9 @@ BattlePyramid_WarpToTop::
 	waitstate
 	end
 
-@ PRODUCER_PHILLIP is used as a placeholder
+@ TRAINER_PHILLIP is used as a placeholder
 BattlePyramid_TrainerBattle::
-	trainerbattle PRODUCER_BATTLE_PYRAMID, PRODUCER_PHILLIP, 0, BattleFacility_TrainerBattle_PlaceholderText, BattleFacility_TrainerBattle_PlaceholderText
+	trainerbattle TRAINER_BATTLE_PYRAMID, TRAINER_PHILLIP, 0, BattleFacility_TrainerBattle_PlaceholderText, BattleFacility_TrainerBattle_PlaceholderText
 	pyramid_showhint
 	waitmessage
 	waitbuttonpress

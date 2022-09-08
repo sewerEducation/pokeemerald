@@ -220,11 +220,11 @@ RustboroCity_DevonCorp_3F_Text_MrStoneWantYouToHaveThis:
 	.string "That's why I want you to have this!$"
 
 RustboroCity_DevonCorp_3F_Text_ReceivedPokenav:
-	.string "{PLAYER} received a POKéNAV.$"
+	.string "{PLAYER} received a IDOLNAV.$"
 
 RustboroCity_DevonCorp_3F_Text_MrStoneExplainPokenavRestUp:
 	.string "MR. STONE: That device…\p"
-	.string "It's an IDOL NAVIGATOR, or POKéNAV\n"
+	.string "It's an IDOL NAVIGATOR, or IDOLNAV\n"
 	.string "for short.\p"
 	.string "It's an indispensable tool for any\n"
 	.string "PRODUCER on an adventure.\p"

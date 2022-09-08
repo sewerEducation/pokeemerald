@@ -6,7 +6,7 @@
 .set LOCALID_OPPONENT, 15
 
 .set NO_DRAW,       0
-.set DRAW_PRODUCER,  1
+.set DRAW_TRAINER,  1
 .set DRAW_TUCKER,   2
 
 BattleFrontier_BattleDomeBattleRoom_MapScripts::
@@ -83,7 +83,7 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_BattleOpponent::
 	case B_OUTCOME_WON, BattleFrontier_BattleDomeBattleRoom_EventScript_DefeatedOpponent
 	case B_OUTCOME_LOST, BattleFrontier_BattleDomeBattleRoom_EventScript_LostToOpponent
 	case B_OUTCOME_FORFEITED, BattleFrontier_BattleDomeBattleRoom_EventScript_LostToOpponent
-	setvar VAR_TEMP_2, DRAW_PRODUCER
+	setvar VAR_TEMP_2, DRAW_TRAINER
 BattleFrontier_BattleDomeBattleRoom_EventScript_Draw::
 	msgbox BattleFrontier_BattleDomeBattleRoom_Text_RefereeDecisionPleaseWait, MSGBOX_DEFAULT
 	closemessage
@@ -106,7 +106,7 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_LostToOpponent::
 	waitmovement 0
 	dome_getopponentname
 	call_if_eq VAR_TEMP_2, NO_DRAW, BattleFrontier_BattleDomeBattleRoom_EventScript_OpponentWon
-	call_if_eq VAR_TEMP_2, DRAW_PRODUCER, BattleFrontier_BattleDomeBattleRoom_EventScript_OpponentWonDraw
+	call_if_eq VAR_TEMP_2, DRAW_TRAINER, BattleFrontier_BattleDomeBattleRoom_EventScript_OpponentWonDraw
 	call_if_eq VAR_TEMP_2, DRAW_TUCKER, BattleFrontier_BattleDomeBattleRoom_EventScript_TuckerWonDraw
 	playse SE_M_ENCORE2
 	call BattleFrontier_BattleDomeBattleRoom_EventScript_AudienceLookAround
@@ -138,7 +138,7 @@ BattleFrontier_BattleDomeBattleRoom_EventScript_DefeatedOpponent::
 	applymovement LOCALID_ANNOUNCER, Common_Movement_WalkInPlaceDown
 	waitmovement 0
 	call_if_eq VAR_TEMP_2, NO_DRAW, BattleFrontier_BattleDomeBattleRoom_EventScript_PlayerWon
-	call_if_eq VAR_TEMP_2, DRAW_PRODUCER, BattleFrontier_BattleDomeBattleRoom_EventScript_PlayerWonDraw
+	call_if_eq VAR_TEMP_2, DRAW_TRAINER, BattleFrontier_BattleDomeBattleRoom_EventScript_PlayerWonDraw
 	playse SE_M_ENCORE2
 	call BattleFrontier_BattleDomeBattleRoom_EventScript_AudienceLookAround
 	delay 60

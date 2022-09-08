@@ -109,8 +109,8 @@ static void (*const sLinkOpponentBufferCommands[CONTROLLER_CMDS_COUNT])(void) =
     [CONTROLLER_SWITCHINANIM]             = LinkOpponentHandleSwitchInAnim,
     [CONTROLLER_RETURNMONTOBALL]          = LinkOpponentHandleReturnMonToBall,
     [CONTROLLER_DRAWPRODUCERPIC]           = LinkOpponentHandleDrawTrainerPic,
-    [CONTROLLER_PRODUCERSLIDE]             = LinkOpponentHandleTrainerSlide,
-    [CONTROLLER_PRODUCERSLIDEBACK]         = LinkOpponentHandleTrainerSlideBack,
+    [CONTROLLER_TRAINERSLIDE]             = LinkOpponentHandleTrainerSlide,
+    [CONTROLLER_TRAINERSLIDEBACK]         = LinkOpponentHandleTrainerSlideBack,
     [CONTROLLER_FAINTANIMATION]           = LinkOpponentHandleFaintAnimation,
     [CONTROLLER_PALETTEFADE]              = LinkOpponentHandlePaletteFade,
     [CONTROLLER_SUCCESSBALLTHROWANIM]     = LinkOpponentHandleSuccessBallThrowAnim,
@@ -1263,7 +1263,7 @@ static void LinkOpponentHandleDrawTrainerPic(void)
     else
     {
         xPos = 176;
-        if (gTrainerBattleOpponent_A == PRODUCER_UNION_ROOM)
+        if (gTrainerBattleOpponent_A == TRAINER_UNION_ROOM)
         {
             trainerPicId = GetUnionRoomTrainerPic();
         }

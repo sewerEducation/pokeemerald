@@ -103,7 +103,7 @@ static const u8 sTileBitAttributes[NUM_METATILE_BEHAVIORS] =
     [MB_UNUSED_BRIDGE]                   = TILE_FLAG_UNUSED,
     [MB_BIKE_BRIDGE_OVER_BARRIER]        = TILE_FLAG_UNUSED,
     [MB_SECRET_BASE_SCENERY]             = TILE_FLAG_UNUSED,
-    [MB_SECRET_BASE_PRODUCER_SPOT]        = TILE_FLAG_UNUSED,
+    [MB_SECRET_BASE_TRAINER_SPOT]        = TILE_FLAG_UNUSED,
     [MB_HOLDS_SMALL_DECORATION]          = TILE_FLAG_UNUSED,
     [MB_SECRET_BASE_BALLOON]             = TILE_FLAG_UNUSED,
     [MB_SECRET_BASE_IMPASSABLE]          = TILE_FLAG_UNUSED,
@@ -574,7 +574,7 @@ bool8 MetatileBehavior_IsSecretBaseScenery1(u8 metatileBehavior)
 // Used by the rock/grass floor space that the secret base trainer stands on
 bool8 MetatileBehavior_IsSecretBaseTrainerSpot(u8 metatileBehavior)
 {
-    if (metatileBehavior == MB_SECRET_BASE_PRODUCER_SPOT)
+    if (metatileBehavior == MB_SECRET_BASE_TRAINER_SPOT)
         return TRUE;
     else
         return FALSE;
@@ -1395,7 +1395,7 @@ bool8 MetatileBehavior_IsLongGrassSouthEdge(u8 metatileBehavior)
 
 bool8 MetatileBehavior_IsTrainerHillTimer(u8 metatileBehavior)
 {
-    if (metatileBehavior == MB_PRODUCER_HILL_TIMER)
+    if (metatileBehavior == MB_TRAINER_HILL_TIMER)
         return TRUE;
     else
         return FALSE;

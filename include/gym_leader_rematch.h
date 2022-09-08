@@ -1,5 +1,5 @@
-#ifndef GUARD_PRODUCER_REMATCH_H
-#define GUARD_PRODUCER_REMATCH_H
+#ifndef GUARD_TRAINER_REMATCH_H
+#define GUARD_TRAINER_REMATCH_H
 
 enum {
     REMATCH_ROSE,
@@ -83,9 +83,9 @@ enum {
     REMATCH_TABLE_ENTRIES // The total number of rematch entries. Must be last in enum
 };
 
-#define REMATCH_SPECIAL_PRODUCER_START   REMATCH_WALLY_VR
+#define REMATCH_SPECIAL_TRAINER_START   REMATCH_WALLY_VR
 #define REMATCH_ELITE_FOUR_ENTRIES      REMATCH_SIDNEY
 
 void UpdateGymLeaderRematch(void);
 
-#endif //GUARD_PRODUCER_REMATCH_H
+#endif //GUARD_TRAINER_REMATCH_H

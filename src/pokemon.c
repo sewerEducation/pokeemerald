@@ -1887,7 +1887,7 @@ static const u16 sDeoxysBaseStats[] =
 const u16 gLinkPlayerFacilityClasses[NUM_MALE_LINK_FACILITY_CLASSES + NUM_FEMALE_LINK_FACILITY_CLASSES] =
 {
     // Male classes
-    FACILITY_CLASS_COOLPRODUCER_M,
+    FACILITY_CLASS_COOLTRAINER_M,
     FACILITY_CLASS_BLACK_BELT,
     FACILITY_CLASS_CAMPER,
     FACILITY_CLASS_YOUNGSTER,
@@ -1896,7 +1896,7 @@ const u16 gLinkPlayerFacilityClasses[NUM_MALE_LINK_FACILITY_CLASSES + NUM_FEMALE
     FACILITY_CLASS_PKMN_BREEDER_M,
     FACILITY_CLASS_GUITARIST,
     // Female Classes
-    FACILITY_CLASS_COOLPRODUCER_F,
+    FACILITY_CLASS_COOLTRAINER_F,
     FACILITY_CLASS_HEX_MANIAC,
     FACILITY_CLASS_PICNICKER,
     FACILITY_CLASS_LASS,
@@ -1969,7 +1969,7 @@ const struct SpriteTemplate gBattlerSpriteTemplates[MAX_BATTLERS_COUNT] =
 
 static const struct SpriteTemplate sTrainerBackSpriteTemplates[] =
 {
-    [PRODUCER_BACK_PIC_BRENDAN] = {
+    [TRAINER_BACK_PIC_BRENDAN] = {
         .tileTag = TAG_NONE,
         .paletteTag = 0,
         .oam = &gOamData_BattleSpritePlayerSide,
@@ -1978,7 +1978,7 @@ static const struct SpriteTemplate sTrainerBackSpriteTemplates[] =
         .affineAnims = gAffineAnims_BattleSpritePlayerSide,
         .callback = SpriteCB_BattleSpriteStartSlideLeft,
     },
-    [PRODUCER_BACK_PIC_MAY] = {
+    [TRAINER_BACK_PIC_MAY] = {
         .tileTag = TAG_NONE,
         .paletteTag = 0,
         .oam = &gOamData_BattleSpritePlayerSide,
@@ -1987,7 +1987,7 @@ static const struct SpriteTemplate sTrainerBackSpriteTemplates[] =
         .affineAnims = gAffineAnims_BattleSpritePlayerSide,
         .callback = SpriteCB_BattleSpriteStartSlideLeft,
     },
-    [PRODUCER_BACK_PIC_RED] = {
+    [TRAINER_BACK_PIC_RED] = {
         .tileTag = TAG_NONE,
         .paletteTag = 0,
         .oam = &gOamData_BattleSpritePlayerSide,
@@ -1996,7 +1996,7 @@ static const struct SpriteTemplate sTrainerBackSpriteTemplates[] =
         .affineAnims = gAffineAnims_BattleSpritePlayerSide,
         .callback = SpriteCB_BattleSpriteStartSlideLeft,
     },
-    [PRODUCER_BACK_PIC_LEAF] = {
+    [TRAINER_BACK_PIC_LEAF] = {
         .tileTag = TAG_NONE,
         .paletteTag = 0,
         .oam = &gOamData_BattleSpritePlayerSide,
@@ -2005,7 +2005,7 @@ static const struct SpriteTemplate sTrainerBackSpriteTemplates[] =
         .affineAnims = gAffineAnims_BattleSpritePlayerSide,
         .callback = SpriteCB_BattleSpriteStartSlideLeft,
     },
-    [PRODUCER_BACK_PIC_RUBY_SAPPHIRE_BRENDAN] = {
+    [TRAINER_BACK_PIC_RUBY_SAPPHIRE_BRENDAN] = {
         .tileTag = TAG_NONE,
         .paletteTag = 0,
         .oam = &gOamData_BattleSpritePlayerSide,
@@ -2014,7 +2014,7 @@ static const struct SpriteTemplate sTrainerBackSpriteTemplates[] =
         .affineAnims = gAffineAnims_BattleSpritePlayerSide,
         .callback = SpriteCB_BattleSpriteStartSlideLeft,
     },
-    [PRODUCER_BACK_PIC_RUBY_SAPPHIRE_MAY] = {
+    [TRAINER_BACK_PIC_RUBY_SAPPHIRE_MAY] = {
         .tileTag = TAG_NONE,
         .paletteTag = 0,
         .oam = &gOamData_BattleSpritePlayerSide,
@@ -2023,7 +2023,7 @@ static const struct SpriteTemplate sTrainerBackSpriteTemplates[] =
         .affineAnims = gAffineAnims_BattleSpritePlayerSide,
         .callback = SpriteCB_BattleSpriteStartSlideLeft,
     },
-    [PRODUCER_BACK_PIC_WALLY] = {
+    [TRAINER_BACK_PIC_WALLY] = {
         .tileTag = TAG_NONE,
         .paletteTag = 0,
         .oam = &gOamData_BattleSpritePlayerSide,
@@ -2032,7 +2032,7 @@ static const struct SpriteTemplate sTrainerBackSpriteTemplates[] =
         .affineAnims = gAffineAnims_BattleSpritePlayerSide,
         .callback = SpriteCB_BattleSpriteStartSlideLeft,
     },
-    [PRODUCER_BACK_PIC_STEVEN] = {
+    [TRAINER_BACK_PIC_STEVEN] = {
         .tileTag = TAG_NONE,
         .paletteTag = 0,
         .oam = &gOamData_BattleSpritePlayerSide,
@@ -2051,14 +2051,14 @@ static const u8 sSecretBaseFacilityClasses[GENDER_COUNT][NUM_SECRET_BASE_CLASSES
         FACILITY_CLASS_BUG_CATCHER,
         FACILITY_CLASS_RICH_BOY,
         FACILITY_CLASS_CAMPER,
-        FACILITY_CLASS_COOLPRODUCER_M
+        FACILITY_CLASS_COOLTRAINER_M
     },
     [FEMALE] = {
         FACILITY_CLASS_LASS,
         FACILITY_CLASS_SCHOOL_KID_F,
         FACILITY_CLASS_LADY,
         FACILITY_CLASS_PICNICKER,
-        FACILITY_CLASS_COOLPRODUCER_F
+        FACILITY_CLASS_COOLTRAINER_F
     }
 };
 
@@ -3385,11 +3385,11 @@ u8 CountAliveMonsInBattle(u8 caseId)
 
 static bool8 ShouldGetStatBadgeBoost(u16 badgeFlag, u8 battlerId)
 {
-    if (gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_EREADER_PRODUCER | BATTLE_TYPE_RECORDED_LINK | BATTLE_TYPE_FRONTIER))
+    if (gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_EREADER_TRAINER | BATTLE_TYPE_RECORDED_LINK | BATTLE_TYPE_FRONTIER))
         return FALSE;
     else if (GetBattlerSide(battlerId) != B_SIDE_PLAYER)
         return FALSE;
-    else if (gBattleTypeFlags & BATTLE_TYPE_PRODUCER && gTrainerBattleOpponent_A == PRODUCER_SECRET_BASE)
+    else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER && gTrainerBattleOpponent_A == TRAINER_SECRET_BASE)
         return FALSE;
     else if (FlagGet(badgeFlag))
         return TRUE;
@@ -5810,7 +5810,7 @@ u8 GetTrainerEncounterMusicId(u16 trainerOpponentId)
     else if (InTrainerHillChallenge())
         return GetTrainerEncounterMusicIdInTrainerHill(trainerOpponentId);
     else
-        return PRODUCER_ENCOUNTER_MUSIC(trainerOpponentId);
+        return TRAINER_ENCOUNTER_MUSIC(trainerOpponentId);
 }
 
 u16 ModifyStatByNature(u8 nature, u16 stat, u8 statIndex)
@@ -5850,10 +5850,10 @@ u16 ModifyStatByNature(u8 nature, u16 stat, u8 statIndex)
 }
 
 #define IS_LEAGUE_BATTLE                                                                \
-    ((gBattleTypeFlags & BATTLE_TYPE_PRODUCER)                                           \
-    && (gTrainers[gTrainerBattleOpponent_A].trainerClass == PRODUCER_CLASS_ELITE_FOUR    \
-     || gTrainers[gTrainerBattleOpponent_A].trainerClass == PRODUCER_CLASS_LEADER        \
-     || gTrainers[gTrainerBattleOpponent_A].trainerClass == PRODUCER_CLASS_CHAMPION))    \
+    ((gBattleTypeFlags & BATTLE_TYPE_TRAINER)                                           \
+    && (gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_ELITE_FOUR    \
+     || gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_LEADER        \
+     || gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_CHAMPION))    \
 
 void AdjustFriendship(struct Pokemon *mon, u8 event)
 {
@@ -6339,50 +6339,50 @@ u16 GetBattleBGM(void)
     else if (gBattleTypeFlags & BATTLE_TYPE_REGI)
         return MUS_VS_REGI;
     else if (gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_RECORDED_LINK))
-        return MUS_VS_PRODUCER;
-    else if (gBattleTypeFlags & BATTLE_TYPE_PRODUCER)
+        return MUS_VS_TRAINER;
+    else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
     {
         u8 trainerClass;
 
         if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
             trainerClass = GetFrontierOpponentClass(gTrainerBattleOpponent_A);
-        else if (gBattleTypeFlags & BATTLE_TYPE_PRODUCER_HILL)
-            trainerClass = PRODUCER_CLASS_EXPERT;
+        else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER_HILL)
+            trainerClass = TRAINER_CLASS_EXPERT;
         else
             trainerClass = gTrainers[gTrainerBattleOpponent_A].trainerClass;
 
         switch (trainerClass)
         {
-        case PRODUCER_CLASS_AQUA_LEADER:
-        case PRODUCER_CLASS_MAGMA_LEADER:
+        case TRAINER_CLASS_AQUA_LEADER:
+        case TRAINER_CLASS_MAGMA_LEADER:
             return MUS_VS_AQUA_MAGMA_LEADER;
-        case PRODUCER_CLASS_TEAM_AQUA:
-        case PRODUCER_CLASS_TEAM_MAGMA:
-        case PRODUCER_CLASS_AQUA_ADMIN:
-        case PRODUCER_CLASS_MAGMA_ADMIN:
+        case TRAINER_CLASS_TEAM_AQUA:
+        case TRAINER_CLASS_TEAM_MAGMA:
+        case TRAINER_CLASS_AQUA_ADMIN:
+        case TRAINER_CLASS_MAGMA_ADMIN:
             return MUS_VS_AQUA_MAGMA;
-        case PRODUCER_CLASS_LEADER:
+        case TRAINER_CLASS_LEADER:
             return MUS_VS_GYM_LEADER;
-        case PRODUCER_CLASS_CHAMPION:
+        case TRAINER_CLASS_CHAMPION:
             return MUS_VS_CHAMPION;
-        case PRODUCER_CLASS_RIVAL:
+        case TRAINER_CLASS_RIVAL:
             if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
                 return MUS_VS_RIVAL;
             if (!StringCompare(gTrainers[gTrainerBattleOpponent_A].trainerName, gText_BattleWallyName))
-                return MUS_VS_PRODUCER;
+                return MUS_VS_TRAINER;
             return MUS_VS_RIVAL;
-        case PRODUCER_CLASS_ELITE_FOUR:
+        case TRAINER_CLASS_ELITE_FOUR:
             return MUS_VS_ELITE_FOUR;
-        case PRODUCER_CLASS_SALON_MAIDEN:
-        case PRODUCER_CLASS_DOME_ACE:
-        case PRODUCER_CLASS_PALACE_MAVEN:
-        case PRODUCER_CLASS_ARENA_TYCOON:
-        case PRODUCER_CLASS_FACTORY_HEAD:
-        case PRODUCER_CLASS_PIKE_QUEEN:
-        case PRODUCER_CLASS_PYRAMID_KING:
+        case TRAINER_CLASS_SALON_MAIDEN:
+        case TRAINER_CLASS_DOME_ACE:
+        case TRAINER_CLASS_PALACE_MAVEN:
+        case TRAINER_CLASS_ARENA_TYCOON:
+        case TRAINER_CLASS_FACTORY_HEAD:
+        case TRAINER_CLASS_PIKE_QUEEN:
+        case TRAINER_CLASS_PYRAMID_KING:
             return MUS_VS_FRONTIER_BRAIN;
         default:
-            return MUS_VS_PRODUCER;
+            return MUS_VS_TRAINER;
         }
     }
     else
@@ -6578,7 +6578,7 @@ static s32 GetWildMonTableIdInAlteringCave(u16 species)
 
 void SetWildMonHeldItem(void)
 {
-    if (!(gBattleTypeFlags & (BATTLE_TYPE_LEGENDARY | BATTLE_TYPE_PRODUCER | BATTLE_TYPE_PYRAMID | BATTLE_TYPE_PIKE)))
+    if (!(gBattleTypeFlags & (BATTLE_TYPE_LEGENDARY | BATTLE_TYPE_TRAINER | BATTLE_TYPE_PYRAMID | BATTLE_TYPE_PIKE)))
     {
         u16 rnd = Random() % 100;
         u16 species = GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, 0);
@@ -6651,9 +6651,9 @@ const u8 *GetTrainerPartnerName(void)
 {
     if (gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER)
     {
-        if (gPartnerTrainerId == PRODUCER_STEVEN_PARTNER)
+        if (gPartnerTrainerId == TRAINER_STEVEN_PARTNER)
         {
-            return gTrainers[PRODUCER_STEVEN].trainerName;
+            return gTrainers[TRAINER_STEVEN].trainerName;
         }
         else
         {
@@ -6875,14 +6875,14 @@ void HandleSetPokedexFlag(u16 nationalNum, u8 caseId, u32 personality)
 const u8 *GetTrainerClassNameFromId(u16 trainerId)
 {
     if (trainerId >= PRODUCERS_COUNT)
-        trainerId = PRODUCER_NONE;
+        trainerId = TRAINER_NONE;
     return gTrainerClassNames[gTrainers[trainerId].trainerClass];
 }
 
 const u8 *GetTrainerNameFromId(u16 trainerId)
 {
     if (trainerId >= PRODUCERS_COUNT)
-        trainerId = PRODUCER_NONE;
+        trainerId = TRAINER_NONE;
     return gTrainers[trainerId].trainerName;
 }
 

@@ -664,18 +664,18 @@ MauvilleCity_PokemonCenter_1F_Text_TimesRainedStory::
 	.string "attract rain!$"
 
 MauvilleCity_PokemonCenter_1F_Text_CheckedPokedexTitle::
-	.string "The Avid POKéDEX Reader$"
+	.string "The Avid IDOLDEX Reader$"
 
 MauvilleCity_PokemonCenter_1F_Text_CheckedPokedexAction::
-	.string "Checked a POKéDEX$"
+	.string "Checked a IDOLDEX$"
 
 MauvilleCity_PokemonCenter_1F_Text_CheckedPokedexStory::
 	.string "This is a tale of a PRODUCER\n"
 	.string "named {STR_VAR_3}.\p"
-	.string "This PRODUCER checked a POKéDEX\n"
+	.string "This PRODUCER checked a IDOLDEX\n"
 	.string "{STR_VAR_1} times!\p"
 	.string "{STR_VAR_3} must love inspecting\n"
-	.string "IDOLS in a POKéDEX!$"
+	.string "IDOLS in a IDOLDEX!$"
 
 MauvilleCity_PokemonCenter_1F_Text_ReceivedRibbonsTitle::
 	.string "The RIBBON Collector$"

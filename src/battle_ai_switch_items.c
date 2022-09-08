@@ -538,7 +538,7 @@ void AI_TrySwitchOrUseItem(void)
     else
         party = gEnemyParty;
 
-    if (gBattleTypeFlags & BATTLE_TYPE_PRODUCER)
+    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
     {
         if (ShouldSwitch())
         {
@@ -830,7 +830,7 @@ static bool8 ShouldUseItem(void)
         }
     }
 
-    for (i = 0; i < MAX_PRODUCER_ITEMS; i++)
+    for (i = 0; i < MAX_TRAINER_ITEMS; i++)
     {
         u16 item;
         const u8 *itemEffects;
