@@ -845,21 +845,21 @@ static bool8 DoesTypePreventStatus(u16 species, u32 status)
     switch (status)
     {
     case STATUS1_TOXIC_POISON:
-        if (gBaseStats[species].type1 == TYPE_STEEL || gBaseStats[species].type1 == TYPE_POISON
-            || gBaseStats[species].type2 == TYPE_STEEL || gBaseStats[species].type2 == TYPE_POISON)
+        if (gBaseStats[species].type1 == TYPE_METAL || gBaseStats[species].type1 == TYPE_TOXIC
+            || gBaseStats[species].type2 == TYPE_METAL || gBaseStats[species].type2 == TYPE_TOXIC)
             ret = TRUE;
         break;
     case STATUS1_FREEZE:
-        if (gBaseStats[species].type1 == TYPE_ICE || gBaseStats[species].type2 == TYPE_ICE)
+        if (gBaseStats[species].type1 == TYPE_COLD || gBaseStats[species].type2 == TYPE_COLD)
             ret = TRUE;
         break;
     case STATUS1_PARALYSIS:
-        if (gBaseStats[species].type1 == TYPE_GROUND || gBaseStats[species].type1 == TYPE_ELECTRIC
-            || gBaseStats[species].type2 == TYPE_GROUND || gBaseStats[species].type2 == TYPE_ELECTRIC)
+        if (gBaseStats[species].type1 == TYPE_ROCK || gBaseStats[species].type1 == TYPE_ANGEL
+            || gBaseStats[species].type2 == TYPE_ROCK || gBaseStats[species].type2 == TYPE_ANGEL)
             ret = TRUE;
         break;
     case STATUS1_BURN:
-        if (gBaseStats[species].type1 == TYPE_FIRE || gBaseStats[species].type2 == TYPE_FIRE)
+        if (gBaseStats[species].type1 == TYPE_HOT || gBaseStats[species].type2 == TYPE_HOT)
             ret = TRUE;
         break;
     case STATUS1_SLEEP:

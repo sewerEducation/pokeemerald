@@ -1909,21 +1909,21 @@ const u16 gLinkPlayerFacilityClasses[NUM_MALE_LINK_FACILITY_CLASSES + NUM_FEMALE
 static const u8 sHoldEffectToType[][2] =
 {
     {HOLD_EFFECT_BUG_POWER, TYPE_BUG},
-    {HOLD_EFFECT_STEEL_POWER, TYPE_STEEL},
-    {HOLD_EFFECT_GROUND_POWER, TYPE_GROUND},
-    {HOLD_EFFECT_ROCK_POWER, TYPE_ROCK},
-    {HOLD_EFFECT_GRASS_POWER, TYPE_GRASS},
-    {HOLD_EFFECT_DARK_POWER, TYPE_DARK},
-    {HOLD_EFFECT_FIGHTING_POWER, TYPE_FIGHTING},
-    {HOLD_EFFECT_ELECTRIC_POWER, TYPE_ELECTRIC},
-    {HOLD_EFFECT_WATER_POWER, TYPE_WATER},
-    {HOLD_EFFECT_FLYING_POWER, TYPE_FLYING},
-    {HOLD_EFFECT_POISON_POWER, TYPE_POISON},
-    {HOLD_EFFECT_ICE_POWER, TYPE_ICE},
-    {HOLD_EFFECT_GHOST_POWER, TYPE_GHOST},
-    {HOLD_EFFECT_PSYCHIC_POWER, TYPE_PSYCHIC},
-    {HOLD_EFFECT_FIRE_POWER, TYPE_FIRE},
-    {HOLD_EFFECT_DRAGON_POWER, TYPE_DRAGON},
+    {HOLD_EFFECT_STEEL_POWER, TYPE_METAL},
+    {HOLD_EFFECT_GROUND_POWER, TYPE_ROCK},
+    {HOLD_EFFECT_ROCK_POWER, TYPE_WILD},
+    {HOLD_EFFECT_GRASS_POWER, TYPE_NATURE},
+    {HOLD_EFFECT_DARK_POWER, TYPE_COSMIC},
+    {HOLD_EFFECT_FIGHTING_POWER, TYPE_SPORTS},
+    {HOLD_EFFECT_ELECTRIC_POWER, TYPE_ANGEL},
+    {HOLD_EFFECT_WATER_POWER, TYPE_OCEAN},
+    {HOLD_EFFECT_FLYING_POWER, TYPE_GAL},
+    {HOLD_EFFECT_POISON_POWER, TYPE_TOXIC},
+    {HOLD_EFFECT_ICE_POWER, TYPE_COLD},
+    {HOLD_EFFECT_GHOST_POWER, TYPE_DEVIL},
+    {HOLD_EFFECT_PSYCHIC_POWER, TYPE_ESPER},
+    {HOLD_EFFECT_FIRE_POWER, TYPE_HOT},
+    {HOLD_EFFECT_DRAGON_POWER, TYPE_GHOST},
     {HOLD_EFFECT_NORMAL_POWER, TYPE_NORMAL},
 };
 
@@ -3179,7 +3179,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         attack *= 2;
 
     // Apply abilities / field sports
-    if (defender->ability == ABILITY_THICK_FAT && (type == TYPE_FIRE || type == TYPE_ICE))
+    if (defender->ability == ABILITY_THICK_FAT && (type == TYPE_HOT || type == TYPE_COLD))
         spAttack /= 2;
     if (attacker->ability == ABILITY_HUSTLE)
         attack = (150 * attack) / 100;
@@ -3191,15 +3191,15 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         attack = (150 * attack) / 100;
     if (defender->ability == ABILITY_MARVEL_SCALE && defender->status1)
         defense = (150 * defense) / 100;
-    if (type == TYPE_ELECTRIC && AbilityBattleEffects(ABILITYEFFECT_FIELD_SPORT, 0, 0, ABILITYEFFECT_MUD_SPORT, 0))
+    if (type == TYPE_ANGEL && AbilityBattleEffects(ABILITYEFFECT_FIELD_SPORT, 0, 0, ABILITYEFFECT_MUD_SPORT, 0))
         gBattleMovePower /= 2;
-    if (type == TYPE_FIRE && AbilityBattleEffects(ABILITYEFFECT_FIELD_SPORT, 0, 0, ABILITYEFFECT_WATER_SPORT, 0))
+    if (type == TYPE_HOT && AbilityBattleEffects(ABILITYEFFECT_FIELD_SPORT, 0, 0, ABILITYEFFECT_WATER_SPORT, 0))
         gBattleMovePower /= 2;
-    if (type == TYPE_GRASS && attacker->ability == ABILITY_OVERGROW && attacker->hp <= (attacker->maxHP / 3))
+    if (type == TYPE_NATURE && attacker->ability == ABILITY_OVERGROW && attacker->hp <= (attacker->maxHP / 3))
         gBattleMovePower = (150 * gBattleMovePower) / 100;
-    if (type == TYPE_FIRE && attacker->ability == ABILITY_BLAZE && attacker->hp <= (attacker->maxHP / 3))
+    if (type == TYPE_HOT && attacker->ability == ABILITY_BLAZE && attacker->hp <= (attacker->maxHP / 3))
         gBattleMovePower = (150 * gBattleMovePower) / 100;
-    if (type == TYPE_WATER && attacker->ability == ABILITY_TORRENT && attacker->hp <= (attacker->maxHP / 3))
+    if (type == TYPE_OCEAN && attacker->ability == ABILITY_TORRENT && attacker->hp <= (attacker->maxHP / 3))
         gBattleMovePower = (150 * gBattleMovePower) / 100;
     if (type == TYPE_BUG && attacker->ability == ABILITY_SWARM && attacker->hp <= (attacker->maxHP / 3))
         gBattleMovePower = (150 * gBattleMovePower) / 100;
@@ -3314,10 +3314,10 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
             {
                 switch (type)
                 {
-                case TYPE_FIRE:
+                case TYPE_HOT:
                     damage /= 2;
                     break;
-                case TYPE_WATER:
+                case TYPE_OCEAN:
                     damage = (15 * damage) / 10;
                     break;
                 }
@@ -3332,10 +3332,10 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
             {
                 switch (type)
                 {
-                case TYPE_FIRE:
+                case TYPE_HOT:
                     damage = (15 * damage) / 10;
                     break;
-                case TYPE_WATER:
+                case TYPE_OCEAN:
                     damage /= 2;
                     break;
                 }
@@ -3343,7 +3343,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         }
 
         // Flash fire triggered
-        if ((gBattleResources->flags->flags[battlerIdAtk] & RESOURCE_FLAG_FLASH_FIRE) && type == TYPE_FIRE)
+        if ((gBattleResources->flags->flags[battlerIdAtk] & RESOURCE_FLAG_FLASH_FIRE) && type == TYPE_HOT)
             damage = (15 * damage) / 10;
     }
 

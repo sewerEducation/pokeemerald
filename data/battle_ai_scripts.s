@@ -64,17 +64,17 @@ AI_CBM_CheckIfNegatesType:
 
 CheckIfVoltAbsorbCancelsElectric:
 	get_curr_move_type
-	if_equal_ TYPE_ELECTRIC, Score_Minus12
+	if_equal_ TYPE_ANGEL, Score_Minus12
 	goto AI_CheckBadMove_CheckSoundproof_
 
 CheckIfWaterAbsorbCancelsWater:
 	get_curr_move_type
-	if_equal_ TYPE_WATER, Score_Minus12
+	if_equal_ TYPE_OCEAN, Score_Minus12
 	goto AI_CheckBadMove_CheckSoundproof_
 
 CheckIfFlashFireCancelsFire:
 	get_curr_move_type
-	if_equal_ TYPE_FIRE, Score_Minus12
+	if_equal_ TYPE_HOT, Score_Minus12
 	goto AI_CheckBadMove_CheckSoundproof_
 
 CheckIfWonderGuardCancelsMove:
@@ -83,7 +83,7 @@ CheckIfWonderGuardCancelsMove:
 
 CheckIfLevitateCancelsGroundMove:
 	get_curr_move_type
-	if_equal_ TYPE_GROUND, Score_Minus10
+	if_equal_ TYPE_ROCK, Score_Minus10
 AI_CheckBadMove_CheckSoundproof_:
 	get_how_powerful_move_is
 	if_equal MOVE_POWER_OTHER, AI_CheckBadMove_CheckSoundproof  @ Pointless check
@@ -338,11 +338,11 @@ AI_CBM_Roar:
 
 AI_CBM_Toxic:
 	get_target_type1
-	if_equal TYPE_STEEL, Score_Minus10
-	if_equal TYPE_POISON, Score_Minus10
+	if_equal TYPE_METAL, Score_Minus10
+	if_equal TYPE_TOXIC, Score_Minus10
 	get_target_type2
-	if_equal TYPE_STEEL, Score_Minus10
-	if_equal TYPE_POISON, Score_Minus10
+	if_equal TYPE_METAL, Score_Minus10
+	if_equal TYPE_TOXIC, Score_Minus10
 	get_ability AI_TARGET
 	if_equal ABILITY_IMMUNITY, Score_Minus10
 	if_status AI_TARGET, STATUS1_ANY, Score_Minus10
@@ -408,9 +408,9 @@ AI_CBM_Substitute:
 AI_CBM_LeechSeed:
 	if_status3 AI_TARGET, STATUS3_LEECHSEED, Score_Minus10
 	get_target_type1
-	if_equal TYPE_GRASS, Score_Minus10
+	if_equal TYPE_NATURE, Score_Minus10
 	get_target_type2
-	if_equal TYPE_GRASS, Score_Minus10
+	if_equal TYPE_NATURE, Score_Minus10
 	end
 
 AI_CBM_Disable:
@@ -941,14 +941,14 @@ AI_CV_DefenseUp_End:
 
 AI_CV_DefenseUp_PhysicalTypes:
 	.byte TYPE_NORMAL
-	.byte TYPE_FIGHTING
-	.byte TYPE_POISON
-	.byte TYPE_GROUND
-	.byte TYPE_FLYING
+	.byte TYPE_SPORTS
+	.byte TYPE_TOXIC
 	.byte TYPE_ROCK
+	.byte TYPE_GAL
+	.byte TYPE_WILD
 	.byte TYPE_BUG
-	.byte TYPE_GHOST
-	.byte TYPE_STEEL
+	.byte TYPE_DEVIL
+	.byte TYPE_METAL
 	.byte -1
 
 AI_CV_SpeedUp:
@@ -1012,14 +1012,14 @@ AI_CV_SpDefUp_End:
 
 AI_CV_SpDefUp_PhysicalTypes:
 	.byte TYPE_NORMAL
-	.byte TYPE_FIGHTING
-	.byte TYPE_POISON
-	.byte TYPE_GROUND
-	.byte TYPE_FLYING
+	.byte TYPE_SPORTS
+	.byte TYPE_TOXIC
 	.byte TYPE_ROCK
+	.byte TYPE_GAL
+	.byte TYPE_WILD
 	.byte TYPE_BUG
-	.byte TYPE_GHOST
-	.byte TYPE_STEEL
+	.byte TYPE_DEVIL
+	.byte TYPE_METAL
 	.byte -1
 
 AI_CV_AccuracyUp:
@@ -1109,11 +1109,11 @@ AI_CV_AttackDown_End:
 
 AI_CV_AttackDown_UnknownTypeList:
 	.byte TYPE_NORMAL
-	.byte TYPE_FIGHTING
-	.byte TYPE_GROUND
+	.byte TYPE_SPORTS
 	.byte TYPE_ROCK
+	.byte TYPE_WILD
 	.byte TYPE_BUG
-	.byte TYPE_STEEL
+	.byte TYPE_METAL
 	.byte -1
 
 AI_CV_DefenseDown:
@@ -1168,14 +1168,14 @@ AI_CV_SpAtkDown_End:
 	end
 
 AI_CV_SpAtkDown_SpecialTypeList:
-	.byte TYPE_FIRE
-	.byte TYPE_WATER
-	.byte TYPE_GRASS
-	.byte TYPE_ELECTRIC
-	.byte TYPE_PSYCHIC
-	.byte TYPE_ICE
-	.byte TYPE_DRAGON
-	.byte TYPE_DARK
+	.byte TYPE_HOT
+	.byte TYPE_OCEAN
+	.byte TYPE_NATURE
+	.byte TYPE_ANGEL
+	.byte TYPE_ESPER
+	.byte TYPE_COLD
+	.byte TYPE_GHOST
+	.byte TYPE_COSMIC
 	.byte -1
 
 AI_CV_SpDefDown:
@@ -1378,14 +1378,14 @@ AI_CV_LightScreen_End:
 	end
 
 AI_CV_LightScreen_SpecialTypeList:
-	.byte TYPE_FIRE
-	.byte TYPE_WATER
-	.byte TYPE_GRASS
-	.byte TYPE_ELECTRIC
-	.byte TYPE_PSYCHIC
-	.byte TYPE_ICE
-	.byte TYPE_DRAGON
-	.byte TYPE_DARK
+	.byte TYPE_HOT
+	.byte TYPE_OCEAN
+	.byte TYPE_NATURE
+	.byte TYPE_ANGEL
+	.byte TYPE_ESPER
+	.byte TYPE_COLD
+	.byte TYPE_GHOST
+	.byte TYPE_COSMIC
 	.byte -1
 
 AI_CV_Rest:
@@ -1498,14 +1498,14 @@ AI_CV_Reflect_End:
 
 AI_CV_Reflect_PhysicalTypeList:
 	.byte TYPE_NORMAL
-	.byte TYPE_FIGHTING
-	.byte TYPE_FLYING
-	.byte TYPE_POISON
-	.byte TYPE_GROUND
+	.byte TYPE_SPORTS
+	.byte TYPE_GAL
+	.byte TYPE_TOXIC
 	.byte TYPE_ROCK
+	.byte TYPE_WILD
 	.byte TYPE_BUG
-	.byte TYPE_GHOST
-	.byte TYPE_STEEL
+	.byte TYPE_DEVIL
+	.byte TYPE_METAL
 	.byte -1
 
 AI_CV_Poison:
@@ -1658,14 +1658,14 @@ AI_CV_Counter_End:
 
 AI_CV_Counter_PhysicalTypeList:
 	.byte TYPE_NORMAL
-	.byte TYPE_FIGHTING
-	.byte TYPE_FLYING
-	.byte TYPE_POISON
-	.byte TYPE_GROUND
+	.byte TYPE_SPORTS
+	.byte TYPE_GAL
+	.byte TYPE_TOXIC
 	.byte TYPE_ROCK
+	.byte TYPE_WILD
 	.byte TYPE_BUG
-	.byte TYPE_GHOST
-	.byte TYPE_STEEL
+	.byte TYPE_DEVIL
+	.byte TYPE_METAL
 	.byte -1
 
 AI_CV_Encore:
@@ -1853,9 +1853,9 @@ AI_CV_Thief_EncourageItemsToSteal:
 
 AI_CV_Curse:
 	get_user_type1
-	if_equal TYPE_GHOST, AI_CV_Curse4
+	if_equal TYPE_DEVIL, AI_CV_Curse4
 	get_user_type2
-	if_equal TYPE_GHOST, AI_CV_Curse4
+	if_equal TYPE_DEVIL, AI_CV_Curse4
 	if_stat_level_more_than AI_USER, STAT_DEF, 9, AI_CV_Curse_End
 	if_random_less_than 128, AI_CV_Curse2
 	score +1
@@ -1909,7 +1909,7 @@ AI_CV_Protect4:
 	if_random_less_than 128, AI_CV_Protect_End
 	score -1
 	goto AI_CV_Protect_End
-	
+
 AI_CV_Protect3:
 	get_last_used_bank_move AI_TARGET
 	get_move_effect_from_result
@@ -1924,15 +1924,15 @@ AI_CV_Protect_End:
 AI_CV_Foresight:
 .ifdef BUGFIX
 	get_target_type1
-	if_equal TYPE_GHOST, AI_CV_Foresight2
+	if_equal TYPE_DEVIL, AI_CV_Foresight2
 	get_target_type2
-	if_equal TYPE_GHOST, AI_CV_Foresight2
+	if_equal TYPE_DEVIL, AI_CV_Foresight2
 	if_stat_level_more_than AI_TARGET, STAT_EVASION, 8, AI_CV_Foresight3
 .else
 	get_user_type1
-	if_equal TYPE_GHOST, AI_CV_Foresight2
+	if_equal TYPE_DEVIL, AI_CV_Foresight2
 	get_user_type2
-	if_equal TYPE_GHOST, AI_CV_Foresight2
+	if_equal TYPE_DEVIL, AI_CV_Foresight2
 	if_stat_level_more_than AI_USER, STAT_EVASION, 8, AI_CV_Foresight3
 .endif
 	score -2
@@ -2003,13 +2003,13 @@ AI_CV_Pursuit:
 	is_first_turn_for AI_USER
 	if_not_equal 0, AI_CV_Pursuit_End
 	get_target_type1
-	if_equal TYPE_GHOST, AI_CV_Pursuit2
+	if_equal TYPE_DEVIL, AI_CV_Pursuit2
 	get_target_type1
-	if_equal TYPE_PSYCHIC, AI_CV_Pursuit2
+	if_equal TYPE_ESPER, AI_CV_Pursuit2
 	get_target_type2
-	if_equal TYPE_GHOST, AI_CV_Pursuit2
+	if_equal TYPE_DEVIL, AI_CV_Pursuit2
 	get_target_type2
-	if_equal TYPE_PSYCHIC, AI_CV_Pursuit2
+	if_equal TYPE_ESPER, AI_CV_Pursuit2
 	goto AI_CV_Pursuit_End
 
 AI_CV_Pursuit2:
@@ -2144,14 +2144,14 @@ AI_CV_MirrorCoat_End:
 	end
 
 AI_CV_MirrorCoat_SpecialTypeList:
-	.byte TYPE_FIRE
-	.byte TYPE_WATER
-	.byte TYPE_GRASS
-	.byte TYPE_ELECTRIC
-	.byte TYPE_PSYCHIC
-	.byte TYPE_ICE
-	.byte TYPE_DRAGON
-	.byte TYPE_DARK
+	.byte TYPE_HOT
+	.byte TYPE_OCEAN
+	.byte TYPE_NATURE
+	.byte TYPE_ANGEL
+	.byte TYPE_ESPER
+	.byte TYPE_COLD
+	.byte TYPE_GHOST
+	.byte TYPE_COSMIC
 	.byte -1
 
 AI_CV_ChargeUpMove:
@@ -2197,9 +2197,9 @@ AI_CV_SemiInvulnerable_CheckSandstormTypes:
 
 AI_CV_SemiInvulnerable_CheckIceType:
 	get_user_type1
-	if_equal TYPE_ICE, AI_CV_SemiInvulnerable_TryEncourage
+	if_equal TYPE_COLD, AI_CV_SemiInvulnerable_TryEncourage
 	get_user_type2
-	if_equal TYPE_ICE, AI_CV_SemiInvulnerable_TryEncourage
+	if_equal TYPE_COLD, AI_CV_SemiInvulnerable_TryEncourage
 AI_CV_SemiInvulnerable5:
 	if_target_faster AI_CV_SemiInvulnerable_End
 	get_last_used_bank_move AI_TARGET
@@ -2214,9 +2214,9 @@ AI_CV_SemiInvulnerable_End:
 	end
 
 AI_CV_SandstormResistantTypes:
-	.byte TYPE_GROUND
 	.byte TYPE_ROCK
-	.byte TYPE_STEEL
+	.byte TYPE_WILD
+	.byte TYPE_METAL
 	.byte -1
 
 AI_CV_FakeOut:
@@ -2528,9 +2528,9 @@ AI_CV_Snatch_End:
 AI_CV_MudSport:
 	if_hp_less_than AI_USER, 50, AI_CV_MudSport_ScoreDown1
 	get_target_type1
-	if_equal TYPE_ELECTRIC, AI_CV_MudSport2
+	if_equal TYPE_ANGEL, AI_CV_MudSport2
 	get_target_type2
-	if_equal TYPE_ELECTRIC, AI_CV_MudSport2
+	if_equal TYPE_ANGEL, AI_CV_MudSport2
 	goto AI_CV_MudSport_ScoreDown1
 
 AI_CV_MudSport2:
@@ -2559,9 +2559,9 @@ AI_CV_Overheat_End:
 AI_CV_WaterSport:
 	if_hp_less_than AI_USER, 50, AI_CV_WaterSport_ScoreDown1
 	get_target_type1
-	if_equal TYPE_FIRE, AI_CV_WaterSport2
+	if_equal TYPE_HOT, AI_CV_WaterSport2
 	get_target_type2
-	if_equal TYPE_FIRE, AI_CV_WaterSport2
+	if_equal TYPE_HOT, AI_CV_WaterSport2
 	goto AI_CV_WaterSport_ScoreDown1
 
 AI_CV_WaterSport2:
@@ -2772,8 +2772,8 @@ AI_DoubleBattle:
 	get_curr_move_type
 	if_move MOVE_EARTHQUAKE, AI_DoubleBattleAllHittingGroundMove
 	if_move MOVE_MAGNITUDE, AI_DoubleBattleAllHittingGroundMove
-	if_equal TYPE_ELECTRIC, AI_DoubleBattleElectricMove
-	if_equal TYPE_FIRE, AI_DoubleBattleFireMove
+	if_equal TYPE_ANGEL, AI_DoubleBattleElectricMove
+	if_equal TYPE_HOT, AI_DoubleBattleFireMove
 	get_ability AI_USER
 	if_not_equal ABILITY_GUTS, AI_DoubleBattleCheckUserStatus
 	if_has_move AI_USER_PARTNER, MOVE_HELPING_HAND, AI_DoubleBattlePartnerHasHelpingHand
@@ -2797,11 +2797,11 @@ AI_DoubleBattleCheckUserStatus2:
 
 AI_DoubleBattleAllHittingGroundMove:
 	if_ability AI_USER_PARTNER, ABILITY_LEVITATE, Score_Plus2
-	if_type AI_USER_PARTNER, TYPE_FLYING, Score_Plus2
-	if_type AI_USER_PARTNER, TYPE_FIRE, Score_Minus10
-	if_type AI_USER_PARTNER, TYPE_ELECTRIC, Score_Minus10
-	if_type AI_USER_PARTNER, TYPE_POISON, Score_Minus10
-	if_type AI_USER_PARTNER, TYPE_ROCK, Score_Minus10
+	if_type AI_USER_PARTNER, TYPE_GAL, Score_Plus2
+	if_type AI_USER_PARTNER, TYPE_HOT, Score_Minus10
+	if_type AI_USER_PARTNER, TYPE_ANGEL, Score_Minus10
+	if_type AI_USER_PARTNER, TYPE_TOXIC, Score_Minus10
+	if_type AI_USER_PARTNER, TYPE_WILD, Score_Minus10
 	goto Score_Minus3
 
 AI_DoubleBattleSkillSwap:
@@ -2815,7 +2815,7 @@ AI_DoubleBattleSkillSwap:
 AI_DoubleBattleElectricMove:
 	if_no_ability AI_TARGET_PARTNER, ABILITY_LIGHTNING_ROD, AI_DoubleBattleElectricMoveEnd
 	score -2
-	if_no_type AI_TARGET_PARTNER, TYPE_GROUND, AI_DoubleBattleElectricMoveEnd
+	if_no_type AI_TARGET_PARTNER, TYPE_ROCK, AI_DoubleBattleElectricMoveEnd
 	score -8
 AI_DoubleBattleElectricMoveEnd:
 	end
@@ -2831,7 +2831,7 @@ AI_TryOnAlly:
 	get_how_powerful_move_is
 	if_equal MOVE_POWER_OTHER, AI_TryStatusMoveOnAlly
 	get_curr_move_type
-	if_equal TYPE_FIRE, AI_TryFireMoveOnAlly
+	if_equal TYPE_HOT, AI_TryFireMoveOnAlly
 AI_DiscourageOnAlly:
 	goto Score_Minus30
 
@@ -2859,10 +2859,10 @@ AI_TrySkillSwapOnAlly:
 	get_ability AI_TARGET
 	if_equal ABILITY_LEVITATE, Score_Minus30_
 	get_target_type1
-	if_not_equal TYPE_ELECTRIC, AI_TrySkillSwapOnAlly2
+	if_not_equal TYPE_ANGEL, AI_TrySkillSwapOnAlly2
 	score +1
 	get_target_type2
-	if_not_equal TYPE_ELECTRIC, AI_TrySkillSwapOnAlly2
+	if_not_equal TYPE_ANGEL, AI_TrySkillSwapOnAlly2
 	score +1
 	end
 

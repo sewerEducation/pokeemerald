@@ -485,7 +485,7 @@ static void HandleInputChooseMove(void)
         PlaySE(SE_SELECT);
         if (moveInfo->moves[gMoveSelectionCursor[gActiveBattler]] == MOVE_CURSE)
         {
-            if (moveInfo->monType1 != TYPE_GHOST && moveInfo->monType2 != TYPE_GHOST)
+            if (moveInfo->monType1 != TYPE_DEVIL && moveInfo->monType2 != TYPE_DEVIL)
                 moveTarget = MOVE_TARGET_USER;
             else
                 moveTarget = MOVE_TARGET_SELECTED;

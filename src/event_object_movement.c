@@ -7406,7 +7406,7 @@ static void GetGroundEffectFlags_Reflection(struct ObjectEvent *objEvent, u32 *f
 {
     u32 reflectionFlags[NUM_REFLECTION_TYPES - 1] = {
         [REFL_TYPE_ICE   - 1] = GROUND_EFFECT_FLAG_ICE_REFLECTION,
-        [REFL_TYPE_WATER - 1] = GROUND_EFFECT_FLAG_WATER_REFLECTION
+        [REFL_TYPE_OCEAN - 1] = GROUND_EFFECT_FLAG_WATER_REFLECTION
     };
     u8 reflType = ObjectEventGetNearbyReflectionType(objEvent);
 
@@ -7627,7 +7627,7 @@ static u8 GetReflectionTypeByMetatileBehavior(u32 behavior)
     if (MetatileBehavior_IsIce(behavior))
         return REFL_TYPE_ICE;
     else if (MetatileBehavior_IsReflective(behavior))
-        return REFL_TYPE_WATER;
+        return REFL_TYPE_OCEAN;
     else
         return REFL_TYPE_NONE;
 }

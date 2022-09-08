@@ -148,11 +148,11 @@ static bool8 FindMonThatAbsorbsOpponentsMove(void)
         battlerIn2 = gActiveBattler;
     }
 
-    if (gBattleMoves[gLastLandedMoves[gActiveBattler]].type == TYPE_FIRE)
+    if (gBattleMoves[gLastLandedMoves[gActiveBattler]].type == TYPE_HOT)
         absorbingTypeAbility = ABILITY_FLASH_FIRE;
-    else if (gBattleMoves[gLastLandedMoves[gActiveBattler]].type == TYPE_WATER)
+    else if (gBattleMoves[gLastLandedMoves[gActiveBattler]].type == TYPE_OCEAN)
         absorbingTypeAbility = ABILITY_WATER_ABSORB;
-    else if (gBattleMoves[gLastLandedMoves[gActiveBattler]].type == TYPE_ELECTRIC)
+    else if (gBattleMoves[gLastLandedMoves[gActiveBattler]].type == TYPE_ANGEL)
         absorbingTypeAbility = ABILITY_VOLT_ABSORB;
     else
         return FALSE;
@@ -446,7 +446,7 @@ static bool8 ShouldSwitch(void)
         return FALSE;
     if (ABILITY_ON_FIELD2(ABILITY_MAGNET_PULL))
     {
-        if (IS_BATTLER_OF_TYPE(gActiveBattler, TYPE_STEEL))
+        if (IS_BATTLER_OF_TYPE(gActiveBattler, TYPE_METAL))
             return FALSE;
     }
     if (gBattleTypeFlags & BATTLE_TYPE_ARENA)

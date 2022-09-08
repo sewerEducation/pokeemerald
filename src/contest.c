@@ -5317,7 +5317,7 @@ static void SetMoveSpecificAnimData(u8 contestant)
     switch (move)
     {
     case MOVE_CURSE:
-        if (gBaseStats[species].type1 == TYPE_GHOST || gBaseStats[species].type2 == TYPE_GHOST)
+        if (gBaseStats[species].type1 == TYPE_DEVIL || gBaseStats[species].type2 == TYPE_DEVIL)
             gAnimMoveTurn = 0;
         else
             gAnimMoveTurn = 1;

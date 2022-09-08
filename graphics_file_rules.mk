@@ -22,7 +22,7 @@ POKEDEXGFXDIR := graphics/pokedex
 STARTERGFXDIR := graphics/starter_choose
 NAMINGGFXDIR := graphics/naming_screen
 
-types := normal fight flying poison ground rock bug ghost steel mystery fire water grass electric psychic ice dragon dark
+types := normal sports gal toxic rock wild bug devil metal mystery hot ocean nature angel esper cold ghost cosmic sweet
 contest_types := cool beauty cute smart tough
 
 
@@ -93,35 +93,35 @@ $(TILESETGFXDIR)/secondary/sootopolis/tiles.4bpp: %.4bpp: %.png
 SOOTOPOLISANIMDIR := $(TILESETGFXDIR)/secondary/sootopolis/anim
 
 $(SOOTOPOLISANIMDIR)/stormy_water/0.4bpp: $(SOOTOPOLISANIMDIR)/stormy_water/0_kyogre.4bpp \
-                                          $(SOOTOPOLISANIMDIR)/stormy_water/0_groudon.4bpp 
+                                          $(SOOTOPOLISANIMDIR)/stormy_water/0_groudon.4bpp
 	@cat $^ >$@
 
 $(SOOTOPOLISANIMDIR)/stormy_water/1.4bpp: $(SOOTOPOLISANIMDIR)/stormy_water/1_kyogre.4bpp \
-                                          $(SOOTOPOLISANIMDIR)/stormy_water/1_groudon.4bpp 
+                                          $(SOOTOPOLISANIMDIR)/stormy_water/1_groudon.4bpp
 	@cat $^ >$@
 
 $(SOOTOPOLISANIMDIR)/stormy_water/2.4bpp: $(SOOTOPOLISANIMDIR)/stormy_water/2_kyogre.4bpp \
-                                          $(SOOTOPOLISANIMDIR)/stormy_water/2_groudon.4bpp 
+                                          $(SOOTOPOLISANIMDIR)/stormy_water/2_groudon.4bpp
 	@cat $^ >$@
 
 $(SOOTOPOLISANIMDIR)/stormy_water/3.4bpp: $(SOOTOPOLISANIMDIR)/stormy_water/3_kyogre.4bpp \
-                                          $(SOOTOPOLISANIMDIR)/stormy_water/3_groudon.4bpp 
+                                          $(SOOTOPOLISANIMDIR)/stormy_water/3_groudon.4bpp
 	@cat $^ >$@
 
 $(SOOTOPOLISANIMDIR)/stormy_water/4.4bpp: $(SOOTOPOLISANIMDIR)/stormy_water/4_kyogre.4bpp \
-                                          $(SOOTOPOLISANIMDIR)/stormy_water/4_groudon.4bpp 
+                                          $(SOOTOPOLISANIMDIR)/stormy_water/4_groudon.4bpp
 	@cat $^ >$@
 
 $(SOOTOPOLISANIMDIR)/stormy_water/5.4bpp: $(SOOTOPOLISANIMDIR)/stormy_water/5_kyogre.4bpp \
-                                          $(SOOTOPOLISANIMDIR)/stormy_water/5_groudon.4bpp 
+                                          $(SOOTOPOLISANIMDIR)/stormy_water/5_groudon.4bpp
 	@cat $^ >$@
 
 $(SOOTOPOLISANIMDIR)/stormy_water/6.4bpp: $(SOOTOPOLISANIMDIR)/stormy_water/6_kyogre.4bpp \
-                                          $(SOOTOPOLISANIMDIR)/stormy_water/6_groudon.4bpp 
+                                          $(SOOTOPOLISANIMDIR)/stormy_water/6_groudon.4bpp
 	@cat $^ >$@
 
 $(SOOTOPOLISANIMDIR)/stormy_water/7.4bpp: $(SOOTOPOLISANIMDIR)/stormy_water/7_kyogre.4bpp \
-                                          $(SOOTOPOLISANIMDIR)/stormy_water/7_groudon.4bpp 
+                                          $(SOOTOPOLISANIMDIR)/stormy_water/7_groudon.4bpp
 	@cat $^ >$@
 
 $(TILESETGFXDIR)/secondary/battle_frontier_outside_west/tiles.4bpp: %.4bpp: %.png
@@ -671,7 +671,7 @@ $(OBJEVENTGFXDIR)/pics/effects/unknown_4F6D38/0.4bpp: %.4bpp: %.png
 
 $(INTERFACEGFXDIR)/selector_outline.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 8 -Wnum_tiles
-	
+
 $(BATTRANSGFXDIR)/frontier_logo_center.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 43 -Wnum_tiles
 
@@ -699,7 +699,7 @@ $(PKNAVGFXDIR)/header.4bpp: %.4bpp: %.png
 
 $(PKNAVGFXDIR)/device_outline.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 53 -Wnum_tiles
-	
+
 $(PKNAVGFXDIR)/match_call/ui.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -num_tiles 13 -Wnum_tiles
 
