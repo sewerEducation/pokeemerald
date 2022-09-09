@@ -239,7 +239,7 @@ u16 ChooseMoveAndTargetInBattlePalace(void)
 
     if (moveInfo->moves[chosenMoveId] == MOVE_CURSE)
     {
-        if (moveInfo->monType1 != TYPE_DEVIL && moveInfo->monType2 != TYPE_DEVIL)
+        if (moveInfo->monType1 != TYPE_GHOST && moveInfo->monType2 != TYPE_GHOST)
             moveTarget = MOVE_TARGET_USER;
         else
             moveTarget = MOVE_TARGET_SELECTED;

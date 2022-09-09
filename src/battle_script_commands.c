@@ -990,7 +990,7 @@ static void Cmd_attackcanceler(void)
         RecordAbilityBattle(gBattlerTarget, gLastUsedAbility);
     }
     else if (DEFENDER_IS_PROTECTED
-     && (gCurrentMove != MOVE_CURSE || IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_DEVIL))
+     && (gCurrentMove != MOVE_CURSE || IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_GHOST))
      && ((!IsTwoTurnsMove(gCurrentMove) || (gBattleMons[gBattlerAttacker].status2 & STATUS2_MULTIPLETURNS))))
     {
         CancelMultiTurnMoves(gBattlerAttacker);
@@ -6368,7 +6368,7 @@ static void Cmd_various(void)
         break;
     case VARIOUS_ARENA_JUDGMENT_WINDOW:
         i = BattleArena_ShowJudgmentWindow(&gBattleCommunication[0]);
-        
+
         // BattleArena_ShowJudgmentWindow's last state was an intermediate step.
         // Return without advancing the current instruction so that it will be called again.
         if (i == ARENA_RESULT_RUNNING)
@@ -7330,8 +7330,8 @@ static void Cmd_tryconversiontypechange(void)
 
         if (moveType == TYPE_MYSTERY)
         {
-            if (IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_DEVIL))
-                moveType = TYPE_DEVIL;
+            if (IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_GHOST))
+                moveType = TYPE_GHOST;
             else
                 moveType = TYPE_NORMAL;
         }
@@ -7356,8 +7356,8 @@ static void Cmd_tryconversiontypechange(void)
 
             if (moveType == TYPE_MYSTERY)
             {
-                if (IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_DEVIL))
-                    moveType = TYPE_DEVIL;
+                if (IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_GHOST))
+                    moveType = TYPE_GHOST;
                 else
                     moveType = TYPE_NORMAL;
             }

@@ -5317,7 +5317,7 @@ static void SetMoveSpecificAnimData(u8 contestant)
     switch (move)
     {
     case MOVE_CURSE:
-        if (gBaseStats[species].type1 == TYPE_DEVIL || gBaseStats[species].type2 == TYPE_DEVIL)
+        if (gBaseStats[species].type1 == TYPE_GHOST || gBaseStats[species].type2 == TYPE_GHOST)
             gAnimMoveTurn = 0;
         else
             gAnimMoveTurn = 1;
@@ -6113,4 +6113,3 @@ void StripPlayerAndMonNamesForLinkContest(struct ContestPokemon *mon, s32 langua
         name[PLAYER_NAME_LENGTH] = EOS;
     }
 }
-

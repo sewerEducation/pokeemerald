@@ -209,22 +209,23 @@ BattleFrontier_BattleFactoryPreBattleRoom_EventScript_ResumeChallenge::
 BattleFrontier_BattleFactoryPreBattleRoom_EventScript_CommentOnOpponentType::
 	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_InvestigatedUpcomingOpponent, MSGBOX_DEFAULT
 	call_if_eq VAR_0x8005, TYPE_NORMAL, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesNormal
-	call_if_eq VAR_0x8005, TYPE_SPORTS, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesFighting
-	call_if_eq VAR_0x8005, TYPE_GAL, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesFlying
-	call_if_eq VAR_0x8005, TYPE_TOXIC, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesPoison
-	call_if_eq VAR_0x8005, TYPE_ROCK, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesGround
-	call_if_eq VAR_0x8005, TYPE_WILD, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesRock
+	call_if_eq VAR_0x8005, TYPE_SPORTS, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesSports
+	call_if_eq VAR_0x8005, TYPE_GAL, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesGal
+	call_if_eq VAR_0x8005, TYPE_TOXIC, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesToxic
+	call_if_eq VAR_0x8005, TYPE_ROCK, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesRock
+	call_if_eq VAR_0x8005, TYPE_WILD, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesWild
 	call_if_eq VAR_0x8005, TYPE_BUG, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesBug
-	call_if_eq VAR_0x8005, TYPE_DEVIL, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesGhost
-	call_if_eq VAR_0x8005, TYPE_METAL, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesSteel
-	call_if_eq VAR_0x8005, TYPE_HOT, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesFire
-	call_if_eq VAR_0x8005, TYPE_OCEAN, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesWater
-	call_if_eq VAR_0x8005, TYPE_NATURE, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesGrass
-	call_if_eq VAR_0x8005, TYPE_ANGEL, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesElectric
-	call_if_eq VAR_0x8005, TYPE_ESPER, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesPsychic
-	call_if_eq VAR_0x8005, TYPE_COLD, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesIce
-	call_if_eq VAR_0x8005, TYPE_GHOST, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesDragon
-	call_if_eq VAR_0x8005, TYPE_COSMIC, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesDark
+	call_if_eq VAR_0x8005, TYPE_DEVIL, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesDevil
+	call_if_eq VAR_0x8005, TYPE_METAL, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesMetal
+	call_if_eq VAR_0x8005, TYPE_HOT, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesHot
+	call_if_eq VAR_0x8005, TYPE_OCEAN, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesOcean
+	call_if_eq VAR_0x8005, TYPE_NATURE, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesNature
+	call_if_eq VAR_0x8005, TYPE_ANGEL, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesAngel
+	call_if_eq VAR_0x8005, TYPE_ESPER, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesEsper
+	call_if_eq VAR_0x8005, TYPE_COLD, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesCold
+	call_if_eq VAR_0x8005, TYPE_GHOST, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesGhost
+	call_if_eq VAR_0x8005, TYPE_COSMIC, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesCosmic
+	call_if_eq VAR_0x8005, TYPE_SWEET, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUseSweet
 	call_if_eq VAR_0x8005, NUMBER_OF_MON_TYPES, BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentHasNoMostCommonType
 	return
 
@@ -232,68 +233,72 @@ BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesNormal::
 	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInNormalType, MSGBOX_DEFAULT
 	return
 
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesFighting::
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFightingType, MSGBOX_DEFAULT
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesSports::
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSportsType, MSGBOX_DEFAULT
 	return
 
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesFlying::
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFlyingType, MSGBOX_DEFAULT
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesGal::
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGalType, MSGBOX_DEFAULT
 	return
 
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesPoison::
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInPoisonType, MSGBOX_DEFAULT
-	return
-
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesGround::
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGroundType, MSGBOX_DEFAULT
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesToxic::
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInToxicType, MSGBOX_DEFAULT
 	return
 
 BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesRock::
 	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInRockType, MSGBOX_DEFAULT
 	return
 
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesWild::
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInWildType, MSGBOX_DEFAULT
+	return
+
 BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesBug::
 	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInBugType, MSGBOX_DEFAULT
+	return
+
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesDevil::
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInDevilType, MSGBOX_DEFAULT
+	return
+
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesMetal::
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInMetalType, MSGBOX_DEFAULT
+	return
+
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesHot::
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInHotType, MSGBOX_DEFAULT
+	return
+
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesOcean::
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInOceanType, MSGBOX_DEFAULT
+	return
+
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesNature::
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInNatureType, MSGBOX_DEFAULT
+	return
+
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesAngel::
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInAngelType, MSGBOX_DEFAULT
+	return
+
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesEsper::
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInEsperType, MSGBOX_DEFAULT
+	return
+
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesCold::
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInColdType, MSGBOX_DEFAULT
 	return
 
 BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesGhost::
 	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGhostType, MSGBOX_DEFAULT
 	return
 
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesSteel::
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSteelType, MSGBOX_DEFAULT
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesCosmic::
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInCosmicType, MSGBOX_DEFAULT
 	return
 
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesFire::
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFireType, MSGBOX_DEFAULT
-	return
-
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesWater::
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInWaterType, MSGBOX_DEFAULT
-	return
-
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesGrass::
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGrassType, MSGBOX_DEFAULT
-	return
-
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesElectric::
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInElectricType, MSGBOX_DEFAULT
-	return
-
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesPsychic::
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInPsychicType, MSGBOX_DEFAULT
-	return
-
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesIce::
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInIceType, MSGBOX_DEFAULT
-	return
-
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesDragon::
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInDragonType, MSGBOX_DEFAULT
-	return
-
-BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesDark::
-	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInDarkType, MSGBOX_DEFAULT
+BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentUsesSweet::
+	msgbox BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSweetType, MSGBOX_DEFAULT
 	return
 
 BattleFrontier_BattleFactoryPreBattleRoom_EventScript_OpponentHasNoMostCommonType::
@@ -499,69 +504,73 @@ BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInNormalType:
 	.string "The PRODUCER is apparently skilled\n"
 	.string "in the handling of the NORMAL type.$"
 
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFireType:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInHotType:
 	.string "The PRODUCER is apparently skilled\n"
-	.string "in the handling of the FIRE type.$"
+	.string "in the handling of the HOT type.$"
 
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInWaterType:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInOceanType:
 	.string "The PRODUCER is apparently skilled\n"
-	.string "in the handling of the WATER type.$"
+	.string "in the handling of the OCEAN type.$"
 
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInElectricType:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInAngelType:
 	.string "The PRODUCER is apparently skilled\n"
-	.string "in the handling of the ELECTRIC type.$"
+	.string "in the handling of the ANGEL type.$"
 
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGrassType:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInNatureType:
 	.string "The PRODUCER is apparently skilled\n"
-	.string "in the handling of the GRASS type.$"
+	.string "in the handling of the NATURE type.$"
 
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInIceType:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInColdType:
 	.string "The PRODUCER is apparently skilled\n"
-	.string "in the handling of the ICE type.$"
+	.string "in the handling of the COLD type.$"
 
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFightingType:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSportsType:
 	.string "The PRODUCER is apparently skilled\n"
-	.string "in the handling of the FIGHTING type.$"
+	.string "in the handling of the SPORTS type.$"
 
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInPoisonType:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInToxicType:
 	.string "The PRODUCER is apparently skilled\n"
-	.string "in the handling of the POISON type.$"
-
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGroundType:
-	.string "The PRODUCER is apparently skilled\n"
-	.string "in the handling of the GROUND type.$"
-
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInFlyingType:
-	.string "The PRODUCER is apparently skilled\n"
-	.string "in the handling of the FLYING type.$"
-
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInPsychicType:
-	.string "The PRODUCER is apparently skilled\n"
-	.string "in the handling of the PSYCHIC type.$"
-
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInBugType:
-	.string "The PRODUCER is apparently skilled\n"
-	.string "in the handling of the BUG type.$"
+	.string "in the handling of the TOXIC type.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInRockType:
 	.string "The PRODUCER is apparently skilled\n"
 	.string "in the handling of the ROCK type.$"
 
+BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGalType:
+	.string "The PRODUCER is apparently skilled\n"
+	.string "in the handling of the GAL type.$"
+
+BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInEsperType:
+	.string "The PRODUCER is apparently skilled\n"
+	.string "in the handling of the ESPER type.$"
+
+BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInBugType:
+	.string "The PRODUCER is apparently skilled\n"
+	.string "in the handling of the BUG type.$"
+
+BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInWildType:
+	.string "The PRODUCER is apparently skilled\n"
+	.string "in the handling of the WILD type.$"
+
+BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInDevilType:
+	.string "The PRODUCER is apparently skilled\n"
+	.string "in the handling of the DEVIL type.$"
+
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInGhostType:
 	.string "The PRODUCER is apparently skilled\n"
 	.string "in the handling of the GHOST type.$"
 
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInDragonType:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInCosmicType:
 	.string "The PRODUCER is apparently skilled\n"
-	.string "in the handling of the DRAGON type.$"
+	.string "in the handling of the COSMIC type.$"
 
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInDarkType:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInMetalType:
 	.string "The PRODUCER is apparently skilled\n"
-	.string "in the handling of the DARK type.$"
+	.string "in the handling of the METAL type.$"
 
-BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSteelType:
+BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerSkilledInSweetType:
 	.string "The PRODUCER is apparently skilled\n"
-	.string "in the handling of the STEEL type.$"
+	.string "in the handling of the SWEET type.$"
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_TrainerHasNoClearFavorite:
 	.string "The PRODUCER appears to have no clear\n"

@@ -869,22 +869,22 @@ static const struct WindowTemplate sWindowTemplate_TradingBoardRequestType = {
 
 static const struct ListMenuItem sTradingBoardTypes[NUMBER_OF_MON_TYPES] = {
     { gTypeNames[TYPE_NORMAL],   TYPE_NORMAL         },
-    { gTypeNames[TYPE_HOT],     TYPE_HOT           },
+    { gTypeNames[TYPE_HOT],      TYPE_HOT            },
     { gTypeNames[TYPE_OCEAN],    TYPE_OCEAN          },
-    { gTypeNames[TYPE_ANGEL], TYPE_ANGEL       },
-    { gTypeNames[TYPE_NATURE],    TYPE_NATURE          },
-    { gTypeNames[TYPE_COLD],      TYPE_COLD            },
-    { gTypeNames[TYPE_ROCK],   TYPE_ROCK         },
+    { gTypeNames[TYPE_ANGEL],    TYPE_ANGEL          },
+    { gTypeNames[TYPE_NATURE],   TYPE_NATURE         },
+    { gTypeNames[TYPE_COLD],     TYPE_COLD           },
+    { gTypeNames[TYPE_ROCK],     TYPE_ROCK           },
     { gTypeNames[TYPE_WILD],     TYPE_WILD           },
-    { gTypeNames[TYPE_GAL],   TYPE_GAL         },
-    { gTypeNames[TYPE_ESPER],  TYPE_ESPER        },
-    { gTypeNames[TYPE_SPORTS], TYPE_SPORTS       },
-    { gTypeNames[TYPE_TOXIC],   TYPE_TOXIC         },
+    { gTypeNames[TYPE_GAL],      TYPE_GAL            },
+    { gTypeNames[TYPE_ESPER],    TYPE_ESPER          },
+    { gTypeNames[TYPE_SPORTS],   TYPE_SPORTS         },
+    { gTypeNames[TYPE_TOXIC],    TYPE_TOXIC          },
     { gTypeNames[TYPE_BUG],      TYPE_BUG            },
     { gTypeNames[TYPE_DEVIL],    TYPE_DEVIL          },
-    { gTypeNames[TYPE_GHOST],   TYPE_GHOST         },
+    { gTypeNames[TYPE_GHOST],    TYPE_GHOST          },
     { gTypeNames[TYPE_METAL],    TYPE_METAL          },
-    { gTypeNames[TYPE_COSMIC],     TYPE_COSMIC           },
+    { gTypeNames[TYPE_COSMIC],   TYPE_COSMIC         },
     { sText_Exit,                NUMBER_OF_MON_TYPES }
 };
 

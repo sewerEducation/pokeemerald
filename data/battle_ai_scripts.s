@@ -1176,6 +1176,7 @@ AI_CV_SpAtkDown_SpecialTypeList:
 	.byte TYPE_COLD
 	.byte TYPE_GHOST
 	.byte TYPE_COSMIC
+	.byte TYPE_SWEET
 	.byte -1
 
 AI_CV_SpDefDown:
@@ -1386,6 +1387,7 @@ AI_CV_LightScreen_SpecialTypeList:
 	.byte TYPE_COLD
 	.byte TYPE_GHOST
 	.byte TYPE_COSMIC
+	.byte TYPE_SWEET
 	.byte -1
 
 AI_CV_Rest:
@@ -1853,9 +1855,9 @@ AI_CV_Thief_EncourageItemsToSteal:
 
 AI_CV_Curse:
 	get_user_type1
-	if_equal TYPE_DEVIL, AI_CV_Curse4
+	if_equal TYPE_GHOST, AI_CV_Curse4
 	get_user_type2
-	if_equal TYPE_DEVIL, AI_CV_Curse4
+	if_equal TYPE_GHOST, AI_CV_Curse4
 	if_stat_level_more_than AI_USER, STAT_DEF, 9, AI_CV_Curse_End
 	if_random_less_than 128, AI_CV_Curse2
 	score +1
@@ -1924,15 +1926,15 @@ AI_CV_Protect_End:
 AI_CV_Foresight:
 .ifdef BUGFIX
 	get_target_type1
-	if_equal TYPE_DEVIL, AI_CV_Foresight2
+	if_equal TYPE_GHOST, AI_CV_Foresight2
 	get_target_type2
-	if_equal TYPE_DEVIL, AI_CV_Foresight2
+	if_equal TYPE_GHOST, AI_CV_Foresight2
 	if_stat_level_more_than AI_TARGET, STAT_EVASION, 8, AI_CV_Foresight3
 .else
 	get_user_type1
-	if_equal TYPE_DEVIL, AI_CV_Foresight2
+	if_equal TYPE_GHOST, AI_CV_Foresight2
 	get_user_type2
-	if_equal TYPE_DEVIL, AI_CV_Foresight2
+	if_equal TYPE_GHOST, AI_CV_Foresight2
 	if_stat_level_more_than AI_USER, STAT_EVASION, 8, AI_CV_Foresight3
 .endif
 	score -2
@@ -2003,11 +2005,11 @@ AI_CV_Pursuit:
 	is_first_turn_for AI_USER
 	if_not_equal 0, AI_CV_Pursuit_End
 	get_target_type1
-	if_equal TYPE_DEVIL, AI_CV_Pursuit2
+	if_equal TYPE_GHOST, AI_CV_Pursuit2
 	get_target_type1
 	if_equal TYPE_ESPER, AI_CV_Pursuit2
 	get_target_type2
-	if_equal TYPE_DEVIL, AI_CV_Pursuit2
+	if_equal TYPE_GHOST, AI_CV_Pursuit2
 	get_target_type2
 	if_equal TYPE_ESPER, AI_CV_Pursuit2
 	goto AI_CV_Pursuit_End
@@ -2152,6 +2154,7 @@ AI_CV_MirrorCoat_SpecialTypeList:
 	.byte TYPE_COLD
 	.byte TYPE_GHOST
 	.byte TYPE_COSMIC
+	.byte TYPE_SWEET
 	.byte -1
 
 AI_CV_ChargeUpMove:
@@ -2797,11 +2800,11 @@ AI_DoubleBattleCheckUserStatus2:
 
 AI_DoubleBattleAllHittingGroundMove:
 	if_ability AI_USER_PARTNER, ABILITY_LEVITATE, Score_Plus2
-	if_type AI_USER_PARTNER, TYPE_GAL, Score_Plus2
+	if_type AI_USER_PARTNER, TYPE_COSMIC, Score_Plus2
 	if_type AI_USER_PARTNER, TYPE_HOT, Score_Minus10
 	if_type AI_USER_PARTNER, TYPE_ANGEL, Score_Minus10
-	if_type AI_USER_PARTNER, TYPE_TOXIC, Score_Minus10
-	if_type AI_USER_PARTNER, TYPE_WILD, Score_Minus10
+	if_type AI_USER_PARTNER, TYPE_BUG, Score_Minus10
+	if_type AI_USER_PARTNER, TYPE_COLD, Score_Minus10
 	goto Score_Minus3
 
 AI_DoubleBattleSkillSwap:
@@ -2815,7 +2818,7 @@ AI_DoubleBattleSkillSwap:
 AI_DoubleBattleElectricMove:
 	if_no_ability AI_TARGET_PARTNER, ABILITY_LIGHTNING_ROD, AI_DoubleBattleElectricMoveEnd
 	score -2
-	if_no_type AI_TARGET_PARTNER, TYPE_ROCK, AI_DoubleBattleElectricMoveEnd
+	if_no_type AI_TARGET_PARTNER, TYPE_WILD, AI_DoubleBattleElectricMoveEnd
 	score -8
 AI_DoubleBattleElectricMoveEnd:
 	end
