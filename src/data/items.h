@@ -1181,10 +1181,10 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
     },
 
-    [ITEM_FIRE_STONE] =
+    [ITEM_PINK_SLIPPER] =
     {
-        .name = _("FIRE STONE"),
-        .itemId = ITEM_FIRE_STONE,
+        .name = _("PINK SLIPPER"),
+        .itemId = ITEM_PINK_SLIPPER,
         .price = 2100,
         .description = sFireStoneDesc,
         .pocket = POCKET_ITEMS,
@@ -1192,10 +1192,10 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
     },
 
-    [ITEM_THUNDER_STONE] =
+    [ITEM_GOLD_SLIPPER] =
     {
-        .name = _("THUNDERSTONE"),
-        .itemId = ITEM_THUNDER_STONE,
+        .name = _("GOLD SLIPPER"),
+        .itemId = ITEM_GOLD_SLIPPER,
         .price = 2100,
         .description = sThunderStoneDesc,
         .pocket = POCKET_ITEMS,
@@ -1203,10 +1203,10 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
     },
 
-    [ITEM_WATER_STONE] =
+    [ITEM_BLUE_SLIPPER] =
     {
-        .name = _("WATER STONE"),
-        .itemId = ITEM_WATER_STONE,
+        .name = _("BLUE SLIPPER"),
+        .itemId = ITEM_BLUE_SLIPPER,
         .price = 2100,
         .description = sWaterStoneDesc,
         .pocket = POCKET_ITEMS,

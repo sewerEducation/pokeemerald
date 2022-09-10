@@ -371,7 +371,7 @@ JaggedPass_EventScript_ItemBurnHeal::
 	end
 
 FieryPath_EventScript_ItemFireStone::
-	finditem ITEM_FIRE_STONE
+	finditem ITEM_PINK_SLIPPER
 	end
 
 FieryPath_EventScript_ItemTM06::
@@ -407,7 +407,7 @@ NewMauville_Inside_EventScript_ItemEscapeRope::
 	end
 
 NewMauville_Inside_EventScript_ItemThunderStone::
-	finditem ITEM_THUNDER_STONE
+	finditem ITEM_GOLD_SLIPPER
 	end
 
 NewMauville_Inside_EventScript_ItemFullHeal::
@@ -451,7 +451,7 @@ AbandonedShip_HiddenFloorRooms_EventScript_ItemScanner::
 	end
 
 AbandonedShip_HiddenFloorRooms_EventScript_ItemWaterStone::
-	finditem ITEM_WATER_STONE
+	finditem ITEM_BLUE_SLIPPER
 	end
 
 AbandonedShip_HiddenFloorRooms_EventScript_ItemTM18::

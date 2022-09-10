@@ -106,9 +106,9 @@ const u32 *const gItemIconTable[][2] =
     // Evolution stones
     [ITEM_SUN_STONE] = {gItemIcon_SunStone, gItemIconPalette_SunStone},
     [ITEM_MOON_STONE] = {gItemIcon_MoonStone, gItemIconPalette_MoonStone},
-    [ITEM_FIRE_STONE] = {gItemIcon_FireStone, gItemIconPalette_FireStone},
-    [ITEM_THUNDER_STONE] = {gItemIcon_ThunderStone, gItemIconPalette_ThunderStone},
-    [ITEM_WATER_STONE] = {gItemIcon_WaterStone, gItemIconPalette_WaterStone},
+    [ITEM_PINK_SLIPPER] = {gItemIcon_FireStone, gItemIconPalette_FireStone},
+    [ITEM_GOLD_SLIPPER] = {gItemIcon_ThunderStone, gItemIconPalette_ThunderStone},
+    [ITEM_BLUE_SLIPPER] = {gItemIcon_WaterStone, gItemIconPalette_WaterStone},
     [ITEM_LEAF_STONE] = {gItemIcon_LeafStone, gItemIconPalette_LeafStone},
     // ????????
     [ITEM_063] = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
