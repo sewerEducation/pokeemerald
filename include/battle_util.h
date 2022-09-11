@@ -15,7 +15,7 @@
 #define ABILITYEFFECT_ABSORBING                  3
 #define ABILITYEFFECT_ON_DAMAGE                  4
 #define ABILITYEFFECT_IMMUNITY                   5
-#define ABILITYEFFECT_FORECAST                   6
+#define ABILITYEFFECT_ON_DAMAGE_ATTACKER         6
 #define ABILITYEFFECT_SYNCHRONIZE                7
 #define ABILITYEFFECT_ATK_SYNCHRONIZE            8
 #define ABILITYEFFECT_INTIMIDATE1                9

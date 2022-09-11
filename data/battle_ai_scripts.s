@@ -55,19 +55,19 @@ AI_CheckBadMove:
 AI_CBM_CheckIfNegatesType:
 	if_type_effectiveness AI_EFFECTIVENESS_x0, Score_Minus10
 	get_ability AI_TARGET
-	if_equal ABILITY_VOLT_ABSORB, CheckIfVoltAbsorbCancelsElectric
-	if_equal ABILITY_WATER_ABSORB, CheckIfWaterAbsorbCancelsWater
+	if_equal ABILITY_SWEET_EATER, CheckIfSweetEaterCancelsSweet
+	if_equal ABILITY_THIRSTY, CheckIfThirstyCancelsWater
 	if_equal ABILITY_FLASH_FIRE, CheckIfFlashFireCancelsFire
 	if_equal ABILITY_WONDER_GUARD, CheckIfWonderGuardCancelsMove
 	if_equal ABILITY_LEVITATE, CheckIfLevitateCancelsGroundMove
 	goto AI_CheckBadMove_CheckSoundproof_
 
-CheckIfVoltAbsorbCancelsElectric:
+CheckIfSweetEaterCancelsSweet:
 	get_curr_move_type
-	if_equal_ TYPE_ANGEL, Score_Minus12
+	if_equal_ TYPE_SWEET, Score_Minus12
 	goto AI_CheckBadMove_CheckSoundproof_
 
-CheckIfWaterAbsorbCancelsWater:
+CheckIfThirstyCancelsWater:
 	get_curr_move_type
 	if_equal_ TYPE_OCEAN, Score_Minus12
 	goto AI_CheckBadMove_CheckSoundproof_
@@ -222,7 +222,7 @@ AI_CBM_Sleep:
 AI_CBM_Explosion:
 	if_type_effectiveness AI_EFFECTIVENESS_x0, Score_Minus10
 	get_ability AI_TARGET
-	if_equal ABILITY_DAMP, Score_Minus10
+	if_equal ABILITY_CALM_AURA, Score_Minus10
 	count_usable_party_mons AI_USER
 	if_not_equal 0, AI_CBM_Explosion_End
 	count_usable_party_mons AI_TARGET
@@ -333,7 +333,7 @@ AI_CBM_Roar:
 	count_usable_party_mons AI_TARGET
 	if_equal 0, Score_Minus10
 	get_ability AI_TARGET
-	if_equal ABILITY_SUCTION_CUPS, Score_Minus10
+	if_equal ABILITY_CLINGY, Score_Minus10
 	end
 
 AI_CBM_Toxic:
@@ -2348,9 +2348,9 @@ AI_CV_ChangeSelfAbility_End:
 
 AI_CV_ChangeSelfAbility_AbilitiesToEncourage:
 	.byte ABILITY_SPEED_BOOST
-	.byte ABILITY_BATTLE_ARMOR
+	.byte ABILITY_HERO_ARMOR
 	.byte ABILITY_SAND_VEIL
-	.byte ABILITY_STATIC
+	.byte ABILITY_PRANK_BUZZER
 	.byte ABILITY_FLASH_FIRE
 	.byte ABILITY_WONDER_GUARD
 	.byte ABILITY_EFFECT_SPORE
@@ -2359,10 +2359,10 @@ AI_CV_ChangeSelfAbility_AbilitiesToEncourage:
 	.byte ABILITY_RAIN_DISH
 	.byte ABILITY_CUTE_CHARM
 	.byte ABILITY_SHED_SKIN
-	.byte ABILITY_MARVEL_SCALE
+	.byte ABILITY_DUTY_BOUND
 	.byte ABILITY_PURE_POWER
 	.byte ABILITY_CHLOROPHYLL
-	.byte ABILITY_SHIELD_DUST
+	.byte ABILITY_BIG_PICTURE
 	.byte -1
 
 AI_CV_Superpower:
@@ -2816,7 +2816,7 @@ AI_DoubleBattleSkillSwap:
 	end
 
 AI_DoubleBattleElectricMove:
-	if_no_ability AI_TARGET_PARTNER, ABILITY_LIGHTNING_ROD, AI_DoubleBattleElectricMoveEnd
+	if_no_ability AI_TARGET_PARTNER, ABILITY_UNHOLY_VOID, AI_DoubleBattleElectricMoveEnd
 	score -2
 	if_no_type AI_TARGET_PARTNER, TYPE_WILD, AI_DoubleBattleElectricMoveEnd
 	score -8
@@ -2870,7 +2870,7 @@ AI_TrySkillSwapOnAlly:
 	end
 
 AI_TrySkillSwapOnAlly2:
-	if_not_equal ABILITY_COMPOUND_EYES, Score_Minus30_
+	if_not_equal ABILITY_GLASSES, Score_Minus30_
 	if_has_move AI_USER_PARTNER, MOVE_FIRE_BLAST, AI_TrySkillSwapOnAllyPlus3
 	if_has_move AI_USER_PARTNER, MOVE_THUNDER, AI_TrySkillSwapOnAllyPlus3
 	if_has_move AI_USER_PARTNER, MOVE_CROSS_CHOP, AI_TrySkillSwapOnAllyPlus3

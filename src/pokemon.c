@@ -3183,14 +3183,15 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         spAttack /= 2;
     if (attacker->ability == ABILITY_HUSTLE)
         attack = (150 * attack) / 100;
-    if (attacker->ability == ABILITY_PLUS && ABILITY_ON_FIELD2(ABILITY_MINUS))
+    if (attacker->ability == ABILITY_POSI_TWIN && ABILITY_ON_FIELD2(ABILITY_NEGI_TWIN))
         spAttack = (150 * spAttack) / 100;
-    if (attacker->ability == ABILITY_MINUS && ABILITY_ON_FIELD2(ABILITY_PLUS))
-        spAttack = (150 * spAttack) / 100;
+    if (attacker->ability == ABILITY_NEGI_TWIN && ABILITY_ON_FIELD2(ABILITY_POSI_TWIN))
+        attack = (150 * attack) / 100;
     if (attacker->ability == ABILITY_GUTS && attacker->status1)
         attack = (150 * attack) / 100;
-    if (defender->ability == ABILITY_MARVEL_SCALE && defender->status1)
+    if (defender->ability == ABILITY_DUTY_BOUND && defender->status1)
         defense = (150 * defense) / 100;
+        spDefense = (150 * spDefense) / 100;
     if (type == TYPE_ANGEL && AbilityBattleEffects(ABILITYEFFECT_FIELD_SPORT, 0, 0, ABILITYEFFECT_MUD_SPORT, 0))
         gBattleMovePower /= 2;
     if (type == TYPE_HOT && AbilityBattleEffects(ABILITYEFFECT_FIELD_SPORT, 0, 0, ABILITYEFFECT_WATER_SPORT, 0))
@@ -6585,7 +6586,7 @@ void SetWildMonHeldItem(void)
         u16 chanceNoItem = 45;
         u16 chanceNotRare = 95;
         if (!GetMonData(&gPlayerParty[0], MON_DATA_SANITY_IS_EGG, 0)
-            && GetMonAbility(&gPlayerParty[0]) == ABILITY_COMPOUND_EYES)
+            && GetMonAbility(&gPlayerParty[0]) == ABILITY_GLASSES)
         {
             chanceNoItem = 20;
             chanceNotRare = 80;
