@@ -1366,8 +1366,15 @@ static void Cmd_typecalc(void)
     // check stab
     if (IS_BATTLER_OF_TYPE(gBattlerAttacker, moveType))
     {
-        gBattleMoveDamage = gBattleMoveDamage * 15;
-        gBattleMoveDamage = gBattleMoveDamage / 10;
+        if (gBattleMons[gBattlerAttacker].ability == ABILITY_SPECIALIST || gBattleMons[gBattlerAttacker].ability == ABILITY_COSTUME_SWAP)
+        {
+            gBattleMoveDamage = gBattleMoveDamage * 2;
+        }
+        else
+        {
+            gBattleMoveDamage = gBattleMoveDamage * 15;
+            gBattleMoveDamage = gBattleMoveDamage / 10;
+        }
     }
 
     if (gBattleMons[gBattlerTarget].ability == ABILITY_LEVITATE && moveType == TYPE_ROCK)
@@ -1545,8 +1552,15 @@ u8 TypeCalc(u16 move, u8 attacker, u8 defender)
     // check stab
     if (IS_BATTLER_OF_TYPE(attacker, moveType))
     {
-        gBattleMoveDamage = gBattleMoveDamage * 15;
-        gBattleMoveDamage = gBattleMoveDamage / 10;
+      if (gBattleMons[gBattlerAttacker].ability == ABILITY_SPECIALIST || gBattleMons[gBattlerAttacker].ability == ABILITY_COSTUME_SWAP)
+      {
+          gBattleMoveDamage = gBattleMoveDamage * 2;
+      }
+      else
+      {
+          gBattleMoveDamage = gBattleMoveDamage * 15;
+          gBattleMoveDamage = gBattleMoveDamage / 10;
+      }
     }
 
     if (gBattleMons[defender].ability == ABILITY_LEVITATE && moveType == TYPE_ROCK)

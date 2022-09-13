@@ -4233,8 +4233,8 @@ static void HandleTurnActionSelectionState(void)
                                  && gBattleMons[gActiveBattler].ability != ABILITY_LEVITATE
                                  && gBattleMons[gActiveBattler].ability != ABILITY_RUN_AWAY)
                              || ((i = AbilityBattleEffects(ABILITYEFFECT_CHECK_FIELD_EXCEPT_BATTLER, gActiveBattler, ABILITY_MAGNET_PULL, 0, 0))
-                                 && IS_BATTLER_OF_TYPE(gActiveBattler, TYPE_METAL))
-                                 && gBattleMons[gActiveBattler].ability != ABILITY_RUN_AWAY)
+                                 && IS_BATTLER_OF_TYPE(gActiveBattler, TYPE_METAL)
+                                 && gBattleMons[gActiveBattler].ability != ABILITY_RUN_AWAY))
                     {
                         BtlController_EmitChoosePokemon(BUFFER_A, ((i - 1) << 4) | PARTY_ACTION_ABILITY_PREVENTS, PARTY_SIZE, gLastUsedAbility, gBattleStruct->battlerPartyOrders[gActiveBattler]);
                     }
