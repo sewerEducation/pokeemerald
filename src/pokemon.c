@@ -3181,6 +3181,10 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
     // Apply abilities / field sports
     if (defender->ability == ABILITY_THICK_FAT && (type == TYPE_HOT || type == TYPE_COLD))
         spAttack /= 2;
+    if (defender->ability == ABILITY_SAND_VEIL && gBattleWeather & B_WEATHER_SANDSTORM)
+        spDefense = (150 * spDefense) / 100;
+    if (defender->ability == ABILITY_SNOW_CLOAK && gBattleWeather & B_WEATHER_HAIL)
+        defense = (150 * defense) / 100;
     if (attacker->ability == ABILITY_HUSTLE)
         attack = (150 * attack) / 100;
     if (attacker->ability == ABILITY_POSI_TWIN && ABILITY_ON_FIELD2(ABILITY_NEGI_TWIN))

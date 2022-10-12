@@ -6,7 +6,7 @@ static const u8 sHeroArmorDescription[] = _("Blocks critical hits.");
 static const u8 sSturdyDescription[] = _("Negates 1-hit KO attacks.");
 static const u8 sCalmAuraDescription[] = _("Prevents self-destruction.");
 static const u8 sLimberDescription[] = _("Prevents paralysis.");
-static const u8 sSandVeilDescription[] = _("Ups evasion in a sandstorm.");
+static const u8 sSandVeilDescription[] = _("Ups SP.DEF in a sandstorm.");
 static const u8 sPrankBuzzerDescription[] = _("Paralyzes on contact.");
 static const u8 sSweetEaterDescription[] = _("Turns sweetness into HP.");
 static const u8 sThirstyDescription[] = _("Changes water into HP.");
@@ -78,6 +78,7 @@ static const u8 sCacophonyDescription[] = _("Avoids sound-based moves.");
 static const u8 sAirLockDescription[] = _("Negates weather effects.");
 static const u8 sSnowWarningDescription[] = _("Summons hail in battle.");
 static const u8 sSpecialistDescription[] = _("Boosts same type attacks.");
+static const u8 sSnowCloakDescription[] = _("Ups DEFENSE in hail.");
 
 const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
 {
@@ -161,6 +162,7 @@ const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
     [ABILITY_AIR_LOCK] = _("AIR LOCK"),
     [ABILITY_SNOW_WARNING] = _("SNOW WARNING"),
     [ABILITY_SPECIALIST] = _("SPECIALIST"),
+    [ABILITY_SNOW_CLOAK] = _("SNOW CLOAK"),
 };
 
 const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT] =
@@ -245,4 +247,5 @@ const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT] =
     [ABILITY_AIR_LOCK] = sAirLockDescription,
     [ABILITY_SNOW_WARNING] = sSnowWarningDescription,
     [ABILITY_SPECIALIST] = sSpecialistDescription,
+    [ABILITY_SNOW_CLOAK] = sSnowCloakDescription,
 };
