@@ -79,6 +79,10 @@ static const u8 sAirLockDescription[] = _("Negates weather effects.");
 static const u8 sSnowWarningDescription[] = _("Summons hail in battle.");
 static const u8 sSpecialistDescription[] = _("Boosts same type attacks.");
 static const u8 sSnowCloakDescription[] = _("Ups DEFENSE in hail.");
+static const u8 sWeatherproofDescription[] = _("Avoid weather damage.");
+static const u8 sIceBodyDescription[] = _("Slight HP recovery in hail.");
+static const u8 sMoisturizerDescription[] = _("Heals status in rain.");
+static const u8 sSunnyHeartDescription[] = _("Heals status in sunshine.");
 
 const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
 {
@@ -163,6 +167,10 @@ const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
     [ABILITY_SNOW_WARNING] = _("SNOW WARNING"),
     [ABILITY_SPECIALIST] = _("SPECIALIST"),
     [ABILITY_SNOW_CLOAK] = _("SNOW CLOAK"),
+    [ABILITY_WEATHERPROOF] = _("WEATHERPROOF"),
+    [ABILITY_ICE_BODY] = _("ICE BODY"),
+    [ABILITY_MOISTURIZER] = _("MOISTURIZER"),
+    [ABILITY_SUNNY_HEART] = _("SUNNY HEART"),
 };
 
 const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT] =
@@ -248,4 +256,8 @@ const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT] =
     [ABILITY_SNOW_WARNING] = sSnowWarningDescription,
     [ABILITY_SPECIALIST] = sSpecialistDescription,
     [ABILITY_SNOW_CLOAK] = sSnowCloakDescription,
+    [ABILITY_WEATHERPROOF] = sWeatherproofDescription,
+    [ABILITY_ICE_BODY] = sIceBodyDescription,
+    [ABILITY_MOISTURIZER] = sMoisturizerDescription,
+    [ABILITY_SUNNY_HEART] = sSunnyHeartDescription,
 };
