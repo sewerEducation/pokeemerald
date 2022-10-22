@@ -83,6 +83,9 @@ static const u8 sWeatherproofDescription[] = _("Avoid weather damage.");
 static const u8 sIceBodyDescription[] = _("Slight HP recovery in hail.");
 static const u8 sMoisturizerDescription[] = _("Heals status in rain.");
 static const u8 sSunnyHeartDescription[] = _("Heals status in sunshine.");
+static const u8 sDeepseaDivaDescription[] = _("OCEAN-type sound moves.");
+static const u8 sInfernoDivaDescription[] = _("HOT-type sound moves.");
+static const u8 sPunkRockDescription[] = _("Power up sound moves.");
 
 const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
 {
@@ -171,6 +174,9 @@ const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
     [ABILITY_ICE_BODY] = _("ICE BODY"),
     [ABILITY_MOISTURIZER] = _("MOISTURIZER"),
     [ABILITY_SUNNY_HEART] = _("SUNNY HEART"),
+    [ABILITY_DEEPSEA_DIVA] = _("DEEPSEA DIVA"),
+    [ABILITY_INFERNO_DIVA] = _("INFERNO DIVA"),
+    [ABILITY_PUNK_ROCK] = _("PUNK ROCK"),
 };
 
 const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT] =
@@ -260,4 +266,7 @@ const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT] =
     [ABILITY_ICE_BODY] = sIceBodyDescription,
     [ABILITY_MOISTURIZER] = sMoisturizerDescription,
     [ABILITY_SUNNY_HEART] = sSunnyHeartDescription,
+    [ABILITY_DEEPSEA_DIVA] = sDeepseaDivaDescription,
+    [ABILITY_INFERNO_DIVA] = sInfernoDivaDescription,
+    [ABILITY_PUNK_ROCK] = sPunkRockDescription,
 };

@@ -5247,3 +5247,25 @@ void RunBattleScriptCommands(void)
     if (gBattleControllerExecFlags == 0)
         gBattleScriptingCommandsTable[gBattlescriptCurrInstr[0]]();
 }
+
+void SetTypeBeforeUsingMove(u16 move, u8 battlerAtk)
+{
+
+    //gBattleStruct->dynamicMoveType = 0;
+
+    //if (gBattleMoves[move].effect == EFFECT_REVELATION_DANCE)
+    //{
+    //    if (gBattleMons[battlerAtk].type1 != TYPE_MYSTERY)
+    //        gBattleStruct->dynamicMoveType = gBattleMons[battlerAtk].type1 | 0x80;
+    //    else if (gBattleMons[battlerAtk].type2 != TYPE_MYSTERY)
+    //        gBattleStruct->dynamicMoveType = gBattleMons[battlerAtk].type2 | 0x80;
+    //}
+    if (gBattleMoves[move].flags & FLAG_SOUND)
+    {
+        if (gBattleMons[battlerAtk].ability == ABILITY_DEEPSEA_DIVA)
+            *(&gBattleStruct->dynamicMoveType) = TYPE_OCEAN | F_DYNAMIC_TYPE_2;
+        else if (gBattleMons[battlerAtk].ability == ABILITY_INFERNO_DIVA)
+            *(&gBattleStruct->dynamicMoveType) = TYPE_HOT | F_DYNAMIC_TYPE_2;
+    }
+
+}

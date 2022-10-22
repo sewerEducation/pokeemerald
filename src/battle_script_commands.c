@@ -1116,6 +1116,7 @@ static void Cmd_accuracycheck(void)
         if (move == ACC_CURR_MOVE)
             move = gCurrentMove;
 
+        SetTypeBeforeUsingMove(move,gBattlerAttacker);
         GET_MOVE_TYPE(move, type);
 
         if (JumpIfMoveAffectedByProtect(move))
@@ -1308,7 +1309,7 @@ void AI_CalcDmg(u8 attacker, u8 defender)
     gDynamicBasePower = 0;
     gBattleMoveDamage = gBattleMoveDamage * gCritMultiplier * gBattleScripting.dmgMultiplier;
 
-    if (gStatuses3[attacker] & STATUS3_CHARGED_UP && gBattleMoves[gCurrentMove].type == TYPE_ANGEL)
+    if (gStatuses3[attacker] & STATUS3_CHARGED_UP && gBattleMoves[gCurrentMove].type == TYPE_COSMIC)
         gBattleMoveDamage *= 2;
     if (gProtectStructs[attacker].helpingHand)
         gBattleMoveDamage = gBattleMoveDamage * 15 / 10;
@@ -1359,6 +1360,7 @@ static void Cmd_typecalc(void)
         return;
     }
 
+    SetTypeBeforeUsingMove(gCurrentMove,gBattlerAttacker);
     GET_MOVE_TYPE(gCurrentMove, moveType);
 
     // check stab
@@ -1435,6 +1437,7 @@ static void CheckWonderGuardAndLevitate(void)
     if (gCurrentMove == MOVE_STRUGGLE || !gBattleMoves[gCurrentMove].power)
         return;
 
+    SetTypeBeforeUsingMove(gCurrentMove,gBattlerAttacker);
     GET_MOVE_TYPE(gCurrentMove, moveType);
 
     if (gBattleMons[gBattlerTarget].ability == ABILITY_LEVITATE && moveType == TYPE_ROCK)
