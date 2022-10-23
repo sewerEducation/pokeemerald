@@ -3728,7 +3728,7 @@ static const u16 sSwampertLevelUpLearnset[] = {
 };
 
 static const u16 sPoochyenaLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 1, MOVE_SUBSTITUTE),
     LEVEL_UP_MOVE( 5, MOVE_HOWL),
     LEVEL_UP_MOVE( 9, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE(13, MOVE_BITE),
@@ -3797,7 +3797,7 @@ static const u16 sLinooneLevelUpLearnset[] = {
 };
 
 static const u16 sWurmpleLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 1, MOVE_SUBSTITUTE),
     LEVEL_UP_MOVE( 1, MOVE_STRING_SHOT),
     LEVEL_UP_MOVE( 5, MOVE_POISON_STING),
     LEVEL_UP_END

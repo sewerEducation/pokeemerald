@@ -889,6 +889,19 @@ bool8 WasUnableToUseMove(u8 battler)
 
 void PrepareStringBattle(u16 stringId, u8 battler)
 {
+    // Support for Contrary ability.
+    // If a move attempted to raise stat - print "won't increase".
+    // If a move attempted to lower stat - print "won't decrease".
+    if (stringId == STRINGID_STATSWONTDECREASE && !(gBattleScripting.statChanger & STAT_BUFF_NEGATIVE))
+        stringId = STRINGID_STATSWONTINCREASE;
+    else if (stringId == STRINGID_STATSWONTINCREASE && gBattleScripting.statChanger & STAT_BUFF_NEGATIVE)
+        stringId = STRINGID_STATSWONTDECREASE;
+
+    else if (stringId == STRINGID_STATSWONTDECREASE2 && gBattleMons[battler].ability == ABILITY_CONTRARY)
+        stringId = STRINGID_STATSWONTINCREASE2;
+    else if (stringId == STRINGID_STATSWONTINCREASE2 && gBattleMons[battler].ability == ABILITY_CONTRARY)
+        stringId = STRINGID_STATSWONTDECREASE2;
+
     gActiveBattler = battler;
     BtlController_EmitPrintString(BUFFER_A, stringId);
     MarkBattlerForControllerExec(gActiveBattler);
@@ -3419,6 +3432,10 @@ u8 ItemBattleEffects(u8 caseID, u8 battlerId, bool8 moveTurn)
                 TRY_EAT_CONFUSE_BERRY(FLAVOR_SOUR);
                 break;
             case HOLD_EFFECT_ATTACK_UP:
+                if (gBattleMons[battlerId].ability == ABILITY_GLUTTONY)
+                {
+                    battlerHoldEffectParam /= 2;
+                }
                 if (gBattleMons[battlerId].hp <= gBattleMons[battlerId].maxHP / battlerHoldEffectParam
                 && !moveTurn && gBattleMons[battlerId].statStages[STAT_ATK] < MAX_STAT_STAGE)
                 {
@@ -3433,18 +3450,38 @@ u8 ItemBattleEffects(u8 caseID, u8 battlerId, bool8 moveTurn)
                 }
                 break;
             case HOLD_EFFECT_DEFENSE_UP:
+                if (gBattleMons[battlerId].ability == ABILITY_GLUTTONY)
+                {
+                    battlerHoldEffectParam /= 2;
+                }
                 TRY_EAT_STAT_UP_BERRY(STAT_DEF);
                 break;
             case HOLD_EFFECT_SPEED_UP:
+                if (gBattleMons[battlerId].ability == ABILITY_GLUTTONY)
+                {
+                    battlerHoldEffectParam /= 2;
+                }
                 TRY_EAT_STAT_UP_BERRY(STAT_SPEED);
                 break;
             case HOLD_EFFECT_SP_ATTACK_UP:
+                if (gBattleMons[battlerId].ability == ABILITY_GLUTTONY)
+                {
+                    battlerHoldEffectParam /= 2;
+                }
                 TRY_EAT_STAT_UP_BERRY(STAT_SPATK);
                 break;
             case HOLD_EFFECT_SP_DEFENSE_UP:
+                if (gBattleMons[battlerId].ability == ABILITY_GLUTTONY)
+                {
+                    battlerHoldEffectParam /= 2;
+                }
                 TRY_EAT_STAT_UP_BERRY(STAT_SPDEF);
                 break;
             case HOLD_EFFECT_CRITICAL_UP:
+                if (gBattleMons[battlerId].ability == ABILITY_GLUTTONY)
+                {
+                    battlerHoldEffectParam /= 2;
+                }
                 if (gBattleMons[battlerId].hp <= gBattleMons[battlerId].maxHP / battlerHoldEffectParam && !moveTurn
                     && !(gBattleMons[battlerId].status2 & STATUS2_FOCUS_ENERGY))
                 {
@@ -3454,6 +3491,10 @@ u8 ItemBattleEffects(u8 caseID, u8 battlerId, bool8 moveTurn)
                 }
                 break;
             case HOLD_EFFECT_RANDOM_STAT_UP:
+                if (gBattleMons[battlerId].ability == ABILITY_GLUTTONY)
+                {
+                    battlerHoldEffectParam /= 2;
+                }
                 if (!moveTurn && gBattleMons[battlerId].hp <= gBattleMons[battlerId].maxHP / battlerHoldEffectParam)
                 {
                     for (i = 0; i < NUM_STATS - 1; i++)

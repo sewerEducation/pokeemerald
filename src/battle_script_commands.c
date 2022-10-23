@@ -558,6 +558,8 @@ void (* const gBattleScriptingCommandsTable[])(void) =
     Cmd_jumpifhasnohp,                           //0xE3
     Cmd_getsecretpowereffect,                    //0xE4
     Cmd_pickup,                                  //0xE5
+    Cmd_docastformchangeanimation,               //0xE6
+    Cmd_trycastformdatachange,                   //0xE7
     Cmd_settypebasedhalvers,                     //0xE8
     Cmd_setweatherballtype,                      //0xE9
     Cmd_tryrecycleitem,                          //0xEA
@@ -1155,6 +1157,9 @@ static void Cmd_accuracycheck(void)
         if (gBattleMons[gBattlerAttacker].ability == ABILITY_VICTORY_STAR || AbilityBattleEffects(ABILITYEFFECT_CHECK_BATTLER_SIDE, gBattlerAttacker, ABILITY_VICTORY_STAR, 0, 0))
             calc = (calc * 110) / 100; // 1.1 victory star boost
 
+        if (gBattleMons[gBattlerTarget].ability == ABILITY_TANGLED_FEET && gBattleMons[gBattlerTarget].status2 & STATUS2_CONFUSION)
+            calc = (calc * 50) / 100; // 1.5 tangled feet losss
+
         if (gBattleMons[gBattlerTarget].item == ITEM_ENIGMA_BERRY)
         {
             holdEffect = gEnigmaBerries[gBattlerTarget].holdEffect;
@@ -1420,6 +1425,18 @@ static void Cmd_typecalc(void)
         }
     }
 
+    if (gBattleMons[gBattlerTarget].ability == ABILITY_CAT_REFLEXES && AttacksThisTurn(gBattlerAttacker, gCurrentMove) == 2
+        && gBattlerTarget == BATTLE_PARTNER(gBattlerAttacker)
+        && gBattleMoves[gCurrentMove].power)
+    {
+        gLastUsedAbility = gBattleMons[gBattlerTarget].ability;
+        gMoveResultFlags |= MOVE_RESULT_MISSED;
+        gLastLandedMoves[gBattlerTarget] = 0;
+        gLastHitByType[gBattlerTarget] = 0;
+        gBattleCommunication[MISS_TYPE] = B_MSG_AVOIDED_DMG;
+        RecordAbilityBattle(gBattlerTarget, gLastUsedAbility);
+    }
+
     if (gBattleMons[gBattlerTarget].ability == ABILITY_WONDER_GUARD && AttacksThisTurn(gBattlerAttacker, gCurrentMove) == 2
      && (!(gMoveResultFlags & MOVE_RESULT_SUPER_EFFECTIVE) || ((gMoveResultFlags & (MOVE_RESULT_SUPER_EFFECTIVE | MOVE_RESULT_NOT_VERY_EFFECTIVE)) == (MOVE_RESULT_SUPER_EFFECTIVE | MOVE_RESULT_NOT_VERY_EFFECTIVE)))
      && gBattleMoves[gCurrentMove].power)
@@ -1500,6 +1517,16 @@ static void CheckWonderGuardAndLevitate(void)
                 flags |= 2;
         }
         i += 3;
+    }
+
+    if (gBattleMons[gBattlerTarget].ability == ABILITY_CAT_REFLEXES && AttacksThisTurn(gBattlerAttacker, gCurrentMove) == 2) //catreflex
+    {
+        if (gBattlerTarget == BATTLE_PARTNER(gBattlerAttacker) && gBattleMoves[gCurrentMove].power)
+        {
+            gLastUsedAbility = gBattleMons[gBattlerTarget].ability;
+            gBattleCommunication[MISS_TYPE] = B_MSG_AVOIDED_DMG;
+            RecordAbilityBattle(gBattlerTarget, gBattleMons[gBattlerTarget].ability);
+        }
     }
 
     if (gBattleMons[gBattlerTarget].ability == ABILITY_WONDER_GUARD && AttacksThisTurn(gBattlerAttacker, gCurrentMove) == 2)
@@ -1601,6 +1628,14 @@ u8 TypeCalc(u16 move, u8 attacker, u8 defender)
             }
             i += 3;
         }
+    }
+
+    if (gBattleMons[defender].ability == ABILITY_CAT_REFLEXES && !(flags & MOVE_RESULT_MISSED) //catreflex
+        && AttacksThisTurn(attacker, move) == 2
+        && (gBattlerTarget == BATTLE_PARTNER(gBattlerAttacker))
+        && gBattleMoves[move].power)
+    {
+        flags |= MOVE_RESULT_MISSED;
     }
 
     if (gBattleMons[defender].ability == ABILITY_WONDER_GUARD && !(flags & MOVE_RESULT_MISSED)
@@ -3168,35 +3203,52 @@ static void Cmd_jumpifstat(void)
 {
     u8 ret = 0;
     u8 battlerId = GetBattlerForBattleScript(gBattlescriptCurrInstr[1]);
-    u8 value = gBattleMons[battlerId].statStages[gBattlescriptCurrInstr[3]];
+    u8 statValue = gBattleMons[battlerId].statStages[gBattlescriptCurrInstr[3]];
+    u8 cmpTo = gBattlescriptCurrInstr[4];
+    u8 cmpKind = gBattlescriptCurrInstr[2];
 
-    switch (gBattlescriptCurrInstr[2])
-    {
-    case CMP_EQUAL:
-        if (value == gBattlescriptCurrInstr[4])
-            ret++;
-        break;
-    case CMP_NOT_EQUAL:
-        if (value != gBattlescriptCurrInstr[4])
-            ret++;
-        break;
-    case CMP_GREATER_THAN:
-        if (value > gBattlescriptCurrInstr[4])
-            ret++;
-        break;
-    case CMP_LESS_THAN:
-        if (value < gBattlescriptCurrInstr[4])
-            ret++;
-        break;
-    case CMP_COMMON_BITS:
-        if (value & gBattlescriptCurrInstr[4])
-            ret++;
-        break;
-    case CMP_NO_COMMON_BITS:
-        if (!(value & gBattlescriptCurrInstr[4]))
-            ret++;
-        break;
-    }
+      // Because this command is used as a way of checking if a stat can be lowered/raised,
+      // we need to do some modification at run-time.
+      if (gBattleMons[battlerId].ability == ABILITY_CONTRARY)
+      {
+          if (cmpKind == CMP_GREATER_THAN)
+              cmpKind = CMP_LESS_THAN;
+          else if (cmpKind == CMP_LESS_THAN)
+              cmpKind = CMP_GREATER_THAN;
+
+          if (cmpTo == 0)
+              cmpTo = 0xC;
+          else if (cmpTo == 0xC)
+              cmpTo = 0;
+      }
+
+      switch (cmpKind)
+      {
+      case CMP_EQUAL:
+          if (statValue == cmpTo)
+              ret++;
+          break;
+      case CMP_NOT_EQUAL:
+          if (statValue != cmpTo)
+              ret++;
+          break;
+      case CMP_GREATER_THAN:
+          if (statValue > cmpTo)
+              ret++;
+          break;
+      case CMP_LESS_THAN:
+          if (statValue < cmpTo)
+              ret++;
+          break;
+      case CMP_COMMON_BITS:
+          if (statValue & cmpTo)
+              ret++;
+          break;
+      case CMP_NO_COMMON_BITS:
+          if (!(statValue & cmpTo))
+              ret++;
+          break;
+      }
 
     if (ret)
         gBattlescriptCurrInstr = T2_READ_PTR(gBattlescriptCurrInstr + 5);
@@ -4576,6 +4628,19 @@ static void Cmd_typecalc2(void)
             }
             i += 3;
         }
+    }
+
+    if (gBattleMons[gBattlerTarget].ability == ABILITY_CAT_REFLEXES //catreflex
+        && !(flags & MOVE_RESULT_NO_EFFECT)
+        && AttacksThisTurn(gBattlerAttacker, gCurrentMove) == 2
+        && (gBattlerTarget == BATTLE_PARTNER(gBattlerAttacker))
+        && gBattleMoves[gCurrentMove].power)
+    {
+        gLastUsedAbility = gBattleMons[gBattlerTarget].ability;
+        gMoveResultFlags |= MOVE_RESULT_MISSED;
+        gLastLandedMoves[gBattlerTarget] = 0;
+        gBattleCommunication[MISS_TYPE] = B_MSG_AVOIDED_DMG;
+        RecordAbilityBattle(gBattlerTarget, gLastUsedAbility);
     }
 
     if (gBattleMons[gBattlerTarget].ability == ABILITY_WONDER_GUARD
@@ -9680,6 +9745,32 @@ static void Cmd_pickup(void)
     }
 
     gBattlescriptCurrInstr++;
+}
+
+static void Cmd_docastformchangeanimation(void)
+{
+    //gActiveBattler = gBattleScripting.battler;
+
+    //if (gBattleMons[gActiveBattler].status2 & STATUS2_SUBSTITUTE)
+    //    *(&gBattleStruct->formToChangeInto) |= CASTFORM_SUBSTITUTE;
+
+    //BtlController_EmitBattleAnimation(BUFFER_A, B_ANIM_CASTFORM_CHANGE, gBattleStruct->formToChangeInto);
+    //MarkBattlerForControllerExec(gActiveBattler);
+
+    //gBattlescriptCurrInstr++;
+}
+
+static void Cmd_trycastformdatachange(void)
+{
+    //u8 form;
+
+    //gBattlescriptCurrInstr++;
+    //form = CastformDataTypeChange(gBattleScripting.battler);
+    //if (form)
+    //{
+    //    BattleScriptPushCursorAndCallback(BattleScript_CastformChange);
+    //    *(&gBattleStruct->formToChangeInto) = form - 1;
+    //}
 }
 
 // Water and Mud Sport

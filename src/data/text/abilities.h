@@ -96,6 +96,10 @@ static const u8 sSniperDescription[] = _("Stronger critical hits.");
 static const u8 sMercilessDescription[] = _("Always crit statused foes.");
 static const u8 sSimpleDescription[] = _("Wild stat changes.");
 static const u8 sContraryDescription[] = _("Reverse stat changes.");
+static const u8 sCatReflexesDescription[] = _("Dodge ally attacks.");
+static const u8 sGluttonyDescription[] = _("Eat berry early.");
+static const u8 sTangledFeetDescription[] = _("Evasion up when confused.");
+static const u8 sTechnicianDescription[] = _("Power up weak moves.");
 
 const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
 {
@@ -197,6 +201,10 @@ const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
     [ABILITY_MERCILESS] = _("MERCILESS"),
     [ABILITY_SIMPLE] = _("SIMPLE"),
     [ABILITY_CONTRARY] = _("CONTRARY"),
+    [ABILITY_CAT_REFLEXES] = _("CAT REFLEXES"),
+    [ABILITY_GLUTTONY] = _("GLUTTONY"),
+    [ABILITY_TANGLED_FEET] = _("TANGLED FEET"),
+    [ABILITY_TECHNICIAN] = _("TECHNICIAN"),
 };
 
 const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT] =
@@ -299,4 +307,8 @@ const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT] =
     [ABILITY_MERCILESS] = sMercilessDescription,
     [ABILITY_SIMPLE] = sSimpleDescription,
     [ABILITY_CONTRARY] = sContraryDescription,
+    [ABILITY_CAT_REFLEXES] = sCatReflexesDescription,
+    [ABILITY_GLUTTONY] = sGluttonyDescription,
+    [ABILITY_TANGLED_FEET] = sTangledFeetDescription,
+    [ABILITY_TECHNICIAN] = sTechnicianDescription,
 };
