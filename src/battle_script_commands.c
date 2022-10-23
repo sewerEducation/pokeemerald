@@ -1278,10 +1278,17 @@ static void Cmd_critcalc(void)
     if ((gBattleMons[gBattlerTarget].ability != ABILITY_HERO_ARMOR && gBattleMons[gBattlerTarget].ability != ABILITY_SHELL_ARMOR)
      && !(gStatuses3[gBattlerAttacker] & STATUS3_CANT_SCORE_A_CRIT)
      && !(gBattleTypeFlags & (BATTLE_TYPE_WALLY_TUTORIAL | BATTLE_TYPE_FIRST_BATTLE))
-     && !(Random() % sCriticalHitChance[critChance]))
-        gCritMultiplier = 2;
+     && ((!(Random() % sCriticalHitChance[critChance])) || (gBattleMons[gBattlerAttacker].ability == ABILITY_MERCILESS && gBattleMons[gBattlerTarget].status1)))
+     {
+        if (gBattleMons[gBattlerAttacker].ability == ABILITY_SNIPER)
+            gCritMultiplier = 3;
+        else
+            gCritMultiplier = 2;
+    }
     else
+    {
         gCritMultiplier = 1;
+    }
 
     gBattlescriptCurrInstr++;
 }
@@ -1981,7 +1988,7 @@ static void Cmd_critmessage(void)
 {
     if (gBattleControllerExecFlags == 0)
     {
-        if (gCritMultiplier == 2 && !(gMoveResultFlags & MOVE_RESULT_NO_EFFECT))
+        if (gCritMultiplier >= 2 && !(gMoveResultFlags & MOVE_RESULT_NO_EFFECT))
         {
             PrepareStringBattle(STRINGID_CRITICALHIT, gBattlerAttacker);
             gBattleCommunication[MSG_DISPLAY] = 1;
@@ -7134,11 +7141,18 @@ static void Cmd_setmultihitcounter(void)
     }
     else
     {
-        gMultiHitCounter = Random() & 3;
-        if (gMultiHitCounter > 1)
-            gMultiHitCounter = (Random() & 3) + 2;
+        if (gBattleMons[gBattlerAttacker].ability == ABILITY_SKILL_LINK)
+        {
+            gMultiHitCounter = 5;
+        }
         else
-            gMultiHitCounter += 2;
+        {
+            gMultiHitCounter = Random() & 3;
+            if (gMultiHitCounter > 1)
+                gMultiHitCounter = (Random() & 3) + 2;
+            else
+                gMultiHitCounter += 2;
+        }
     }
 
     gBattlescriptCurrInstr += 2;

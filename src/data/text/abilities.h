@@ -90,6 +90,10 @@ static const u8 sWildChildDescription[] = _("Power up WILD moves.");
 static const u8 sFallenAngelDescription[] = _("Power up DEVIL moves.");
 static const u8 sVictoryStarDescription[] = _("Raises team accuracy a bit.");
 static const u8 sPowerSpotDescription[] = _("Powers up nearby IDOLS.");
+static const u8 sFurCoatDescription[] = _("Raises DEFENSE.");
+static const u8 sSkillLinkDescription[] = _("Always 5 multi-hits.");
+static const u8 sSniperDescription[] = _("Stronger critical hits.");
+static const u8 sMercilessDescription[] = _("Always crit statused foes.");
 
 const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
 {
@@ -185,6 +189,10 @@ const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
     [ABILITY_FALLEN_ANGEL] = _("FALLEN ANGEL"),
     [ABILITY_VICTORY_STAR] = _("VICTORY STAR"),
     [ABILITY_POWER_SPOT] = _("POWER SPOT"),
+    [ABILITY_FUR_COAT] = _("FUR COAT"),
+    [ABILITY_SKILL_LINK] = _("SKILL LINK"),
+    [ABILITY_SNIPER] = _("SNIPER"),
+    [ABILITY_MERCILESS] = _("MERCILESS"),
 };
 
 const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT] =
@@ -281,4 +289,8 @@ const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT] =
     [ABILITY_FALLEN_ANGEL] = sFallenAngelDescription,
     [ABILITY_VICTORY_STAR] = sVictoryStarDescription,
     [ABILITY_POWER_SPOT] = sPowerSpotDescription,
+    [ABILITY_FUR_COAT] = sFurCoatDescription,
+    [ABILITY_SKILL_LINK] = sSkillLinkDescription,
+    [ABILITY_SNIPER] = sSniperDescription,
+    [ABILITY_MERCILESS] = sMercilessDescription,
 };

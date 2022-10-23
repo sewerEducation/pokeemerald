@@ -3621,8 +3621,8 @@ static const u16 sSceptileLevelUpLearnset[] = {
 };
 
 static const u16 sTorchicLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_HYPER_VOICE),
-    LEVEL_UP_MOVE( 1, MOVE_GROWL),
+    LEVEL_UP_MOVE( 1, MOVE_TOXIC),
+    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 7, MOVE_FOCUS_ENERGY),
     LEVEL_UP_MOVE(10, MOVE_EMBER),
     LEVEL_UP_MOVE(16, MOVE_PECK),
@@ -3763,7 +3763,7 @@ static const u16 sMightyenaLevelUpLearnset[] = {
 };
 
 static const u16 sZigzagoonLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_HYPER_VOICE),
+    LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 5, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 9, MOVE_HEADBUTT),
