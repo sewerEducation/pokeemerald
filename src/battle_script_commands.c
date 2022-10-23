@@ -4106,14 +4106,21 @@ static void Cmd_playstatchangeanimation(void)
     u16 statAnimId = 0;
     s32 changeableStatsCount = 0;
     u8 statsToCheck = 0;
+    u32 flags = gBattlescriptCurrInstr[3];
 
     gActiveBattler = GetBattlerForBattleScript(gBattlescriptCurrInstr[1]);
     statsToCheck = gBattlescriptCurrInstr[2];
 
-    if (gBattlescriptCurrInstr[3] & STAT_CHANGE_NEGATIVE) // goes down
+    // Handle Contrary and Simple
+    if (gBattleMons[gActiveBattler].ability == ABILITY_CONTRARY)
+        flags ^= STAT_CHANGE_NEGATIVE;
+    else if (gBattleMons[gActiveBattler].ability == ABILITY_SIMPLE)
+        flags |= STAT_CHANGE_BY_TWO;
+
+    if (flags & STAT_CHANGE_NEGATIVE) // goes down
     {
         s16 startingStatAnimId;
-        if (gBattlescriptCurrInstr[3] & STAT_CHANGE_BY_TWO)
+        if (flags & STAT_CHANGE_BY_TWO)
             startingStatAnimId = STAT_ANIM_MINUS2 - 1;
         else
             startingStatAnimId = STAT_ANIM_MINUS1 - 1;
@@ -4122,7 +4129,7 @@ static void Cmd_playstatchangeanimation(void)
         {
             if (statsToCheck & 1)
             {
-                if (gBattlescriptCurrInstr[3] & STAT_CHANGE_CANT_PREVENT)
+                if (flags & STAT_CHANGE_CANT_PREVENT)
                 {
                     if (gBattleMons[gActiveBattler].statStages[currStat] > MIN_STAT_STAGE)
                     {
@@ -4148,7 +4155,7 @@ static void Cmd_playstatchangeanimation(void)
 
         if (changeableStatsCount > 1) // more than one stat, so the color is gray
         {
-            if (gBattlescriptCurrInstr[3] & STAT_CHANGE_BY_TWO)
+            if (flags & STAT_CHANGE_BY_TWO)
                 statAnimId = STAT_ANIM_MULTIPLE_MINUS2;
             else
                 statAnimId = STAT_ANIM_MULTIPLE_MINUS1;
@@ -4157,7 +4164,7 @@ static void Cmd_playstatchangeanimation(void)
     else // goes up
     {
         s16 startingStatAnimId;
-        if (gBattlescriptCurrInstr[3] & STAT_CHANGE_BY_TWO)
+        if (flags & STAT_CHANGE_BY_TWO)
             startingStatAnimId = STAT_ANIM_PLUS2 - 1;
         else
             startingStatAnimId = STAT_ANIM_PLUS1 - 1;
@@ -4174,14 +4181,14 @@ static void Cmd_playstatchangeanimation(void)
 
         if (changeableStatsCount > 1) // more than one stat, so the color is gray
         {
-            if (gBattlescriptCurrInstr[3] & STAT_CHANGE_BY_TWO)
+            if (flags & STAT_CHANGE_BY_TWO)
                 statAnimId = STAT_ANIM_MULTIPLE_PLUS2;
             else
                 statAnimId = STAT_ANIM_MULTIPLE_PLUS1;
         }
     }
 
-    if (gBattlescriptCurrInstr[3] & STAT_CHANGE_MULTIPLE_STATS && changeableStatsCount < 2)
+    if (flags & STAT_CHANGE_MULTIPLE_STATS && changeableStatsCount < 2)
     {
         gBattlescriptCurrInstr += 4;
     }
@@ -4189,7 +4196,7 @@ static void Cmd_playstatchangeanimation(void)
     {
         BtlController_EmitBattleAnimation(BUFFER_A, B_ANIM_STATS_CHANGE, statAnimId);
         MarkBattlerForControllerExec(gActiveBattler);
-        if (gBattlescriptCurrInstr[3] & STAT_CHANGE_MULTIPLE_STATS && changeableStatsCount > 1)
+        if (flags & STAT_CHANGE_MULTIPLE_STATS && changeableStatsCount > 1)
             gBattleScripting.statAnimPlayed = TRUE;
         gBattlescriptCurrInstr += 4;
     }
@@ -6951,6 +6958,16 @@ static u8 ChangeStatBuffs(s8 statValue, u8 statId, u8 flags, const u8 *BS_ptr)
     if (flags & STAT_CHANGE_NOT_PROTECT_AFFECTED)
         notProtectAffected++;
     flags &= ~STAT_CHANGE_NOT_PROTECT_AFFECTED;
+
+    if (gBattleMons[gActiveBattler].ability == ABILITY_CONTRARY)
+    {
+        statValue ^= STAT_BUFF_NEGATIVE;
+        gBattleScripting.statChanger ^= STAT_BUFF_NEGATIVE;
+    }
+    else if (gBattleMons[gActiveBattler].ability == ABILITY_SIMPLE)
+    {
+        statValue = (SET_STAT_BUFF_VALUE(GET_STAT_BUFF_VALUE(statValue) * 2)) | ((statValue <= -1) ? STAT_BUFF_NEGATIVE : 0);
+    }
 
     PREPARE_STAT_BUFFER(gBattleTextBuff1, statId)
 

@@ -94,6 +94,8 @@ static const u8 sFurCoatDescription[] = _("Raises DEFENSE.");
 static const u8 sSkillLinkDescription[] = _("Always 5 multi-hits.");
 static const u8 sSniperDescription[] = _("Stronger critical hits.");
 static const u8 sMercilessDescription[] = _("Always crit statused foes.");
+static const u8 sSimpleDescription[] = _("Wild stat changes.");
+static const u8 sContraryDescription[] = _("Reverse stat changes.");
 
 const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
 {
@@ -193,6 +195,8 @@ const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
     [ABILITY_SKILL_LINK] = _("SKILL LINK"),
     [ABILITY_SNIPER] = _("SNIPER"),
     [ABILITY_MERCILESS] = _("MERCILESS"),
+    [ABILITY_SIMPLE] = _("SIMPLE"),
+    [ABILITY_CONTRARY] = _("CONTRARY"),
 };
 
 const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT] =
@@ -293,4 +297,6 @@ const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT] =
     [ABILITY_SKILL_LINK] = sSkillLinkDescription,
     [ABILITY_SNIPER] = sSniperDescription,
     [ABILITY_MERCILESS] = sMercilessDescription,
+    [ABILITY_SIMPLE] = sSimpleDescription,
+    [ABILITY_CONTRARY] = sContraryDescription,
 };
