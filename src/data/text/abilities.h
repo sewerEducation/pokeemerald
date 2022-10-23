@@ -86,6 +86,10 @@ static const u8 sSunnyHeartDescription[] = _("Heals status in sunshine.");
 static const u8 sDeepseaDivaDescription[] = _("OCEAN-type sound moves.");
 static const u8 sInfernoDivaDescription[] = _("HOT-type sound moves.");
 static const u8 sPunkRockDescription[] = _("Power up sound moves.");
+static const u8 sWildChildDescription[] = _("Power up WILD moves.");
+static const u8 sFallenAngelDescription[] = _("Power up DEVIL moves.");
+static const u8 sVictoryStarDescription[] = _("Raises team accuracy a bit.");
+static const u8 sPowerSpotDescription[] = _("Powers up nearby IDOLS.");
 
 const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
 {
@@ -177,6 +181,10 @@ const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
     [ABILITY_DEEPSEA_DIVA] = _("DEEPSEA DIVA"),
     [ABILITY_INFERNO_DIVA] = _("INFERNO DIVA"),
     [ABILITY_PUNK_ROCK] = _("PUNK ROCK"),
+    [ABILITY_WILD_CHILD] = _("WILD CHILD"),
+    [ABILITY_FALLEN_ANGEL] = _("FALLEN ANGEL"),
+    [ABILITY_VICTORY_STAR] = _("VICTORY STAR"),
+    [ABILITY_POWER_SPOT] = _("POWER SPOT"),
 };
 
 const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT] =
@@ -269,4 +277,8 @@ const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT] =
     [ABILITY_DEEPSEA_DIVA] = sDeepseaDivaDescription,
     [ABILITY_INFERNO_DIVA] = sInfernoDivaDescription,
     [ABILITY_PUNK_ROCK] = sPunkRockDescription,
+    [ABILITY_WILD_CHILD] = sWildChildDescription,
+    [ABILITY_FALLEN_ANGEL] = sFallenAngelDescription,
+    [ABILITY_VICTORY_STAR] = sVictoryStarDescription,
+    [ABILITY_POWER_SPOT] = sPowerSpotDescription,
 };
