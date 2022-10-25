@@ -2248,7 +2248,7 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
     SetBoxMonData(boxMon, MON_DATA_MET_LOCATION, &value);
     SetBoxMonData(boxMon, MON_DATA_MET_LEVEL, &level);
     SetBoxMonData(boxMon, MON_DATA_MET_GAME, &gGameVersion);
-    value = ITEM_POKE_BALL;
+    value = ITEM_SCOUT_TICKET;
     SetBoxMonData(boxMon, MON_DATA_POKEBALL, &value);
     SetBoxMonData(boxMon, MON_DATA_OT_GENDER, &gSaveBlock2Ptr->playerGender);
 
@@ -3189,6 +3189,8 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
     if (defender->ability == ABILITY_DUTY_BOUND && defender->status1)
         defense = (150 * defense) / 100;
         spDefense = (150 * spDefense) / 100;
+    if (gBattleMovePower <= 60 && defender->ability == ABILITY_TECHNICIAN)
+        gBattleMovePower = (150 * gBattleMovePower) / 100;
     if (type == TYPE_ANGEL && AbilityBattleEffects(ABILITYEFFECT_FIELD_SPORT, 0, 0, ABILITYEFFECT_MUD_SPORT, 0))
         gBattleMovePower /= 2;
     if (type == TYPE_HOT && AbilityBattleEffects(ABILITYEFFECT_FIELD_SPORT, 0, 0, ABILITYEFFECT_WATER_SPORT, 0))
@@ -4683,7 +4685,7 @@ bool8 ExecuteTableBasedItemEffect(struct Pokemon *mon, u16 item, u8 partyIndex, 
             friendship += friendshipChange;                                                             \
         if (friendshipChange > 0)                                                                       \
         {                                                                                               \
-            if (GetMonData(mon, MON_DATA_POKEBALL, NULL) == ITEM_LUXURY_BALL)                           \
+            if (GetMonData(mon, MON_DATA_POKEBALL, NULL) == ITEM_FANCY_TICKET)                           \
                 friendship++;                                                                           \
             if (GetMonData(mon, MON_DATA_MET_LOCATION, NULL) == GetCurrentRegionMapSectionId())         \
                 friendship++;                                                                           \
@@ -5903,7 +5905,7 @@ void AdjustFriendship(struct Pokemon *mon, u8 event)
             friendship += mod;
             if (mod > 0)
             {
-                if (GetMonData(mon, MON_DATA_POKEBALL, 0) == ITEM_LUXURY_BALL)
+                if (GetMonData(mon, MON_DATA_POKEBALL, 0) == ITEM_FANCY_TICKET)
                     friendship++;
                 if (GetMonData(mon, MON_DATA_MET_LOCATION, 0) == GetCurrentRegionMapSectionId())
                     friendship++;

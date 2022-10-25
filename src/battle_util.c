@@ -549,8 +549,8 @@ void HandleAction_SafariZoneBallThrow(void)
     gBattle_BG0_X = 0;
     gBattle_BG0_Y = 0;
     gNumSafariBalls--;
-    gLastUsedItem = ITEM_SAFARI_BALL;
-    gBattlescriptCurrInstr = gBattlescriptsForBallThrow[ITEM_SAFARI_BALL];
+    gLastUsedItem = ITEM_PARK_TICKET;
+    gBattlescriptCurrInstr = gBattlescriptsForBallThrow[ITEM_PARK_TICKET];
     gCurrentActionFuncId = B_ACTION_EXEC_SCRIPT;
 }
 

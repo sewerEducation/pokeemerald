@@ -4,24 +4,24 @@
 #define ITEM_NONE 0
 
 // Balls
-#define ITEM_MASTER_BALL 1
-#define ITEM_ULTRA_BALL 2
-#define ITEM_GREAT_BALL 3
-#define ITEM_POKE_BALL 4
-#define ITEM_SAFARI_BALL 5
-#define ITEM_NET_BALL 6
-#define ITEM_DIVE_BALL 7
-#define ITEM_NEST_BALL 8
-#define ITEM_REPEAT_BALL 9
-#define ITEM_TIMER_BALL 10
-#define ITEM_LUXURY_BALL 11
-#define ITEM_PREMIER_BALL 12
+#define ITEM_MASTER_TICKET 1
+#define ITEM_SSR_TICKET 2
+#define ITEM_SR_TICKET 3
+#define ITEM_SCOUT_TICKET 4
+#define ITEM_PARK_TICKET 5
+#define ITEM_NET_TICKET 6
+#define ITEM_DIVE_TICKET 7
+#define ITEM_LEVEL_TICKET 8
+#define ITEM_ECHO_TICKET 9
+#define ITEM_TIMER_TICKET 10
+#define ITEM_FANCY_TICKET 11
+#define ITEM_PRIMO_TICKET 12
 
 // Note: If moving ball IDs around, updating FIRST_BALL/LAST_BALL is not sufficient
 //       Several places expect the ball IDs to be first and contiguous (e.g. gBattlescriptsForBallThrow and MON_DATA_POKEBALL)
 //       If adding new balls, it's easiest to insert them after the last ball and increment the below IDs (and removing ITEM_034 for example)
-#define FIRST_BALL ITEM_MASTER_BALL
-#define LAST_BALL  ITEM_PREMIER_BALL
+#define FIRST_BALL ITEM_MASTER_TICKET
+#define LAST_BALL  ITEM_PRIMO_TICKET
 
 // Pokemon Items
 #define ITEM_POTION 13

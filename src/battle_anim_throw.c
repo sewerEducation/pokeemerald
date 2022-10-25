@@ -729,29 +729,29 @@ u8 ItemIdToBallId(u16 ballItem)
 {
     switch (ballItem)
     {
-    case ITEM_MASTER_BALL:
+    case ITEM_MASTER_TICKET:
         return BALL_MASTER;
-    case ITEM_ULTRA_BALL:
+    case ITEM_SSR_TICKET:
         return BALL_ULTRA;
-    case ITEM_GREAT_BALL:
+    case ITEM_SR_TICKET:
         return BALL_GREAT;
-    case ITEM_SAFARI_BALL:
+    case ITEM_PARK_TICKET:
         return BALL_SAFARI;
-    case ITEM_NET_BALL:
+    case ITEM_NET_TICKET:
         return BALL_NET;
-    case ITEM_DIVE_BALL:
+    case ITEM_DIVE_TICKET:
         return BALL_DIVE;
-    case ITEM_NEST_BALL:
+    case ITEM_LEVEL_TICKET:
         return BALL_NEST;
-    case ITEM_REPEAT_BALL:
+    case ITEM_ECHO_TICKET:
         return BALL_REPEAT;
-    case ITEM_TIMER_BALL:
+    case ITEM_TIMER_TICKET:
         return BALL_TIMER;
-    case ITEM_LUXURY_BALL:
+    case ITEM_FANCY_TICKET:
         return BALL_LUXURY;
-    case ITEM_PREMIER_BALL:
+    case ITEM_PRIMO_TICKET:
         return BALL_PREMIER;
-    case ITEM_POKE_BALL:
+    case ITEM_SCOUT_TICKET:
     default:
         return BALL_POKE;
     }

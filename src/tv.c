@@ -1141,7 +1141,7 @@ void TryPutPokemonTodayOnAir(void)
                     if (gBattleResults.usedMasterBall)
                     {
                         ballsUsed = 1;
-                        itemLastUsed = ITEM_MASTER_BALL;
+                        itemLastUsed = ITEM_MASTER_TICKET;
                     }
                     else
                     {
@@ -2168,7 +2168,7 @@ void TryPutBreakingNewsOnAir(void)
         {
         case 0:
             if (gBattleResults.usedMasterBall)
-                show->breakingNews.caughtMonBall = ITEM_MASTER_BALL;
+                show->breakingNews.caughtMonBall = ITEM_MASTER_TICKET;
             else
                 show->breakingNews.caughtMonBall = gBattleResults.caughtMonBall;
             show->breakingNews.balls = balls;
@@ -4665,7 +4665,7 @@ static void DoTVShowPokemonTodaySuccessfulCapture(void)
         TVShowConvertInternationalString(gStringVar1, show->pokemonToday.playerName, show->pokemonToday.language);
         StringCopy(gStringVar2, gSpeciesNames[show->pokemonToday.species]);
         TVShowConvertInternationalString(gStringVar3, show->pokemonToday.nickname, show->pokemonToday.language2);
-        if (show->pokemonToday.ball == ITEM_MASTER_BALL)
+        if (show->pokemonToday.ball == ITEM_MASTER_TICKET)
             sTVShowState = 5;
         else
             sTVShowState = 1;

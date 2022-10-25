@@ -13,160 +13,160 @@ const struct Item gItems[] =
 
 // Pokeballs
 
-    [ITEM_MASTER_BALL] =
+    [ITEM_MASTER_TICKET] =
     {
-        .name = _("MASTER BALL"),
-        .itemId = ITEM_MASTER_BALL,
+        .name = _("MASTERTICKET"),
+        .itemId = ITEM_MASTER_TICKET,
         .price = 0,
         .description = sMasterBallDesc,
         .pocket = POCKET_POKE_BALLS,
-        .type = ITEM_MASTER_BALL - FIRST_BALL,
+        .type = ITEM_MASTER_TICKET - FIRST_BALL,
         .battleUsage = ITEM_B_USE_OTHER,
         .battleUseFunc = ItemUseInBattle_PokeBall,
-        .secondaryId = ITEM_MASTER_BALL - FIRST_BALL,
+        .secondaryId = ITEM_MASTER_TICKET - FIRST_BALL,
     },
 
-    [ITEM_ULTRA_BALL] =
+    [ITEM_SSR_TICKET] =
     {
-        .name = _("ULTRA BALL"),
-        .itemId = ITEM_ULTRA_BALL,
+        .name = _("SSR TICKET"),
+        .itemId = ITEM_SSR_TICKET,
         .price = 1200,
         .description = sUltraBallDesc,
         .pocket = POCKET_POKE_BALLS,
-        .type = ITEM_ULTRA_BALL - FIRST_BALL,
+        .type = ITEM_SSR_TICKET - FIRST_BALL,
         .battleUsage = ITEM_B_USE_OTHER,
         .battleUseFunc = ItemUseInBattle_PokeBall,
-        .secondaryId = ITEM_ULTRA_BALL - FIRST_BALL,
+        .secondaryId = ITEM_SSR_TICKET - FIRST_BALL,
     },
 
-    [ITEM_GREAT_BALL] =
+    [ITEM_SR_TICKET] =
     {
-        .name = _("GREAT BALL"),
-        .itemId = ITEM_GREAT_BALL,
+        .name = _("SR TICKET"),
+        .itemId = ITEM_SR_TICKET,
         .price = 600,
         .description = sGreatBallDesc,
         .pocket = POCKET_POKE_BALLS,
-        .type = ITEM_GREAT_BALL - FIRST_BALL,
+        .type = ITEM_SR_TICKET - FIRST_BALL,
         .battleUsage = ITEM_B_USE_OTHER,
         .battleUseFunc = ItemUseInBattle_PokeBall,
-        .secondaryId = ITEM_GREAT_BALL - FIRST_BALL,
+        .secondaryId = ITEM_SR_TICKET - FIRST_BALL,
     },
 
-    [ITEM_POKE_BALL] =
+    [ITEM_SCOUT_TICKET] =
     {
-        .name = _("POKé BALL"),
-        .itemId = ITEM_POKE_BALL,
+        .name = _("SCOUT TICKET"),
+        .itemId = ITEM_SCOUT_TICKET,
         .price = 200,
         .description = sPokeBallDesc,
         .pocket = POCKET_POKE_BALLS,
-        .type = ITEM_POKE_BALL - FIRST_BALL,
+        .type = ITEM_SCOUT_TICKET - FIRST_BALL,
         .battleUsage = ITEM_B_USE_OTHER,
         .battleUseFunc = ItemUseInBattle_PokeBall,
-        .secondaryId = ITEM_POKE_BALL - FIRST_BALL,
+        .secondaryId = ITEM_SCOUT_TICKET - FIRST_BALL,
     },
 
-    [ITEM_SAFARI_BALL] =
+    [ITEM_PARK_TICKET] =
     {
-        .name = _("SAFARI BALL"),
-        .itemId = ITEM_SAFARI_BALL,
+        .name = _("PARK TICKET"),
+        .itemId = ITEM_PARK_TICKET,
         .price = 0,
         .description = sSafariBallDesc,
         .pocket = POCKET_POKE_BALLS,
-        .type = ITEM_SAFARI_BALL - FIRST_BALL,
+        .type = ITEM_PARK_TICKET - FIRST_BALL,
         .battleUsage = ITEM_B_USE_OTHER,
         .battleUseFunc = ItemUseInBattle_PokeBall,
-        .secondaryId = ITEM_SAFARI_BALL - FIRST_BALL,
+        .secondaryId = ITEM_PARK_TICKET - FIRST_BALL,
     },
 
-    [ITEM_NET_BALL] =
+    [ITEM_NET_TICKET] =
     {
-        .name = _("NET BALL"),
-        .itemId = ITEM_NET_BALL,
+        .name = _("NET TICKET"),
+        .itemId = ITEM_NET_TICKET,
         .price = 1000,
         .description = sNetBallDesc,
         .pocket = POCKET_POKE_BALLS,
-        .type = ITEM_NET_BALL - FIRST_BALL,
+        .type = ITEM_NET_TICKET - FIRST_BALL,
         .battleUsage = ITEM_B_USE_OTHER,
         .battleUseFunc = ItemUseInBattle_PokeBall,
-        .secondaryId = ITEM_NET_BALL - FIRST_BALL,
+        .secondaryId = ITEM_NET_TICKET - FIRST_BALL,
     },
 
-    [ITEM_DIVE_BALL] =
+    [ITEM_DIVE_TICKET] =
     {
-        .name = _("DIVE BALL"),
-        .itemId = ITEM_DIVE_BALL,
+        .name = _("DIVE TICKET"),
+        .itemId = ITEM_DIVE_TICKET,
         .price = 1000,
         .description = sDiveBallDesc,
         .pocket = POCKET_POKE_BALLS,
-        .type = ITEM_DIVE_BALL - FIRST_BALL,
+        .type = ITEM_DIVE_TICKET - FIRST_BALL,
         .battleUsage = ITEM_B_USE_OTHER,
         .battleUseFunc = ItemUseInBattle_PokeBall,
-        .secondaryId = ITEM_DIVE_BALL - FIRST_BALL,
+        .secondaryId = ITEM_DIVE_TICKET - FIRST_BALL,
     },
 
-    [ITEM_NEST_BALL] =
+    [ITEM_LEVEL_TICKET] =
     {
-        .name = _("NEST BALL"),
-        .itemId = ITEM_NEST_BALL,
+        .name = _("LEVEL TICKET"),
+        .itemId = ITEM_LEVEL_TICKET,
         .price = 1000,
         .description = sNestBallDesc,
         .pocket = POCKET_POKE_BALLS,
-        .type = ITEM_NEST_BALL - FIRST_BALL,
+        .type = ITEM_LEVEL_TICKET - FIRST_BALL,
         .battleUsage = ITEM_B_USE_OTHER,
         .battleUseFunc = ItemUseInBattle_PokeBall,
-        .secondaryId = ITEM_NEST_BALL - FIRST_BALL,
+        .secondaryId = ITEM_LEVEL_TICKET - FIRST_BALL,
     },
 
-    [ITEM_REPEAT_BALL] =
+    [ITEM_ECHO_TICKET] =
     {
-        .name = _("REPEAT BALL"),
-        .itemId = ITEM_REPEAT_BALL,
+        .name = _("ECHO TICKET"),
+        .itemId = ITEM_ECHO_TICKET,
         .price = 1000,
         .description = sRepeatBallDesc,
         .pocket = POCKET_POKE_BALLS,
-        .type = ITEM_REPEAT_BALL - FIRST_BALL,
+        .type = ITEM_ECHO_TICKET - FIRST_BALL,
         .battleUsage = ITEM_B_USE_OTHER,
         .battleUseFunc = ItemUseInBattle_PokeBall,
-        .secondaryId = ITEM_REPEAT_BALL - FIRST_BALL,
+        .secondaryId = ITEM_ECHO_TICKET - FIRST_BALL,
     },
 
-    [ITEM_TIMER_BALL] =
+    [ITEM_TIMER_TICKET] =
     {
-        .name = _("TIMER BALL"),
-        .itemId = ITEM_TIMER_BALL,
+        .name = _("TIMER TICKET"),
+        .itemId = ITEM_TIMER_TICKET,
         .price = 1000,
         .description = sTimerBallDesc,
         .pocket = POCKET_POKE_BALLS,
-        .type = ITEM_TIMER_BALL - FIRST_BALL,
+        .type = ITEM_TIMER_TICKET - FIRST_BALL,
         .battleUsage = ITEM_B_USE_OTHER,
         .battleUseFunc = ItemUseInBattle_PokeBall,
-        .secondaryId = ITEM_TIMER_BALL - FIRST_BALL,
+        .secondaryId = ITEM_TIMER_TICKET - FIRST_BALL,
     },
 
-    [ITEM_LUXURY_BALL] =
+    [ITEM_FANCY_TICKET] =
     {
-        .name = _("LUXURY BALL"),
-        .itemId = ITEM_LUXURY_BALL,
+        .name = _("FANCY TICKET"),
+        .itemId = ITEM_FANCY_TICKET,
         .price = 1000,
         .description = sLuxuryBallDesc,
         .pocket = POCKET_POKE_BALLS,
-        .type = ITEM_LUXURY_BALL - FIRST_BALL,
+        .type = ITEM_FANCY_TICKET - FIRST_BALL,
         .battleUsage = ITEM_B_USE_OTHER,
         .battleUseFunc = ItemUseInBattle_PokeBall,
-        .secondaryId = ITEM_LUXURY_BALL - FIRST_BALL,
+        .secondaryId = ITEM_FANCY_TICKET - FIRST_BALL,
     },
 
-    [ITEM_PREMIER_BALL] =
+    [ITEM_PRIMO_TICKET] =
     {
-        .name = _("PREMIER BALL"),
-        .itemId = ITEM_PREMIER_BALL,
+        .name = _("PRIMO TICKET"),
+        .itemId = ITEM_PRIMO_TICKET,
         .price = 200,
         .description = sPremierBallDesc,
         .pocket = POCKET_POKE_BALLS,
-        .type = ITEM_PREMIER_BALL - FIRST_BALL,
+        .type = ITEM_PRIMO_TICKET - FIRST_BALL,
         .battleUsage = ITEM_B_USE_OTHER,
         .battleUseFunc = ItemUseInBattle_PokeBall,
-        .secondaryId = ITEM_PREMIER_BALL - FIRST_BALL,
+        .secondaryId = ITEM_PRIMO_TICKET - FIRST_BALL,
     },
 
 // Medicine
@@ -1765,7 +1765,7 @@ const struct Item gItems[] =
         .itemId = ITEM_FIGY_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_CONFUSE_SPICY,
-        .holdEffectParam = 4,
+        .holdEffectParam = 3,
         .description = sFigyBerryDesc,
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
@@ -1778,7 +1778,7 @@ const struct Item gItems[] =
         .itemId = ITEM_WIKI_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_CONFUSE_DRY,
-        .holdEffectParam = 4,
+        .holdEffectParam = 3,
         .description = sWikiBerryDesc,
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
@@ -1791,7 +1791,7 @@ const struct Item gItems[] =
         .itemId = ITEM_MAGO_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_CONFUSE_SWEET,
-        .holdEffectParam = 4,
+        .holdEffectParam = 3,
         .description = sMagoBerryDesc,
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
@@ -1804,7 +1804,7 @@ const struct Item gItems[] =
         .itemId = ITEM_AGUAV_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_CONFUSE_BITTER,
-        .holdEffectParam = 4,
+        .holdEffectParam = 3,
         .description = sAguavBerryDesc,
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,
@@ -1817,7 +1817,7 @@ const struct Item gItems[] =
         .itemId = ITEM_IAPAPA_BERRY,
         .price = 20,
         .holdEffect = HOLD_EFFECT_CONFUSE_SOUR,
-        .holdEffectParam = 4,
+        .holdEffectParam = 3,
         .description = sIapapaBerryDesc,
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_BAG_MENU,

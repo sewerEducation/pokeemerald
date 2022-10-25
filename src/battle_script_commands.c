@@ -786,12 +786,12 @@ static const u16 sPickupItems[] =
     ITEM_POTION,
     ITEM_ANTIDOTE,
     ITEM_SUPER_POTION,
-    ITEM_GREAT_BALL,
+    ITEM_SR_TICKET,
     ITEM_REPEL,
     ITEM_ESCAPE_ROPE,
     ITEM_X_ATTACK,
     ITEM_FULL_HEAL,
-    ITEM_ULTRA_BALL,
+    ITEM_SSR_TICKET,
     ITEM_HYPER_POTION,
     ITEM_RARE_CANDY,
     ITEM_PROTEIN,
@@ -837,13 +837,13 @@ static const u8 sTerrainToType[] =
     [BATTLE_TERRAIN_PLAIN]      = TYPE_NORMAL,
 };
 
-// - ITEM_ULTRA_BALL skips Master Ball and ITEM_NONE
+// - ITEM_SSR_TICKET skips Master Ball and ITEM_NONE
 static const u8 sBallCatchBonuses[] =
 {
-    [ITEM_ULTRA_BALL - ITEM_ULTRA_BALL]  = 20,
-    [ITEM_GREAT_BALL - ITEM_ULTRA_BALL]  = 15,
-    [ITEM_POKE_BALL - ITEM_ULTRA_BALL]   = 10,
-    [ITEM_SAFARI_BALL - ITEM_ULTRA_BALL] = 15
+    [ITEM_SSR_TICKET - ITEM_SSR_TICKET]  = 20,
+    [ITEM_SR_TICKET - ITEM_SSR_TICKET]  = 15,
+    [ITEM_SCOUT_TICKET - ITEM_SSR_TICKET]   = 10,
+    [ITEM_PARK_TICKET - ITEM_SSR_TICKET] = 15
 };
 
 // In Battle Palace, moves are chosen based on the pokemons nature rather than by the player
@@ -9757,14 +9757,14 @@ static void Cmd_docastformchangeanimation(void)
     //BtlController_EmitBattleAnimation(BUFFER_A, B_ANIM_CASTFORM_CHANGE, gBattleStruct->formToChangeInto);
     //MarkBattlerForControllerExec(gActiveBattler);
 
-    //gBattlescriptCurrInstr++;
+    gBattlescriptCurrInstr++;
 }
 
 static void Cmd_trycastformdatachange(void)
 {
     //u8 form;
 
-    //gBattlescriptCurrInstr++;
+    gBattlescriptCurrInstr++;
     //form = CastformDataTypeChange(gBattleScripting.battler);
     //if (form)
     //{
@@ -9948,28 +9948,28 @@ static void Cmd_handleballthrow(void)
         u32 odds;
         u8 catchRate;
 
-        if (gLastUsedItem == ITEM_SAFARI_BALL)
+        if (gLastUsedItem == ITEM_PARK_TICKET)
             catchRate = gBattleStruct->safariCatchFactor * 1275 / 100;
         else
             catchRate = gBaseStats[gBattleMons[gBattlerTarget].species].catchRate;
 
-        if (gLastUsedItem > ITEM_SAFARI_BALL)
+        if (gLastUsedItem > ITEM_PARK_TICKET)
         {
             switch (gLastUsedItem)
             {
-            case ITEM_NET_BALL:
+            case ITEM_NET_TICKET:
                 if (IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_OCEAN) || IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_BUG))
                     ballMultiplier = 30;
                 else
                     ballMultiplier = 10;
                 break;
-            case ITEM_DIVE_BALL:
+            case ITEM_DIVE_TICKET:
                 if (GetCurrentMapType() == MAP_TYPE_UNDERWATER)
                     ballMultiplier = 35;
                 else
                     ballMultiplier = 10;
                 break;
-            case ITEM_NEST_BALL:
+            case ITEM_LEVEL_TICKET:
                 if (gBattleMons[gBattlerTarget].level < 40)
                 {
                     ballMultiplier = 40 - gBattleMons[gBattlerTarget].level;
@@ -9981,25 +9981,25 @@ static void Cmd_handleballthrow(void)
                     ballMultiplier = 10;
                 }
                 break;
-            case ITEM_REPEAT_BALL:
+            case ITEM_ECHO_TICKET:
                 if (GetSetPokedexFlag(SpeciesToNationalPokedexNum(gBattleMons[gBattlerTarget].species), FLAG_GET_CAUGHT))
                     ballMultiplier = 30;
                 else
                     ballMultiplier = 10;
                 break;
-            case ITEM_TIMER_BALL:
+            case ITEM_TIMER_TICKET:
                 ballMultiplier = gBattleResults.battleTurnCounter + 10;
                 if (ballMultiplier > 40)
                     ballMultiplier = 40;
                 break;
-            case ITEM_LUXURY_BALL:
-            case ITEM_PREMIER_BALL:
+            case ITEM_FANCY_TICKET:
+            case ITEM_PRIMO_TICKET:
                 ballMultiplier = 10;
                 break;
             }
         }
         else
-            ballMultiplier = sBallCatchBonuses[gLastUsedItem - ITEM_ULTRA_BALL];
+            ballMultiplier = sBallCatchBonuses[gLastUsedItem - ITEM_SSR_TICKET];
 
         odds = (catchRate * ballMultiplier / 10)
             * (gBattleMons[gBattlerTarget].maxHP * 3 - gBattleMons[gBattlerTarget].hp * 2)
@@ -10010,16 +10010,16 @@ static void Cmd_handleballthrow(void)
         if (gBattleMons[gBattlerTarget].status1 & (STATUS1_POISON | STATUS1_BURN | STATUS1_PARALYSIS | STATUS1_TOXIC_POISON))
             odds = (odds * 15) / 10;
 
-        if (gLastUsedItem != ITEM_SAFARI_BALL)
+        if (gLastUsedItem != ITEM_PARK_TICKET)
         {
-            if (gLastUsedItem == ITEM_MASTER_BALL)
+            if (gLastUsedItem == ITEM_MASTER_TICKET)
             {
                 gBattleResults.usedMasterBall = TRUE;
             }
             else
             {
-                if (gBattleResults.catchAttempts[gLastUsedItem - ITEM_ULTRA_BALL] < 255)
-                    gBattleResults.catchAttempts[gLastUsedItem - ITEM_ULTRA_BALL]++;
+                if (gBattleResults.catchAttempts[gLastUsedItem - ITEM_SSR_TICKET] < 255)
+                    gBattleResults.catchAttempts[gLastUsedItem - ITEM_SSR_TICKET]++;
             }
         }
 
@@ -10044,7 +10044,7 @@ static void Cmd_handleballthrow(void)
 
             for (shakes = 0; shakes < BALL_3_SHAKES_SUCCESS && Random() < odds; shakes++);
 
-            if (gLastUsedItem == ITEM_MASTER_BALL)
+            if (gLastUsedItem == ITEM_MASTER_TICKET)
                 shakes = BALL_3_SHAKES_SUCCESS; // why calculate the shakes before that check?
 
             BtlController_EmitBallThrowAnim(BUFFER_A, shakes);
