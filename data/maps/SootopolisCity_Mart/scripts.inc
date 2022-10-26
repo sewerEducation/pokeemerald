@@ -16,11 +16,11 @@ SootopolisCity_Mart_Pokemart:
 	.2byte ITEM_SSR_TICKET
 	.2byte ITEM_HYPER_POTION
 	.2byte ITEM_MAX_POTION
-	.2byte ITEM_FULL_HEAL
-	.2byte ITEM_REVIVE
+	.2byte ITEM_LUM_BERRY
+	.2byte ITEM_MAX_REVIVE
 	.2byte ITEM_MAX_REPEL
-	.2byte ITEM_X_ATTACK
-	.2byte ITEM_X_DEFEND
+	.2byte ITEM_ATK_ENERGY
+	.2byte ITEM_SPATK_ENERGY
 	.2byte ITEM_SHADOW_MAIL
 	.2byte ITEM_NONE
 	release
@@ -74,4 +74,3 @@ SootopolisCity_Mart_Text_FullRestoreItemOfDreams:
 SootopolisCity_Mart_Text_DidSomethingAwaken:
 	.string "This weather…\n"
 	.string "Did something awaken?$"
-

@@ -14,14 +14,13 @@ LavaridgeTown_Mart_EventScript_Clerk::
 	.align 2
 LavaridgeTown_Mart_Pokemart:
 	.2byte ITEM_SR_TICKET
-	.2byte ITEM_SUPER_POTION
-	.2byte ITEM_ANTIDOTE
-	.2byte ITEM_PARALYZE_HEAL
-	.2byte ITEM_AWAKENING
-	.2byte ITEM_BURN_HEAL
-	.2byte ITEM_REVIVE
+	.2byte ITEM_CHESTO_BERRY
+	.2byte ITEM_LUM_BERRY
+	.2byte ITEM_ASPEAR_BERRY
+	.2byte ITEM_PERSIM_BERRY
+	.2byte ITEM_MAX_REVIVE
 	.2byte ITEM_SUPER_REPEL
-	.2byte ITEM_X_SPEED
+	.2byte ITEM_SPEED_ENERGY
 	.2byte ITEM_NONE
 	release
 	end

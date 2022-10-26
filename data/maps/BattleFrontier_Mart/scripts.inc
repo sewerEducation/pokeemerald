@@ -19,8 +19,8 @@ BattleFrontier_Mart_Pokemart:
 	.2byte ITEM_HYPER_POTION
 	.2byte ITEM_MAX_POTION
 	.2byte ITEM_FULL_RESTORE
-	.2byte ITEM_FULL_HEAL
-	.2byte ITEM_REVIVE
+	.2byte ITEM_LUM_BERRY
+	.2byte ITEM_MAX_REVIVE
 	.2byte ITEM_MAX_REPEL
 	.2byte ITEM_PROTEIN
 	.2byte ITEM_CALCIUM
@@ -66,4 +66,3 @@ BattleFrontier_Mart_Text_FacilitiesDontAllowItems:
 	.string "during battles.\p"
 	.string "That rule makes things tougher than\n"
 	.string "they already are!$"
-

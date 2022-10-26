@@ -84,17 +84,17 @@ LilycoveCity_DepartmentStoreRooftop_EventScript_ChooseDrink::
 	end
 
 LilycoveCity_DepartmentStoreRooftop_EventScript_FreshWater::
-	setvar VAR_TEMP_0, ITEM_FRESH_WATER
+	setvar VAR_TEMP_0, ITEM_CHERI_BERRY
 	goto LilycoveCity_DepartmentStoreRooftop_EventScript_TryBuyDrink
 	end
 
 LilycoveCity_DepartmentStoreRooftop_EventScript_SodaPop::
-	setvar VAR_TEMP_0, ITEM_SODA_POP
+	setvar VAR_TEMP_0, ITEM_PECHA_BERRY
 	goto LilycoveCity_DepartmentStoreRooftop_EventScript_TryBuyDrink
 	end
 
 LilycoveCity_DepartmentStoreRooftop_EventScript_Lemonade::
-	setvar VAR_TEMP_0, ITEM_LEMONADE
+	setvar VAR_TEMP_0, ITEM_RAWST_BERRY
 	goto LilycoveCity_DepartmentStoreRooftop_EventScript_TryBuyDrink
 	end
 

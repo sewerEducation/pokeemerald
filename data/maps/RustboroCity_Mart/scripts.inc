@@ -19,15 +19,15 @@ RustboroCity_Mart_EventScript_PokemartBasic::
 	.align 2
 RustboroCity_Mart_Pokemart_Basic:
 	.2byte ITEM_SCOUT_TICKET
-	.2byte ITEM_POTION
-	.2byte ITEM_SUPER_POTION
-	.2byte ITEM_ANTIDOTE
-	.2byte ITEM_PARALYZE_HEAL
+	.2byte ITEM_CHERI_BERRY
+	.2byte ITEM_PECHA_BERRY
+	.2byte ITEM_LUM_BERRY
+	.2byte ITEM_PERSIM_BERRY
 	.2byte ITEM_ESCAPE_ROPE
 	.2byte ITEM_REPEL
-	.2byte ITEM_X_SPEED
-	.2byte ITEM_X_ATTACK
-	.2byte ITEM_X_DEFEND
+	.2byte ITEM_SPEED_ENERGY
+	.2byte ITEM_ATK_ENERGY
+	.2byte ITEM_DEF_ENERGY
 	.2byte ITEM_NONE
 	release
 	end
@@ -43,15 +43,15 @@ RustboroCity_Mart_Pokemart_Expanded:
 	.2byte ITEM_SCOUT_TICKET
 	.2byte ITEM_TIMER_TICKET
 	.2byte ITEM_ECHO_TICKET
-	.2byte ITEM_POTION
-	.2byte ITEM_SUPER_POTION
-	.2byte ITEM_ANTIDOTE
-	.2byte ITEM_PARALYZE_HEAL
+	.2byte ITEM_CHERI_BERRY
+	.2byte ITEM_PECHA_BERRY
+	.2byte ITEM_LUM_BERRY
+	.2byte ITEM_PERSIM_BERRY
 	.2byte ITEM_ESCAPE_ROPE
 	.2byte ITEM_REPEL
-	.2byte ITEM_X_SPEED
-	.2byte ITEM_X_ATTACK
-	.2byte ITEM_X_DEFEND
+	.2byte ITEM_SPEED_ENERGY
+	.2byte ITEM_ATK_ENERGY
+	.2byte ITEM_DEF_ENERGY
 	.2byte ITEM_NONE
 	release
 	end

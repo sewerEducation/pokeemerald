@@ -273,7 +273,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
         {
             {
                 .species = SPECIES_HERACROSS,
-                .heldItem = ITEM_SALAC_BERRY,
+                .heldItem = ITEM_SPEED_ENERGY,
                 .fixedIV = 20,
                 .nature = NATURE_JOLLY,
                 .evs = {106, 152, 0, 152, 0, 100},
@@ -331,7 +331,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
         {
             {
                 .species = SPECIES_METANG,
-                .heldItem = ITEM_SITRUS_BERRY,
+                .heldItem = ITEM_ASPEAR_BERRY,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_BRAVE,
                 .evs = {0, 252, 252, 0, 6, 0},
@@ -339,7 +339,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
             },
             {
                 .species = SPECIES_SKARMORY,
-                .heldItem = ITEM_SITRUS_BERRY,
+                .heldItem = ITEM_ASPEAR_BERRY,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_IMPISH,
                 .evs = {252, 0, 0, 0, 6, 252},
@@ -347,7 +347,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
             },
             {
                 .species = SPECIES_AGGRON,
-                .heldItem = ITEM_SITRUS_BERRY,
+                .heldItem = ITEM_ASPEAR_BERRY,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_ADAMANT,
                 .evs = {0, 252, 0, 0, 252, 6},
@@ -357,7 +357,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
         {
             {
                 .species = SPECIES_METANG,
-                .heldItem = ITEM_SITRUS_BERRY,
+                .heldItem = ITEM_ASPEAR_BERRY,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_BRAVE,
                 .evs = {0, 252, 252, 0, 6, 0},
@@ -365,7 +365,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
             },
             {
                 .species = SPECIES_SKARMORY,
-                .heldItem = ITEM_SITRUS_BERRY,
+                .heldItem = ITEM_ASPEAR_BERRY,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_IMPISH,
                 .evs = {252, 0, 0, 0, 6, 252},
@@ -373,7 +373,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
             },
             {
                 .species = SPECIES_AGGRON,
-                .heldItem = ITEM_SITRUS_BERRY,
+                .heldItem = ITEM_ASPEAR_BERRY,
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_ADAMANT,
                 .evs = {0, 252, 0, 0, 252, 6},

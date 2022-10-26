@@ -109,9 +109,9 @@ MtChimney_EventScript_LavaCookieLady::
 	checkmoney 200
 	goto_if_eq VAR_RESULT, FALSE, MtChimney_EventScript_NotEnoughMoney
 	msgbox MtChimney_Text_ThankYouDear, MSGBOX_DEFAULT
-	checkitemspace ITEM_LAVA_COOKIE
+	checkitemspace ITEM_LUM_BERRY
 	call_if_eq VAR_RESULT, TRUE, MtChimney_EventScript_RemoveMoney
-	giveitem ITEM_LAVA_COOKIE
+	giveitem ITEM_LUM_BERRY
 	goto_if_eq VAR_RESULT, FALSE, MtChimney_EventScript_BagIsFull
 	hidemoneybox
 	release

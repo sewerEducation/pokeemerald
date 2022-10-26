@@ -2317,7 +2317,7 @@ static void RestoreBagAfterWallyTutorial(void)
 void DoWallyTutorialBagMenu(void)
 {
     PrepareBagForWallyTutorial();
-    AddBagItem(ITEM_POTION, 1);
+    AddBagItem(ITEM_LUCKY_PUNCH, 1);
     AddBagItem(ITEM_SCOUT_TICKET, 1);
     GoToBagMenu(ITEMMENULOCATION_WALLY, ITEMS_POCKET, CB2_SetUpReshowBattleScreenAfterMenu2);
 }

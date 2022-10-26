@@ -15,15 +15,12 @@ VerdanturfTown_Mart_EventScript_Clerk::
 VerdanturfTown_Mart_Pokemart:
 	.2byte ITEM_SR_TICKET
 	.2byte ITEM_LEVEL_TICKET
-	.2byte ITEM_SUPER_POTION
-	.2byte ITEM_ANTIDOTE
-	.2byte ITEM_PARALYZE_HEAL
-	.2byte ITEM_AWAKENING
-	.2byte ITEM_BURN_HEAL
-	.2byte ITEM_ICE_HEAL
+	.2byte ITEM_CHESTO_BERRY
+	.2byte ITEM_LUM_BERRY
+	.2byte ITEM_PERSIM_BERRY
 	.2byte ITEM_REPEL
-	.2byte ITEM_X_SPECIAL
-	.2byte ITEM_FLUFFY_TAIL
+	.2byte ITEM_RANDO_ENERGY
+	.2byte ITEM_POKE_DOLL
 	.2byte ITEM_NONE
 	release
 	end

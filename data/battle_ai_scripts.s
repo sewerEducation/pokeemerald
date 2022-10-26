@@ -2414,7 +2414,7 @@ AI_CV_Recycle_End:
 AI_CV_Recycle_ItemsToEncourage:
 	.byte ITEM_CHESTO_BERRY
 	.byte ITEM_LUM_BERRY
-	.byte ITEM_STARF_BERRY
+	.byte ITEM_RANDO_ENERGY
 	.byte -1
 
 AI_CV_Revenge:

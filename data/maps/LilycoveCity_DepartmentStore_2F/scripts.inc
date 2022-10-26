@@ -29,13 +29,8 @@ LilycoveCity_DepartmentStore_2F_Pokemart1:
 	.2byte ITEM_SR_TICKET
 	.2byte ITEM_SSR_TICKET
 	.2byte ITEM_ESCAPE_ROPE
-	.2byte ITEM_FULL_HEAL
-	.2byte ITEM_ANTIDOTE
-	.2byte ITEM_PARALYZE_HEAL
-	.2byte ITEM_BURN_HEAL
-	.2byte ITEM_ICE_HEAL
-	.2byte ITEM_AWAKENING
-	.2byte ITEM_FLUFFY_TAIL
+	.2byte ITEM_PERSIM_BERRY
+	.2byte ITEM_POKE_DOLL
 	.2byte ITEM_NONE
 	release
 	end
@@ -52,11 +47,11 @@ LilycoveCity_DepartmentStore_2F_EventScript_ClerkRight::
 
 	.align 2
 LilycoveCity_DepartmentStore_2F_Pokemart2:
-	.2byte ITEM_POTION
-	.2byte ITEM_SUPER_POTION
-	.2byte ITEM_HYPER_POTION
-	.2byte ITEM_MAX_POTION
-	.2byte ITEM_REVIVE
+	.2byte ITEM_CHERI_BERRY
+	.2byte ITEM_CHESTO_BERRY
+	.2byte ITEM_PECHA_BERRY
+	.2byte ITEM_RAWST_BERRY
+	.2byte ITEM_LUM_BERRY
 	.2byte ITEM_REPEL
 	.2byte ITEM_SUPER_REPEL
 	.2byte ITEM_MAX_REPEL
@@ -77,4 +72,3 @@ LilycoveCity_DepartmentStore_2F_Text_GoodGiftForHusband:
 LilycoveCity_DepartmentStore_2F_Text_StockUpOnItems:
 	.string "I'm leaving on a long journey soon.\n"
 	.string "I need to stock up on items.$"
-

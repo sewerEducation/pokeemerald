@@ -99,7 +99,7 @@ void static (*const sSlateportTentFuncs[])(void) =
     [SLATEPORT_TENT_FUNC_GENERATE_RENTAL_MONS]   = GenerateInitialRentalMons
 };
 
-static const u16 sSlateportTentRewards[] = {ITEM_FULL_HEAL};
+static const u16 sSlateportTentRewards[] = {ITEM_LUM_BERRY};
 
 // code
 void CallVerdanturfTentFunction(void)
@@ -390,7 +390,7 @@ static void GenerateOpponentMons(void)
     while (i != FRONTIER_PARTY_SIZE)
     {
         sRandMonId = monSet[Random() % numMons];
-        
+
         // Ensure none of the opponent's pokemon are the same as the potential rental pokemon for the player
         for (j = 0; j < (int)ARRAY_COUNT(gSaveBlock2Ptr->frontier.rentalMons); j++)
         {

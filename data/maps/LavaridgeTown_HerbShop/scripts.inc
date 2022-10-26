@@ -13,10 +13,10 @@ LavaridgeTown_HerbShop_EventScript_Clerk::
 
 	.align 2
 LavaridgeTown_HerbShop_Pokemart:
-	.2byte ITEM_ENERGY_POWDER
-	.2byte ITEM_ENERGY_ROOT
-	.2byte ITEM_HEAL_POWDER
-	.2byte ITEM_REVIVAL_HERB
+	.2byte ITEM_HYPER_POTION
+	.2byte ITEM_MAX_POTION
+	.2byte ITEM_FULL_RESTORE
+	.2byte ITEM_MAX_REVIVE
 	.2byte ITEM_NONE
 	release
 	end

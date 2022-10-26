@@ -234,7 +234,7 @@ Route124_DivingTreasureHuntersHouse_EventScript_TradeBlueShard::
 
 Route124_DivingTreasureHuntersHouse_EventScript_TradeGreenShard::
 	setvar VAR_0x8008, ITEM_GREEN_SHARD
-	setvar VAR_0x8009, ITEM_LEAF_STONE
+	setvar VAR_0x8009, ITEM_POKE_DOLL
 	goto Route124_DivingTreasureHuntersHouse_EventScript_TryTradeShard
 
 Route124_DivingTreasureHuntersHouse_EventScript_TryTradeShard::

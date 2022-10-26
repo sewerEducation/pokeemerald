@@ -109,27 +109,27 @@ Route120_EventScript_BerryBeauty::
 	end
 
 Route120_EventScript_GiveFigyBerry::
-	setvar VAR_0x8004, ITEM_FIGY_BERRY
+	setvar VAR_0x8004, ITEM_SPICE_APPLE
 	goto Route120_EventScript_GiveBerry
 	end
 
 Route120_EventScript_GiveWikiBerry::
-	setvar VAR_0x8004, ITEM_WIKI_BERRY
+	setvar VAR_0x8004, ITEM_DRY_APPLE
 	goto Route120_EventScript_GiveBerry
 	end
 
 Route120_EventScript_GiveMagoBerry::
-	setvar VAR_0x8004, ITEM_MAGO_BERRY
+	setvar VAR_0x8004, ITEM_SWEET_APPLE
 	goto Route120_EventScript_GiveBerry
 	end
 
 Route120_EventScript_GiveAguavBerry::
-	setvar VAR_0x8004, ITEM_AGUAV_BERRY
+	setvar VAR_0x8004, ITEM_BITTER_APPLE
 	goto Route120_EventScript_GiveBerry
 	end
 
 Route120_EventScript_GiveIapapaBerry::
-	setvar VAR_0x8004, ITEM_IAPAPA_BERRY
+	setvar VAR_0x8004, ITEM_SOUR_APPLE
 	goto Route120_EventScript_GiveBerry
 	end
 

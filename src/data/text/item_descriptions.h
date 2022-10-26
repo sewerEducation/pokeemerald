@@ -499,28 +499,28 @@ static const u8 sRetroMailDesc[] = _(
 // Berries
 static const u8 sCheriBerryDesc[] = _(
     "A hold item that\n"
-    "heals paralysis\n"
-    "in battle.");
+    "restores 20 HP in\n"
+    "battle.");
 
 static const u8 sChestoBerryDesc[] = _(
     "A hold item that\n"
-    "awakens IDOLS\n"
-    "in battle.");
+    "restores 20 HP in\n"
+    "battle.");
 
 static const u8 sPechaBerryDesc[] = _(
     "A hold item that\n"
-    "heals poisoning\n"
-    "in battle.");
+    "restores 40 HP in\n"
+    "battle.");
 
 static const u8 sRawstBerryDesc[] = _(
     "A hold item that\n"
-    "heals a burn in\n"
+    "restores 40 HP in\n"
     "battle.");
 
 static const u8 sAspearBerryDesc[] = _(
     "A hold item that\n"
-    "defrosts IDOLS\n"
-    "in battle.");
+    "restores 50 HP in\n"
+    "battle.");
 
 static const u8 sLeppaBerryDesc[] = _(
     "A hold item that\n"
@@ -529,7 +529,7 @@ static const u8 sLeppaBerryDesc[] = _(
 
 static const u8 sOranBerryDesc[] = _(
     "A hold item that\n"
-    "restores 10 HP in\n"
+    "restores 20 PP in\n"
     "battle.");
 
 static const u8 sPersimBerryDesc[] = _(
@@ -830,58 +830,58 @@ static const u8 sDragonScaleDesc[] = _(
 
 static const u8 sLightBallDesc[] = _(
     "A hold item that\n"
-    "raises the SP. ATK\n"
-    "of PIKACHU.");
+    "raises the power of\n"
+    "ANGEL-type moves.");
 
 static const u8 sSoftSandDesc[] = _(
     "A hold item that\n"
     "raises the power of\n"
-    "GROUND-type moves.");
+    "WILD-type moves.");
 
 static const u8 sHardStoneDesc[] = _(
     "A hold item that\n"
     "raises the power of\n"
-    "ROCK-type moves.");
+    "COSMIC-type moves.");
 
 static const u8 sMiracleSeedDesc[] = _(
     "A hold item that\n"
     "raises the power of\n"
-    "GRASS-type moves.");
+    "NATURE-type moves.");
 
 static const u8 sBlackGlassesDesc[] = _(
     "A hold item that\n"
     "raises the power of\n"
-    "DARK-type moves.");
+    "ROCK-type moves.");
 
 static const u8 sBlackBeltDesc[] = _(
     "A hold item that\n"
-    "boosts FIGHTING-\n"
+    "boosts SPORTS-\n"
     "type moves.");
 
 static const u8 sMagnetDesc[] = _(
     "A hold item that\n"
-    "boosts ELECTRIC-\n"
+    "boosts METAL-\n"
     "type moves.");
 
 static const u8 sMysticWaterDesc[] = _(
     "A hold item that\n"
     "raises the power of\n"
-    "WATER-type moves.");
+    "OCEAN-type moves.");
 
 static const u8 sSharpBeakDesc[] = _(
     "A hold item that\n"
     "raises the power of\n"
-    "FLYING-type moves.");
+    "GAL-type moves.");
 
 static const u8 sPoisonBarbDesc[] = _(
     "A hold item that\n"
     "raises the power of\n"
-    "POISON-type moves.");
+    "TOXIC-type moves.");
 
 static const u8 sNeverMeltIceDesc[] = _(
     "A hold item that\n"
     "raises the power of\n"
-    "ICE-type moves.");
+    "COLD-type moves.");
 
 static const u8 sSpellTagDesc[] = _(
     "A hold item that\n"
@@ -890,18 +890,18 @@ static const u8 sSpellTagDesc[] = _(
 
 static const u8 sTwistedSpoonDesc[] = _(
     "A hold item that\n"
-    "boosts PSYCHIC-\n"
+    "boosts ESPER-\n"
     "type moves.");
 
 static const u8 sCharcoalDesc[] = _(
     "A hold item that\n"
     "raises the power of\n"
-    "FIRE-type moves.");
+    "HOT-type moves.");
 
 static const u8 sDragonFangDesc[] = _(
     "A hold item that\n"
     "raises the power of\n"
-    "DRAGON-type moves.");
+    "DEVIL-type moves.");
 
 static const u8 sSilkScarfDesc[] = _(
     "A hold item that\n"
@@ -924,8 +924,8 @@ static const u8 sSeaIncenseDesc[] = _(
 
 static const u8 sLaxIncenseDesc[] = _(
     "A hold item that\n"
-    "slightly lowers the\n"
-    "foe's accuracy.");
+    "raises the power of\n"
+    "SWEET-type moves.");
 
 static const u8 sLuckyPunchDesc[] = _(
     "A hold item that\n"

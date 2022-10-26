@@ -738,7 +738,7 @@ static void AlterEggSpeciesWithIncenseItem(u16 *species, struct DayCare *daycare
     {
         motherItem = GetBoxMonData(&daycare->mons[0].mon, MON_DATA_HELD_ITEM);
         fatherItem = GetBoxMonData(&daycare->mons[1].mon, MON_DATA_HELD_ITEM);
-        if (*species == SPECIES_WYNAUT && motherItem != ITEM_LAX_INCENSE && fatherItem != ITEM_LAX_INCENSE)
+        if (*species == SPECIES_WYNAUT && motherItem != ITEM_CANDY_POUCH && fatherItem != ITEM_CANDY_POUCH)
         {
             *species = SPECIES_WOBBUFFET;
         }

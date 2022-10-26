@@ -782,29 +782,29 @@ SlateportCity_EventScript_ChooseBerryPowderItem::
 	end
 
 SlateportCity_EventScript_EnergyPowder::
-	bufferitemname STR_VAR_1, ITEM_ENERGY_POWDER
-	setvar VAR_0x8008, ITEM_ENERGY_POWDER
+	bufferitemname STR_VAR_1, ITEM_HYPER_POTION
+	setvar VAR_0x8008, ITEM_HYPER_POTION
 	setvar VAR_0x8009, 50
 	goto SlateportCity_EventScript_TryBuyBerryPowderItem
 	end
 
 SlateportCity_EventScript_EnergyRoot::
-	bufferitemname STR_VAR_1, ITEM_ENERGY_ROOT
-	setvar VAR_0x8008, ITEM_ENERGY_ROOT
+	bufferitemname STR_VAR_1, ITEM_MAX_POTION
+	setvar VAR_0x8008, ITEM_MAX_POTION
 	setvar VAR_0x8009, 80
 	goto SlateportCity_EventScript_TryBuyBerryPowderItem
 	end
 
 SlateportCity_EventScript_HealPowder::
-	bufferitemname STR_VAR_1, ITEM_HEAL_POWDER
-	setvar VAR_0x8008, ITEM_HEAL_POWDER
+	bufferitemname STR_VAR_1, ITEM_FULL_RESTORE
+	setvar VAR_0x8008, ITEM_FULL_RESTORE
 	setvar VAR_0x8009, 50
 	goto SlateportCity_EventScript_TryBuyBerryPowderItem
 	end
 
 SlateportCity_EventScript_RevivalHerb::
-	bufferitemname STR_VAR_1, ITEM_REVIVAL_HERB
-	setvar VAR_0x8008, ITEM_REVIVAL_HERB
+	bufferitemname STR_VAR_1, ITEM_MAX_REVIVE
+	setvar VAR_0x8008, ITEM_MAX_REVIVE
 	setvar VAR_0x8009, 300
 	goto SlateportCity_EventScript_TryBuyBerryPowderItem
 	end
@@ -852,8 +852,8 @@ SlateportCity_EventScript_HPUp::
 	end
 
 SlateportCity_EventScript_PPUp::
-	bufferitemname STR_VAR_1, ITEM_PP_UP
-	setvar VAR_0x8008, ITEM_PP_UP
+	bufferitemname STR_VAR_1, ITEM_HP_UP
+	setvar VAR_0x8008, ITEM_HP_UP
 	setvar VAR_0x8009, 3000
 	goto SlateportCity_EventScript_TryBuyBerryPowderItem
 	end
