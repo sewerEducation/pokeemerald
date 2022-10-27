@@ -565,9 +565,9 @@ static const u8 sLeechLifeDescription[] = _(
     "An attack that steals half\n"
     "the damage inflicted.");
 
-static const u8 sLovelyKissDescription[] = _(
+static const u8 sDrainKissDescription[] = _(
     "Demands a kiss with a scary\n"
-    "face that induces sleep.");
+    "face that steals health.");
 
 static const u8 sSkyAttackDescription[] = _(
     "Searches out weak spots,\n"
@@ -582,7 +582,7 @@ static const u8 sBubbleDescription[] = _(
     "May lower the foe's SPEED.");
 
 static const u8 sDizzyPunchDescription[] = _(
-    "A rhythmic punch that may\n"
+    "Send love that may\n"
     "confuse the foe.");
 
 static const u8 sSporeDescription[] = _(
@@ -1561,11 +1561,11 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_POISON_GAS - 1] = sPoisonGasDescription,
     [MOVE_BARRAGE - 1] = sBarrageDescription,
     [MOVE_LEECH_LIFE - 1] = sLeechLifeDescription,
-    [MOVE_LOVELY_KISS - 1] = sLovelyKissDescription,
+    [MOVE_DRAIN_KISS - 1] = sDrainKissDescription,
     [MOVE_SKY_ATTACK - 1] = sSkyAttackDescription,
     [MOVE_TRANSFORM - 1] = sTransformDescription,
     [MOVE_BUBBLE - 1] = sBubbleDescription,
-    [MOVE_DIZZY_PUNCH - 1] = sDizzyPunchDescription,
+    [MOVE_DIZZY_HEART - 1] = sDizzyPunchDescription,
     [MOVE_SPORE - 1] = sSporeDescription,
     [MOVE_FLASH - 1] = sFlashDescription,
     [MOVE_PSYWAVE - 1] = sPsywaveDescription,

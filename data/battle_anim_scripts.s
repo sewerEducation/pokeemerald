@@ -158,11 +158,11 @@ gBattleAnims_Moves::
 	.4byte Move_POISON_GAS
 	.4byte Move_BARRAGE
 	.4byte Move_LEECH_LIFE
-	.4byte Move_LOVELY_KISS
+	.4byte MOVE_DRAIN_KISS
 	.4byte Move_SKY_ATTACK
 	.4byte Move_TRANSFORM
 	.4byte Move_BUBBLE
-	.4byte Move_DIZZY_PUNCH
+	.4byte MOVE_DIZZY_HEART
 	.4byte Move_SPORE
 	.4byte Move_FLASH
 	.4byte Move_PSYWAVE
@@ -1355,16 +1355,16 @@ Move_PSYCH_UP:
 	waitforvisualfinish
 	end
 
-Move_DIZZY_PUNCH:
+MOVE_DIZZY_HEART:
 	loadspritegfx ANIM_TAG_DUCK
-	loadspritegfx ANIM_TAG_HANDS_AND_FEET
+	loadspritegfx ANIM_TAG_PINK_HEART
 	loadspritegfx ANIM_TAG_IMPACT
 	monbg ANIM_TARGET
 	setalpha 12, 8
 	call DizzyPunchLunge
-	createsprite gFistFootSpriteTemplate, ANIM_TARGET, 5, 16, 8, 20, 1, 0
+	createsprite gPinkHeartSpriteTemplate, ANIM_TARGET, 5, 16, 8, 20, 1, 0
 	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 4, 16, 0, ANIM_TARGET, 1
-	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
+	playsewithpan SE_M_ATTRACT, SOUND_PAN_TARGET
 	createsprite gDizzyPunchDuckSpriteTemplate, ANIM_TARGET, 3, 16, 8, 160, -32
 	createsprite gDizzyPunchDuckSpriteTemplate, ANIM_TARGET, 3, 16, 8, -256, -40
 	createsprite gDizzyPunchDuckSpriteTemplate, ANIM_TARGET, 3, 16, 8, 128, -16
@@ -1373,9 +1373,9 @@ Move_DIZZY_PUNCH:
 	createsprite gDizzyPunchDuckSpriteTemplate, ANIM_TARGET, 3, 16, 8, -384, -31
 	delay 10
 	call DizzyPunchLunge
-	createsprite gFistFootSpriteTemplate, ANIM_TARGET, 5, -16, -8, 20, 1, 0
+	createsprite gPinkHeartSpriteTemplate, ANIM_TARGET, 5, -16, -8, 20, 1, 0
 	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 4, -16, -16, ANIM_TARGET, 1
-	playsewithpan SE_M_VITAL_THROW2, SOUND_PAN_TARGET
+	playsewithpan SE_M_ATTRACT, SOUND_PAN_TARGET
 	createsprite gDizzyPunchDuckSpriteTemplate, ANIM_TARGET, 3, -16, -8, 160, -32
 	createsprite gDizzyPunchDuckSpriteTemplate, ANIM_TARGET, 3, -16, -8, -256, -40
 	createsprite gDizzyPunchDuckSpriteTemplate, ANIM_TARGET, 3, -16, -8, 128, -16
@@ -7799,7 +7799,7 @@ Move_SWEET_KISS:
 	createsprite gRedHeartBurstSpriteTemplate, ANIM_TARGET, 3, -384, -31
 	end
 
-Move_LOVELY_KISS:
+MOVE_DRAIN_KISS:
 	loadspritegfx ANIM_TAG_PINK_HEART
 	loadspritegfx ANIM_TAG_DEVIL
 	createsprite gDevilSpriteTemplate, ANIM_TARGET, 2, 0, -24

@@ -2396,7 +2396,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                         {
                                             .species = SPECIES_SPINDA,
                                             .heldItem = ITEM_LUM_BERRY,
-                                            .moves = {MOVE_TEETER_DANCE, MOVE_DIZZY_PUNCH, MOVE_CALM_MIND, MOVE_BATON_PASS},
+                                            .moves = {MOVE_TEETER_DANCE, MOVE_DIZZY_HEART, MOVE_CALM_MIND, MOVE_BATON_PASS},
                                             .hpEV = 110,
                                             .defenseEV = 200,
                                             .spDefenseEV = 200,
@@ -2466,7 +2466,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                         {
                                             .species = SPECIES_SPINDA,
                                             .heldItem = ITEM_LUM_BERRY,
-                                            .moves = {MOVE_TEETER_DANCE, MOVE_DIZZY_PUNCH, MOVE_CALM_MIND, MOVE_BATON_PASS},
+                                            .moves = {MOVE_TEETER_DANCE, MOVE_DIZZY_HEART, MOVE_CALM_MIND, MOVE_BATON_PASS},
                                             .hpEV = 110,
                                             .defenseEV = 200,
                                             .spDefenseEV = 200,

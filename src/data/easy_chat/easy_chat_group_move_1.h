@@ -65,7 +65,7 @@ const u16 gEasyChatGroup_Move1[] = {
     MOVE_KINESIS,
     MOVE_LEECH_LIFE,
     MOVE_LICK,
-    MOVE_LOVELY_KISS,
+    MOVE_DRAIN_KISS,
     MOVE_LOW_KICK,
     MOVE_MEAN_LOOK,
     MOVE_MEMENTO,

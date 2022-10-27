@@ -340,7 +340,7 @@ static const struct PyramidWildMon sLevel50WildMons_Round7[] =
         .species = SPECIES_JYNX,
         .lvl = 44,
         .abilityNum = ABILITY_RANDOM,
-        .moves = {MOVE_BLIZZARD, MOVE_LOVELY_KISS, MOVE_PSYCHIC, MOVE_NONE}
+        .moves = {MOVE_BLIZZARD, MOVE_DRAIN_KISS, MOVE_PSYCHIC, MOVE_NONE}
     },
     {
         .species = SPECIES_CLOYSTER,
@@ -992,7 +992,7 @@ static const struct PyramidWildMon sLevel50WildMons_Round20[] =
         .species = SPECIES_KANGASKHAN,
         .lvl = 42,
         .abilityNum = ABILITY_RANDOM,
-        .moves = {MOVE_HYPER_BEAM, MOVE_FLAMETHROWER, MOVE_SURF, MOVE_DIZZY_PUNCH}
+        .moves = {MOVE_HYPER_BEAM, MOVE_FLAMETHROWER, MOVE_SURF, MOVE_DIZZY_HEART}
     },
     {
         .species = SPECIES_SWELLOW,

@@ -2778,7 +2778,7 @@ const struct ContestPokemon gContestOpponents[] =
         {
             MOVE_PERISH_SONG,
             MOVE_MEAN_LOOK,
-            MOVE_LOVELY_KISS,
+            MOVE_DRAIN_KISS,
             MOVE_FAKE_TEARS
         },
         .cool = 100,

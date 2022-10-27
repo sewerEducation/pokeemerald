@@ -1142,7 +1142,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_LOVELY_KISS] = {
+    [MOVE_DRAIN_KISS] = {
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
@@ -1174,7 +1174,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_DIZZY_PUNCH] = {
+    [MOVE_DIZZY_HEART] = {
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0xe, 0x0, 0x0, 0x0, 0x0},
         { 0x2c, 0x0, 0x0, 0x0, 0x0},

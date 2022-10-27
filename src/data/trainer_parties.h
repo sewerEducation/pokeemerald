@@ -833,7 +833,7 @@ static const struct TrainerMonItemCustomMoves sParty_Parker[] = {
     .lvl = 26,
     .species = SPECIES_SPINDA,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_TEETER_DANCE, MOVE_DIZZY_PUNCH, MOVE_FOCUS_PUNCH, MOVE_NONE}
+    .moves = {MOVE_TEETER_DANCE, MOVE_DIZZY_HEART, MOVE_FOCUS_PUNCH, MOVE_NONE}
     }
 };
 
@@ -3781,7 +3781,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_KateAndJoy[] = {
     .iv = 0,
     .lvl = 30,
     .species = SPECIES_SPINDA,
-    .moves = {MOVE_HYPNOSIS, MOVE_PSYBEAM, MOVE_DIZZY_PUNCH, MOVE_TEETER_DANCE}
+    .moves = {MOVE_HYPNOSIS, MOVE_PSYBEAM, MOVE_DIZZY_HEART, MOVE_TEETER_DANCE}
     },
     {
     .iv = 0,
@@ -10957,7 +10957,7 @@ static const struct TrainerMonItemCustomMoves sParty_Norman3[] = {
     .lvl = 45,
     .species = SPECIES_KANGASKHAN,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_FAKE_OUT, MOVE_DIZZY_PUNCH, MOVE_ENDURE, MOVE_REVERSAL}
+    .moves = {MOVE_FAKE_OUT, MOVE_DIZZY_HEART, MOVE_ENDURE, MOVE_REVERSAL}
     },
     {
     .iv = 255,
@@ -10995,7 +10995,7 @@ static const struct TrainerMonItemCustomMoves sParty_Norman4[] = {
     .lvl = 50,
     .species = SPECIES_KANGASKHAN,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_FAKE_OUT, MOVE_DIZZY_PUNCH, MOVE_ENDURE, MOVE_REVERSAL}
+    .moves = {MOVE_FAKE_OUT, MOVE_DIZZY_HEART, MOVE_ENDURE, MOVE_REVERSAL}
     },
     {
     .iv = 255,
@@ -11033,7 +11033,7 @@ static const struct TrainerMonItemCustomMoves sParty_Norman5[] = {
     .lvl = 55,
     .species = SPECIES_KANGASKHAN,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_FAKE_OUT, MOVE_DIZZY_PUNCH, MOVE_ENDURE, MOVE_REVERSAL}
+    .moves = {MOVE_FAKE_OUT, MOVE_DIZZY_HEART, MOVE_ENDURE, MOVE_REVERSAL}
     },
     {
     .iv = 255,
