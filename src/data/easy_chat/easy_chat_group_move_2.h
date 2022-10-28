@@ -14,7 +14,7 @@ const u16 gEasyChatGroup_Move2[] = {
     MOVE_BEAT_UP,
     MOVE_BELLY_DRUM,
     MOVE_BLAST_BURN,
-    MOVE_BLAZE_KICK,
+    MOVE_JEALOUS_HEAT,
     MOVE_BLIZZARD,
     MOVE_BLOCK,
     MOVE_BODY_SLAM,

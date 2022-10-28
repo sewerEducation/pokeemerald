@@ -1592,7 +1592,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Jessica1[] = {
     .iv = 0,
     .lvl = 29,
     .species = SPECIES_SEVIPER,
-    .moves = {MOVE_POISON_TAIL, MOVE_SCREECH, MOVE_GLARE, MOVE_CRUNCH}
+    .moves = {MOVE_POISON_TAIL, MOVE_SCREECH, MOVE_GLARE, MOVE_VAMPIRE}
     }
 };
 
@@ -1657,7 +1657,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Jessica2[] = {
     .iv = 10,
     .lvl = 35,
     .species = SPECIES_SEVIPER,
-    .moves = {MOVE_POISON_TAIL, MOVE_SCREECH, MOVE_GLARE, MOVE_CRUNCH}
+    .moves = {MOVE_POISON_TAIL, MOVE_SCREECH, MOVE_GLARE, MOVE_VAMPIRE}
     }
 };
 
@@ -1672,7 +1672,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Jessica3[] = {
     .iv = 20,
     .lvl = 38,
     .species = SPECIES_SEVIPER,
-    .moves = {MOVE_POISON_TAIL, MOVE_SCREECH, MOVE_GLARE, MOVE_CRUNCH}
+    .moves = {MOVE_POISON_TAIL, MOVE_SCREECH, MOVE_GLARE, MOVE_VAMPIRE}
     }
 };
 
@@ -1687,7 +1687,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Jessica4[] = {
     .iv = 30,
     .lvl = 41,
     .species = SPECIES_SEVIPER,
-    .moves = {MOVE_POISON_TAIL, MOVE_SCREECH, MOVE_GLARE, MOVE_CRUNCH}
+    .moves = {MOVE_POISON_TAIL, MOVE_SCREECH, MOVE_GLARE, MOVE_VAMPIRE}
     }
 };
 
@@ -1702,7 +1702,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Jessica5[] = {
     .iv = 40,
     .lvl = 44,
     .species = SPECIES_SEVIPER,
-    .moves = {MOVE_POISON_TAIL, MOVE_SCREECH, MOVE_GLARE, MOVE_CRUNCH}
+    .moves = {MOVE_POISON_TAIL, MOVE_SCREECH, MOVE_GLARE, MOVE_VAMPIRE}
     }
 };
 
@@ -3218,7 +3218,7 @@ static const struct TrainerMonItemCustomMoves sParty_Sidney[] = {
     .lvl = 46,
     .species = SPECIES_MIGHTYENA,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_ROAR, MOVE_DOUBLE_EDGE, MOVE_SAND_ATTACK, MOVE_CRUNCH}
+    .moves = {MOVE_ROAR, MOVE_DOUBLE_EDGE, MOVE_SAND_ATTACK, MOVE_VAMPIRE}
     },
     {
     .iv = 250,
@@ -3301,7 +3301,7 @@ static const struct TrainerMonItemCustomMoves sParty_Glacia[] = {
     .lvl = 50,
     .species = SPECIES_GLALIE,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_LIGHT_SCREEN, MOVE_CRUNCH, MOVE_ICY_WIND, MOVE_ICE_BEAM}
+    .moves = {MOVE_LIGHT_SCREEN, MOVE_VAMPIRE, MOVE_ICY_WIND, MOVE_ICE_BEAM}
     },
     {
     .iv = 250,
@@ -3353,14 +3353,14 @@ static const struct TrainerMonItemCustomMoves sParty_Drake[] = {
     .lvl = 53,
     .species = SPECIES_FLYGON,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_FLAMETHROWER, MOVE_CRUNCH, MOVE_DRAGON_BREATH, MOVE_EARTHQUAKE}
+    .moves = {MOVE_FLAMETHROWER, MOVE_VAMPIRE, MOVE_DRAGON_BREATH, MOVE_EARTHQUAKE}
     },
     {
     .iv = 255,
     .lvl = 55,
     .species = SPECIES_SALAMENCE,
     .heldItem = ITEM_ASPEAR_BERRY,
-    .moves = {MOVE_FLAMETHROWER, MOVE_DRAGON_CLAW, MOVE_ROCK_SLIDE, MOVE_CRUNCH}
+    .moves = {MOVE_FLAMETHROWER, MOVE_DRAGON_CLAW, MOVE_ROCK_SLIDE, MOVE_VAMPIRE}
     }
 };
 

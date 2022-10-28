@@ -484,7 +484,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                     {
                         .species = SPECIES_FLYGON,
                         .heldItem = ITEM_CHOICE_BAND,
-                        .moves = {MOVE_EARTHQUAKE, MOVE_DRAGON_CLAW, MOVE_CRUNCH, MOVE_FLAMETHROWER},
+                        .moves = {MOVE_EARTHQUAKE, MOVE_DRAGON_CLAW, MOVE_VAMPIRE, MOVE_FLAMETHROWER},
                         .attackEV = 155,
                         .speedEV = 255,
                         .spAttackEV = 100,
@@ -2718,7 +2718,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                         {
                                             .species = SPECIES_RAIKOU,
                                             .heldItem = ITEM_BRIGHT_POWDER,
-                                            .moves = {MOVE_THUNDER, MOVE_CRUNCH, MOVE_ROAR, MOVE_RAIN_DANCE},
+                                            .moves = {MOVE_THUNDER, MOVE_VAMPIRE, MOVE_ROAR, MOVE_RAIN_DANCE},
                                             .speedEV = 255,
                                             .spAttackEV = 255,
                                             .otId = TRAINER_HILL_OTID,
@@ -3063,7 +3063,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                         {
                                             .species = SPECIES_BLAZIKEN,
                                             .heldItem = ITEM_BRIGHT_POWDER,
-                                            .moves = {MOVE_BLAZE_KICK, MOVE_NONE, MOVE_NONE, MOVE_NONE},
+                                            .moves = {MOVE_JEALOUS_HEAT, MOVE_NONE, MOVE_NONE, MOVE_NONE},
                                             .hpEV = 252,
                                             .speedEV = 252,
                                             .spDefenseEV = 6,
@@ -3631,7 +3631,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                         {
                                             .species = SPECIES_HOUNDOOM,
                                             .heldItem = ITEM_QUICK_CLAW,
-                                            .moves = {MOVE_FLAMETHROWER, MOVE_CRUNCH, MOVE_ROAR, MOVE_WILL_O_WISP},
+                                            .moves = {MOVE_FLAMETHROWER, MOVE_VAMPIRE, MOVE_ROAR, MOVE_WILL_O_WISP},
                                             .speedEV = 255,
                                             .spAttackEV = 255,
                                             .otId = TRAINER_HILL_OTID,
@@ -3766,7 +3766,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                         {
                                             .species = SPECIES_URSARING,
                                             .heldItem = ITEM_QUICK_CLAW,
-                                            .moves = {MOVE_DOUBLE_EDGE, MOVE_CRUNCH, MOVE_BRICK_BREAK, MOVE_AERIAL_ACE},
+                                            .moves = {MOVE_DOUBLE_EDGE, MOVE_VAMPIRE, MOVE_BRICK_BREAK, MOVE_AERIAL_ACE},
                                             .hpEV = 252,
                                             .attackEV = 252,
                                             .spAttackEV = 6,
@@ -4085,7 +4085,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                         {
                                             .species = SPECIES_TYRANITAR,
                                             .heldItem = ITEM_PERSIM_BERRY,
-                                            .moves = {MOVE_ROCK_SLIDE, MOVE_CRUNCH, MOVE_EARTHQUAKE, MOVE_ATTRACT},
+                                            .moves = {MOVE_ROCK_SLIDE, MOVE_VAMPIRE, MOVE_EARTHQUAKE, MOVE_ATTRACT},
                                             .hpEV = 252,
                                             .attackEV = 252,
                                             .defenseEV = 6,

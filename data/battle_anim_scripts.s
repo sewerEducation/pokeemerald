@@ -158,11 +158,11 @@ gBattleAnims_Moves::
 	.4byte Move_POISON_GAS
 	.4byte Move_BARRAGE
 	.4byte Move_LEECH_LIFE
-	.4byte MOVE_DRAIN_KISS
+	.4byte Move_DRAIN_KISS
 	.4byte Move_SKY_ATTACK
 	.4byte Move_TRANSFORM
 	.4byte Move_BUBBLE
-	.4byte MOVE_DIZZY_HEART
+	.4byte Move_DIZZY_HEART
 	.4byte Move_SPORE
 	.4byte Move_FLASH
 	.4byte Move_PSYWAVE
@@ -315,7 +315,7 @@ gBattleAnims_Moves::
 	.4byte Move_MIST_BALL
 	.4byte Move_FEATHER_DANCE
 	.4byte Move_TEETER_DANCE
-	.4byte Move_BLAZE_KICK
+	.4byte Move_JEALOUS_HEAT
 	.4byte Move_MUD_SPORT
 	.4byte Move_ICE_BALL
 	.4byte Move_NEEDLE_ARM
@@ -1355,7 +1355,7 @@ Move_PSYCH_UP:
 	waitforvisualfinish
 	end
 
-MOVE_DIZZY_HEART:
+Move_DIZZY_HEART:
 	loadspritegfx ANIM_TAG_DUCK
 	loadspritegfx ANIM_TAG_PINK_HEART
 	loadspritegfx ANIM_TAG_IMPACT
@@ -7799,7 +7799,7 @@ Move_SWEET_KISS:
 	createsprite gRedHeartBurstSpriteTemplate, ANIM_TARGET, 3, -384, -31
 	end
 
-MOVE_DRAIN_KISS:
+Move_DRAIN_KISS:
 	loadspritegfx ANIM_TAG_PINK_HEART
 	loadspritegfx ANIM_TAG_DEVIL
 	createsprite gDevilSpriteTemplate, ANIM_TARGET, 2, 0, -24
@@ -8477,17 +8477,17 @@ Move_REFRESH:
 	createsprite gThinRingExpandingSpriteTemplate, ANIM_ATTACKER, 3, 0, 0, 0, 0
 	end
 
-Move_BLAZE_KICK:
+Move_JEALOUS_HEAT:
 	loadspritegfx ANIM_TAG_IMPACT
-	loadspritegfx ANIM_TAG_HANDS_AND_FEET
+	loadspritegfx ANIM_TAG_PINK_HEART
 	loadspritegfx ANIM_TAG_SMALL_EMBER
 	monbg ANIM_TARGET
 	setalpha 12, 8
 	playsewithpan SE_M_FLAME_WHEEL, SOUND_PAN_TARGET
-	createsprite gSpinningHandOrFootSpriteTemplate, ANIM_TARGET, 3, 0, 0, 1, 30
+	createsprite gPinkHeartSpriteTemplate, ANIM_TARGET, 3, 0, 0, 1, 30
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_TARGET, 2, 0, 7, RGB_WHITE
 	delay 30
-	playsewithpan SE_M_FIRE_PUNCH, SOUND_PAN_TARGET
+	playsewithpan SE_M_ATTRACT, SOUND_PAN_TARGET
 	createsprite gBasicHitSplatSpriteTemplate, ANIM_TARGET, 2, 0, 0, ANIM_TARGET, 0
 	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 3, 0, 14, 1
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_TARGET, 2, 0, 0, RGB_WHITE

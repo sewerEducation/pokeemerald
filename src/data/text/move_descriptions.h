@@ -582,7 +582,7 @@ static const u8 sBubbleDescription[] = _(
     "May lower the foe's SPEED.");
 
 static const u8 sDizzyPunchDescription[] = _(
-    "Send love that may\n"
+    "Sends love that may\n"
     "confuse the foe.");
 
 static const u8 sSporeDescription[] = _(
@@ -967,7 +967,7 @@ static const u8 sSunnyDayDescription[] = _(
 
 static const u8 sCrunchDescription[] = _(
     "Crunches with sharp fangs.\n"
-    "May lower SP. DEF.");
+    "Absorbs HP.");
 
 static const u8 sMirrorCoatDescription[] = _(
     "Counters the foe's special\n"
@@ -1194,8 +1194,8 @@ static const u8 sTeeterDanceDescription[] = _(
     "the scene.");
 
 static const u8 sBlazeKickDescription[] = _(
-    "A kick with a high critical-\n"
-    "hit ratio. May cause a burn.");
+    "Red hot jealousy hits friend\n"
+    "and foe. Will cause a burn.");
 
 static const u8 sMudSportDescription[] = _(
     "Covers the user in mud to\n"
@@ -1298,7 +1298,7 @@ static const u8 sSignalBeamDescription[] = _(
     "may confuse the foe.");
 
 static const u8 sShadowPunchDescription[] = _(
-    "An unavoidable punch that\n"
+    "An unavoidable hand that\n"
     "is thrown from shadows.");
 
 static const u8 sExtrasensoryDescription[] = _(
@@ -1661,7 +1661,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_TWISTER - 1] = sTwisterDescription,
     [MOVE_RAIN_DANCE - 1] = sRainDanceDescription,
     [MOVE_SUNNY_DAY - 1] = sSunnyDayDescription,
-    [MOVE_CRUNCH - 1] = sCrunchDescription,
+    [MOVE_VAMPIRE - 1] = sCrunchDescription,
     [MOVE_MIRROR_COAT - 1] = sMirrorCoatDescription,
     [MOVE_PSYCH_UP - 1] = sPsychUpDescription,
     [MOVE_EXTREME_SPEED - 1] = sExtremeSpeedDescription,
@@ -1718,7 +1718,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_MIST_BALL - 1] = sMistBallDescription,
     [MOVE_FEATHER_DANCE - 1] = sFeatherDanceDescription,
     [MOVE_TEETER_DANCE - 1] = sTeeterDanceDescription,
-    [MOVE_BLAZE_KICK - 1] = sBlazeKickDescription,
+    [MOVE_JEALOUS_HEAT - 1] = sBlazeKickDescription,
     [MOVE_MUD_SPORT - 1] = sMudSportDescription,
     [MOVE_ICE_BALL - 1] = sIceBallDescription,
     [MOVE_NEEDLE_ARM - 1] = sNeedleArmDescription,

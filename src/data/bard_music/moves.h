@@ -1942,7 +1942,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_CRUNCH] = {
+    [MOVE_VAMPIRE] = {
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0x2a, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -2398,7 +2398,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_BLAZE_KICK] = {
+    [MOVE_JEALOUS_HEAT] = {
         { 0x5, 0x0, 0x0, 0x0, 0x0},
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},

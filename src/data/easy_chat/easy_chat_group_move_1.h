@@ -23,7 +23,7 @@ const u16 gEasyChatGroup_Move1[] = {
     MOVE_COUNTER,
     MOVE_CRABHAMMER,
     MOVE_CROSS_CHOP,
-    MOVE_CRUNCH,
+    MOVE_VAMPIRE,
     MOVE_CUT,
     MOVE_DIG,
     MOVE_DISABLE,

@@ -391,7 +391,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = 16,
                 .nature = NATURE_BRAVE,
                 .evs = {252, 0, 252, 0, 6, 0},
-                .moves = {MOVE_SWAGGER, MOVE_CRUNCH, MOVE_POISON_FANG, MOVE_GIGA_DRAIN},
+                .moves = {MOVE_SWAGGER, MOVE_VAMPIRE, MOVE_POISON_FANG, MOVE_GIGA_DRAIN},
             },
             {
                 .species = SPECIES_SHUCKLE,
@@ -418,7 +418,7 @@ static const struct FrontierBrainMon sFrontierBrainsMons[][2][FRONTIER_PARTY_SIZ
                 .fixedIV = MAX_PER_STAT_IVS,
                 .nature = NATURE_BOLD,
                 .evs = {252, 0, 0, 0, 252, 6},
-                .moves = {MOVE_SWAGGER, MOVE_CRUNCH, MOVE_SLUDGE_BOMB, MOVE_GIGA_DRAIN},
+                .moves = {MOVE_SWAGGER, MOVE_VAMPIRE, MOVE_SLUDGE_BOMB, MOVE_GIGA_DRAIN},
             },
             {
                 .species = SPECIES_STEELIX,

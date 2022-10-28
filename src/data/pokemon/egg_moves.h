@@ -176,7 +176,7 @@ const u16 gEggMoves[] = {
     egg_moves(GROWLITHE,
               MOVE_BODY_SLAM,
               MOVE_SAFEGUARD,
-              MOVE_CRUNCH,
+              MOVE_VAMPIRE,
               MOVE_THRASH,
               MOVE_FIRE_SPIN,
               MOVE_HOWL,
@@ -361,7 +361,7 @@ const u16 gEggMoves[] = {
               MOVE_WILL_O_WISP),
 
     egg_moves(RHYHORN,
-              MOVE_CRUNCH,
+              MOVE_VAMPIRE,
               MOVE_REVERSAL,
               MOVE_ROCK_SLIDE,
               MOVE_COUNTER,
@@ -517,7 +517,7 @@ const u16 gEggMoves[] = {
               MOVE_CRUSH_CLAW),
 
     egg_moves(TOTODILE,
-              MOVE_CRUNCH,
+              MOVE_VAMPIRE,
               MOVE_THRASH,
               MOVE_HYDRO_PUMP,
               MOVE_ANCIENT_POWER,
@@ -729,7 +729,7 @@ const u16 gEggMoves[] = {
               MOVE_FAINT_ATTACK,
               MOVE_REFLECT,
               MOVE_PRESENT,
-              MOVE_CRUNCH,
+              MOVE_VAMPIRE,
               MOVE_HEAL_BELL,
               MOVE_SNORE,
               MOVE_SMELLING_SALT),
@@ -760,7 +760,7 @@ const u16 gEggMoves[] = {
               MOVE_FAKE_OUT),
 
     egg_moves(TEDDIURSA,
-              MOVE_CRUNCH,
+              MOVE_VAMPIRE,
               MOVE_TAKE_DOWN,
               MOVE_SEISMIC_TOSS,
               MOVE_COUNTER,
@@ -902,7 +902,7 @@ const u16 gEggMoves[] = {
               MOVE_CURSE),
 
     egg_moves(TREECKO,
-              MOVE_CRUNCH,
+              MOVE_VAMPIRE,
               MOVE_MUD_SPORT,
               MOVE_ENDEAVOR,
               MOVE_LEECH_SEED,
@@ -1087,7 +1087,7 @@ const u16 gEggMoves[] = {
               MOVE_COUNTER),
 
     egg_moves(ELECTRIKE,
-              MOVE_CRUNCH,
+              MOVE_VAMPIRE,
               MOVE_HEADBUTT,
               MOVE_UPROAR,
               MOVE_CURSE,
