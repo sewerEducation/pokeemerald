@@ -2517,13 +2517,20 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
                 }
                 break;
             case ABILITY_SNOW_WARNING:
-              if (!(gBattleWeather & B_WEATHER_HAIL_PERMANENT))
+                if (!(gBattleWeather & B_WEATHER_HAIL_PERMANENT))
                 {
                     gBattleWeather = B_WEATHER_HAIL;
                     BattleScriptPushCursorAndCallback(BattleScript_SnowWarningActivates);
                     gBattleScripting.battler = battler;
                     effect++;
                 }
+                break;
+
+            case ABILITY_WATER_VEIL:
+                BattleScriptPushCursorAndCallback(BattleScript_WaterVeilAnnouncement);
+                gBattleScripting.battler = battler;
+                effect++;
+                break;
 
             case ABILITY_INTIMIDATE:
                 if (!(gSpecialStatuses[battler].intimidatedMon))
@@ -2859,10 +2866,7 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
                  && gBattleMons[gBattlerTarget].hp != 0
                  && (Random() % 3) == 0
                  && gBattleMons[gBattlerAttacker].ability != ABILITY_OBLIVIOUS
-                 && GetGenderFromSpeciesAndPersonality(speciesAtk, pidAtk) != GetGenderFromSpeciesAndPersonality(speciesDef, pidDef)
-                 && !(gBattleMons[gBattlerAttacker].status2 & STATUS2_INFATUATION)
-                 && GetGenderFromSpeciesAndPersonality(speciesAtk, pidAtk) != MON_GENDERLESS
-                 && GetGenderFromSpeciesAndPersonality(speciesDef, pidDef) != MON_GENDERLESS)
+                 && !(gBattleMons[gBattlerAttacker].status2 & STATUS2_INFATUATION))
                 {
                     gBattleMons[gBattlerAttacker].status2 |= STATUS2_INFATUATED_WITH(gBattlerTarget);
                     BattleScriptPushCursor();

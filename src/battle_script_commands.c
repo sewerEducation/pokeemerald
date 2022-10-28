@@ -2371,7 +2371,8 @@ void SetMoveEffect(bool8 primary, u8 certain)
             statusChanged = TRUE;
             break;
         case STATUS1_BURN:
-            if (gBattleMons[gEffectBattler].ability == ABILITY_WATER_VEIL
+            if (ABILITY_ON_FIELD(ABILITY_WATER_VEIL)
+              //gBattleMons[gEffectBattler].ability == ABILITY_WATER_VEIL
                 && (primary == TRUE || certain == MOVE_EFFECT_CERTAIN))
             {
                 gLastUsedAbility = ABILITY_WATER_VEIL;
@@ -2402,7 +2403,8 @@ void SetMoveEffect(bool8 primary, u8 certain)
             }
             if (IS_BATTLER_OF_TYPE(gEffectBattler, TYPE_HOT))
                 break;
-            if (gBattleMons[gEffectBattler].ability == ABILITY_WATER_VEIL)
+            if (ABILITY_ON_FIELD(ABILITY_WATER_VEIL))
+              //gBattleMons[gEffectBattler].ability == ABILITY_WATER_VEIL)
                 break;
             if (gBattleMons[gEffectBattler].status1)
                 break;
