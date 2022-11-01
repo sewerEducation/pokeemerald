@@ -2213,7 +2213,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                         {
                                             .species = SPECIES_ELECTABUZZ,
                                             .heldItem = ITEM_MAGNET,
-                                            .moves = {MOVE_THUNDER, MOVE_THUNDERBOLT, MOVE_THUNDER_PUNCH, MOVE_SHOCK_WAVE},
+                                            .moves = {MOVE_THUNDER, MOVE_THUNDERBOLT, MOVE_THUNDER_PUNCH, MOVE_COSMIC_PULSE},
                                             .hpEV = 6,
                                             .speedEV = 252,
                                             .spAttackEV = 252,
@@ -2233,7 +2233,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                         {
                                             .species = SPECIES_FLAAFFY,
                                             .heldItem = ITEM_MAGNET,
-                                            .moves = {MOVE_THUNDER, MOVE_THUNDERBOLT, MOVE_SHOCK_WAVE, MOVE_THUNDER_SHOCK},
+                                            .moves = {MOVE_THUNDER, MOVE_THUNDERBOLT, MOVE_COSMIC_PULSE, MOVE_THUNDER_SHOCK},
                                             .hpEV = 250,
                                             .spAttackEV = 130,
                                             .otId = TRAINER_HILL_OTID,
@@ -3505,7 +3505,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                         {
                                             .species = SPECIES_HITMONCHAN,
                                             .heldItem = ITEM_FOCUS_BAND,
-                                            .moves = {MOVE_MEGA_PUNCH, MOVE_DETECT, MOVE_COUNTER, MOVE_SKY_UPPERCUT},
+                                            .moves = {MOVE_MEGA_PUNCH, MOVE_DETECT, MOVE_COUNTER, MOVE_LUNGE},
                                             .attackEV = 255,
                                             .speedEV = 255,
                                             .otId = TRAINER_HILL_OTID,

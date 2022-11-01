@@ -1741,9 +1741,9 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
     [VERDANTURF_TENT_TRAINER_JOSIAH] = {
         .facilityClass = FACILITY_CLASS_BIRD_KEEPER,
         .trainerName = _("JOSIAH"),
-        .speechBefore = {EC_WORD_I, EC_WORD_PROMISE, EC_WORD_TO, EC_MOVE(FLY), EC_WORD_IF_I_LOSE, -1},
-        .speechWin = {EC_WORD_TOO_WEAK, EC_WORD_ELLIPSIS, -1, EC_WORD_YOU, EC_MOVE(FLY), EC_WORD_INSTEAD},
-        .speechLose = {EC_WORD_I, EC_WORD_PROMISE, EC_WORD_TO, EC_MOVE(FLY), EC_WORD_SOMETIME, EC_WORD_SOON},
+        .speechBefore = {EC_WORD_I, EC_WORD_PROMISE, EC_WORD_TO, EC_MOVE(ACID), EC_WORD_IF_I_LOSE, -1},
+        .speechWin = {EC_WORD_TOO_WEAK, EC_WORD_ELLIPSIS, -1, EC_WORD_YOU, EC_MOVE(ACID), EC_WORD_INSTEAD},
+        .speechLose = {EC_WORD_I, EC_WORD_PROMISE, EC_WORD_TO, EC_MOVE(ACID), EC_WORD_SOMETIME, EC_WORD_SOON},
         .monSet = gVerdanturfBattleTentTrainerMons_Josiah
     },
     [VERDANTURF_TENT_TRAINER_DION] = {
@@ -1983,7 +1983,7 @@ const struct FacilityMon gVerdanturfBattleTentMons[NUM_VERDANTURF_TENT_MONS] =
     },
     [VERDANTURF_TENT_MON_ELECTRIKE] = {
         .species = SPECIES_ELECTRIKE,
-        .moves = {MOVE_SHOCK_WAVE, MOVE_TACKLE, MOVE_CHARGE, MOVE_THUNDER_WAVE},
+        .moves = {MOVE_COSMIC_PULSE, MOVE_TACKLE, MOVE_CHARGE, MOVE_THUNDER_WAVE},
         .itemTableId = BATTLE_FRONTIER_ITEM_FOCUS_BAND,
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_DEFENSE | F_EV_SPREAD_HP,
         .nature = NATURE_MILD
@@ -2039,7 +2039,7 @@ const struct FacilityMon gVerdanturfBattleTentMons[NUM_VERDANTURF_TENT_MONS] =
     },
     [VERDANTURF_TENT_MON_MAGNEMITE] = {
         .species = SPECIES_MAGNEMITE,
-        .moves = {MOVE_METAL_SOUND, MOVE_SUPERSONIC, MOVE_THUNDER_WAVE, MOVE_SHOCK_WAVE},
+        .moves = {MOVE_METAL_SOUND, MOVE_SUPERSONIC, MOVE_THUNDER_WAVE, MOVE_COSMIC_PULSE},
         .itemTableId = BATTLE_FRONTIER_ITEM_MAGNET,
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_SPEED | F_EV_SPREAD_DEFENSE | F_EV_SPREAD_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_SERIOUS
@@ -2780,7 +2780,7 @@ const struct FacilityMon gFallarborBattleTentMons[NUM_FALLARBOR_TENT_MONS] =
     },
     [FALLARBOR_TENT_MON_VOLBEAT] = {
         .species = SPECIES_VOLBEAT,
-        .moves = {MOVE_TACKLE, MOVE_MOONLIGHT, MOVE_SIGNAL_BEAM, MOVE_TAIL_GLOW},
+        .moves = {MOVE_TACKLE, MOVE_MOONLIGHT, MOVE_SIGNAL_BEAM, MOVE_STAR_GLOW},
         .itemTableId = BATTLE_FRONTIER_ITEM_LEPPA_BERRY,
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_ADAMANT
@@ -2801,7 +2801,7 @@ const struct FacilityMon gFallarborBattleTentMons[NUM_FALLARBOR_TENT_MONS] =
     },
     [FALLARBOR_TENT_MON_ARON_1] = {
         .species = SPECIES_ARON,
-        .moves = {MOVE_METAL_CLAW, MOVE_PROTECT, MOVE_SHOCK_WAVE, MOVE_METAL_SOUND},
+        .moves = {MOVE_METAL_CLAW, MOVE_PROTECT, MOVE_COSMIC_PULSE, MOVE_METAL_SOUND},
         .itemTableId = BATTLE_FRONTIER_ITEM_SCOPE_LENS,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_LONELY
@@ -2850,7 +2850,7 @@ const struct FacilityMon gFallarborBattleTentMons[NUM_FALLARBOR_TENT_MONS] =
     },
     [FALLARBOR_TENT_MON_LINOONE_2] = {
         .species = SPECIES_LINOONE,
-        .moves = {MOVE_FURY_SWIPES, MOVE_SAND_ATTACK, MOVE_SHOCK_WAVE, MOVE_GROWL},
+        .moves = {MOVE_FURY_SWIPES, MOVE_SAND_ATTACK, MOVE_COSMIC_PULSE, MOVE_GROWL},
         .itemTableId = BATTLE_FRONTIER_ITEM_MAGNET,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_MODEST

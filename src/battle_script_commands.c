@@ -8649,11 +8649,11 @@ static void Cmd_presentdamagecalculation(void)
     s32 rand = Random() & 0xFF;
 
     if (rand < 102)
-        gDynamicBasePower = 40;
+        gDynamicBasePower = 50;
     else if (rand < 178)
-        gDynamicBasePower = 80;
+        gDynamicBasePower = 100;
     else if (rand < 204)
-        gDynamicBasePower = 120;
+        gDynamicBasePower = 150;
     else
     {
         gBattleMoveDamage = gBattleMons[gBattlerTarget].maxHP / 4;
@@ -9028,7 +9028,7 @@ static void Cmd_setsemiinvulnerablebit(void)
 {
     switch (gCurrentMove)
     {
-    case MOVE_FLY:
+    case MOVE_SPACE_TRAVEL:
     case MOVE_BOUNCE:
         gStatuses3[gBattlerAttacker] |= STATUS3_ON_AIR;
         break;
@@ -9047,7 +9047,7 @@ static void Cmd_clearsemiinvulnerablebit(void)
 {
     switch (gCurrentMove)
     {
-    case MOVE_FLY:
+    case MOVE_SPACE_TRAVEL:
     case MOVE_BOUNCE:
         gStatuses3[gBattlerAttacker] &= ~STATUS3_ON_AIR;
         break;

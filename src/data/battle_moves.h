@@ -247,7 +247,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
     },
 
-    [MOVE_FLY] =
+    [MOVE_SPACE_TRAVEL] =
     {
         .effect = EFFECT_SEMI_INVULNERABLE,
         .power = 70,
@@ -2864,7 +2864,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_PAIN_SPLIT,
         .power = 0,
-        .type = TYPE_GHOST,
+        .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 20,
         .secondaryEffectChance = 0,
@@ -3110,7 +3110,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_TWISTER] =
     {
         .effect = EFFECT_TWISTER,
-        .power = 40,
+        .power = 80,
         .type = TYPE_ANGEL,
         .accuracy = 100,
         .pp = 20,
@@ -3822,7 +3822,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .flags = FLAG_SNATCH_AFFECTED,
     },
 
-    [MOVE_TAIL_GLOW] =
+    [MOVE_STAR_GLOW] =
     {
         .effect = EFFECT_SPECIAL_ATTACK_UP_2,
         .power = 0,
@@ -4251,14 +4251,14 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
     },
 
-    [MOVE_SKY_UPPERCUT] =
+    [MOVE_LUNGE] =
     {
-        .effect = EFFECT_SKY_UPPERCUT,
+        .effect = EFFECT_ATTACK_DOWN_HIT,
         .power = 85,
-        .type = TYPE_SPORTS,
-        .accuracy = 90,
+        .type = TYPE_BUG,
+        .accuracy = 100,
         .pp = 15,
-        .secondaryEffectChance = 0,
+        .secondaryEffectChance = 20,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
@@ -4563,7 +4563,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
     },
 
-    [MOVE_SHOCK_WAVE] =
+    [MOVE_COSMIC_PULSE] =
     {
         .effect = EFFECT_ALWAYS_HIT,
         .power = 60,

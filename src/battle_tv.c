@@ -395,7 +395,7 @@ static const u16 sPoints_ElectricMoves[] =
     MOVE_SPARK, 3,
     MOVE_THUNDER_SHOCK, 3,
     MOVE_ZAP_CANNON, 3,
-    MOVE_SHOCK_WAVE, 3,
+    MOVE_COSMIC_PULSE, 3,
     MOVE_THUNDER_WAVE, 0, // Unnecessary, unlisted moves are already given 0 points
     MOVE_THUNDER, 3,
     MOVE_VOLT_TACKLE, 3,
@@ -1464,7 +1464,7 @@ static void TrySetBattleSeminarShow(void)
                                                     sideStatus, powerOverride,
                                                     0, gBattlerAttacker, gBattlerTarget);
 
-            if (gStatuses3[gBattlerAttacker] & STATUS3_CHARGED_UP && gBattleMoves[gCurrentMove].type == TYPE_ANGEL)
+            if (gStatuses3[gBattlerAttacker] & STATUS3_CHARGED_UP && gBattleMoves[gCurrentMove].type == TYPE_COSMIC)
                 gBattleMoveDamage *= 2;
             if (gProtectStructs[gBattlerAttacker].helpingHand)
                 gBattleMoveDamage = gBattleMoveDamage * 15 / 10;

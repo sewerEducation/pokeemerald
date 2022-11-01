@@ -72,7 +72,7 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     },
     [FRONTIER_MON_PICHU] = {
         .species = SPECIES_PICHU,
-        .moves = {MOVE_SWEET_KISS, MOVE_THUNDER_WAVE, MOVE_ATTRACT, MOVE_SHOCK_WAVE},
+        .moves = {MOVE_SWEET_KISS, MOVE_THUNDER_WAVE, MOVE_ATTRACT, MOVE_COSMIC_PULSE},
         .itemTableId = BATTLE_FRONTIER_ITEM_SITRUS_BERRY,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_RASH
@@ -310,14 +310,14 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     },
     [FRONTIER_MON_TAILLOW] = {
         .species = SPECIES_TAILLOW,
-        .moves = {MOVE_FLY, MOVE_QUICK_ATTACK, MOVE_ENDEAVOR, MOVE_FOCUS_ENERGY},
+        .moves = {MOVE_SPACE_TRAVEL, MOVE_QUICK_ATTACK, MOVE_ENDEAVOR, MOVE_FOCUS_ENERGY},
         .itemTableId = BATTLE_FRONTIER_ITEM_SPEED_ENERGY,
         .evSpread = F_EV_SPREAD_SPEED | F_EV_SPREAD_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_GENTLE
     },
     [FRONTIER_MON_WINGULL] = {
         .species = SPECIES_WINGULL,
-        .moves = {MOVE_WATER_PULSE, MOVE_FLY, MOVE_QUICK_ATTACK, MOVE_STEEL_WING},
+        .moves = {MOVE_WATER_PULSE, MOVE_SPACE_TRAVEL, MOVE_QUICK_ATTACK, MOVE_STEEL_WING},
         .itemTableId = BATTLE_FRONTIER_ITEM_PERSIM_BERRY,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_HARDY
@@ -345,7 +345,7 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     },
     [FRONTIER_MON_MAREEP] = {
         .species = SPECIES_MAREEP,
-        .moves = {MOVE_SHOCK_WAVE, MOVE_FLASH, MOVE_REFLECT, MOVE_COTTON_SPORE},
+        .moves = {MOVE_COSMIC_PULSE, MOVE_FLASH, MOVE_REFLECT, MOVE_COTTON_SPORE},
         .itemTableId = BATTLE_FRONTIER_ITEM_CHERI_BERRY,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_RELAXED
@@ -758,7 +758,7 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     },
     [FRONTIER_MON_MAGNEMITE] = {
         .species = SPECIES_MAGNEMITE,
-        .moves = {MOVE_SHOCK_WAVE, MOVE_SUPERSONIC, MOVE_METAL_SOUND, MOVE_REFLECT},
+        .moves = {MOVE_COSMIC_PULSE, MOVE_SUPERSONIC, MOVE_METAL_SOUND, MOVE_REFLECT},
         .itemTableId = BATTLE_FRONTIER_ITEM_RAWST_BERRY,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_SPEED,
         .nature = NATURE_GENTLE
@@ -1038,7 +1038,7 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     },
     [FRONTIER_MON_FLAAFFY] = {
         .species = SPECIES_FLAAFFY,
-        .moves = {MOVE_SHOCK_WAVE, MOVE_THUNDER_WAVE, MOVE_COTTON_SPORE, MOVE_LIGHT_SCREEN},
+        .moves = {MOVE_COSMIC_PULSE, MOVE_THUNDER_WAVE, MOVE_COTTON_SPORE, MOVE_LIGHT_SCREEN},
         .itemTableId = BATTLE_FRONTIER_ITEM_MAGNET,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_MILD
@@ -1052,7 +1052,7 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     },
     [FRONTIER_MON_NOSEPASS] = {
         .species = SPECIES_NOSEPASS,
-        .moves = {MOVE_ROCK_SLIDE, MOVE_SHOCK_WAVE, MOVE_THUNDER_WAVE, MOVE_SANDSTORM},
+        .moves = {MOVE_ROCK_SLIDE, MOVE_COSMIC_PULSE, MOVE_THUNDER_WAVE, MOVE_SANDSTORM},
         .itemTableId = BATTLE_FRONTIER_ITEM_STRANGE_UFO,
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_HP,
         .nature = NATURE_SASSY
@@ -1290,7 +1290,7 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     },
     [FRONTIER_MON_MURKROW_1] = {
         .species = SPECIES_MURKROW,
-        .moves = {MOVE_FAINT_ATTACK, MOVE_FLY, MOVE_TORMENT, MOVE_TAUNT},
+        .moves = {MOVE_FAINT_ATTACK, MOVE_SPACE_TRAVEL, MOVE_TORMENT, MOVE_TAUNT},
         .itemTableId = BATTLE_FRONTIER_ITEM_CANDY_POUCH,
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_DEFENSE | F_EV_SPREAD_HP,
         .nature = NATURE_QUIRKY
@@ -1430,7 +1430,7 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     },
     [FRONTIER_MON_CASTFORM_1] = {
         .species = SPECIES_CASTFORM,
-        .moves = {MOVE_EMBER, MOVE_WATER_PULSE, MOVE_SHOCK_WAVE, MOVE_ICY_WIND},
+        .moves = {MOVE_EMBER, MOVE_WATER_PULSE, MOVE_COSMIC_PULSE, MOVE_ICY_WIND},
         .itemTableId = BATTLE_FRONTIER_ITEM_SPATK_ENERGY,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_HASTY
@@ -1500,7 +1500,7 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     },
     [FRONTIER_MON_SWELLOW_1] = {
         .species = SPECIES_SWELLOW,
-        .moves = {MOVE_FLY, MOVE_ENDEAVOR, MOVE_FACADE, MOVE_QUICK_ATTACK},
+        .moves = {MOVE_SPACE_TRAVEL, MOVE_ENDEAVOR, MOVE_FACADE, MOVE_QUICK_ATTACK},
         .itemTableId = BATTLE_FRONTIER_ITEM_KINGS_ROCK,
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_HP,
         .nature = NATURE_ADAMANT
@@ -1640,7 +1640,7 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     },
     [FRONTIER_MON_HITMONCHAN_1] = {
         .species = SPECIES_HITMONCHAN,
-        .moves = {MOVE_MACH_PUNCH, MOVE_SKY_UPPERCUT, MOVE_DETECT, MOVE_COUNTER},
+        .moves = {MOVE_MACH_PUNCH, MOVE_LUNGE, MOVE_DETECT, MOVE_COUNTER},
         .itemTableId = BATTLE_FRONTIER_ITEM_KINGS_ROCK,
         .evSpread = F_EV_SPREAD_DEFENSE | F_EV_SPREAD_HP,
         .nature = NATURE_ADAMANT
@@ -1710,7 +1710,7 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     },
     [FRONTIER_MON_MAGNETON_1] = {
         .species = SPECIES_MAGNETON,
-        .moves = {MOVE_SHOCK_WAVE, MOVE_SONIC_BOOM, MOVE_THUNDER_WAVE, MOVE_SUPERSONIC},
+        .moves = {MOVE_COSMIC_PULSE, MOVE_SONIC_BOOM, MOVE_THUNDER_WAVE, MOVE_SUPERSONIC},
         .itemTableId = BATTLE_FRONTIER_ITEM_CHERI_BERRY,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_SPEED,
         .nature = NATURE_LONELY
@@ -1941,7 +1941,7 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     },
     [FRONTIER_MON_VOLBEAT_2] = {
         .species = SPECIES_VOLBEAT,
-        .moves = {MOVE_SIGNAL_BEAM, MOVE_THUNDERBOLT, MOVE_ICE_PUNCH, MOVE_TAIL_GLOW},
+        .moves = {MOVE_SIGNAL_BEAM, MOVE_THUNDERBOLT, MOVE_ICE_PUNCH, MOVE_STAR_GLOW},
         .itemTableId = BATTLE_FRONTIER_ITEM_SPATK_ENERGY,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_SPEED,
         .nature = NATURE_QUIRKY
@@ -2060,7 +2060,7 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     },
     [FRONTIER_MON_COMBUSKEN_2] = {
         .species = SPECIES_COMBUSKEN,
-        .moves = {MOVE_FLAMETHROWER, MOVE_SKY_UPPERCUT, MOVE_SLASH, MOVE_SAND_ATTACK},
+        .moves = {MOVE_FLAMETHROWER, MOVE_LUNGE, MOVE_SLASH, MOVE_SAND_ATTACK},
         .itemTableId = BATTLE_FRONTIER_ITEM_SCOPE_LENS,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_SPEED | F_EV_SPREAD_ATTACK,
         .nature = NATURE_DOCILE
@@ -2676,7 +2676,7 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     },
     [FRONTIER_MON_BRELOOM_1] = {
         .species = SPECIES_BRELOOM,
-        .moves = {MOVE_SKY_UPPERCUT, MOVE_MACH_PUNCH, MOVE_HEADBUTT, MOVE_COUNTER},
+        .moves = {MOVE_LUNGE, MOVE_MACH_PUNCH, MOVE_HEADBUTT, MOVE_COUNTER},
         .itemTableId = BATTLE_FRONTIER_ITEM_KINGS_ROCK,
         .evSpread = F_EV_SPREAD_SPEED | F_EV_SPREAD_ATTACK,
         .nature = NATURE_JOLLY
@@ -3390,7 +3390,7 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     },
     [FRONTIER_MON_XATU_2] = {
         .species = SPECIES_XATU,
-        .moves = {MOVE_FLY, MOVE_TOXIC, MOVE_CONFUSE_RAY, MOVE_ATTRACT},
+        .moves = {MOVE_SPACE_TRAVEL, MOVE_TOXIC, MOVE_CONFUSE_RAY, MOVE_ATTRACT},
         .itemTableId = BATTLE_FRONTIER_ITEM_LEFTOVERS,
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_DEFENSE | F_EV_SPREAD_HP,
         .nature = NATURE_IMPISH
@@ -4048,7 +4048,7 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     },
     [FRONTIER_MON_SKARMORY_3] = {
         .species = SPECIES_SKARMORY,
-        .moves = {MOVE_TOXIC, MOVE_CURSE, MOVE_REST, MOVE_FLY},
+        .moves = {MOVE_TOXIC, MOVE_CURSE, MOVE_REST, MOVE_SPACE_TRAVEL},
         .itemTableId = BATTLE_FRONTIER_ITEM_CHESTO_BERRY,
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_HP,
         .nature = NATURE_CAREFUL

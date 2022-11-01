@@ -80,7 +80,7 @@ static const struct PyramidWildMon sLevel50WildMons_Round2[] =
         .species = SPECIES_SKARMORY,
         .lvl = 40,
         .abilityNum = ABILITY_RANDOM,
-        .moves = {MOVE_TOXIC, MOVE_FLY, MOVE_STEEL_WING, MOVE_NONE}
+        .moves = {MOVE_TOXIC, MOVE_SPACE_TRAVEL, MOVE_STEEL_WING, MOVE_NONE}
     },
     {
         .species = SPECIES_LUDICOLO,
@@ -866,7 +866,7 @@ static const struct PyramidWildMon sLevel50WildMons_Round17[] =
         .species = SPECIES_SKARMORY,
         .lvl = 48,
         .abilityNum = ABILITY_RANDOM,
-        .moves = {MOVE_STEEL_WING, MOVE_TOXIC, MOVE_FLY, MOVE_PROTECT}
+        .moves = {MOVE_STEEL_WING, MOVE_TOXIC, MOVE_SPACE_TRAVEL, MOVE_PROTECT}
     },
     {
         .species = SPECIES_AGGRON,
@@ -1022,7 +1022,7 @@ static const struct PyramidWildMon sLevel50WildMons_Round20[] =
         .species = SPECIES_FEAROW,
         .lvl = 48,
         .abilityNum = ABILITY_RANDOM,
-        .moves = {MOVE_HYPER_BEAM, MOVE_FLY, MOVE_MIRROR_MOVE, MOVE_PROTECT}
+        .moves = {MOVE_HYPER_BEAM, MOVE_SPACE_TRAVEL, MOVE_MIRROR_MOVE, MOVE_PROTECT}
     },
     {
         .species = SPECIES_SNORLAX,

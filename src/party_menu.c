@@ -122,7 +122,7 @@ enum {
     FIELD_MOVE_ROCK_SMASH,  // FLAG_BADGE03_GET
     FIELD_MOVE_STRENGTH,    // FLAG_BADGE04_GET
     FIELD_MOVE_SURF,        // FLAG_BADGE05_GET
-    FIELD_MOVE_FLY,         // FLAG_BADGE06_GET
+    FIELD_MOVE_SPACE_TRAVEL,         // FLAG_BADGE06_GET
     FIELD_MOVE_DIVE,        // FLAG_BADGE07_GET
     FIELD_MOVE_WATERFALL,   // FLAG_BADGE08_GET
     FIELD_MOVE_TELEPORT,
@@ -3745,7 +3745,7 @@ static void CursorCb_FieldMove(u8 taskId)
                 DisplayFieldMoveExitAreaMessage(taskId);
                 sPartyMenuInternal->data[0] = fieldMove;
                 break;
-            case FIELD_MOVE_FLY:
+            case FIELD_MOVE_SPACE_TRAVEL:
                 gPartyMenu.exitCallback = CB2_OpenFlyMap;
                 Task_ClosePartyMenu(taskId);
                 break;

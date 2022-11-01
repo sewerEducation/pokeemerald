@@ -1070,8 +1070,8 @@ static const u8 sNaturePowerDescription[] = _(
     "depending on the location.");
 
 static const u8 sChargeDescription[] = _(
-    "Charges power to boost the\n"
-    "electric move used next.");
+    "Charges up to boost COSMIC\n"
+    "moves next turn. Heals.");
 
 static const u8 sTauntDescription[] = _(
     "Taunts the foe into only\n"
@@ -1438,7 +1438,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_GUST - 1] = sGustDescription,
     [MOVE_WING_ATTACK - 1] = sWingAttackDescription,
     [MOVE_WHIRLWIND - 1] = sWhirlwindDescription,
-    [MOVE_FLY - 1] = sFlyDescription,
+    [MOVE_SPACE_TRAVEL - 1] = sFlyDescription,
     [MOVE_BIND - 1] = sBindDescription,
     [MOVE_SLAM - 1] = sSlamDescription,
     [MOVE_VINE_WHIP - 1] = sVineWhipDescription,
@@ -1713,7 +1713,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_DIVE - 1] = sDiveDescription,
     [MOVE_ARM_THRUST - 1] = sArmThrustDescription,
     [MOVE_CAMOUFLAGE - 1] = sCamouflageDescription,
-    [MOVE_TAIL_GLOW - 1] = sTailGlowDescription,
+    [MOVE_STAR_GLOW - 1] = sTailGlowDescription,
     [MOVE_LUSTER_PURGE - 1] = sLusterPurgeDescription,
     [MOVE_MIST_BALL - 1] = sMistBallDescription,
     [MOVE_FEATHER_DANCE - 1] = sFeatherDanceDescription,
@@ -1746,7 +1746,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_SIGNAL_BEAM - 1] = sSignalBeamDescription,
     [MOVE_SHADOW_PUNCH - 1] = sShadowPunchDescription,
     [MOVE_EXTRASENSORY - 1] = sExtrasensoryDescription,
-    [MOVE_SKY_UPPERCUT - 1] = sSkyUppercutDescription,
+    [MOVE_LUNGE - 1] = sSkyUppercutDescription,
     [MOVE_SAND_TOMB - 1] = sSandTombDescription,
     [MOVE_SHEER_COLD - 1] = sSheerColdDescription,
     [MOVE_MUDDY_WATER - 1] = sMuddyWaterDescription,
@@ -1770,7 +1770,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_LEAF_BLADE - 1] = sLeafBladeDescription,
     [MOVE_DRAGON_DANCE - 1] = sDragonDanceDescription,
     [MOVE_ROCK_BLAST - 1] = sRockBlastDescription,
-    [MOVE_SHOCK_WAVE - 1] = sShockWaveDescription,
+    [MOVE_COSMIC_PULSE - 1] = sShockWaveDescription,
     [MOVE_WATER_PULSE - 1] = sWaterPulseDescription,
     [MOVE_DOOM_DESIRE - 1] = sDoomDesireDescription,
     [MOVE_PSYCHO_BOOST - 1] = sPsychoBoostDescription,

@@ -1066,6 +1066,14 @@ BattleScript_EffectSkyAttack::
 	jumpifword CMP_COMMON_BITS, gHitMarker, HITMARKER_NO_ATTACKSTRING, BattleScript_TwoTurnMovesSecondTurn
 	setbyte sTWOTURN_STRINGID, B_MSG_TURN1_SKY_ATTACK
 	call BattleScriptFirstChargingTurn
+	setstatchanger STAT_SPATK, 1, FALSE
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_SkyAttackEnd
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_SkyAttackEnd
+	setgraphicalstatchangevalues
+	playanimation BS_ATTACKER, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_SkyAttackEnd::
 	goto BattleScript_MoveEnd
 
 BattleScript_EffectConfuseHit::
@@ -1973,7 +1981,7 @@ BattleScript_BeatUpEnd::
 BattleScript_EffectSemiInvulnerable::
 	jumpifstatus2 BS_ATTACKER, STATUS2_MULTIPLETURNS, BattleScript_SecondTurnSemiInvulnerable
 	jumpifword CMP_COMMON_BITS, gHitMarker, HITMARKER_NO_ATTACKSTRING, BattleScript_SecondTurnSemiInvulnerable
-	jumpifmove MOVE_FLY, BattleScript_FirstTurnFly
+	jumpifmove MOVE_SPACE_TRAVEL, BattleScript_FirstTurnFly
 	jumpifmove MOVE_DIVE, BattleScript_FirstTurnDive
 	jumpifmove MOVE_BOUNCE, BattleScript_FirstTurnBounce
 	setbyte sTWOTURN_STRINGID, B_MSG_TURN1_DIG
@@ -2302,6 +2310,12 @@ BattleScript_EffectCharge::
 	attackanimation
 	waitanimation
 	printstring STRINGID_PKMNCHARGINGPOWER
+	waitmessage B_WAIT_TIME_LONG
+	tryhealhalfhealth BattleScript_AlreadyAtFullHp, BS_ATTACKER
+	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE
+	healthbarupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER
+	printstring STRINGID_PKMNREGAINEDHEALTH
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 

@@ -6392,8 +6392,12 @@ WhirlpoolEffect:
 Move_FLY:
 	loadspritegfx ANIM_TAG_ROUND_SHADOW
 	loadspritegfx ANIM_TAG_IMPACT
+	fadetobg BG_COSMIC
+	waitbgfadeout
 	choosetwoturnanim FlySetUp, FlyUnleash
 FlyEnd:
+	restorebg
+	waitbgfadeout
 	waitforvisualfinish
 	end
 
