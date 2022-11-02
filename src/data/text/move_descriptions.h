@@ -26,16 +26,16 @@ static const u8 sPayDayDescription[] = _(
     "Money is recovered after.");
 
 static const u8 sFirePunchDescription[] = _(
-    "A fiery punch that may burn\n"
-    "the foe.");
+    "A fiery punch.\n"
+    "Does physical damage.");
 
 static const u8 sIcePunchDescription[] = _(
-    "An icy punch that may\n"
-    "freeze the foe.");
+    "An icy punch.\n"
+    "Does physical damage.");
 
 static const u8 sThunderPunchDescription[] = _(
-    "An electrified punch that\n"
-    "may paralyze the foe.");
+    "An angelic punch.\n"
+    "Does physical damage.");
 
 static const u8 sScratchDescription[] = _(
     "Scratches the foe with\n"
@@ -1428,7 +1428,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_PAY_DAY - 1] = sPayDayDescription,
     [MOVE_FIRE_PUNCH - 1] = sFirePunchDescription,
     [MOVE_ICE_PUNCH - 1] = sIcePunchDescription,
-    [MOVE_THUNDER_PUNCH - 1] = sThunderPunchDescription,
+    [MOVE_HEAVEN_PUNCH - 1] = sThunderPunchDescription,
     [MOVE_SCRATCH - 1] = sScratchDescription,
     [MOVE_VICE_GRIP - 1] = sViceGripDescription,
     [MOVE_GUILLOTINE - 1] = sGuillotineDescription,
@@ -1449,7 +1449,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_ROLLING_KICK - 1] = sRollingKickDescription,
     [MOVE_SAND_ATTACK - 1] = sSandAttackDescription,
     [MOVE_HEADBUTT - 1] = sHeadbuttDescription,
-    [MOVE_HORN_ATTACK - 1] = sHornAttackDescription,
+    [MOVE_NAIL_JAB - 1] = sHornAttackDescription,
     [MOVE_FURY_ATTACK - 1] = sFuryAttackDescription,
     [MOVE_HORN_DRILL - 1] = sHornDrillDescription,
     [MOVE_TACKLE - 1] = sTackleDescription,
@@ -1458,7 +1458,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_TAKE_DOWN - 1] = sTakeDownDescription,
     [MOVE_THRASH - 1] = sThrashDescription,
     [MOVE_DOUBLE_EDGE - 1] = sDoubleEdgeDescription,
-    [MOVE_TAIL_WHIP - 1] = sTailWhipDescription,
+    [MOVE_TAIL_WAG - 1] = sTailWhipDescription,
     [MOVE_POISON_STING - 1] = sPoisonStingDescription,
     [MOVE_TWINEEDLE - 1] = sTwineedleDescription,
     [MOVE_PIN_MISSILE - 1] = sPinMissileDescription,
@@ -1503,9 +1503,9 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_STRING_SHOT - 1] = sStringShotDescription,
     [MOVE_DRAGON_RAGE - 1] = sDragonRageDescription,
     [MOVE_FIRE_SPIN - 1] = sFireSpinDescription,
-    [MOVE_THUNDER_SHOCK - 1] = sThunderShockDescription,
-    [MOVE_THUNDERBOLT - 1] = sThunderboltDescription,
-    [MOVE_THUNDER_WAVE - 1] = sThunderWaveDescription,
+    [MOVE_HEAVEN_SHOCK - 1] = sThunderShockDescription,
+    [MOVE_HEAVENBOLT - 1] = sThunderboltDescription,
+    [MOVE_ROCK_SHOCK - 1] = sThunderWaveDescription,
     [MOVE_THUNDER - 1] = sThunderDescription,
     [MOVE_ROCK_THROW - 1] = sRockThrowDescription,
     [MOVE_EARTHQUAKE - 1] = sEarthquakeDescription,
@@ -1538,7 +1538,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_FOCUS_ENERGY - 1] = sFocusEnergyDescription,
     [MOVE_BIDE - 1] = sBideDescription,
     [MOVE_METRONOME - 1] = sMetronomeDescription,
-    [MOVE_MIRROR_MOVE - 1] = sMirrorMoveDescription,
+    [MOVE_COPYCAT - 1] = sMirrorMoveDescription,
     [MOVE_SELF_DESTRUCT - 1] = sSelfDestructDescription,
     [MOVE_EGG_BOMB - 1] = sEggBombDescription,
     [MOVE_LICK - 1] = sLickDescription,
@@ -1604,7 +1604,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_PROTECT - 1] = sProtectDescription,
     [MOVE_MACH_PUNCH - 1] = sMachPunchDescription,
     [MOVE_SCARY_FACE - 1] = sScaryFaceDescription,
-    [MOVE_FAINT_ATTACK - 1] = sFaintAttackDescription,
+    [MOVE_FEINT_ATTACK - 1] = sFaintAttackDescription,
     [MOVE_SWEET_KISS - 1] = sSweetKissDescription,
     [MOVE_BELLY_DRUM - 1] = sBellyDrumDescription,
     [MOVE_SLUDGE_BOMB - 1] = sSludgeBombDescription,
@@ -1630,7 +1630,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_MILK_DRINK - 1] = sMilkDrinkDescription,
     [MOVE_SPARK - 1] = sSparkDescription,
     [MOVE_FURY_CUTTER - 1] = sFuryCutterDescription,
-    [MOVE_STEEL_WING - 1] = sSteelWingDescription,
+    [MOVE_METAL_GALE - 1] = sSteelWingDescription,
     [MOVE_MEAN_LOOK - 1] = sMeanLookDescription,
     [MOVE_ATTRACT - 1] = sAttractDescription,
     [MOVE_SLEEP_TALK - 1] = sSleepTalkDescription,
@@ -1643,14 +1643,14 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_SACRED_FIRE - 1] = sSacredFireDescription,
     [MOVE_MAGNITUDE - 1] = sMagnitudeDescription,
     [MOVE_DYNAMIC_PUNCH - 1] = sDynamicPunchDescription,
-    [MOVE_MEGAHORN - 1] = sMegahornDescription,
+    [MOVE_BEETLEHORN - 1] = sMegahornDescription,
     [MOVE_DRAGON_BREATH - 1] = sDragonBreathDescription,
     [MOVE_BATON_PASS - 1] = sBatonPassDescription,
     [MOVE_ENCORE - 1] = sEncoreDescription,
     [MOVE_PURSUIT - 1] = sPursuitDescription,
-    [MOVE_RAPID_SPIN - 1] = sRapidSpinDescription,
+    [MOVE_TIDY_UP - 1] = sRapidSpinDescription,
     [MOVE_SWEET_SCENT - 1] = sSweetScentDescription,
-    [MOVE_IRON_TAIL - 1] = sIronTailDescription,
+    [MOVE_IRON_TACKLE - 1] = sIronTailDescription,
     [MOVE_METAL_CLAW - 1] = sMetalClawDescription,
     [MOVE_VITAL_THROW - 1] = sVitalThrowDescription,
     [MOVE_MORNING_SUN - 1] = sMorningSunDescription,
@@ -1672,7 +1672,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_WHIRLPOOL - 1] = sWhirlpoolDescription,
     [MOVE_BEAT_UP - 1] = sBeatUpDescription,
     [MOVE_FAKE_OUT - 1] = sFakeOutDescription,
-    [MOVE_UPROAR - 1] = sUproarDescription,
+    [MOVE_ROCK_OUT - 1] = sUproarDescription,
     [MOVE_STOCKPILE - 1] = sStockpileDescription,
     [MOVE_SPIT_UP - 1] = sSpitUpDescription,
     [MOVE_SWALLOW - 1] = sSwallowDescription,
@@ -1683,8 +1683,8 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_WILL_O_WISP - 1] = sWillOWispDescription,
     [MOVE_MEMENTO - 1] = sMementoDescription,
     [MOVE_FACADE - 1] = sFacadeDescription,
-    [MOVE_FOCUS_PUNCH - 1] = sFocusPunchDescription,
-    [MOVE_SMELLING_SALT - 1] = sSmellingSaltDescription,
+    [MOVE_FOCUS_BLAST - 1] = sFocusPunchDescription,
+    [MOVE_SURPRISE_HIT - 1] = sSmellingSaltDescription,
     [MOVE_FOLLOW_ME - 1] = sFollowMeDescription,
     [MOVE_NATURE_POWER - 1] = sNaturePowerDescription,
     [MOVE_CHARGE - 1] = sChargeDescription,
@@ -1756,7 +1756,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_IRON_DEFENSE - 1] = sIronDefenseDescription,
     [MOVE_BLOCK - 1] = sBlockDescription,
     [MOVE_HOWL - 1] = sHowlDescription,
-    [MOVE_DRAGON_CLAW - 1] = sDragonClawDescription,
+    [MOVE_DEVIL_CLAW - 1] = sDragonClawDescription,
     [MOVE_FRENZY_PLANT - 1] = sFrenzyPlantDescription,
     [MOVE_BULK_UP - 1] = sBulkUpDescription,
     [MOVE_BOUNCE - 1] = sBounceDescription,
@@ -1768,7 +1768,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_WATER_SPORT - 1] = sWaterSportDescription,
     [MOVE_CALM_MIND - 1] = sCalmMindDescription,
     [MOVE_LEAF_BLADE - 1] = sLeafBladeDescription,
-    [MOVE_DRAGON_DANCE - 1] = sDragonDanceDescription,
+    [MOVE_DEVIL_WALTZ - 1] = sDragonDanceDescription,
     [MOVE_ROCK_BLAST - 1] = sRockBlastDescription,
     [MOVE_COSMIC_PULSE - 1] = sShockWaveDescription,
     [MOVE_WATER_PULSE - 1] = sWaterPulseDescription,

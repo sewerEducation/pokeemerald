@@ -742,7 +742,7 @@ static const u16 sMovesForbiddenToCopy[] =
     MOVE_HELPING_HAND,
     MOVE_COVET,
     MOVE_TRICK,
-    MOVE_FOCUS_PUNCH,
+    MOVE_FOCUS_BLAST,
     METRONOME_FORBIDDEN_END
 };
 
@@ -8060,7 +8060,7 @@ static void Cmd_trysetencore(void)
 
     if (gLastMoves[gBattlerTarget] == MOVE_STRUGGLE
         || gLastMoves[gBattlerTarget] == MOVE_ENCORE
-        || gLastMoves[gBattlerTarget] == MOVE_MIRROR_MOVE)
+        || gLastMoves[gBattlerTarget] == MOVE_COPYCAT)
     {
         i = MAX_MON_MOVES;
     }
@@ -8245,7 +8245,7 @@ static bool8 IsInvalidForSleepTalkOrAssist(u16 move)
     if (move == MOVE_NONE
      || move == MOVE_SLEEP_TALK
      || move == MOVE_ASSIST
-     || move == MOVE_MIRROR_MOVE
+     || move == MOVE_COPYCAT
      || move == MOVE_METRONOME)
         return TRUE;
     else
@@ -8280,8 +8280,8 @@ static void Cmd_trychoosesleeptalkmove(void)
     for (i = 0; i < MAX_MON_MOVES; i++)
     {
         if (IsInvalidForSleepTalkOrAssist(gBattleMons[gBattlerAttacker].moves[i])
-            || gBattleMons[gBattlerAttacker].moves[i] == MOVE_FOCUS_PUNCH
-            || gBattleMons[gBattlerAttacker].moves[i] == MOVE_UPROAR
+            || gBattleMons[gBattlerAttacker].moves[i] == MOVE_FOCUS_BLAST
+            || gBattleMons[gBattlerAttacker].moves[i] == MOVE_ROCK_OUT
             || IsTwoTurnsMove(gBattleMons[gBattlerAttacker].moves[i]))
         {
             unusableMovesBits |= gBitTable[i];

@@ -2996,7 +2996,7 @@ static const u16 sBattleFrontier_TutorMoves1[] =
     MOVE_BODY_SLAM,
     MOVE_ROCK_SLIDE,
     MOVE_COUNTER,
-    MOVE_THUNDER_WAVE,
+    MOVE_ROCK_SHOCK,
     MOVE_SWORDS_DANCE
 };
 
@@ -3010,7 +3010,7 @@ static const u16 sBattleFrontier_TutorMoves2[] =
     MOVE_ENDURE,
     MOVE_PSYCH_UP,
     MOVE_ICE_PUNCH,
-    MOVE_THUNDER_PUNCH,
+    MOVE_HEAVEN_PUNCH,
     MOVE_FIRE_PUNCH
 };
 

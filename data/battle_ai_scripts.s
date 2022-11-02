@@ -96,7 +96,7 @@ AI_CheckBadMove_CheckSoundproof:
 	if_move MOVE_SUPERSONIC, Score_Minus10
 	if_move MOVE_SCREECH, Score_Minus10
 	if_move MOVE_SNORE, Score_Minus10
-	if_move MOVE_UPROAR, Score_Minus10
+	if_move MOVE_ROCK_OUT, Score_Minus10
 	if_move MOVE_METAL_SOUND, Score_Minus10
 	if_move MOVE_GRASS_WHISTLE, Score_Minus10
 AI_CheckBadMove_CheckEffect:
@@ -873,7 +873,7 @@ AI_CV_MirrorMove_EncouragedMovesToMirror:
 	.2byte MOVE_SCARY_FACE
 	.2byte MOVE_FAKE_TEARS
 	.2byte MOVE_METAL_SOUND
-	.2byte MOVE_THUNDER_WAVE
+	.2byte MOVE_ROCK_SHOCK
 	.2byte MOVE_GLARE
 	.2byte MOVE_POISON_POWDER
 	.2byte MOVE_SHADOW_BALL
@@ -2732,7 +2732,7 @@ AI_PreferBatonPass:
 	if_random_less_than 80, AI_Risky_End
 AI_PreferBatonPass_GoForBatonPass:
 	if_move MOVE_SWORDS_DANCE, AI_PreferBatonPass2
-	if_move MOVE_DRAGON_DANCE, AI_PreferBatonPass2
+	if_move MOVE_DEVIL_WALTZ, AI_PreferBatonPass2
 	if_move MOVE_CALM_MIND, AI_PreferBatonPass2
 	if_effect EFFECT_PROTECT, AI_PreferBatonPass_End
 	if_move MOVE_BATON_PASS, AI_PreferBatonPass_EncourageIfHighStats
@@ -2877,7 +2877,7 @@ AI_TrySkillSwapOnAlly2:
 	if_has_move AI_USER_PARTNER, MOVE_HYDRO_PUMP, AI_TrySkillSwapOnAllyPlus3
 	if_has_move AI_USER_PARTNER, MOVE_DYNAMIC_PUNCH, AI_TrySkillSwapOnAllyPlus3
 	if_has_move AI_USER_PARTNER, MOVE_BLIZZARD, AI_TrySkillSwapOnAllyPlus3
-	if_has_move AI_USER_PARTNER, MOVE_MEGAHORN, AI_TrySkillSwapOnAllyPlus3
+	if_has_move AI_USER_PARTNER, MOVE_BEETLEHORN, AI_TrySkillSwapOnAllyPlus3
 	goto Score_Minus30_
 
 AI_TrySkillSwapOnAllyPlus3:
