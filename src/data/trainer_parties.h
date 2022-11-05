@@ -3408,7 +3408,7 @@ static const struct TrainerMonItemCustomMoves sParty_Brawly1[] = {
     .lvl = 19,
     .species = SPECIES_MAKUHITA,
     .heldItem = ITEM_CHERI_BERRY,
-    .moves = {MOVE_ARM_THRUST, MOVE_VITAL_THROW, MOVE_REVERSAL, MOVE_BULK_UP}
+    .moves = {MOVE_ARM_THRUST, MOVE_BODY_PRESS, MOVE_REVERSAL, MOVE_BULK_UP}
     }
 };
 
@@ -10708,7 +10708,7 @@ static const struct TrainerMonItemCustomMoves sParty_Wattson5[] = {
     .lvl = 50,
     .species = SPECIES_ELECTABUZZ,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_SWIFT, MOVE_FOCUS_BLAST, MOVE_HEAVEN_PUNCH, MOVE_LIGHT_SCREEN}
+    .moves = {MOVE_SPEED_STAR, MOVE_FOCUS_BLAST, MOVE_HEAVEN_PUNCH, MOVE_LIGHT_SCREEN}
     },
     {
     .iv = 255,

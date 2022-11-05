@@ -75,7 +75,7 @@ static const struct TrainerHillFloor sFloors_JPDefault[] = {
                     [2] = {
                         .species = SPECIES_SANDSHREW,
                         .heldItem = ITEM_QUICK_CLAW,
-                        .moves = { MOVE_SCRATCH, MOVE_POISON_STING, MOVE_SAND_ATTACK, MOVE_SWIFT },
+                        .moves = { MOVE_SCRATCH, MOVE_POISON_STING, MOVE_SAND_ATTACK, MOVE_SPEED_STAR },
                         .hpEV = 110,
                         .attackEV = 100,
                         .defenseEV = 100,
@@ -1128,7 +1128,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                     {
                         .species = SPECIES_NIDOQUEEN,
                         .heldItem = ITEM_SPEED_ENERGY,
-                        .moves = {MOVE_SUPERPOWER, MOVE_BITE, MOVE_CHARM, MOVE_FLATTER},
+                        .moves = {MOVE_PLANETFALL, MOVE_BITE, MOVE_CHARM, MOVE_FLATTER},
                         .hpEV = 252,
                         .attackEV = 252,
                         .spDefenseEV = 6,
@@ -1312,7 +1312,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                     {
                         .species = SPECIES_ESPEON,
                         .heldItem = ITEM_LUM_BERRY,
-                        .moves = {MOVE_SKILL_SWAP, MOVE_PSYBEAM, MOVE_SWIFT, MOVE_ATTRACT},
+                        .moves = {MOVE_SKILL_SWAP, MOVE_PSYBEAM, MOVE_SPEED_STAR, MOVE_ATTRACT},
                         .speedEV = 255,
                         .spAttackEV = 255,
                         .otId = TRAINER_HILL_OTID,
@@ -1718,7 +1718,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                         {
                                             .species = SPECIES_STARMIE,
                                             .heldItem = ITEM_SILK_SCARF,
-                                            .moves = {MOVE_DIVE, MOVE_ICY_WIND, MOVE_SWIFT, MOVE_SKILL_SWAP},
+                                            .moves = {MOVE_DIVE, MOVE_ICY_WIND, MOVE_SPEED_STAR, MOVE_SKILL_SWAP},
                                             .hpEV = 255,
                                             .speedEV = 255,
                                             .otId = TRAINER_HILL_OTID,
@@ -3103,7 +3103,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                         {
                                             .species = SPECIES_BEEDRILL,
                                             .heldItem = ITEM_SHELL_BELL,
-                                            .moves = {MOVE_TWINEEDLE, MOVE_NONE, MOVE_NONE, MOVE_NONE},
+                                            .moves = {MOVE_SNEAKY_NEEDLE, MOVE_NONE, MOVE_NONE, MOVE_NONE},
                                             .hpEV = 252,
                                             .speedEV = 252,
                                             .otId = TRAINER_HILL_OTID,
@@ -3268,7 +3268,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                         {
                                             .species = SPECIES_QUILAVA,
                                             .heldItem = ITEM_CHARCOAL,
-                                            .moves = {MOVE_QUICK_ATTACK, MOVE_FLAMETHROWER, MOVE_FLAME_WHEEL, MOVE_SWIFT},
+                                            .moves = {MOVE_QUICK_ATTACK, MOVE_FLAMETHROWER, MOVE_FLAME_WHEEL, MOVE_SPEED_STAR},
                                             .hpEV = 6,
                                             .speedEV = 252,
                                             .spAttackEV = 252,
@@ -4583,7 +4583,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                         {
                                             .species = SPECIES_ELECTRODE,
                                             .heldItem = ITEM_SPEED_ENERGY,
-                                            .moves = {MOVE_EXPLOSION, MOVE_HEAVENBOLT, MOVE_SWIFT, MOVE_LIGHT_SCREEN},
+                                            .moves = {MOVE_EXPLOSION, MOVE_HEAVENBOLT, MOVE_SPEED_STAR, MOVE_LIGHT_SCREEN},
                                             .attackEV = 255,
                                             .spAttackEV = 255,
                                             .otId = TRAINER_HILL_OTID,

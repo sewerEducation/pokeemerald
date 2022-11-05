@@ -37,7 +37,7 @@
 #define TUTOR_MOVE_ICE_PUNCH       22
 #define TUTOR_MOVE_SWAGGER         23
 #define TUTOR_MOVE_SLEEP_TALK      24
-#define TUTOR_MOVE_SWIFT           25
+#define TUTOR_MOVE_SPEED_STAR           25
 #define TUTOR_MOVE_DEFENSE_CURL    26
 #define TUTOR_MOVE_HEAVEN_PUNCH   27
 #define TUTOR_MOVE_FIRE_PUNCH      28

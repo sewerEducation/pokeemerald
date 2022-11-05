@@ -22,7 +22,7 @@ static const struct PyramidWildMon sLevel50WildMons_Round1[] =
         .species = SPECIES_ELECTABUZZ,
         .lvl = 37,
         .abilityNum = ABILITY_RANDOM,
-        .moves = {MOVE_HEAVEN_PUNCH, MOVE_SWIFT, MOVE_SCREECH, MOVE_NONE}
+        .moves = {MOVE_HEAVEN_PUNCH, MOVE_SPEED_STAR, MOVE_SCREECH, MOVE_NONE}
     },
     {
         .species = SPECIES_VILEPLUME,
@@ -640,7 +640,7 @@ static const struct PyramidWildMon sLevel50WildMons_Round13[] =
         .species = SPECIES_VENOMOTH,
         .lvl = 46,
         .abilityNum = ABILITY_RANDOM,
-        .moves = {MOVE_SILVER_WIND, MOVE_POISON_POWDER, MOVE_SLEEP_POWDER, MOVE_PSYCHIC}
+        .moves = {MOVE_STARDUST, MOVE_POISON_POWDER, MOVE_SLEEP_POWDER, MOVE_PSYCHIC}
     },
     {
         .species = SPECIES_SCIZOR,

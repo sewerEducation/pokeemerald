@@ -263,7 +263,7 @@
 #define MOVE_EFFECT_ALL_STATS_UP        34
 #define MOVE_EFFECT_RAPIDSPIN           35
 #define MOVE_EFFECT_REMOVE_PARALYSIS    36
-#define MOVE_EFFECT_ATK_DEF_DOWN        37
+#define MOVE_EFFECT_DEFENSES_DOWN        37
 #define MOVE_EFFECT_RECOIL_33           38
 #define MOVE_EFFECT_ATK_PLUS_2          39
 #define MOVE_EFFECT_DEF_PLUS_2          40

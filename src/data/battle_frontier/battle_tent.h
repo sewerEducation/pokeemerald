@@ -958,7 +958,7 @@ const struct FacilityMon gSlateportBattleTentMons[NUM_SLATEPORT_TENT_MONS] =
     },
     [SLATEPORT_TENT_MON_SWELLOW] = {
         .species = SPECIES_SWELLOW,
-        .moves = {MOVE_SUPERSONIC, MOVE_GROWL, MOVE_FOCUS_ENERGY, MOVE_PECK},
+        .moves = {MOVE_SUPERSONIC, MOVE_GROWL, MOVE_FOCUS_ENERGY, MOVE_POKE},
         .itemTableId = BATTLE_FRONTIER_ITEM_NONE,
         .evSpread = F_EV_SPREAD_DEFENSE | F_EV_SPREAD_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_IMPISH
@@ -1224,14 +1224,14 @@ const struct FacilityMon gSlateportBattleTentMons[NUM_SLATEPORT_TENT_MONS] =
     },
     [SLATEPORT_TENT_MON_SWABLU] = {
         .species = SPECIES_SWABLU,
-        .moves = {MOVE_SING, MOVE_PECK, MOVE_METAL_GALE, MOVE_SAFEGUARD},
+        .moves = {MOVE_SING, MOVE_POKE, MOVE_METAL_GALE, MOVE_SAFEGUARD},
         .itemTableId = BATTLE_FRONTIER_ITEM_NONE,
         .evSpread = F_EV_SPREAD_SPEED | F_EV_SPREAD_ATTACK,
         .nature = NATURE_JOLLY
     },
     [SLATEPORT_TENT_MON_MACHOP] = {
         .species = SPECIES_MACHOP,
-        .moves = {MOVE_FOCUS_ENERGY, MOVE_VITAL_THROW, MOVE_SEISMIC_TOSS, MOVE_FORESIGHT},
+        .moves = {MOVE_FOCUS_ENERGY, MOVE_BODY_PRESS, MOVE_SEISMIC_TOSS, MOVE_FORESIGHT},
         .itemTableId = BATTLE_FRONTIER_ITEM_BLACK_BELT,
         .evSpread = F_EV_SPREAD_SPEED | F_EV_SPREAD_ATTACK,
         .nature = NATURE_ADAMANT
@@ -1783,7 +1783,7 @@ const struct BattleFrontierTrainer gVerdanturfBattleTentTrainers[NUM_BATTLE_TENT
         .trainerName = _("MARQUIS"),
         .speechBefore = {EC_WORD_NONE, EC_WORD_OF, EC_WORD_THIS, EC_WORD_IS, EC_WORD_MAKING, EC_WORD_SENSE},
         .speechWin = {EC_WORD_SEE, EC_WORD_QUES, EC_WORD_THIS, EC_WORD_JUST, EC_WORD_ISN_T, EC_WORD_NORMAL},
-        .speechLose = {EC_WORD_SHOULD, EC_WORD_I, EC_WORD_CAUSE, EC_WORD_AN, EC_MOVE(UPROAR), EC_WORD_QUES},
+        .speechLose = {EC_WORD_SHOULD, EC_WORD_I, EC_WORD_CAUSE, EC_WORD_AN, EC_MOVE(ACID), EC_WORD_QUES},
         .monSet = gVerdanturfBattleTentTrainerMons_Marquis
     },
     [VERDANTURF_TENT_TRAINER_FREDDY] = {
@@ -1976,7 +1976,7 @@ const struct FacilityMon gVerdanturfBattleTentMons[NUM_VERDANTURF_TENT_MONS] =
     },
     [VERDANTURF_TENT_MON_GOLDEEN_2] = {
         .species = SPECIES_GOLDEEN,
-        .moves = {MOVE_PECK, MOVE_SUPERSONIC, MOVE_PSYBEAM, MOVE_RAIN_DANCE},
+        .moves = {MOVE_POKE, MOVE_SUPERSONIC, MOVE_PSYBEAM, MOVE_RAIN_DANCE},
         .itemTableId = BATTLE_FRONTIER_ITEM_KINGS_ROCK,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_SPEED | F_EV_SPREAD_HP,
         .nature = NATURE_GENTLE
@@ -2502,7 +2502,7 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_
     [FALLARBOR_TENT_TRAINER_JONN] = {
         .facilityClass = FACILITY_CLASS_POKEMANIAC,
         .trainerName = _("JONN"),
-        .speechBefore = {EC_WORD_THE, EC_WORD_WORLD, EC_MOVE2(SUPERPOWER), EC_MOVE2(STOMP), EC_WORD_CONTEST, EC_WORD_EXCL_EXCL},
+        .speechBefore = {EC_WORD_THE, EC_WORD_WORLD, EC_MOVE2(ACID), EC_MOVE2(STOMP), EC_WORD_CONTEST, EC_WORD_EXCL_EXCL},
         .speechWin = {EC_WORD_I_AM, EC_WORD_NO_1, EC_WORD_EXCL_EXCL, EC_WORD_HEAR, EC_WORD_ME, EC_MOVE2(ROAR)},
         .speechLose = {EC_WORD_I, EC_WORD_GIVE_UP, EC_WORD_EXCL, EC_WORD_YOU_RE, EC_WORD_NO_1, EC_WORD_EXCL},
         .monSet = gFallarborBattleTentTrainerMons_Jonn
@@ -2630,9 +2630,9 @@ const struct BattleFrontierTrainer gFallarborBattleTentTrainers[NUM_BATTLE_TENT_
     [FALLARBOR_TENT_TRAINER_RORY] = {
         .facilityClass = FACILITY_CLASS_NINJA_BOY,
         .trainerName = _("RORY"),
-        .speechBefore = {EC_WORD_DON_T, EC_WORD_CAUSE, EC_WORD_AN, EC_MOVE(UPROAR), EC_WORD_YOU, EC_WORD_EXCL},
-        .speechWin = {EC_WORD_I, EC_WORD_DON_T, EC_WORD_NEED, EC_WORD_AN, EC_MOVE(UPROAR), EC_WORD_EXCL},
-        .speechLose = {EC_WORD_I_AM, EC_WORD_GOING, EC_WORD_TO, EC_WORD_CAUSE, EC_WORD_AN, EC_MOVE(UPROAR)},
+        .speechBefore = {EC_WORD_DON_T, EC_WORD_CAUSE, EC_WORD_AN, EC_MOVE(ACID), EC_WORD_YOU, EC_WORD_EXCL},
+        .speechWin = {EC_WORD_I, EC_WORD_DON_T, EC_WORD_NEED, EC_WORD_AN, EC_MOVE(ACID), EC_WORD_EXCL},
+        .speechLose = {EC_WORD_I_AM, EC_WORD_GOING, EC_WORD_TO, EC_WORD_CAUSE, EC_WORD_AN, EC_MOVE(ACID)},
         .monSet = gFallarborBattleTentTrainerMons_Rory
     },
     [FALLARBOR_TENT_TRAINER_ELEANOR] = {
@@ -2927,7 +2927,7 @@ const struct FacilityMon gFallarborBattleTentMons[NUM_FALLARBOR_TENT_MONS] =
     },
     [FALLARBOR_TENT_MON_GOLDEEN_2] = {
         .species = SPECIES_GOLDEEN,
-        .moves = {MOVE_SLEEP_TALK, MOVE_HORN_DRILL, MOVE_REST, MOVE_SUPERSONIC},
+        .moves = {MOVE_SLEEP_TALK, MOVE_HEAD_SMASH, MOVE_REST, MOVE_SUPERSONIC},
         .itemTableId = BATTLE_FRONTIER_ITEM_MENTAL_HERB,
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_DEFENSE | F_EV_SPREAD_HP,
         .nature = NATURE_CAREFUL

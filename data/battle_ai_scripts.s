@@ -49,7 +49,6 @@ gBattleAI_ScriptsTable::
 AI_CheckBadMove:
 	if_target_is_ally AI_Ret
 	if_move MOVE_FISSURE, AI_CBM_CheckIfNegatesType
-	if_move MOVE_HORN_DRILL, AI_CBM_CheckIfNegatesType
 	get_how_powerful_move_is
 	if_equal MOVE_POWER_OTHER, AI_CheckBadMove_CheckSoundproof
 AI_CBM_CheckIfNegatesType:
@@ -195,7 +194,7 @@ AI_CheckBadMove_CheckEffect:
 	if_effect EFFECT_HELPING_HAND, AI_CBM_HelpingHand
 	if_effect EFFECT_TRICK, AI_CBM_TrickAndKnockOff
 	if_effect EFFECT_INGRAIN, AI_CBM_Ingrain
-	if_effect EFFECT_SUPERPOWER, AI_CBM_HighRiskForDamage
+	if_effect EFFECT_CLOSECOMBAT, AI_CBM_HighRiskForDamage
 	if_effect EFFECT_RECYCLE, AI_CBM_Recycle
 	if_effect EFFECT_KNOCK_OFF, AI_CBM_TrickAndKnockOff
 	if_effect EFFECT_ENDEAVOR, AI_CBM_HighRiskForDamage
@@ -703,7 +702,7 @@ AI_CheckViability:
 	if_effect EFFECT_SWAGGER, AI_CV_Swagger
 	if_effect EFFECT_SPEED_DOWN_HIT, AI_CV_SpeedDownFromChance
 	if_effect EFFECT_SKY_ATTACK, AI_CV_ChargeUpMove
-	if_effect EFFECT_VITAL_THROW, AI_CV_VitalThrow
+	if_effect EFFECT_BODY_PRESS, AI_CV_VitalThrow
 	if_effect EFFECT_SUBSTITUTE, AI_CV_Substitute
 	if_effect EFFECT_RECHARGE, AI_CV_Recharge
 	if_effect EFFECT_LEECH_SEED, AI_CV_Toxic
@@ -749,7 +748,7 @@ AI_CheckViability:
 	if_effect EFFECT_SMELLINGSALT, AI_CV_SmellingSalt
 	if_effect EFFECT_TRICK, AI_CV_Trick
 	if_effect EFFECT_ROLE_PLAY, AI_CV_ChangeSelfAbility
-	if_effect EFFECT_SUPERPOWER, AI_CV_Superpower
+	if_effect EFFECT_CLOSECOMBAT, AI_CV_Superpower
 	if_effect EFFECT_MAGIC_COAT, AI_CV_MagicCoat
 	if_effect EFFECT_RECYCLE, AI_CV_Recycle
 	if_effect EFFECT_REVENGE, AI_CV_Revenge
@@ -861,7 +860,7 @@ AI_CV_MirrorMove_EncouragedMovesToMirror:
 	.2byte MOVE_SMOKESCREEN
 	.2byte MOVE_TOXIC
 	.2byte MOVE_GUILLOTINE
-	.2byte MOVE_HORN_DRILL
+	.2byte MOVE_HEAD_SMASH
 	.2byte MOVE_FISSURE
 	.2byte MOVE_SHEER_COLD
 	.2byte MOVE_CROSS_CHOP
@@ -879,7 +878,7 @@ AI_CV_MirrorMove_EncouragedMovesToMirror:
 	.2byte MOVE_SHADOW_BALL
 	.2byte MOVE_DYNAMIC_PUNCH
 	.2byte MOVE_HYPER_BEAM
-	.2byte MOVE_EXTREME_SPEED
+	.2byte MOVE_TRENDSETTER
 	.2byte MOVE_THIEF
 	.2byte MOVE_COVET
 	.2byte MOVE_ATTRACT
@@ -887,7 +886,7 @@ AI_CV_MirrorMove_EncouragedMovesToMirror:
 	.2byte MOVE_TORMENT
 	.2byte MOVE_FLATTER
 	.2byte MOVE_TRICK
-	.2byte MOVE_SUPERPOWER
+	.2byte MOVE_PLANETFALL
 	.2byte MOVE_SKILL_SWAP
 	.2byte -1
 

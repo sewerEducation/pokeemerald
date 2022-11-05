@@ -38,7 +38,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_COMET_PUNCH] = {
+    [MOVE_BUG_BUZZ] = {
         { 0x1d, 0x0, 0x0, 0x0, 0x0},
         { 0xb, 0x0, 0x0, 0x0, 0x0},
         { 0x2c, 0x0, 0x0, 0x0, 0x0},
@@ -94,7 +94,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_VICE_GRIP] = {
+    [MOVE_PINCH] = {
         { 0x14, 0x0, 0x0, 0x0, 0x0},
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -222,7 +222,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_ROLLING_KICK] = {
+    [MOVE_FLASHY_KICK] = {
         { 0x18, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0x11, 0x0, 0x0, 0x0, 0x0},
@@ -262,7 +262,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_HORN_DRILL] = {
+    [MOVE_HEAD_SMASH] = {
         { 0x18, 0x0, 0x0, 0x0, 0x0},
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -334,7 +334,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_TWINEEDLE] = {
+    [MOVE_SNEAKY_NEEDLE] = {
         { 0xf, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0x24, 0x0, 0x0, 0x0, 0x0},
@@ -518,7 +518,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_PECK] = {
+    [MOVE_POKE] = {
         { 0x9, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -1038,7 +1038,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_SWIFT] = {
+    [MOVE_SPEED_STAR] = {
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
         { 0x33, 0x0, 0x0, 0x0, 0x0},
@@ -1870,7 +1870,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_VITAL_THROW] = {
+    [MOVE_BODY_PRESS] = {
         { 0x12, 0x0, 0x0, 0x0, 0x0},
         { 0x24, 0x0, 0x0, 0x0, 0x0},
         { 0x18, 0x0, 0x0, 0x0, 0x0},
@@ -1966,7 +1966,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_EXTREME_SPEED] = {
+    [MOVE_TRENDSETTER] = {
         { 0x9, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
         { 0xc, 0x0, 0x0, 0x0, 0x0},
@@ -2214,7 +2214,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_SUPERPOWER] = {
+    [MOVE_PLANETFALL] = {
         { 0x27, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0x21, 0x0, 0x0, 0x0, 0x0},
@@ -2550,7 +2550,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND
     },
-    [MOVE_SILVER_WIND] = {
+    [MOVE_STARDUST] = {
         { 0x11, 0x0, 0x0, 0x0, 0x0},
         { 0x30, 0x0, 0x0, 0x0, 0x0},
         { 0xf, 0x0, 0x0, 0x0, 0x0},

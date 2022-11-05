@@ -663,7 +663,7 @@ static const u8 *const sMoveEffectBS_Ptrs[] =
     [MOVE_EFFECT_ALL_STATS_UP]     = BattleScript_MoveEffectSleep,
     [MOVE_EFFECT_RAPIDSPIN]        = BattleScript_MoveEffectSleep,
     [MOVE_EFFECT_REMOVE_PARALYSIS] = BattleScript_MoveEffectSleep,
-    [MOVE_EFFECT_ATK_DEF_DOWN]     = BattleScript_MoveEffectSleep,
+    [MOVE_EFFECT_DEFENSES_DOWN]    = BattleScript_MoveEffectSleep,
     [MOVE_EFFECT_RECOIL_33]        = BattleScript_MoveEffectRecoil,
 };
 
@@ -766,8 +766,8 @@ static const u16 sNaturePowerMoves[] =
     [BATTLE_TERRAIN_POND]       = MOVE_BUBBLE_BEAM,
     [BATTLE_TERRAIN_MOUNTAIN]   = MOVE_ROCK_SLIDE,
     [BATTLE_TERRAIN_CAVE]       = MOVE_SHADOW_BALL,
-    [BATTLE_TERRAIN_BUILDING]   = MOVE_SWIFT,
-    [BATTLE_TERRAIN_PLAIN]      = MOVE_SWIFT
+    [BATTLE_TERRAIN_BUILDING]   = MOVE_SPEED_STAR,
+    [BATTLE_TERRAIN_PLAIN]      = MOVE_SPEED_STAR
 };
 
 // format: min. weight (hectograms), base power
@@ -1087,7 +1087,7 @@ static bool8 AccuracyCalcHelper(u16 move)
     gHitMarker &= ~HITMARKER_IGNORE_UNDERWATER;
 
     if ((WEATHER_HAS_EFFECT && (gBattleWeather & B_WEATHER_RAIN) && gBattleMoves[move].effect == EFFECT_THUNDER)
-     || (gBattleMoves[move].effect == EFFECT_ALWAYS_HIT || gBattleMoves[move].effect == EFFECT_VITAL_THROW))
+     || (gBattleMoves[move].effect == EFFECT_ALWAYS_HIT))
     {
         JumpIfMoveFailed(7, move);
         return TRUE;
@@ -2868,9 +2868,9 @@ void SetMoveEffect(bool8 primary, u8 certain)
                     gBattlescriptCurrInstr = BattleScript_TargetPRLZHeal;
                 }
                 break;
-            case MOVE_EFFECT_ATK_DEF_DOWN: // SuperPower
+            case MOVE_EFFECT_DEFENSES_DOWN: // SuperPower
                 BattleScriptPush(gBattlescriptCurrInstr + 1);
-                gBattlescriptCurrInstr = BattleScript_AtkDefDown;
+                gBattlescriptCurrInstr = BattleScript_DefensesDown;
                 break;
             case MOVE_EFFECT_RECOIL_33: // Double Edge
                 gBattleMoveDamage = gHpDealt / 3;

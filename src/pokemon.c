@@ -3219,16 +3219,32 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
 
     if (IS_TYPE_PHYSICAL(type))
     {
-        if (gCritMultiplier >= 2)
+        if (gBattleMoves[move].effect == EFFECT_BODY_PRESS)
         {
-            // Critical hit, if attacker has lost attack stat stages then ignore stat drop
-            if (attacker->statStages[STAT_ATK] > DEFAULT_STAT_STAGE)
-                APPLY_STAT_MOD(damage, attacker, attack, STAT_ATK)
+            if (gCritMultiplier >= 2)
+            {
+                // Critical hit, if attacker has lost attack stat stages then ignore stat drop
+                if (attacker->statStages[STAT_DEF] > DEFAULT_STAT_STAGE)
+                    APPLY_STAT_MOD(damage, attacker, attacker->defense, STAT_DEF)
+                else
+                    damage = attacker->defense;
+            }
             else
-                damage = attack;
+                APPLY_STAT_MOD(damage, attacker, attacker->defense, STAT_DEF)
         }
         else
-            APPLY_STAT_MOD(damage, attacker, attack, STAT_ATK)
+        {
+            if (gCritMultiplier >= 2)
+            {
+                // Critical hit, if attacker has lost attack stat stages then ignore stat drop
+                if (attacker->statStages[STAT_ATK] > DEFAULT_STAT_STAGE)
+                    APPLY_STAT_MOD(damage, attacker, attack, STAT_ATK)
+                else
+                    damage = attack;
+            }
+            else
+                APPLY_STAT_MOD(damage, attacker, attack, STAT_ATK)
+        }
 
         damage = damage * gBattleMovePower;
         damage *= (2 * attacker->level / 5 + 2);
@@ -3248,7 +3264,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         damage /= 50;
 
         // Burn cuts attack in half
-        if ((attacker->status1 & STATUS1_BURN) && attacker->ability != ABILITY_GUTS)
+        if ((attacker->status1 & STATUS1_BURN) && attacker->ability != ABILITY_GUTS && gBattleMoves[move].effect != EFFECT_BODY_PRESS)
             damage /= 2;
 
         // Apply Reflect

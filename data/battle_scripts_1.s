@@ -96,7 +96,7 @@ gBattleScriptsForMoveEffects::
 	.4byte BattleScript_EffectSkyAttack              @ EFFECT_SKY_ATTACK
 	.4byte BattleScript_EffectConfuseHit             @ EFFECT_CONFUSE_HIT
 	.4byte BattleScript_EffectTwineedle              @ EFFECT_TWINEEDLE
-	.4byte BattleScript_EffectHit                    @ EFFECT_VITAL_THROW
+	.4byte BattleScript_EffectHit                    @ EFFECT_BODY_PRESS
 	.4byte BattleScript_EffectSubstitute             @ EFFECT_SUBSTITUTE
 	.4byte BattleScript_EffectRecharge               @ EFFECT_RECHARGE
 	.4byte BattleScript_EffectRage                   @ EFFECT_RAGE
@@ -200,7 +200,7 @@ gBattleScriptsForMoveEffects::
 	.4byte BattleScript_EffectWish                   @ EFFECT_WISH
 	.4byte BattleScript_EffectAssist                 @ EFFECT_ASSIST
 	.4byte BattleScript_EffectIngrain                @ EFFECT_INGRAIN
-	.4byte BattleScript_EffectSuperpower             @ EFFECT_SUPERPOWER
+	.4byte BattleScript_EffectClosecombat             @ EFFECT_CLOSECOMBAT
 	.4byte BattleScript_EffectMagicCoat              @ EFFECT_MAGIC_COAT
 	.4byte BattleScript_EffectRecycle                @ EFFECT_RECYCLE
 	.4byte BattleScript_EffectRevenge                @ EFFECT_REVENGE
@@ -2399,8 +2399,8 @@ BattleScript_EffectIngrain::
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 
-BattleScript_EffectSuperpower::
-	setmoveeffect MOVE_EFFECT_ATK_DEF_DOWN | MOVE_EFFECT_AFFECTS_USER | MOVE_EFFECT_CERTAIN
+BattleScript_EffectClosecombat::
+	setmoveeffect MOVE_EFFECT_DEFENSES_DOWN | MOVE_EFFECT_AFFECTS_USER | MOVE_EFFECT_CERTAIN
 	goto BattleScript_EffectHit
 
 BattleScript_EffectMagicCoat::
@@ -3635,23 +3635,23 @@ BattleScript_PrintMonIsRooted::
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 
-BattleScript_AtkDefDown::
-	setbyte sSTAT_ANIM_PLAYED, FALSE
-	playstatchangeanimation BS_ATTACKER, BIT_DEF | BIT_ATK, STAT_CHANGE_CANT_PREVENT | STAT_CHANGE_NEGATIVE | STAT_CHANGE_MULTIPLE_STATS
-	playstatchangeanimation BS_ATTACKER, BIT_ATK, STAT_CHANGE_CANT_PREVENT | STAT_CHANGE_NEGATIVE
-	setstatchanger STAT_ATK, 1, TRUE
-	statbuffchange MOVE_EFFECT_AFFECTS_USER | MOVE_EFFECT_CERTAIN | STAT_CHANGE_ALLOW_PTR, BattleScript_AtkDefDown_TryDef
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_AtkDefDown_TryDef
-	printfromtable gStatDownStringIds
-	waitmessage B_WAIT_TIME_LONG
-BattleScript_AtkDefDown_TryDef::
+BattleScript_DefensesDown::
+setbyte sSTAT_ANIM_PLAYED, FALSE
+	playstatchangeanimation BS_ATTACKER, BIT_DEF | BIT_SPDEF, STAT_CHANGE_CANT_PREVENT | STAT_CHANGE_NEGATIVE | STAT_CHANGE_MULTIPLE_STATS
 	playstatchangeanimation BS_ATTACKER, BIT_DEF, STAT_CHANGE_CANT_PREVENT | STAT_CHANGE_NEGATIVE
 	setstatchanger STAT_DEF, 1, TRUE
-	statbuffchange MOVE_EFFECT_AFFECTS_USER | MOVE_EFFECT_CERTAIN | STAT_CHANGE_ALLOW_PTR, BattleScript_AtkDefDown_End
-	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_AtkDefDown_End
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | MOVE_EFFECT_CERTAIN | STAT_CHANGE_ALLOW_PTR, BattleScript_DefensesDownTrySpDef
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_DefensesDownTrySpDef
 	printfromtable gStatDownStringIds
 	waitmessage B_WAIT_TIME_LONG
-BattleScript_AtkDefDown_End::
+BattleScript_DefensesDownTrySpDef::
+	playstatchangeanimation BS_ATTACKER, BIT_SPDEF, STAT_CHANGE_CANT_PREVENT | STAT_CHANGE_NEGATIVE
+	setstatchanger STAT_SPDEF, 1, TRUE
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | MOVE_EFFECT_CERTAIN | STAT_CHANGE_ALLOW_PTR, BattleScript_DefensesDownEnd
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_DefensesDownEnd
+	printfromtable gStatDownStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_DefensesDownEnd::
 	return
 
 BattleScript_KnockedOff::
