@@ -38,7 +38,7 @@ const u16 gEggMoves[] = {
               MOVE_FEINT_ATTACK,
               MOVE_FORESIGHT,
               MOVE_METAL_GALE,
-              MOVE_AIR_CUTTER),
+              MOVE_SOAK),
 
     egg_moves(RATTATA,
               MOVE_SCREECH,
@@ -1083,7 +1083,7 @@ const u16 gEggMoves[] = {
               MOVE_HELPING_HAND,
               MOVE_CROSS_CHOP,
               MOVE_REVENGE,
-              MOVE_DYNAMIC_PUNCH,
+              MOVE_HALLOWEEN,
               MOVE_COUNTER),
 
     egg_moves(ELECTRIKE,
@@ -1115,7 +1115,7 @@ const u16 gEggMoves[] = {
               MOVE_GRASS_WHISTLE,
               MOVE_ACID,
               MOVE_TEETER_DANCE,
-              MOVE_DYNAMIC_PUNCH,
+              MOVE_HALLOWEEN,
               MOVE_COUNTER),
 
     egg_moves(SNORUNT,
@@ -1158,7 +1158,7 @@ const u16 gEggMoves[] = {
               MOVE_FORESIGHT,
               MOVE_FAKE_OUT,
               MOVE_BATON_PASS,
-              MOVE_DYNAMIC_PUNCH),
+              MOVE_HALLOWEEN),
 
     egg_moves(SWABLU,
               MOVE_AGILITY,

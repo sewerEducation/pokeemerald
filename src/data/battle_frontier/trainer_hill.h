@@ -554,7 +554,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                     {
                         .species = SPECIES_MACHOKE,
                         .heldItem = ITEM_BLACK_BELT,
-                        .moves = {MOVE_DYNAMIC_PUNCH, MOVE_MUD_SLAP, MOVE_COUNTER, MOVE_SCARY_FACE},
+                        .moves = {MOVE_HALLOWEEN, MOVE_MUD_SLAP, MOVE_COUNTER, MOVE_SCARY_FACE},
                         .hpEV = 255,
                         .attackEV = 255,
                         .otId = TRAINER_HILL_OTID,

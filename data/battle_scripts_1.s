@@ -232,6 +232,8 @@ gBattleScriptsForMoveEffects::
 	.4byte BattleScript_EffectCalmMind               @ EFFECT_CALM_MIND
 	.4byte BattleScript_EffectDragonDance            @ EFFECT_DRAGON_DANCE
 	.4byte BattleScript_EffectCamouflage             @ EFFECT_CAMOUFLAGE
+	.4byte BattleScript_EffectSoak                   @ EFFECT_SOAK
+	.4byte BattleScript_EffectHalloween              @ EFFECT_HALLOWEEN
 
 BattleScript_EffectHit::
 	jumpifnotmove MOVE_SURF, BattleScript_HitFromAtkCanceler
@@ -2817,6 +2819,32 @@ BattleScript_EffectCamouflage::
 	attackanimation
 	waitanimation
 	printstring STRINGID_PKMNCHANGEDTYPE
+	waitmessage B_WAIT_TIME_LONG
+	goto BattleScript_MoveEnd
+
+BattleScript_EffectSoak::
+	attackcanceler
+	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
+	attackstring
+	ppreduce
+	jumpifstatus2 BS_TARGET, STATUS2_SUBSTITUTE, BattleScript_ButItFailed
+	attackanimation
+	waitanimation
+	trysoak BattleScript_ButItFailed
+	printstring STRINGID_TRANSFORMEDINTOWATERTYPE
+	waitmessage B_WAIT_TIME_LONG
+	goto BattleScript_MoveEnd
+
+BattleScript_EffectHalloween::
+	attackcanceler
+	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
+	attackstring
+	ppreduce
+	jumpifstatus2 BS_TARGET, STATUS2_SUBSTITUTE, BattleScript_ButItFailed
+	attackanimation
+	waitanimation
+	tryhalloween BattleScript_ButItFailed
+	printstring STRINGID_TRANSFORMEDINTOGHOSTTYPE
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 

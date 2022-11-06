@@ -299,6 +299,8 @@ static const u8 sText_PkmnsXPreventsFlinching[] = _("{B_EFF_NAME_WITH_PREFIX}'s 
 static const u8 sText_PkmnsXPreventsYsZ[] = _("{B_ATK_NAME_WITH_PREFIX}'s {B_ATK_ABILITY}\nprevents {B_DEF_NAME_WITH_PREFIX}'s\l{B_DEF_ABILITY} from working!");
 static const u8 sText_PkmnsXCuredItsYProblem[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_SCR_ACTIVE_ABILITY}\ncured her {B_BUFF1} problem!");
 static const u8 sText_PkmnsXHadNoEffectOnY[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_SCR_ACTIVE_ABILITY}\nhad no effect on {B_EFF_NAME_WITH_PREFIX}!");
+static const u8 sText_TransformedintoWaterType[] = _("{B_DEF_NAME_WITH_PREFIX} transformed\ninto the OCEAN type!");
+static const u8 sText_TransformedintoGhostType[] = _("{B_DEF_NAME_WITH_PREFIX} transformed\ninto the GHOST type!");
 static const u8 sText_StatSharply[] = _("sharply ");
 const u8 gText_StatRose[] = _("rose!");
 static const u8 sText_StatHarshly[] = _("harshly ");
@@ -889,6 +891,8 @@ const u8 * const gBattleStringsTable[BATTLESTRINGS_COUNT - BATTLESTRINGS_TABLE_S
     [STRINGID_TRAINER2WINTEXT - BATTLESTRINGS_TABLE_START] = sText_Trainer2WinText,
     [STRINGID_PKMNSXWHIPPEDUPHAILSTORM - BATTLESTRINGS_TABLE_START] = sText_PkmnsXWhippedUpHailstorm,
     [STRINGID_WATERVEILANNOUNCE - BATTLESTRINGS_TABLE_START] = sText_PkmnsXCoversfieldinWaterVeil,
+    [STRINGID_TRANSFORMEDINTOWATERTYPE - BATTLESTRINGS_TABLE_START] = sText_TransformedintoWaterType,
+    [STRINGID_TRANSFORMEDINTOGHOSTTYPE - BATTLESTRINGS_TABLE_START] = sText_TransformedintoGhostType,
 };
 
 const u16 gMissStringIds[] =

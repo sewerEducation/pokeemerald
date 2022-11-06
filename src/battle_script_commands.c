@@ -6565,6 +6565,28 @@ static void Cmd_various(void)
         BtlController_EmitPlayFanfareOrBGM(BUFFER_A, MUS_VICTORY_TRAINER, TRUE);
         MarkBattlerForControllerExec(gActiveBattler);
         break;
+    case VARIOUS_TRY_SOAK:
+        if (gBattleMons[gBattlerTarget].type1 == TYPE_OCEAN && gBattleMons[gBattlerTarget].type2 == TYPE_OCEAN)
+        {
+            gBattlescriptCurrInstr = T1_READ_PTR(gBattlescriptCurrInstr + 3);
+        }
+        else
+        {
+            SET_BATTLER_TYPE(gBattlerTarget, TYPE_OCEAN);
+            gBattlescriptCurrInstr += 7;
+        }
+        return;
+    case VARIOUS_TRY_HALLOWEEN:
+        if (gBattleMons[gBattlerTarget].type1 == TYPE_GHOST && gBattleMons[gBattlerTarget].type2 == TYPE_GHOST)
+        {
+              gBattlescriptCurrInstr = T1_READ_PTR(gBattlescriptCurrInstr + 3);
+        }
+        else
+        {
+            SET_BATTLER_TYPE(gBattlerTarget, TYPE_GHOST);
+            gBattlescriptCurrInstr += 7;
+        }
+        return;
     }
 
     gBattlescriptCurrInstr += 3;

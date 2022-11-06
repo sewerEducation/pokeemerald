@@ -27,7 +27,7 @@
 #define TUTOR_MOVE_EXPLOSION       12
 #define TUTOR_MOVE_ROCK_SLIDE      13
 #define TUTOR_MOVE_SUBSTITUTE      14
-#define TUTOR_MOVE_DYNAMIC_PUNCH   15
+#define TUTOR_MOVE_HALLOWEEN   15
 #define TUTOR_MOVE_ROLLOUT         16
 #define TUTOR_MOVE_PSYCH_UP        17
 #define TUTOR_MOVE_SNORE           18

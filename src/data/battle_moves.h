@@ -2899,17 +2899,17 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
     },
 
-    [MOVE_DYNAMIC_PUNCH] =
+    [MOVE_HALLOWEEN] =
     {
-        .effect = EFFECT_CONFUSE_HIT,
-        .power = 100,
-        .type = TYPE_SPORTS,
-        .accuracy = 50,
-        .pp = 5,
-        .secondaryEffectChance = 100,
+        .effect = EFFECT_HALLOWEEN,
+        .power = 0,
+        .type = TYPE_GHOST,
+        .accuracy = 100,
+        .pp = 10,
+        .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
-        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
     },
 
     [MOVE_BEETLEHORN] =
@@ -4082,17 +4082,17 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
     },
 
-    [MOVE_AIR_CUTTER] =
+    [MOVE_SOAK] =
     {
-        .effect = EFFECT_HIGH_CRITICAL,
-        .power = 55,
-        .type = TYPE_GAL,
-        .accuracy = 95,
-        .pp = 25,
+        .effect = EFFECT_SOAK,
+        .power = 0,
+        .type = TYPE_OCEAN,
+        .accuracy = 100,
+        .pp = 10,
         .secondaryEffectChance = 0,
-        .target = MOVE_TARGET_BOTH,
+        .target = MOVE_TARGET_SELECTED,
         .priority = 0,
-        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
     },
 
     [MOVE_OVERHEAT] =

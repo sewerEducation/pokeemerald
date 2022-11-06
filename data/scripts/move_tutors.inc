@@ -189,7 +189,7 @@ MossdeepCity_EventScript_DynamicPunchTutor::
 	call MoveTutor_EventScript_CanOnlyBeLearnedOnce
 	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_DynamicPunchDeclined
 	msgbox MoveTutor_Text_DynamicPunchWhichMon, MSGBOX_DEFAULT
-	setvar VAR_0x8005, TUTOR_MOVE_DYNAMIC_PUNCH
+	setvar VAR_0x8005, TUTOR_MOVE_HALLOWEEN
 	call MoveTutor_EventScript_OpenPartyMenu
 	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_DynamicPunchDeclined
 	setflag FLAG_MOVE_TUTOR_TAUGHT_DYNAMICPUNCH

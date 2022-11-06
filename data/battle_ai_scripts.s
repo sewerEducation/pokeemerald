@@ -876,7 +876,7 @@ AI_CV_MirrorMove_EncouragedMovesToMirror:
 	.2byte MOVE_GLARE
 	.2byte MOVE_POISON_POWDER
 	.2byte MOVE_SHADOW_BALL
-	.2byte MOVE_DYNAMIC_PUNCH
+	.2byte MOVE_HALLOWEEN
 	.2byte MOVE_HYPER_BEAM
 	.2byte MOVE_TRENDSETTER
 	.2byte MOVE_THIEF
@@ -2874,7 +2874,7 @@ AI_TrySkillSwapOnAlly2:
 	if_has_move AI_USER_PARTNER, MOVE_THUNDER, AI_TrySkillSwapOnAllyPlus3
 	if_has_move AI_USER_PARTNER, MOVE_CROSS_CHOP, AI_TrySkillSwapOnAllyPlus3
 	if_has_move AI_USER_PARTNER, MOVE_HYDRO_PUMP, AI_TrySkillSwapOnAllyPlus3
-	if_has_move AI_USER_PARTNER, MOVE_DYNAMIC_PUNCH, AI_TrySkillSwapOnAllyPlus3
+	if_has_move AI_USER_PARTNER, MOVE_HALLOWEEN, AI_TrySkillSwapOnAllyPlus3
 	if_has_move AI_USER_PARTNER, MOVE_BLIZZARD, AI_TrySkillSwapOnAllyPlus3
 	if_has_move AI_USER_PARTNER, MOVE_BEETLEHORN, AI_TrySkillSwapOnAllyPlus3
 	goto Score_Minus30_
