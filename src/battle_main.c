@@ -5251,15 +5251,19 @@ void RunBattleScriptCommands(void)
 void SetTypeBeforeUsingMove(u16 move, u8 battlerAtk)
 {
 
-    //gBattleStruct->dynamicMoveType = 0;
+    if (gBattleMoves[move].type == TYPE_NORMAL)
+    {
+          int i;
 
-    //if (gBattleMoves[move].effect == EFFECT_REVELATION_DANCE)
-    //{
-    //    if (gBattleMons[battlerAtk].type1 != TYPE_MYSTERY)
-    //        gBattleStruct->dynamicMoveType = gBattleMons[battlerAtk].type1 | 0x80;
-    //    else if (gBattleMons[battlerAtk].type2 != TYPE_MYSTERY)
-    //        gBattleStruct->dynamicMoveType = gBattleMons[battlerAtk].type2 | 0x80;
-    //}
+          for (i = 0; i < gBattlersCount; i++)
+          {
+              if (gStatuses3[i] & STATUS3_MUDSPORT)
+                  *(&gBattleStruct->dynamicMoveType) = TYPE_TOXIC | F_DYNAMIC_TYPE_2;
+              if (gStatuses3[i] & STATUS3_WATERSPORT)
+                  *(&gBattleStruct->dynamicMoveType) = TYPE_SWEET | F_DYNAMIC_TYPE_2;
+          }
+    }
+
     if (gBattleMoves[move].flags & FLAG_SOUND)
     {
         if (gBattleMons[battlerAtk].ability == ABILITY_DEEPSEA_DIVA)

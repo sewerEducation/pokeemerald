@@ -9801,7 +9801,7 @@ static void Cmd_settypebasedhalvers(void)
 
     if (gBattleMoves[gCurrentMove].effect == EFFECT_MUD_SPORT)
     {
-        if (!(gStatuses3[gBattlerAttacker] & STATUS3_MUDSPORT))
+        if (!(gStatuses3[gBattlerAttacker] & STATUS3_MUDSPORT) && !AbilityBattleEffects(ABILITYEFFECT_FIELD_SPORT, 0, 0, ABILITYEFFECT_WATER_SPORT, 0))
         {
             gStatuses3[gBattlerAttacker] |= STATUS3_MUDSPORT;
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_WEAKEN_ELECTRIC;
@@ -9810,7 +9810,7 @@ static void Cmd_settypebasedhalvers(void)
     }
     else // Water Sport
     {
-        if (!(gStatuses3[gBattlerAttacker] & STATUS3_WATERSPORT))
+        if (!(gStatuses3[gBattlerAttacker] & STATUS3_WATERSPORT) && !AbilityBattleEffects(ABILITYEFFECT_FIELD_SPORT, 0, 0, ABILITYEFFECT_MUD_SPORT, 0))
         {
             gStatuses3[gBattlerAttacker] |= STATUS3_WATERSPORT;
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_WEAKEN_FIRE;

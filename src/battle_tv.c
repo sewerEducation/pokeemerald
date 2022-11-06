@@ -392,7 +392,7 @@ static const u16 sPoints_ElectricMoves[] =
 {
     MOVE_HEAVENBOLT, 3,
     MOVE_HEAVEN_PUNCH, 3,
-    MOVE_SPARK, 3,
+    MOVE_SWEET_TALK, 3,
     MOVE_HEAVEN_SHOCK, 3,
     MOVE_ZAP_CANNON, 3,
     MOVE_COSMIC_PULSE, 3,

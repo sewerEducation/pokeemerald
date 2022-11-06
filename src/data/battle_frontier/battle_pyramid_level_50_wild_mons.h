@@ -4,7 +4,7 @@ static const struct PyramidWildMon sLevel50WildMons_Round1[] =
         .species = SPECIES_PLUSLE,
         .lvl = 35,
         .abilityNum = ABILITY_RANDOM,
-        .moves = {MOVE_ROCK_SHOCK, MOVE_SPARK, MOVE_ENCORE, MOVE_NONE}
+        .moves = {MOVE_ROCK_SHOCK, MOVE_SWEET_TALK, MOVE_ENCORE, MOVE_NONE}
     },
     {
         .species = SPECIES_MINUN,
