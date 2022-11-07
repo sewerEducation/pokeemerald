@@ -1,9 +1,9 @@
 	.align 2
 gCryTable::
-	cry Cry_Bulbasaur
-	cry Cry_Ivysaur
-	cry Cry_Venusaur
-	cry Cry_Charmander
+	cry Cry_UzukiBase
+	cry Cry_UzukiBlue
+	cry Cry_UzukiGold
+	cry Cry_UzukiPink
 	cry Cry_Charmeleon
 	cry Cry_Charizard
 	cry Cry_Squirtle
@@ -391,10 +391,10 @@ gCryTable::
 
 	.align 2
 gCryTable_Reverse::
-	cry_reverse Cry_Bulbasaur
-	cry_reverse Cry_Ivysaur
-	cry_reverse Cry_Venusaur
-	cry_reverse Cry_Charmander
+	cry_reverse Cry_UzukiBase
+	cry_reverse Cry_UzukiBlue
+	cry_reverse Cry_UzukiGold
+	cry_reverse Cry_UzukiPink
 	cry_reverse Cry_Charmeleon
 	cry_reverse Cry_Charizard
 	cry_reverse Cry_Squirtle

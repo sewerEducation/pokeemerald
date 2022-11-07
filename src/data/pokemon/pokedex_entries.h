@@ -12,48 +12,48 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_BULBASAUR] =
+    [NATIONAL_DEX_UZUKIBASE] =
     {
         .categoryName = _("SEED"),
         .height = 7,
         .weight = 69,
-        .description = gBulbasaurPokedexText,
+        .description = gUzukiBasePokedexText,
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_IVYSAUR] =
+    [NATIONAL_DEX_UZUKIBLUE] =
     {
         .categoryName = _("SEED"),
         .height = 10,
         .weight = 130,
-        .description = gIvysaurPokedexText,
+        .description = gUzukiBluePokedexText,
         .pokemonScale = 335,
         .pokemonOffset = 13,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_VENUSAUR] =
+    [NATIONAL_DEX_UZUKIGOLD] =
     {
         .categoryName = _("SEED"),
         .height = 20,
         .weight = 1000,
-        .description = gVenusaurPokedexText,
+        .description = gUzukiGoldPokedexText,
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 388,
         .trainerOffset = 6,
     },
 
-    [NATIONAL_DEX_CHARMANDER] =
+    [NATIONAL_DEX_UZUKIPINK] =
     {
         .categoryName = _("LIZARD"),
         .height = 6,
         .weight = 85,
-        .description = gCharmanderPokedexText,
+        .description = gUzukiPinkPokedexText,
         .pokemonScale = 444,
         .pokemonOffset = 18,
         .trainerScale = 256,

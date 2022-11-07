@@ -55,7 +55,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_BUG_BUZZ] =
     {
         .effect = EFFECT_DEFENSE_DOWN_HIT,
-        .power = 90,
+        .power = 80,
         .type = TYPE_BUG,
         .accuracy = 100,
         .pp = 15,
@@ -1250,9 +1250,9 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_MEDITATE] =
     {
-        .effect = EFFECT_ATTACK_UP,
+        .effect = EFFECT_SPECIAL_ATTACK_UP,
         .power = 0,
-        .type = TYPE_SPORTS,
+        .type = TYPE_ESPER,
         .accuracy = 0,
         .pp = 40,
         .secondaryEffectChance = 0,
@@ -2980,7 +2980,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_TIDY_UP] =
     {
         .effect = EFFECT_RAPID_SPIN,
-        .power = 20,
+        .power = 50,
         .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 40,
@@ -3852,7 +3852,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_SPECIAL_ATTACK_DOWN_HIT,
         .power = 70,
-        .type = TYPE_ANGEL,
+        .type = TYPE_GHOST,
         .accuracy = 100,
         .pp = 5,
         .secondaryEffectChance = 50,
@@ -4253,12 +4253,12 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_LUNGE] =
     {
-        .effect = EFFECT_ATTACK_DOWN_HIT,
-        .power = 85,
+        .effect = EFFECT_SPEED_DOWN_HIT,
+        .power = 90,
         .type = TYPE_BUG,
         .accuracy = 100,
         .pp = 15,
-        .secondaryEffectChance = 20,
+        .secondaryEffectChance = 100,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,

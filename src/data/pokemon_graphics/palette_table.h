@@ -1,10 +1,10 @@
 const struct CompressedSpritePalette gMonPaletteTable[] =
 {
     SPECIES_PAL(NONE, gMonPalette_CircledQuestionMark),
-    SPECIES_PAL(BULBASAUR, gMonPalette_Bulbasaur),
-    SPECIES_PAL(IVYSAUR, gMonPalette_Ivysaur),
-    SPECIES_PAL(VENUSAUR, gMonPalette_Venusaur),
-    SPECIES_PAL(CHARMANDER, gMonPalette_Charmander),
+    SPECIES_PAL(UZUKIBASE, gMonPalette_UzukiBase),
+    SPECIES_PAL(UZUKIBLUE, gMonPalette_UzukiBlue),
+    SPECIES_PAL(UZUKIGOLD, gMonPalette_UzukiGold),
+    SPECIES_PAL(UZUKIPINK, gMonPalette_UzukiPink),
     SPECIES_PAL(CHARMELEON, gMonPalette_Charmeleon),
     SPECIES_PAL(CHARIZARD, gMonPalette_Charizard),
     SPECIES_PAL(SQUIRTLE, gMonPalette_Squirtle),

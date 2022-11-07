@@ -387,19 +387,19 @@ DirectSoundWaveData_unknown_17::
 	.incbin "sound/direct_sound_samples/unknown_17.bin"
 
 	.align 2
-Cry_Bulbasaur::
+Cry_UzukiBase::
 	.incbin "sound/direct_sound_samples/cries/bulbasaur.bin"
 
 	.align 2
-Cry_Ivysaur::
+Cry_UzukiBlue::
 	.incbin "sound/direct_sound_samples/cries/ivysaur.bin"
 
 	.align 2
-Cry_Venusaur::
+Cry_UzukiGold::
 	.incbin "sound/direct_sound_samples/cries/venusaur.bin"
 
 	.align 2
-Cry_Charmander::
+Cry_UzukiPink::
 	.incbin "sound/direct_sound_samples/cries/charmander.bin"
 
 	.align 2

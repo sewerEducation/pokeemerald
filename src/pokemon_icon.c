@@ -24,11 +24,11 @@ static void FreeAndDestroyMonIconSprite_(struct Sprite *sprite);
 
 const u8 *const gMonIconTable[] =
 {
-    [SPECIES_NONE] = gMonIcon_Bulbasaur,
-    [SPECIES_BULBASAUR] = gMonIcon_Bulbasaur,
-    [SPECIES_IVYSAUR] = gMonIcon_Ivysaur,
-    [SPECIES_VENUSAUR] = gMonIcon_Venusaur,
-    [SPECIES_CHARMANDER] = gMonIcon_Charmander,
+    [SPECIES_NONE] = gMonIcon_UzukiBase,
+    [SPECIES_UZUKIBASE] = gMonIcon_UzukiBase,
+    [SPECIES_UZUKIBLUE] = gMonIcon_UzukiBlue,
+    [SPECIES_UZUKIGOLD] = gMonIcon_UzukiGold,
+    [SPECIES_UZUKIPINK] = gMonIcon_UzukiPink,
     [SPECIES_CHARMELEON] = gMonIcon_Charmeleon,
     [SPECIES_CHARIZARD] = gMonIcon_Charizard,
     [SPECIES_SQUIRTLE] = gMonIcon_Squirtle,
@@ -469,10 +469,10 @@ const u8 *const gMonIconTable[] =
 const u8 gMonIconPaletteIndices[] =
 {
     [SPECIES_NONE] = 0,
-    [SPECIES_BULBASAUR] = 1,
-    [SPECIES_IVYSAUR] = 1,
-    [SPECIES_VENUSAUR] = 1,
-    [SPECIES_CHARMANDER] = 0,
+    [SPECIES_UZUKIBASE] = 1,
+    [SPECIES_UZUKIBLUE] = 1,
+    [SPECIES_UZUKIGOLD] = 1,
+    [SPECIES_UZUKIPINK] = 0,
     [SPECIES_CHARMELEON] = 0,
     [SPECIES_CHARIZARD] = 0,
     [SPECIES_SQUIRTLE] = 0,

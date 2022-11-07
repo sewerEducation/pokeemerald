@@ -9,22 +9,22 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = MON_COORDS_SIZE(64, 64),
         .y_offset = 0,
     },
-    [SPECIES_BULBASAUR] =
+    [SPECIES_UZUKIBASE] =
     {
         .size = MON_COORDS_SIZE(48, 32),
         .y_offset = 16,
     },
-    [SPECIES_IVYSAUR] =
+    [SPECIES_UZUKIBLUE] =
     {
         .size = MON_COORDS_SIZE(48, 48),
         .y_offset = 9,
     },
-    [SPECIES_VENUSAUR] =
+    [SPECIES_UZUKIGOLD] =
     {
         .size = MON_COORDS_SIZE(64, 56),
         .y_offset = 7,
     },
-    [SPECIES_CHARMANDER] =
+    [SPECIES_UZUKIPINK] =
     {
         .size = MON_COORDS_SIZE(48, 40),
         .y_offset = 14,

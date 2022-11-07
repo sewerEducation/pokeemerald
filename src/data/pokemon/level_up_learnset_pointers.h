@@ -1,10 +1,10 @@
 const u16 *const gLevelUpLearnsets[NUM_SPECIES] =
 {
-    [SPECIES_NONE] = sBulbasaurLevelUpLearnset,
-    [SPECIES_BULBASAUR] = sBulbasaurLevelUpLearnset,
-    [SPECIES_IVYSAUR] = sIvysaurLevelUpLearnset,
-    [SPECIES_VENUSAUR] = sVenusaurLevelUpLearnset,
-    [SPECIES_CHARMANDER] = sCharmanderLevelUpLearnset,
+    [SPECIES_NONE] = sUzukiBaseLevelUpLearnset,
+    [SPECIES_UZUKIBASE] = sUzukiBaseLevelUpLearnset,
+    [SPECIES_UZUKIBLUE] = sUzukiBlueLevelUpLearnset,
+    [SPECIES_UZUKIGOLD] = sUzukiGoldLevelUpLearnset,
+    [SPECIES_UZUKIPINK] = sUzukiPinkLevelUpLearnset,
     [SPECIES_CHARMELEON] = sCharmeleonLevelUpLearnset,
     [SPECIES_CHARIZARD] = sCharizardLevelUpLearnset,
     [SPECIES_SQUIRTLE] = sSquirtleLevelUpLearnset,

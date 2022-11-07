@@ -2,10 +2,10 @@
 
 const u32 gMonFrontPic_CircledQuestionMark[] = INCBIN_U32("graphics/pokemon/question_mark/circled/anim_front.4bpp.lz");
 
-const u32 gMonFrontPic_Bulbasaur[] = INCBIN_U32("graphics/pokemon/bulbasaur/anim_front.4bpp.lz");
-const u32 gMonFrontPic_Ivysaur[] = INCBIN_U32("graphics/pokemon/ivysaur/anim_front.4bpp.lz");
-const u32 gMonFrontPic_Venusaur[] = INCBIN_U32("graphics/pokemon/venusaur/anim_front.4bpp.lz");
-const u32 gMonFrontPic_Charmander[] = INCBIN_U32("graphics/pokemon/charmander/anim_front.4bpp.lz");
+const u32 gMonFrontPic_UzukiBase[] = INCBIN_U32("graphics/idols/uzuki/base/anim_front.4bpp.lz");
+const u32 gMonFrontPic_UzukiBlue[] = INCBIN_U32("graphics/idols/uzuki/blue/anim_front.4bpp.lz");
+const u32 gMonFrontPic_UzukiGold[] = INCBIN_U32("graphics/idols/uzuki/gold/anim_front.4bpp.lz");
+const u32 gMonFrontPic_UzukiPink[] = INCBIN_U32("graphics/idols/uzuki/pink/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Charmeleon[] = INCBIN_U32("graphics/pokemon/charmeleon/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Charizard[] = INCBIN_U32("graphics/pokemon/charizard/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Squirtle[] = INCBIN_U32("graphics/pokemon/squirtle/anim_front.4bpp.lz");

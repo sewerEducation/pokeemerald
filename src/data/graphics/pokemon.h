@@ -1,30 +1,30 @@
-const u32 gMonStillFrontPic_Bulbasaur[] = INCBIN_U32("graphics/pokemon/bulbasaur/front.4bpp.lz");
-const u32 gMonPalette_Bulbasaur[] = INCBIN_U32("graphics/pokemon/bulbasaur/normal.gbapal.lz");
-const u32 gMonBackPic_Bulbasaur[] = INCBIN_U32("graphics/pokemon/bulbasaur/back.4bpp.lz");
-const u32 gMonShinyPalette_Bulbasaur[] = INCBIN_U32("graphics/pokemon/bulbasaur/shiny.gbapal.lz");
-const u8 gMonIcon_Bulbasaur[] = INCBIN_U8("graphics/pokemon/bulbasaur/icon.4bpp");
-const u8 gMonFootprint_Bulbasaur[] = INCBIN_U8("graphics/pokemon/bulbasaur/footprint.1bpp");
+const u32 gMonStillFrontPic_UzukiBase[] = INCBIN_U32("graphics/idols/uzuki/base/front.4bpp.lz");
+const u32 gMonPalette_UzukiBase[] = INCBIN_U32("graphics/idols/uzuki/base/normal.gbapal.lz");
+const u32 gMonBackPic_UzukiBase[] = INCBIN_U32("graphics/idols/uzuki/base/back.4bpp.lz");
+const u32 gMonShinyPalette_UzukiBase[] = INCBIN_U32("graphics/idols/uzuki/base/shiny.gbapal.lz");
+const u8 gMonIcon_UzukiBase[] = INCBIN_U8("graphics/idols/uzuki/base/icon.4bpp");
+const u8 gMonFootprint_UzukiBase[] = INCBIN_U8("graphics/idols/footprints/SR.1bpp");
 
-const u32 gMonStillFrontPic_Ivysaur[] = INCBIN_U32("graphics/pokemon/ivysaur/front.4bpp.lz");
-const u32 gMonPalette_Ivysaur[] = INCBIN_U32("graphics/pokemon/ivysaur/normal.gbapal.lz");
-const u32 gMonBackPic_Ivysaur[] = INCBIN_U32("graphics/pokemon/ivysaur/back.4bpp.lz");
-const u32 gMonShinyPalette_Ivysaur[] = INCBIN_U32("graphics/pokemon/ivysaur/shiny.gbapal.lz");
-const u8 gMonIcon_Ivysaur[] = INCBIN_U8("graphics/pokemon/ivysaur/icon.4bpp");
-const u8 gMonFootprint_Ivysaur[] = INCBIN_U8("graphics/pokemon/ivysaur/footprint.1bpp");
+const u32 gMonStillFrontPic_UzukiBlue[] = INCBIN_U32("graphics/idols/uzuki/blue/front.4bpp.lz");
+const u32 gMonPalette_UzukiBlue[] = INCBIN_U32("graphics/idols/uzuki/blue/normal.gbapal.lz");
+const u32 gMonBackPic_UzukiBlue[] = INCBIN_U32("graphics/idols/uzuki/blue/back.4bpp.lz");
+const u32 gMonShinyPalette_UzukiBlue[] = INCBIN_U32("graphics/idols/uzuki/blue/shiny.gbapal.lz");
+const u8 gMonIcon_UzukiBlue[] = INCBIN_U8("graphics/idols/uzuki/blue/icon.4bpp");
+const u8 gMonFootprint_UzukiBlue[] = INCBIN_U8("graphics/idols/footprints/SR.1bpp");
 
-const u32 gMonStillFrontPic_Venusaur[] = INCBIN_U32("graphics/pokemon/venusaur/front.4bpp.lz");
-const u32 gMonPalette_Venusaur[] = INCBIN_U32("graphics/pokemon/venusaur/normal.gbapal.lz");
-const u32 gMonBackPic_Venusaur[] = INCBIN_U32("graphics/pokemon/venusaur/back.4bpp.lz");
-const u32 gMonShinyPalette_Venusaur[] = INCBIN_U32("graphics/pokemon/venusaur/shiny.gbapal.lz");
-const u8 gMonIcon_Venusaur[] = INCBIN_U8("graphics/pokemon/venusaur/icon.4bpp");
-const u8 gMonFootprint_Venusaur[] = INCBIN_U8("graphics/pokemon/venusaur/footprint.1bpp");
+const u32 gMonStillFrontPic_UzukiGold[] = INCBIN_U32("graphics/idols/uzuki/gold/front.4bpp.lz");
+const u32 gMonPalette_UzukiGold[] = INCBIN_U32("graphics/idols/uzuki/gold/normal.gbapal.lz");
+const u32 gMonBackPic_UzukiGold[] = INCBIN_U32("graphics/idols/uzuki/gold/back.4bpp.lz");
+const u32 gMonShinyPalette_UzukiGold[] = INCBIN_U32("graphics/idols/uzuki/gold/shiny.gbapal.lz");
+const u8 gMonIcon_UzukiGold[] = INCBIN_U8("graphics/idols/uzuki/gold/icon.4bpp");
+const u8 gMonFootprint_UzukiGold[] = INCBIN_U8("graphics/idols/footprints/SR.1bpp");
 
-const u32 gMonStillFrontPic_Charmander[] = INCBIN_U32("graphics/pokemon/charmander/front.4bpp.lz");
-const u32 gMonPalette_Charmander[] = INCBIN_U32("graphics/pokemon/charmander/normal.gbapal.lz");
-const u32 gMonBackPic_Charmander[] = INCBIN_U32("graphics/pokemon/charmander/back.4bpp.lz");
-const u32 gMonShinyPalette_Charmander[] = INCBIN_U32("graphics/pokemon/charmander/shiny.gbapal.lz");
-const u8 gMonIcon_Charmander[] = INCBIN_U8("graphics/pokemon/charmander/icon.4bpp");
-const u8 gMonFootprint_Charmander[] = INCBIN_U8("graphics/pokemon/charmander/footprint.1bpp");
+const u32 gMonStillFrontPic_UzukiPink[] = INCBIN_U32("graphics/idols/uzuki/pink/front.4bpp.lz");
+const u32 gMonPalette_UzukiPink[] = INCBIN_U32("graphics/idols/uzuki/pink/normal.gbapal.lz");
+const u32 gMonBackPic_UzukiPink[] = INCBIN_U32("graphics/idols/uzuki/pink/back.4bpp.lz");
+const u32 gMonShinyPalette_UzukiPink[] = INCBIN_U32("graphics/idols/uzuki/pink/shiny.gbapal.lz");
+const u8 gMonIcon_UzukiPink[] = INCBIN_U8("graphics/idols/uzuki/pink/icon.4bpp");
+const u8 gMonFootprint_UzukiPink[] = INCBIN_U8("graphics/idols/footprints/SR.1bpp");
 
 const u32 gMonStillFrontPic_Charmeleon[] = INCBIN_U32("graphics/pokemon/charmeleon/front.4bpp.lz");
 const u32 gMonPalette_Charmeleon[] = INCBIN_U32("graphics/pokemon/charmeleon/normal.gbapal.lz");

@@ -4,28 +4,28 @@ const u8 gDummyPokedexText[] = _(
     "No detailed information is available\n"
     "at this time.");
 
-const u8 gBulbasaurPokedexText[] = _(
-    "BULBASAUR can be seen napping in bright\n"
+const u8 gUzukiBasePokedexText[] = _(
+    "UZUKIBASE can be seen napping in bright\n"
     "sunlight. There is a seed on its back.\n"
     "By soaking up the sun's rays, the seed\n"
     "grows progressively larger.");
 
-const u8 gIvysaurPokedexText[] = _(
-    "To support its bulb, IVYSAUR's legs\n"
+const u8 gUzukiBluePokedexText[] = _(
+    "To support its bulb, UZUKIBLUE's legs\n"
     "grow sturdy. If it spends more time lying in\n"
     "the sunlight, the bud will soon bloom into\n"
     "a large flower.");
 
-const u8 gVenusaurPokedexText[] = _(
-    "VENUSAUR's flower is said to take on vivid\n"
+const u8 gUzukiGoldPokedexText[] = _(
+    "UZUKIGOLD's flower is said to take on vivid\n"
     "colors if it gets plenty of nutrition and\n"
     "sunlight. The flower's aroma soothes the\n"
     "emotions of people.");
 
-const u8 gCharmanderPokedexText[] = _(
+const u8 gUzukiPinkPokedexText[] = _(
     "The flame that burns at the tip of its\n"
     "tail is an indication of its emotions.\n"
-    "The flame wavers when CHARMANDER is\n"
+    "The flame wavers when UZUKIPINK is\n"
     "happy, and blazes when it is enraged.");
 
 const u8 gCharmeleonPokedexText[] = _(

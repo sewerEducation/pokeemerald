@@ -11465,62 +11465,62 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BULBASAUR"
+                "species": "SPECIES_UZUKIBASE"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BULBASAUR"
+                "species": "SPECIES_UZUKIBASE"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BULBASAUR"
+                "species": "SPECIES_UZUKIBASE"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BULBASAUR"
+                "species": "SPECIES_UZUKIBASE"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_IVYSAUR"
+                "species": "SPECIES_UZUKIBLUE"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_IVYSAUR"
+                "species": "SPECIES_UZUKIBLUE"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_VENUSAUR"
+                "species": "SPECIES_UZUKIGOLD"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_VENUSAUR"
+                "species": "SPECIES_UZUKIGOLD"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_VENUSAUR"
+                "species": "SPECIES_UZUKIGOLD"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CHARMANDER"
+                "species": "SPECIES_UZUKIPINK"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_VENUSAUR"
+                "species": "SPECIES_UZUKIGOLD"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CHARMANDER"
+                "species": "SPECIES_UZUKIPINK"
               }
             ]
           }
@@ -11533,52 +11533,47 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_IVYSAUR"
+                "species": "SPECIES_UZUKIBLUE"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_IVYSAUR"
+                "species": "SPECIES_UZUKIBLUE"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_IVYSAUR"
+                "species": "SPECIES_UZUKIBLUE"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_IVYSAUR"
+                "species": "SPECIES_UZUKIBLUE"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_VENUSAUR"
+                "species": "SPECIES_UZUKIGOLD"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_VENUSAUR"
+                "species": "SPECIES_UZUKIGOLD"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CHARMANDER"
+                "species": "SPECIES_UZUKIPINK"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CHARMANDER"
+                "species": "SPECIES_UZUKIPINK"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CHARMANDER"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_CHARMELEON"
+                "species": "SPECIES_UZUKIPINK"
               },
               {
                 "min_level": 5,
@@ -11588,7 +11583,12 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CHARMANDER"
+                "species": "SPECIES_CHARMELEON"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_UZUKIPINK"
               }
             ]
           }
@@ -11601,32 +11601,32 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_VENUSAUR"
+                "species": "SPECIES_UZUKIGOLD"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_VENUSAUR"
+                "species": "SPECIES_UZUKIGOLD"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_VENUSAUR"
+                "species": "SPECIES_UZUKIGOLD"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_VENUSAUR"
+                "species": "SPECIES_UZUKIGOLD"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CHARMANDER"
+                "species": "SPECIES_UZUKIPINK"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CHARMANDER"
+                "species": "SPECIES_UZUKIPINK"
               },
               {
                 "min_level": 5,
@@ -11669,22 +11669,22 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CHARMANDER"
+                "species": "SPECIES_UZUKIPINK"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CHARMANDER"
+                "species": "SPECIES_UZUKIPINK"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CHARMANDER"
+                "species": "SPECIES_UZUKIPINK"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CHARMANDER"
+                "species": "SPECIES_UZUKIPINK"
               },
               {
                 "min_level": 5,

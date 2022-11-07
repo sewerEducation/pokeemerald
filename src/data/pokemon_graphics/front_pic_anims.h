@@ -6,7 +6,7 @@
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_BULBASAUR_1[] =
+static const union AnimCmd sAnim_UZUKIBASE_1[] =
 {
     ANIMCMD_FRAME(0, 30),
     ANIMCMD_FRAME(1, 30),
@@ -14,7 +14,7 @@ static const union AnimCmd sAnim_BULBASAUR_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_IVYSAUR_1[] =
+static const union AnimCmd sAnim_UZUKIBLUE_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_FRAME(1, 36),
@@ -22,7 +22,7 @@ static const union AnimCmd sAnim_IVYSAUR_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_VENUSAUR_1[] =
+static const union AnimCmd sAnim_UZUKIGOLD_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 25),
@@ -30,7 +30,7 @@ static const union AnimCmd sAnim_VENUSAUR_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_CHARMANDER_1[] =
+static const union AnimCmd sAnim_UZUKIPINK_1[] =
 {
     ANIMCMD_FRAME(0, 2),
     ANIMCMD_FRAME(1, 46),
@@ -4810,24 +4810,24 @@ static const union AnimCmd *const sAnims_NONE[] ={
     sAnim_NONE_1,
 };
 
-static const union AnimCmd *const sAnims_BULBASAUR[] ={
+static const union AnimCmd *const sAnims_UZUKIBASE[] ={
     sAnim_GeneralFrame0,
-    sAnim_BULBASAUR_1,
+    sAnim_UZUKIBASE_1,
 };
 
-static const union AnimCmd *const sAnims_IVYSAUR[] ={
+static const union AnimCmd *const sAnims_UZUKIBLUE[] ={
     sAnim_GeneralFrame0,
-    sAnim_IVYSAUR_1,
+    sAnim_UZUKIBLUE_1,
 };
 
-static const union AnimCmd *const sAnims_VENUSAUR[] ={
+static const union AnimCmd *const sAnims_UZUKIGOLD[] ={
     sAnim_GeneralFrame0,
-    sAnim_VENUSAUR_1,
+    sAnim_UZUKIGOLD_1,
 };
 
-static const union AnimCmd *const sAnims_CHARMANDER[] ={
+static const union AnimCmd *const sAnims_UZUKIPINK[] ={
     sAnim_GeneralFrame0,
-    sAnim_CHARMANDER_1,
+    sAnim_UZUKIPINK_1,
 };
 
 static const union AnimCmd *const sAnims_CHARMELEON[] ={
@@ -6951,10 +6951,10 @@ static const union AnimCmd *const sAnims_UNOWN_QMARK[] ={
 const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
 {
     ANIM_CMD(NONE),
-    ANIM_CMD(BULBASAUR),
-    ANIM_CMD(IVYSAUR),
-    ANIM_CMD(VENUSAUR),
-    ANIM_CMD(CHARMANDER),
+    ANIM_CMD(UZUKIBASE),
+    ANIM_CMD(UZUKIBLUE),
+    ANIM_CMD(UZUKIGOLD),
+    ANIM_CMD(UZUKIPINK),
     ANIM_CMD(CHARMELEON),
     ANIM_CMD(CHARIZARD),
     ANIM_CMD(SQUIRTLE),
