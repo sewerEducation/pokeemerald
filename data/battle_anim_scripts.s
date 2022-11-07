@@ -360,7 +360,7 @@ gBattleAnims_Moves::
 	.4byte Move_MUD_SHOT
 	.4byte Move_POISON_TAIL
 	.4byte Move_COVET
-	.4byte Move_VOLT_TACKLE
+	.4byte Move_DAZZLING
 	.4byte Move_MAGICAL_LEAF
 	.4byte Move_WATER_SPORT
 	.4byte Move_CALM_MIND
@@ -1005,26 +1005,20 @@ Move_MEGA_KICK:
 	end
 
 Move_COMET_PUNCH:
-	loadspritegfx ANIM_TAG_IMPACT
-	loadspritegfx ANIM_TAG_HANDS_AND_FEET
-	monbg ANIM_TARGET
-	setalpha 12, 8
-	choosetwoturnanim CometPunchLeft, CometPunchRight
-CometPunchContinue:
-	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 3, 0, 6, 1
-	playsewithpan SE_M_COMET_PUNCH, SOUND_PAN_TARGET
+	loadspritegfx ANIM_TAG_PURPLE_RING
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_ATTACKER, 3, 0, 2, 1
+	call ScreechRing
+	call ScreechRing
+	delay 16
+	call ScreechRing
+	call ScreechRing
+	delay 16
+	call ScreechRing
+	call ScreechRing
+	delay 16
+	createvisualtask AnimTask_SwayMon, 5, 0, 6, 2048, 2, ANIM_TARGET
 	waitforvisualfinish
-	clearmonbg ANIM_TARGET
-	blendoff
 	end
-CometPunchLeft:
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, -8, -8, ANIM_TARGET, 2
-	createsprite gFistFootSpriteTemplate, ANIM_ATTACKER, 3, -8, 0, 8, 1, 0
-	goto CometPunchContinue
-CometPunchRight:
-	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 8, -8, ANIM_TARGET, 2
-	createsprite gFistFootSpriteTemplate, ANIM_ATTACKER, 3, 8, 0, 8, 1, 0
-	goto CometPunchContinue
 
 Move_SONIC_BOOM:
 	loadspritegfx ANIM_TAG_AIR_WAVE
@@ -2713,6 +2707,7 @@ Move_QUICK_ATTACK:
 Move_RAGE:
 	loadspritegfx ANIM_TAG_IMPACT
 	loadspritegfx ANIM_TAG_ANGER
+	loadspritegfx ANIM_TAG_PINK_HEART
 	monbg ANIM_TARGET
 	setalpha 12, 8
 	createvisualtask AnimTask_BlendMonInAndOut, 3, ANIM_ATTACKER, RGB_RED, 10, 0, 2
@@ -2725,6 +2720,10 @@ Move_RAGE:
 	createsprite gHorizontalLungeSpriteTemplate, ANIM_ATTACKER, 2, 4, 6
 	delay 4
 	createsprite gBasicHitSplatSpriteTemplate, ANIM_ATTACKER, 2, 0, 0, ANIM_TARGET, 2
+	createsprite gPinkHeartSpriteTemplate, ANIM_TARGET, 3, -256, -42
+	createsprite gPinkHeartSpriteTemplate, ANIM_TARGET, 3, 128, -14
+	createsprite gPinkHeartSpriteTemplate, ANIM_TARGET, 3, 416, -38
+	createsprite gPinkHeartSpriteTemplate, ANIM_TARGET, 3, -128, -22
 	createvisualtask AnimTask_ShakeTargetBasedOnMovePowerOrDmg, 2, TRUE, 1, 10, 1, 0
 	playsewithpan SE_M_VITAL_THROW2, SOUND_PAN_TARGET
 	waitforvisualfinish
@@ -4365,50 +4364,18 @@ Move_COVET:
 	loopsewithpan SE_M_DIZZY_PUNCH, SOUND_PAN_TARGET, 4, 3
 	end
 
-Move_VOLT_TACKLE:
-	loadspritegfx ANIM_TAG_SPARK
+Move_DAZZLING:
+	loadspritegfx ANIM_TAG_SPARKLE_2
 	loadspritegfx ANIM_TAG_CIRCLE_OF_LIGHT
-	loadspritegfx ANIM_TAG_ELECTRICITY
-	monbg ANIM_ATTACKER
-	setalpha 12, 8
-	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 0, 0, 8, RGB_BLACK
-	waitforvisualfinish
-	createsprite gVoltTackleOrbSlideSpriteTemplate, ANIM_ATTACKER, 1
 	playsewithpan SE_M_CHARGE, SOUND_PAN_ATTACKER
-	waitforvisualfinish
-	clearmonbg ANIM_ATTACKER
-	blendoff
+	createsprite gGrowingChargeOrbSpriteTemplate, ANIM_ATTACKER, 2, 0
+	createsprite gSparklingStarsSpriteTemplate, ANIM_ATTACKER, 16, -15, 0, 0, 0, 32, 60, 1
 	delay 8
-	createvisualtask AnimTask_VoltTackleBolt, 5, 0
-	playsewithpan SE_M_THUNDERBOLT, SOUND_PAN_ATTACKER
+	createsprite gSparklingStarsSpriteTemplate, ANIM_ATTACKER, 16, 12, -5, 0, 0, 32, 60, 1
 	waitforvisualfinish
-	createvisualtask AnimTask_VoltTackleBolt, 5, 1
-	playsewithpan SE_M_THUNDERBOLT, SOUND_PAN_TARGET
-	waitforvisualfinish
-	createvisualtask AnimTask_VoltTackleBolt, 5, 2
-	playsewithpan SE_M_THUNDERBOLT, SOUND_PAN_ATTACKER
-	waitforvisualfinish
-	createvisualtask AnimTask_VoltTackleBolt, 5, 3
-	playsewithpan SE_M_THUNDERBOLT, SOUND_PAN_TARGET
-	waitforvisualfinish
-	createvisualtask AnimTask_VoltTackleBolt, 5, 4
-	playsewithpan SE_M_THUNDERBOLT, SOUND_PAN_ATTACKER
-	delay 8
-	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 10, 0, 18, 1
-	playsewithpan SE_M_SELF_DESTRUCT, SOUND_PAN_TARGET
-	createsprite gElectricPuffSpriteTemplate, ANIM_ATTACKER, 2, 1, 16, 16
-	delay 2
-	createsprite gElectricPuffSpriteTemplate, ANIM_ATTACKER, 2, 1, -16, -16
-	delay 8
-	createvisualtask AnimTask_VoltTackleAttackerReappear, 5
-	waitforvisualfinish
-	createvisualtask AnimTask_ShakeMon2, 2, ANIM_ATTACKER, 3, 0, 9, 1
-	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_ATTACKER
-	createsprite gElectricPuffSpriteTemplate, ANIM_ATTACKER, 2, 0, 16, 16
-	delay 2
-	createsprite gElectricPuffSpriteTemplate, ANIM_ATTACKER, 2, 0, -16, -16
-	waitforvisualfinish
-	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BG, 0, 8, 0, RGB_BLACK
+	playsewithpan SE_M_LEER, SOUND_PAN_ATTACKER
+	createvisualtask AnimTask_Flash, 2
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 2, 0, 8, 1
 	waitforvisualfinish
 	end
 

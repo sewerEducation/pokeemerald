@@ -827,7 +827,7 @@ const u16 gEggMoves[] = {
 
     egg_moves(HOUNDOUR,
               MOVE_FIRE_SPIN,
-              MOVE_RAGE,
+              MOVE_TINY_TANTRUM,
               MOVE_PURSUIT,
               MOVE_COUNTER,
               MOVE_SPITE,
@@ -966,7 +966,7 @@ const u16 gEggMoves[] = {
               MOVE_SUPERSONIC,
               MOVE_REFRESH,
               MOVE_COPYCAT,
-              MOVE_RAGE,
+              MOVE_TINY_TANTRUM,
               MOVE_SKY_ATTACK),
 
     egg_moves(SHROOMISH,
@@ -1164,7 +1164,7 @@ const u16 gEggMoves[] = {
               MOVE_AGILITY,
               MOVE_HAZE,
               MOVE_PURSUIT,
-              MOVE_RAGE),
+              MOVE_TINY_TANTRUM),
 
     egg_moves(DUSKULL,
               MOVE_IMPRISON,

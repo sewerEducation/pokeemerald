@@ -398,7 +398,7 @@ static const u16 sPoints_ElectricMoves[] =
     MOVE_COSMIC_PULSE, 3,
     MOVE_ROCK_SHOCK, 0, // Unnecessary, unlisted moves are already given 0 points
     MOVE_THUNDER, 3,
-    MOVE_VOLT_TACKLE, 3,
+    MOVE_DAZZLING, 3,
     TABLE_END, 0
 };
 static const u16 sPoints_StatusDmg[] =

@@ -1969,7 +1969,7 @@ void TryClearRageStatuses(void)
     s32 i;
     for (i = 0; i < gBattlersCount; i++)
     {
-        if ((gBattleMons[i].status2 & STATUS2_RAGE) && gChosenMoveByBattler[i] != MOVE_RAGE)
+        if ((gBattleMons[i].status2 & STATUS2_RAGE) && gChosenMoveByBattler[i] != MOVE_TINY_TANTRUM)
             gBattleMons[i].status2 &= ~STATUS2_RAGE;
     }
 }
@@ -3993,7 +3993,7 @@ u8 IsMonDisobedient(void)
         return 0;
 
     // is not obedient
-    if (gCurrentMove == MOVE_RAGE)
+    if (gCurrentMove == MOVE_TINY_TANTRUM)
         gBattleMons[gBattlerAttacker].status2 &= ~STATUS2_RAGE;
     if (gBattleMons[gBattlerAttacker].status1 & STATUS1_SLEEP && (gCurrentMove == MOVE_SNORE || gCurrentMove == MOVE_SLEEP_TALK))
     {

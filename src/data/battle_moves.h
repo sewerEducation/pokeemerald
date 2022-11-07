@@ -1287,17 +1287,17 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
     },
 
-    [MOVE_RAGE] =
+    [MOVE_TINY_TANTRUM] =
     {
-        .effect = EFFECT_RAGE,
-        .power = 20,
-        .type = TYPE_NORMAL,
-        .accuracy = 100,
-        .pp = 20,
-        .secondaryEffectChance = 0,
-        .target = MOVE_TARGET_SELECTED,
-        .priority = 0,
-        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
+      .effect = EFFECT_RAMPAGE,
+      .power = 100,
+      .type = TYPE_SWEET,
+      .accuracy = 100,
+      .pp = 15,
+      .secondaryEffectChance = 100,
+      .target = MOVE_TARGET_RANDOM,
+      .priority = 0,
+      .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
     },
 
     [MOVE_TELEPORT] =
@@ -1785,7 +1785,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_PARALYZE,
         .power = 0,
-        .type = TYPE_NORMAL,
+        .type = TYPE_COLD,
         .accuracy = 100,
         .pp = 30,
         .secondaryEffectChance = 0,
@@ -2727,7 +2727,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
-        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_SOUND,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_SOUND,
     },
 
     [MOVE_FURY_CUTTER] =
@@ -4472,17 +4472,17 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
     },
 
-    [MOVE_VOLT_TACKLE] =
+    [MOVE_DAZZLING] =
     {
-        .effect = EFFECT_DOUBLE_EDGE,
-        .power = 120,
-        .type = TYPE_ANGEL,
+        .effect = EFFECT_ATTACK_DOWN_HIT,
+        .power = 80,
+        .type = TYPE_SWEET,
         .accuracy = 100,
         .pp = 15,
-        .secondaryEffectChance = 0,
+        .secondaryEffectChance = 10,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
-        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
     },
 
     [MOVE_MAGICAL_LEAF] =
