@@ -6,14 +6,17 @@ const u32 gMonFrontPic_UzukiBase[] = INCBIN_U32("graphics/idols/uzuki/base/anim_
 const u32 gMonFrontPic_UzukiBlue[] = INCBIN_U32("graphics/idols/uzuki/blue/anim_front.4bpp.lz");
 const u32 gMonFrontPic_UzukiGold[] = INCBIN_U32("graphics/idols/uzuki/gold/anim_front.4bpp.lz");
 const u32 gMonFrontPic_UzukiPink[] = INCBIN_U32("graphics/idols/uzuki/pink/anim_front.4bpp.lz");
-const u32 gMonFrontPic_Charmeleon[] = INCBIN_U32("graphics/pokemon/charmeleon/anim_front.4bpp.lz");
-const u32 gMonFrontPic_Charizard[] = INCBIN_U32("graphics/pokemon/charizard/anim_front.4bpp.lz");
-const u32 gMonFrontPic_Squirtle[] = INCBIN_U32("graphics/pokemon/squirtle/anim_front.4bpp.lz");
-const u32 gMonFrontPic_Wartortle[] = INCBIN_U32("graphics/pokemon/wartortle/anim_front.4bpp.lz");
-const u32 gMonFrontPic_Blastoise[] = INCBIN_U32("graphics/pokemon/blastoise/anim_front.4bpp.lz");
-const u32 gMonFrontPic_Caterpie[] = INCBIN_U32("graphics/pokemon/caterpie/anim_front.4bpp.lz");
-const u32 gMonFrontPic_Metapod[] = INCBIN_U32("graphics/pokemon/metapod/anim_front.4bpp.lz");
-const u32 gMonFrontPic_Butterfree[] = INCBIN_U32("graphics/pokemon/butterfree/anim_front.4bpp.lz");
+
+const u32 gMonFrontPic_RinBase[] = INCBIN_U32("graphics/idols/rin/base/anim_front.4bpp.lz");
+const u32 gMonFrontPic_RinBlue[] = INCBIN_U32("graphics/idols/rin/blue/anim_front.4bpp.lz");
+const u32 gMonFrontPic_RinGold[] = INCBIN_U32("graphics/idols/rin/gold/anim_front.4bpp.lz");
+const u32 gMonFrontPic_RinPink[] = INCBIN_U32("graphics/idols/rin/pink/anim_front.4bpp.lz");
+
+const u32 gMonFrontPic_MioBase[] = INCBIN_U32("graphics/idols/mio/base/anim_front.4bpp.lz");
+const u32 gMonFrontPic_MioBlue[] = INCBIN_U32("graphics/idols/mio/blue/anim_front.4bpp.lz");
+const u32 gMonFrontPic_MioGold[] = INCBIN_U32("graphics/idols/mio/gold/anim_front.4bpp.lz");
+const u32 gMonFrontPic_MioPink[] = INCBIN_U32("graphics/idols/mio/pink/anim_front.4bpp.lz");
+
 const u32 gMonFrontPic_Weedle[] = INCBIN_U32("graphics/pokemon/weedle/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Kakuna[] = INCBIN_U32("graphics/pokemon/kakuna/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Beedrill[] = INCBIN_U32("graphics/pokemon/beedrill/anim_front.4bpp.lz");

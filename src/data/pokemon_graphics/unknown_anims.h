@@ -968,14 +968,14 @@ static const union AnimCmd *const sUnknownAnims_UZUKIBASE[] = {sAnim_GeneralFram
 static const union AnimCmd *const sUnknownAnims_UZUKIBLUE[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnknownAnims_UZUKIGOLD[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnknownAnims_UZUKIPINK[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_CHARMELEON[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_CHARIZARD[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_SQUIRTLE[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_WARTORTLE[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_BLASTOISE[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_CATERPIE[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_METAPOD[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_BUTTERFREE[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_RINBASE[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_RINBLUE[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_RINGOLD[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_RINPINK[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_MIOBASE[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_MIOBLUE[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_MIOGOLD[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_MIOPINK[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnknownAnims_WEEDLE[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnknownAnims_KAKUNA[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnknownAnims_BEEDRILL[] = {sAnim_GeneralFrame0};
@@ -1881,14 +1881,14 @@ static const union AnimCmd *const *const sUnknownAnimsTable[] =
     ANIM_CMD(UZUKIBLUE),
     ANIM_CMD(UZUKIGOLD),
     ANIM_CMD(UZUKIPINK),
-    ANIM_CMD(CHARMELEON),
-    ANIM_CMD(CHARIZARD),
-    ANIM_CMD(SQUIRTLE),
-    ANIM_CMD(WARTORTLE),
-    ANIM_CMD(BLASTOISE),
-    ANIM_CMD(CATERPIE),
-    ANIM_CMD(METAPOD),
-    ANIM_CMD(BUTTERFREE),
+    ANIM_CMD(RINBASE),
+    ANIM_CMD(RINBLUE),
+    ANIM_CMD(RINGOLD),
+    ANIM_CMD(RINPINK),
+    ANIM_CMD(MIOBASE),
+    ANIM_CMD(MIOBLUE),
+    ANIM_CMD(MIOGOLD),
+    ANIM_CMD(MIOPINK),
     ANIM_CMD(WEEDLE),
     ANIM_CMD(KAKUNA),
     ANIM_CMD(BEEDRILL),

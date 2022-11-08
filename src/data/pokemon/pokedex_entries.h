@@ -60,96 +60,96 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_CHARMELEON] =
+    [NATIONAL_DEX_RINBASE] =
     {
         .categoryName = _("FLAME"),
         .height = 11,
         .weight = 190,
-        .description = gCharmeleonPokedexText,
+        .description = gRinBasePokedexText,
         .pokemonScale = 302,
         .pokemonOffset = 9,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_CHARIZARD] =
+    [NATIONAL_DEX_RINBLUE] =
     {
         .categoryName = _("FLAME"),
         .height = 17,
         .weight = 905,
-        .description = gCharizardPokedexText,
+        .description = gRinBluePokedexText,
         .pokemonScale = 256,
         .pokemonOffset = 1,
         .trainerScale = 302,
         .trainerOffset = 3,
     },
 
-    [NATIONAL_DEX_SQUIRTLE] =
+    [NATIONAL_DEX_RINGOLD] =
     {
         .categoryName = _("TINY TURTLE"),
         .height = 5,
         .weight = 90,
-        .description = gSquirtlePokedexText,
+        .description = gRinGoldPokedexText,
         .pokemonScale = 412,
         .pokemonOffset = 18,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_WARTORTLE] =
+    [NATIONAL_DEX_RINPINK] =
     {
         .categoryName = _("TURTLE"),
         .height = 10,
         .weight = 225,
-        .description = gWartortlePokedexText,
+        .description = gRinPinkPokedexText,
         .pokemonScale = 332,
         .pokemonOffset = 10,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_BLASTOISE] =
+    [NATIONAL_DEX_MIOBASE] =
     {
         .categoryName = _("SHELLFISH"),
         .height = 16,
         .weight = 855,
-        .description = gBlastoisePokedexText,
+        .description = gMioBasePokedexText,
         .pokemonScale = 256,
         .pokemonOffset = -1,
         .trainerScale = 293,
         .trainerOffset = 2,
     },
 
-    [NATIONAL_DEX_CATERPIE] =
+    [NATIONAL_DEX_MIOBLUE] =
     {
         .categoryName = _("WORM"),
         .height = 3,
         .weight = 29,
-        .description = gCaterpiePokedexText,
+        .description = gMioBluePokedexText,
         .pokemonScale = 549,
         .pokemonOffset = 22,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_METAPOD] =
+    [NATIONAL_DEX_MIOGOLD] =
     {
         .categoryName = _("COCOON"),
         .height = 7,
         .weight = 99,
-        .description = gMetapodPokedexText,
+        .description = gMioGoldPokedexText,
         .pokemonScale = 350,
         .pokemonOffset = 18,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_BUTTERFREE] =
+    [NATIONAL_DEX_MIOPINK] =
     {
         .categoryName = _("BUTTERFLY"),
         .height = 11,
         .weight = 320,
-        .description = gButterfreePokedexText,
+        .description = gMioPinkPokedexText,
         .pokemonScale = 312,
         .pokemonOffset = 2,
         .trainerScale = 256,

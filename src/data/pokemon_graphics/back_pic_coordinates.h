@@ -29,42 +29,42 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = MON_COORDS_SIZE(48, 40),
         .y_offset = 14,
     },
-    [SPECIES_CHARMELEON] =
+    [SPECIES_RINBASE] =
     {
         .size = MON_COORDS_SIZE(48, 48),
         .y_offset = 9,
     },
-    [SPECIES_CHARIZARD] =
+    [SPECIES_RINBLUE] =
     {
         .size = MON_COORDS_SIZE(64, 56),
         .y_offset = 4,
     },
-    [SPECIES_SQUIRTLE] =
+    [SPECIES_RINGOLD] =
     {
         .size = MON_COORDS_SIZE(48, 40),
         .y_offset = 14,
     },
-    [SPECIES_WARTORTLE] =
+    [SPECIES_RINPINK] =
     {
         .size = MON_COORDS_SIZE(56, 48),
         .y_offset = 10,
     },
-    [SPECIES_BLASTOISE] =
+    [SPECIES_MIOBASE] =
     {
         .size = MON_COORDS_SIZE(64, 48),
         .y_offset = 8,
     },
-    [SPECIES_CATERPIE] =
+    [SPECIES_MIOBLUE] =
     {
         .size = MON_COORDS_SIZE(40, 40),
         .y_offset = 15,
     },
-    [SPECIES_METAPOD] =
+    [SPECIES_MIOGOLD] =
     {
         .size = MON_COORDS_SIZE(48, 40),
         .y_offset = 12,
     },
-    [SPECIES_BUTTERFREE] =
+    [SPECIES_MIOPINK] =
     {
         .size = MON_COORDS_SIZE(64, 56),
         .y_offset = 6,

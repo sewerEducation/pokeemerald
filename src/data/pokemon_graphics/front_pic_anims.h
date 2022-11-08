@@ -38,7 +38,7 @@ static const union AnimCmd sAnim_UZUKIPINK_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_CHARMELEON_1[] =
+static const union AnimCmd sAnim_RINBASE_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 25),
@@ -46,14 +46,14 @@ static const union AnimCmd sAnim_CHARMELEON_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_CHARIZARD_1[] =
+static const union AnimCmd sAnim_RINBLUE_1[] =
 {
     ANIMCMD_FRAME(1, 40),
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_SQUIRTLE_1[] =
+static const union AnimCmd sAnim_RINGOLD_1[] =
 {
     ANIMCMD_FRAME(1, 50),
     ANIMCMD_FRAME(1, 50),
@@ -61,7 +61,7 @@ static const union AnimCmd sAnim_SQUIRTLE_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_WARTORTLE_1[] =
+static const union AnimCmd sAnim_RINPINK_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 20),
@@ -69,7 +69,7 @@ static const union AnimCmd sAnim_WARTORTLE_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_BLASTOISE_1[] =
+static const union AnimCmd sAnim_MIOBASE_1[] =
 {
     ANIMCMD_FRAME(0, 50),
     ANIMCMD_FRAME(1, 25),
@@ -79,7 +79,7 @@ static const union AnimCmd sAnim_BLASTOISE_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_CATERPIE_1[] =
+static const union AnimCmd sAnim_MIOBLUE_1[] =
 {
     ANIMCMD_FRAME(1, 15),
     ANIMCMD_FRAME(0, 15),
@@ -92,14 +92,14 @@ static const union AnimCmd sAnim_CATERPIE_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_METAPOD_1[] =
+static const union AnimCmd sAnim_MIOGOLD_1[] =
 {
     ANIMCMD_FRAME(1, 45),
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_BUTTERFREE_1[] =
+static const union AnimCmd sAnim_MIOPINK_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 5),
@@ -4830,44 +4830,44 @@ static const union AnimCmd *const sAnims_UZUKIPINK[] ={
     sAnim_UZUKIPINK_1,
 };
 
-static const union AnimCmd *const sAnims_CHARMELEON[] ={
+static const union AnimCmd *const sAnims_RINBASE[] ={
     sAnim_GeneralFrame0,
-    sAnim_CHARMELEON_1,
+    sAnim_RINBASE_1,
 };
 
-static const union AnimCmd *const sAnims_CHARIZARD[] ={
+static const union AnimCmd *const sAnims_RINBLUE[] ={
     sAnim_GeneralFrame0,
-    sAnim_CHARIZARD_1,
+    sAnim_RINBLUE_1,
 };
 
-static const union AnimCmd *const sAnims_SQUIRTLE[] ={
+static const union AnimCmd *const sAnims_RINGOLD[] ={
     sAnim_GeneralFrame0,
-    sAnim_SQUIRTLE_1,
+    sAnim_RINGOLD_1,
 };
 
-static const union AnimCmd *const sAnims_WARTORTLE[] ={
+static const union AnimCmd *const sAnims_RINPINK[] ={
     sAnim_GeneralFrame0,
-    sAnim_WARTORTLE_1,
+    sAnim_RINPINK_1,
 };
 
-static const union AnimCmd *const sAnims_BLASTOISE[] ={
+static const union AnimCmd *const sAnims_MIOBASE[] ={
     sAnim_GeneralFrame0,
-    sAnim_BLASTOISE_1,
+    sAnim_MIOBASE_1,
 };
 
-static const union AnimCmd *const sAnims_CATERPIE[] ={
+static const union AnimCmd *const sAnims_MIOBLUE[] ={
     sAnim_GeneralFrame0,
-    sAnim_CATERPIE_1,
+    sAnim_MIOBLUE_1,
 };
 
-static const union AnimCmd *const sAnims_METAPOD[] ={
+static const union AnimCmd *const sAnims_MIOGOLD[] ={
     sAnim_GeneralFrame0,
-    sAnim_METAPOD_1,
+    sAnim_MIOGOLD_1,
 };
 
-static const union AnimCmd *const sAnims_BUTTERFREE[] ={
+static const union AnimCmd *const sAnims_MIOPINK[] ={
     sAnim_GeneralFrame0,
-    sAnim_BUTTERFREE_1,
+    sAnim_MIOPINK_1,
 };
 
 static const union AnimCmd *const sAnims_WEEDLE[] ={
@@ -6955,14 +6955,14 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     ANIM_CMD(UZUKIBLUE),
     ANIM_CMD(UZUKIGOLD),
     ANIM_CMD(UZUKIPINK),
-    ANIM_CMD(CHARMELEON),
-    ANIM_CMD(CHARIZARD),
-    ANIM_CMD(SQUIRTLE),
-    ANIM_CMD(WARTORTLE),
-    ANIM_CMD(BLASTOISE),
-    ANIM_CMD(CATERPIE),
-    ANIM_CMD(METAPOD),
-    ANIM_CMD(BUTTERFREE),
+    ANIM_CMD(RINBASE),
+    ANIM_CMD(RINBLUE),
+    ANIM_CMD(RINGOLD),
+    ANIM_CMD(RINPINK),
+    ANIM_CMD(MIOBASE),
+    ANIM_CMD(MIOBLUE),
+    ANIM_CMD(MIOGOLD),
+    ANIM_CMD(MIOPINK),
     ANIM_CMD(WEEDLE),
     ANIM_CMD(KAKUNA),
     ANIM_CMD(BEEDRILL),

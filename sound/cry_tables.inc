@@ -4,14 +4,14 @@ gCryTable::
 	cry Cry_UzukiBlue
 	cry Cry_UzukiGold
 	cry Cry_UzukiPink
-	cry Cry_Charmeleon
-	cry Cry_Charizard
-	cry Cry_Squirtle
-	cry Cry_Wartortle
-	cry Cry_Blastoise
-	cry Cry_Caterpie
-	cry Cry_Metapod
-	cry Cry_Butterfree
+	cry Cry_RinBase
+	cry Cry_RinBlue
+	cry Cry_RinGold
+	cry Cry_RinPink
+	cry Cry_MioBase
+	cry Cry_MioBlue
+	cry Cry_MioGold
+	cry Cry_MioPink
 	cry Cry_Weedle
 	cry Cry_Kakuna
 	cry Cry_Beedrill
@@ -395,14 +395,14 @@ gCryTable_Reverse::
 	cry_reverse Cry_UzukiBlue
 	cry_reverse Cry_UzukiGold
 	cry_reverse Cry_UzukiPink
-	cry_reverse Cry_Charmeleon
-	cry_reverse Cry_Charizard
-	cry_reverse Cry_Squirtle
-	cry_reverse Cry_Wartortle
-	cry_reverse Cry_Blastoise
-	cry_reverse Cry_Caterpie
-	cry_reverse Cry_Metapod
-	cry_reverse Cry_Butterfree
+	cry_reverse Cry_RinBase
+	cry_reverse Cry_RinBlue
+	cry_reverse Cry_RinGold
+	cry_reverse Cry_RinPink
+	cry_reverse Cry_MioBase
+	cry_reverse Cry_MioBlue
+	cry_reverse Cry_MioGold
+	cry_reverse Cry_MioPink
 	cry_reverse Cry_Weedle
 	cry_reverse Cry_Kakuna
 	cry_reverse Cry_Beedrill

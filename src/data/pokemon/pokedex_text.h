@@ -28,49 +28,49 @@ const u8 gUzukiPinkPokedexText[] = _(
     "The flame wavers when UZUKIPINK is\n"
     "happy, and blazes when it is enraged.");
 
-const u8 gCharmeleonPokedexText[] = _(
+const u8 gRinBasePokedexText[] = _(
     "Without pity, its sharp claws destroy foes.\n"
     "If it encounters a strong enemy, it\n"
     "becomes agitated, and the flame on its\n"
     "tail flares with a bluish white color.");
 
-const u8 gCharizardPokedexText[] = _(
-    "A CHARIZARD flies about in search of\n"
+const u8 gRinBluePokedexText[] = _(
+    "A RINBLUE flies about in search of\n"
     "strong opponents. It breathes intense\n"
     "flames that can melt any material. However,\n"
     "it will never torch a weaker foe.");
 
-const u8 gSquirtlePokedexText[] = _(
+const u8 gRinGoldPokedexText[] = _(
     "Its shell is not just for protection.\n"
     "Its rounded shape and the grooves on its\n"
     "surface minimize resistance in water,\n"
-    "enabling SQUIRTLE to swim at high speeds.");
+    "enabling RINGOLD to swim at high speeds.");
 
-const u8 gWartortlePokedexText[] = _(
+const u8 gRinPinkPokedexText[] = _(
     "Its large tail is covered with rich, thick\n"
     "fur that deepens in color with age.\n"
     "The scratches on its shell are evidence\n"
     "of this IDOL's toughness in battle.");
 
-const u8 gBlastoisePokedexText[] = _(
+const u8 gMioBasePokedexText[] = _(
     "The waterspouts that protrude from its\n"
     "shell are highly accurate. Their bullets of\n"
     "water can precisely nail tin cans from\n"
     "a distance of over 160 feet.");
 
-const u8 gCaterpiePokedexText[] = _(
+const u8 gMioBluePokedexText[] = _(
     "Its voracious appetite compels it to\n"
     "devour leaves bigger than itself without\n"
     "hesitation. It releases a terribly strong\n"
     "odor from its antennae.");
 
-const u8 gMetapodPokedexText[] = _(
+const u8 gMioGoldPokedexText[] = _(
     "Its shell is as hard as an iron slab.\n"
-    "A METAPOD does not move very much\n"
+    "A MIOGOLD does not move very much\n"
     "because it is preparing its soft innards\n"
     "for evolution inside the shell.");
 
-const u8 gButterfreePokedexText[] = _(
+const u8 gMioPinkPokedexText[] = _(
     "It has a superior ability to search for\n"
     "delicious honey from flowers. It can seek,\n"
     "extract, and carry honey from flowers\n"

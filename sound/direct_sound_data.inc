@@ -403,35 +403,35 @@ Cry_UzukiPink::
 	.incbin "sound/direct_sound_samples/cries/charmander.bin"
 
 	.align 2
-Cry_Charmeleon::
+Cry_RinBase::
 	.incbin "sound/direct_sound_samples/cries/charmeleon.bin"
 
 	.align 2
-Cry_Charizard::
+Cry_RinBlue::
 	.incbin "sound/direct_sound_samples/cries/charizard.bin"
 
 	.align 2
-Cry_Squirtle::
+Cry_RinGold::
 	.incbin "sound/direct_sound_samples/cries/squirtle.bin"
 
 	.align 2
-Cry_Wartortle::
+Cry_RinPink::
 	.incbin "sound/direct_sound_samples/cries/wartortle.bin"
 
 	.align 2
-Cry_Blastoise::
+Cry_MioBase::
 	.incbin "sound/direct_sound_samples/cries/blastoise.bin"
 
 	.align 2
-Cry_Caterpie::
+Cry_MioBlue::
 	.incbin "sound/direct_sound_samples/cries/caterpie.bin"
 
 	.align 2
-Cry_Metapod::
+Cry_MioGold::
 	.incbin "sound/direct_sound_samples/cries/metapod.bin"
 
 	.align 2
-Cry_Butterfree::
+Cry_MioPink::
 	.incbin "sound/direct_sound_samples/cries/butterfree.bin"
 
 	.align 2
