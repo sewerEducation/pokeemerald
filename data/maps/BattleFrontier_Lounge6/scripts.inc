@@ -45,6 +45,57 @@ BattleFrontier_Lounge6_EventScript_TradeCompleted::
 	release
 	end
 
+BattleFrontier_Lounge6_EventScript_MoveRelearner::
+	lockall
+	applymovement LOCALID_MOVE_RELEARNER, Common_Movement_FacePlayer
+	waitmovement 0
+	goto_if_set FLAG_TEMP_1, BattleFrontier_Lounge6_EventScript_AskTeachMove
+	msgbox BattleFrontier_Lounge6_Text_ImTheMoveTutor, MSGBOX_DEFAULT
+	setflag FLAG_TEMP_1
+	goto BattleFrontier_Lounge6_EventScript_AskTeachMove
+	end
+
+BattleFrontier_Lounge6_EventScript_AskTeachMove::
+	msgbox BattleFrontier_Lounge6_Text_ThatsAHeartScaleWantMeToTeachMove, MSGBOX_YESNO
+	switch VAR_RESULT
+	case NO, BattleFrontier_Lounge6_EventScript_ComeBackWithHere
+	goto BattleFrontier_Lounge6_EventScript_ChooseMon
+	end
+
+BattleFrontier_Lounge6_EventScript_ChooseMon::
+	msgbox BattleFrontier_Lounge6_Text_TutorWhichMon, MSGBOX_DEFAULT
+	special ChooseMonForMoveRelearner
+	waitstate
+	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, BattleFrontier_Lounge6_EventScript_ComeBackWithHere
+	special IsSelectedMonEgg
+	goto_if_eq VAR_RESULT, TRUE, BattleFrontier_Lounge6_EventScript_CantTeachEgg
+	goto_if_eq VAR_0x8005, 0, BattleFrontier_Lounge6_EventScript_NoMoveToTeachMon
+	goto BattleFrontier_Lounge6_EventScript_ChooseMove
+	end
+
+BattleFrontier_Lounge6_EventScript_ChooseMove::
+	msgbox BattleFrontier_Lounge6_Text_TeachWhichMove, MSGBOX_DEFAULT
+	special TeachMoveRelearnerMove
+	waitstate
+	goto_if_eq VAR_0x8004, 0, BattleFrontier_Lounge6_EventScript_ChooseMon
+	goto BattleFrontier_Lounge6_EventScript_ComeBackWithHere
+	end
+
+BattleFrontier_Lounge6_EventScript_NoMoveToTeachMon::
+	msgbox BattleFrontier_Lounge6_Text_DontHaveMoveToTeachPokemon, MSGBOX_DEFAULT
+	goto BattleFrontier_Lounge6_EventScript_ChooseMon
+	end
+
+BattleFrontier_Lounge6_EventScript_CantTeachEgg::
+	msgbox BattleFrontier_Lounge6_Text_CantTeachEgg, MSGBOX_DEFAULT
+	goto BattleFrontier_Lounge6_EventScript_ChooseMon
+	end
+
+BattleFrontier_Lounge6_EventScript_ComeBackWithHere::
+	msgbox BattleFrontier_Lounge6_Text_ComeBackWithHere, MSGBOX_DEFAULT
+	releaseall
+	end
+
 BattleFrontier_Lounge6_Text_WouldYouLikeToTrade:
 	.string "My IDOL is {STR_VAR_2}.\n"
 	.string "Do you know her?\l"
@@ -75,3 +126,34 @@ BattleFrontier_Lounge6_Text_SkittySoMuchCuterThanImagined:
 	.string "Giggle!\n"
 	.string "A SKITTY is so much cuter than I had\l"
 	.string "imagined. I'm delighted!$"
+
+BattleFrontier_Lounge6_Text_ImTheMoveTutor:
+	.string "I'm the MOVE TUTOR.\p"
+	.string "I know all the moves that IDOLS\n"
+	.string "learn--every one of them--and I can\l"
+	.string "teach IDOLS those moves.\p"
+	.string "I can teach a move to an IDOL\n"
+	.string "if you'd like.$"
+
+BattleFrontier_Lounge6_Text_ThatsAHeartScaleWantMeToTeachMove:
+	.string "Let me guess, you want me to teach\n"
+	.string "a move?$"
+
+BattleFrontier_Lounge6_Text_TutorWhichMon:
+	.string "Which IDOL needs tutoring?$"
+
+BattleFrontier_Lounge6_Text_TeachWhichMove:
+	.string "Which move should I teach?$"
+
+BattleFrontier_Lounge6_Text_DontHaveMoveToTeachPokemon:
+	.string "Sorry…\p"
+	.string "It doesn't appear as if I have any move\n"
+	.string "I can teach that IDOL.$"
+
+BattleFrontier_Lounge6_Text_ComeBackWithHere:
+	.string "If your IDOLS need to learn a move,\n"
+	.string "come back and see me.$"
+
+BattleFrontier_Lounge6_Text_CantTeachEgg:
+	.string "Hunh? There isn't a single move that\n"
+	.string "I can teach an EGG.$"

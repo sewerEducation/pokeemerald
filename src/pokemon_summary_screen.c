@@ -3111,14 +3111,16 @@ static void BufferMonTrainerMemo(void)
 
         if (DoesMonOTMatchOwner() == TRUE)
         {
-            if (sum->friendship < 255)
+            //if (sum->friendship < 255)
+            if (GetMonEVCount(&sMonSummaryScreen->currentMon) < MAX_TOTAL_EVS)
                 text  = gText_XNatureCinLevU255;
             else
                 text = gText_XNatureCinLevMax;
         }
         else
         {
-            if (sum->friendship < 255)
+            //if (sum->friendship < 255)
+            if (GetMonEVCount(&sMonSummaryScreen->currentMon) < MAX_TOTAL_EVS)
                 text = gText_XNatureTradeU255;
             else
                 text = gText_XNatureTradeMax;
@@ -3144,7 +3146,8 @@ static void BufferNatureString(void)
 
 static void GetFriendshipString(u8 *output)
 {
-    u8 level = (sMonSummaryScreen->summary.friendship * 100) / 255;
+    //u8 level = (sMonSummaryScreen->summary.friendship * 100) / 255;
+    u16 level = (GetMonEVCount(&sMonSummaryScreen->currentMon) * 100) / MAX_TOTAL_EVS;
     ConvertIntToDecimalStringN(output, level, STR_CONV_MODE_LEFT_ALIGN, 3);
     DynamicPlaceholderTextUtil_SetPlaceholderPtr(3, output);
 }

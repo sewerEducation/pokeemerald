@@ -27,11 +27,37 @@ BattleFrontier_ReceptionGate_EventScript_FirstTimeEntering::
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_ReceptionGate_Movement_PlayerApproachCounter
 	waitmovement 0
+	msgbox BattleFrontier_ReceptionGate_Text_WelcomeToBattleFrontier, MSGBOX_DEFAULT
+	setflag FLAG_SYS_POKEMON_GET
+	multichoice 15, 0, MULTI_CHOOSE_IDOL_TYPE, TRUE
+	switch VAR_RESULT
+	case 0, BattleFrontier_ReceptionGate_EventScript_GiveCool
+	case 1, BattleFrontier_ReceptionGate_EventScript_GiveCute
+	case 2, BattleFrontier_ReceptionGate_EventScript_GiveTough
+	end
+
+BattleFrontier_ReceptionGate_EventScript_GiveCool::
+	givemon SPECIES_RINBASE, 50, ITEM_SPICE_APPLE
+	givemon SPECIES_UZUKIBASE, 50, ITEM_SPICE_APPLE
+	givemon SPECIES_MIOBASE, 50, ITEM_SPICE_APPLE
+	goto BattleFrontier_ReceptionGate_EventScript_ScottScene
+	end
+
+BattleFrontier_ReceptionGate_EventScript_GiveCute::
+	givemon SPECIES_UZUKIBASE, 50, ITEM_SWEET_APPLE
+	givemon SPECIES_RINBASE, 50, ITEM_SWEET_APPLE
+	givemon SPECIES_MIOBASE, 50, ITEM_SWEET_APPLE
+	goto BattleFrontier_ReceptionGate_EventScript_ScottScene
+	end
+
+BattleFrontier_ReceptionGate_EventScript_GiveTough::
+	givemon SPECIES_MIOBASE, 50, ITEM_SOUR_APPLE
+	givemon SPECIES_UZUKIBASE, 50, ITEM_SOUR_APPLE
+	givemon SPECIES_RINBASE, 50, ITEM_SOUR_APPLE
 	goto BattleFrontier_ReceptionGate_EventScript_ScottScene
 	end
 
 BattleFrontier_ReceptionGate_EventScript_ScottScene::
-	msgbox BattleFrontier_ReceptionGate_Text_WelcomeToBattleFrontier, MSGBOX_DEFAULT
 	msgbox BattleFrontier_ReceptionGate_Text_IssueFrontierPass, MSGBOX_DEFAULT
 	playfanfare MUS_OBTAIN_ITEM
 	message BattleFrontier_ReceptionGate_Text_ObtainedFrontierPass
@@ -304,9 +330,11 @@ BattleFrontier_ReceptionGate_Text_FirstTimeHereThisWay:
 
 BattleFrontier_ReceptionGate_Text_WelcomeToBattleFrontier:
 	.string "The front lines of LIVE battling!\n"
-	.string "Welcome to the BATTLE FRONTIER!$"
+	.string "Welcome to the BATTLE FRONTIER!\p"
+	.string "What kind of IDOLS do you like?$"
 
 BattleFrontier_ReceptionGate_Text_IssueFrontierPass:
+	.string "Okay!\p"
 	.string "For a first-time visitor, we issue\n"
 	.string "the FRONTIER PASS.\p"
 	.string "It's for use at all the facilities\n"
