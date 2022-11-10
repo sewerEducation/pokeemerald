@@ -12,10 +12,10 @@ gCryTable::
 	cry Cry_MioBlue
 	cry Cry_MioGold
 	cry Cry_MioPink
-	cry Cry_Weedle
-	cry Cry_Kakuna
-	cry Cry_Beedrill
-	cry Cry_Pidgey
+	cry Cry_MiriaBase
+	cry Cry_MiriaBlue
+	cry Cry_MiriaGold
+	cry Cry_MiriaPink
 	cry Cry_Pidgeotto
 	cry Cry_Pidgeot
 	cry Cry_Rattata
@@ -403,10 +403,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_MioBlue
 	cry_reverse Cry_MioGold
 	cry_reverse Cry_MioPink
-	cry_reverse Cry_Weedle
-	cry_reverse Cry_Kakuna
-	cry_reverse Cry_Beedrill
-	cry_reverse Cry_Pidgey
+	cry_reverse Cry_MiriaBase
+	cry_reverse Cry_MiriaBlue
+	cry_reverse Cry_MiriaGold
+	cry_reverse Cry_MiriaPink
 	cry_reverse Cry_Pidgeotto
 	cry_reverse Cry_Pidgeot
 	cry_reverse Cry_Rattata

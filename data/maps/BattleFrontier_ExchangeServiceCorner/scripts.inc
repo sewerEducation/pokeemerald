@@ -308,7 +308,7 @@ BattleFrontier_ExchangeServiceCorner_EventScript_CharizardDoll::
 BattleFrontier_ExchangeServiceCorner_EventScript_BlastoiseDoll::
 	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmBlastoiseDoll, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseDecor2
-	setvar VAR_0x8008, 256
+	setvar VAR_0x8008, 24
 	setvar VAR_0x8009, ITEM_BERRY_JUICE
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
 	end
@@ -608,7 +608,7 @@ BattleFrontier_ExchangeServiceCorner_Text_ConfirmCharizardDoll:
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmBlastoiseDoll:
-	.string "You've chosen the ABILITYPATCH.\n"
+	.string "You've chosen the ABILITYJUICE.\n"
 	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ConfirmProtein:
@@ -809,8 +809,8 @@ BattleFrontier_ExchangeServiceCorner_Text_NuggetDesc::
 	.string "Can be sold for a good price.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_AbilitySwapDesc::
-	.string "Placeholder item.\n"
-	.string "Place it on a mat or a desk.$"
+	.string "A strange drink.\n"
+	.string "Reveals an IDOLS true ability.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ProteinDesc::
 	.string "Raises the stat ATTACK of one\n"

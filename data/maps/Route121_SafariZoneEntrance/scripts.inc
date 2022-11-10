@@ -55,14 +55,14 @@ Route121_SafariZoneEntrance_EventScript_EntranceCounterTrigger::
 	end
 
 Route121_SafariZoneEntrance_EventScript_TryEnterSafariZone::
-	checkitem ITEM_POKEBLOCK_CASE
-	goto_if_eq VAR_RESULT, 0, Route121_SafariZoneEntrance_EventScript_NoPokeblockCase
+	@checkitem ITEM_POKEBLOCK_CASE
+	@goto_if_eq VAR_RESULT, 0, Route121_SafariZoneEntrance_EventScript_NoPokeblockCase
 	call Route121_SafariZoneEntrance_EventScript_CheckHasRoomForPokemon
-	checkmoney 500
+	checkmoney 2000
 	goto_if_eq VAR_RESULT, 0, Route121_SafariZoneEntrance_EventScript_NotEnoughMoney
 	playse SE_SHOP
 	msgbox Route121_SafariZoneEntrance_Text_ThatWillBe500Please, MSGBOX_DEFAULT
-	removemoney 500
+	removemoney 2000
 	updatemoneybox
 	msgbox Route121_SafariZoneEntrance_Text_HereAreYourSafariBalls, MSGBOX_DEFAULT
 	playfanfare MUS_OBTAIN_ITEM
@@ -128,4 +128,3 @@ Route121_SafariZoneEntrance_Movement_EnterSafariZone:
 Route121_SafariZoneEntrance_EventScript_TrainerTipSign::
 	msgbox Route121_SafariZoneEntrance_Text_TrainerTip, MSGBOX_SIGN
 	end
-

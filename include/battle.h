@@ -134,6 +134,7 @@ struct SpecialStatus
     u32 ppNotAffectedByPressure:1;
     u32 faintedHasReplacement:1;
     u32 focusBanded:1;
+    u8 switchInAbilityDone:1;
     s32 dmg;
     s32 physicalDmg;
     s32 specialDmg;
@@ -474,7 +475,7 @@ struct BattleStruct
 
 #define SET_STATCHANGER(statId, stage, goesDown)(gBattleScripting.statChanger = (statId) + (stage << 4) + (goesDown << 7))
 
-// NOTE: The members of this struct have hard-coded offsets 
+// NOTE: The members of this struct have hard-coded offsets
 //       in include/constants/battle_script_commands.h
 struct BattleScripting
 {

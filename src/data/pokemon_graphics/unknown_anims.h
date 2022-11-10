@@ -976,10 +976,10 @@ static const union AnimCmd *const sUnknownAnims_MIOBASE[] = {sAnim_GeneralFrame0
 static const union AnimCmd *const sUnknownAnims_MIOBLUE[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnknownAnims_MIOGOLD[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnknownAnims_MIOPINK[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_WEEDLE[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_KAKUNA[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_BEEDRILL[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_PIDGEY[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_MIRIABASE[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_MIRIABLUE[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_MIRIAGOLD[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_MIRIAPINK[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnknownAnims_PIDGEOTTO[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnknownAnims_PIDGEOT[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnknownAnims_RATTATA[] = {sAnim_GeneralFrame0};
@@ -1889,10 +1889,10 @@ static const union AnimCmd *const *const sUnknownAnimsTable[] =
     ANIM_CMD(MIOBLUE),
     ANIM_CMD(MIOGOLD),
     ANIM_CMD(MIOPINK),
-    ANIM_CMD(WEEDLE),
-    ANIM_CMD(KAKUNA),
-    ANIM_CMD(BEEDRILL),
-    ANIM_CMD(PIDGEY),
+    ANIM_CMD(MIRIABASE),
+    ANIM_CMD(MIRIABLUE),
+    ANIM_CMD(MIRIAGOLD),
+    ANIM_CMD(MIRIAPINK),
     ANIM_CMD(PIDGEOTTO),
     ANIM_CMD(PIDGEOT),
     ANIM_CMD(RATTATA),

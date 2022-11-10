@@ -69,22 +69,22 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = MON_COORDS_SIZE(64, 56),
         .y_offset = 6,
     },
-    [SPECIES_WEEDLE] =
+    [SPECIES_MIRIABASE] =
     {
         .size = MON_COORDS_SIZE(40, 48),
         .y_offset = 11,
     },
-    [SPECIES_KAKUNA] =
+    [SPECIES_MIRIABLUE] =
     {
         .size = MON_COORDS_SIZE(32, 48),
         .y_offset = 10,
     },
-    [SPECIES_BEEDRILL] =
+    [SPECIES_MIRIAGOLD] =
     {
         .size = MON_COORDS_SIZE(64, 48),
         .y_offset = 9,
     },
-    [SPECIES_PIDGEY] =
+    [SPECIES_MIRIAPINK] =
     {
         .size = MON_COORDS_SIZE(48, 48),
         .y_offset = 8,

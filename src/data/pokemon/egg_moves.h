@@ -33,7 +33,7 @@ const u16 gEggMoves[] = {
               MOVE_MUD_SPORT,
               MOVE_YAWN),
 
-    egg_moves(PIDGEY,
+    egg_moves(MIRIAPINK,
               MOVE_PURSUIT,
               MOVE_FEINT_ATTACK,
               MOVE_FORESIGHT,

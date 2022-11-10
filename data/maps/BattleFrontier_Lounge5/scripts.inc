@@ -103,7 +103,7 @@ BattleFrontier_Lounge5_Text_NatureGirlImpish::
 	.string "Hmhm…\p"
 	.string "This one likes to battle!\n"
 	.string "But if she gets enough ouchies,\l"
-	.string "she will worry about itself!$"
+	.string "she will worry about herself!$"
 
 BattleFrontier_Lounge5_Text_NatureGirlLax::
 	.string "Hmhm…\p"
@@ -133,7 +133,7 @@ BattleFrontier_Lounge5_Text_NatureGirlJolly::
 	.string "Hmhm…\p"
 	.string "This one likes to be sneaky!\n"
 	.string "But if she gets enough ouchies,\l"
-	.string "she will worry about itself!$"
+	.string "she will worry about herself!$"
 
 BattleFrontier_Lounge5_Text_NatureGirlModest::
 	.string "Hmhm…\p"
@@ -143,9 +143,9 @@ BattleFrontier_Lounge5_Text_NatureGirlModest::
 
 BattleFrontier_Lounge5_Text_NatureGirlMild::
 	.string "Hmhm…\p"
-	.string "This one says it looks after itself!\n"
-	.string "But if it gets enough ouchies,\l"
-	.string "it will turn sneaky!$"
+	.string "This one says she looks after herself!\n"
+	.string "But if she gets enough ouchies,\l"
+	.string "she will turn sneaky!$"
 
 BattleFrontier_Lounge5_Text_NatureGirlBashful::
 	.string "Hmhm…\p"

@@ -70,16 +70,16 @@ SafariZone_EventScript_PokeblockPresent::
 	end
 
 SafariZone_Text_WouldYouLikeToExit:
-	.string "Would you like to exit the SAFARI\n"
-	.string "ZONE right now?$"
+	.string "Would you like to exit IDOL\n"
+	.string "PARK right now?$"
 
 SafariZone_Text_TimesUp:
 	.string "Ding-dong! Time's up!\n"
-	.string "Your SAFARI Game is over.$"
+	.string "Time to leave.$"
 
 SafariZone_Text_OutOfBalls:
-	.string "You've run out of SAFARI BALLS.\n"
-	.string "Your SAFARI Game is over.$"
+	.string "You've run out of TICKETS.\n"
+	.string "Time to leave.$"
 
 SafariZone_Text_PlacePokeblockOnFeeder:
 	.string "Would you like to place a {POKEBLOCK}\n"
@@ -94,60 +94,58 @@ SafariZone_Text_PokeblockWasPlaced:
 	.string "on the {POKEBLOCK} FEEDER.$"
 
 Route121_SafariZoneEntrance_Text_WelcomeToSafariZone:
-	.string "Welcome to the SAFARI ZONE!\p"
-	.string "Here, you may witness many kinds of\n"
-	.string "IDOLS rarely seen in HOENN.\p"
-	.string "And, you'll see them in their wild,\n"
-	.string "untamed state in natural habitats.\p"
+	.string "Welcome to IDOL PARK!\p"
+	.string "Here, you may meet many kinds of\n"
+	.string "IDOLS.\p"
 	.string "What's more, we've thrown open the\n"
 	.string "gates to IDOL PRODUCERS.\p"
-	.string "You're encouraged to scout IDOLS\n"
-	.string "for keeps!\p"
-	.string "Come in and enjoy the SAFARI ZONE!$"
+	.string "You're encouraged to scout any\n"
+	.string "IDOL you see!\p"
+	.string "Come in and enjoy IDOL PARK!$"
 
 Route121_SafariZoneEntrance_Text_WelcomeFirstTime:
-	.string "Welcome to the SAFARI ZONE!\n"
+	.string "Welcome to IDOL PARK!\n"
 	.string "Is it your first time here?$"
 
 Route121_SafariZoneEntrance_Text_ComeInAndEnjoy:
-	.string "Come in and enjoy the SAFARI ZONE!$"
+	.string "Come in and enjoy IDOL PARK!$"
 
 Route121_SafariZoneEntrance_Text_FirstTimeInfo:
-	.string "When you enter the SAFARI ZONE, you\n"
-	.string "start with 30 SAFARI BALLS for\l"
+	.string "When you enter IDOL PARK, you\n"
+	.string "start with 5 TICKETS for\l"
 	.string "scouting IDOLS.\p"
-	.string "The SAFARI Game is over when you run\n"
-	.string "out of SAFARI BALLS, or when you've\l"
+	.string "You gotta leave when you run\n"
+	.string "out of TICKETS, or when you've\l"
 	.string "walked 500 steps.\p"
-	.string "Come in and enjoy the SAFARI ZONE!$"
+	.string "Come in and enjoy IDOL PARK!$"
 
 Route121_SafariZoneEntrance_Text_WouldYouLikeToPlay:
-	.string "Welcome to the SAFARI ZONE!\p"
-	.string "All you can catch for just ¥500!\n"
-	.string "Would you like to play a SAFARI Game?$"
+	.string "Welcome to IDOL PARK!\p"
+	.string "Meet loads of IDOLS for just ¥2000!\n"
+	.string "Would you like to go in?$"
 
 Route121_SafariZoneEntrance_Text_PlayAnotherTime:
 	.string "Okay.\n"
-	.string "Please play another time!$"
+	.string "Please come another time!$"
 
 Route121_SafariZoneEntrance_Text_NotEnoughMoney:
 	.string "You don't have enough money.\n"
 	.string "Sorry.$"
 
 Route121_SafariZoneEntrance_Text_ThatWillBe500Please:
-	.string "That will be ¥500, please.$"
+	.string "That will be ¥2000, please.$"
 
 Route121_SafariZoneEntrance_Text_HereAreYourSafariBalls:
-	.string "Here are your SAFARI BALLS.$"
+	.string "Here are your SCOUT TICKETS.$"
 
 Route121_SafariZoneEntrance_Text_Received30SafariBalls:
-	.string "{PLAYER} received 30 SAFARI BALLS.$"
+	.string "{PLAYER} received 5 SCOUT TICKETS.$"
 
 Route121_SafariZoneEntrance_Text_PleaseEnjoyYourself:
 	.string "We'll let you know when your game\n"
 	.string "is over.\p"
 	.string "So, until then, enjoy yourself, please!\n"
-	.string "Off you go on your wild excursion!$"
+	.string "Off you go!$"
 
 Route121_SafariZoneEntrance_Text_PCIsFull:
 	.string "Excuse me!\n"
@@ -164,17 +162,17 @@ Route121_SafariZoneEntrance_Text_YouNeedPokeblockCase:
 
 SafariZone_South_Text_StillHaveTimeExit:
 	.string "You still have time left. Would you like\n"
-	.string "to exit the SAFARI ZONE now?$"
+	.string "to exit IDOL PARK now?$"
 
 SafariZone_South_Text_EnjoyTheRestOfYourAdventure:
-	.string "Please enjoy the rest of your wild\n"
-	.string "adventure!$"
+	.string "Please enjoy the rest of your time\n"
+	.string "in IDOL PARK!$"
 
 SafariZone_South_Text_ExitEarlyThankYouForPlaying:
 	.string "Okay.\p"
-	.string "I'll take back your remaining SAFARI\n"
-	.string "BALLS.\p"
-	.string "Thank you for playing.\n"
+	.string "I'll take back your remaining SCOUT\n"
+	.string "TICKETS.\p"
+	.string "Thank you for coming.\n"
 	.string "We hope to see you again.$"
 
 SafariZone_South_Text_GoodLuck:
@@ -191,7 +189,7 @@ SafariZone_South_Text_Man:
 	.string "I want to keep going deeper, but I\n"
 	.string "forgot to bring a BIKE.\p"
 	.string "Something tells me that rare IDOLS\n"
-	.string "live in the outlying areas.$"
+	.string "hang out in the outlying areas.$"
 
 SafariZone_Southwest_Text_Woman:
 	.string "Sometimes, when I toss a {POKEBLOCK} at \n"
@@ -203,7 +201,7 @@ SafariZone_Northwest_Text_Man:
 	.string "Gasp… Gasp…\n"
 	.string "I…made it out here…but…\p"
 	.string "I'm exhausted… I don't have the\n"
-	.string "energy to catch IDOLS…$"
+	.string "energy to scout IDOLS…$"
 
 SafariZone_North_Text_Fisherman:
 	.string "I'm on a mission to find WATER IDOLS\n"
@@ -211,7 +209,7 @@ SafariZone_North_Text_Fisherman:
 	.string "Do you have any idea where the lake is?$"
 
 SafariZone_North_Text_Man:
-	.string "I'm going to catch a lot of rare IDOLS\n"
+	.string "I'm going to scout a lot of rare IDOLS\n"
 	.string "here and trade them with my friends!$"
 
 SafariZone_South_Text_Youngster:
@@ -221,20 +219,20 @@ SafariZone_South_Text_Youngster:
 	.string "without me noticing.$"
 
 Route121_SafariZoneEntrance_Text_TrainerTip:
-	.string "SAFARI ZONE PRODUCER TIP!\p"
-	.string "Throw {POKEBLOCK}S at wild IDOLS to make\n"
-	.string "them less likely to flee.$"
+	.string "IDOL PARK PRODUCER TIP!\p"
+	.string "Walk up to IDOLS to scout them\n"
+	.string "but don't get too close.$"
 
 SafariZone_Southwest_Text_RestHouseSign:
 	.string "“Relieve your tired feet.”\n"
 	.string "REST HOUSE$"
 
 SafariZone_RestHouse_Text_Youngster:
-	.string "I don't have any {POKEBLOCK}S, but I caught\n"
+	.string "I don't have any {POKEBLOCK}S, but I met\n"
 	.string "a good number of IDOLS.\p"
 	.string "You can improve your chances of making\n"
-	.string "a catch by getting closer to them\l"
-	.string "before throwing a SAFARI BALL.$"
+	.string "a scout by getting closer to them\l"
+	.string "before using a SCOUT TICKET.$"
 
 SafariZone_RestHouse_Text_PsychicM:
 	.string "If you use {POKEBLOCK}S, wild IDOLS won't\n"
@@ -253,7 +251,7 @@ SafariZone_South_Text_AreaOffLimits1:
 	.string "It's off-limits, sorry!$"
 
 SafariZone_Southeast_Text_ExpansionIsFinished:
-	.string "The SAFARI ZONE's expansion project\n"
+	.string "IDOL PARK's expansion project\n"
 	.string "is finished now.\p"
 	.string "We hope you will enjoy the new area.$"
 
@@ -268,17 +266,17 @@ SafariZone_Southeast_Text_LittleGirl:
 SafariZone_Southeast_Text_FatMan:
 	.string "The IDOLS in this area are all\n"
 	.string "new to me.\p"
-	.string "And I'm allowed to catch these rare\n"
+	.string "And I'm allowed to meet these rare\n"
 	.string "IDOLS! Too cool!$"
 
 SafariZone_Southeast_Text_RichBoy:
 	.string "The IDOLS around here seem to be\n"
-	.string "from somewhere other than HOENN.$"
+	.string "way stronger than the others.$"
 
 SafariZone_Northeast_Text_Boy:
-	.string "I only have a couple SAFARI BALLS left.\p"
+	.string "I only have a couple TICKETS left.\p"
 	.string "I'm having a hard time trying to\n"
-	.string "decide what I should catch.$"
+	.string "decide who I should scout.$"
 
 SafariZone_Northeast_Text_Woman:
 	.string "I heard that you can see PIKACHU here.\n"
@@ -286,6 +284,6 @@ SafariZone_Northeast_Text_Woman:
 
 SafariZone_Northeast_Text_Girl:
 	.string "Oh, boo!\n"
-	.string "I can't seem to catch anything!\p"
+	.string "I can't seem to scout anyone!\p"
 	.string "I'll end up wasting the admission\n"
-	.string "price if I don't catch something!$"
+	.string "price if I don't scout somebody!$"

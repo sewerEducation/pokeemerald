@@ -27,9 +27,11 @@ BattleFrontier_ReceptionGate_EventScript_FirstTimeEntering::
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, BattleFrontier_ReceptionGate_Movement_PlayerApproachCounter
 	waitmovement 0
-	msgbox BattleFrontier_ReceptionGate_Text_WelcomeToBattleFrontier, MSGBOX_DEFAULT
 	setflag FLAG_SYS_POKEMON_GET
-	multichoice 15, 0, MULTI_CHOOSE_IDOL_TYPE, TRUE
+	setflag FLAG_SYS_B_DASH
+	message BattleFrontier_ReceptionGate_Text_WelcomeToBattleFrontier
+	waitmessage
+	multichoice 20, 10, MULTI_CHOOSE_IDOL_TYPE, TRUE
 	switch VAR_RESULT
 	case 0, BattleFrontier_ReceptionGate_EventScript_GiveCool
 	case 1, BattleFrontier_ReceptionGate_EventScript_GiveCute
@@ -52,7 +54,7 @@ BattleFrontier_ReceptionGate_EventScript_GiveCute::
 
 BattleFrontier_ReceptionGate_EventScript_GiveTough::
 	givemon SPECIES_MIOBASE, 50, ITEM_SOUR_APPLE
-	givemon SPECIES_UZUKIBASE, 50, ITEM_SOUR_APPLE
+	givemon SPECIES_MIRIABASE, 50, ITEM_SOUR_APPLE
 	givemon SPECIES_RINBASE, 50, ITEM_SOUR_APPLE
 	goto BattleFrontier_ReceptionGate_EventScript_ScottScene
 	end
@@ -89,6 +91,7 @@ BattleFrontier_ReceptionGate_EventScript_ScottScene::
 	applymovement LOCALID_SCOTT, BattleFrontier_ReceptionGate_Movement_ScottExit
 	waitmovement 0
 	removeobject LOCALID_SCOTT
+	giveitem ITEM_SS_TICKET
 	releaseall
 	end
 

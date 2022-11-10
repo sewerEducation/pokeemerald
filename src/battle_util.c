@@ -2527,10 +2527,14 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
                 break;
 
             case ABILITY_WATER_VEIL:
-                BattleScriptPushCursorAndCallback(BattleScript_WaterVeilAnnouncement);
-                gBattleScripting.battler = battler;
-                effect++;
-                break;
+                if (!gSpecialStatuses[battler].switchInAbilityDone)
+                {
+                  BattleScriptPushCursorAndCallback(BattleScript_WaterVeilAnnouncement);
+                  gBattleScripting.battler = battler;
+                  gSpecialStatuses[battler].switchInAbilityDone = 1;
+                  effect++;
+                  break;
+                }
 
             case ABILITY_INTIMIDATE:
                 if (!(gSpecialStatuses[battler].intimidatedMon))
@@ -3271,6 +3275,7 @@ u8 ItemBattleEffects(u8 caseID, u8 battlerId, bool8 moveTurn)
     u8 battlerHoldEffect, atkHoldEffect, defHoldEffect;
     u8 battlerHoldEffectParam, atkHoldEffectParam, defHoldEffectParam;
     u16 atkItem, defItem;
+    u8 threshhold = 4;
 
     gLastUsedItem = gBattleMons[battlerId].item;
     if (gLastUsedItem == ITEM_ENIGMA_BERRY)
@@ -3343,7 +3348,11 @@ u8 ItemBattleEffects(u8 caseID, u8 battlerId, bool8 moveTurn)
             switch (battlerHoldEffect)
             {
             case HOLD_EFFECT_RESTORE_HP:
-                if (gBattleMons[battlerId].hp <= gBattleMons[battlerId].maxHP / 2 && !moveTurn)
+                if (gBattleMons[battlerId].ability == ABILITY_GLUTTONY)
+                {
+                    threshhold = 2;
+                }
+                if (gBattleMons[battlerId].hp <= gBattleMons[battlerId].maxHP / threshhold && !moveTurn)
                 {
                     gBattleMoveDamage = battlerHoldEffectParam;
                     if (gBattleMons[battlerId].hp + battlerHoldEffectParam > gBattleMons[battlerId].maxHP)

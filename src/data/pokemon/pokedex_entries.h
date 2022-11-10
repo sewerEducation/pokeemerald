@@ -156,48 +156,48 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_WEEDLE] =
+    [NATIONAL_DEX_MIRIABASE] =
     {
         .categoryName = _("HAIRY BUG"),
         .height = 3,
         .weight = 32,
-        .description = gWeedlePokedexText,
+        .description = gMiriaBasePokedexText,
         .pokemonScale = 455,
         .pokemonOffset = 22,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_KAKUNA] =
+    [NATIONAL_DEX_MIRIABLUE] =
     {
         .categoryName = _("COCOON"),
         .height = 6,
         .weight = 100,
-        .description = gKakunaPokedexText,
+        .description = gMiriaBluePokedexText,
         .pokemonScale = 424,
         .pokemonOffset = 17,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_BEEDRILL] =
+    [NATIONAL_DEX_MIRIAGOLD] =
     {
         .categoryName = _("POISON BEE"),
         .height = 10,
         .weight = 295,
-        .description = gBeedrillPokedexText,
+        .description = gMiriaGoldPokedexText,
         .pokemonScale = 366,
         .pokemonOffset = 2,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_PIDGEY] =
+    [NATIONAL_DEX_MIRIAPINK] =
     {
         .categoryName = _("TINY BIRD"),
         .height = 3,
         .weight = 18,
-        .description = gPidgeyPokedexText,
+        .description = gMiriaPinkPokedexText,
         .pokemonScale = 508,
         .pokemonOffset = -3,
         .trainerScale = 256,

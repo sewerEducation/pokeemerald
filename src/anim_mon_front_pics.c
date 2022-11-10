@@ -17,10 +17,11 @@ const u32 gMonFrontPic_MioBlue[] = INCBIN_U32("graphics/idols/mio/blue/anim_fron
 const u32 gMonFrontPic_MioGold[] = INCBIN_U32("graphics/idols/mio/gold/anim_front.4bpp.lz");
 const u32 gMonFrontPic_MioPink[] = INCBIN_U32("graphics/idols/mio/pink/anim_front.4bpp.lz");
 
-const u32 gMonFrontPic_Weedle[] = INCBIN_U32("graphics/pokemon/weedle/anim_front.4bpp.lz");
-const u32 gMonFrontPic_Kakuna[] = INCBIN_U32("graphics/pokemon/kakuna/anim_front.4bpp.lz");
-const u32 gMonFrontPic_Beedrill[] = INCBIN_U32("graphics/pokemon/beedrill/anim_front.4bpp.lz");
-const u32 gMonFrontPic_Pidgey[] = INCBIN_U32("graphics/pokemon/pidgey/anim_front.4bpp.lz");
+const u32 gMonFrontPic_MiriaBase[] = INCBIN_U32("graphics/idols/miria/base/anim_front.4bpp.lz");
+const u32 gMonFrontPic_MiriaBlue[] = INCBIN_U32("graphics/idols/miria/blue/anim_front.4bpp.lz");
+const u32 gMonFrontPic_MiriaGold[] = INCBIN_U32("graphics/idols/miria/gold/anim_front.4bpp.lz");
+const u32 gMonFrontPic_MiriaPink[] = INCBIN_U32("graphics/idols/miria/pink/anim_front.4bpp.lz");
+
 const u32 gMonFrontPic_Pidgeotto[] = INCBIN_U32("graphics/pokemon/pidgeotto/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Pidgeot[] = INCBIN_U32("graphics/pokemon/pidgeot/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Rattata[] = INCBIN_U32("graphics/pokemon/rattata/anim_front.4bpp.lz");

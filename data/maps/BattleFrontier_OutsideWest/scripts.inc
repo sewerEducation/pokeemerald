@@ -46,7 +46,8 @@ BattleFrontier_OutsideWest_EventScript_FerryToSlateport::
 	goto_if_eq VAR_RESULT, NO, BattleFrontier_OutsideWest_EventScript_ChooseNewFerryDestination
 	msgbox BattleFrontier_OutsideWest_Text_PleaseBoardFerry, MSGBOX_DEFAULT
 	call BattleFrontier_OutsideWest_EventScript_BoardFerry
-	warp MAP_SLATEPORT_CITY_HARBOR, 8, 11
+	@warp MAP_SLATEPORT_CITY_HARBOR, 8, 11
+	warp MAP_NAVEL_ROCK_HARBOR, 8, 4
 	waitstate
 	release
 	end
@@ -56,7 +57,9 @@ BattleFrontier_OutsideWest_EventScript_FerryToLilycove::
 	goto_if_eq VAR_RESULT, NO, BattleFrontier_OutsideWest_EventScript_ChooseNewFerryDestination
 	msgbox BattleFrontier_OutsideWest_Text_PleaseBoardFerry, MSGBOX_DEFAULT
 	call BattleFrontier_OutsideWest_EventScript_BoardFerry
-	warp MAP_LILYCOVE_CITY_HARBOR, 8, 11
+	@warp MAP_LILYCOVE_CITY_HARBOR, 8, 11
+	warp MAP_BIRTH_ISLAND_HARBOR, 8, 4
+	@warp MAP_ROUTE104, 29, 15
 	waitstate
 	release
 	end
@@ -340,10 +343,10 @@ BattleFrontier_OutsideWest_Text_WhereWouldYouLikeToGo:
 	.string "And where would you like to go?$"
 
 BattleFrontier_OutsideWest_Text_SlateportItIs:
-	.string "SLATEPORT CITY it is, then!$"
+	.string "IDOL PARK it is, then!$"
 
 BattleFrontier_OutsideWest_Text_LilycoveItIs:
-	.string "LILYCOVE CITY it is, then!$"
+	.string "IDOL HILL it is, then!$"
 
 BattleFrontier_OutsideWest_Text_SailWithUsAnotherTime:
 	.string "Please sail with us another time!$"
@@ -383,7 +386,7 @@ BattleFrontier_OutsideWest_Text_OnlyToughTrainersBroughtHere:
 BattleFrontier_OutsideWest_Text_SureWeCanChallengeWithNoMons:
 	.string "Hey, bro…\p"
 	.string "Are you sure we can make challenges\n"
-	.string "even if we don't have any IDOLS?$"
+	.string "even if we don't know any IDOLS?$"
 
 BattleFrontier_OutsideWest_Text_BigGuySaidIllLendYouMons:
 	.string "Uh…\n"

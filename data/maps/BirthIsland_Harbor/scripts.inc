@@ -17,7 +17,7 @@ BirthIsland_Harbor_EventScript_Sailor::
 	hideobjectat LOCALID_SAILOR, MAP_BIRTH_ISLAND_HARBOR
 	setvar VAR_0x8004, LOCALID_SS_TIDAL
 	call Common_EventScript_FerryDepartIsland
-	warp MAP_LILYCOVE_CITY_HARBOR, 8, 11
+	warp MAP_BATTLE_FRONTIER_OUTSIDE_WEST, 19, 67
 	waitstate
 	release
 	end
@@ -26,4 +26,3 @@ BirthIsland_Harbor_EventScript_AsYouLike::
 	msgbox EventTicket_Text_AsYouLike, MSGBOX_DEFAULT
 	release
 	end
-

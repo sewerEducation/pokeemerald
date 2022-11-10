@@ -4,13 +4,13 @@
 #define FRONTIER_MON_SUNKERN        0
 #define FRONTIER_MON_AZURILL        1
 #define FRONTIER_MON_MIOBLUE       2
-#define FRONTIER_MON_WEEDLE         3
+#define FRONTIER_MON_MIRIABASE         3
 #define FRONTIER_MON_WURMPLE        4
 #define FRONTIER_MON_RALTS          5
 #define FRONTIER_MON_MAGIKARP       6
 #define FRONTIER_MON_FEEBAS         7
 #define FRONTIER_MON_MIOGOLD        8
-#define FRONTIER_MON_KAKUNA         9
+#define FRONTIER_MON_MIRIABLUE         9
 #define FRONTIER_MON_PICHU          10
 #define FRONTIER_MON_SILCOON        11
 #define FRONTIER_MON_CASCOON        12
@@ -34,7 +34,7 @@
 #define FRONTIER_MON_SLUGMA         30
 #define FRONTIER_MON_SWINUB         31
 #define FRONTIER_MON_SMEARGLE       32
-#define FRONTIER_MON_PIDGEY         33
+#define FRONTIER_MON_MIRIAPINK         33
 #define FRONTIER_MON_RATTATA        34
 #define FRONTIER_MON_WYNAUT         35
 #define FRONTIER_MON_SKITTY         36
@@ -155,7 +155,7 @@
 #define FRONTIER_MON_CORSOLA        151
 #define FRONTIER_MON_MAWILE         152
 #define FRONTIER_MON_MIOPINK     153
-#define FRONTIER_MON_BEEDRILL       154
+#define FRONTIER_MON_MIRIAGOLD       154
 #define FRONTIER_MON_POLIWHIRL      155
 #define FRONTIER_MON_ONIX           156
 #define FRONTIER_MON_BEAUTIFLY      157

@@ -435,19 +435,19 @@ Cry_MioPink::
 	.incbin "sound/direct_sound_samples/cries/butterfree.bin"
 
 	.align 2
-Cry_Weedle::
+Cry_MiriaBase::
 	.incbin "sound/direct_sound_samples/cries/weedle.bin"
 
 	.align 2
-Cry_Kakuna::
+Cry_MiriaBlue::
 	.incbin "sound/direct_sound_samples/cries/kakuna.bin"
 
 	.align 2
-Cry_Beedrill::
+Cry_MiriaGold::
 	.incbin "sound/direct_sound_samples/cries/beedrill.bin"
 
 	.align 2
-Cry_Pidgey::
+Cry_MiriaPink::
 	.incbin "sound/direct_sound_samples/cries/pidgey.bin"
 
 	.align 2

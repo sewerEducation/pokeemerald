@@ -117,7 +117,7 @@ static const union AnimCmd sAnim_MIOPINK_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_WEEDLE_1[] =
+static const union AnimCmd sAnim_MIRIABASE_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 15),
@@ -129,7 +129,7 @@ static const union AnimCmd sAnim_WEEDLE_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_KAKUNA_1[] =
+static const union AnimCmd sAnim_MIRIABLUE_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 5),
@@ -145,7 +145,7 @@ static const union AnimCmd sAnim_KAKUNA_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_BEEDRILL_1[] =
+static const union AnimCmd sAnim_MIRIAGOLD_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 35),
@@ -155,7 +155,7 @@ static const union AnimCmd sAnim_BEEDRILL_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_PIDGEY_1[] =
+static const union AnimCmd sAnim_MIRIAPINK_1[] =
 {
     ANIMCMD_FRAME(1, 5),
     ANIMCMD_FRAME(0, 5),
@@ -4870,24 +4870,24 @@ static const union AnimCmd *const sAnims_MIOPINK[] ={
     sAnim_MIOPINK_1,
 };
 
-static const union AnimCmd *const sAnims_WEEDLE[] ={
+static const union AnimCmd *const sAnims_MIRIABASE[] ={
     sAnim_GeneralFrame0,
-    sAnim_WEEDLE_1,
+    sAnim_MIRIABASE_1,
 };
 
-static const union AnimCmd *const sAnims_KAKUNA[] ={
+static const union AnimCmd *const sAnims_MIRIABLUE[] ={
     sAnim_GeneralFrame0,
-    sAnim_KAKUNA_1,
+    sAnim_MIRIABLUE_1,
 };
 
-static const union AnimCmd *const sAnims_BEEDRILL[] ={
+static const union AnimCmd *const sAnims_MIRIAGOLD[] ={
     sAnim_GeneralFrame0,
-    sAnim_BEEDRILL_1,
+    sAnim_MIRIAGOLD_1,
 };
 
-static const union AnimCmd *const sAnims_PIDGEY[] ={
+static const union AnimCmd *const sAnims_MIRIAPINK[] ={
     sAnim_GeneralFrame0,
-    sAnim_PIDGEY_1,
+    sAnim_MIRIAPINK_1,
 };
 
 static const union AnimCmd *const sAnims_PIDGEOTTO[] ={
@@ -6963,10 +6963,10 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     ANIM_CMD(MIOBLUE),
     ANIM_CMD(MIOGOLD),
     ANIM_CMD(MIOPINK),
-    ANIM_CMD(WEEDLE),
-    ANIM_CMD(KAKUNA),
-    ANIM_CMD(BEEDRILL),
-    ANIM_CMD(PIDGEY),
+    ANIM_CMD(MIRIABASE),
+    ANIM_CMD(MIRIABLUE),
+    ANIM_CMD(MIRIAGOLD),
+    ANIM_CMD(MIRIAPINK),
     ANIM_CMD(PIDGEOTTO),
     ANIM_CMD(PIDGEOT),
     ANIM_CMD(RATTATA),

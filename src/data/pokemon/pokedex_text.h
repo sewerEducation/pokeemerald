@@ -76,25 +76,25 @@ const u8 gMioPinkPokedexText[] = _(
     "extract, and carry honey from flowers\n"
     "blooming over six miles away.");
 
-const u8 gWeedlePokedexText[] = _(
-    "A WEEDLE has an extremely acute sense\n"
+const u8 gMiriaBasePokedexText[] = _(
+    "A MIRIABASE has an extremely acute sense\n"
     "of smell. It distinguishes its favorite\n"
     "kinds of leaves from those it dislikes by\n"
     "sniffing with its big red proboscis (nose).");
 
-const u8 gKakunaPokedexText[] = _(
+const u8 gMiriaBluePokedexText[] = _(
     "It remains virtually immobile while it\n"
     "clings to a tree. However, on the inside,\n"
     "it busily prepares for evolution. This is\n"
     "evident from how hot its shell becomes.");
 
-const u8 gBeedrillPokedexText[] = _(
-    "A BEEDRILL is extremely territorial.\n"
+const u8 gMiriaGoldPokedexText[] = _(
+    "A MIRIAGOLD is extremely territorial.\n"
     "For safety reasons, no one should \n"
     "ever approach its nest. If angered,\n"
     "they will attack in a swarm.");
 
-const u8 gPidgeyPokedexText[] = _(
+const u8 gMiriaPinkPokedexText[] = _(
     "It has an extremely sharp sense of\n"
     "direction. It can unerringly return home to\n"
     "its nest, however far it may be removed\n"
@@ -1298,7 +1298,7 @@ const u8 gTeddiursaPokedexText[] = _(
     "It licks its palms that are sweetened by\n"
     "being soaked in honey. A TEDDIURSA makes\n"
     "its own honey by blending fruits and pollen\n"
-    "collected by BEEDRILL.");
+    "collected by MIRIAGOLD.");
 
 const u8 gUrsaringPokedexText[] = _(
     "In forests, it is said that there are many\n"

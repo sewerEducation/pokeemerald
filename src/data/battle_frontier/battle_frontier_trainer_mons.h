@@ -3,7 +3,7 @@
     FRONTIER_MON_SUNKERN,        \
     FRONTIER_MON_AZURILL,        \
     FRONTIER_MON_MIOBLUE,       \
-    FRONTIER_MON_WEEDLE,         \
+    FRONTIER_MON_MIRIABASE,         \
     FRONTIER_MON_WURMPLE,        \
     FRONTIER_MON_RALTS,          \
     FRONTIER_MON_MAGIKARP,       \
@@ -29,7 +29,7 @@
     FRONTIER_MON_SLUGMA,         \
     FRONTIER_MON_SWINUB,         \
     FRONTIER_MON_SMEARGLE,       \
-    FRONTIER_MON_PIDGEY,         \
+    FRONTIER_MON_MIRIAPINK,         \
     FRONTIER_MON_RATTATA,        \
     FRONTIER_MON_WYNAUT,         \
     FRONTIER_MON_SKITTY,         \
@@ -147,7 +147,7 @@
     FRONTIER_MON_KOFFING,        \
     FRONTIER_MON_NIDORINA,       \
     FRONTIER_MON_NIDORINO,       \
-    FRONTIER_MON_BEEDRILL,       \
+    FRONTIER_MON_MIRIAGOLD,       \
     FRONTIER_MON_DUSTOX,         \
     FRONTIER_MON_ARIADOS,        \
     -1
@@ -197,7 +197,7 @@
     FRONTIER_MON_CORSOLA,       \
     FRONTIER_MON_MAWILE,        \
     FRONTIER_MON_MIOPINK,    \
-    FRONTIER_MON_BEEDRILL,      \
+    FRONTIER_MON_MIRIAGOLD,      \
     FRONTIER_MON_POLIWHIRL,     \
     FRONTIER_MON_ONIX,          \
     FRONTIER_MON_BEAUTIFLY,     \
@@ -403,7 +403,7 @@
     FRONTIER_MON_HOPPIP,        \
     FRONTIER_MON_SWINUB,        \
     FRONTIER_MON_SMEARGLE,      \
-    FRONTIER_MON_PIDGEY,        \
+    FRONTIER_MON_MIRIAPINK,        \
     FRONTIER_MON_RATTATA,       \
     FRONTIER_MON_WYNAUT,        \
     FRONTIER_MON_SKITTY,        \
@@ -430,7 +430,7 @@
 
 #define FRONTIER_MONS_BUG_CATCHER_1 \
     FRONTIER_MON_MIOBLUE,      \
-    FRONTIER_MON_WEEDLE,        \
+    FRONTIER_MON_MIRIABASE,        \
     FRONTIER_MON_WURMPLE,       \
     FRONTIER_MON_SHEDINJA,      \
     FRONTIER_MON_SPINARAK,      \
@@ -446,7 +446,7 @@
     FRONTIER_MON_VIBRAVA,       \
     FRONTIER_MON_ANORITH,       \
     FRONTIER_MON_MIOPINK,    \
-    FRONTIER_MON_BEEDRILL,      \
+    FRONTIER_MON_MIRIAGOLD,      \
     FRONTIER_MON_BEAUTIFLY,     \
     FRONTIER_MON_DUSTOX,        \
     FRONTIER_MON_LEDIAN,        \
@@ -457,7 +457,7 @@
 // Identical to above with 2 additions. Might be possible to merge the two
 #define FRONTIER_MONS_BUG_CATCHER_1_EXTRA(species1, species2) \
     FRONTIER_MON_MIOBLUE,      \
-    FRONTIER_MON_WEEDLE,        \
+    FRONTIER_MON_MIRIABASE,        \
     FRONTIER_MON_WURMPLE,       \
     FRONTIER_MON_##species1,    \
     FRONTIER_MON_##species2,    \
@@ -475,7 +475,7 @@
     FRONTIER_MON_VIBRAVA,       \
     FRONTIER_MON_ANORITH,       \
     FRONTIER_MON_MIOPINK,    \
-    FRONTIER_MON_BEEDRILL,      \
+    FRONTIER_MON_MIRIAGOLD,      \
     FRONTIER_MON_BEAUTIFLY,     \
     FRONTIER_MON_DUSTOX,        \
     FRONTIER_MON_LEDIAN,        \
@@ -526,7 +526,7 @@
     FRONTIER_MON_NIDORINA,      \
     FRONTIER_MON_NIDORINO,      \
     FRONTIER_MON_MIOPINK,    \
-    FRONTIER_MON_BEEDRILL,      \
+    FRONTIER_MON_MIRIAGOLD,      \
     FRONTIER_MON_BEAUTIFLY,     \
     FRONTIER_MON_DUSTOX,        \
     FRONTIER_MON_LEDIAN,        \
@@ -559,7 +559,7 @@
     FRONTIER_MON_LILEEP,        \
     FRONTIER_MON_ANORITH,       \
     FRONTIER_MON_MIOPINK,    \
-    FRONTIER_MON_BEEDRILL,      \
+    FRONTIER_MON_MIRIAGOLD,      \
     FRONTIER_MON_BEAUTIFLY,     \
     FRONTIER_MON_DUSTOX,        \
     FRONTIER_MON_LEDIAN,        \
@@ -709,7 +709,7 @@
     FRONTIER_MON_ZUBAT,         \
     FRONTIER_MON_TOGEPI,        \
     FRONTIER_MON_SMEARGLE,      \
-    FRONTIER_MON_PIDGEY,        \
+    FRONTIER_MON_MIRIAPINK,        \
     FRONTIER_MON_RATTATA,       \
     FRONTIER_MON_SKITTY,        \
     FRONTIER_MON_SPEAROW,       \
@@ -836,7 +836,7 @@
     FRONTIER_MON_ZIGZAGOON,     \
     FRONTIER_MON_TOGEPI,        \
     FRONTIER_MON_SMEARGLE,      \
-    FRONTIER_MON_PIDGEY,        \
+    FRONTIER_MON_MIRIAPINK,        \
     FRONTIER_MON_RATTATA,       \
     FRONTIER_MON_SKITTY,        \
     FRONTIER_MON_SPEAROW,       \
@@ -6108,7 +6108,7 @@ const u16 gBattleFrontierTrainerMons_Marisa[] =
 
 const u16 gBattleFrontierTrainerMons_Lewis[] =
 {
-    FRONTIER_MONS_BUG_CATCHER_1_EXTRA(MIOGOLD, KAKUNA)
+    FRONTIER_MONS_BUG_CATCHER_1_EXTRA(MIOGOLD, MIRIABLUE)
 };
 
 const u16 gBattleFrontierTrainerMons_Yoshi[] =
