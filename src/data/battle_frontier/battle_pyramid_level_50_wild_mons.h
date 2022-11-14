@@ -13,7 +13,7 @@ static const struct PyramidWildMon sLevel50WildMons_Round1[] =
         .moves = {MOVE_ROCK_SHOCK, MOVE_HEAVENBOLT, MOVE_QUICK_ATTACK, MOVE_NONE}
     },
     {
-        .species = SPECIES_PIKACHU,
+        .species = SPECIES_NANAMIBASE,
         .lvl = 37,
         .abilityNum = ABILITY_RANDOM,
         .moves = {MOVE_ROCK_SHOCK, MOVE_HEAVENBOLT, MOVE_SLAM, MOVE_NONE}
@@ -949,7 +949,7 @@ static const struct PyramidWildMon sLevel50WildMons_Round19[] =
         .moves = {MOVE_HYDRO_PUMP, MOVE_ICE_BEAM, MOVE_NONE, MOVE_NONE}
     },
     {
-        .species = SPECIES_RAICHU,
+        .species = SPECIES_NANAMIBLUE,
         .lvl = 46,
         .abilityNum = ABILITY_RANDOM,
         .moves = {MOVE_THUNDER, MOVE_ROCK_SHOCK, MOVE_SLAM, MOVE_NONE}
@@ -1019,7 +1019,7 @@ static const struct PyramidWildMon sLevel50WildMons_Round20[] =
         .moves = {MOVE_EARTHQUAKE, MOVE_HYPER_BEAM, MOVE_SURF, MOVE_HEAVENBOLT}
     },
     {
-        .species = SPECIES_FEAROW,
+        .species = SPECIES_RIINABLUE,
         .lvl = 48,
         .abilityNum = ABILITY_RANDOM,
         .moves = {MOVE_HYPER_BEAM, MOVE_SPACE_TRAVEL, MOVE_COPYCAT, MOVE_PROTECT}

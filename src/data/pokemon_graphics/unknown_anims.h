@@ -980,26 +980,26 @@ static const union AnimCmd *const sUnknownAnims_MIRIABASE[] = {sAnim_GeneralFram
 static const union AnimCmd *const sUnknownAnims_MIRIABLUE[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnknownAnims_MIRIAGOLD[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnknownAnims_MIRIAPINK[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_PIDGEOTTO[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_PIDGEOT[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_RATTATA[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_RATICATE[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_SPEAROW[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_FEAROW[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_EKANS[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_ARBOK[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_PIKACHU[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_RAICHU[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_SANDSHREW[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_SANDSLASH[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_NIDORAN_F[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_NIDORINA[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_NIDOQUEEN[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_NIDORAN_M[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_NIDORINO[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_NIDOKING[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_CLEFAIRY[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_CLEFABLE[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_KAORUBASE[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_KAORUBLUE[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_KAORUGOLD[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_KAORUPINK[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_RIINABASE[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_RIINABLUE[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_RIINAGOLD[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_RIINAPINK[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_NANAMIBASE[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_NANAMIBLUE[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_NANAMIGOLD[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_NANAMIPINK[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_ATSUMIBASE[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_ATSUMIBLUE[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_ATSUMIGOLD[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_ATSUMIPINK[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_KOZUEBASE[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_KOZUEBLUE[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_KOZUEGOLD[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_KOZUEPINK[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnknownAnims_VULPIX[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnknownAnims_NINETALES[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnknownAnims_JIGGLYPUFF[] = {sAnim_GeneralFrame0};
@@ -1893,26 +1893,26 @@ static const union AnimCmd *const *const sUnknownAnimsTable[] =
     ANIM_CMD(MIRIABLUE),
     ANIM_CMD(MIRIAGOLD),
     ANIM_CMD(MIRIAPINK),
-    ANIM_CMD(PIDGEOTTO),
-    ANIM_CMD(PIDGEOT),
-    ANIM_CMD(RATTATA),
-    ANIM_CMD(RATICATE),
-    ANIM_CMD(SPEAROW),
-    ANIM_CMD(FEAROW),
-    ANIM_CMD(EKANS),
-    ANIM_CMD(ARBOK),
-    ANIM_CMD(PIKACHU),
-    ANIM_CMD(RAICHU),
-    ANIM_CMD(SANDSHREW),
-    ANIM_CMD(SANDSLASH),
-    ANIM_CMD(NIDORAN_F),
-    ANIM_CMD(NIDORINA),
-    ANIM_CMD(NIDOQUEEN),
-    ANIM_CMD(NIDORAN_M),
-    ANIM_CMD(NIDORINO),
-    ANIM_CMD(NIDOKING),
-    ANIM_CMD(CLEFAIRY),
-    ANIM_CMD(CLEFABLE),
+    ANIM_CMD(KAORUBASE),
+    ANIM_CMD(KAORUBLUE),
+    ANIM_CMD(KAORUGOLD),
+    ANIM_CMD(KAORUPINK),
+    ANIM_CMD(RIINABASE),
+    ANIM_CMD(RIINABLUE),
+    ANIM_CMD(RIINAGOLD),
+    ANIM_CMD(RIINAPINK),
+    ANIM_CMD(NANAMIBASE),
+    ANIM_CMD(NANAMIBLUE),
+    ANIM_CMD(NANAMIGOLD),
+    ANIM_CMD(NANAMIPINK),
+    ANIM_CMD(ATSUMIBASE),
+    ANIM_CMD(ATSUMIBLUE),
+    ANIM_CMD(ATSUMIGOLD),
+    ANIM_CMD(ATSUMIPINK),
+    ANIM_CMD(KOZUEBASE),
+    ANIM_CMD(KOZUEBLUE),
+    ANIM_CMD(KOZUEGOLD),
+    ANIM_CMD(KOZUEPINK),
     ANIM_CMD(VULPIX),
     ANIM_CMD(NINETALES),
     ANIM_CMD(JIGGLYPUFF),

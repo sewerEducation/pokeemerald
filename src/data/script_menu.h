@@ -776,7 +776,6 @@ static const struct MenuAction MultichoiceList_ChooseIdolType[] =
     {gText_Cool},
     {gText_Cute},
     {gText_Tough},
-    {gText_Exit},
 };
 
 static const struct MenuAction MultichoiceList_Exit[] =

@@ -89,102 +89,102 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = MON_COORDS_SIZE(48, 48),
         .y_offset = 8,
     },
-    [SPECIES_PIDGEOTTO] =
+    [SPECIES_KAORUBASE] =
     {
         .size = MON_COORDS_SIZE(64, 40),
         .y_offset = 12,
     },
-    [SPECIES_PIDGEOT] =
+    [SPECIES_KAORUBLUE] =
     {
         .size = MON_COORDS_SIZE(56, 64),
         .y_offset = 2,
     },
-    [SPECIES_RATTATA] =
+    [SPECIES_KAORUGOLD] =
     {
         .size = MON_COORDS_SIZE(48, 40),
         .y_offset = 13,
     },
-    [SPECIES_RATICATE] =
+    [SPECIES_KAORUPINK] =
     {
         .size = MON_COORDS_SIZE(56, 40),
         .y_offset = 13,
     },
-    [SPECIES_SPEAROW] =
+    [SPECIES_RIINABASE] =
     {
         .size = MON_COORDS_SIZE(48, 40),
         .y_offset = 12,
     },
-    [SPECIES_FEAROW] =
+    [SPECIES_RIINABLUE] =
     {
         .size = MON_COORDS_SIZE(64, 56),
         .y_offset = 5,
     },
-    [SPECIES_EKANS] =
+    [SPECIES_RIINAGOLD] =
     {
         .size = MON_COORDS_SIZE(48, 48),
         .y_offset = 9,
     },
-    [SPECIES_ARBOK] =
+    [SPECIES_RIINAPINK] =
     {
         .size = MON_COORDS_SIZE(56, 56),
         .y_offset = 4,
     },
-    [SPECIES_PIKACHU] =
+    [SPECIES_NANAMIBASE] =
     {
         .size = MON_COORDS_SIZE(56, 56),
         .y_offset = 7,
     },
-    [SPECIES_RAICHU] =
+    [SPECIES_NANAMIBLUE] =
     {
         .size = MON_COORDS_SIZE(48, 48),
         .y_offset = 8,
     },
-    [SPECIES_SANDSHREW] =
+    [SPECIES_NANAMIGOLD] =
     {
         .size = MON_COORDS_SIZE(48, 40),
         .y_offset = 13,
     },
-    [SPECIES_SANDSLASH] =
+    [SPECIES_NANAMIPINK] =
     {
         .size = MON_COORDS_SIZE(64, 48),
         .y_offset = 9,
     },
-    [SPECIES_NIDORAN_F] =
+    [SPECIES_ATSUMIBASE] =
     {
         .size = MON_COORDS_SIZE(40, 40),
         .y_offset = 12,
     },
-    [SPECIES_NIDORINA] =
+    [SPECIES_ATSUMIBLUE] =
     {
         .size = MON_COORDS_SIZE(64, 48),
         .y_offset = 10,
     },
-    [SPECIES_NIDOQUEEN] =
+    [SPECIES_ATSUMIGOLD] =
     {
         .size = MON_COORDS_SIZE(56, 56),
         .y_offset = 6,
     },
-    [SPECIES_NIDORAN_M] =
+    [SPECIES_ATSUMIPINK] =
     {
         .size = MON_COORDS_SIZE(40, 48),
         .y_offset = 8,
     },
-    [SPECIES_NIDORINO] =
+    [SPECIES_KOZUEBASE] =
     {
         .size = MON_COORDS_SIZE(64, 48),
         .y_offset = 9,
     },
-    [SPECIES_NIDOKING] =
+    [SPECIES_KOZUEBLUE] =
     {
         .size = MON_COORDS_SIZE(64, 64),
         .y_offset = 3,
     },
-    [SPECIES_CLEFAIRY] =
+    [SPECIES_KOZUEGOLD] =
     {
         .size = MON_COORDS_SIZE(48, 40),
         .y_offset = 13,
     },
-    [SPECIES_CLEFABLE] =
+    [SPECIES_KOZUEPINK] =
     {
         .size = MON_COORDS_SIZE(56, 48),
         .y_offset = 10,

@@ -466,8 +466,8 @@ const u16 DecorGfx_PICHU_DOLL[] = {
     OBJ_EVENT_GFX_PICHU_DOLL
 };
 
-const u16 DecorGfx_PIKACHU_DOLL[] = {
-    OBJ_EVENT_GFX_PIKACHU_DOLL
+const u16 DecorGfx_NANAMIBASE_DOLL[] = {
+    OBJ_EVENT_GFX_NANAMIBASE_DOLL
 };
 
 const u16 DecorGfx_MARILL_DOLL[] = {
@@ -498,8 +498,8 @@ const u16 DecorGfx_MEOWTH_DOLL[] = {
     OBJ_EVENT_GFX_MEOWTH_DOLL
 };
 
-const u16 DecorGfx_CLEFAIRY_DOLL[] = {
-    OBJ_EVENT_GFX_CLEFAIRY_DOLL
+const u16 DecorGfx_KOZUEGOLD_DOLL[] = {
+    OBJ_EVENT_GFX_KOZUEGOLD_DOLL
 };
 
 const u16 DecorGfx_DITTO_DOLL[] = {

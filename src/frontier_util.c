@@ -1888,7 +1888,7 @@ static void GiveBattlePoints(void)
     if (challengeNum >= ARRAY_COUNT(sBattlePointAwards))
         challengeNum = ARRAY_COUNT(sBattlePointAwards) - 1;
 
-    points = sBattlePointAwards[challengeNum][facility][battleMode];
+    points = sBattlePointAwards[challengeNum][facility][battleMode]*2;
     if (gTrainerBattleOpponent_A == TRAINER_FRONTIER_BRAIN)
         points += 10;
     gSaveBlock2Ptr->frontier.battlePoints += points;
@@ -1897,7 +1897,7 @@ static void GiveBattlePoints(void)
         gSaveBlock2Ptr->frontier.battlePoints = MAX_BATTLE_FRONTIER_POINTS;
 
     points = gSaveBlock2Ptr->frontier.cardBattlePoints;
-    points += sBattlePointAwards[challengeNum][facility][battleMode];
+    points += sBattlePointAwards[challengeNum][facility][battleMode]*2;
     IncrementDailyBattlePoints(sBattlePointAwards[challengeNum][facility][battleMode]);
     if (gTrainerBattleOpponent_A == TRAINER_FRONTIER_BRAIN)
     {

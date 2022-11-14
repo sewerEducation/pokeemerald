@@ -100,122 +100,122 @@ const u8 gMiriaPinkPokedexText[] = _(
     "its nest, however far it may be removed\n"
     "from its familiar surroundings.");
 
-const u8 gPidgeottoPokedexText[] = _(
+const u8 gKaoruBasePokedexText[] = _(
     "This IDOL flies around, patrolling its\n"
     "large territory. If its living space is\n"
     "violated, it shows no mercy in thoroughly\n"
     "punishing the foe with its sharp claws.");
 
-const u8 gPidgeotPokedexText[] = _(
+const u8 gKaoruBluePokedexText[] = _(
     "This IDOL has gorgeous, glossy\n"
     "feathers. Many PRODUCERS are so captivated\n"
     "by the beautiful feathers on its head that\n"
-    "they choose PIDGEOT as their IDOL.");
+    "they choose KAORUBLUE as their IDOL.");
 
-const u8 gRattataPokedexText[] = _(
-    "A RATTATA is cautious in the extreme.\n"
+const u8 gKaoruGoldPokedexText[] = _(
+    "A KAORUGOLD is cautious in the extreme.\n"
     "Even while it is asleep, it constantly\n"
     "moves its ears and listens for danger.\n"
     "It will make its nest anywhere.");
 
-const u8 gRaticatePokedexText[] = _(
-    "A RATICATE's sturdy fangs grow steadily.\n"
+const u8 gKaoruPinkPokedexText[] = _(
+    "A KAORUPINK's sturdy fangs grow steadily.\n"
     "To keep them ground down, it gnaws on\n"
     "rocks and logs. It may even chew on the\n"
     "walls of houses.");
 
-const u8 gSpearowPokedexText[] = _(
+const u8 gRiinaBasePokedexText[] = _(
     "Its loud cry can be heard over half a mile\n"
     "away. If its high, keening cry is heard\n"
     "echoing all around, it is a sign that they\n"
     "are warning each other of danger.");
 
-const u8 gFearowPokedexText[] = _(
+const u8 gRiinaBluePokedexText[] = _(
     "Its long neck and elongated beak are\n"
     "ideal for catching prey in soil or water.\n"
     "It deftly moves this extended and skinny\n"
     "beak to pluck prey.");
 
-const u8 gEkansPokedexText[] = _(
-    "An EKANS curls itself up in a spiral while\n"
+const u8 gRiinaGoldPokedexText[] = _(
+    "An RIINAGOLD curls itself up in a spiral while\n"
     "it rests. This position allows it to quickly\n"
     "respond to an enemy from any direction\n"
     "with a threat from its upraised head.");
 
-const u8 gArbokPokedexText[] = _(
+const u8 gRiinaPinkPokedexText[] = _(
     "This IDOL has a terrifically strong\n"
     "constricting power. It can even flatten\n"
     "steel oil drums. Once it wraps its body\n"
     "around its foe, escaping is impossible.");
 
-const u8 gPikachuPokedexText[] = _(
+const u8 gNanamiBasePokedexText[] = _(
     "It stores electricity in the electric sacs\n"
     "on its cheeks. When it releases pent-up\n"
     "energy in a burst, the electric power is\n"
     "equal to a lightning bolt.");
 
-const u8 gRaichuPokedexText[] = _(
+const u8 gNanamiBluePokedexText[] = _(
     "If it stores too much electricity, its\n"
     "behavior turns aggressive. To avoid this,\n"
     "it occasionally discharges excess energy\n"
     "and calms itself down.");
 
-const u8 gSandshrewPokedexText[] = _(
+const u8 gNanamiGoldPokedexText[] = _(
     "When it curls up in a ball, it can make any\n"
     "attack bounce off harmlessly. Its hide has\n"
     "turned tough and solid as a result of\n"
     "living in the desert.");
 
-const u8 gSandslashPokedexText[] = _(
+const u8 gNanamiPinkPokedexText[] = _(
     "It curls up in a ball to protect itself from\n"
     "enemy attacks. It also curls up to prevent\n"
     "heatstroke during the daytime when\n"
     "temperatures rise sharply.");
 
-const u8 gNidoranFPokedexText[] = _(
+const u8 gAtsumiBasePokedexText[] = _(
     "Its highly toxic barbs are thought to have\n"
     "developed as protection for this small-\n"
     "bodied IDOL. When enraged, it releases\n"
     "a horrible toxin from its horn.");
 
-const u8 gNidorinaPokedexText[] = _(
+const u8 gAtsumiBluePokedexText[] = _(
     "When it is with its friends or\n"
     "family, its barbs are tucked away to\n"
     "prevent injury. It appears to become\n"
     "nervous if separated from the others.");
 
-const u8 gNidoqueenPokedexText[] = _(
+const u8 gAtsumiGoldPokedexText[] = _(
     "It is adept at sending foes flying with\n"
     "harsh tackles using its tough, scaly body.\n"
     "This IDOL is at its strongest when\n"
     "it is defending its young.");
 
-const u8 gNidoranMPokedexText[] = _(
+const u8 gAtsumiPinkPokedexText[] = _(
     "The male NIDORAN has developed muscles\n"
     "that freely move its ears in any direction.\n"
     "Even the slightest sound does not escape\n"
     "this IDOL's notice.");
 
-const u8 gNidorinoPokedexText[] = _(
+const u8 gKozueBasePokedexText[] = _(
     "Its horn is harder than a diamond.\n"
     "If it senses a hostile presence, all the\n"
     "barbs on its back bristle up at once, and it\n"
     "challenges the foe with all its might.");
 
-const u8 gNidokingPokedexText[] = _(
-    "A NIDOKING's thick tail packs enormously\n"
+const u8 gKozueBluePokedexText[] = _(
+    "A KOZUEBLUE's thick tail packs enormously\n"
     "destructive power capable of toppling\n"
     "a metal transmission tower. Once it goes\n"
     "on a rampage, there is no stopping it.");
 
-const u8 gClefairyPokedexText[] = _(
+const u8 gKozueGoldPokedexText[] = _(
     "On every night of a full moon, they come\n"
     "out to play. When dawn arrives, the tired\n"
-    "CLEFAIRY go to sleep nestled up against\n"
+    "KOZUEGOLD go to sleep nestled up against\n"
     "each other in deep and quiet mountains.");
 
-const u8 gClefablePokedexText[] = _(
-    "A CLEFABLE uses its wings to skip lightly \n"
+const u8 gKozuePinkPokedexText[] = _(
+    "A KOZUEPINK uses its wings to skip lightly \n"
     "as if it were flying. Its bouncy step\n"
     "lets it even walk on water. On quiet,\n"
     "moonlit nights, it strolls on lakes.");

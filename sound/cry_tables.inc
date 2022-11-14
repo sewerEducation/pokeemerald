@@ -16,26 +16,26 @@ gCryTable::
 	cry Cry_MiriaBlue
 	cry Cry_MiriaGold
 	cry Cry_MiriaPink
-	cry Cry_Pidgeotto
-	cry Cry_Pidgeot
-	cry Cry_Rattata
-	cry Cry_Raticate
-	cry Cry_Spearow
-	cry Cry_Fearow
-	cry Cry_Ekans
-	cry Cry_Arbok
-	cry Cry_Pikachu
-	cry Cry_Raichu
-	cry Cry_Sandshrew
-	cry Cry_Sandslash
-	cry Cry_NidoranF
-	cry Cry_Nidorina
-	cry Cry_Nidoqueen
-	cry Cry_NidoranM
-	cry Cry_Nidorino
-	cry Cry_Nidoking
-	cry Cry_Clefairy
-	cry Cry_Clefable
+	cry Cry_KaoruBase
+	cry Cry_KaoruBlue
+	cry Cry_KaoruGold
+	cry Cry_KaoruPink
+	cry Cry_RiinaBase
+	cry Cry_RiinaBlue
+	cry Cry_RiinaGold
+	cry Cry_RiinaPink
+	cry Cry_NanamiBase
+	cry Cry_NanamiBlue
+	cry Cry_NanamiGold
+	cry Cry_NanamiPink
+	cry Cry_AtsumiBase
+	cry Cry_AtsumiBlue
+	cry Cry_AtsumiGold
+	cry Cry_AtsumiPink
+	cry Cry_KozueBase
+	cry Cry_KozueBlue
+	cry Cry_KozueGold
+	cry Cry_KozuePink
 	cry Cry_Vulpix
 	cry Cry_Ninetales
 	cry Cry_Jigglypuff
@@ -407,26 +407,26 @@ gCryTable_Reverse::
 	cry_reverse Cry_MiriaBlue
 	cry_reverse Cry_MiriaGold
 	cry_reverse Cry_MiriaPink
-	cry_reverse Cry_Pidgeotto
-	cry_reverse Cry_Pidgeot
-	cry_reverse Cry_Rattata
-	cry_reverse Cry_Raticate
-	cry_reverse Cry_Spearow
-	cry_reverse Cry_Fearow
-	cry_reverse Cry_Ekans
-	cry_reverse Cry_Arbok
-	cry_reverse Cry_Pikachu
-	cry_reverse Cry_Raichu
-	cry_reverse Cry_Sandshrew
-	cry_reverse Cry_Sandslash
-	cry_reverse Cry_NidoranF
-	cry_reverse Cry_Nidorina
-	cry_reverse Cry_Nidoqueen
-	cry_reverse Cry_NidoranM
-	cry_reverse Cry_Nidorino
-	cry_reverse Cry_Nidoking
-	cry_reverse Cry_Clefairy
-	cry_reverse Cry_Clefable
+	cry_reverse Cry_KaoruBase
+	cry_reverse Cry_KaoruBlue
+	cry_reverse Cry_KaoruGold
+	cry_reverse Cry_KaoruPink
+	cry_reverse Cry_RiinaBase
+	cry_reverse Cry_RiinaBlue
+	cry_reverse Cry_RiinaGold
+	cry_reverse Cry_RiinaPink
+	cry_reverse Cry_NanamiBase
+	cry_reverse Cry_NanamiBlue
+	cry_reverse Cry_NanamiGold
+	cry_reverse Cry_NanamiPink
+	cry_reverse Cry_AtsumiBase
+	cry_reverse Cry_AtsumiBlue
+	cry_reverse Cry_AtsumiGold
+	cry_reverse Cry_AtsumiPink
+	cry_reverse Cry_KozueBase
+	cry_reverse Cry_KozueBlue
+	cry_reverse Cry_KozueGold
+	cry_reverse Cry_KozuePink
 	cry_reverse Cry_Vulpix
 	cry_reverse Cry_Ninetales
 	cry_reverse Cry_Jigglypuff

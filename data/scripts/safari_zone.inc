@@ -121,7 +121,7 @@ Route121_SafariZoneEntrance_Text_FirstTimeInfo:
 
 Route121_SafariZoneEntrance_Text_WouldYouLikeToPlay:
 	.string "Welcome to IDOL PARK!\p"
-	.string "Meet loads of IDOLS for just ¥2000!\n"
+	.string "Meet loads of IDOLS for just ¥500!\n"
 	.string "Would you like to go in?$"
 
 Route121_SafariZoneEntrance_Text_PlayAnotherTime:
@@ -133,7 +133,7 @@ Route121_SafariZoneEntrance_Text_NotEnoughMoney:
 	.string "Sorry.$"
 
 Route121_SafariZoneEntrance_Text_ThatWillBe500Please:
-	.string "That will be ¥2000, please.$"
+	.string "That will be ¥500, please.$"
 
 Route121_SafariZoneEntrance_Text_HereAreYourSafariBalls:
 	.string "Here are your SCOUT TICKETS.$"
@@ -279,7 +279,7 @@ SafariZone_Northeast_Text_Boy:
 	.string "decide who I should scout.$"
 
 SafariZone_Northeast_Text_Woman:
-	.string "I heard that you can see PIKACHU here.\n"
+	.string "I heard that you can see NANAMIBASE here.\n"
 	.string "Where might one be?$"
 
 SafariZone_Northeast_Text_Girl:

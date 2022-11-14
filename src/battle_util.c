@@ -589,7 +589,7 @@ void HandleAction_GoNear(void)
     gBattle_BG0_X = 0;
     gBattle_BG0_Y = 0;
 
-    gBattleStruct->safariCatchFactor += sGoNearCounterToCatchFactor[gBattleStruct->safariGoNearCounter];
+    gBattleStruct->safariCatchFactor += sGoNearCounterToCatchFactor[gBattleStruct->safariGoNearCounter]*2;
     if (gBattleStruct->safariCatchFactor > 20)
         gBattleStruct->safariCatchFactor = 20;
 
@@ -3238,7 +3238,9 @@ enum
 };
 
 #define TRY_EAT_CONFUSE_BERRY(flavor)                                                       \
-    if (gBattleMons[battlerId].hp <= gBattleMons[battlerId].maxHP / 2 && !moveTurn)         \
+    if ((gBattleMons[battlerId].hp <= gBattleMons[battlerId].maxHP / 4                      \
+      || (gBattleMons[battlerId].ability == ABILITY_GLUTTONY &&                             \
+        gBattleMons[battlerId].hp <= gBattleMons[battlerId].maxHP / 2)) && !moveTurn)       \
     {                                                                                       \
         PREPARE_FLAVOR_BUFFER(gBattleTextBuff1, flavor);                                    \
         gBattleMoveDamage = gBattleMons[battlerId].maxHP / battlerHoldEffectParam;          \

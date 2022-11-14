@@ -447,7 +447,7 @@ static const u8 sHarborMailDesc[] = _(
     "an IDOL.");
 
 static const u8 sGlitterMailDesc[] = _(
-    "A PIKACHU-print\n"
+    "A NANAMIBASE-print\n"
     "MAIL to be held by\n"
     "an IDOL.");
 
@@ -1143,9 +1143,9 @@ static const u8 sTM05Desc[] = _(
     "incoming IDOLS.");
 
 static const u8 sTM06Desc[] = _(
-    "Lets loose an\n"
-    "very loud shout\n"
-    "that causes damage.");
+    "Lets loose very\n"
+    "loud shout that\n"
+    "causes damage.");
 
 static const u8 sTM07Desc[] = _(
     "Creates a hailstorm\n"
@@ -1235,7 +1235,7 @@ static const u8 sTM23Desc[] = _(
 static const u8 sTM24Desc[] = _(
     "A powerful dazzling\n"
     "attack that may\n"
-    "cause paralysis.");
+    "lower ATTACK.");
 
 static const u8 sTM25Desc[] = _(
     "Strikes the foe\n"

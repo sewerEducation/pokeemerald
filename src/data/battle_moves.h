@@ -549,7 +549,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_PIN_MISSILE] =
     {
         .effect = EFFECT_MULTI_HIT,
-        .power = 250,
+        .power = 25,
         .type = TYPE_BUG,
         .accuracy = 85,
         .pp = 20,
@@ -1685,7 +1685,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .accuracy = 100,
         .pp = 20,
         .secondaryEffectChance = 0,
-        .target = MOVE_TARGET_BOTH,
+        .target = MOVE_TARGET_SELECTED,
         .priority = 1,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
     },
@@ -3292,7 +3292,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_ROCK_OUT] =
     {
         .effect = EFFECT_UPROAR,
-        .power = 50,
+        .power = 70,
         .type = TYPE_ROCK,
         .accuracy = 100,
         .pp = 10,
@@ -4168,7 +4168,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .accuracy = 75,
         .pp = 15,
         .secondaryEffectChance = 0,
-        .target = MOVE_TARGET_FOES_AND_ALLY,
+        .target = MOVE_TARGET_BOTH,
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MAGIC_COAT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_SOUND,
     },
@@ -4475,7 +4475,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_DAZZLING] =
     {
         .effect = EFFECT_ATTACK_DOWN_HIT,
-        .power = 80,
+        .power = 90,
         .type = TYPE_SWEET,
         .accuracy = 100,
         .pp = 15,

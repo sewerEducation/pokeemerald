@@ -691,7 +691,7 @@ const struct ContestPokemon gContestOpponents[] =
         .otId = 0xFFFF
     },
     [CONTEST_OPPONENT_KAY] = {
-        .species = SPECIES_PIDGEOTTO,
+        .species = SPECIES_KAORUBASE,
         .nickname = _("PIDEOT"),
         .trainerName = _("KAY"),
         .trainerGfxId = OBJ_EVENT_GFX_WOMAN_5,
@@ -999,7 +999,7 @@ const struct ContestPokemon gContestOpponents[] =
         .otId = 0xFFFF
     },
     [CONTEST_OPPONENT_CASSIDY] = {
-        .species = SPECIES_SANDSLASH,
+        .species = SPECIES_NANAMIPINK,
         .nickname = _("SHRAND"),
         .trainerName = _("CASSIDY"),
         .trainerGfxId = OBJ_EVENT_GFX_POKEFAN_F,

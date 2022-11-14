@@ -1,5 +1,5 @@
 gText_Birch_Welcome::
-	.string "Hi! Sorry to keep you waiting!\p"
+	@.string "Hi! Sorry to keep you waiting!\p"
 	.string "Welcome to the world of IDOLS!\p"
 	.string "My name is BIRCH.\p"
 	.string "But everyone calls me the IDOL\n"
@@ -44,15 +44,15 @@ gText_Birch_SoItsPlayer::
 
 gText_Birch_YourePlayer::
 	.string "Ah, okay!\p"
-	.string "You're {PLAYER}{KUN} who's moving to my\n"
-	.string "hometown of LITTLEROOT.\l"
-	.string "I get it now!\p"
+	@.string "You're {PLAYER}{KUN} who's moving to my\n"
+	@.string "hometown of LITTLEROOT.\l"
+	.string "You're {PLAYER}{KUN}, I get it now!\p"
 	.string "$"
 
 gText_Birch_AreYouReady::
-	.string "All right, are you ready?\p"
-	.string "Your very own adventure is about\n"
-	.string "to unfold.\p"
+	@.string "All right, are you ready?\p"
+	@.string "Your very own adventure is about\n"
+	@.string "to unfold.\p"
 	.string "Take courage, and leap into the\n"
 	.string "world of IDOLS where dreams,\l"
 	.string "adventure, and friendships await!\p"

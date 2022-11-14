@@ -31,7 +31,7 @@ BattleFrontier_ReceptionGate_EventScript_FirstTimeEntering::
 	setflag FLAG_SYS_B_DASH
 	message BattleFrontier_ReceptionGate_Text_WelcomeToBattleFrontier
 	waitmessage
-	multichoice 20, 10, MULTI_CHOOSE_IDOL_TYPE, TRUE
+	multichoice 23, 6, MULTI_CHOOSE_IDOL_TYPE, TRUE
 	switch VAR_RESULT
 	case 0, BattleFrontier_ReceptionGate_EventScript_GiveCool
 	case 1, BattleFrontier_ReceptionGate_EventScript_GiveCute
@@ -40,22 +40,22 @@ BattleFrontier_ReceptionGate_EventScript_FirstTimeEntering::
 
 BattleFrontier_ReceptionGate_EventScript_GiveCool::
 	givemon SPECIES_RINBASE, 50, ITEM_SPICE_APPLE
-	givemon SPECIES_UZUKIBASE, 50, ITEM_SPICE_APPLE
-	givemon SPECIES_MIOBASE, 50, ITEM_SPICE_APPLE
+	givemon SPECIES_NANAMIBASE, 50, ITEM_DRY_APPLE
+	givemon SPECIES_RIINABASE, 50, ITEM_SOUR_APPLE
 	goto BattleFrontier_ReceptionGate_EventScript_ScottScene
 	end
 
 BattleFrontier_ReceptionGate_EventScript_GiveCute::
 	givemon SPECIES_UZUKIBASE, 50, ITEM_SWEET_APPLE
-	givemon SPECIES_RINBASE, 50, ITEM_SWEET_APPLE
-	givemon SPECIES_MIOBASE, 50, ITEM_SWEET_APPLE
+	givemon SPECIES_KOZUEBASE, 50, ITEM_DRY_APPLE
+	givemon SPECIES_ATSUMIBASE, 50, ITEM_BITTER_APPLE
 	goto BattleFrontier_ReceptionGate_EventScript_ScottScene
 	end
 
 BattleFrontier_ReceptionGate_EventScript_GiveTough::
 	givemon SPECIES_MIOBASE, 50, ITEM_SOUR_APPLE
-	givemon SPECIES_MIRIABASE, 50, ITEM_SOUR_APPLE
-	givemon SPECIES_RINBASE, 50, ITEM_SOUR_APPLE
+	givemon SPECIES_MIRIABASE, 50, ITEM_SWEET_APPLE
+	givemon SPECIES_KAORUBASE, 50, ITEM_SPICE_APPLE
 	goto BattleFrontier_ReceptionGate_EventScript_ScottScene
 	end
 

@@ -455,6 +455,7 @@ AI_CBM_Attract:
 	get_ability AI_TARGET
 	if_equal ABILITY_OBLIVIOUS, Score_Minus10
 	get_gender AI_USER
+	goto AI_CBM_Attract_End
 	if_equal MON_MALE, AI_CBM_Attract_CheckIfTargetIsFemale
 	if_equal MON_FEMALE, AI_CBM_Attract_CheckIfTargetIsMale
 	goto Score_Minus10

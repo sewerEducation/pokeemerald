@@ -471,7 +471,7 @@ SafariZone_North_EventScript_ItemCalcium::
 	end
 
 SafariZone_Southwest_EventScript_ItemMaxRevive::
-	finditem ITEM_MAX_REVIVE
+	finditem ITEM_HM08_DIVE
 	end
 
 SafariZone_Northeast_EventScript_ItemNugget::

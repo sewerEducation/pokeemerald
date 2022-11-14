@@ -451,83 +451,83 @@ Cry_MiriaPink::
 	.incbin "sound/direct_sound_samples/cries/pidgey.bin"
 
 	.align 2
-Cry_Pidgeotto::
+Cry_KaoruBase::
 	.incbin "sound/direct_sound_samples/cries/pidgeotto.bin"
 
 	.align 2
-Cry_Pidgeot::
+Cry_KaoruBlue::
 	.incbin "sound/direct_sound_samples/cries/pidgeot.bin"
 
 	.align 2
-Cry_Rattata::
+Cry_KaoruGold::
 	.incbin "sound/direct_sound_samples/cries/rattata.bin"
 
 	.align 2
-Cry_Raticate::
+Cry_KaoruPink::
 	.incbin "sound/direct_sound_samples/cries/raticate.bin"
 
 	.align 2
-Cry_Spearow::
+Cry_RiinaBase::
 	.incbin "sound/direct_sound_samples/cries/spearow.bin"
 
 	.align 2
-Cry_Fearow::
+Cry_RiinaBlue::
 	.incbin "sound/direct_sound_samples/cries/fearow.bin"
 
 	.align 2
-Cry_Ekans::
+Cry_RiinaGold::
 	.incbin "sound/direct_sound_samples/cries/ekans.bin"
 
 	.align 2
-Cry_Arbok::
+Cry_RiinaPink::
 	.incbin "sound/direct_sound_samples/cries/arbok.bin"
 
 	.align 2
-Cry_Pikachu::
+Cry_NanamiBase::
 	.incbin "sound/direct_sound_samples/cries/pikachu.bin"
 
 	.align 2
-Cry_Raichu::
+Cry_NanamiBlue::
 	.incbin "sound/direct_sound_samples/cries/raichu.bin"
 
 	.align 2
-Cry_Sandshrew::
+Cry_NanamiGold::
 	.incbin "sound/direct_sound_samples/cries/sandshrew.bin"
 
 	.align 2
-Cry_Sandslash::
+Cry_NanamiPink::
 	.incbin "sound/direct_sound_samples/cries/sandslash.bin"
 
 	.align 2
-Cry_NidoranF::
+Cry_AtsumiBase::
 	.incbin "sound/direct_sound_samples/cries/nidoran_f.bin"
 
 	.align 2
-Cry_Nidorina::
+Cry_AtsumiBlue::
 	.incbin "sound/direct_sound_samples/cries/nidorina.bin"
 
 	.align 2
-Cry_Nidoqueen::
+Cry_AtsumiGold::
 	.incbin "sound/direct_sound_samples/cries/nidoqueen.bin"
 
 	.align 2
-Cry_NidoranM::
+Cry_AtsumiPink::
 	.incbin "sound/direct_sound_samples/cries/nidoran_m.bin"
 
 	.align 2
-Cry_Nidorino::
+Cry_KozueBase::
 	.incbin "sound/direct_sound_samples/cries/nidorino.bin"
 
 	.align 2
-Cry_Nidoking::
+Cry_KozueBlue::
 	.incbin "sound/direct_sound_samples/cries/nidoking.bin"
 
 	.align 2
-Cry_Clefairy::
+Cry_KozueGold::
 	.incbin "sound/direct_sound_samples/cries/clefairy.bin"
 
 	.align 2
-Cry_Clefable::
+Cry_KozuePink::
 	.incbin "sound/direct_sound_samples/cries/clefable.bin"
 
 	.align 2

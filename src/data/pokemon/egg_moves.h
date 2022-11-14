@@ -40,7 +40,7 @@ const u16 gEggMoves[] = {
               MOVE_METAL_GALE,
               MOVE_SOAK),
 
-    egg_moves(RATTATA,
+    egg_moves(KAORUGOLD,
               MOVE_SCREECH,
               MOVE_FLAME_WHEEL,
               MOVE_FURY_SWIPES,
@@ -50,7 +50,7 @@ const u16 gEggMoves[] = {
               MOVE_ROCK_OUT,
               MOVE_SWAGGER),
 
-    egg_moves(SPEAROW,
+    egg_moves(RIINABASE,
               MOVE_FEINT_ATTACK,
               MOVE_FALSE_SWIPE,
               MOVE_SCARY_FACE,
@@ -59,14 +59,14 @@ const u16 gEggMoves[] = {
               MOVE_ASTONISH,
               MOVE_SKY_ATTACK),
 
-    egg_moves(EKANS,
+    egg_moves(RIINAGOLD,
               MOVE_PURSUIT,
               MOVE_SLAM,
               MOVE_SPITE,
               MOVE_BEAT_UP,
               MOVE_POISON_FANG),
 
-    egg_moves(SANDSHREW,
+    egg_moves(NANAMIGOLD,
               MOVE_FLAIL,
               MOVE_SAFEGUARD,
               MOVE_COUNTER,
@@ -76,7 +76,7 @@ const u16 gEggMoves[] = {
               MOVE_SWORDS_DANCE,
               MOVE_CRUSH_CLAW),
 
-    egg_moves(NIDORAN_F,
+    egg_moves(ATSUMIBASE,
               MOVE_SUPERSONIC,
               MOVE_DISABLE,
               MOVE_TAKE_DOWN,
@@ -85,7 +85,7 @@ const u16 gEggMoves[] = {
               MOVE_COUNTER,
               MOVE_BEAT_UP),
 
-    egg_moves(NIDORAN_M,
+    egg_moves(ATSUMIPINK,
               MOVE_COUNTER,
               MOVE_DISABLE,
               MOVE_SUPERSONIC,
