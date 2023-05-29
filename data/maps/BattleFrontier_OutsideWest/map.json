@@ -335,10 +335,10 @@
   ],
   "warp_events": [
     {
-      "x": 42,
-      "y": 27,
+      "x": 11,
+      "y": 38,
       "elevation": 0,
-      "dest_map": "MAP_BATTLE_FRONTIER_BATTLE_PIKE_LOBBY",
+      "dest_map": "MAP_BATTLE_FRONTIER_BATTLE_FACTORY_LOBBY",
       "dest_warp_id": 0
     },
     {
@@ -349,10 +349,10 @@
       "dest_warp_id": 0
     },
     {
-      "x": 11,
-      "y": 38,
+      "x": 42,
+      "y": 27,
       "elevation": 0,
-      "dest_map": "MAP_BATTLE_FRONTIER_BATTLE_FACTORY_LOBBY",
+      "dest_map": "MAP_BATTLE_FRONTIER_BATTLE_PIKE_LOBBY",
       "dest_warp_id": 0
     },
     {
@@ -412,7 +412,9 @@
       "dest_warp_id": 0
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "sign",

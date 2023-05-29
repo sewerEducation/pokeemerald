@@ -3225,7 +3225,7 @@ const struct Item gItems[] =
 
     [ITEM_SS_TICKET] =
     {
-        .name = _("S.S. TICKET"),
+        .name = _("FERRY PASS"),
         .itemId = ITEM_SS_TICKET,
         .price = 0,
         .description = sSSTicketDesc,

@@ -88,10 +88,10 @@ BattleFrontier_ReceptionGate_EventScript_ScottScene::
 	waitmovement 0
 	msgbox BattleFrontier_ReceptionGate_Text_ScottGreatToSeeYouHere, MSGBOX_DEFAULT
 	closemessage
+	giveitem ITEM_SS_TICKET
 	applymovement LOCALID_SCOTT, BattleFrontier_ReceptionGate_Movement_ScottExit
 	waitmovement 0
 	removeobject LOCALID_SCOTT
-	giveitem ITEM_SS_TICKET
 	releaseall
 	end
 
@@ -372,7 +372,9 @@ BattleFrontier_ReceptionGate_Text_ScottGreatToSeeYouHere:
 	.string "Naturally, I hope you'll also experience\n"
 	.string "the pure essence of battling.\p"
 	.string "I also have my quarters here, so feel\n"
-	.string "free to visit if you have time.$"
+	.string "free to visit if you have time.\p"
+	.string "Oh and One last thing...\n"
+	.string "You'll want this. See ya around.$"
 
 BattleFrontier_ReceptionGate_Text_YourGuideToFacilities:
 	.string "I'm your guide to the various facilities\n"

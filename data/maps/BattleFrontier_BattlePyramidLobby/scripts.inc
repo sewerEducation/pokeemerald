@@ -754,7 +754,7 @@ BattleFrontier_BattlePyramidLobby_Text_HintTrapAbility:
 	.string "escape the power's clutches…$"
 
 BattleFrontier_BattlePyramidLobby_Text_HintIce:
-	.string "I see ICE-type IDOLS…\p"
+	.string "I see COLD-type IDOLS…\p"
 	.string "…And, I see your IDOLS fighting\n"
 	.string "the freezing effects of ice…$"
 

@@ -1003,7 +1003,7 @@ static const u8 sSuperRodDesc[] = _(
     "wild IDOLS.");
 
 static const u8 sSSTicketDesc[] = _(
-    "The ticket required\n"
+    "The pass required\n"
     "for sailing on a\n"
     "ferry.");
 
@@ -1150,7 +1150,7 @@ static const u8 sTM06Desc[] = _(
 static const u8 sTM07Desc[] = _(
     "Creates a hailstorm\n"
     "that damages all\n"
-    "types except ICE.");
+    "types except COLD.");
 
 static const u8 sTM08Desc[] = _(
     "Bulks up the body\n"
@@ -1169,7 +1169,7 @@ static const u8 sTM10Desc[] = _(
 
 static const u8 sTM11Desc[] = _(
     "Raises the power of\n"
-    "FIRE-type moves\n"
+    "HOT-type moves\n"
     "for 5 turns.");
 
 static const u8 sTM12Desc[] = _(
@@ -1204,7 +1204,7 @@ static const u8 sTM17Desc[] = _(
 
 static const u8 sTM18Desc[] = _(
     "Raises the power of\n"
-    "WATER-type moves\n"
+    "OCEAN-type moves\n"
     "for 5 turns.");
 
 static const u8 sTM19Desc[] = _(

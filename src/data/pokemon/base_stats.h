@@ -169,10 +169,10 @@ const struct BaseStats gBaseStats[] =
     [SPECIES_RINBASE] =
     {
         .baseHP        = 45,
-        .baseAttack    = 65,
+        .baseAttack    = 70,
         .baseDefense   = 20,
         .baseSpeed     = 75,
-        .baseSpAttack  = 80,
+        .baseSpAttack  = 75,
         .baseSpDefense = 60,
         .type1 = TYPE_COLD,
         .type2 = TYPE_COLD,
