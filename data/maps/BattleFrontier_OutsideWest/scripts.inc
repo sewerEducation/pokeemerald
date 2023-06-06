@@ -329,16 +329,16 @@ BattleFrontier_OutsideWest_Text_ThisIsBattleTower:
 
 BattleFrontier_OutsideWest_Text_MayISeeYourTicket:
 	.string "Hello, are you here for the ferry?\n"
-	.string "May I see your TICKET?$"
+	.string "May I see your FERRY PASS?$"
 
 BattleFrontier_OutsideWest_Text_MustHaveTicketToBoard:
-	.string "{PLAYER} doesn't have the TICKET…\p"
+	.string "{PLAYER} doesn't have the FERRY PASS…\p"
 	.string "I'm terribly sorry.\p"
-	.string "You must have a TICKET to board\n"
+	.string "You must have a PASS to board\n"
 	.string "the ferry.$"
 
 BattleFrontier_OutsideWest_Text_WhereWouldYouLikeToGo:
-	.string "{PLAYER} flashed the TICKET.\p"
+	.string "{PLAYER} flashed the FERRY PASS.\p"
 	.string "Perfect! That's all you need!\p"
 	.string "And where would you like to go?$"
 
@@ -516,7 +516,7 @@ BattleFrontier_OutsideWest_Text_FansOverThereUsedToBeTrainers:
 	.string "They were so thoroughly whipped,\n"
 	.string "they became smitten by the PRODUCER.\p"
 	.string "Now they're just fans of the PRODUCER.\n"
-	.string "They go cheer for their idol at the\l"
+	.string "They go cheer for their hero at the\l"
 	.string "BATTLE DOME every day now.$"
 
 BattleFrontier_OutsideWest_Text_MonWithLongTailInFrontier:

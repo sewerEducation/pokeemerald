@@ -1375,7 +1375,7 @@ static const u8 sCovetDescription[] = _(
 
 static const u8 sVoltTackleDescription[] = _(
     "Sparkle so brightly with\n"
-    "cuteness it hurst the foe.");
+    "cuteness it hurts the foe.");
 
 static const u8 sMagicalLeafDescription[] = _(
     "Attacks with a strange leaf\n"

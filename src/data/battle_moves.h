@@ -4254,7 +4254,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_LUNGE] =
     {
         .effect = EFFECT_SPEED_DOWN_HIT,
-        .power = 90,
+        .power = 80,
         .type = TYPE_BUG,
         .accuracy = 100,
         .pp = 15,
