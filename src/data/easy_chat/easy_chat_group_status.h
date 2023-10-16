@@ -63,7 +63,7 @@ const u8 gEasyChatWord_PoisonPoint[] = _("POISON POINT");
 const u8 gEasyChatWord_Dragon[] = _("DRAGON");
 const u8 gEasyChatWord_Trace[] = _("TRACE");
 const u8 gEasyChatWord_Oblivious[] = _("OBLIVIOUS");
-const u8 gEasyChatWord_Truant[] = _("TRUANT");
+const u8 gEasyChatWord_Nervous[] = _("NERVOUS");
 const u8 gEasyChatWord_RunAway[] = _("RUN AWAY");
 const u8 gEasyChatWord_StickyHold[] = _("STICKY HOLD");
 const u8 gEasyChatWord_CloudNine[] = _("CLOUD NINE");
@@ -435,7 +435,7 @@ const struct EasyChatWordInfo gEasyChatGroup_Status[] = {
         .enabled = TRUE,
     },
     {
-        .text = gEasyChatWord_Truant,
+        .text = gEasyChatWord_Nervous,
         .alphabeticalOrder = 61,
         .enabled = TRUE,
     },

@@ -78,7 +78,7 @@
 #define OBJ_EVENT_GFX_NOLAND                      74
 #define OBJ_EVENT_GFX_LUCY                        75
 #define OBJ_EVENT_GFX_UNUSED_NATU_DOLL            76
-#define OBJ_EVENT_GFX_UNUSED_MAGNEMITE_DOLL       77
+#define OBJ_EVENT_GFX_UNUSED_SANABASE_DOLL       77
 #define OBJ_EVENT_GFX_UNUSED_SQUIRTLE_DOLL        78
 #define OBJ_EVENT_GFX_UNUSED_WOOPER_DOLL          79
 #define OBJ_EVENT_GFX_UNUSED_NANAMIBASE_DOLL         80
@@ -150,8 +150,8 @@
 #define OBJ_EVENT_GFX_CYNDAQUIL_DOLL             146
 #define OBJ_EVENT_GFX_CHIKORITA_DOLL             147
 #define OBJ_EVENT_GFX_TOTODILE_DOLL              148
-#define OBJ_EVENT_GFX_JIGGLYPUFF_DOLL            149
-#define OBJ_EVENT_GFX_MEOWTH_DOLL                150
+#define OBJ_EVENT_GFX_NINAGOLD_DOLL            149
+#define OBJ_EVENT_GFX_REINAPINK_DOLL                150
 #define OBJ_EVENT_GFX_KOZUEGOLD_DOLL              151
 #define OBJ_EVENT_GFX_DITTO_DOLL                 152
 #define OBJ_EVENT_GFX_SMOOCHUM_DOLL              153

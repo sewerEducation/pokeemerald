@@ -996,28 +996,28 @@ const struct Decoration gDecorations[] =
         .tiles = DecorGfx_TOTODILE_DOLL,
     },
 
-    [DECOR_JIGGLYPUFF_DOLL] =
+    [DECOR_NINAGOLD_DOLL] =
     {
-        .id = DECOR_JIGGLYPUFF_DOLL,
-        .name = _("JIGGLYPUFF DOLL"),
+        .id = DECOR_NINAGOLD_DOLL,
+        .name = _("NINAGOLD DOLL"),
         .permission = DECORPERM_SPRITE,
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_JIGGLYPUFF_DOLL,
-        .tiles = DecorGfx_JIGGLYPUFF_DOLL,
+        .description = DecorDesc_NINAGOLD_DOLL,
+        .tiles = DecorGfx_NINAGOLD_DOLL,
     },
 
-    [DECOR_MEOWTH_DOLL] =
+    [DECOR_REINAPINK_DOLL] =
     {
-        .id = DECOR_MEOWTH_DOLL,
-        .name = _("MEOWTH DOLL"),
+        .id = DECOR_REINAPINK_DOLL,
+        .name = _("REINAPINK DOLL"),
         .permission = DECORPERM_SPRITE,
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_MEOWTH_DOLL,
-        .tiles = DecorGfx_MEOWTH_DOLL,
+        .description = DecorDesc_REINAPINK_DOLL,
+        .tiles = DecorGfx_REINAPINK_DOLL,
     },
 
     [DECOR_KOZUEGOLD_DOLL] =

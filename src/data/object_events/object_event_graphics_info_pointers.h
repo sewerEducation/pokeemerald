@@ -75,7 +75,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Spenser;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Noland;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lucy;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedNatuDoll;
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedMagnemiteDoll;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedSanaBaseDoll;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedSquirtleDoll;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedWooperDoll;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedPikachuDoll;
@@ -147,8 +147,8 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TogepiDoll;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CyndaquilDoll;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ChikoritaDoll;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TotodileDoll;
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_JigglypuffDoll;
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MeowthDoll;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_NinaGoldDoll;
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ReinaPinkDoll;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KozueGoldDoll;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DittoDoll;
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SmoochumDoll;
@@ -324,7 +324,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_NOLAND] =                   &gObjectEventGraphicsInfo_Noland,
     [OBJ_EVENT_GFX_LUCY] =                     &gObjectEventGraphicsInfo_Lucy,
     [OBJ_EVENT_GFX_UNUSED_NATU_DOLL] =         &gObjectEventGraphicsInfo_UnusedNatuDoll,
-    [OBJ_EVENT_GFX_UNUSED_MAGNEMITE_DOLL] =    &gObjectEventGraphicsInfo_UnusedMagnemiteDoll,
+    [OBJ_EVENT_GFX_UNUSED_SANABASE_DOLL] =    &gObjectEventGraphicsInfo_UnusedSanaBaseDoll,
     [OBJ_EVENT_GFX_UNUSED_SQUIRTLE_DOLL] =     &gObjectEventGraphicsInfo_UnusedSquirtleDoll,
     [OBJ_EVENT_GFX_UNUSED_WOOPER_DOLL] =       &gObjectEventGraphicsInfo_UnusedWooperDoll,
     [OBJ_EVENT_GFX_UNUSED_NANAMIBASE_DOLL] =      &gObjectEventGraphicsInfo_UnusedPikachuDoll,
@@ -396,8 +396,8 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_CYNDAQUIL_DOLL] =           &gObjectEventGraphicsInfo_CyndaquilDoll,
     [OBJ_EVENT_GFX_CHIKORITA_DOLL] =           &gObjectEventGraphicsInfo_ChikoritaDoll,
     [OBJ_EVENT_GFX_TOTODILE_DOLL] =            &gObjectEventGraphicsInfo_TotodileDoll,
-    [OBJ_EVENT_GFX_JIGGLYPUFF_DOLL] =          &gObjectEventGraphicsInfo_JigglypuffDoll,
-    [OBJ_EVENT_GFX_MEOWTH_DOLL] =              &gObjectEventGraphicsInfo_MeowthDoll,
+    [OBJ_EVENT_GFX_NINAGOLD_DOLL] =          &gObjectEventGraphicsInfo_NinaGoldDoll,
+    [OBJ_EVENT_GFX_REINAPINK_DOLL] =              &gObjectEventGraphicsInfo_ReinaPinkDoll,
     [OBJ_EVENT_GFX_KOZUEGOLD_DOLL] =            &gObjectEventGraphicsInfo_KozueGoldDoll,
     [OBJ_EVENT_GFX_DITTO_DOLL] =               &gObjectEventGraphicsInfo_DittoDoll,
     [OBJ_EVENT_GFX_SMOOCHUM_DOLL] =            &gObjectEventGraphicsInfo_SmoochumDoll,

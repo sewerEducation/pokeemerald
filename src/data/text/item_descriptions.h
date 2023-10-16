@@ -452,7 +452,7 @@ static const u8 sGlitterMailDesc[] = _(
     "an IDOL.");
 
 static const u8 sMechMailDesc[] = _(
-    "A MAGNEMITE-print\n"
+    "A SANABASE-print\n"
     "MAIL to be held by\n"
     "an IDOL.");
 

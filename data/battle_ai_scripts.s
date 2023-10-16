@@ -2809,7 +2809,7 @@ AI_DoubleBattleAllHittingGroundMove:
 
 AI_DoubleBattleSkillSwap:
 	get_ability AI_USER
-	if_equal ABILITY_TRUANT, Score_Plus5
+	if_equal ABILITY_NERVOUS, Score_Plus5
 	get_ability AI_TARGET
 	if_equal ABILITY_SHADOW_TAG, Score_Plus2
 	if_equal ABILITY_PURE_POWER, Score_Plus2
@@ -2856,7 +2856,7 @@ AI_TryStatusMoveOnAlly:
 
 AI_TrySkillSwapOnAlly:
 	get_ability AI_TARGET
-	if_equal ABILITY_TRUANT, Score_Plus10
+	if_equal ABILITY_NERVOUS, Score_Plus10
 	get_ability AI_USER
 	if_not_equal ABILITY_LEVITATE, AI_TrySkillSwapOnAlly2
 	get_ability AI_TARGET

@@ -582,7 +582,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_TEETER_DANCE)
                                 | TUTOR(MOVE_FEATHER_DANCE)),
 
-    [SPECIES_VULPIX]           = (TUTOR(MOVE_BODY_SLAM)
+    [SPECIES_NINABASE]           = (TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_SUBSTITUTE)
@@ -592,7 +592,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_HYDRO_CANNON)
                                 | TUTOR(MOVE_TEETER_DANCE)),
 
-    [SPECIES_NINETALES]        = (TUTOR(MOVE_BODY_SLAM)
+    [SPECIES_NINABLUE]        = (TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_SUBSTITUTE)
@@ -602,7 +602,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_HYDRO_CANNON)
                                 | TUTOR(MOVE_TEETER_DANCE)),
 
-    [SPECIES_JIGGLYPUFF]       = (TUTOR(MOVE_ROLE_PLAY)
+    [SPECIES_NINAGOLD]       = (TUTOR(MOVE_ROLE_PLAY)
                                 | TUTOR(MOVE_ROCK_OUT)
                                 | TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
@@ -625,7 +625,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_BLAST_BURN)
                                 | TUTOR(MOVE_FLATTER)),
 
-    [SPECIES_WIGGLYTUFF]       = (TUTOR(MOVE_ROLE_PLAY)
+    [SPECIES_NINAPINK]       = (TUTOR(MOVE_ROLE_PLAY)
                                 | TUTOR(MOVE_ROCK_OUT)
                                 | TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
@@ -648,7 +648,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_BLAST_BURN)
                                 | TUTOR(MOVE_FLATTER)),
 
-    [SPECIES_ZUBAT]            = (TUTOR(MOVE_DOUBLE_EDGE)
+    [SPECIES_SACHIKOBASE]            = (TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SING)
@@ -657,7 +657,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_HYDRO_CANNON)
                                 | TUTOR(MOVE_TEETER_DANCE)),
 
-    [SPECIES_GOLBAT]           = (TUTOR(MOVE_DOUBLE_EDGE)
+    [SPECIES_SACHIKOBLUE]           = (TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SING)
@@ -666,7 +666,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_HYDRO_CANNON)
                                 | TUTOR(MOVE_TEETER_DANCE)),
 
-    [SPECIES_ODDISH]           = (TUTOR(MOVE_SWORDS_DANCE)
+    [SPECIES_SACHIKOGOLD]           = (TUTOR(MOVE_SWORDS_DANCE)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_SUBSTITUTE)
@@ -675,7 +675,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HYDRO_CANNON)),
 
-    [SPECIES_GLOOM]            = (TUTOR(MOVE_SWORDS_DANCE)
+    [SPECIES_SACHIKOPINK]            = (TUTOR(MOVE_SWORDS_DANCE)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_SUBSTITUTE)
@@ -684,7 +684,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HYDRO_CANNON)),
 
-    [SPECIES_VILEPLUME]        = (TUTOR(MOVE_SWORDS_DANCE)
+    [SPECIES_LAYLABASE]        = (TUTOR(MOVE_SWORDS_DANCE)
                                 | TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
@@ -694,19 +694,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HYDRO_CANNON)),
 
-    [SPECIES_PARAS]            = (TUTOR(MOVE_SWORDS_DANCE)
-                                | TUTOR(MOVE_BODY_SLAM)
-                                | TUTOR(MOVE_DOUBLE_EDGE)
-                                | TUTOR(MOVE_GRASS_WHISTLE)
-                                | TUTOR(MOVE_MIMIC)
-                                | TUTOR(MOVE_SUBSTITUTE)
-                                | TUTOR(MOVE_SING)
-                                | TUTOR(MOVE_ENDURE)
-                                | TUTOR(MOVE_SWAGGER)
-                                | TUTOR(MOVE_HYDRO_CANNON)
-                                | TUTOR(MOVE_FURY_CUTTER)),
-
-    [SPECIES_PARASECT]         = (TUTOR(MOVE_SWORDS_DANCE)
+    [SPECIES_LAYLABLUE]            = (TUTOR(MOVE_SWORDS_DANCE)
                                 | TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_GRASS_WHISTLE)
@@ -718,7 +706,19 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_HYDRO_CANNON)
                                 | TUTOR(MOVE_FURY_CUTTER)),
 
-    [SPECIES_VENONAT]          = (TUTOR(MOVE_DOUBLE_EDGE)
+    [SPECIES_LAYLAGOLD]         = (TUTOR(MOVE_SWORDS_DANCE)
+                                | TUTOR(MOVE_BODY_SLAM)
+                                | TUTOR(MOVE_DOUBLE_EDGE)
+                                | TUTOR(MOVE_GRASS_WHISTLE)
+                                | TUTOR(MOVE_MIMIC)
+                                | TUTOR(MOVE_SUBSTITUTE)
+                                | TUTOR(MOVE_SING)
+                                | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_SWAGGER)
+                                | TUTOR(MOVE_HYDRO_CANNON)
+                                | TUTOR(MOVE_FURY_CUTTER)),
+
+    [SPECIES_LAYLAPINK]          = (TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SING)
@@ -727,7 +727,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_HYDRO_CANNON)
                                 | TUTOR(MOVE_TEETER_DANCE)),
 
-    [SPECIES_VENOMOTH]         = (TUTOR(MOVE_DOUBLE_EDGE)
+    [SPECIES_REINABASE]         = (TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SING)
@@ -736,7 +736,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_HYDRO_CANNON)
                                 | TUTOR(MOVE_TEETER_DANCE)),
 
-    [SPECIES_DIGLETT]          = (TUTOR(MOVE_BODY_SLAM)
+    [SPECIES_REINABLUE]          = (TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_PETAL_DANCE)
@@ -747,7 +747,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HYDRO_CANNON)),
 
-    [SPECIES_DUGTRIO]          = (TUTOR(MOVE_BODY_SLAM)
+    [SPECIES_REINAGOLD]          = (TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_PETAL_DANCE)
@@ -758,7 +758,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HYDRO_CANNON)),
 
-    [SPECIES_MEOWTH]           = (TUTOR(MOVE_BODY_SLAM)
+    [SPECIES_REINAPINK]           = (TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_FRENZY_PLANT)
@@ -773,7 +773,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_TEETER_DANCE)
                                 | TUTOR(MOVE_FEATHER_DANCE)),
 
-    [SPECIES_PERSIAN]          = (TUTOR(MOVE_BODY_SLAM)
+    [SPECIES_MOMOKABASE]          = (TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_FRENZY_PLANT)
@@ -788,7 +788,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_TEETER_DANCE)
                                 | TUTOR(MOVE_FEATHER_DANCE)),
 
-    [SPECIES_PSYDUCK]          = (TUTOR(MOVE_ROLE_PLAY)
+    [SPECIES_MOMOKABLUE]          = (TUTOR(MOVE_ROLE_PLAY)
                                 | TUTOR(MOVE_ROCK_OUT)
                                 | TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
@@ -807,7 +807,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_HYDRO_CANNON)
                                 | TUTOR(MOVE_TEETER_DANCE)),
 
-    [SPECIES_GOLDUCK]          = (TUTOR(MOVE_ROLE_PLAY)
+    [SPECIES_MOMOKAGOLD]          = (TUTOR(MOVE_ROLE_PLAY)
                                 | TUTOR(MOVE_ROCK_OUT)
                                 | TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
@@ -827,7 +827,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_TEETER_DANCE)
                                 | TUTOR(MOVE_FURY_CUTTER)),
 
-    [SPECIES_MANKEY]           = (TUTOR(MOVE_ROLE_PLAY)
+    [SPECIES_MOMOKAPINK]           = (TUTOR(MOVE_ROLE_PLAY)
                                 | TUTOR(MOVE_ROCK_OUT)
                                 | TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
@@ -850,7 +850,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_BLAST_BURN)
                                 | TUTOR(MOVE_FLATTER)),
 
-    [SPECIES_PRIMEAPE]         = (TUTOR(MOVE_ROLE_PLAY)
+    [SPECIES_ARISUBASE]         = (TUTOR(MOVE_ROLE_PLAY)
                                 | TUTOR(MOVE_ROCK_OUT)
                                 | TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
@@ -873,7 +873,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_BLAST_BURN)
                                 | TUTOR(MOVE_FLATTER)),
 
-    [SPECIES_GROWLITHE]        = (TUTOR(MOVE_BODY_SLAM)
+    [SPECIES_ARISUBLUE]        = (TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_SUBSTITUTE)
@@ -883,7 +883,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_HYDRO_CANNON)
                                 | TUTOR(MOVE_TEETER_DANCE)),
 
-    [SPECIES_ARCANINE]         = (TUTOR(MOVE_BODY_SLAM)
+    [SPECIES_ARISUGOLD]         = (TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_SUBSTITUTE)
@@ -893,7 +893,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_HYDRO_CANNON)
                                 | TUTOR(MOVE_TEETER_DANCE)),
 
-    [SPECIES_POLIWAG]          = (TUTOR(MOVE_BODY_SLAM)
+    [SPECIES_ARISUPINK]          = (TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_SUBSTITUTE)
@@ -904,7 +904,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_HYDRO_CANNON)
                                 | TUTOR(MOVE_FEATHER_DANCE)),
 
-    [SPECIES_POLIWHIRL]        = (TUTOR(MOVE_ROLE_PLAY)
+    [SPECIES_AIRIBASE]        = (TUTOR(MOVE_ROLE_PLAY)
                                 | TUTOR(MOVE_ROCK_OUT)
                                 | TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
@@ -922,7 +922,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_HYDRO_CANNON)
                                 | TUTOR(MOVE_FEATHER_DANCE)),
 
-    [SPECIES_POLIWRATH]        = (TUTOR(MOVE_ROLE_PLAY)
+    [SPECIES_AIRIBLUE]        = (TUTOR(MOVE_ROLE_PLAY)
                                 | TUTOR(MOVE_ROCK_OUT)
                                 | TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
@@ -941,7 +941,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_HYDRO_CANNON)
                                 | TUTOR(MOVE_FEATHER_DANCE)),
 
-    [SPECIES_ABRA]             = (TUTOR(MOVE_ROLE_PLAY)
+    [SPECIES_AIRIGOLD]             = (TUTOR(MOVE_ROLE_PLAY)
                                 | TUTOR(MOVE_ROCK_OUT)
                                 | TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
@@ -962,7 +962,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_BLAST_BURN)
                                 | TUTOR(MOVE_FLATTER)),
 
-    [SPECIES_KADABRA]          = (TUTOR(MOVE_ROLE_PLAY)
+    [SPECIES_AIRIPINK]          = (TUTOR(MOVE_ROLE_PLAY)
                                 | TUTOR(MOVE_ROCK_OUT)
                                 | TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
@@ -983,7 +983,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_BLAST_BURN)
                                 | TUTOR(MOVE_FLATTER)),
 
-    [SPECIES_ALAKAZAM]         = (TUTOR(MOVE_ROLE_PLAY)
+    [SPECIES_MINAMIBASE]         = (TUTOR(MOVE_ROLE_PLAY)
                                 | TUTOR(MOVE_ROCK_OUT)
                                 | TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
@@ -1004,7 +1004,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_BLAST_BURN)
                                 | TUTOR(MOVE_FLATTER)),
 
-    [SPECIES_MACHOP]           = (TUTOR(MOVE_ROLE_PLAY)
+    [SPECIES_MINAMIBLUE]           = (TUTOR(MOVE_ROLE_PLAY)
                                 | TUTOR(MOVE_ROCK_OUT)
                                 | TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
@@ -1024,7 +1024,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_BLAST_BURN)
                                 | TUTOR(MOVE_FLATTER)),
 
-    [SPECIES_MACHOKE]          = (TUTOR(MOVE_ROLE_PLAY)
+    [SPECIES_MINAMIGOLD]          = (TUTOR(MOVE_ROLE_PLAY)
                                 | TUTOR(MOVE_ROCK_OUT)
                                 | TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
@@ -1044,7 +1044,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_BLAST_BURN)
                                 | TUTOR(MOVE_FLATTER)),
 
-    [SPECIES_MACHAMP]          = (TUTOR(MOVE_ROLE_PLAY)
+    [SPECIES_MINAMIPINK]          = (TUTOR(MOVE_ROLE_PLAY)
                                 | TUTOR(MOVE_ROCK_OUT)
                                 | TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
@@ -1064,7 +1064,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_BLAST_BURN)
                                 | TUTOR(MOVE_FLATTER)),
 
-    [SPECIES_BELLSPROUT]       = (TUTOR(MOVE_SWORDS_DANCE)
+    [SPECIES_ANASTASIABASE]       = (TUTOR(MOVE_SWORDS_DANCE)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_SUBSTITUTE)
@@ -1073,7 +1073,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HYDRO_CANNON)),
 
-    [SPECIES_WEEPINBELL]       = (TUTOR(MOVE_SWORDS_DANCE)
+    [SPECIES_ANASTASIABLUE]       = (TUTOR(MOVE_SWORDS_DANCE)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_SUBSTITUTE)
@@ -1082,7 +1082,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HYDRO_CANNON)),
 
-    [SPECIES_VICTREEBEL]       = (TUTOR(MOVE_SWORDS_DANCE)
+    [SPECIES_ANASTASIAGOLD]       = (TUTOR(MOVE_SWORDS_DANCE)
                                 | TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
@@ -1092,7 +1092,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HYDRO_CANNON)),
 
-    [SPECIES_TENTACOOL]        = (TUTOR(MOVE_SWORDS_DANCE)
+    [SPECIES_ANASTASIAPINK]        = (TUTOR(MOVE_SWORDS_DANCE)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_SUBSTITUTE)
@@ -1102,7 +1102,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HYDRO_CANNON)),
 
-    [SPECIES_TENTACRUEL]       = (TUTOR(MOVE_SWORDS_DANCE)
+    [SPECIES_HIJIRIBASE]       = (TUTOR(MOVE_SWORDS_DANCE)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_SUBSTITUTE)
@@ -1112,7 +1112,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HYDRO_CANNON)),
 
-    [SPECIES_GEODUDE]          = (TUTOR(MOVE_ROLE_PLAY)
+    [SPECIES_HIJIRIBLUE]          = (TUTOR(MOVE_ROLE_PLAY)
                                 | TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_GRASS_WHISTLE)
@@ -1132,7 +1132,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FEATHER_DANCE)
                                 | TUTOR(MOVE_FLATTER)),
 
-    [SPECIES_GRAVELER]         = (TUTOR(MOVE_ROLE_PLAY)
+    [SPECIES_HIJIRIGOLD]         = (TUTOR(MOVE_ROLE_PLAY)
                                 | TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_GRASS_WHISTLE)
@@ -1152,7 +1152,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FEATHER_DANCE)
                                 | TUTOR(MOVE_FLATTER)),
 
-    [SPECIES_GOLEM]            = (TUTOR(MOVE_ROLE_PLAY)
+    [SPECIES_HIJIRIPINK]            = (TUTOR(MOVE_ROLE_PLAY)
                                 | TUTOR(MOVE_ROCK_OUT)
                                 | TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
@@ -1174,7 +1174,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FLATTER)
                                 | TUTOR(MOVE_FURY_CUTTER)),
 
-    [SPECIES_PONYTA]           = (TUTOR(MOVE_BODY_SLAM)
+    [SPECIES_RISABASE]           = (TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_SUBSTITUTE)
@@ -1184,7 +1184,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_HYDRO_CANNON)
                                 | TUTOR(MOVE_TEETER_DANCE)),
 
-    [SPECIES_RAPIDASH]         = (TUTOR(MOVE_BODY_SLAM)
+    [SPECIES_RISABLUE]         = (TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_SUBSTITUTE)
@@ -1194,7 +1194,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_HYDRO_CANNON)
                                 | TUTOR(MOVE_TEETER_DANCE)),
 
-    [SPECIES_SLOWPOKE]         = (TUTOR(MOVE_BODY_SLAM)
+    [SPECIES_RISAGOLD]         = (TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_FRENZY_PLANT)
@@ -1209,7 +1209,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_HYDRO_CANNON)
                                 | TUTOR(MOVE_TEETER_DANCE)),
 
-    [SPECIES_SLOWBRO]          = (TUTOR(MOVE_ROLE_PLAY)
+    [SPECIES_RISAPINK]          = (TUTOR(MOVE_ROLE_PLAY)
                                 | TUTOR(MOVE_ROCK_OUT)
                                 | TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
@@ -1231,7 +1231,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_TEETER_DANCE)
                                 | TUTOR(MOVE_FURY_CUTTER)),
 
-    [SPECIES_MAGNEMITE]        = (TUTOR(MOVE_DOUBLE_EDGE)
+    [SPECIES_SANABASE]        = (TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_DEVIL_WALTZ)
                                 | TUTOR(MOVE_SUBSTITUTE)
@@ -1242,7 +1242,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_HYDRO_CANNON)
                                 | TUTOR(MOVE_TEETER_DANCE)),
 
-    [SPECIES_MAGNETON]         = (TUTOR(MOVE_DOUBLE_EDGE)
+    [SPECIES_SANABLUE]         = (TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_DEVIL_WALTZ)
                                 | TUTOR(MOVE_SUBSTITUTE)
@@ -1253,7 +1253,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_HYDRO_CANNON)
                                 | TUTOR(MOVE_TEETER_DANCE)),
 
-    [SPECIES_FARFETCHD]        = (TUTOR(MOVE_SWORDS_DANCE)
+    [SPECIES_SANAGOLD]        = (TUTOR(MOVE_SWORDS_DANCE)
                                 | TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
@@ -1266,7 +1266,7 @@ static const u32 sTutorLearnsets[] =
                                 | TUTOR(MOVE_HYDRO_CANNON)
                                 | TUTOR(MOVE_TEETER_DANCE)),
 
-    [SPECIES_DODUO]            = (TUTOR(MOVE_BODY_SLAM)
+    [SPECIES_SANAPINK]            = (TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_SUBSTITUTE)

@@ -801,7 +801,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM07_WATERFALL)
                                         | TMHM(HM08_DIVE)),
 
-    [SPECIES_VULPIX]      = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
+    [SPECIES_NINABASE]      = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
                                         | TMHM(TM02_TWISTER)
                                         | TMHM(TM03_BUBBLE_BEAM)
                                         | TMHM(TM04_CALM_MIND)
@@ -860,7 +860,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM07_WATERFALL)
                                         | TMHM(HM08_DIVE)),
 
-    [SPECIES_NINETALES]   = TMHM_LEARNSET(TMHM(TM05_SPIKES)
+    [SPECIES_NINABLUE]   = TMHM_LEARNSET(TMHM(TM05_SPIKES)
                                         | TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM10_DOUBLE_SLAP)
                                         | TMHM(TM11_SUNNY_DAY)
@@ -880,7 +880,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM45_SLEEP_TALK)
                                         | TMHM(TM50_OVERHEAT)),
 
-    [SPECIES_JIGGLYPUFF]  = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
+    [SPECIES_NINAGOLD]  = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
                                         | TMHM(TM03_BUBBLE_BEAM)
                                         | TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM10_DOUBLE_SLAP)
@@ -913,7 +913,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM05_FLASH)),
 
-    [SPECIES_WIGGLYTUFF]  = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
+    [SPECIES_NINAPINK]  = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
                                         | TMHM(TM03_BUBBLE_BEAM)
                                         | TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM10_DOUBLE_SLAP)
@@ -947,7 +947,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM05_FLASH)),
 
-    [SPECIES_ZUBAT]       = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
+    [SPECIES_SACHIKOBASE]       = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
                                         | TMHM(TM02_TWISTER)
                                         | TMHM(TM03_BUBBLE_BEAM)
                                         | TMHM(TM04_CALM_MIND)
@@ -1006,7 +1006,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM07_WATERFALL)
                                         | TMHM(HM08_DIVE)),
 
-    [SPECIES_GOLBAT]      = TMHM_LEARNSET(TMHM(TM06_HYPER_VOICE)
+    [SPECIES_SACHIKOBLUE]      = TMHM_LEARNSET(TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM10_DOUBLE_SLAP)
                                         | TMHM(TM11_SUNNY_DAY)
                                         | TMHM(TM12_TAUNT)
@@ -1029,7 +1029,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM47_LOW_KICK)
                                         | TMHM(TM49_SNATCH)),
 
-    [SPECIES_ODDISH]      = TMHM_LEARNSET(TMHM(TM06_HYPER_VOICE)
+    [SPECIES_SACHIKOGOLD]      = TMHM_LEARNSET(TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM09_DRAIN_KISS)
                                         | TMHM(TM10_DOUBLE_SLAP)
                                         | TMHM(TM11_SUNNY_DAY)
@@ -1047,7 +1047,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM05_FLASH)),
 
-    [SPECIES_GLOOM]       = TMHM_LEARNSET(TMHM(TM06_HYPER_VOICE)
+    [SPECIES_SACHIKOPINK]       = TMHM_LEARNSET(TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM09_DRAIN_KISS)
                                         | TMHM(TM10_DOUBLE_SLAP)
                                         | TMHM(TM11_SUNNY_DAY)
@@ -1065,7 +1065,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM05_FLASH)),
 
-    [SPECIES_VILEPLUME]   = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
+    [SPECIES_LAYLABASE]   = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
                                         | TMHM(TM02_TWISTER)
                                         | TMHM(TM03_BUBBLE_BEAM)
                                         | TMHM(TM04_CALM_MIND)
@@ -1124,7 +1124,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM07_WATERFALL)
                                         | TMHM(HM08_DIVE)),
 
-    [SPECIES_PARAS]       = TMHM_LEARNSET(TMHM(TM06_HYPER_VOICE)
+    [SPECIES_LAYLABLUE]       = TMHM_LEARNSET(TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM09_DRAIN_KISS)
                                         | TMHM(TM10_DOUBLE_SLAP)
                                         | TMHM(TM11_SUNNY_DAY)
@@ -1146,7 +1146,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM05_FLASH)
                                         | TMHM(HM06_ROCK_SMASH)),
 
-    [SPECIES_PARASECT]    = TMHM_LEARNSET(TMHM(TM06_HYPER_VOICE)
+    [SPECIES_LAYLAGOLD]    = TMHM_LEARNSET(TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM09_DRAIN_KISS)
                                         | TMHM(TM10_DOUBLE_SLAP)
                                         | TMHM(TM11_SUNNY_DAY)
@@ -1169,7 +1169,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM05_FLASH)
                                         | TMHM(HM06_ROCK_SMASH)),
 
-    [SPECIES_VENONAT]     = TMHM_LEARNSET(TMHM(TM06_HYPER_VOICE)
+    [SPECIES_LAYLAPINK]     = TMHM_LEARNSET(TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM10_DOUBLE_SLAP)
                                         | TMHM(TM11_SUNNY_DAY)
                                         | TMHM(TM17_PROTECT)
@@ -1188,7 +1188,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM48_SKILL_SWAP)
                                         | TMHM(HM05_FLASH)),
 
-    [SPECIES_VENOMOTH]    = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
+    [SPECIES_REINABASE]    = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
                                         | TMHM(TM02_TWISTER)
                                         | TMHM(TM03_BUBBLE_BEAM)
                                         | TMHM(TM04_CALM_MIND)
@@ -1247,7 +1247,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM07_WATERFALL)
                                         | TMHM(HM08_DIVE)),
 
-    [SPECIES_DIGLETT]     = TMHM_LEARNSET(TMHM(TM06_HYPER_VOICE)
+    [SPECIES_REINABLUE]     = TMHM_LEARNSET(TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM10_DOUBLE_SLAP)
                                         | TMHM(TM11_SUNNY_DAY)
                                         | TMHM(TM17_PROTECT)
@@ -1267,7 +1267,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM06_ROCK_SMASH)),
 
-    [SPECIES_DUGTRIO]     = TMHM_LEARNSET(TMHM(TM06_HYPER_VOICE)
+    [SPECIES_REINAGOLD]     = TMHM_LEARNSET(TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM10_DOUBLE_SLAP)
                                         | TMHM(TM11_SUNNY_DAY)
                                         | TMHM(TM15_HYPER_BEAM)
@@ -1288,7 +1288,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM06_ROCK_SMASH)),
 
-    [SPECIES_MEOWTH]      = TMHM_LEARNSET(TMHM(TM03_BUBBLE_BEAM)
+    [SPECIES_REINAPINK]      = TMHM_LEARNSET(TMHM(TM03_BUBBLE_BEAM)
                                         | TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM10_DOUBLE_SLAP)
                                         | TMHM(TM11_SUNNY_DAY)
@@ -1315,7 +1315,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM05_FLASH)),
 
-    [SPECIES_PERSIAN]     = TMHM_LEARNSET(TMHM(TM03_BUBBLE_BEAM)
+    [SPECIES_MOMOKABASE]     = TMHM_LEARNSET(TMHM(TM03_BUBBLE_BEAM)
                                         | TMHM(TM05_SPIKES)
                                         | TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM10_DOUBLE_SLAP)
@@ -1344,7 +1344,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM05_FLASH)),
 
-    [SPECIES_PSYDUCK]     = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
+    [SPECIES_MOMOKABLUE]     = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
                                         | TMHM(TM03_BUBBLE_BEAM)
                                         | TMHM(TM04_CALM_MIND)
                                         | TMHM(TM06_HYPER_VOICE)
@@ -1372,7 +1372,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM07_WATERFALL)
                                         | TMHM(HM08_DIVE)),
 
-    [SPECIES_GOLDUCK]     = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
+    [SPECIES_MOMOKAGOLD]     = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
                                         | TMHM(TM03_BUBBLE_BEAM)
                                         | TMHM(TM04_CALM_MIND)
                                         | TMHM(TM06_HYPER_VOICE)
@@ -1401,7 +1401,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM07_WATERFALL)
                                         | TMHM(HM08_DIVE)),
 
-    [SPECIES_MANKEY]      = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
+    [SPECIES_MOMOKAPINK]      = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
                                         | TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM08_BULK_UP)
                                         | TMHM(TM10_DOUBLE_SLAP)
@@ -1429,7 +1429,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)),
 
-    [SPECIES_PRIMEAPE]    = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
+    [SPECIES_ARISUBASE]    = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
                                         | TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM08_BULK_UP)
                                         | TMHM(TM10_DOUBLE_SLAP)
@@ -1458,7 +1458,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)),
 
-    [SPECIES_GROWLITHE]   = TMHM_LEARNSET(TMHM(TM05_SPIKES)
+    [SPECIES_ARISUBLUE]   = TMHM_LEARNSET(TMHM(TM05_SPIKES)
                                         | TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM10_DOUBLE_SLAP)
                                         | TMHM(TM11_SUNNY_DAY)
@@ -1480,7 +1480,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)),
 
-    [SPECIES_ARCANINE]    = TMHM_LEARNSET(TMHM(TM05_SPIKES)
+    [SPECIES_ARISUGOLD]    = TMHM_LEARNSET(TMHM(TM05_SPIKES)
                                         | TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM10_DOUBLE_SLAP)
                                         | TMHM(TM11_SUNNY_DAY)
@@ -1503,7 +1503,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)),
 
-    [SPECIES_POLIWAG]     = TMHM_LEARNSET(TMHM(TM03_BUBBLE_BEAM)
+    [SPECIES_ARISUPINK]     = TMHM_LEARNSET(TMHM(TM03_BUBBLE_BEAM)
                                         | TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM07_HAIL)
                                         | TMHM(TM10_DOUBLE_SLAP)
@@ -1525,7 +1525,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM07_WATERFALL)
                                         | TMHM(HM08_DIVE)),
 
-    [SPECIES_POLIWHIRL]   = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
+    [SPECIES_AIRIBASE]   = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
                                         | TMHM(TM03_BUBBLE_BEAM)
                                         | TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM07_HAIL)
@@ -1552,7 +1552,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM07_WATERFALL)
                                         | TMHM(HM08_DIVE)),
 
-    [SPECIES_POLIWRATH]   = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
+    [SPECIES_AIRIBLUE]   = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
                                         | TMHM(TM03_BUBBLE_BEAM)
                                         | TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM07_HAIL)
@@ -1582,7 +1582,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM07_WATERFALL)
                                         | TMHM(HM08_DIVE)),
 
-    [SPECIES_ABRA]        = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
+    [SPECIES_AIRIGOLD]        = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
                                         | TMHM(TM04_CALM_MIND)
                                         | TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM10_DOUBLE_SLAP)
@@ -1610,7 +1610,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM49_SNATCH)
                                         | TMHM(HM05_FLASH)),
 
-    [SPECIES_KADABRA]     = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
+    [SPECIES_AIRIPINK]     = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
                                         | TMHM(TM04_CALM_MIND)
                                         | TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM10_DOUBLE_SLAP)
@@ -1638,7 +1638,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM49_SNATCH)
                                         | TMHM(HM05_FLASH)),
 
-    [SPECIES_ALAKAZAM]    = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
+    [SPECIES_MINAMIBASE]    = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
                                         | TMHM(TM04_CALM_MIND)
                                         | TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM10_DOUBLE_SLAP)
@@ -1667,7 +1667,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM49_SNATCH)
                                         | TMHM(HM05_FLASH)),
 
-    [SPECIES_MACHOP]      = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
+    [SPECIES_MINAMIBLUE]      = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
                                         | TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM08_BULK_UP)
                                         | TMHM(TM10_DOUBLE_SLAP)
@@ -1691,7 +1691,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)),
 
-    [SPECIES_MACHOKE]     = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
+    [SPECIES_MINAMIGOLD]     = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
                                         | TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM08_BULK_UP)
                                         | TMHM(TM10_DOUBLE_SLAP)
@@ -1715,7 +1715,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)),
 
-    [SPECIES_MACHAMP]     = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
+    [SPECIES_MINAMIPINK]     = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
                                         | TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM08_BULK_UP)
                                         | TMHM(TM10_DOUBLE_SLAP)
@@ -1740,7 +1740,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)),
 
-    [SPECIES_BELLSPROUT]  = TMHM_LEARNSET(TMHM(TM06_HYPER_VOICE)
+    [SPECIES_ANASTASIABASE]  = TMHM_LEARNSET(TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM09_DRAIN_KISS)
                                         | TMHM(TM10_DOUBLE_SLAP)
                                         | TMHM(TM11_SUNNY_DAY)
@@ -1759,7 +1759,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM05_FLASH)),
 
-    [SPECIES_WEEPINBELL]  = TMHM_LEARNSET(TMHM(TM06_HYPER_VOICE)
+    [SPECIES_ANASTASIABLUE]  = TMHM_LEARNSET(TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM09_DRAIN_KISS)
                                         | TMHM(TM10_DOUBLE_SLAP)
                                         | TMHM(TM11_SUNNY_DAY)
@@ -1778,7 +1778,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM05_FLASH)),
 
-    [SPECIES_VICTREEBEL]  = TMHM_LEARNSET(TMHM(TM06_HYPER_VOICE)
+    [SPECIES_ANASTASIAGOLD]  = TMHM_LEARNSET(TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM09_DRAIN_KISS)
                                         | TMHM(TM10_DOUBLE_SLAP)
                                         | TMHM(TM11_SUNNY_DAY)
@@ -1798,7 +1798,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM05_FLASH)),
 
-    [SPECIES_TENTACOOL]   = TMHM_LEARNSET(TMHM(TM03_BUBBLE_BEAM)
+    [SPECIES_ANASTASIAPINK]   = TMHM_LEARNSET(TMHM(TM03_BUBBLE_BEAM)
                                         | TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM07_HAIL)
                                         | TMHM(TM10_DOUBLE_SLAP)
@@ -1821,7 +1821,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM07_WATERFALL)
                                         | TMHM(HM08_DIVE)),
 
-    [SPECIES_TENTACRUEL]  = TMHM_LEARNSET(TMHM(TM03_BUBBLE_BEAM)
+    [SPECIES_HIJIRIBASE]  = TMHM_LEARNSET(TMHM(TM03_BUBBLE_BEAM)
                                         | TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM07_HAIL)
                                         | TMHM(TM10_DOUBLE_SLAP)
@@ -1845,7 +1845,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM07_WATERFALL)
                                         | TMHM(HM08_DIVE)),
 
-    [SPECIES_GEODUDE]     = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
+    [SPECIES_HIJIRIBLUE]     = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
                                         | TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM10_DOUBLE_SLAP)
                                         | TMHM(TM11_SUNNY_DAY)
@@ -1867,7 +1867,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)),
 
-    [SPECIES_GRAVELER]    = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
+    [SPECIES_HIJIRIGOLD]    = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
                                         | TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM10_DOUBLE_SLAP)
                                         | TMHM(TM11_SUNNY_DAY)
@@ -1889,7 +1889,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)),
 
-    [SPECIES_GOLEM]       = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
+    [SPECIES_HIJIRIPINK]       = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
                                         | TMHM(TM05_SPIKES)
                                         | TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM10_DOUBLE_SLAP)
@@ -1913,7 +1913,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM04_STRENGTH)
                                         | TMHM(HM06_ROCK_SMASH)),
 
-    [SPECIES_PONYTA]      = TMHM_LEARNSET(TMHM(TM06_HYPER_VOICE)
+    [SPECIES_RISABASE]      = TMHM_LEARNSET(TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM10_DOUBLE_SLAP)
                                         | TMHM(TM11_SUNNY_DAY)
                                         | TMHM(TM17_PROTECT)
@@ -1931,7 +1931,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM50_OVERHEAT)
                                         | TMHM(HM04_STRENGTH)),
 
-    [SPECIES_RAPIDASH]    = TMHM_LEARNSET(TMHM(TM06_HYPER_VOICE)
+    [SPECIES_RISABLUE]    = TMHM_LEARNSET(TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM10_DOUBLE_SLAP)
                                         | TMHM(TM11_SUNNY_DAY)
                                         | TMHM(TM15_HYPER_BEAM)
@@ -1950,7 +1950,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM50_OVERHEAT)
                                         | TMHM(HM04_STRENGTH)),
 
-    [SPECIES_SLOWPOKE]    = TMHM_LEARNSET(TMHM(TM03_BUBBLE_BEAM)
+    [SPECIES_RISAGOLD]    = TMHM_LEARNSET(TMHM(TM03_BUBBLE_BEAM)
                                         | TMHM(TM04_CALM_MIND)
                                         | TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM07_HAIL)
@@ -1981,7 +1981,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM05_FLASH)
                                         | TMHM(HM08_DIVE)),
 
-    [SPECIES_SLOWBRO]     = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
+    [SPECIES_RISAPINK]     = TMHM_LEARNSET(TMHM(TM01_FOCUS_BLAST)
                                         | TMHM(TM03_BUBBLE_BEAM)
                                         | TMHM(TM04_CALM_MIND)
                                         | TMHM(TM06_HYPER_VOICE)
@@ -2016,7 +2016,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM06_ROCK_SMASH)
                                         | TMHM(HM08_DIVE)),
 
-    [SPECIES_MAGNEMITE]   = TMHM_LEARNSET(TMHM(TM06_HYPER_VOICE)
+    [SPECIES_SANABASE]   = TMHM_LEARNSET(TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM10_DOUBLE_SLAP)
                                         | TMHM(TM11_SUNNY_DAY)
                                         | TMHM(TM17_PROTECT)
@@ -2033,7 +2033,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM44_REST)
                                         | TMHM(HM05_FLASH)),
 
-    [SPECIES_MAGNETON]    = TMHM_LEARNSET(TMHM(TM06_HYPER_VOICE)
+    [SPECIES_SANABLUE]    = TMHM_LEARNSET(TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM10_DOUBLE_SLAP)
                                         | TMHM(TM11_SUNNY_DAY)
                                         | TMHM(TM15_HYPER_BEAM)
@@ -2051,7 +2051,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(TM44_REST)
                                         | TMHM(HM05_FLASH)),
 
-    [SPECIES_FARFETCHD]   = TMHM_LEARNSET(TMHM(TM06_HYPER_VOICE)
+    [SPECIES_SANAGOLD]   = TMHM_LEARNSET(TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM10_DOUBLE_SLAP)
                                         | TMHM(TM11_SUNNY_DAY)
                                         | TMHM(TM17_PROTECT)
@@ -2069,7 +2069,7 @@ const u32 gTMHMLearnsets[][2] =
                                         | TMHM(HM01_CUT)
                                         | TMHM(HM02_SPACE_TRAVEL)),
 
-    [SPECIES_DODUO]       = TMHM_LEARNSET(TMHM(TM06_HYPER_VOICE)
+    [SPECIES_SANAPINK]       = TMHM_LEARNSET(TMHM(TM06_HYPER_VOICE)
                                         | TMHM(TM10_DOUBLE_SLAP)
                                         | TMHM(TM11_SUNNY_DAY)
                                         | TMHM(TM17_PROTECT)

@@ -94,7 +94,7 @@ const u16 gEggMoves[] = {
               MOVE_CONFUSION,
               MOVE_BEAT_UP),
 
-    egg_moves(VULPIX,
+    egg_moves(NINABASE,
               MOVE_FEINT_ATTACK,
               MOVE_HYPNOSIS,
               MOVE_FLAIL,
@@ -104,7 +104,7 @@ const u16 gEggMoves[] = {
               MOVE_PSYCH_UP,
               MOVE_HEAT_WAVE),
 
-    egg_moves(ZUBAT,
+    egg_moves(SACHIKOBASE,
               MOVE_QUICK_ATTACK,
               MOVE_PURSUIT,
               MOVE_FEINT_ATTACK,
@@ -112,7 +112,7 @@ const u16 gEggMoves[] = {
               MOVE_WHIRLWIND,
               MOVE_CURSE),
 
-    egg_moves(ODDISH,
+    egg_moves(SACHIKOGOLD,
               MOVE_SWORDS_DANCE,
               MOVE_RAZOR_LEAF,
               MOVE_FLAIL,
@@ -120,7 +120,7 @@ const u16 gEggMoves[] = {
               MOVE_CHARM,
               MOVE_INGRAIN),
 
-    egg_moves(PARAS,
+    egg_moves(LAYLABLUE,
               MOVE_FALSE_SWIPE,
               MOVE_SCREECH,
               MOVE_COUNTER,
@@ -130,13 +130,13 @@ const u16 gEggMoves[] = {
               MOVE_LIGHT_SCREEN,
               MOVE_PURSUIT),
 
-    egg_moves(VENONAT,
+    egg_moves(LAYLAPINK,
               MOVE_BATON_PASS,
               MOVE_SCREECH,
               MOVE_GIGA_DRAIN,
               MOVE_SIGNAL_BEAM),
 
-    egg_moves(DIGLETT,
+    egg_moves(REINABLUE,
               MOVE_FEINT_ATTACK,
               MOVE_SCREECH,
               MOVE_ANCIENT_POWER,
@@ -145,7 +145,7 @@ const u16 gEggMoves[] = {
               MOVE_ROCK_OUT,
               MOVE_ROCK_SLIDE),
 
-    egg_moves(MEOWTH,
+    egg_moves(REINAPINK,
               MOVE_SPITE,
               MOVE_CHARM,
               MOVE_HYPNOSIS,
@@ -153,7 +153,7 @@ const u16 gEggMoves[] = {
               MOVE_PSYCH_UP,
               MOVE_ASSIST),
 
-    egg_moves(PSYDUCK,
+    egg_moves(MOMOKABLUE,
               MOVE_HYPNOSIS,
               MOVE_PSYBEAM,
               MOVE_FORESIGHT,
@@ -163,7 +163,7 @@ const u16 gEggMoves[] = {
               MOVE_CROSS_CHOP,
               MOVE_REFRESH),
 
-    egg_moves(MANKEY,
+    egg_moves(MOMOKAPINK,
               MOVE_ROCK_SLIDE,
               MOVE_FORESIGHT,
               MOVE_MEDITATE,
@@ -173,7 +173,7 @@ const u16 gEggMoves[] = {
               MOVE_REVENGE,
               MOVE_SURPRISE_HIT),
 
-    egg_moves(GROWLITHE,
+    egg_moves(ARISUBLUE,
               MOVE_BODY_SLAM,
               MOVE_SAFEGUARD,
               MOVE_VAMPIRE,
@@ -182,7 +182,7 @@ const u16 gEggMoves[] = {
               MOVE_HOWL,
               MOVE_HEAT_WAVE),
 
-    egg_moves(POLIWAG,
+    egg_moves(ARISUPINK,
               MOVE_MIST,
               MOVE_SPLASH,
               MOVE_BUBBLE_BEAM,
@@ -191,7 +191,7 @@ const u16 gEggMoves[] = {
               MOVE_WATER_SPORT,
               MOVE_ICE_BALL),
 
-    egg_moves(ABRA,
+    egg_moves(AIRIGOLD,
               MOVE_ENCORE,
               MOVE_BARRIER,
               MOVE_KNOCK_OFF,
@@ -199,7 +199,7 @@ const u16 gEggMoves[] = {
               MOVE_HEAVEN_PUNCH,
               MOVE_ICE_PUNCH),
 
-    egg_moves(MACHOP,
+    egg_moves(MINAMIBLUE,
               MOVE_LIGHT_SCREEN,
               MOVE_MEDITATE,
               MOVE_FLASHY_KICK,
@@ -208,7 +208,7 @@ const u16 gEggMoves[] = {
               MOVE_COUNTER,
               MOVE_ROCK_SLIDE),
 
-    egg_moves(BELLSPROUT,
+    egg_moves(ANASTASIABASE,
               MOVE_SWORDS_DANCE,
               MOVE_ENCORE,
               MOVE_REFLECT,
@@ -217,7 +217,7 @@ const u16 gEggMoves[] = {
               MOVE_INGRAIN,
               MOVE_MAGICAL_LEAF),
 
-    egg_moves(TENTACOOL,
+    egg_moves(ANASTASIAPINK,
               MOVE_AURORA_BEAM,
               MOVE_MIRROR_COAT,
               MOVE_TIDY_UP,
@@ -225,12 +225,12 @@ const u16 gEggMoves[] = {
               MOVE_SAFEGUARD,
               MOVE_CONFUSE_RAY),
 
-    egg_moves(GEODUDE,
+    egg_moves(HIJIRIBLUE,
               MOVE_MEGA_PUNCH,
               MOVE_ROCK_SLIDE,
               MOVE_BLOCK),
 
-    egg_moves(PONYTA,
+    egg_moves(RISABASE,
               MOVE_FLAME_WHEEL,
               MOVE_THRASH,
               MOVE_DOUBLE_KICK,
@@ -238,7 +238,7 @@ const u16 gEggMoves[] = {
               MOVE_CHARM,
               MOVE_DOUBLE_EDGE),
 
-    egg_moves(SLOWPOKE,
+    egg_moves(RISAGOLD,
               MOVE_SAFEGUARD,
               MOVE_BELLY_DRUM,
               MOVE_FUTURE_SIGHT,
@@ -247,7 +247,7 @@ const u16 gEggMoves[] = {
               MOVE_SLEEP_TALK,
               MOVE_SNORE),
 
-    egg_moves(FARFETCHD,
+    egg_moves(SANAGOLD,
               MOVE_METAL_GALE,
               MOVE_FORESIGHT,
               MOVE_COPYCAT,
@@ -257,7 +257,7 @@ const u16 gEggMoves[] = {
               MOVE_FEATHER_DANCE,
               MOVE_CURSE),
 
-    egg_moves(DODUO,
+    egg_moves(SANAPINK,
               MOVE_QUICK_ATTACK,
               MOVE_SUPERSONIC,
               MOVE_HAZE,

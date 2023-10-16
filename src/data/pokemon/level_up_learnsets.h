@@ -621,7 +621,7 @@ static const u16 sKozuePinkLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sVulpixLevelUpLearnset[] = {
+static const u16 sNinaBaseLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -640,7 +640,7 @@ static const u16 sVulpixLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sNinetalesLevelUpLearnset[] = {
+static const u16 sNinaBlueLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -659,7 +659,7 @@ static const u16 sNinetalesLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sJigglypuffLevelUpLearnset[] = {
+static const u16 sNinaGoldLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -678,7 +678,7 @@ static const u16 sJigglypuffLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sWigglytuffLevelUpLearnset[] = {
+static const u16 sNinaPinkLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -697,7 +697,7 @@ static const u16 sWigglytuffLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sZubatLevelUpLearnset[] = {
+static const u16 sSachikoBaseLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -716,7 +716,7 @@ static const u16 sZubatLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sGolbatLevelUpLearnset[] = {
+static const u16 sSachikoBlueLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -735,7 +735,7 @@ static const u16 sGolbatLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sOddishLevelUpLearnset[] = {
+static const u16 sSachikoGoldLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -754,7 +754,7 @@ static const u16 sOddishLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sGloomLevelUpLearnset[] = {
+static const u16 sSachikoPinkLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -773,7 +773,7 @@ static const u16 sGloomLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sVileplumeLevelUpLearnset[] = {
+static const u16 sLaylaBaseLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -792,7 +792,7 @@ static const u16 sVileplumeLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sParasLevelUpLearnset[] = {
+static const u16 sLaylaBlueLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -811,7 +811,7 @@ static const u16 sParasLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sParasectLevelUpLearnset[] = {
+static const u16 sLaylaGoldLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -830,7 +830,7 @@ static const u16 sParasectLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sVenonatLevelUpLearnset[] = {
+static const u16 sLaylaPinkLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -849,7 +849,7 @@ static const u16 sVenonatLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sVenomothLevelUpLearnset[] = {
+static const u16 sReinaBaseLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -868,7 +868,7 @@ static const u16 sVenomothLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sDiglettLevelUpLearnset[] = {
+static const u16 sReinaBlueLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -887,7 +887,7 @@ static const u16 sDiglettLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sDugtrioLevelUpLearnset[] = {
+static const u16 sReinaGoldLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -906,7 +906,7 @@ static const u16 sDugtrioLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sMeowthLevelUpLearnset[] = {
+static const u16 sReinaPinkLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -925,7 +925,7 @@ static const u16 sMeowthLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sPersianLevelUpLearnset[] = {
+static const u16 sMomokaBaseLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -944,7 +944,7 @@ static const u16 sPersianLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sPsyduckLevelUpLearnset[] = {
+static const u16 sMomokaBlueLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -963,7 +963,7 @@ static const u16 sPsyduckLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sGolduckLevelUpLearnset[] = {
+static const u16 sMomokaGoldLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -982,7 +982,7 @@ static const u16 sGolduckLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sMankeyLevelUpLearnset[] = {
+static const u16 sMomokaPinkLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -1001,7 +1001,7 @@ static const u16 sMankeyLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sPrimeapeLevelUpLearnset[] = {
+static const u16 sArisuBaseLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -1020,7 +1020,7 @@ static const u16 sPrimeapeLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sGrowlitheLevelUpLearnset[] = {
+static const u16 sArisuBlueLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -1039,7 +1039,7 @@ static const u16 sGrowlitheLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sArcanineLevelUpLearnset[] = {
+static const u16 sArisuGoldLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -1058,7 +1058,7 @@ static const u16 sArcanineLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sPoliwagLevelUpLearnset[] = {
+static const u16 sArisuPinkLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -1077,7 +1077,7 @@ static const u16 sPoliwagLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sPoliwhirlLevelUpLearnset[] = {
+static const u16 sAiriBaseLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -1096,7 +1096,7 @@ static const u16 sPoliwhirlLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sPoliwrathLevelUpLearnset[] = {
+static const u16 sAiriBlueLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -1115,7 +1115,7 @@ static const u16 sPoliwrathLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sAbraLevelUpLearnset[] = {
+static const u16 sAiriGoldLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -1134,7 +1134,7 @@ static const u16 sAbraLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sKadabraLevelUpLearnset[] = {
+static const u16 sAiriPinkLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -1153,7 +1153,7 @@ static const u16 sKadabraLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sAlakazamLevelUpLearnset[] = {
+static const u16 sMinamiBaseLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -1172,7 +1172,7 @@ static const u16 sAlakazamLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sMachopLevelUpLearnset[] = {
+static const u16 sMinamiBlueLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -1191,7 +1191,7 @@ static const u16 sMachopLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sMachokeLevelUpLearnset[] = {
+static const u16 sMinamiGoldLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -1210,7 +1210,7 @@ static const u16 sMachokeLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sMachampLevelUpLearnset[] = {
+static const u16 sMinamiPinkLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -1229,7 +1229,7 @@ static const u16 sMachampLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sBellsproutLevelUpLearnset[] = {
+static const u16 sAnastasiaBaseLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -1248,7 +1248,7 @@ static const u16 sBellsproutLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sWeepinbellLevelUpLearnset[] = {
+static const u16 sAnastasiaBlueLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -1267,7 +1267,7 @@ static const u16 sWeepinbellLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sVictreebelLevelUpLearnset[] = {
+static const u16 sAnastasiaGoldLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -1286,7 +1286,7 @@ static const u16 sVictreebelLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sTentacoolLevelUpLearnset[] = {
+static const u16 sAnastasiaPinkLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -1305,7 +1305,7 @@ static const u16 sTentacoolLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sTentacruelLevelUpLearnset[] = {
+static const u16 sHijiriBaseLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -1324,7 +1324,7 @@ static const u16 sTentacruelLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sGeodudeLevelUpLearnset[] = {
+static const u16 sHijiriBlueLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -1343,7 +1343,7 @@ static const u16 sGeodudeLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sGravelerLevelUpLearnset[] = {
+static const u16 sHijiriGoldLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
 
     LEVEL_UP_MOVE( 1, MOVE_SPLASH),
@@ -1362,7 +1362,7 @@ static const u16 sGravelerLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sGolemLevelUpLearnset[] = {
+static const u16 sHijiriPinkLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_MOVE( 1, MOVE_MUD_SPORT),
@@ -1379,7 +1379,7 @@ static const u16 sGolemLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sPonytaLevelUpLearnset[] = {
+static const u16 sRisaBaseLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_MOVE( 1, MOVE_MUD_SPORT),
@@ -1396,7 +1396,7 @@ static const u16 sPonytaLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sRapidashLevelUpLearnset[] = {
+static const u16 sRisaBlueLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_MOVE( 1, MOVE_MUD_SPORT),
@@ -1413,7 +1413,7 @@ static const u16 sRapidashLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sSlowpokeLevelUpLearnset[] = {
+static const u16 sRisaGoldLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_MOVE( 1, MOVE_MUD_SPORT),
@@ -1430,7 +1430,7 @@ static const u16 sSlowpokeLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sSlowbroLevelUpLearnset[] = {
+static const u16 sRisaPinkLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
     LEVEL_UP_MOVE( 1, MOVE_MUD_SPORT),
@@ -1447,7 +1447,7 @@ static const u16 sSlowbroLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sMagnemiteLevelUpLearnset[] = {
+static const u16 sSanaBaseLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_METAL_SOUND),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 6, MOVE_HEAVEN_SHOCK),
@@ -1462,7 +1462,7 @@ static const u16 sMagnemiteLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sMagnetonLevelUpLearnset[] = {
+static const u16 sSanaBlueLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_METAL_SOUND),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_HEAVEN_SHOCK),
@@ -1479,7 +1479,7 @@ static const u16 sMagnetonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sFarfetchdLevelUpLearnset[] = {
+static const u16 sSanaGoldLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POKE),
     LEVEL_UP_MOVE( 6, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE(11, MOVE_LEER),
@@ -1493,7 +1493,7 @@ static const u16 sFarfetchdLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sDoduoLevelUpLearnset[] = {
+static const u16 sSanaPinkLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_POKE),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 9, MOVE_PURSUIT),

@@ -147,7 +147,7 @@
 #define EC_WORD_DRAGON        (EC_GROUP_STATUS << 9) | 0x3e
 #define EC_WORD_TRACE         (EC_GROUP_STATUS << 9) | 0x3f
 #define EC_WORD_OBLIVIOUS     (EC_GROUP_STATUS << 9) | 0x40
-#define EC_WORD_TRUANT        (EC_GROUP_STATUS << 9) | 0x41
+#define EC_WORD_NERVOUS        (EC_GROUP_STATUS << 9) | 0x41
 #define EC_WORD_RUN_AWAY      (EC_GROUP_STATUS << 9) | 0x42
 #define EC_WORD_STICKY_HOLD   (EC_GROUP_STATUS << 9) | 0x43
 #define EC_WORD_CLOUD_NINE    (EC_GROUP_STATUS << 9) | 0x44

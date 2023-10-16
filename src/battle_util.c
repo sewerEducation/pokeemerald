@@ -1979,7 +1979,7 @@ enum
     CANCELLER_FLAGS,
     CANCELLER_ASLEEP,
     CANCELLER_FROZEN,
-    CANCELLER_TRUANT,
+    CANCELLER_NERVOUS,
     CANCELLER_RECHARGE,
     CANCELLER_FLINCH,
     CANCELLER_DISABLED,
@@ -2077,8 +2077,8 @@ u8 AtkCanceller_UnableToUseMove(void)
             }
             gBattleStruct->atkCancellerTracker++;
             break;
-        case CANCELLER_TRUANT: // truant
-            if (gBattleMons[gBattlerAttacker].ability == ABILITY_TRUANT && gDisableStructs[gBattlerAttacker].truantCounter)
+        case CANCELLER_NERVOUS: // nervous
+            if (gBattleMons[gBattlerAttacker].ability == ABILITY_NERVOUS && gDisableStructs[gBattlerAttacker].nervousCounter)
             {
                 CancelMultiTurnMoves(gBattlerAttacker);
                 gHitMarker |= HITMARKER_UNABLE_TO_USE_MOVE;
@@ -2661,8 +2661,8 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
                         effect++;
                     }
                     break;
-                case ABILITY_TRUANT:
-                    gDisableStructs[gBattlerAttacker].truantCounter ^= 1;
+                case ABILITY_NERVOUS:
+                    gDisableStructs[gBattlerAttacker].nervousCounter ^= 1;
                     break;
                 }
             }

@@ -636,7 +636,7 @@ const u16 gEasyChatWordsByLetter_T[] = {
     EC_WORD_TRAIN,
     EC_WORD_TRAINER,
     EC_WORD_TRAINS,
-    EC_WORD_TRUANT,
+    EC_WORD_NERVOUS,
     EC_WORD_TRULY,
     EC_WORD_TRUMP_CARD,
     EC_WORD_TRUST,
