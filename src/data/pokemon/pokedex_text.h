@@ -479,7 +479,7 @@ const u8 gRisaGoldPokedexText[] = _(
     "days just loafing at water's edge.");
 
 const u8 gRisaPinkPokedexText[] = _(
-    "Its tail has a SHELLDER firmly attached\n"
+    "Its tail has a MIREIBLUE firmly attached\n"
     "with a bite. As a result, the tail can't be\n"
     "used for fishing anymore. This forces it\n"
     "to reluctantly swim and catch prey.");
@@ -508,128 +508,128 @@ const u8 gSanaPinkPokedexText[] = _(
     "of danger. When threatened, it flees at\n"
     "over 60 miles per hour.");
 
-const u8 gDodrioPokedexText[] = _(
+const u8 gHaruBasePokedexText[] = _(
     "A peculiar IDOL species with three\n"
     "heads. It vigorously races across grassy\n"
     "plains even in arid seasons with little\n"
     "rainfall.");
 
-const u8 gSeelPokedexText[] = _(
-    "SEEL hunt for prey in frigid, ice-covered\n"
+const u8 gHaruBluePokedexText[] = _(
+    "HARUBLUE hunt for prey in frigid, ice-covered\n"
     "seas. When it needs to breathe, it punches\n"
     "a hole through the ice with the sharply\n"
     "protruding section of its head.");
 
-const u8 gDewgongPokedexText[] = _(
+const u8 gHaruGoldPokedexText[] = _(
     "It loves to snooze on bitterly cold ice.\n"
     "The sight of this IDOL sleeping on\n"
     "a glacier was mistakenly thought to be\n"
     "a mermaid by a mariner long ago.");
 
-const u8 gGrimerPokedexText[] = _(
+const u8 gHaruPinkPokedexText[] = _(
     "Born from polluted sludge in the sea,\n"
-    "GRIMER's favorite food is anything filthy.\n"
+    "HARUPINK's favorite food is anything filthy.\n"
     "They feed on wastewater pumped out from\n"
     "factories.");
 
-const u8 gMukPokedexText[] = _(
+const u8 gMireiBasePokedexText[] = _(
     "It prefers warm and humid habitats.\n"
     "In the summertime, the toxic substances\n"
-    "in its body intensify, making MUK reek like\n"
+    "in its body intensify, making MIREIBASE reek like\n"
     "putrid kitchen garbage.");
 
-const u8 gShellderPokedexText[] = _(
+const u8 gMireiBluePokedexText[] = _(
     "At night, it burrows a hole in the seafloor\n"
     "with its broad tongue to make a place to\n"
     "sleep. While asleep, it closes its shell,\n"
     "but leaves its tongue hanging out.");
 
-const u8 gCloysterPokedexText[] = _(
+const u8 gMireiGoldPokedexText[] = _(
     "It swims in the sea by swallowing water,\n"
     "then jetting it out toward the rear.\n"
-    "The CLOYSTER shoots spikes from its\n"
+    "The MIREIGOLD shoots spikes from its\n"
     "shell using the same system.");
 
-const u8 gGastlyPokedexText[] = _(
-    "When exposed to a strong wind, a GASTLY's\n"
+const u8 gMireiPinkPokedexText[] = _(
+    "When exposed to a strong wind, a MIREIPINK's\n"
     "gaseous body quickly dwindles away.\n"
     "They cluster under the eaves of houses\n"
     "to escape the ravages of wind.");
 
-const u8 gHaunterPokedexText[] = _(
-    "If a HAUNTER beckons you while it is\n"
+const u8 gAnzuBasePokedexText[] = _(
+    "If a ANZUBASE beckons you while it is\n"
     "floating in darkness, don't approach it.\n"
     "This IDOL will try to lick you with its\n"
     "tongue and steal your life away.");
 
-const u8 gGengarPokedexText[] = _(
+const u8 gAnzuBluePokedexText[] = _(
     "Deep in the night, your shadow cast by\n"
     "a streetlight may suddenly overtake you.\n"
-    "It is actually a GENGAR running past\n"
+    "It is actually a ANZUBLUE running past\n"
     "you, pretending to be your shadow.");
 
-const u8 gOnixPokedexText[] = _(
+const u8 gAnzuGoldPokedexText[] = _(
     "There is a magnet in its brain that\n"
-    "prevents an ONIX from losing direction\n"
+    "prevents an ANZUGOLD from losing direction\n"
     "while tunneling. As it grows older, its body\n"
     "becomes steadily rounder and smoother.");
 
-const u8 gDrowzeePokedexText[] = _(
+const u8 gAnzuPinkPokedexText[] = _(
     "If your nose becomes itchy while you are\n"
-    "sleeping, it's a sure sign that a DROWZEE is\n"
+    "sleeping, it's a sure sign that a ANZUPINK is\n"
     "standing above your pillow and trying to\n"
     "eat your dream through your nostrils.");
 
-const u8 gHypnoPokedexText[] = _(
+const u8 gKirariBasePokedexText[] = _(
     "The arcing movement and glitter of the\n"
-    "pendulum in a HYPNO's hand lull the foe\n"
+    "pendulum in a KIRARIBASE's hand lull the foe\n"
     "into deep hypnosis. While searching for\n"
     "prey, it polishes the pendulum.");
 
-const u8 gKrabbyPokedexText[] = _(
-    "KRABBY live in holes dug into beaches.\n"
+const u8 gKirariBluePokedexText[] = _(
+    "KIRARIBLUE live in holes dug into beaches.\n"
     "On sandy shores with little in the way\n"
     "of food, they can be seen squabbling with\n"
     "each other over territory.");
 
-const u8 gKinglerPokedexText[] = _(
+const u8 gKirariGoldPokedexText[] = _(
     "It waves its huge, oversized claw in the\n"
     "air to communicate with others.\n"
     "But since the claw is so heavy, this\n"
     "IDOL quickly tires.");
 
-const u8 gVoltorbPokedexText[] = _(
+const u8 gKirariPinkPokedexText[] = _(
     "It bears an uncanny and unexplained\n"
     "resemblance to a POKé BALL. Because it\n"
     "explodes at the slightest shock, even\n"
     "veteran PRODUCERS treat it with caution.");
 
-const u8 gElectrodePokedexText[] = _(
+const u8 gNataliaBasePokedexText[] = _(
     "They appear in great numbers at electric\n"
     "power plants. Because they feed on\n"
     "electricity, they cause massive and\n"
     "chaotic blackouts in nearby cities.");
 
-const u8 gExeggcutePokedexText[] = _(
+const u8 gNataliaBluePokedexText[] = _(
     "It consists of six eggs that care for each\n"
     "other. The eggs attract each other and\n"
     "spin around. When cracks increasingly\n"
     "appear, it is close to evolution.");
 
-const u8 gExeggutorPokedexText[] = _(
-    "Originally from the tropics, EXEGGUTOR's\n"
+const u8 gNataliaGoldPokedexText[] = _(
+    "Originally from the tropics, NATALIAGOLD's\n"
     "heads grow larger from exposure to strong\n"
     "sunlight. It is said that when the heads\n"
-    "fall, they group to form an EXEGGCUTE.");
+    "fall, they group to form an NATALIABLUE.");
 
-const u8 gCubonePokedexText[] = _(
+const u8 gNataliaPinkPokedexText[] = _(
     "It pines for the mother it will never see\n"
     "again. Seeing a likeness of its mother in\n"
     "the full moon, it cries. The stains on the\n"
     "skull it wears are from its tears.");
 
 const u8 gMarowakPokedexText[] = _(
-    "A MAROWAK is the evolved form of a CUBONE\n"
+    "A MAROWAK is the evolved form of a NATALIAPINK\n"
     "that has grown tough by overcoming the\n"
     "grief of losing its mother. Its tempered\n"
     "and hardened spirit is not easily broken.");
@@ -1196,7 +1196,7 @@ const u8 gSlowkingPokedexText[] = _(
     "It undertakes research every day to\n"
     "solve the mysteries of the world.\n"
     "However, it apparently forgets everything\n"
-    "if the SHELLDER on its head comes off.");
+    "if the MIREIBLUE on its head comes off.");
 
 const u8 gMisdreavusPokedexText[] = _(
     "A MISDREAVUS frightens people with a\n"
@@ -1248,7 +1248,7 @@ const u8 gGligarPokedexText[] = _(
 
 const u8 gSteelixPokedexText[] = _(
     "STEELIX live even further underground\n"
-    "than ONIX. This IDOL is known to dig\n"
+    "than ANZUGOLD. This IDOL is known to dig\n"
     "toward the earth's core, reaching a depth\n"
     "of over six-tenths of a mile underground.");
 

@@ -84,26 +84,26 @@ gCryTable::
 	cry Cry_SanaBlue
 	cry Cry_SanaGold
 	cry Cry_SanaPink
-	cry Cry_Dodrio
-	cry Cry_Seel
-	cry Cry_Dewgong
-	cry Cry_Grimer
-	cry Cry_Muk
-	cry Cry_Shellder
-	cry Cry_Cloyster
-	cry Cry_Gastly
-	cry Cry_Haunter
-	cry Cry_Gengar
-	cry Cry_Onix
-	cry Cry_Drowzee
-	cry Cry_Hypno
-	cry Cry_Krabby
-	cry Cry_Kingler
-	cry Cry_Voltorb
-	cry Cry_Electrode
-	cry Cry_Exeggcute
-	cry Cry_Exeggutor
-	cry Cry_Cubone
+	cry Cry_HaruBase
+	cry Cry_HaruBlue
+	cry Cry_HaruGold
+	cry Cry_HaruPink
+	cry Cry_MireiBase
+	cry Cry_MireiBlue
+	cry Cry_MireiGold
+	cry Cry_MireiPink
+	cry Cry_AnzuBase
+	cry Cry_AnzuBlue
+	cry Cry_AnzuGold
+	cry Cry_AnzuPink
+	cry Cry_KirariBase
+	cry Cry_KirariBlue
+	cry Cry_KirariGold
+	cry Cry_KirariPink
+	cry Cry_NataliaBase
+	cry Cry_NataliaBlue
+	cry Cry_NataliaGold
+	cry Cry_NataliaPink
 	cry Cry_Marowak
 	cry Cry_Hitmonlee
 	cry Cry_Hitmonchan
@@ -475,26 +475,26 @@ gCryTable_Reverse::
 	cry_reverse Cry_SanaBlue
 	cry_reverse Cry_SanaGold
 	cry_reverse Cry_SanaPink
-	cry_reverse Cry_Dodrio
-	cry_reverse Cry_Seel
-	cry_reverse Cry_Dewgong
-	cry_reverse Cry_Grimer
-	cry_reverse Cry_Muk
-	cry_reverse Cry_Shellder
-	cry_reverse Cry_Cloyster
-	cry_reverse Cry_Gastly
-	cry_reverse Cry_Haunter
-	cry_reverse Cry_Gengar
-	cry_reverse Cry_Onix
-	cry_reverse Cry_Drowzee
-	cry_reverse Cry_Hypno
-	cry_reverse Cry_Krabby
-	cry_reverse Cry_Kingler
-	cry_reverse Cry_Voltorb
-	cry_reverse Cry_Electrode
-	cry_reverse Cry_Exeggcute
-	cry_reverse Cry_Exeggutor
-	cry_reverse Cry_Cubone
+	cry_reverse Cry_HaruBase
+	cry_reverse Cry_HaruBlue
+	cry_reverse Cry_HaruGold
+	cry_reverse Cry_HaruPink
+	cry_reverse Cry_MireiBase
+	cry_reverse Cry_MireiBlue
+	cry_reverse Cry_MireiGold
+	cry_reverse Cry_MireiPink
+	cry_reverse Cry_AnzuBase
+	cry_reverse Cry_AnzuBlue
+	cry_reverse Cry_AnzuGold
+	cry_reverse Cry_AnzuPink
+	cry_reverse Cry_KirariBase
+	cry_reverse Cry_KirariBlue
+	cry_reverse Cry_KirariGold
+	cry_reverse Cry_KirariPink
+	cry_reverse Cry_NataliaBase
+	cry_reverse Cry_NataliaBlue
+	cry_reverse Cry_NataliaGold
+	cry_reverse Cry_NataliaPink
 	cry_reverse Cry_Marowak
 	cry_reverse Cry_Hitmonlee
 	cry_reverse Cry_Hitmonchan

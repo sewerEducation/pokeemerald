@@ -939,7 +939,7 @@ static const u8 sMetalPowderDesc[] = _(
 
 static const u8 sThickClubDesc[] = _(
     "A hold item that \n"
-    "raises CUBONE or\n"
+    "raises NATALIAPINK or\n"
     "MAROWAK's ATTACK.");
 
 static const u8 sStickDesc[] = _(

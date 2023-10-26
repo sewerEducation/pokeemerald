@@ -1048,26 +1048,26 @@ static const union AnimCmd *const sUnknownAnims_SANABASE[] = {sAnim_GeneralFrame
 static const union AnimCmd *const sUnknownAnims_SANABLUE[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnknownAnims_SANAGOLD[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnknownAnims_SANAPINK[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_DODRIO[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_SEEL[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_DEWGONG[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_GRIMER[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_MUK[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_SHELLDER[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_CLOYSTER[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_GASTLY[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_HAUNTER[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_GENGAR[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_ONIX[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_DROWZEE[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_HYPNO[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_KRABBY[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_KINGLER[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_VOLTORB[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_ELECTRODE[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_EXEGGCUTE[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_EXEGGUTOR[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnknownAnims_CUBONE[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_HARUBASE[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_HARUBLUE[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_HARUGOLD[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_HARUPINK[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_MIREIBASE[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_MIREIBLUE[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_MIREIGOLD[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_MIREIPINK[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_ANZUBASE[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_ANZUBLUE[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_ANZUGOLD[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_ANZUPINK[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_KIRARIBASE[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_KIRARIBLUE[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_KIRARIGOLD[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_KIRARIPINK[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_NATALIABASE[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_NATALIABLUE[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_NATALIAGOLD[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnknownAnims_NATALIAPINK[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnknownAnims_MAROWAK[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnknownAnims_HITMONLEE[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnknownAnims_HITMONCHAN[] = {sAnim_GeneralFrame0};
@@ -1961,26 +1961,26 @@ static const union AnimCmd *const *const sUnknownAnimsTable[] =
     ANIM_CMD(SANABLUE),
     ANIM_CMD(SANAGOLD),
     ANIM_CMD(SANAPINK),
-    ANIM_CMD(DODRIO),
-    ANIM_CMD(SEEL),
-    ANIM_CMD(DEWGONG),
-    ANIM_CMD(GRIMER),
-    ANIM_CMD(MUK),
-    ANIM_CMD(SHELLDER),
-    ANIM_CMD(CLOYSTER),
-    ANIM_CMD(GASTLY),
-    ANIM_CMD(HAUNTER),
-    ANIM_CMD(GENGAR),
-    ANIM_CMD(ONIX),
-    ANIM_CMD(DROWZEE),
-    ANIM_CMD(HYPNO),
-    ANIM_CMD(KRABBY),
-    ANIM_CMD(KINGLER),
-    ANIM_CMD(VOLTORB),
-    ANIM_CMD(ELECTRODE),
-    ANIM_CMD(EXEGGCUTE),
-    ANIM_CMD(EXEGGUTOR),
-    ANIM_CMD(CUBONE),
+    ANIM_CMD(HARUBASE),
+    ANIM_CMD(HARUBLUE),
+    ANIM_CMD(HARUGOLD),
+    ANIM_CMD(HARUPINK),
+    ANIM_CMD(MIREIBASE),
+    ANIM_CMD(MIREIBLUE),
+    ANIM_CMD(MIREIGOLD),
+    ANIM_CMD(MIREIPINK),
+    ANIM_CMD(ANZUBASE),
+    ANIM_CMD(ANZUBLUE),
+    ANIM_CMD(ANZUGOLD),
+    ANIM_CMD(ANZUPINK),
+    ANIM_CMD(KIRARIBASE),
+    ANIM_CMD(KIRARIBLUE),
+    ANIM_CMD(KIRARIGOLD),
+    ANIM_CMD(KIRARIPINK),
+    ANIM_CMD(NATALIABASE),
+    ANIM_CMD(NATALIABLUE),
+    ANIM_CMD(NATALIAGOLD),
+    ANIM_CMD(NATALIAPINK),
     ANIM_CMD(MAROWAK),
     ANIM_CMD(HITMONLEE),
     ANIM_CMD(HITMONCHAN),

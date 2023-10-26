@@ -107,30 +107,30 @@ const u32 gMonFrontPic_SanaBlue[] = INCBIN_U32("graphics/idols/sana/blue/anim_fr
 const u32 gMonFrontPic_SanaGold[] = INCBIN_U32("graphics/idols/sana/gold/anim_front.4bpp.lz");
 const u32 gMonFrontPic_SanaPink[] = INCBIN_U32("graphics/idols/sana/pink/anim_front.4bpp.lz");
 
-const u32 gMonFrontPic_Dodrio[] = INCBIN_U32("graphics/pokemon/dodrio/anim_front.4bpp.lz");
-const u32 gMonFrontPic_Seel[] = INCBIN_U32("graphics/pokemon/seel/anim_front.4bpp.lz");
-const u32 gMonFrontPic_Dewgong[] = INCBIN_U32("graphics/pokemon/dewgong/anim_front.4bpp.lz");
-const u32 gMonFrontPic_Grimer[] = INCBIN_U32("graphics/pokemon/grimer/anim_front.4bpp.lz");
+const u32 gMonFrontPic_HaruBase[] = INCBIN_U32("graphics/idols/haru/base/anim_front.4bpp.lz");
+const u32 gMonFrontPic_HaruBlue[] = INCBIN_U32("graphics/idols/haru/blue/anim_front.4bpp.lz");
+const u32 gMonFrontPic_HaruGold[] = INCBIN_U32("graphics/idols/haru/gold/anim_front.4bpp.lz");
+const u32 gMonFrontPic_HaruPink[] = INCBIN_U32("graphics/idols/haru/pink/anim_front.4bpp.lz");
 
-const u32 gMonFrontPic_Muk[] = INCBIN_U32("graphics/pokemon/muk/anim_front.4bpp.lz");
-const u32 gMonFrontPic_Shellder[] = INCBIN_U32("graphics/pokemon/shellder/anim_front.4bpp.lz");
-const u32 gMonFrontPic_Cloyster[] = INCBIN_U32("graphics/pokemon/cloyster/anim_front.4bpp.lz");
-const u32 gMonFrontPic_Gastly[] = INCBIN_U32("graphics/pokemon/gastly/anim_front.4bpp.lz");
+const u32 gMonFrontPic_MireiBase[] = INCBIN_U32("graphics/idols/mirei/base/anim_front.4bpp.lz");
+const u32 gMonFrontPic_MireiBlue[] = INCBIN_U32("graphics/idols/mirei/blue/anim_front.4bpp.lz");
+const u32 gMonFrontPic_MireiGold[] = INCBIN_U32("graphics/idols/mirei/gold/anim_front.4bpp.lz");
+const u32 gMonFrontPic_MireiPink[] = INCBIN_U32("graphics/idols/mirei/pink/anim_front.4bpp.lz");
 
-const u32 gMonFrontPic_Haunter[] = INCBIN_U32("graphics/pokemon/haunter/anim_front.4bpp.lz");
-const u32 gMonFrontPic_Gengar[] = INCBIN_U32("graphics/pokemon/gengar/anim_front.4bpp.lz");
-const u32 gMonFrontPic_Onix[] = INCBIN_U32("graphics/pokemon/onix/anim_front.4bpp.lz");
-const u32 gMonFrontPic_Drowzee[] = INCBIN_U32("graphics/pokemon/drowzee/anim_front.4bpp.lz");
+const u32 gMonFrontPic_AnzuBase[] = INCBIN_U32("graphics/idols/anzu/base/anim_front.4bpp.lz");
+const u32 gMonFrontPic_AnzuBlue[] = INCBIN_U32("graphics/idols/anzu/blue/anim_front.4bpp.lz");
+const u32 gMonFrontPic_AnzuGold[] = INCBIN_U32("graphics/idols/anzu/gold/anim_front.4bpp.lz");
+const u32 gMonFrontPic_AnzuPink[] = INCBIN_U32("graphics/pokemon/drowzee/anim_front.4bpp.lz");
 
-const u32 gMonFrontPic_Hypno[] = INCBIN_U32("graphics/pokemon/hypno/anim_front.4bpp.lz");
-const u32 gMonFrontPic_Krabby[] = INCBIN_U32("graphics/pokemon/krabby/anim_front.4bpp.lz");
-const u32 gMonFrontPic_Kingler[] = INCBIN_U32("graphics/pokemon/kingler/anim_front.4bpp.lz");
-const u32 gMonFrontPic_Voltorb[] = INCBIN_U32("graphics/pokemon/voltorb/anim_front.4bpp.lz");
+const u32 gMonFrontPic_KirariBase[] = INCBIN_U32("graphics/idols/kirari/base/anim_front.4bpp.lz");
+const u32 gMonFrontPic_KirariBlue[] = INCBIN_U32("graphics/idols/kirari/blue/anim_front.4bpp.lz");
+const u32 gMonFrontPic_KirariGold[] = INCBIN_U32("graphics/idols/kirari/gold/anim_front.4bpp.lz");
+const u32 gMonFrontPic_KirariPink[] = INCBIN_U32("graphics/idols/kirari/pink/anim_front.4bpp.lz");
 
-const u32 gMonFrontPic_Electrode[] = INCBIN_U32("graphics/pokemon/electrode/anim_front.4bpp.lz");
-const u32 gMonFrontPic_Exeggcute[] = INCBIN_U32("graphics/pokemon/exeggcute/anim_front.4bpp.lz");
-const u32 gMonFrontPic_Exeggutor[] = INCBIN_U32("graphics/pokemon/exeggutor/anim_front.4bpp.lz");
-const u32 gMonFrontPic_Cubone[] = INCBIN_U32("graphics/pokemon/cubone/anim_front.4bpp.lz");
+const u32 gMonFrontPic_NataliaBase[] = INCBIN_U32("graphics/idols/natalia/base/anim_front.4bpp.lz");
+const u32 gMonFrontPic_NataliaBlue[] = INCBIN_U32("graphics/idols/natalia/blue/anim_front.4bpp.lz");
+const u32 gMonFrontPic_NataliaGold[] = INCBIN_U32("graphics/idols/natalia/gold/anim_front.4bpp.lz");
+const u32 gMonFrontPic_NataliaPink[] = INCBIN_U32("graphics/idols/natalia/pink/anim_front.4bpp.lz");
 
 const u32 gMonFrontPic_Marowak[] = INCBIN_U32("graphics/pokemon/marowak/anim_front.4bpp.lz");
 const u32 gMonFrontPic_Hitmonlee[] = INCBIN_U32("graphics/pokemon/hitmonlee/anim_front.4bpp.lz");

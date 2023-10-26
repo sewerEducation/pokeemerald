@@ -723,83 +723,83 @@ Cry_SanaPink::
 	.incbin "sound/direct_sound_samples/cries/doduo.bin"
 
 	.align 2
-Cry_Dodrio::
+Cry_HaruBase::
 	.incbin "sound/direct_sound_samples/cries/dodrio.bin"
 
 	.align 2
-Cry_Seel::
+Cry_HaruBlue::
 	.incbin "sound/direct_sound_samples/cries/seel.bin"
 
 	.align 2
-Cry_Dewgong::
+Cry_HaruGold::
 	.incbin "sound/direct_sound_samples/cries/dewgong.bin"
 
 	.align 2
-Cry_Grimer::
+Cry_HaruPink::
 	.incbin "sound/direct_sound_samples/cries/grimer.bin"
 
 	.align 2
-Cry_Muk::
+Cry_MireiBase::
 	.incbin "sound/direct_sound_samples/cries/muk.bin"
 
 	.align 2
-Cry_Shellder::
+Cry_MireiBlue::
 	.incbin "sound/direct_sound_samples/cries/shellder.bin"
 
 	.align 2
-Cry_Cloyster::
+Cry_MireiGold::
 	.incbin "sound/direct_sound_samples/cries/cloyster.bin"
 
 	.align 2
-Cry_Gastly::
+Cry_MireiPink::
 	.incbin "sound/direct_sound_samples/cries/gastly.bin"
 
 	.align 2
-Cry_Haunter::
+Cry_AnzuBase::
 	.incbin "sound/direct_sound_samples/cries/haunter.bin"
 
 	.align 2
-Cry_Gengar::
+Cry_AnzuBlue::
 	.incbin "sound/direct_sound_samples/cries/gengar.bin"
 
 	.align 2
-Cry_Onix::
+Cry_AnzuGold::
 	.incbin "sound/direct_sound_samples/cries/onix.bin"
 
 	.align 2
-Cry_Drowzee::
+Cry_AnzuPink::
 	.incbin "sound/direct_sound_samples/cries/drowzee.bin"
 
 	.align 2
-Cry_Hypno::
+Cry_KirariBase::
 	.incbin "sound/direct_sound_samples/cries/hypno.bin"
 
 	.align 2
-Cry_Krabby::
+Cry_KirariBlue::
 	.incbin "sound/direct_sound_samples/cries/krabby.bin"
 
 	.align 2
-Cry_Kingler::
+Cry_KirariGold::
 	.incbin "sound/direct_sound_samples/cries/kingler.bin"
 
 	.align 2
-Cry_Voltorb::
+Cry_KirariPink::
 	.incbin "sound/direct_sound_samples/cries/voltorb.bin"
 
 	.align 2
-Cry_Electrode::
+Cry_NataliaBase::
 	.incbin "sound/direct_sound_samples/cries/electrode.bin"
 
 	.align 2
-Cry_Exeggcute::
+Cry_NataliaBlue::
 	.incbin "sound/direct_sound_samples/cries/exeggcute.bin"
 
 	.align 2
-Cry_Exeggutor::
+Cry_NataliaGold::
 	.incbin "sound/direct_sound_samples/cries/exeggutor.bin"
 
 	.align 2
-Cry_Cubone::
+Cry_NataliaPink::
 	.incbin "sound/direct_sound_samples/cries/cubone.bin"
 
 	.align 2

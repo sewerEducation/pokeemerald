@@ -265,7 +265,7 @@ const u16 gEggMoves[] = {
               MOVE_FLAIL,
               MOVE_ENDEAVOR),
 
-    egg_moves(SEEL,
+    egg_moves(HARUBLUE,
               MOVE_LICK,
               MOVE_PERISH_SONG,
               MOVE_DISABLE,
@@ -275,7 +275,7 @@ const u16 gEggMoves[] = {
               MOVE_FAKE_OUT,
               MOVE_ICICLE_SPEAR),
 
-    egg_moves(GRIMER,
+    egg_moves(HARUPINK,
               MOVE_HAZE,
               MOVE_MEAN_LOOK,
               MOVE_LICK,
@@ -284,7 +284,7 @@ const u16 gEggMoves[] = {
               MOVE_SHADOW_PUNCH,
               MOVE_EXPLOSION),
 
-    egg_moves(SHELLDER,
+    egg_moves(MIREIBLUE,
               MOVE_BUBBLE_BEAM,
               MOVE_TAKE_DOWN,
               MOVE_BARRIER,
@@ -292,7 +292,7 @@ const u16 gEggMoves[] = {
               MOVE_SCREECH,
               MOVE_ICICLE_SPEAR),
 
-    egg_moves(GASTLY,
+    egg_moves(MIREIPINK,
               MOVE_PSYWAVE,
               MOVE_PERISH_SONG,
               MOVE_HAZE,
@@ -301,13 +301,13 @@ const u16 gEggMoves[] = {
               MOVE_GRUDGE,
               MOVE_EXPLOSION),
 
-    egg_moves(ONIX,
+    egg_moves(ANZUGOLD,
               MOVE_ROCK_SLIDE,
               MOVE_FLAIL,
               MOVE_EXPLOSION,
               MOVE_BLOCK),
 
-    egg_moves(DROWZEE,
+    egg_moves(ANZUPINK,
               MOVE_BARRIER,
               MOVE_ASSIST,
               MOVE_ROLE_PLAY,
@@ -315,7 +315,7 @@ const u16 gEggMoves[] = {
               MOVE_HEAVEN_PUNCH,
               MOVE_ICE_PUNCH),
 
-    egg_moves(KRABBY,
+    egg_moves(KIRARIBLUE,
               MOVE_DIG,
               MOVE_HAZE,
               MOVE_AMNESIA,
@@ -324,7 +324,7 @@ const u16 gEggMoves[] = {
               MOVE_KNOCK_OFF,
               MOVE_SWORDS_DANCE),
 
-    egg_moves(EXEGGCUTE,
+    egg_moves(NATALIABLUE,
               MOVE_SYNTHESIS,
               MOVE_MOONLIGHT,
               MOVE_REFLECT,
@@ -333,7 +333,7 @@ const u16 gEggMoves[] = {
               MOVE_INGRAIN,
               MOVE_CURSE),
 
-    egg_moves(CUBONE,
+    egg_moves(NATALIAPINK,
               MOVE_ROCK_SLIDE,
               MOVE_ANCIENT_POWER,
               MOVE_BELLY_DRUM,
